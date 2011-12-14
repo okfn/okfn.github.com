@@ -1,0 +1,100 @@
+.frontpage-carousel .jcarousel-container {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #D4D0C8;
+    border: 1px solid #808080;
+}
+
+.frontpage-carousel .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.frontpage-carousel .jcarousel-container-horizontal {
+    width: 940px;
+    padding: 20px 40px;
+}
+
+.frontpage-carousel .jcarousel-clip {
+    overflow: hidden;
+    width:  940px;
+    height: 250px;
+}
+
+.frontpage-carousel .jcarousel-item {
+    width: 940px;
+    height: 250px;
+}
+
+.frontpage-carousel .jcarousel-item:hover,
+.frontpage-carousel .jcarousel-item:focus {
+    border-color: #808080;
+}
+
+.frontpage-carousel .jcarousel-item-horizontal {
+    margin-left: 0;
+    margin-right: 7px;
+}
+
+.frontpage-carousel .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 7px;
+	margin-right: 0;
+}
+
+.frontpage-carousel .jcarousel-item-placeholder {
+}
+
+/**
+ * Prev/Next Buttons
+ */
+.frontpage-carousel .jcarousel-next,
+.frontpage-carousel .jcarousel-prev {
+  display: none !important;
+  position: absolute;
+  top: 50px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.5);
+  content: '';
+  text-align: center;
+  padding: 8px 18px 13px 18px;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  text-shadow: 0 1px 1px #000;
+  color: #fff;
+}
+.frontpage-carousel:hover .jcarousel-next,
+.frontpage-carousel:hover .jcarousel-prev {
+  display: block !important;
+}
+.frontpage-carousel .jcarousel-next {
+  right: 0px;
+      border-top-left-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+      border-bottom-left-radius: 8px;
+  -moz-border-radius-bottomleft: 8px;
+}
+.frontpage-carousel .jcarousel-prev {
+  left: 0px;
+      border-top-right-radius: 8px;
+  -moz-border-radius-topright: 8px;
+      border-bottom-right-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+}
+
+.frontpage-carousel .jcarousel-prev:hover,
+.frontpage-carousel .jcarousel-prev:focus,
+.frontpage-carousel .jcarousel-next:hover,
+.frontpage-carousel .jcarousel-next:focus {
+  background-color: rgba(255,255,255,0.9);
+  text-shadow: none;
+  color: #333;
+}
+
+.frontpage-carousel .jcarousel-prev:active,
+.frontpage-carousel .jcarousel-next:active {
+  background-color: #fff;
+  color: #933;
+}
+
+
+

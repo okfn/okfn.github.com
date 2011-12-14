@@ -1,0 +1,781 @@
+/*
+ * ===================================================
+ * Used to build okfn.css.
+ * 
+ * Written in Less, the dynamic stylesheet language::
+ *   http://lesscss.org/
+ * ===================================================
+ */
+/* =========== */
+/* Colorscheme */
+/* =========== */
+/* ======= */
+/* Imports */
+/* ======= */
+/*
+ Used to build okfn.css.
+
+ Written in Less, the dynamic stylesheet language::
+   http://lesscss.org/
+
+ Based on::
+   Mark Dotto's Preboot https://github.com/markdotto/Preboot.less
+ With::
+   Custom mods by Tom Rees :-)
+*/
+/* Variables
+-------------------------------------------------- */
+/* Mixins
+-------------------------------------------------- */
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+.center-block {
+  display: block;
+  margin: 0 auto;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+  zoom: 1;
+}
+.container:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+#flexbox .display-box {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+}
+#reset .global-reset html,
+#reset .global-reset body,
+#reset .global-reset div,
+#reset .global-reset span,
+#reset .global-reset applet,
+#reset .global-reset object,
+#reset .global-reset iframe,
+#reset .global-reset h1,
+#reset .global-reset h2,
+#reset .global-reset h3,
+#reset .global-reset h4,
+#reset .global-reset h5,
+#reset .global-reset h6,
+#reset .global-reset p,
+#reset .global-reset blockquote,
+#reset .global-reset pre,
+#reset .global-reset a,
+#reset .global-reset abbr,
+#reset .global-reset acronym,
+#reset .global-reset address,
+#reset .global-reset big,
+#reset .global-reset cite,
+#reset .global-reset code,
+#reset .global-reset del,
+#reset .global-reset dfn,
+#reset .global-reset em,
+#reset .global-reset img,
+#reset .global-reset ins,
+#reset .global-reset kbd,
+#reset .global-reset q,
+#reset .global-reset s,
+#reset .global-reset samp,
+#reset .global-reset small,
+#reset .global-reset strike,
+#reset .global-reset strong,
+#reset .global-reset sub,
+#reset .global-reset sup,
+#reset .global-reset tt,
+#reset .global-reset var,
+#reset .global-reset b,
+#reset .global-reset u,
+#reset .global-reset i,
+#reset .global-reset center,
+#reset .global-reset dl,
+#reset .global-reset dt,
+#reset .global-reset dd,
+#reset .global-reset ol,
+#reset .global-reset ul,
+#reset .global-reset li,
+#reset .global-reset fieldset,
+#reset .global-reset form,
+#reset .global-reset label,
+#reset .global-reset legend,
+#reset .global-reset table,
+#reset .global-reset caption,
+#reset .global-reset tbody,
+#reset .global-reset tfoot,
+#reset .global-reset thead,
+#reset .global-reset tr,
+#reset .global-reset th,
+#reset .global-reset td,
+#reset .global-reset article,
+#reset .global-reset aside,
+#reset .global-reset canvas,
+#reset .global-reset details,
+#reset .global-reset embed,
+#reset .global-reset figure,
+#reset .global-reset figcaption,
+#reset .global-reset footer,
+#reset .global-reset header,
+#reset .global-reset hgroup,
+#reset .global-reset menu,
+#reset .global-reset nav,
+#reset .global-reset output,
+#reset .global-reset ruby,
+#reset .global-reset section,
+#reset .global-reset summary,
+#reset .global-reset time,
+#reset .global-reset mark,
+#reset .global-reset audio,
+#reset .global-reset video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+#reset .global-reset body {
+  line-height: 1;
+}
+#reset .global-reset ol, #reset .global-reset ul {
+  list-style: none;
+}
+#reset .global-reset table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#reset .global-reset caption, #reset .global-reset th, #reset .global-reset td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+#reset .global-reset q, #reset .global-reset blockquote {
+  quotes: none;
+}
+#reset .global-reset q:before,
+#reset .global-reset blockquote:before,
+#reset .global-reset q:after,
+#reset .global-reset blockquote:after {
+  content: "";
+  content: none;
+}
+#reset .global-reset a img {
+  border: none;
+}
+#reset .global-reset article,
+#reset .global-reset aside,
+#reset .global-reset details,
+#reset .global-reset figcaption,
+#reset .global-reset figure,
+#reset .global-reset footer,
+#reset .global-reset header,
+#reset .global-reset hgroup,
+#reset .global-reset menu,
+#reset .global-reset nav,
+#reset .global-reset section {
+  display: block;
+}
+#reset .reset-box-model {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+#reset .reset-font {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+#reset .reset-focus {
+  outline: 0;
+}
+#reset .reset-body {
+  line-height: 1;
+}
+#reset .reset-list-style {
+  list-style: none;
+}
+#reset .reset-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#reset .reset-table-cell {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+#reset .reset-quotation {
+  quotes: none;
+}
+#reset .reset-quotation:before, #reset .reset-quotation:after {
+  content: "";
+  content: none;
+}
+#reset .reset-image-anchor-border {
+  border: none;
+}
+#reset .reset-html5 article,
+#reset .reset-html5 aside,
+#reset .reset-html5 details,
+#reset .reset-html5 figcaption,
+#reset .reset-html5 figure,
+#reset .reset-html5 footer,
+#reset .reset-html5 header,
+#reset .reset-html5 hgroup,
+#reset .reset-html5 menu,
+#reset .reset-html5 nav,
+#reset .reset-html5 section {
+  display: block;
+}
+/* ========================= */
+/* Pink/Green Drowndown Menu */
+/* ========================= */
+.dropdown:hover {
+  -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.7);
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  border-top-right-radius: 6px;
+}
+.dropdown a {
+  display: block;
+  background: #3e8f80;
+  color: #fff;
+  padding: 11px 18px;
+  font-size: 18px;
+  font-weight: 300;
+  position: relative;
+  word-spacing: 3px;
+}
+.dropdown a img {
+  position: absolute;
+  right: 10px;
+  top: 4px;
+}
+.dropdown > a:first-child {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.dropdown .dropdown-items {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  margin-top: 40px;
+  z-index: 1;
+  -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.8);
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  border-bottom-left-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  border-bottom-right-radius: 6px;
+}
+.dropdown .dropdown-items > a:last-child {
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  border-bottom-left-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  border-bottom-right-radius: 6px;
+}
+.dropdown .dropdown-items a {
+  border-top: 2px dotted rgba(255, 255, 255, 0.4);
+}
+/* Transforms when hovered */
+.dropdown:hover > a:first-child {
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-bottom-left-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  border-bottom-right-radius: 0;
+}
+.dropdown a:hover {
+  background: #e96283;
+  text-decoration: none;
+}
+.dropdown:hover .dropdown-items {
+  display: block;
+}
+/* ======== */
+/* Carousel */
+/* ======== */
+div.frontpage-carousel {
+  margin: 0 auto;
+  width: 940px;
+  height: 250px;
+}
+div.frontpage-carousel .edge {
+  height: 246px;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  border-left: none;
+  border-right: none;
+}
+/* ============= */
+/* Embedded Font */
+/* ============= */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url('lato300.woff') format('woff');
+}
+/* ============== */
+/* Page structure */
+/* ============== */
+html {
+  background: #222222;
+}
+body {
+  /* The canonical logo font is HelveticaNeue-Light. But we can't legally embed that in
+   * the page, not can we assume its available on the user's machine. We use Lato, an
+   * attractive (and similar) font from Google Web Fonts. */
+
+  font-family: 'Lato', serif;
+  background: #fff;
+  color: #000;
+  /* Disallow wordpress' body padding. We'll handle it in .topbar */
+
+  padding-top: 0 !important;
+}
+a {
+  color: #3e8f80;
+}
+a:hover {
+  color: #1f4840;
+  text-decoration: underline;
+}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  text-decoration: none;
+}
+/* WP Widget UL */
+/* ------------ */
+ul.xoxo {
+  list-style-type: none;
+  margin-left: 0;
+}
+ul.xoxo ul li {
+  padding-bottom: 4px;
+}
+div.item-options {
+  padding: 10px 0;
+}
+div.item-options a {
+  margin: 0 5px;
+}
+ul#members-list {
+  list-style-type: none;
+  margin-left: 0;
+}
+/* WP VCard */
+/* -------- */
+.vcard {
+  padding: 0 !important;
+  background: rgba(220, 220, 220, 0.2);
+  vertical-align: top;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+.vcard .item-avatar {
+  display: inline-block;
+  margin: 5px;
+}
+.vcard .item {
+  position: absolute;
+  left: 66px;
+  top: 8px;
+  display: inline-block;
+}
+.entry p {
+  font-size: 15px;
+}
+/* BP Sidebar */
+/* ---------- */
+#sidebar-me, #sidebar-login-form {
+  background: #f7f7f7;
+  -webkit-box-shadow: 2px 2px 4px #eeeeee;
+  -moz-box-shadow: 2px 2px 4px #eeeeee;
+  box-shadow: 2px 2px 4px #eeeeee;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+#sidebar-me > a:first-child, #sidebar-login-form > a:first-child {
+  float: left;
+  margin-top: 13px;
+  margin-right: 14px;
+}
+#sidebar-me input[type="submit"], #sidebar-login-form input[type="submit"] {
+  color: #ffffff;
+  background-color: #339bb9;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#5bc0de), to(#339bb9));
+  /* Konqueror */
+
+  background-image: -moz-linear-gradient(#5bc0de, #339bb9);
+  /* FF 3.6+ */
+
+  background-image: -ms-linear-gradient(#5bc0de, #339bb9);
+  /* IE10 */
+
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5bc0de), color-stop(100%, #339bb9));
+  /* Safari 4+, Chrome 2+ */
+
+  background-image: -webkit-linear-gradient(#5bc0de, #339bb9);
+  /* Safari 5.1+, Chrome 10+ */
+
+  background-image: -o-linear-gradient(#5bc0de, #339bb9);
+  /* Opera 11.10 */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#339bb9', GradientType=0);
+  /* IE6 & IE7 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#339bb9', GradientType=0)";
+  /* IE8+ */
+
+  background-image: linear-gradient(#5bc0de, #339bb9);
+  /* the standard */
+
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-color: #339bb9 #339bb9 #22697d;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  display: inline-block;
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, color-stop(25%, #ffffff), #e6e6e6);
+  background-image: -moz-linear-gradient(#ffffff, color-stop(#ffffff, 25%), #e6e6e6);
+  padding: 5px 14px 6px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  color: #333;
+  font-size: 13px;
+  line-height: normal;
+  border: 1px solid #ccc;
+  border-bottom-color: #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+  color: #ffffff;
+  background-color: #0064cd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#08b5fb), to(#0064cd));
+  /* Konqueror */
+
+  background-image: -moz-linear-gradient(#08b5fb, #0064cd);
+  /* FF 3.6+ */
+
+  background-image: -ms-linear-gradient(#08b5fb, #0064cd);
+  /* IE10 */
+
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #08b5fb), color-stop(100%, #0064cd));
+  /* Safari 4+, Chrome 2+ */
+
+  background-image: -webkit-linear-gradient(#08b5fb, #0064cd);
+  /* Safari 5.1+, Chrome 10+ */
+
+  background-image: -o-linear-gradient(#08b5fb, #0064cd);
+  /* Opera 11.10 */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#08b5fb', endColorstr='#0064cd', GradientType=0);
+  /* IE6 & IE7 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#08b5fb', endColorstr='#0064cd', GradientType=0)";
+  /* IE8+ */
+
+  background-image: linear-gradient(#08b5fb, #0064cd);
+  /* the standard */
+
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-color: #0064cd #0064cd #003f81;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  cursor: default;
+  background-image: none;
+  filter: alpha(opacity=65);
+  -khtml-opacity: 0.65;
+  -moz-opacity: 0.65;
+  opacity: 0.65;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#sidebar-me input[type="submit"]:hover, #sidebar-login-form input[type="submit"]:hover {
+  color: #ffffff !important;
+}
+#sidebar-me input[type="submit"]:hover, #sidebar-login-form input[type="submit"]:hover {
+  background-position: 0 -15px;
+  color: #333;
+  text-decoration: none;
+}
+#sidebar-me input[type="submit"]:focus, #sidebar-login-form input[type="submit"]:focus {
+  outline: 1px dotted #666;
+}
+#sidebar-me input[type="submit"].active,
+#sidebar-login-form input[type="submit"].active,
+#sidebar-me input[type="submit"]:active,
+#sidebar-login-form input[type="submit"]:active {
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+#sidebar-me input[type="submit"][disabled], #sidebar-login-form input[type="submit"][disabled] {
+  cursor: default;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: alpha(opacity=65);
+  -khtml-opacity: 0.65;
+  -moz-opacity: 0.65;
+  opacity: 0.65;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* ============== */
+/* Page Structure */
+/* ============== */
+.headspace {
+  height: 25px;
+  background: #363636;
+}
+header {
+  margin-bottom: 20px;
+}
+header .topbar {
+  /* Height of the OKFN header */
+
+  /* Those couple of pixels of gradient which bootstrap puts after the black bar */
+
+  position: static;
+  height: 46px;
+}
+header .topbar .fill {
+  height: 40px;
+}
+header .topbar .fill a.brand img {
+  display: block;
+  float: left;
+  margin-top: -4px;
+  margin-right: 12px;
+}
+header .topbar .fill .featurelinks {
+  margin-top: 8px;
+  float: right;
+}
+header .topbar ul#nav {
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+  position: relative;
+  left: 0;
+}
+header .topbar ul#nav > li {
+  display: block;
+  float: left;
+}
+header .topbar ul#nav a {
+  display: block;
+  float: none;
+  padding: 10px 10px 11px;
+  line-height: 19px;
+  text-decoration: none;
+}
+header .topbar ul#nav a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+header .topbar ul#nav .current_page_item > a {
+  background-color: #222;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+header .topbar ul#nav.secondary-nav {
+  float: right;
+  margin-left: 10px;
+  margin-right: 0;
+}
+header .topbar ul#nav.secondary-nav .menu-dropdown, header .topbar ul#nav.secondary-nav .dropdown-menu {
+  right: 0;
+  border: 0;
+}
+header .topbar ul#nav a.menu:hover,
+header .topbar ul#nav li.open .menu,
+header .topbar ul#nav .dropdown-toggle:hover,
+header .topbar ul#nav .dropdown.open .dropdown-toggle {
+  background: #444;
+  background: rgba(255, 255, 255, 0.05);
+}
+header .topbar ul#nav .menu-dropdown, header .topbar ul#nav .dropdown-menu {
+  background-color: #333;
+}
+header .topbar ul#nav .menu-dropdown a.menu,
+header .topbar ul#nav .dropdown-menu a.menu,
+header .topbar ul#nav .menu-dropdown .dropdown-toggle,
+header .topbar ul#nav .dropdown-menu .dropdown-toggle {
+  color: #ffffff;
+}
+header .topbar ul#nav .menu-dropdown a.menu.open,
+header .topbar ul#nav .dropdown-menu a.menu.open,
+header .topbar ul#nav .menu-dropdown .dropdown-toggle.open,
+header .topbar ul#nav .dropdown-menu .dropdown-toggle.open {
+  background: #444;
+  background: rgba(255, 255, 255, 0.05);
+}
+header .topbar ul#nav .menu-dropdown li a, header .topbar ul#nav .dropdown-menu li a {
+  color: #999;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+header .topbar ul#nav .menu-dropdown li a:hover, header .topbar ul#nav .dropdown-menu li a:hover {
+  background-color: #191919;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#292929), to(#191919));
+  /* Konqueror */
+
+  background-image: -moz-linear-gradient(#292929, #191919);
+  /* FF 3.6+ */
+
+  background-image: -ms-linear-gradient(#292929, #191919);
+  /* IE10 */
+
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #292929), color-stop(100%, #191919));
+  /* Safari 4+, Chrome 2+ */
+
+  background-image: -webkit-linear-gradient(#292929, #191919);
+  /* Safari 5.1+, Chrome 10+ */
+
+  background-image: -o-linear-gradient(#292929, #191919);
+  /* Opera 11.10 */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#292929', endColorstr='#191919', GradientType=0);
+  /* IE6 & IE7 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#292929', endColorstr='#191919', GradientType=0)";
+  /* IE8+ */
+
+  background-image: linear-gradient(#292929, #191919);
+  /* the standard */
+
+  color: #ffffff;
+}
+header .topbar ul#nav .menu-dropdown .divider, header .topbar ul#nav .dropdown-menu .divider {
+  background-color: #222;
+  border-color: #444;
+}
+header a.logo {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 300;
+  width: 150px;
+  padding-top: 10px;
+  padding-left: 66px;
+  text-align: left;
+  line-height: 22px;
+  background: #fcf;
+  color: #000;
+  background: url('../images/header-logo.png') left top no-repeat;
+  height: 55px;
+}
+header .search-form {
+  display: none;
+}
+.strapline {
+  font-family: Georgia;
+  color: #555;
+  text-shadow: 2px 2px #eee;
+  margin-bottom: 30px;
+}
+.strapline > .inner {
+  border: 2px dotted #aaa;
+  border-left: none;
+  border-right: none;
+  background: url('../images/header-strapline.png') left no-repeat;
+  padding: 10px 0 10px 100px;
+  line-height: 22px;
+  font-size: 17px;
+}
+#content {
+  width: 940px;
+}
+#content .post {
+  position: relative;
+  margin-bottom: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #f7f7f7;
+  -webkit-box-shadow: 2px 2px 4px #eeeeee;
+  -moz-box-shadow: 2px 2px 4px #eeeeee;
+  box-shadow: 2px 2px 4px #eeeeee;
+  padding: 10px;
+}
+#content .post .author-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+#content .post h2 a {
+  color: #000;
+}
+#sidebar {
+  display: none;
+  width: 280px;
+}
+footer {
+  background: #222222 url('../images/footer-watermark copy.png') top right no-repeat;
+  margin-top: 50px;
+  padding: 0;
+}
+footer > .inner {
+  background: url('../images/footer-bevel.png') top repeat-x;
+  padding: 10px 0 30px 0;
+  color: #fff;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
+  min-height: 190px;
+}
+footer > .inner a {
+  color: #fff;
+}
+footer > .inner p {
+  margin-bottom: 4px;
+}
+footer > .inner h1, footer > .inner h2, footer > .inner h3 {
+  color: #fff;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 4px;
+}
