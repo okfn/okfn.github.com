@@ -713,7 +713,6 @@ header .search-form {
   display: none;
 }
 .strapline {
-  font-family: Georgia;
   color: #555;
   text-shadow: 2px 2px #eee;
   margin-bottom: 30px;
@@ -724,8 +723,8 @@ header .search-form {
   border-right: none;
   background: url('../images/header-strapline.png') left no-repeat;
   padding: 10px 0 10px 100px;
-  line-height: 22px;
-  font-size: 17px;
+  line-height: 26px;
+  font-size: 21px;
 }
 #content {
   width: 940px;
