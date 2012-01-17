@@ -1,52 +1,15 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>OKFN Labs</title>
-  <script type='text/javascript' src='js/jquery-1.7.1.min.js'></script>
+---
+layout: default
+title: About
+---
 
-  <link rel="stylesheet" href="style.css"/>
+<h2>This page is deprecated.</h2>
 
-  <script type="text/javascript" src="js/spin.min.js"></script>
-  <script type="text/javascript" src="js/mustache.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
-</head>
+This is a prototype site for a GitHub & JavaScript-powered incubator. To add a project to labs, create a repository for it under the <a href="http://github.com/okfn">OKFN</a> account on GitHub. Then simply upload a <code>.labs_project</code> metadata file to its root directory.
+<br/>
+<br/>
 
-<body>
-<header>
-  <div class="topbar">
-    <div class="fill">
-      <div class="container">
-        <a title="Home" 
-          class="brand" 
-          href="/"><img alt="logo" src="images/topbar-logo%20copy.png"/>OKFN Labs</a>
-        <nav>
-        <ul id="nav">
-          <li><a href="/" title="Home">Home</a></li>
-          <li><a href="spreadsheet.html" title="Spreadsheet">Spreadsheet</a></li>
-          <li><a href="about.html" title="About">About</a></li>
-        </ul><!-- #nav -->
-        </nav>
-      </div>
-    </div>
-  </div>
-</header>
-
-<div class="container">
-  <div class="strapline">
-  <div class="inner">
-    The home of incubation and innovation within the Open Knowledge Foundation.
-  </div><!-- /inner     -->
-  </div><!-- /strapline -->
-</div><!-- /container -->
-
-<div class="container">
-
-  This is a prototype site for a GitHub & JavaScript-powered incubator. To add a project to labs, create a repository for it under the <a href="http://github.com/okfn">OKFN</a> account on GitHub. Then simply upload a <code>.labs_project</code> metadata file to its root directory.
-  <br/>
-  <br/>
-
-  <pre>
+<pre>
 labs_project({
     "image" : "http://link_to_image.gif",
     "category" : "Category Of Project",
@@ -58,39 +21,3 @@ labs_project({
     "imagename" : "not_used"
 });
 </pre>
-</div> <!-- /container -->
-  
-<footer>
-  <div class="inner">
-  <div class="container">
-  <div class="row">
-    <div id="first" class="span-one-third">
-      <h3>Search Labs</h3>
-        <form method="get" id="searchform" action="http://labs.okfn.org/">
-          <input disabled="disabled" type="text" class="field" name="s" id="s" placeholder="Search" />
-          <input disabled="disabled" type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
-        </form>
-    </div><!-- #first .widget-area -->
-    <div id="second" class="span-one-third">
-      <h3>OKFN Network</h3>
-      <ul>
-        <li><a href="http://okfn.org">OKFN.org</a></li>
-        <li><a href="http://openspending.org">Open Spending</a></li>
-        <li><a href="http://ckan.org">CKAN</a></li>
-        <li><a href="http://thedatahub.org">TheDataHub</a></li>
-      </ul>
-    </div><!-- #second .widget-area -->
-    <div id="third" class="span-one-third">
-      <h3>Meta</h3>
-© 2011 Open Knowledge Foundation.
-<br/><br/>
-Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on <a href="http://github.com">Github</a>.
-    </div><!-- #third .widget-area -->
-  </div><!-- /row -->
-  </div><!-- /container -->
-  </div><!-- /inner -->
-</footer>
-</body>
-
-</html>
-

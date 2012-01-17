@@ -1,0 +1,611 @@
+/* ==================== */
+/* Wordpress: Widget UL */
+/* ==================== */
+ul.xoxo {
+  list-style-type: none;
+  margin-left: 0;
+  ul li {
+    padding-bottom: 4px;
+  }
+}
+div.item-options {
+  padding: 10px 0;
+  a {
+    margin: 0 5px; 
+  }
+}
+ul#members-list {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+/* ================ */
+/* Wordpress: VCard */
+/* ================ */
+.vcard {
+  padding: 0 !important;
+  background: rgba(220,220,220,0.2);
+  vertical-align: top;
+  .border-radius(5px);
+  position: relative;
+  .item-avatar {
+    display: inline-block;
+    margin: 5px;
+  }
+  .item {
+    position: absolute;
+    left: 66px;
+    top: 8px;
+    display: inline-block;
+  }
+}
+
+/* ===================== */
+/* Wordpress: Blog Entry */
+/* ===================== */
+.entry p {
+  font-size: 15px;
+}
+
+/* ================== */
+/* Wordpress: Sidebar */
+/* ================== */
+#sidebar #sidebar-login-form,
+#sidebar #sidebar-me,
+#sidebar .widget {
+  background: @col_green;
+  padding: 4px 6px 8px 6px;
+  .border-radius(8px);
+  margin-bottom: 10px;
+}
+/* Normal sidebar widget */
+#sidebar .widget {
+  h3.widgettitle {
+    color: #fff;
+    a { color: #fff; }
+    padding-bottom: 5px;
+    font-size: 14px;
+  }
+  > div {
+    background: #fff;
+    .border-radius(6px);
+    padding: 7px;
+    color: #000;
+    a {
+      color: #000;
+    }
+    form {
+      margin: 8px 0;
+      input[type="text"] {
+        width: 204px;
+      }
+      input[type=submit] {
+        margin: 10px 0 0 20px;
+      }
+    }
+  }
+  > ul {
+    list-style: none;
+    margin: 0;
+    li {
+      background: #fff;
+      .border-radius(6px);
+      padding: 2px 7px;
+      color: #000;
+      margin: 2px 0;
+      font-size: 90%;
+      a {
+        color: #000;
+      }
+    }
+  }
+
+  /* Tweet Blender */
+  /* ------------- */
+  .tb_tweet {
+    padding: 10px 0;
+  }
+  .tb_footer {
+    margin: 6px auto;
+    display: block;
+    * { float: none; }
+  }
+  .tb-widget-configuration {
+    margin: 0;
+  }
+}
+
+/* ======================================== */
+/* Wordpress: Sidebar you-are-logged-in box */
+/* ======================================== */
+#sidebar-me {
+  > a:first-child {
+    float: left;
+    margin-top: 6px;
+    margin-right: 14px;
+  }
+  a {
+    color: #fff;
+  }
+  h4 {
+    padding-bottom: 2px;
+    line-height: 25px;
+  }
+}
+
+/* ============================= */
+/* Wordpress: Sidebar login form */
+/* ============================= */
+#sidebar #sidebar-login-form {
+  background-color: #eee;
+  padding-left: 10px;
+  label {
+    width: 95px;
+    text-align: left;
+    float: left;
+    &:first-child { margin-right: 15px; }
+  }
+  .forgetmenot {
+    display: inline-block;
+    label {
+      width: 130px;
+      float: none;
+    }
+  }
+  input[type="text"],
+  input[type="password"] {
+    margin: 0;
+    width: 95px;
+  }
+  input[type="submit"] { 
+    margin: 5px 0 0 0;
+  }
+}
+
+/* ========================================================== */
+/* Wordpress: #login-text connects to the #sidebar-login-form */
+/* ========================================================== */
+#sidebar p#login-text {
+  .border-top-left-radius(8px);
+  .border-top-right-radius(8px);
+  background: #eee;
+  padding: 8px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#sidebar form#sidebar-login-form {
+  .border-top-left-radius(0px);
+  .border-top-right-radius(0px);
+}
+
+/* ======================================= */
+/* Wordpress: End-of-article response form */
+/* ======================================= */
+#respond {
+  background: #ccc;
+  padding: 8px;
+  padding-top: 2px;
+  .border-radius(8px);
+  h3 { color: #fff }
+  form {
+    background: #fff;
+    .border-radius(6px);
+    padding: 10px;
+    label { margin-right: 10px; }
+    textarea { width: 80%; }
+  }
+  .comment-avatar-box {
+    float: right;
+  }
+  code {
+    display: block;
+    line-height: 16px;
+  }
+}
+
+
+/* ================================== */
+/* Buddypress: Top links (customised) */
+/* ================================== */
+body#bp-default #wp-admin-bar {
+  background: rgba(0,0,0,0.8);
+  .padder {
+    background: none;
+    width: 940px;
+    > a:first-child {
+      display: none;
+    }
+    > ul {
+      position: absolute;
+      right: 0;
+      > li {
+        position: static;
+        right: none;
+      }
+    }
+  }
+}
+
+
+/* ============================ */
+/* BuddyPress: Groups directory */
+/* ============================ */
+ul.item-list,
+ul#groups-list {
+  /* Groups directory */
+  list-style: none;
+  margin: 10px 0;
+  margin-left: 0;
+  li {
+    border-bottom: 1px solid #ccc;
+    background: #f7f7f7;
+    padding: 12px;
+    .activity-avatar,
+    .item-avatar {
+      float: right;
+      padding: 3px;
+      background: #fff;
+      border: 1px solid #ccc;
+      margin-left: 8px;
+      margin-bottom: 8px;
+    }
+  }
+  p img {
+    vertical-align: middle;
+    margin: 4px;
+  }
+  .activity-content:after,
+  .item:after {
+    .clearfix();
+  }
+}
+.activity-meta > * {
+  margin: 0 12px;
+  &:first-child { margin-left: 0; }
+  span {
+    color: #999;
+    &:before { content: "("; }
+    &:after { content: ")"; }
+  }
+}
+.padder {
+  position: relative;
+}
+#item-actions {
+  /* Admin list */
+  float: right;
+  margin: 0 0 10px 10px;
+  padding: 4px 10px 8px 10px;
+  h3 {
+    margin-top: 0;
+    font-size: 9px;
+  }
+  ul {
+    text-align: center;
+    list-style: none;
+    margin: 0 0 0 0;
+  }
+}
+#item-header {
+  /* Push the nav bar below the major avatar */
+  min-height: 190px;
+}
+#item-header-avatar {
+  /* Major group avatar */
+  float: left;
+  padding: 5px;
+  border: 1px solid #eee;
+  margin: 8px;
+}
+#item-header-content:after {
+  .clearfix();
+}
+.item-list-tabs ul {
+  li a {
+    padding-left: 10px;
+    padding-right: 10px;
+    span {
+      color: #999;
+      &:before { content: "("; }
+      &:after { content: ")"; }
+    }
+  }
+  .last {
+    float: right;
+  }
+}
+.item-list-tabs#subnav ul {
+  margin-top: -8px;
+  margin-bottom: 20px;
+  border: none;
+  .current a,
+  .current a:hover {
+    background-color: @col_green;
+    color: #fff;
+    span { color: #fff; }
+  }
+  a:hover {
+    background-color: #f0f0f0;
+    color: @col_green;
+  }
+}
+
+/* ==================================== */
+/* Buddypress: My account: Special case */
+/* ==================================== */
+body.my-account .item-list-tabs ul li a {
+  font-size: 13px;
+  padding: 0 7px;
+  line-height: 26px;
+}
+
+/* ========================= */
+/* Buddypress: Members lists */
+/* ========================= */
+#members-list {
+  font-size: 0;
+  li {
+    display: block;
+    float: left;
+    font-size: 12px;
+    background: #eee;
+    .border-radius(6px);
+    width: 304px;
+    margin: 5px 3px;
+    padding: 9px 7px;
+    height: 52px;
+    overflow: hidden;
+    .item-avatar {
+      float: left;
+      margin-right: 14px;
+    }
+    .item-title {
+      font-size: 14px;
+      .update {
+        display: none;
+      }
+    }
+  }
+}
+#members-list:after {
+  .clearfix();
+}
+
+
+/* ========== */
+/* Front-page */
+/* ========== */
+body.home-page {
+  .st_facebook_buttons  { display: none; }
+  .st_twitter_buttons   { display: none; }
+  .st_email_buttons     { display: none; }
+  .st_sharethis_buttons { display: none; }
+  .st_fblike_buttons    { display: none; }
+  .st_plusone_buttons   { display: none; }
+}
+
+/* ================== */
+/* Frontpage Carousel */
+/* ================== */
+div.frontpage-carousel {
+  margin: 0 auto;
+  width: 940px;
+  height: 250px;
+  margin-bottom: 20px;
+  .edge {
+    height: 246px;
+    border: 2px solid rgba(255,255,255,0.75);
+    border-left: none;
+    border-right: none;
+  }
+  .jcarousel-container {
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background: #D4D0C8;
+      border: 1px solid #808080;
+  }
+  .jcarousel-direction-rtl {
+    direction: rtl;
+  }
+  .jcarousel-container-horizontal {
+      width: 940px;
+      padding: 20px 40px;
+  }
+  .jcarousel-clip {
+      overflow: hidden;
+      width:  940px;
+      height: 250px;
+  }
+  .jcarousel-item {
+      width: 940px;
+      height: 250px;
+  }
+  .jcarousel-item:hover,
+  .jcarousel-item:focus {
+      border-color: #808080;
+  }
+  .jcarousel-item-horizontal {
+      margin-left: 0;
+      margin-right: 7px;
+  }
+  .jcarousel-direction-rtl .jcarousel-item-horizontal {
+    margin-left: 7px;
+    margin-right: 0;
+  }
+  .jcarousel-next,
+  .jcarousel-prev {
+    display: none !important;
+    position: absolute;
+    top: 50px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.9);
+    content: '';
+    text-align: center;
+    padding: 8px 18px 8px 18px;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+  }
+  .frontpage-carousel:hover .jcarousel-next,
+  .frontpage-carousel:hover .jcarousel-prev {
+    display: block !important;
+  }
+  .jcarousel-next {
+    right: 0px;
+        border-top-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+        border-bottom-left-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+  }
+  .jcarousel-prev {
+    left: 0px;
+        border-top-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+        border-bottom-right-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+  }
+  .jcarousel-prev:hover,
+  .jcarousel-prev:focus,
+  .jcarousel-next:hover,
+  .jcarousel-next:focus,
+  .jcarousel-prev:active,
+  .jcarousel-next:active {
+    color: #933;
+  }
+}
+
+/* ================================== */
+/* Frontpage Carousel's speech bubble */
+/* ================================== */
+.carousel-bubble {
+  width: 300px;
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  background: #fff;
+       border-radius: 5px;
+  -moz-border-radius: 5px;
+  overflow: hidden;
+
+  > .inner {
+    width: 220px;
+    padding: 20px 24px;
+  }
+}
+
+/* ========================= */
+/* Pink/Green Drowndown Menu */
+/* ========================= */
+.okfn-dropdown {
+  position: relative;
+  &:hover {
+    .box-shadow(2px -3px 5px rgba(0,0,0,0.5));
+    .border-radius(6px);
+    /* Transforms when hovered */
+    > a:first-child {
+      .border-top-left-radius(0);
+      .border-top-right-radius(0);
+    }
+    .okfn-dropdown-items {
+      display: block;
+    }
+  }
+  a {
+    display: block;
+    background-color: @col_green;
+    color: #fff;
+    padding: 11px 18px;
+    font-size: 18px;
+    position: relative;
+    &:hover {
+      background-color: @col_pink;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  > a.background-heart,
+  > a.background-bubble,
+  > a.background-cog    { 
+    background-position: 98% 20%;
+    background-repeat: no-repeat; 
+  }
+  > a.background-cog      { background-image: url('../images/menu-icon-1.png'); }
+  > a.background-bubble   { background-image: url('../images/menu-icon-2.png'); }
+  > a.background-heart    { background-image: url('../images/menu-icon-3.png'); }
+  > a:first-child {
+    .border-radius(6px);
+  }
+}
+.okfn-dropdown-items {
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+  margin-bottom: 40px;
+  z-index: 1;
+  .box-shadow(2px -3px 5px rgba(0,0,0,0.5));
+  .border-top-left-radius(6px);
+  .border-top-right-radius(6px);
+  a {
+    border-bottom: 2px dotted rgba(255,255,255,0.4);
+  }
+  > a:first-child {
+    .border-top-left-radius(6px);
+    .border-top-right-radius(6px);
+  }
+}
+
+
+/* ============ */
+/* Post Content */
+/* ============ */
+img.alignleft {
+  float: left;
+  display: inline;
+  margin-right: 24px;
+  margin-top: 4px;
+}
+img.alignright {
+  float: right;
+  display: inline;
+  margin-left: 24px;
+  margin-top: 4px;
+}
+img.alignleft,
+img.alignright {
+  margin-bottom: 12px;
+}
+div#toc_container {
+  width: 400px;
+}
+
+/* ================ */
+/* Buddypress Forms */
+/* ================ */
+div.submit,
+p.submit {
+  margin-left: 32%;
+  margin-top: 4px;
+}
+li.last {
+  label {
+    width: auto;
+  }
+}
+div.error {
+  font-size: 10px;
+  color: #c00;
+  margin-bottom: 4px;
+  &:before { content: '('; }
+  &:after  { content: ')'; }
+}
+label[for="pwd"] {
+  span { color: #999; }
+}
+table.notification-settings {
+  width: 100%;
+  tr td:nth-child(2) { 
+    width: 500px;
+  }
+}

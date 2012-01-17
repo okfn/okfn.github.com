@@ -1,0 +1,257 @@
+/*
+ * =======================================================
+ * OKFN.CSS IS AN AUTO-GENERATED FILE!!!
+ *
+ * To modify: 
+ * - Change the appropriate file:
+ *   - okfn.less            :: Core page structure & global tags
+ *   - okfn-content.less    :: Website content theming.
+ * - Then recompile the CSS with the Less Compiler:
+ *   `lessc okfn.less`
+ * 
+ * To learn about Less, the dynamic stylesheet language:
+ *   http://lesscss.org/
+ * =======================================================
+ */
+
+/* =========== */
+/* Colorscheme */
+/* =========== */
+@col_green: #3e8f80;
+@col_green_hover: lighten(@col_green, 40%);
+@col_pink: #e96283;
+@col_grey: #222;
+
+/* ======= */
+/* Imports */
+/* ======= */
+@import 'bootstrap.modified.css';
+@import 'functions.less';
+@import 'okfn-content.less';
+
+/* ============= */
+/* Embedded Font */
+/* ============= */
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('opensans-light-webfont.eot');
+    src: url('opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans-light-webfont.woff') format('woff'),
+         url('opensans-light-webfont.ttf') format('truetype'),
+         url('opensans-light-webfont.svg#OpenSansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* =========== */
+/* POSITIONING */
+/* =========== */
+@total-width: 940px;
+@sidebar-width: 240px;
+@sidebar-gap: 20px; 
+@content-width: @total-width - @sidebar-width - @sidebar-gap;
+#sidebar {
+  display: inline-block;
+  vertical-align: top;
+  width: @sidebar-width;
+  /* 4px Hack to avoid whitespace glitch between inline-block elements */
+  margin-left: @sidebar-gap - 4px;
+}
+#content {
+  display: inline-block;
+  width: @content-width;
+}
+
+/* ======== */
+/* Main CSS */
+/* ======== */
+html {
+  background: @col_grey;
+}
+body {
+  /* We use OpenSansLight, an attractive openly-licenced font from Google Web Fonts. */
+  font-family: OpenSansLight, serif;
+  background: #fff;
+  color: #000;
+}
+a {
+  color: @col_green;
+}
+a:hover {
+  color: darken(@col_green, 20%);
+  text-decoration: underline;
+}
+p {
+  font-weight: 300;
+}
+h1,h2,h3,h4,h5,h6 {
+  a:hover {
+    text-decoration: none;
+  }
+}
+/* Override stupid Bootstrap rule */
+h2 { line-height: 26px; }
+h3 { line-height: 23px; }
+h4 { line-height: 19px; }
+h5 { line-height: 16px; }
+h6 { line-height: 16px; }
+#content h1 { margin-top: 20px; margin-bottom: 10px; }
+#content h2 { margin-top: 20px; margin-bottom: 10px; }
+#content h3 { margin-top: 20px; margin-bottom: 7px; }
+#content h4 { margin-top: 20px; margin-bottom: 5px; }
+#content h5 { margin-top: 20px; margin-bottom: 5px; }
+#content h6 { margin-top: 20px; margin-bottom: 5px; }
+
+input[type="image"] { 
+  width: auto;
+}
+
+label, input, select, textarea {
+  /* Override bootstrap.css */
+  font-family: OpenSansLight, serif;
+}
+label {
+  display: block;
+  text-align: left;
+  margin-top: 6px;
+  width: 70%;
+  input {
+    width: 190px;
+  }
+}
+input {
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+/* Use our own top-padding (coloured black) rather than BuddyPress' hack. */
+/* ---------------------------------------------------------------------- */
+body {
+  padding-top: 0 !important;
+}
+.headspace {
+  height: 25px;
+  background: #363636;
+}
+
+/* ========== */
+/* Page Style */
+/* ========== */
+header {
+  margin-bottom: 15px;
+
+  .topbar {
+    /* Height of the OKFN header */
+    @okfn-headspace: 40px;
+    /* Bootstrap's tiny gradient after the black bar */
+    @okfn-blendspace: 6px;
+
+    position: static;
+    height: @okfn-headspace + @okfn-blendspace;
+    .fill {
+      height: @okfn-headspace;
+      a.brand img {
+        display: block; 
+        float: left;
+        margin-top: -4px;
+        margin-right: 12px;
+      }
+      .featurelinks {
+        margin-top: 8px;
+        float: right;
+      }
+    }
+  }
+  .search-form {
+    display: none;
+  }
+  /* CSS Dropdown menu */
+  li.dropdown:hover {
+    .dropdown-menu {
+      display: block;
+    }
+  }
+}
+
+.strapline {
+  color: #555;
+  text-shadow: 2px 2px #eee;
+  margin-bottom: 15px;
+  > .inner {
+    border: 2px dotted #aaa;
+    border-left: none;
+    border-right: none;
+    background: url('../images/header-strapline.png') left no-repeat;
+    padding: 10px 0 10px 100px;
+    line-height: 26px;
+    font-size: 21px;
+  }
+}
+
+#content {
+  .post {
+    margin-bottom: 30px;
+    .border-radius(10px);
+    background: #f7f7f7;
+    .box-shadow(2px 2px 4px #eee);
+    padding: 10px;
+    .author-box {
+      float: right;
+      padding-left: 20px;
+      padding-bottom: 10px;
+    }
+    .post-content {
+      margin-top: -20px;
+    }
+    h2 a {
+      color: #000;
+    }
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: 12px;
+    &.pagetitle {
+      font-size: 26px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  }
+}
+
+footer {
+  @col_footer_green: lighten(saturate(@col_green, 20%), 40%);
+  background: @col_grey url('../images/footer-watermark copy.png') top right no-repeat;
+  margin-top: 50px;
+  padding: 0;
+  > .inner {
+    background: url('../images/footer-bevel.png') top repeat-x;
+    padding: 10px 0 30px 0;
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
+    min-height: 190px;
+    a,
+    a:hover {
+      color: @col_footer_green;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    p {
+      margin-bottom: 4px;
+    }
+    h1,
+    h2,
+    h3 {
+      color: #fff;
+      text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+      padding-bottom: 4px;
+    }
+  }
+  li {
+    color: #fff;
+  }
+}
+
