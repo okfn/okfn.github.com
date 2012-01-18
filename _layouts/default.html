@@ -25,27 +25,50 @@
             class="brand" 
             href="http://okfnlabs.org"><img alt="logo" src="http://okfn.org/wp-content/themes/okfn-master-wordpress-theme/images/topbar-logo%20copy.png"/>OKFN Labs</a>
           <nav>
-          <ul id="nav" class="nav"><li class="current_page_item"><a href="/" title="Home">Home</a></li></ul><!-- #nav -->
-          <ul id="nav" class="nav"><li class="current_page_item"><a href="/spreadsheet.html" title="Spreadsheet">Spreadsheet</a></li></ul><!-- #nav -->
-          <!--ul id="nav" class="nav"><li class="current_page_item"><a href="/about.html" title="About">About</a></li></ul><!-- #nav -->-->
+          <ul id="nav" class="nav">
+            <li class=""><a href="/" title="Home">Home</a></li>
+            <li class="dropdown" data-dropdown="dropdown" >
+              <a href="tools-and-infrastructure.html" class="dropdown-toggle">Tools</a>
+              <ul class="dropdown-menu categorylist-tools-and-infrastructure">
+                {% for post in site.posts %}<li class="category-{{post.category}}"><a href="{{post.url}}">{{post.name}}</a></li>{% endfor %}
+              </ul>
+            </li>
+            <li class="dropdown" data-dropdown="dropdown" >
+              <a href="open-knowledge-production.html" class="dropdown-toggle">Knowledge Production</a>
+              <ul class="dropdown-menu categorylist-open-knowledge-production">
+                {% for post in site.posts %}<li class="category-{{post.category}}"><a href="{{post.url}}">{{post.name}}</a></li>{% endfor %}
+              </ul>
+            </li>
+            <li class="dropdown" data-dropdown="dropdown" >
+              <a href="partnered.html" class="dropdown-toggle">Partnered</a>
+              <ul class="dropdown-menu categorylist-partnered">
+                {% for post in site.posts %}<li class="category-{{post.category}}"><a href="{{post.url}}">{{post.name}}</a></li>{% endfor %}
+              </ul>
+            </li>
+            <li class="dropdown" data-dropdown="dropdown" >
+              <a href="standards.html" class="dropdown-toggle">Standards</a>
+              <ul class="dropdown-menu categorylist-standards">
+                {% for post in site.posts %}<li class="category-{{post.category}}"><a href="{{post.url}}">{{post.name}}</a></li>{% endfor %}
+              </ul>
+            </li>
+            <li class="dropdown" data-dropdown="dropdown" >
+              <a href="chapters.html" class="dropdown-toggle">Chapters</a>
+              <ul class="dropdown-menu categorylist-chapters">
+                {% for post in site.posts %}<li class="category-{{post.category}}"><a href="{{post.url}}">{{post.name}}</a></li>{% endfor %}
+              </ul>
+            </li>
+            <li class="dropdown" data-dropdown="dropdown" >
+              <a href="etc.html" class="dropdown-toggle">Etc</a>
+              <ul class="dropdown-menu categorylist-etc">
+                {% for post in site.posts %}<li class="category-{{post.category}}"><a href="{{post.url}}">{{post.name}}</a></li>{% endfor %}
+              </ul>
+            </li>
+            <li class=""><a href="/spreadsheet.html" title="Spreadsheet">Spreadsheet</a></li>
+          </ul><!-- #nav -->
           </nav>
         </div>
       </div>
     </div>
-
-    <form action="http://okfn.org/search" method="post" class="search-form" role="search">
-      <label for="search-terms" class="accessibly-hidden">Search for:</label>
-      <input type="text" id="search-terms" name="search-terms" value="" />
-
-      <label for="search-which" class="accessibly-hidden">Search these:</label>
-      <select name="search-which" id="search-which" style="width: auto">
-        <option value="members">Members</option>
-        <option value="groups">Groups</option>
-        <option value="blogs">Blogs</option>
-        <option value="forums">Forums</option>
-        <option value="posts">Posts</option></select>
-      <input type="submit" name="search-submit" id="search-submit" value="Search" />
-      <input type="hidden" id="_wpnonce" name="_wpnonce" value="c219629dc4" /><input type="hidden" name="_wp_http_referer" value="/" />        </form><!-- #search-form -->
   </div>
   </header>
 

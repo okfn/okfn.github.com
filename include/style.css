@@ -5,20 +5,85 @@
   width: 100%;
 }
 
-.project {
-  display: inline-block;
-  background: #FFF7D6;
-  border-radius: 10px;
-  padding: 10px;
-  width: 280px;
-  margin: 10px 2px;
+img.project-thumbnail[src=""] {
+  display: none;
 }
-.project img {
-  float: right;
-  padding: 4px;
-  border: 1px solid #000;
-  background: #fff;
+
+ul.dropdown-menu {
+  min-width: 280px;
 }
-.project img[src=""] {
-    display: none;
+
+
+table.project {
+  width: 100%;
 }
+td.short {
+  width: 80px;
+  overflow: hidden;
+}
+td.short a[href=""],
+td.short a[href="None"] {
+  display: none;
+}
+td.medium {
+  width: 140px;
+}
+
+.categorylist-chapters .category-resources,
+.categorylist-chapters .category-project-coordination,
+.categorylist-chapters .category-standards,
+.categorylist-chapters .category-partnered,
+.categorylist-chapters .category-tools-and-infrastructure,
+.categorylist-chapters .category-open-knowledge-management,
+.categorylist-chapters .category-open-knowledge-production {
+  display: none;
+}
+
+.categorylist-standards .category-chapter,
+.categorylist-standards .category-resources,
+.categorylist-standards .category-project-coordination,
+.categorylist-standards .category-partnered,
+.categorylist-standards .category-tools-and-infrastructure,
+.categorylist-standards .category-open-knowledge-management,
+.categorylist-standards .category-open-knowledge-production {
+  display: none;
+}
+
+.categorylist-partnered .category-chapter,
+.categorylist-partnered .category-resources,
+.categorylist-partnered .category-project-coordination,
+.categorylist-partnered .category-standards,
+.categorylist-partnered .category-tools-and-infrastructure,
+.categorylist-partnered .category-open-knowledge-management,
+.categorylist-partnered .category-open-knowledge-production {
+  display: none;
+}
+
+.categorylist-tools-and-infrastructure .category-chapter,
+.categorylist-tools-and-infrastructure .category-resources,
+.categorylist-tools-and-infrastructure .category-project-coordination,
+.categorylist-tools-and-infrastructure .category-standards,
+.categorylist-tools-and-infrastructure .category-partnered,
+.categorylist-tools-and-infrastructure .category-open-knowledge-management,
+.categorylist-tools-and-infrastructure .category-open-knowledge-production {
+  display: none;
+}
+
+.categorylist-open-knowledge-production .category-chapter,
+.categorylist-open-knowledge-production .category-resources,
+.categorylist-open-knowledge-production .category-project-coordination,
+.categorylist-open-knowledge-production .category-standards,
+.categorylist-open-knowledge-production .category-partnered,
+.categorylist-open-knowledge-production .category-open-knowledge-management,
+.categorylist-open-knowledge-production .category-tools-and-infrastructure {
+  display: none;
+}
+
+.categorylist-etc .category-partnered,
+.categorylist-etc .category-chapter,
+.categorylist-etc .category-standards,
+.categorylist-etc .category-tools-and-infrastructure,
+.categorylist-etc .category-open-knowledge-production {
+  display: none;
+}
+
