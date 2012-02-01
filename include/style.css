@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+#content a {
+  text-decoration: underline;
+}
+
 img.project-thumbnail[src=""] {
   display: none;
 }
