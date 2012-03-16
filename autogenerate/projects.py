@@ -52,7 +52,7 @@ name: ${Project_Title}
 status: ${Status}
 category-name: ${Category}
 category: ${categoryclass}
-strapline: ${Strapline}
+strapline: "${Strapline}"
 image: ${thumbnail_url}
 homepage: ${Website}
 wikipage: ${wikipage}
