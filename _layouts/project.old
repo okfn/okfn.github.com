@@ -68,15 +68,29 @@
       </div>
     </div>
   </header>
-  <!--div class="container">
-    <div class="strapline">
-      <div class="inner"> The home of innovation </div>
-    </div>
-  </div--><!-- /container -->
   
   <div class="container">
     <div id="content">
-      {{ content }}
+
+      <img src="{{page.image}}" class="project-page-image"/>
+      <h1>{{page.name}}</h1>
+      <h5>Category: <a href="/?{{page.category}}">{{page.categoryFullName}}</a></h5>
+      <h5>Status: {{page.status}}</h5>
+
+      <h3>Strapline:</h3>
+      {{page.strapline}}
+
+      {% if content %}
+        <h3>Description:</h3>
+        {{content}}
+      {% endif %}
+
+      <h3>Links:</h3>
+      Homepage: <a href="{{page.homepage}}">{{page.homepage}}</a><br/>
+      {% if page.wikipage %}
+      Wiki: <a href="{{page.wikipage}}">{{page.wikipage}}</a>
+      {% endif %}
+
     </div>
   </div><!-- /container -->
   

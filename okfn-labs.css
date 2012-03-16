@@ -1,0 +1,38 @@
+#content {
+  /* No sidebar */
+  width: 100%;
+}
+#content a {
+  text-decoration: underline;
+}
+#content .nav a {
+  text-decoration: none;
+}
+
+.nav-pills .active > a,
+.nav-pills .active > a:hover {
+  background-color: #3E8F80;
+}
+
+img.project-page-image {
+  float: right;
+}
+
+ul.dropdown-menu {
+  min-width: 280px;
+}
+
+table.categorylist {
+  width: 100%;
+}
+td.short {
+  width: 120px;
+  overflow: hidden;
+}
+td.short a[href=""],
+td.short a[href="None"] {
+  display: none;
+}
+td.medium {
+  width: 180px;
+}
