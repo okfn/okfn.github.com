@@ -1,9 +1,9 @@
+#content {
+  /* No sidebar */
+  width: 100%;
+}
 #content a {
   text-decoration: underline;
-}
-
-img.project-thumbnail[src=""] {
-  display: none;
 }
 
 ul.dropdown-menu {
@@ -11,11 +11,11 @@ ul.dropdown-menu {
 }
 
 
-table.project {
+table.categorylist {
   width: 100%;
 }
 td.short {
-  width: 80px;
+  width: 120px;
   overflow: hidden;
 }
 td.short a[href=""],
@@ -23,64 +23,25 @@ td.short a[href="None"] {
   display: none;
 }
 td.medium {
-  width: 140px;
+  width: 180px;
 }
 
-.categorylist-chapters .category-resources,
-.categorylist-chapters .category-project-coordination,
-.categorylist-chapters .category-standards,
-.categorylist-chapters .category-partnered,
-.categorylist-chapters .category-tools-and-infrastructure,
-.categorylist-chapters .category-open-knowledge-management,
-.categorylist-chapters .category-open-knowledge-production {
+/* By default, nothing appears in each dropdown menu */
+.categorylist tr,
+.categorylist li {
   display: none;
+}
+/* Make an exception for li elements which match their ul's class */
+.categorylist-open-knowledge-production li.category-open-knowledge-production,
+.categorylist-tools-and-infrastructure li.category-tools-and-infrastructure,
+.categorylist-partnered li.category-partnered {
+  display: block;
+}
+.categorylist-open-knowledge-production tr.category-open-knowledge-production,
+.categorylist-tools-and-infrastructure tr.category-tools-and-infrastructure,
+.categorylist-partnered tr.category-partnered {
+  display: table-row;
 }
 
-.categorylist-standards .category-chapter,
-.categorylist-standards .category-resources,
-.categorylist-standards .category-project-coordination,
-.categorylist-standards .category-partnered,
-.categorylist-standards .category-tools-and-infrastructure,
-.categorylist-standards .category-open-knowledge-management,
-.categorylist-standards .category-open-knowledge-production {
-  display: none;
-}
 
-.categorylist-partnered .category-chapter,
-.categorylist-partnered .category-resources,
-.categorylist-partnered .category-project-coordination,
-.categorylist-partnered .category-standards,
-.categorylist-partnered .category-tools-and-infrastructure,
-.categorylist-partnered .category-open-knowledge-management,
-.categorylist-partnered .category-open-knowledge-production {
-  display: none;
-}
-
-.categorylist-tools-and-infrastructure .category-chapter,
-.categorylist-tools-and-infrastructure .category-resources,
-.categorylist-tools-and-infrastructure .category-project-coordination,
-.categorylist-tools-and-infrastructure .category-standards,
-.categorylist-tools-and-infrastructure .category-partnered,
-.categorylist-tools-and-infrastructure .category-open-knowledge-management,
-.categorylist-tools-and-infrastructure .category-open-knowledge-production {
-  display: none;
-}
-
-.categorylist-open-knowledge-production .category-chapter,
-.categorylist-open-knowledge-production .category-resources,
-.categorylist-open-knowledge-production .category-project-coordination,
-.categorylist-open-knowledge-production .category-standards,
-.categorylist-open-knowledge-production .category-partnered,
-.categorylist-open-knowledge-production .category-open-knowledge-management,
-.categorylist-open-knowledge-production .category-tools-and-infrastructure {
-  display: none;
-}
-
-.categorylist-etc .category-partnered,
-.categorylist-etc .category-chapter,
-.categorylist-etc .category-standards,
-.categorylist-etc .category-tools-and-infrastructure,
-.categorylist-etc .category-open-knowledge-production {
-  display: none;
-}
 

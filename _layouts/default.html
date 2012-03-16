@@ -13,6 +13,7 @@
 
 <!-- styles -->
 <link href="/theme-okfn/fonts/fonts.min.css" rel="stylesheet">
+<link href="/theme-okfn/css/bootstrap.min.css" rel="stylesheet">
 <link href="/theme-okfn/css/okfn-common.css" rel="stylesheet">
 <link href="/labs.css" rel="stylesheet">
 <link rel="shortcut icon" href="http://assets.okfn.org/p/okfn/img/favicon.ico">
@@ -24,47 +25,29 @@
       <div class="navbar-inner">
         <div class="container">
           <a title="Home" class="brand" href="http://okfnlabs.org">
-            <img alt="logo" src="http://assets.okfn.org/web/images/header-logo.png"/>OKFN Labs
+            <img alt="logo" src="http://assets.okfn.org/web/images/header-logo.png"/>Open Knowledge Foundation Labs
           </a>
           <ul id="nav" class="nav">
             <li class=""><a href="/" title="Home">Home</a></li>
             <li class="dropdown" data-dropdown="dropdown" >
               <a href="/tools-and-infrastructure.html" class="dropdown-toggle">Tools</a>
-              <ul class="dropdown-menu categorylist-tools-and-infrastructure">
+              <ul class="dropdown-menu categorylist categorylist-tools-and-infrastructure">
                 {% for post in site.posts %}<li class="category-{{post.category}}"><a href="{{post.url}}">{{post.name}}</a></li>{% endfor %}
               </ul>
             </li>
             <li class="dropdown" data-dropdown="dropdown" >
               <a href="/open-knowledge-production.html" class="dropdown-toggle">Knowledge Production</a>
-              <ul class="dropdown-menu categorylist-open-knowledge-production">
+              <ul class="dropdown-menu categorylist categorylist-open-knowledge-production">
                 {% for post in site.posts %}<li class="category-{{post.category}}"><a href="{{post.url}}">{{post.name}}</a></li>{% endfor %}
               </ul>
             </li>
             <li class="dropdown" data-dropdown="dropdown" >
               <a href="/partnered.html" class="dropdown-toggle">Partnered</a>
-              <ul class="dropdown-menu categorylist-partnered">
+              <ul class="dropdown-menu categorylist categorylist-partnered">
                 {% for post in site.posts %}<li class="category-{{post.category}}"><a href="{{post.url}}">{{post.name}}</a></li>{% endfor %}
               </ul>
             </li>
-            <li class="dropdown" data-dropdown="dropdown" >
-              <a href="/standards.html" class="dropdown-toggle">Standards</a>
-              <ul class="dropdown-menu categorylist-standards">
-                {% for post in site.posts %}<li class="category-{{post.category}}"><a href="{{post.url}}">{{post.name}}</a></li>{% endfor %}
-              </ul>
-            </li>
-            <li class="dropdown" data-dropdown="dropdown" >
-              <a href="/chapters.html" class="dropdown-toggle">Chapters</a>
-              <ul class="dropdown-menu categorylist-chapters">
-                {% for post in site.posts %}<li class="category-{{post.category}}"><a href="{{post.url}}">{{post.name}}</a></li>{% endfor %}
-              </ul>
-            </li>
-            <li class="dropdown" data-dropdown="dropdown" >
-              <a href="/etc.html" class="dropdown-toggle">Etc</a>
-              <ul class="dropdown-menu categorylist-etc">
-                {% for post in site.posts %}<li class="category-{{post.category}}"><a href="{{post.url}}">{{post.name}}</a></li>{% endfor %}
-              </ul>
-            </li>
-            <li class=""><a href="/spreadsheet.html" title="Spreadsheet">Spreadsheet</a></li>
+            <li class=""><a href="/spreadsheet.html" title="Register a Project">Register a Project</a></li>
           </ul><!-- #nav -->
         </div>
       </div>
@@ -82,7 +65,7 @@
     </div>
     <!-- #content -->
     
-    <div id="sidebar" role="complementary">
+    <!--div id="sidebar" role="complementary">
       <div class="widget">
         <h3 class="widgettitle">Widget Title</h3>
         <div>Widget content goes here. Lorem ipsum...</div>
@@ -91,8 +74,7 @@
         <h3 class="widgettitle">Widget Title</h3>
         <div>Widget content goes here. Lorem ipsum...</div>
       </div>
-    </div>
-    <!-- #sidebar --> 
+    </div--> <!-- #sidebar --> 
     
   </div>
   <!-- /container -->

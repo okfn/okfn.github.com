@@ -5,7 +5,7 @@ title: Tools and Infrastructure
 
 <h2>Tools And Infrastructure</h2>
 
-<table class="zebra-striped projects categorylist-tools-and-infrastructure">
+<table class="table table-striped table-bordered categorylist categorylist-tools-and-infrastructure">
 <thead>
   <tr>
     <th>Name</th>
@@ -22,7 +22,7 @@ title: Tools and Infrastructure
   <td>{{post.status}}</td>
   <td class="long">{{post.strapline}}</td>
   <td class="short"><a href="{{post.homepage}}" target="_blank">Homepage</a><br/><a href="{{post.wikipage}}" target="_blank">Wiki</a></td>
-  <td><img class="project-thumbnail" src="{{post.image}}"/></td>
+  <td class="short" style="text-align: center;"><img src="{{post.image}}"/></td>
 </tr>
 {% endfor %}
 </tbody>
