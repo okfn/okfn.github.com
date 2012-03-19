@@ -36,3 +36,47 @@ td.short a[href="None"] {
 td.medium {
   width: 180px;
 }
+
+
+
+.banner {
+	background-image: url(images/banner-bg.png);
+	background-repeat: repeat-x;
+	background-position: center top;
+	margin-top:-18px;
+}
+.banner .container {
+	height:250px;
+	padding:145px 0px 10px 0px;
+}
+.banner .banner-top {
+	height:150px;
+	color:#EEEEEE;
+}
+.banner .banner-top h1 {
+	color:#FFF;
+	font-size:46px;
+	font-weight:normal;
+	padding-bottom:20px;
+}
+.banner .banner-top .strapline {
+  color: #EEEEEE;
+  text-shadow:none;
+	font-size:18px;
+	line-height:22px;
+}
+.banner .banner-bottom {
+	padding:20px 0px 0px 0px;
+}
+.banner .banner-bottom .instruction {
+	font-size:18px;
+	color:#aaacaa;
+}
+
+.nav-pills > li > a {
+	color:#333333;
+}
+.nav-pills .active > a,
+.nav-pills .active > a:hover {
+    background-color: #222222;
+}

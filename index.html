@@ -3,81 +3,104 @@ layout: default
 title: OKFN Labs
 ---
 
-This page is a work-in-progress.
-<br/><br/>
+<style type="text/css">
+	body {
+		background-color:#f6f6f6;
+	}
+</style>
 
-<ul class="nav nav-pills">
-  <li class="active">
-    <a data-toggle="tab" href="#tools-and-infrastructure">Tools and Infrastructure</a>
-  </li>
-  <li>
-    <a data-toggle="tab" href="#open-knowledge-production">Open Knowledge Production</a>
-  </li>
-  <li>
-    <a data-toggle="tab" href="#partnered">Partnered</a>
-  </li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane active" id="tools-and-infrastructure">
-    <table class="table table-striped table-bordered">
-    <thead>
-      <tr> <th></th><th>Name</th><th>Status</th><th>Strapline</th><th>Links</th> </tr>
-    </thead>
-    <tbody>
-    {% for post in site.posts %}
-    {% if post.category == 'tools-and-infrastructure' %}
-    <tr>
-      <td class="short" style="text-align: center;"><img src="{{post.image}}"/></td>
-      <td class="medium"><a href="{{post.url}}">{{post.name}}</a></td>
-      <td>{{post.status}}</td>
-      <td class="long">{{post.strapline}}</td>
-      <td class="short"><a href="{{post.homepage}}" target="_blank">Homepage</a><br/><a href="{{post.wikipage}}" target="_blank">Wiki</a></td>
-    </tr>
-    {% endif %}
-    {% endfor %}
-    </tbody>
-    </table>
+<div class="banner">
+	<div class="container row" style="background-image:url(images/banner-1.png)">
+    <div class="span8 offset4">
+    	<div class="banner-top">
+        <h1>OKFN <strong>Labs</strong></h1>
+        <div class="strapline">
+          Welcome to OKFN Labs, home to the Open Knowledge Foundations experimental and prototype projects. This page is a work-in-progress.
+        </div>
+      </div>
+      <div class="banner-bottom">
+        <p class="instruction">Browse our projects and initiatives</p>
+        <ul class="nav nav-pills">
+          <li class="active">
+            <a data-toggle="tab" href="#tools-and-infrastructure">Tools and Infrastructure</a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#open-knowledge-production">Open Knowledge Production</a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#partnered">Partnered</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="tab-pane" id="open-knowledge-production">
-    <table class="table table-striped table-bordered">
-    <thead>
-      <tr> <th></th><th>Name</th><th>Status</th><th>Strapline</th><th>Links</th> </tr>
-    </thead>
-    <tbody>
-    {% for post in site.posts %}
-    {% if post.category == 'open-knowledge-production' %}
-    <tr>
-      <td class="short" style="text-align: center;"><img src="{{post.image}}"/></td>
-      <td class="medium"><a href="{{post.url}}">{{post.name}}</a></td>
-      <td>{{post.status}}</td>
-      <td class="long">{{post.strapline}}</td>
-      <td class="short"><a href="{{post.homepage}}" target="_blank">Homepage</a><br/><a href="{{post.wikipage}}" target="_blank">Wiki</a></td>
-    </tr>
-    {% endif %}
-    {% endfor %}
-    </tbody>
-    </table>
-  </div>
-  <div class="tab-pane" id="partnered">
-    <table class="table table-striped table-bordered">
-    <thead>
-      <tr> <th></th><th>Name</th><th>Status</th><th>Strapline</th><th>Links</th> </tr>
-    </thead>
-    <tbody>
-    {% for post in site.posts %}
-    {% if post.category == 'partnered' %}
-    <tr>
-      <td class="short" style="text-align: center;"><img src="{{post.image}}"/></td>
-      <td class="medium"><a href="{{post.url}}">{{post.name}}</a></td>
-      <td>{{post.status}}</td>
-      <td class="long">{{post.strapline}}</td>
-      <td class="short"><a href="{{post.homepage}}" target="_blank">Homepage</a><br/><a href="{{post.wikipage}}" target="_blank">Wiki</a></td>
-    </tr>
-    {% endif %}
-    {% endfor %}
-    </tbody>
-    </table>
-  </div>
-</div><!-- tab-content -->
+</div>
 
-
+<div class="container">
+    <div id="content">
+      
+      <div class="tab-content">
+        <div class="tab-pane active" id="tools-and-infrastructure">
+          <table class="table table-striped table-bordered">
+          <thead>
+            <tr> <th></th><th>Name</th><th>Status</th><th>Strapline</th><th>Links</th> </tr>
+          </thead>
+          <tbody>
+          {% for post in site.posts %}
+          {% if post.category == 'tools-and-infrastructure' %}
+          <tr>
+            <td class="short" style="text-align: center;"><img src="{{post.image}}"/></td>
+            <td class="medium"><a href="{{post.url}}">{{post.name}}</a></td>
+            <td>{{post.status}}</td>
+            <td class="long">{{post.strapline}}</td>
+            <td class="short"><a href="{{post.homepage}}" target="_blank">Homepage</a><br/><a href="{{post.wikipage}}" target="_blank">Wiki</a></td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          </tbody>
+          </table>
+        </div>
+        <div class="tab-pane" id="open-knowledge-production">
+          <table class="table table-striped table-bordered">
+          <thead>
+            <tr> <th></th><th>Name</th><th>Status</th><th>Strapline</th><th>Links</th> </tr>
+          </thead>
+          <tbody>
+          {% for post in site.posts %}
+          {% if post.category == 'open-knowledge-production' %}
+          <tr>
+            <td class="short" style="text-align: center;"><img src="{{post.image}}"/></td>
+            <td class="medium"><a href="{{post.url}}">{{post.name}}</a></td>
+            <td>{{post.status}}</td>
+            <td class="long">{{post.strapline}}</td>
+            <td class="short"><a href="{{post.homepage}}" target="_blank">Homepage</a><br/><a href="{{post.wikipage}}" target="_blank">Wiki</a></td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          </tbody>
+          </table>
+        </div>
+        <div class="tab-pane" id="partnered">
+          <table class="table table-striped table-bordered">
+          <thead>
+            <tr> <th></th><th>Name</th><th>Status</th><th>Strapline</th><th>Links</th> </tr>
+          </thead>
+          <tbody>
+          {% for post in site.posts %}
+          {% if post.category == 'partnered' %}
+          <tr>
+            <td class="short" style="text-align: center;"><img src="{{post.image}}"/></td>
+            <td class="medium"><a href="{{post.url}}">{{post.name}}</a></td>
+            <td>{{post.status}}</td>
+            <td class="long">{{post.strapline}}</td>
+            <td class="short"><a href="{{post.homepage}}" target="_blank">Homepage</a><br/><a href="{{post.wikipage}}" target="_blank">Wiki</a></td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          </tbody>
+          </table>
+        </div>
+      </div><!-- tab-content -->
+  </div>
+</div><!-- /container -->    
+      
