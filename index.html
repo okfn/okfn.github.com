@@ -2,6 +2,12 @@
 layout: default
 title: OKFN Labs
 ---
+<!-- TODO move http://okfn.org/projects/vdm/ to okfnlabs.org/vdm -->
+<!-- TODO move http://okfn.org/projects/datapkg/ to okfnlabs.org/dpm -->
+<!-- TODO go through okfn.org/projects and rearrange as required -->
+<!-- TODO include the link to http://wiki.okfn.org/Europes_Energy somewhere -->
+<!-- TODO push a holding page up for Grano -->
+
 	<style type="text/css">
     body {
       background-color:#f6f6f6;
@@ -12,88 +18,149 @@ title: OKFN Labs
     <div class="container" style="background-image:url(images/banner-1.png)">
       <div class="banner-top">
         <h1>OKFN <strong>Labs</strong></h1>
-        <div class="strapline"> Welcome to OKFN Labs, home to the Open Knowledge Foundations experimental and prototype projects. This page is a work-in-progress. </div>
+        <div class="strapline"> Welcome to OKFN Labs, home to the Open Knowledge Foundations experimental and prototype projects.</div>
       </div>
       <div class="banner-bottom">
         <p class="instruction">Browse our projects and initiatives</p>
-        <ul class="nav nav-pills">
-          <li class="active"> <a data-toggle="tab" href="#tools-and-infrastructure">Tools and Infrastructure</a> </li>
-          <li> <a data-toggle="tab" href="#open-knowledge-production">Open Knowledge Production</a> </li>
-          <li> <a data-toggle="tab" href="#partnered">Partnered</a> </li>
-        </ul>
       </div>
     </div>
   </div>
   
-  <div id="content">
-  
-    <div class="tab-content">
-      
-      <div class="tab-pane active" id="tools-and-infrastructure">
-        <ul class="project-list">
-          {% for post in site.posts %}
-          {% if post.category == 'tools-and-infrastructure' %}
-          <li>
-            <a href="{{post.url}}" class="image">
-              <img src="{{post.image}}" alt=""/>
-            </a>
+  <div class="container">
+    <div id="content">
+    <table class="project-table" cellspacing="30">
+      <tr>
+        <td rowspan="2">
+          <div class="outliner">
+            <a href="http://annotateit.org" class="icon"><img src="/icons/annotator.png" alt=""/></a>
             <span class="text">
-              <h2>{{post.name}}</h2>
-              {{post.strapline}}
-              <a href="{{post.url}}" class="read-more">Read More</a>
+              <h2>AnnotateIt</h2>
+              Annotate any web page simply by incorporating two lines of javascript into your site or running our bookmarklet.
             </span>
-            <a href="{{post.homepage}}" class="status {{post.status}}" target="_blank">
-              {{post.status}}
-            </a>
-          </li>
-          {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-      
-      <div class="tab-pane" id="open-knowledge-production">
-        <ul class="project-list">
-          {% for post in site.posts %}
-          {% if post.category == 'open-knowledge-production' %}
-          <li>
-            <a href="{{post.url}}" class="image">
-              <img src="{{post.image}}" alt=""/>
-            </a>
+            <a href="http://annotateit.org" class="read-more">Read More</a>
+            <span class="status active"></span>
+          </div>
+        </td>
+        <td>
+          <div class="outliner">
+            <a href="http://okfnlabs.org/bubbletree" class="icon"><img src="/icons/bubbletree.png" alt=""/></a>
             <span class="text">
-              <h2>{{post.name}}</h2>
-              {{post.strapline}}
-              <a href="{{post.url}}" class="read-more">Read More</a>
+              <h2>BubbleTree</h2>
+              Display hierarchical (spending) data in an interactive visualization.
             </span>
-            <a href="{{post.homepage}}" class="status {{post.status}}" target="_blank">
-              {{post.status}}
-            </a>
-          </li>
-          {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-      
-      <div class="tab-pane" id="partnered">
-        <ul class="project-list">
-          {% for post in site.posts %}
-          {% if post.category == 'partnered' %}
-          <li>
-            <a href="{{post.url}}" class="image">
-              <img src="{{post.image}}" alt=""/>
-            </a>
+            <a href="http://okfnlabs.org/bubbletree" class="read-more">Go To Site</a>
+            <span class="status active"></span>
+          </div>
+        </td>
+        <td>
+          <div class="outliner">
+            <a href="http://okfnlabs.org/dashboard" class="icon"><img src="/icons/dashboard.png" alt=""/></a>
             <span class="text">
-              <h2>{{post.name}}</h2>
-              {{post.strapline}}
-              <a href="{{post.url}}" class="read-more">Read More</a>
+              <h2>Dashboard</h2>
+              A dashboard of activity across the Open Knowledge Foundation
             </span>
-            <a href="{{post.homepage}}" class="status {{post.status}}" target="_blank">
-              {{post.status}}
-            </a>
-          </li>
-          {% endif %}
-          {% endfor %}
-        </ul>
-      </div><!-- tab-content --> 
-      
-  </div>
+            <a href="http://okfnlabs.org/dashboard" class="read-more">Go To Site</a>
+            <span class="status active"></span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="outliner">
+            <a href="http://okfnlabs.org/grano" class="icon"><img src="/icons/placeholder.png" alt=""/></a>
+            <span class="text">
+              <h2>Grano</h2>
+              Visualise networks of connections, eg. board members of companies.
+            </span>
+            <a href="http://okfnlabs.org/grano" class="read-more">Go To Site</a>
+            <span class="status active"></span>
+          </div>
+        </td>
+        <td rowspan="2">
+          <div class="outliner">
+            <a href="http://okfnlabs.org/recline" class="icon"><img src="/icons/recline.png" alt=""/></a>
+            <span class="text">
+              <h2>Recline</h2>
+              Relax with your data
+            </span>
+            <a href="http://okfnlabs.org/recline" class="read-more">Go To Site</a>
+            <span class="status active"></span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2">
+          <div class="outliner">
+            <a href="http://energy.publicdata.eu/ee/" class="icon"><img src="icons/europesenergy.jpg" alt=""/></a>
+            <span class="text">
+              <h2>Europe's Energy</h2>
+              The application aims to help to put European energy policy (including the 2020 energy targets) into context. Compare different EU countries in terms of their carbon emissions, renewable energy share, energy dependency, net imports, and progress towards their respective renewables targets.
+            </span>
+            <a href="http://energy.publicdata.eu/ee/" class="read-more">Read More</a>
+            <span class="status active"></span>
+          </div>
+        </td>
+        <td>
+          <div class="outliner">
+            <a href="http://bibserver.org" class="icon"><img src="icons/bibserver.png" alt=""/></a>
+            <span class="text">
+              <h2>BibServer</h2>
+              Some text about BibServer here.
+            </span>
+            <a href="http://bibserver.org" class="read-more">Go To Site</a>
+            <span class="status active"></span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2">
+          <div class="outliner">
+            <a href="http://yourtopia.net/" class="icon"><img src="/icons/yourtopia.jpg" alt=""/></a>
+            <span class="text">
+              <h2>Yourtopia</h2>
+              Yourtopia allows the user to construct a measure of social progress world-wide based on your preferences for development. Participate in a global effort to improve tracing of humanity's progress towards the Millennium Development Goals.
+            </span>
+            <a href="http://yourtopia.net/" class="read-more">Read More</a>
+            <span class="status active"></span>
+          </div>
+        </td>
+        <td>
+          <div class="outliner">
+            <a href="http://www.weavinghistory.org/" class="icon"><img src="/icons/weavinghistory.jpg" alt=""/></a>
+            <span class="text">
+              <h2>Weaving History</h2>
+              Create 'factlets' - places, people, events - and string them together into 'threads' at the click of a button. Automatically visualize the results temporally and spatially, search by any attribute, automatically import Wikipedia articles and much more...
+            </span>
+            <a href="http://www.weavinghistory.org/" class="read-more">Read More</a>
+            <span class="status active"></span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="outliner">
+            <a href="http://okfn.org/projects/vdm/" class="icon"><img src="icons/vdm.jpg" alt=""/></a>
+            <span class="text">
+              <h2>Versioned Domain Model (vdm)</h2>
+              Versioned Domain Model (vdm) is a package which allows you to 'version' your domain model in the same way that source code version control systems such as subversion allow you version your code.
+            </span>
+            <a href="http://okfn.org/projects/vdm/" class="read-more">Read More</a>
+            <span class="status active"></span>
+          </div>
+        </td>
+        <td>
+          <div class="outliner">
+            <a href="http://okfn.org/projects/datapkg/" class="icon"><img src="icons/dpm.jpg" alt=""/></a>
+            <span class="text">
+              <h2>DPM</h2>
+              dpm is an user tool for distributing, discovering and installing data (and content) 'packages'.
+            </span>
+            <a href="http://okfn.org/projects/datapkg/" class="read-more">Read More</a>
+            <span class="status active"></span>
+          </div>
+        </td>
+      </tr>
+    </table><!-- /project-list -->
+    </div><!-- /#content -->
+  </div><!-- /container -->
   
