@@ -171,8 +171,8 @@ td.medium {
 }
 .project-table .text p {
   margin-bottom: 5px;
-  font-size: inherit;
-  line-height: inherit;
+  font-size: 11px;
+  line-height: normal;
 }
 #content .project-box .status {
   display:block;
