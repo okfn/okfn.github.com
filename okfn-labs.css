@@ -129,14 +129,15 @@ td.medium {
 }
 
 .project-table td {
-  border: 14px inset transparent;
   font-size: 11px;
   line-height: normal;
   vertical-align: top;
+  width: 320px;
+  padding: 8px;
 }
 .project-table td .outliner {
   position:relative;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #d6d6d6;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -154,18 +155,24 @@ td.medium {
   overflow:hidden;
   text-align:center;
 }
-.project-table .text {
-  height:90px;
-  display:block;
-  overflow: hidden;
-}
-.project-table td[rowspan="2"] .text {
-  height:200px;
+.project-table .icon.right {
+  float: right; 
+  margin-right: 0; 
+  margin-left: 10px;
 }
 .project-table .text h2 {
   font-size:12px;
-  margin: 0px !important;
+  margin: 0 0 4px 0 !important;
   line-height:normal;
+}
+.project-table .text h2 a {
+  color: #000;
+  text-decoration: none !important;
+}
+.project-table .text p {
+  margin-bottom: 5px;
+  font-size: inherit;
+  line-height: inherit;
 }
 #content .project-box .status {
   display:block;
