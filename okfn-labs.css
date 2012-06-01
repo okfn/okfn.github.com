@@ -5,53 +5,64 @@ html {
   line-height: 1.5em;
 }
 body {
-  background: #e6e6e6 url(images/banner-bg.png) repeat-x left -160px;
+  background: #e6e6e6 url(images/banner-bg.png) repeat-x center -160px;
+} 
+body.withbanner {
+  background: #e6e6e6 url(images/banner-bg.png) repeat-x center -50px;
 }
-body.banner {
-  background-position: left top;
-}
+
 p, ul, ol, dl, table {
   line-height: 1.5em;
 }
 a {
   text-decoration: underline;
 }
-header, #banner h1, #banner .strapline {
+
+header {
+  background: url(images/flask.png) no-repeat center 51px;
+  padding-bottom: 70px;
+  min-width: 940px;
+}
+
+.navbar, header .banner h1, header .banner .strapline {
   text-shadow: #000 1px 1px 2px;
 }
-header a {
+.navbar a {
   text-decoration: none;
 }
-#banner {
-  margin-top: 145px;
+
+.banner {
+  padding-top: 90px;
 }
-#banner h1 {
+.banner h1 {
   color: #fff;
   font-size: 46px;
   font-weight: normal;
-  padding-bottom:20px;
+  padding-bottom: 20px;
 }
-#banner p {
+.banner p {
   font-size: 18px;
   font-size: 1.8rem;
 }
-#banner .strapline {
+.banner .strapline {
   color: #eee;
   height: 145px;
 }
-#banner .instruction {
+.banner .instruction {
   color: #666;
-  background: url(images/arrow.png) no-repeat 0 15px;
+  background: url(images/arrow.png) no-repeat 57px 15px;
   margin-left: -14px;
-  padding-left: 14px;
+  padding-left: 70px;
   padding-bottom: 20px;
 }
 
-#activity {
+.activity-box {
   background: #eee;
-  height: 350px;
+  height: 300px;
+  overflow: auto;
+  margin-top: 7px;
+  padding: 5px 0.5em 0.5em 0.5em;
   border: 4px solid #aaa;
-  margin: 0 -4px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -60,21 +71,27 @@ header a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.11);
 }
 
-
-
-#content {
-  width: 100%;
+.activity-box h2 {
+  color: #888;
+  text-shadow: 2px 2px 0 rgb(255, 255, 255);
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }
-#content a.read-more {
+
+#airlock {
+  margin-top: -50px;
+}
+
+.read-more {
   display: block;
   padding-top: 4px;
   text-decoration:none;
   text-align: right;
 }
-#content a.read-more:after {
+.read-more:after {
   content:' »';
 }
-
 
 .project-table td {
   font-size: 11px;
@@ -122,22 +139,11 @@ header a {
   font-size: 11px;
   line-height: normal;
 }
-#content .project-box .status {
-  display:block;
-  position:absolute;
-  width:41px;
-  height:41px;
-  overflow:hidden;
-  top:-1px;
-  left:-1px;
-  background-image: url(images/status.png);
-  background-position: 0px -50px;
-  text-indent:-500px;
-}
-#content .project-box .status.active {
-  background-position: 0px 0px;
-}
 
 footer {
   clear:both;
+}
+
+.push {
+  display: inline-block;
 }

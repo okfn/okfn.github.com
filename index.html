@@ -1,170 +1,187 @@
 ---
 layout: default
 title: OKFN Labs
-bodyclass: banner
----
-<div class="row">
-  <div id="banner" class="span7">
+bodyclass: withbanner
+
+extra:
+  css:
+    - '/lib/activity.css'
+  js:
+    - '/lib/activity.js'
+  raw_js: |
+    $('.activity-list').activity({
+      url: "http://assets.okfnlabs.org/activity/all.js",
+      events: 30
+    });
+
+header: |
+  <div class="banner span5 offset2">
     <h1>OKFN <strong>Labs</strong></h1>
     <p class="strapline">
-      Welcome to the home of the Open Knowledge Foundation&rsquo;s experimental and prototype projects.
+      <span class="push" style="width: 10px">&nbsp;</span>
+      Welcome to the home of the<br>
+      <span class="push" style="width: 18px">&nbsp;</span>
+      Open Knowledge Foundation&rsquo;s<br>
+      <span class="push" style="width: 26px">&nbsp;</span>
+      experimental and prototype projects.
     </p>
     <p class="instruction">Browse our projects and initiatives</p>
   </div>
 
-  <div id="activity" class="span5">
+  <div class="span5">
+    <div class="activity-box">
+      <h2>Recent activity</h2>
+      <div class="activity-list"></div>
+    </div>
   </div>
-</div>
-
-<div id="content">
-  <table class="project-table" cellspacing="30">
-    <tr>
-      <td rowspan="2">
-        <div class="outliner">
-          <a href="http://annotateit.org" class="icon right"><img src="/icons/annotator.png" alt=""/></a>
-          <span class="text">
-            <h2><a href="http://annotateit.org">AnnotateIt</a></h2>
-            <p>A Javascript tool that can be added to any webpage to allow annotation. Annotations can have tags, Markdown content, per-annotation permissions and more. The Bookmarklet allows you to annotate any web page and save annotations to a central server.</p>
-            <p>Used by:</p>
-            <p>&bull;&nbsp;<a href="http://openshakespeare.org/">Open Shakespeare</a> for making community-created critical editions of Shakespeare's works</p>
-            <p>&bull;&nbsp;<a href="http://projects.siyavula.com/">Siyavula</a> - for annotating textbooks</p>
-            <p>&bull;&nbsp;<a href="http://hypothes.is/">Hypothes.is</a></p
-            <p>&bull;&nbsp;<a href="http://papergrader.org/">PaperGrader.org</a> - for annotating and grading academic papers</p>
-          </span>
-          <a href="http://annotateit.org" class="read-more">Read More</a>
-          <span class="status active"></span>
-        </div>
-      </td>
-      <td>
-        <div class="outliner">
-          <a href="http://okfnlabs.org/bubbletree" class="icon"><img src="/icons/bubbletree.png" alt=""/></a>
-          <span class="text">
-            <h2><a href="http://okfnlabs.org/bubbletree">BubbleTree</a></h2>
-            Display hierarchical (spending) data in an interactive visualization.
-            Setup is independent from the OpenSpending platform, but can optionally be integrated with data from the <a href="http://openspending.org">OpenSpending</a> API.
-          </span>
-          <a href="http://okfnlabs.org/bubbletree" class="read-more">Go To Site</a>
-          <span class="status active"></span>
-        </div>
-      </td>
-      <td>
-        <div class="outliner">
-          <a href="http://okfnlabs.org/dashboard" class="icon"><img src="/icons/dashboard.png" alt=""/></a>
-          <span class="text">
-            <h2><a href="http://okfnlabs.org/dashboard">Dashboard</a></h2>
-            <p>A dashboard of activity across the Open Knowledge Foundation.</p>
-            <p>We are building a members map, GitHub stream summaries, blog aggregation and more.</p>
-          </span>
-          <a href="http://okfnlabs.org/dashboard" class="read-more">Go To Site</a>
-          <span class="status active"></span>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <div class="outliner">
-          <a href="http://okfnlabs.org/grano" class="icon"><img src="/icons/placeholder.png" alt=""/></a>
-          <span class="text">
-            <h2><a href="http://okfnlabs.org/grano">Grano</a></h2>
-            Map out and visualise networks of actors and relationships, such as the board members of major corporate entities.
-          </span>
-          <a href="http://okfnlabs.org/grano" class="read-more">Go To Site</a>
-          <span class="status active"></span>
-        </div>
-      </td>
-      <td rowspan="2">
-        <div class="outliner">
-          <a href="http://okfnlabs.org/recline" class="icon right"><img src="/icons/recline.png" alt=""/></a>
-          <span class="text">
-            <h2><a href="http://okfnlabs.org/recline">Recline</a></h2>
-            <p>Relax with your data. Recline is:</p>
-            <p>&bull;&nbsp; A Data Explorer combining a data grid, Google Refine-style data transforms and visualizations all in lightweight javascript and html.</p>
-            <p>&bull;&nbsp; A simple but powerful library of extensible of data components - data grid, graphing, and data connectors - which you can selectively use and build on.</p>
-            <p>The Explorer can be used standalone (just download and use) or can be embedded into your own site. Recline builds on the powerful but lightweight Backbone framework making it extremely easy to extend and adapt. The library's modular design mean means you only have to take what you need.</p>
-          </span>
-          <a href="http://okfnlabs.org/recline" class="read-more">Go To Site</a>
-          <span class="status active"></span>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td rowspan="2">
-        <div class="outliner">
-          <a href="http://energy.publicdata.eu/ee/" class="icon"><img src="icons/europesenergy.jpg" alt=""/></a>
-          <span class="text">
-            <h2><a href="http://energy.publicdata.eu/ee/">Europe's Energy</a></h2>
-            <p>Member States of the European Union have agreed on targets aimed at reducing greenhouse gas emissions by cutting energy consumption by 20% and increasing the share of renewables in the energy mix to 20% by 2020.</p>
-            <p>The 'Europe's Energy' project gives users a set of visual tools to put these targets into context and to understand and compare how progress is being made towards them in different countries. It uses data from Eurostat, the statistical office of the European Union, which provides official statistics on EU Member States.</p>
-          </span>
-          <a href="http://energy.publicdata.eu/ee/" class="read-more">Read More</a>
-          <span class="status active"></span>
-        </div>
-      </td>
-      <td>
-        <div class="outliner">
-          <a href="http://bibserver.org" class="icon"><img src="icons/bibserver.png" alt=""/></a>
-          <span class="text">
-            <h2><a href="http://bibserver.org">BibServer</a></h2>
-            Quickly and easily share collections of bibliographic metadata. Think of what this data actually is – a record of work, a map to the knowledge of humanity. 
-          </span>
-          <a href="http://bibserver.org" class="read-more">Go To Site</a>
-          <span class="status active"></span>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td rowspan="2">
-        <div class="outliner">
-          <a href="http://yourtopia.net/" class="icon"><img src="/icons/yourtopia.jpg" alt=""/></a>
-          <span class="text">
-            <h2><a href="http://yourtopia.net/">Yourtopia</a></h2>
-            Yourtopia allows the user to construct a measure of social progress world-wide based on your preferences for development. Participate in a global effort to improve tracing of humanity's progress towards the Millennium Development Goals. 
-          </span>
-          <a href="http://yourtopia.net/" class="read-more">Read More</a>
-          <a href="http://italia.yourtopia.net/" class="icon right"><img src="/icons/yourtopia-italia.png" alt=""/></a>
-          <span class="text">
-            <h2><a href="http://italia.yourtopia.net/">Yourtopia: Italia</a></h2>
-            Help analyse social progress at a time in which Italy is undergoing substantial reforms and in which it is crucial to keep track of social divides across our country.
-          </span>
-          <a href="http://italia.yourtopia.net/" class="read-more">Read More</a>
-          <span class="status active"></span>
-        </div>
-      </td>
-      <td>
-        <div class="outliner">
-          <a href="http://www.weavinghistory.org/" class="icon"><img src="/icons/weavinghistory.jpg" alt=""/></a>
-          <span class="text">
-            <h2><a href="http://www.weavinghistory.org/">Weaving History</a></h2>
-            Create 'factlets' - places, people, events - and string them together into 'threads' at the click of a button. Visualize the results temporally and spatially, import Wikipedia articles and more...
-          </span>
-          <a href="http://www.weavinghistory.org/" class="read-more">Read More</a>
-          <span class="status active"></span>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <div class="outliner">
-          <a href="http://okfn.org/projects/vdm/" class="icon"><img src="icons/vdm.jpg" alt=""/></a>
-          <span class="text">
-            <h2><a href="http://okfn.org/projects/vdm/">Versioned Domain Model</a></h2>
-            A package which allowing you to 'version' your domain model in the same way that source code version control systems such as Git allow you version your code.
-          </span>
-          <a href="http://okfn.org/projects/vdm/" class="read-more">Read More</a>
-          <span class="status active"></span>
-        </div>
-      </td>
-      <td>
-        <div class="outliner">
-          <a href="http://okfn.org/projects/datapkg/" class="icon"><img src="icons/dpm.jpg" alt=""/></a>
-          <span class="text">
-            <h2><a href="http://okfn.org/projects/datapkg/">DPM</a></h2>
-            A user tool for distributing, discovering and installing data (and content) 'packages', linked to <a href="http://datahub.io">datahub.io</a> and the CKAN project.
-          </span>
-          <a href="http://okfn.org/projects/datapkg/" class="read-more">Read More</a>
-          <span class="status active"></span>
-        </div>
-      </td>
-    </tr>
-  </table><!-- /project-list -->
-</div><!-- /#content -->
+---
+<table class="project-table" cellspacing="30">
+  <tr>
+    <td rowspan="2">
+      <div class="outliner">
+        <a href="http://annotateit.org" class="icon right"><img src="/icons/annotator.png" alt=""/></a>
+        <span class="text">
+          <h2><a href="http://annotateit.org">AnnotateIt</a></h2>
+          <p>A Javascript tool that can be added to any webpage to allow annotation. Annotations can have tags, Markdown content, per-annotation permissions and more. The Bookmarklet allows you to annotate any web page and save annotations to a central server.</p>
+          <p>Used by:</p>
+          <p>&bull;&nbsp;<a href="http://openshakespeare.org/">Open Shakespeare</a> for making community-created critical editions of Shakespeare's works</p>
+          <p>&bull;&nbsp;<a href="http://projects.siyavula.com/">Siyavula</a> - for annotating textbooks</p>
+          <p>&bull;&nbsp;<a href="http://hypothes.is/">Hypothes.is</a></p
+          <p>&bull;&nbsp;<a href="http://papergrader.org/">PaperGrader.org</a> - for annotating and grading academic papers</p>
+        </span>
+        <a href="http://annotateit.org" class="read-more">Read More</a>
+        <span class="status active"></span>
+      </div>
+    </td>
+    <td>
+      <div class="outliner">
+        <a href="http://okfnlabs.org/bubbletree" class="icon"><img src="/icons/bubbletree.png" alt=""/></a>
+        <span class="text">
+          <h2><a href="http://okfnlabs.org/bubbletree">BubbleTree</a></h2>
+          Display hierarchical (spending) data in an interactive visualization.
+          Setup is independent from the OpenSpending platform, but can optionally be integrated with data from the <a href="http://openspending.org">OpenSpending</a> API.
+        </span>
+        <a href="http://okfnlabs.org/bubbletree" class="read-more">Go To Site</a>
+        <span class="status active"></span>
+      </div>
+    </td>
+    <td>
+      <div class="outliner">
+        <a href="http://okfnlabs.org/dashboard" class="icon"><img src="/icons/dashboard.png" alt=""/></a>
+        <span class="text">
+          <h2><a href="http://okfnlabs.org/dashboard">Dashboard</a></h2>
+          <p>A dashboard of activity across the Open Knowledge Foundation.</p>
+          <p>We are building a members map, GitHub stream summaries, blog aggregation and more.</p>
+        </span>
+        <a href="http://okfnlabs.org/dashboard" class="read-more">Go To Site</a>
+        <span class="status active"></span>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="outliner">
+        <a href="http://okfnlabs.org/grano" class="icon"><img src="/icons/placeholder.png" alt=""/></a>
+        <span class="text">
+          <h2><a href="http://okfnlabs.org/grano">Grano</a></h2>
+          Map out and visualise networks of actors and relationships, such as the board members of major corporate entities.
+        </span>
+        <a href="http://okfnlabs.org/grano" class="read-more">Go To Site</a>
+        <span class="status active"></span>
+      </div>
+    </td>
+    <td rowspan="2">
+      <div class="outliner">
+        <a href="http://okfnlabs.org/recline" class="icon right"><img src="/icons/recline.png" alt=""/></a>
+        <span class="text">
+          <h2><a href="http://okfnlabs.org/recline">Recline</a></h2>
+          <p>Relax with your data. Recline is:</p>
+          <p>&bull;&nbsp; A Data Explorer combining a data grid, Google Refine-style data transforms and visualizations all in lightweight javascript and html.</p>
+          <p>&bull;&nbsp; A simple but powerful library of extensible of data components - data grid, graphing, and data connectors - which you can selectively use and build on.</p>
+          <p>The Explorer can be used standalone (just download and use) or can be embedded into your own site. Recline builds on the powerful but lightweight Backbone framework making it extremely easy to extend and adapt. The library's modular design mean means you only have to take what you need.</p>
+        </span>
+        <a href="http://okfnlabs.org/recline" class="read-more">Go To Site</a>
+        <span class="status active"></span>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="2">
+      <div class="outliner">
+        <a href="http://energy.publicdata.eu/ee/" class="icon"><img src="icons/europesenergy.jpg" alt=""/></a>
+        <span class="text">
+          <h2><a href="http://energy.publicdata.eu/ee/">Europe's Energy</a></h2>
+          <p>Member States of the European Union have agreed on targets aimed at reducing greenhouse gas emissions by cutting energy consumption by 20% and increasing the share of renewables in the energy mix to 20% by 2020.</p>
+          <p>The 'Europe's Energy' project gives users a set of visual tools to put these targets into context and to understand and compare how progress is being made towards them in different countries. It uses data from Eurostat, the statistical office of the European Union, which provides official statistics on EU Member States.</p>
+        </span>
+        <a href="http://energy.publicdata.eu/ee/" class="read-more">Read More</a>
+        <span class="status active"></span>
+      </div>
+    </td>
+    <td>
+      <div class="outliner">
+        <a href="http://bibserver.org" class="icon"><img src="icons/bibserver.png" alt=""/></a>
+        <span class="text">
+          <h2><a href="http://bibserver.org">BibServer</a></h2>
+          Quickly and easily share collections of bibliographic metadata. Think of what this data actually is – a record of work, a map to the knowledge of humanity. 
+        </span>
+        <a href="http://bibserver.org" class="read-more">Go To Site</a>
+        <span class="status active"></span>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="2">
+      <div class="outliner">
+        <a href="http://yourtopia.net/" class="icon"><img src="/icons/yourtopia.jpg" alt=""/></a>
+        <span class="text">
+          <h2><a href="http://yourtopia.net/">Yourtopia</a></h2>
+          Yourtopia allows the user to construct a measure of social progress world-wide based on your preferences for development. Participate in a global effort to improve tracing of humanity's progress towards the Millennium Development Goals. 
+        </span>
+        <a href="http://yourtopia.net/" class="read-more">Read More</a>
+        <a href="http://italia.yourtopia.net/" class="icon right"><img src="/icons/yourtopia-italia.png" alt=""/></a>
+        <span class="text">
+          <h2><a href="http://italia.yourtopia.net/">Yourtopia: Italia</a></h2>
+          Help analyse social progress at a time in which Italy is undergoing substantial reforms and in which it is crucial to keep track of social divides across our country.
+        </span>
+        <a href="http://italia.yourtopia.net/" class="read-more">Read More</a>
+        <span class="status active"></span>
+      </div>
+    </td>
+    <td>
+      <div class="outliner">
+        <a href="http://www.weavinghistory.org/" class="icon"><img src="/icons/weavinghistory.jpg" alt=""/></a>
+        <span class="text">
+          <h2><a href="http://www.weavinghistory.org/">Weaving History</a></h2>
+          Create 'factlets' - places, people, events - and string them together into 'threads' at the click of a button. Visualize the results temporally and spatially, import Wikipedia articles and more...
+        </span>
+        <a href="http://www.weavinghistory.org/" class="read-more">Read More</a>
+        <span class="status active"></span>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="outliner">
+        <a href="http://okfn.org/projects/vdm/" class="icon"><img src="icons/vdm.jpg" alt=""/></a>
+        <span class="text">
+          <h2><a href="http://okfn.org/projects/vdm/">Versioned Domain Model</a></h2>
+          A package which allowing you to 'version' your domain model in the same way that source code version control systems such as Git allow you version your code.
+        </span>
+        <a href="http://okfn.org/projects/vdm/" class="read-more">Read More</a>
+        <span class="status active"></span>
+      </div>
+    </td>
+    <td>
+      <div class="outliner">
+        <a href="http://okfn.org/projects/datapkg/" class="icon"><img src="icons/dpm.jpg" alt=""/></a>
+        <span class="text">
+          <h2><a href="http://okfn.org/projects/datapkg/">DPM</a></h2>
+          A user tool for distributing, discovering and installing data (and content) 'packages', linked to <a href="http://datahub.io">datahub.io</a> and the CKAN project.
+        </span>
+        <a href="http://okfn.org/projects/datapkg/" class="read-more">Read More</a>
+        <span class="status active"></span>
+      </div>
+    </td>
+  </tr>
+</table><!-- /project-list -->

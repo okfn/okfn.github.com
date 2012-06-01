@@ -14,6 +14,10 @@
   <link rel="stylesheet" href="/theme-okfn/css/okfn-common.css">
   <link rel="stylesheet" href="/okfn-labs.css">
   <link rel="shortcut icon" href="http://assets.okfn.org/p/okfn/img/favicon.ico">
+
+  {% for item in page.extra.css %}
+  <link rel="stylesheet" href="{{ item }}">
+  {% endfor %}
 </head>
 
 <body class="{{page.bodyclass}}">
@@ -44,18 +48,22 @@
           </ul><!-- #nav -->
         </div>
       </div>
+    </div> 
+
+    <div class="container">
+      <div class="row">
+      {{ page.header }}
+      </div>
     </div>
   </header>
 
-  <div class="container">
+  <div id="airlock" class="container">
     {{ content }}
   </div>
 
   <footer>
     <div class="inner">
       <div class="container">
-        <style type="text/css">
-            </style>
         <div class="row">
           <div id="footer-widget-area">
             <div id="first" class="widget-area">
@@ -99,6 +107,15 @@
     </div>
     <!-- /inner --> 
   </footer>
+
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  
+  {% for item in page.extra.js %}
+  <script src="{{ item }}"></script>
+  {% endfor %}
+  
+  <script>
+  {{ page.extra.raw_js }}
+  </script>
 </body>
 </html>
