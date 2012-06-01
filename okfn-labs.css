@@ -1,3 +1,6 @@
+body {
+  background-color:#e6e6e6;
+}
 header {
   margin-top:0px;
 }
@@ -62,6 +65,7 @@ td.medium {
   margin:-18px 0px 17px 0px;
 }
 .banner .container {
+  background: transparent url(images/banner-1.png) no-repeat;
   height:250px;
   padding:145px 0px 10px 0px;
 }
