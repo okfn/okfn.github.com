@@ -1,0 +1,61 @@
+/* @override http://localhost:4000/media/activity.css */
+
+.activity.loading {
+  /* do something exciting */
+}
+
+.activity .event {
+  margin: 8px 0; /* collapse */
+  padding: 0;
+  border: 0;
+}
+
+.activity p {
+  margin: 0;
+  padding: 0;
+}
+
+.activity .event p.title {
+  color: #666;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+  background-color: #f1f1f1;
+  background-image: -moz-linear-gradient(top, #f1f1f1, #e1e1e1); 
+  background-image: -ms-linear-gradient(top, #f1f1f1, #e1e1e1); 
+  background-image: -o-linear-gradient(top, #f1f1f1, #e1e1e1); 
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(#e1e1e1)); 
+  background-image: -webkit-linear-gradient(top, #f1f1f1, #e1e1e1); 
+  background-image: linear-gradient(top, #f1f1f1, #e1e1e1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f1f1f1', EndColorStr='#e1e1e1');
+  height: 20px;
+  line-height: 20px;
+}
+
+.activity .event p.title .when {
+  color: #999;
+  float: right;
+  text-align: right;
+  height: 100%;
+  width: 12%;
+  padding-right: 2%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.activity .event p.title .what {
+  display: inline-block;
+  height: 100%;
+  width: 85%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+
+.activity .event p.title img {
+  vertical-align: middle;
+}
+
+.activity .event p.details {
+  color: #555;
+}
+
