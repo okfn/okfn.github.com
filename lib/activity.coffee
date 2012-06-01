@@ -137,7 +137,7 @@ helpers =
       else
         o.push "Created ref "
 
-      o.push "<a href='#{helpers.github.repoUrl(c)}/blob/#{c.payload.ref}'>#{c.payload.ref}</a>"
+      o.push "<a href='#{helpers.github.repoUrl(c)}/tree/#{c.payload.ref}'>#{c.payload.ref}</a>"
 
       o.join('')
 
