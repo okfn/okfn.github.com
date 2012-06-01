@@ -100,38 +100,6 @@ td.medium {
   margin:0px;
 }
 
-.banner .banner-bottom .nav-pills > li {
-  margin-left:10px;
-}
-.banner .banner-bottom .nav-pills > li > a {
-  color:#AAACAA;
-  -webkit-border-radius: 5px;
-  -webkit-border-bottom-right-radius: 0px;
-  -webkit-border-bottom-left-radius: 0px;
-  -moz-border-radius: 5px;
-  -moz-border-radius-bottomright: 0px;
-  -moz-border-radius-bottomleft: 0px;
-  border-radius: 5px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-.banner .banner-bottom .nav-pills .active > a,
-.banner .banner-bottom .nav-pills .active > a:hover {
-  background-color: #f6f6f6;
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-left-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-left-style: solid;
-  border-top-color: #e7e7e7;
-  border-right-color: #e7e7e7;
-  border-left-color: #e7e7e7;
-  color:#333333;
-}
-
 .project-table td {
   font-size: 11px;
   line-height: normal;
