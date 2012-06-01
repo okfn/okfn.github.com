@@ -9,22 +9,22 @@
   <![endif]-->
 
   <!-- styles -->
-  <link href="/theme-okfn/fonts/fonts.min.css" rel="stylesheet">
-  <link href="/theme-okfn/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/theme-okfn/css/okfn-common.css" rel="stylesheet">
-  <link href="/okfn-labs.css" rel="stylesheet">
+  <link rel="stylesheet" href="/theme-okfn/fonts/fonts.min.css">
+  <link rel="stylesheet" href="/theme-okfn/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/theme-okfn/css/okfn-common.css">
+  <link rel="stylesheet" href="/okfn-labs.css">
   <link rel="shortcut icon" href="http://assets.okfn.org/p/okfn/img/favicon.ico">
 </head>
 
-<body>
+<body class="{{page.bodyclass}}">
 	<header>
-    <div class="navbar">
+    <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a title="Home" class="brand" href="http://okfnlabs.org">
             <img alt="logo" src="http://assets.okfn.org/web/images/header-logo.png"/>Open Knowledge Foundation Labs
           </a>
-          <ul id="nav" class="nav">
+          <ul class="nav pull-right">
             <li class="dropdown" data-dropdown="dropdown" >
               <a href="/" class="dropdown-toggle">Projects</a>
               <ul class="dropdown-menu">
@@ -47,7 +47,9 @@
     </div>
   </header>
 
-  {{ content }}
+  <div class="container">
+    {{ content }}
+  </div>
 
   <footer>
     <div class="inner">
