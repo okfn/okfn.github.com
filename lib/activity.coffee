@@ -67,7 +67,6 @@ helpers =
       "<a href='#{helpers.github.repoUrl(c)}'>#{c.repo.name}</a>"
 
     titleForDefault: (c) ->
-      console.debug(c)
       "did something"
 
     titleForIssuesEvent: (c) ->
@@ -89,9 +88,7 @@ helpers =
     titleForIssueCommentEvent: (c) ->
       """
       commented on issue
-      <a href='#{c.payload.issue.html_url}\#issuecomment-#{c.payload.comment.id}'>
-        ##{c.payload.issue.number}
-      </a>
+      <a href='#{c.payload.issue.html_url}#issuecomment-#{c.payload.comment.id}'>##{c.payload.issue.number}</a>
       on #{helpers.github.repo(c)}
       """
 
@@ -128,6 +125,9 @@ helpers =
 
     detailsForIssueCommentEvent: (c) ->
       util.truncate(c.payload.comment.body)
+
+    detailsForWatchEvent: (c) ->
+      ""
 
     detailsForCreateEvent: (c) ->
       o = []
