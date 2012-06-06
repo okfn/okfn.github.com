@@ -7,11 +7,21 @@ extra:
   css:
     - '/lib/activity.css'
   js:
+    - '/lib/jquery.masonry.min.js'
     - '/lib/activity.js'
   raw_js: |
-    $('.activity-list').activity({
-      url: "http://assets.okfnlabs.org/activity/all.js",
-      events: 30
+    jQuery(function ($) {
+      $('.activity-list').activity({
+        url: "http://assets.okfnlabs.org/activity/all.js",
+        events: 30
+      });
+
+      $('.project-table').imagesLoaded(function () {
+        $(this).masonry({
+          itemSelector: '.item',
+          columnWidth: 320
+        });
+      });
     });
 
 header: |
