@@ -69,26 +69,10 @@ helpers =
     titleForDefault: (c) ->
       "did something"
 
-    titleForIssuesEvent: (c) ->
-      "#{c.payload.action} issue <a href='#{c.payload.issue.html_url}'>##{c.payload.issue.number}</a> on #{helpers.github.repo(c)}"
-
-    titleForWatchEvent: (c) ->
-      "#{c.payload.action} watching #{helpers.github.repo(c)}"
-
-    titleForForkEvent: (c) ->
-      "forked #{helpers.github.repo(c)}"
-
-    titleForPushEvent: (c) ->
-      branch = c.payload.ref.split('/')[2]
-      if branch
-        "pushed to <strong>#{branch}</strong> on #{helpers.github.repo(c)}"
-      else
-        "pushed to #{helpers.github.repo(c)}"
-
-    titleForIssueCommentEvent: (c) ->
+    titleForCommitCommentEvent: (c) ->
       """
-      commented on issue
-      <a href='#{c.payload.issue.html_url}#issuecomment-#{c.payload.comment.id}'>##{c.payload.issue.number}</a>
+      commented on
+      <a href='#{c.payload.comment.html_url}'>#{c.payload.comment.commit_id[...7]}</a>
       on #{helpers.github.repo(c)}
       """
 
@@ -102,32 +86,37 @@ helpers =
       on #{helpers.github.repo(c)}
       """
 
+    titleForForkEvent: (c) ->
+      "forked #{helpers.github.repo(c)}"
+
+    titleForIssueCommentEvent: (c) ->
+      """
+      commented on issue
+      <a href='#{c.payload.issue.html_url}#issuecomment-#{c.payload.comment.id}'>##{c.payload.issue.number}</a>
+      on #{helpers.github.repo(c)}
+      """
+
+    titleForIssuesEvent: (c) ->
+      "#{c.payload.action} issue <a href='#{c.payload.issue.html_url}'>##{c.payload.issue.number}</a> on #{helpers.github.repo(c)}"
+
+    titleForPullRequestEvent: (c) ->
+      "#{c.payload.action} pull request <a href='#{c.payload.pull_request.html_url}'>##{c.payload.pull_request.number}</a> on #{helpers.github.repo(c)}"
+
+    titleForPushEvent: (c) ->
+      branch = c.payload.ref.split('/')[2]
+      if branch
+        "pushed to <strong>#{branch}</strong> on #{helpers.github.repo(c)}"
+      else
+        "pushed to #{helpers.github.repo(c)}"
+
+    titleForWatchEvent: (c) ->
+      "#{c.payload.action} watching #{helpers.github.repo(c)}"
+
     detailsForDefault: (c) ->
       "More #{c.type} details here &hellip;"
 
-    detailsForForkEvent: (c) ->
-      "&rarr; <a href='#{c.payload.forkee.html_url}'>#{c.payload.forkee.html_url}</a>"
-
-    detailsForPushEvent: (c) ->
-      maxCommits = 3
-      o = []
-
-      for commit in c.payload.commits[0...maxCommits]
-        o.push "#{util.truncate(commit.message, 50, '')}<a href='#{helpers.github.repoUrl(c)}/commit/#{commit.sha}'>&hellip;</a>"
-
-      if c.payload.commits.length > maxCommits
-        o.push "and #{c.payload.commits.length - maxCommits} more&hellip;"
-
-      o.join("<br>")
-
-    detailsForIssuesEvent: (c) ->
-      "#{util.truncate(c.payload.issue.title)}"
-
-    detailsForIssueCommentEvent: (c) ->
+    detailsForCommitCommentEvent: (c) ->
       util.truncate(c.payload.comment.body)
-
-    detailsForWatchEvent: (c) ->
-      ""
 
     detailsForCreateEvent: (c) ->
       o = []
@@ -145,6 +134,33 @@ helpers =
       """
       #{util.truncate(c.payload.download.description)}
       """
+
+    detailsForForkEvent: (c) ->
+      "&rarr; <a href='#{c.payload.forkee.html_url}'>#{c.payload.forkee.html_url}</a>"
+
+    detailsForIssueCommentEvent: (c) ->
+      util.truncate(c.payload.comment.body)
+
+    detailsForIssuesEvent: (c) ->
+      "#{util.truncate(c.payload.issue.title)}"
+
+    detailsForPullRequestEvent: (c) ->
+      "#{util.truncate(c.payload.pull_request.title)}"
+
+    detailsForPushEvent: (c) ->
+      maxCommits = 3
+      o = []
+
+      for commit in c.payload.commits[0...maxCommits]
+        o.push "#{util.truncate(commit.message, 50, '')}<a href='#{helpers.github.repoUrl(c)}/commit/#{commit.sha}'>&hellip;</a>"
+
+      if c.payload.commits.length > maxCommits
+        o.push "and #{c.payload.commits.length - maxCommits} more&hellip;"
+
+      o.join("<br>")
+
+    detailsForWatchEvent: (c) ->
+      ""
 
     title: (ev) ->
       c = ev.content
