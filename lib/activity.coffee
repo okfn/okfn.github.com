@@ -57,14 +57,14 @@ helpers =
     who: (c) ->
       """
       <img src='http://www.gravatar.com/avatar/#{c.actor.gravatar_id}?s=20'>
-      <a href='#{GITHUB}/#{c.actor.login}'>#{c.actor.login}</a>
+      <a title='#{c.actor.login} on GitHub' href='#{GITHUB}/#{c.actor.login}'>#{c.actor.login}</a>
       """
 
     repoUrl: (c) ->
       "#{GITHUB}/#{c.repo.name}"
 
     repo: (c) ->
-      "<a href='#{helpers.github.repoUrl(c)}'>#{c.repo.name}</a>"
+      "<a title='#{c.repo.name} on GitHub' href='#{helpers.github.repoUrl(c)}'>#{c.repo.name}</a>"
 
     titleForDefault: (c) ->
       "did something"
