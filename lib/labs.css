@@ -1,14 +1,22 @@
-/* @override http://localhost:4000/okfn-labs.css */
+/* @override http://localhost:4000/lib/labs.css */
 
 html {
   font-size:  62.5%;
   line-height: 1.5em;
+  background: url(../images/bg.jpg);
 }
 body {
-  background: #e6e6e6 url(images/banner-bg.png) repeat-x center -160px;
+  background: url(../images/banner-bg.png) repeat-x center -160px;
 }
 body.withbanner {
-  background: #e6e6e6 url(images/banner-bg.png) repeat-x center -50px;
+  background: url(../images/banner-bg.png) repeat-x center -20px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 46px;
+  font-weight: normal;
+  padding-bottom: 20px;
 }
 
 p, ul, ol, dl, table {
@@ -21,10 +29,11 @@ a.btn {
   text-decoration: none;
 }
 
-header {
-  background: url(images/flask.png) no-repeat center 51px;
-  padding-bottom: 70px;
+body.withbanner header {
+  background: url(../images/flask.png) no-repeat center 136px;
   min-width: 940px;
+  min-height: 405px; /* height of image (269px) + 136px */
+  margin: 0;
 }
 
 .navbar, header .banner h1, header .banner .strapline {
@@ -35,13 +44,7 @@ header {
 }
 
 .banner {
-  padding-top: 90px;
-}
-.banner h1 {
-  color: #fff;
-  font-size: 46px;
-  font-weight: normal;
-  padding-bottom: 20px;
+  padding-top: 150px;
 }
 .banner p {
   font-size: 18px;
@@ -49,22 +52,21 @@ header {
 }
 .banner .strapline {
   color: #eee;
-  height: 145px;
 }
-.banner .instruction {
-  color: #666;
-  background: url(images/arrow.png) no-repeat 57px 15px;
-  margin-left: -14px;
-  padding-left: 70px;
-  padding-bottom: 20px;
+
+.activity-wrapper {
+  position: relative;
 }
 
 .activity-box {
+  position: absolute;
+  top: 0;
+  left: 0;
   background: #eee;
-  height: 300px;
+  height: 240px;
+  width: 360px;
   overflow: auto;
-  margin-top: 7px;
-  padding: 5px 0.5em 0.5em 0.5em;
+  padding: 0 0.5em 0.5em 0.5em;
   border: 4px solid #aaa;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -72,18 +74,82 @@ header {
   -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.11);
   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.11);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.11);
+  -webkit-transition: height 0.6s ease;
+  -moz-transition: height 0.6s ease;
+  -ms-transition: height 0.6s ease;
+  -o-transition: height 0.6s ease;
+  transition: height 0.6s ease;
+
+}
+
+.activity-box:hover {
+  z-index: 100;
+  height: 400px;
 }
 
 .activity-box h2 {
   color: #888;
-  text-shadow: 2px 2px 0 rgb(255, 255, 255);
+  text-shadow: 1px 1px 0 rgb(255, 255, 255);
   font-size: 14px;
   font-size: 1.4rem;
+  margin-top: 40px;
   text-transform: uppercase;
 }
 
-#airlock {
-  margin-top: -50px;
+.wheretogo {
+  margin-top: -130px;
+  font-size: 24px;
+  font-size: 2.4rem;
+  padding: 30px 0 0 0;
+}
+
+.wheretogo a {
+  font-family: OpenSansLight, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #eee;
+  text-decoration: none;
+  padding: 10px 20px 10px 15px;
+  margin: 0 0 0 20px;
+  background: url(../images/banner-bg.png) repeat-x center bottom;
+  -moz-box-shadow:    inset 0 0 10px #000;
+  -webkit-box-shadow: inset 0 0 10px #000;
+  box-shadow:         inset 0 0 10px #000;
+  -moz-border-radius:    7px;
+  -webkit-border-radius: 7px;
+  border-radius:         7px;
+}
+
+.wheretogo a:hover {
+  background-image: url(../images/banner-bg-inv.png);
+  color: #000;
+}
+
+.wheretogo a:hover .icon-mail-white { background-position: 0 0; }
+.wheretogo a:hover .icon-cogs-white { background-position: 0 -52px; }
+.wheretogo a:hover .icon-pencil-white { background-position: 0 -104px; }
+
+.icon-large {
+  height: 26px;
+  width: 26px;
+  margin: 4px 8px 0 0;
+  display: inline-block;
+  vertical-align: text-top;
+  background: url(../images/icons.png) no-repeat;
+}
+
+.icon-mail-black { background-position: 0 0; }
+.icon-mail-white { background-position: 0 -26px; }
+.icon-cogs-black { background-position: 0 -52px; }
+.icon-cogs-white { background-position: 0 -78px; }
+.icon-pencil-black { background-position: 0 -104px; }
+.icon-pencil-white { background-position: 0 -130px; }
+
+.instruction {
+  font-weight: normal;
+  color: #666;
+  background: url(../images/arrow.png) no-repeat 57px 15px;
+  margin: 60px 0 0 -75px;
+  padding: 0 0 15px 75px;
 }
 
 .project-table {
