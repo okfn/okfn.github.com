@@ -41,6 +41,103 @@ header: |
       <div class="activity-list"></div>
     </div>
   </div>
+
+projects:
+  - 
+    name: Annotator
+    href: http://annotateit.org
+    desc: |
+      A Javascript tool that can be added to any webpage to allow inline annotation. Annotations can have tags, Markdown content, per-annotation permissions and more.A bookmarklet allows you to annotate any web page and save your annotations.
+      
+      Used by:
+
+      * [Open Shakespeare][os]: community-created critical editions of Shakespeare’s works
+      * [Siyavula][sv]: annotating textbooks
+      * [Hypothes.is][hy]: bringing peer review to the web
+      * [PaperGrader.org][pg]: annotating and grading academic papers
+
+      [os]: http://openshakespeare.org/
+      [sv]: http://projects.siyavula.com/
+      [hy]: http://hypothes.is/
+      [pg]: http://papergrader.org/
+
+  -
+    name: BubbleTree
+    href: http://okfnlabs.org/bubbletree
+    desc: |
+      Display spending data in an interactive visualization. BubbleTree can (optionally) be integrated with data from the [OpenSpending](http://openspending.org) API.
+
+  - 
+    name: TEXTUS
+    href: http://textusproject.org/
+    desc: |
+      TEXTUS is an open source platform for working with collections of digitised texts for use within teaching and research. It enables users to collaboratively annotate and translate texts, as well as share bibliographies and reading lists and reliably cite digital editions using URLs.
+
+      The first instance of TEXTUS will be deployed as OpenPhilosophy.org which is currently being built in collaboration with scholars and students from Goldsmiths University and JISC.
+
+  -
+    name: Grano
+    href: http://github.com/pudo/grano
+    img: placeholder
+    desc: |
+      Grano helps you map out and visualise networks of actors and relationships, such as the board members of major corporate entities.
+    more:
+      - 
+        name: Grano on GitHub
+        href: http://github.com/pudo/grano
+
+  - 
+    name: Recline
+    href: http://reclinejs.com
+    desc: |
+      Relax with your data. Recline is:
+      
+      * A data explorer: combining a data grid, Google-Refine-style data transforms, and visualizations all in lightweight JavaScript and HTML.
+      * A simple but powerful library of extensible data components (grid, plotting, and data connectors) which you can use and build on.
+      
+      The explorer can be used standalone or can be embedded. Recline is extremely easy to extend and adapt. The library’s modular design mean means you can take only what you need.
+      
+  -
+    name: PyBossa
+    href: http://pybossa.com
+    desc: |
+      PyBossa is a free, open-source, crowd-sourcing and micro-tasking platform. It enables people to create and run projects that utilise online assistance in performing tasks that require human cognition such as image classification, transcription, geocoding and more.
+
+      PyBossa is there to help researchers, civic hackers and developers to create projects where anyone around the world with some time, interest and an internet connection can contribute.
+
+  -
+    name: Dashboard
+    href: http://okfnlabs.org/dashboard
+    desc: |
+      An experimental way to explore the people and activities of the Open Knowledge Foundation.
+
+  -
+    name: Europe’s Energy
+    href: http://energy.publicdata.eu/ee/
+    img: europesenergy
+    desc: |
+      Member States of the European Union have agreed on targets aimed at reducing greenhouse gas emissions by cutting energy consumption by 20% and increasing the share of renewables in the energy mix to 20% by 2020.
+
+      The “Europe’s Energy” project gives users a set of visual tools to put these targets into context and to understand and compare how progress is being made towards them in different countries. It uses data from Eurostat, the statistical office of the European Union, which provides official statistics on EU Member States.
+
+  -
+    name: BibServer
+    href: http://bibserver.org
+    desc: |
+      Quickly and easily share collections of bibliographic metadata, data which represents a record of work, or even a map of knowledge. By making it simple for people to use this information, we make scholarship better.
+
+  -
+    name: YourTopia
+    href: http://yourtopia.net
+    desc: |
+      Yourtopia allows a user to construct a measure of social progress world-wide based on their own preferences for development. It helps people participate in a global effort to trace humanity’s progress towards the Millennium Development Goals.
+
+  -
+    name: YourTopia Italia
+    href: http://italia.yourtopia.net
+    img: yourtopia-italia
+    desc: |
+      A spin-off of the Yourtopia project, *Yourtopia: Italia* helps analyse social progress at a time in which Italy is undergoing substantial reforms and in which it is crucial to keep track of social divides across the country.
 ---
 <p class="wheretogo">
   <span class="push" style="width: 124px">&nbsp;</span>
@@ -54,213 +151,23 @@ header: |
 
 <div class="project-table">
 
+  {% for p in page.projects %}
   <div class="item">
-    <a href="http://annotateit.org">
-      <img src="/images/projects/annotator.png" alt="">
+    <a href="{{ p.href }}">
+      <img src="/images/projects/{% if p.img %}{{ p.img }}{% else %}{{ p.name | downcase }}{% endif %}.png" alt="">
     </a>
-    <h3><a href="http://annotateit.org">Annotator</a></h3>
-    <p>
-      A Javascript tool that can be added to any webpage to allow inline annotation. Annotations can have tags, Markdown content, per-annotation permissions and more. A bookmarklet allows you to annotate any web page and save your annotations.
-    </p>
-    <p>Used by:</p>
-    <ul>
-      <li><a href="http://openshakespeare.org/">Open Shakespeare</a>: community-created critical editions of Shakespeare’s works</li>
-      <li><a href="http://projects.siyavula.com/">Siyavula</a>: annotating textbooks</li>
-      <li><a href="http://hypothes.is/">Hypothes.is</a>: bringing peer review to the web</li>
-      <li><a href="http://papergrader.org/">PaperGrader.org</a>: annotating and grading academic papers</li>
-    </ul>
+    <h3><a href="{{ p.href }}">{{ p.name }}</a></h3>
+    {{ p.desc | markdownify }}
     <p class="more">
-      <a href="http://annotateit.org" class="btn">AnnotateIt homepage »</a>
+      {% if p.more %}
+        {% for m in p.more %}
+        <a href="{{ m.href }}" class="btn">{{ m.name }} »</a>
+        {% endfor %}
+      {% else %}
+        <a href="{{ p.href }}" class="btn">{{ p.name }} homepage »</a> 
+      {% endif %}
     </p>
   </div>
+  {% endfor %}
 
-
-  <div class="item">
-    <a href="http://okfnlabs.org/bubbletree">
-      <img src="/images/projects/bubbletree.png" alt="">
-    </a>
-    <h3><a href="http://okfnlabs.org/bubbletree">BubbleTree</a></h3>
-    <p>
-      Display spending data in an interactive visualization. BubbleTree can (optionally) be integrated with data from the <a href="http://openspending.org">OpenSpending</a> API.
-    </p>
-    <p class="more">
-      <a href="http://okfnlabs.org/bubbletree" class="btn">BubbleTree’s homepage »</a>
-    </p>
-  </div>
-
-  <div class="item">
-    <a href="http://textusproject.org/">
-      <img src="/images/projects/textus.png" alt="">
-    </a>
-    <h3><a href="http://textusproject.org/">TEXTUS</a></h3>
-    <p>
-      TEXTUS is an open source platform for working with collections of digitised texts for use within teaching and research. It enables users to collaboratively annotate and translate texts, as well as share bibliographies and reading lists and reliably cite digital editions using URLs.
-    </p>
-    <p>
-      The first instance of TEXTUS will be deployed as OpenPhilosophy.org which is currently being built in collaboration with scholars and students from Goldsmiths University and JISC.
-    </p>
-    <p class="more">
-      <a href="http://textusproject.org/" class="btn">TEXTUS homepage »</a>
-    </p>
-  </div>
-
-
-  <div class="item">
-    <a href="http://github.com/pudo/grano">
-      <img src="/images/projects/placeholder.png" alt="">
-    </a>
-    <h3><a href="http://github.com/pudo/grano">Grano</a></h3>
-    <p>
-      Grano helps you map out and visualise networks of actors and relationships, such as the board members of major corporate entities.
-    </p>
-    <p class="more">
-      <a href="http://github.com/pudo/grano" class="btn">Grano on GitHub »</a>
-    </p>
-  </div>
-
-
-  <div class="item">
-    <a href="http://reclinejs.com">
-      <img src="/images/projects/recline.png" alt="">
-    </a>
-    <h3><a href="http://reclinejs.com">Recline</a></h3>
-    <p>Relax with your data. Recline is:</p>
-    <ul>
-      <li>A data explorer: combining a data grid, Google-Refine-style data transforms, and visualizations all in lightweight JavaScript and HTML.</li>
-      <li>A simple but powerful library of extensible data components (grid, plotting, and data connectors) which you can use and build on.</li>
-    </ul>
-    <p>
-      The explorer can be used standalone or can be embedded. Recline is extremely easy to extend and adapt. The library’s modular design mean means you can take only what you need.
-    </p>
-    <p class="more">
-      <a href="http://reclinejs.com" class="btn">Recline’s homepage »</a>
-    </p>
-  </div>
-
-
-  <div class="item">
-    <a href="http://pybossa.com">
-      <img src="/images/projects/pybossa.png" alt="">
-    </a>
-    <h3><a href="http://pybossa.com">PyBossa</a></h3>
-    <p>
-      PyBossa is a free, open-source, crowd-sourcing and micro-tasking platform. It enables people to create and run projects that utilise online assistance in performing tasks that require human cognition such as image classification, transcription, geocoding and more.
-    <p>
-      PyBossa is there to help researchers, civic hackers and developers to create projects where anyone around the world with some time, interest and an internet connection can contribute.
-    </p>
-    <p class="more">
-      <a href="http://pybossa.com" class="btn">PyBossa’s homepage »</a>
-    </p>
-  </div>
-
-
-  <div class="item">
-    <a href="http://okfnlabs.org/dashboard">
-      <img src="/images/projects/dashboard.png" alt="">
-    </a>
-    <h3><a href="http://okfnlabs.org/dashboard">Dashboard</a></h3>
-    <p>An experimental way to explore the people and activities of the Open Knowledge Foundation.</p>
-    <p class="more">
-      <a href="http://okfnlabs.org/dashboard" class="btn">See the Dashboard »</a>
-    </p>
-  </div>
-
-
-  <div class="item">
-    <a href="http://energy.publicdata.eu/ee/">
-      <img src="/images/projects/europesenergy.jpg" alt="">
-    </a>
-    <h3><a href="http://energy.publicdata.eu/ee/">Europe’s Energy</a></h3>
-    <p>
-      Member States of the European Union have agreed on targets aimed at reducing greenhouse gas emissions by cutting energy consumption by 20% and increasing the share of renewables in the energy mix to 20% by 2020.
-    </p>
-    <p>
-      The “Europe’s Energy” project gives users a set of visual tools to put these targets into context and to understand and compare how progress is being made towards them in different countries. It uses data from Eurostat, the statistical office of the European Union, which provides official statistics on EU Member States.
-    </p>
-    <p class="more">
-      <a href="http://energy.publicdata.eu/ee/" class="btn">Europe’s Energy on publicdata.eu »</a>
-    </p>
-  </div>
-
-
-  <div class="item">
-    <a href="http://bibserver.org">
-      <img src="/images/projects/bibserver.png" alt="">
-    </a>
-    <h3><a href="http://bibserver.org">BibServer</a></h3>
-    <p>
-      Quickly and easily share collections of bibliographic metadata, data which represents a record of work, or even a map of knowledge. By making it simple for people to use this information, we make scholarship better.
-    </p>
-    <p class="more">
-      <a href="http://bibserver.org" class="btn">BibServer’s homepage »</a>
-    </p>
-  </div>
-
-
-  <div class="item">
-    <a href="http://yourtopia.net/">
-      <img src="/images/projects/yourtopia.jpg" alt="">
-    </a>
-    <h3><a href="http://yourtopia.net/">Yourtopia</a></h3>
-    <p>
-      Yourtopia allows a user to construct a measure of social progress world-wide based on their own preferences for development. It helps people participate in a global effort to trace humanity’s progress towards the Millennium Development Goals.
-    </p>
-    <p class="more">
-      <a href="http://yourtopia.net/" class="btn">What is <em>Your</em>topia? »</a>
-    </p>
-  </div>
-
-  <div class="item">
-    <a href="http://italia.yourtopia.net/">
-      <img src="/images/projects/yourtopia-italia.png" alt="">
-    </a>
-    <h3><a href="http://italia.yourtopia.net/">Yourtopia: Italia</a></h3>
-    <p>
-      A spin-off of the Yourtopia project, <em>Yourtopia: Italia</em> helps analyse social progress at a time in which Italy is undergoing substantial reforms and in which it is crucial to keep track of social divides across the country.
-    </p>
-    <p class="more">
-      <a href="http://italia.yourtopia.net/" class="btn">Yourtopia Italy »</a>
-    </p>
-  </div>
-
-  <div class="item">
-    <a href="http://www.weavinghistory.org/">
-      <img src="/images/projects/weavinghistory.jpg" alt="">
-    </a>
-    <h3><a href="http://www.weavinghistory.org/">Weaving History</a></h3>
-    <p>
-      Create ‘factlets’ — places, people, events — and string them together into ‘threads’ at the click of a button. Visualize the results temporally and spatially, import Wikipedia articles and more…
-    </p>
-    <p class="more">
-      <a href="http://www.weavinghistory.org/" class="btn">Weaving History »</a>
-    </p>
-  </div>
-
-  <div class="item">
-    <a href="http://okfn.org/projects/vdm/">
-      <img src="/images/projects/vdm.jpg" alt="">
-    </a>
-    <h3><a href="http://okfn.org/projects/vdm/">Versioned Domain Model</a></h3>
-    <p>
-      A package which allows you to version your domain model in the same way that source code version control systems (such as Git) allow you version your code.
-    </p>
-    <p class="more">
-      <a href="http://pypi.python.org/pypi/vdm" class="btn">VDM on PyPI »</a>
-      <a href="https://github.com/okfn/vdm" class="btn">VDM on GitHub »</a>
-    </p>
-  </div>
-
-  <div class="item">
-    <a href="http://okfn.org/projects/datapkg/">
-      <img src="/images/projects/dpm.jpg" alt="">
-    </a>
-    <h3><a href="http://okfn.org/projects/datapkg/">DPM</a></h3>
-    <p>
-      A tool for distributing, discovering and installing data ‘packages’ through <a href="http://datahub.io">datahub.io</a> and the CKAN project.
-    </p>
-    <p class="more">
-      <a href="http://pypi.python.org/pypi/dpm/" class="btn">DPM on PyPI »</a>
-      <a href="http://github.com/okfn/dpm/" class="btn">DPM on GitHub »</a>
-    </p>
-  </div>
 </div><!-- /.project-table -->
