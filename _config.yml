@@ -1,1 +1,3 @@
-permalink: none
+permalink: pretty
+pygments: true
+auto: true
