@@ -5,9 +5,6 @@ html {
   line-height: 1.5em;
   background: url(../images/bg.jpg);
 }
-body {
-  background: url(../images/banner-bg.png) repeat-x center -160px;
-}
 body.withbanner {
   background: url(../images/banner-bg.png) repeat-x center -20px;
 }
@@ -194,3 +191,28 @@ footer {
 .push {
   display: inline-block;
 }
+
+/**********************************************************
+  * Posts
+  *********************************************************/
+
+ul.posts {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.posts li {
+  padding-bottom: 8px;
+  border-bottom: solid 1px #eee; 
+}
+
+.posts .author-box {
+  float: right;
+  background: #eee;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 2px 0 5px 10px;
+}
+

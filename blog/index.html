@@ -3,9 +3,27 @@ layout: default
 title: Blog Posts
 ---
 
-<ul class="posts">
-  {% for post in site.posts %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> &ndash;{{ post.author}} &ndash; <span>{{ post.date | date_to_string }}</span></li>
-  {% endfor %}
-</ul>
+<div class="page-header">
+  <h1>The Labs Blog</h1>
+</div>
 
+<div class="row">
+  <div class="span9">
+    <ul class="posts">
+      {% for post in site.posts %}
+      <li>
+        <div class="author-box">
+          <span class="author">{{ post.author}}</span> 
+        </div>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <div class="meta">
+          <span class="date">{{ post.date | date_to_string }}</span>
+        </div>
+        <div class="excerpt">
+          {{ post.content | strip_html | truncatewords: 30 }} 
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
