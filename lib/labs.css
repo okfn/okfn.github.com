@@ -216,3 +216,12 @@ ul.posts {
   margin: 2px 0 5px 10px;
 }
 
+.blog-comments {
+  margin-top: 20px;
+  padding-top: 5px;
+  border-top: solid 2px #eee;
+}
+
+.blog-comments #disqus_thread {
+  margin-top: 10px;
+}
