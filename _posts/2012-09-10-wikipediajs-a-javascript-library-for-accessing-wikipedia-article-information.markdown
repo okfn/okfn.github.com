@@ -13,7 +13,7 @@ Pollock</a>. In essence, it is a small wrapper around the data and <a
 href="http://dbpedia.org/sparql/">APIs</a> of the <a
 href="http://dbpedia.org/">DBPedia project</a> and it is they who have done all
 the heavy lifting of extracting structured data from Wikipedia - huge credit
-and thanks to DBPedia folks!</p>
+and thanks to DBPedia folks!
 
 <a href="http://okfnlabs.org/wikipediajs/"><img src="http://farm9.staticflickr.com/8029/7961793920_7436dba276_c.jpg" style="display: block; margin: auto; width: 80%; border: #ccc 5px solid; margin-top: 20px; margin-bottom: 20px;" /></a>
 
