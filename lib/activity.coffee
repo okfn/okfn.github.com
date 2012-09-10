@@ -56,20 +56,23 @@ helpers =
   github:
     who: (c) ->
       """
-      <img src='http://www.gravatar.com/avatar/#{c.actor.gravatar_id}?s=20'>
-      <a title='#{c.actor.login} on GitHub' href='#{GITHUB}/#{c.actor.login}'>#{c.actor.login}</a>
+      <img src='#c.person.avatar'>
+      <a href='#c.person.permalink'>#{c.person.display_name}</a>
       """
 
     repoUrl: (c) ->
+      return ''
       "#{GITHUB}/#{c.repo.name}"
 
     repo: (c) ->
+      return ''
       "<a title='#{c.repo.name} on GitHub' href='#{helpers.github.repoUrl(c)}'>#{c.repo.name}</a>"
 
     titleForDefault: (c) ->
       "did something"
 
     titleForCommitCommentEvent: (c) ->
+      return ''
       """
       commented on
       <a href='#{c.payload.comment.html_url}'>#{c.payload.comment.commit_id[...7]}</a>
@@ -77,9 +80,11 @@ helpers =
       """
 
     titleForCreateEvent: (c) ->
+      return ''
       "created a #{c.payload.ref_type} on #{helpers.github.repo(c)}"
 
     titleForDownloadEvent: (c) ->
+      return ''
       """
       created a new
       <a href='#{helpers.github.repoUrl(c)}/downloads'>download</a>
@@ -87,9 +92,11 @@ helpers =
       """
 
     titleForForkEvent: (c) ->
+      return ''
       "forked #{helpers.github.repo(c)}"
 
     titleForIssueCommentEvent: (c) ->
+      return ''
       """
       commented on issue
       <a href='#{c.payload.issue.html_url}#issuecomment-#{c.payload.comment.id}'>##{c.payload.issue.number}</a>
@@ -97,12 +104,15 @@ helpers =
       """
 
     titleForIssuesEvent: (c) ->
+      return ''
       "#{c.payload.action} issue <a href='#{c.payload.issue.html_url}'>##{c.payload.issue.number}</a> on #{helpers.github.repo(c)}"
 
     titleForPullRequestEvent: (c) ->
+      return ''
       "#{c.payload.action} pull request <a href='#{c.payload.pull_request.html_url}'>##{c.payload.pull_request.number}</a> on #{helpers.github.repo(c)}"
 
     titleForPushEvent: (c) ->
+      return ''
       branch = c.payload.ref.split('/')[2]
       if branch
         "pushed to <strong>#{branch}</strong> on #{helpers.github.repo(c)}"
@@ -110,15 +120,19 @@ helpers =
         "pushed to #{helpers.github.repo(c)}"
 
     titleForWatchEvent: (c) ->
+      return ''
       "#{c.payload.action} watching #{helpers.github.repo(c)}"
 
     detailsForDefault: (c) ->
+      return ''
       "More #{c.type} details here &hellip;"
 
     detailsForCommitCommentEvent: (c) ->
+      return ''
       util.truncate(c.payload.comment.body)
 
     detailsForCreateEvent: (c) ->
+      return ''
       o = []
 
       if c.payload.ref_type == "tag"
@@ -131,23 +145,29 @@ helpers =
       o.join('')
 
     detailsForDownloadEvent: (c) ->
+      return ''
       """
       #{util.truncate(c.payload.download.description)}
       """
 
     detailsForForkEvent: (c) ->
+      return ''
       "&rarr; <a href='#{c.payload.forkee.html_url}'>#{c.payload.forkee.html_url}</a>"
 
     detailsForIssueCommentEvent: (c) ->
+      return ''
       util.truncate(c.payload.comment.body)
 
     detailsForIssuesEvent: (c) ->
+      return ''
       "#{util.truncate(c.payload.issue.title)}"
 
     detailsForPullRequestEvent: (c) ->
+      return ''
       "#{util.truncate(c.payload.pull_request.title)}"
 
     detailsForPushEvent: (c) ->
+      return ''
       maxCommits = 3
       o = []
 
@@ -163,30 +183,36 @@ helpers =
       ""
 
     title: (ev) ->
+      return ''
       c = ev.content
       t = helpers.github["titleFor#{c.type}"] or helpers.github.titleForDefault
       "#{helpers.github.who(c)} #{t(c)}"
 
     details: (ev) ->
+      return ''
       c = ev.content
       d = helpers.github["detailsFor#{c.type}"] or helpers.github.detailsForDefault
       "#{d(c)}"
 
-  mailinglists:
+  mailman:
     who: (ev) ->
+      return ''
       ev.from.replace(/"([^"]+)"(.+)/, "$1")
 
     whichList: (ev) ->
+      return ''
       ev.subject.replace(/\[([^\]]+)\](.+)/, "$1")
 
     title: (ev) ->
+      return ''
       """
-      <strong>#{helpers.mailinglists.who(ev)}</strong>
+      <strong>#{helpers.mailman.who(ev)}</strong>
       <a href="#{ev.url}">emailed</a>
-      <strong>#{helpers.mailinglists.whichList(ev)}</strong>
+      <strong>#{helpers.mailman.whichList(ev)}</strong>
       """
 
     details: (ev) ->
+      return ''
       subj = ev.subject.replace(/\[([^\]]+)\]\s+(.+)/, "$2")
       "#{util.truncate(subj, 50, '')}<a href='#{ev.url}'>&hellip;</a>"
 
@@ -195,9 +221,9 @@ helpers =
     details: (ev) -> "Default details"
 
 render = (ev) ->
-  date = util.humanTime(util.parseISO8601(ev.date))
-  title = helpers[ev.type]?.title ? helpers.default.title
-  details = helpers[ev.type]?.details ? helpers.default.details
+  date = util.humanTime(util.parseISO8601(ev.timestamp))
+  title = helpers[ev._activity_type]?.title ? helpers.default.title
+  details = helpers[ev._activity_type]?.details ? helpers.default.details
 
   """
   <div class='event'>
@@ -210,26 +236,34 @@ render = (ev) ->
   """
 
 class Activity
+  events: []
+
   constructor: (@element, @options) ->
     self = this
 
     $(@element).addClass('activity').addClass('loading')
 
-    $.ajax
-      url: @options.url
-      dataType: 'jsonp'
-      jsonpCallback: '__dashscrapeCallback'
+    $.each @options.url, (i,url)=>
+        $.ajax
+          url: url
+          dataType: 'jsonp'
+          success: @gotEvents
+          error: @error
 
-    .done (data) ->
-      self.data = data
-      self.go()
+  gotEvents: (jsonObject) =>
+      @events = @events.concat(jsonObject.data)
+      @events.sort (a,b) -> return if a.timestamp>b.timestamp then -1 else 1
+      #@events = @events[0...(@options.events or 10)]
+      window.events = @events
+      $(@element).removeClass('loading')
+      this.drawEvents()
 
-  go: () ->
-    $(@element).removeClass('loading')
-    this.drawEvents @data.reverse()[0...(@options.events or 10)]
+  error: (e) ->
+    console.log 'error',e
 
-  drawEvents: (events) ->
-    for e in events
+  drawEvents: () ->
+    @element.empty()
+    for e in @events
       res = render(e)
       $(res).appendTo(@element)
 

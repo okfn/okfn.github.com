@@ -12,7 +12,8 @@ extra:
   raw_js: |
     jQuery(function ($) {
       $('.activity-list').activity({
-        url: "http://assets.okfnlabs.org/activity/all.js",
+      url: ["http://activityapi.herokuapp.com/api/1/activity/github?repo=annotateit,annotator,annotator-store,bibserver,bubbletree,dashscrape,labs,okfn.github.com,recline,textus,yourtopia&per_page=30",
+            "http://activityapi.herokuapp.com/api/1/activity/mailman?list=annotator-dev,okfn-labs,humanities-dev&per_page=30"],
         events: 30
       });
 
