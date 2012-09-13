@@ -5,6 +5,9 @@ html {
   line-height: 1.5em;
   background: url(../images/bg.jpg);
 }
+body {
+	overflow-x: hidden;
+}
 body.withbanner {
   background: url(../images/banner-bg.png) repeat-x center -20px;
 }
