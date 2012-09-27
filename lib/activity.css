@@ -52,7 +52,10 @@
 }
 
 .activity .event p.title img {
-  vertical-align: middle;
+  vertical-align: top;
+  padding-top: 1px;
+  width: 16px;
+  height: 16px;
 }
 
 .activity .event p.details {
