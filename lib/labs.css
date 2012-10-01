@@ -3,13 +3,10 @@
 html {
   font-size:  62.5%;
   line-height: 1.5em;
-  background: url(../images/bg.jpg);
 }
 body {
 	overflow-x: hidden;
-}
-body.withbanner {
-  background: url(../images/banner-bg.png) repeat-x center -20px;
+	background-color:#f6f6f6;
 }
 
 header h1 {
@@ -27,13 +24,6 @@ a {
 }
 a.btn {
   text-decoration: none;
-}
-
-body.withbanner header {
-  background: url(../images/flask.png) no-repeat center 136px;
-  min-width: 940px;
-  min-height: 405px; /* height of image (269px) + 136px */
-  margin: 0;
 }
 
 .navbar, header .banner h1, header .banner .strapline {
@@ -63,8 +53,38 @@ body.withbanner header {
 	opacity: 1.0;
 }
 
+.navbar-inner {
+	box-shadow:none;
+}
+
 .banner {
-  padding-top: 150px;
+	padding-top: 90px;
+	background-color: #000;
+	background-image: url(../images/banner-1.png);
+	background-repeat: repeat-x;
+	background-position: center top;
+	position: relative;
+	border-bottom:solid 1px #e6e7e6;
+}
+
+.banner:before,
+.banner:after {
+	content: "";
+	position: absolute;
+	background-color: #000;
+	background-image: url(../images/banner-bg.png);
+	background-repeat: repeat-x;
+	border-bottom:solid 1px #e6e7e6;
+	top: 0;
+	bottom: -1px;
+	width: 9999px;   /* some huge width */
+} 
+.banner:before {
+	right: 100%;
+	background-position: right top;
+}
+.banner:after {
+   left: 100%;
 }
 .banner p {
   font-size: 18px;
@@ -74,10 +94,19 @@ body.withbanner header {
   color: #eee;
 }
 
+.banner .banner-top {
+	min-height:205px;
+}
+.banner .banner-bot > div {
+	background-color:#FFF;
+	color:#333333;
+	min-height:100px;
+	position:relative;
+}
+
 .activity-wrapper {
   position: relative;
 }
-
 .activity-box {
   position: absolute;
   top: 0;
@@ -99,14 +128,11 @@ body.withbanner header {
   -ms-transition: height 0.6s ease;
   -o-transition: height 0.6s ease;
   transition: height 0.6s ease;
-
 }
-
 .activity-box:hover {
   z-index: 100;
   height: 400px;
 }
-
 .activity-box h2 {
   color: #888;
   text-shadow: 1px 1px 0 rgb(255, 255, 255);
@@ -116,32 +142,81 @@ body.withbanner header {
   text-transform: uppercase;
 }
 
-.wheretogo {
-  margin-top: -130px;
-  font-size: 24px;
-  font-size: 2.4rem;
-  padding: 30px 0 0 0;
+.banner .banner-bot .activity-box {
+	background-color:#FFF;
+	bottom:0px;
+	top:auto;
+	width:100%;
+	height:80px;
+	border:none;
+	padding:10px 15px;
+	-moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+	-webkit-border-radius: 0px;
+	border-radius: 0px; 
+	overflow:hidden;
+}
+.banner .banner-bot .activity-box h2 {
+  margin-top: 0px;
+	padding-bottom:3px;
+}
+.banner .banner-bot .activity-box .activity .event {
+  margin: 0px 0px 8px 0px;
+}
+.banner .banner-bot .activity-box .activity .event:nth-child(n+2) {
+	display:none; 
+}
+.banner .banner-bot .activity-box .event p.title {
+	background-image:none;
+	background-color:transparent;
+	font-size:16px;
+}
+.banner .banner-bot .activity-box .event p.title .what a:first-of-type {
+  height: 40px;
+  width: 40px;
+	position:absolute;
+	overflow:hidden;
+}
+.banner .banner-bot .activity-box .event p.title .what a:nth-of-type(2) {
+	padding-left:50px;
+}
+.banner .banner-bot .activity-box .event p.title .what a:first-of-type img {
+	width:40px;
+	height: 40px;
+}
+.banner .banner-bot .activity-box .event p.title .when {
+	font-size:11px;
+}
+.banner .banner-bot .activity-box .event p.details {
+	padding-left:50px;
+	font-size:14px;
+}
+.banner .banner-bot .activity-box:hover {
+	height:350px;
+	overflow: auto;
+}
+.banner .banner-bot .activity-box:hover .activity .event:nth-child(n+2) {
+	display:block; 
 }
 
 .wheretogo a {
   font-family: OpenSansLight, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: bold;
-  color: #eee;
+	background-color:#FFF;
+  color: #333333;
   text-decoration: none;
   padding: 10px 20px 10px 15px;
-  margin: 0 0 0 20px;
-  background: url(../images/banner-bg.png) repeat-x center bottom;
-  -moz-box-shadow:    inset 0 0 10px #000;
-  -webkit-box-shadow: inset 0 0 10px #000;
-  box-shadow:         inset 0 0 10px #000;
-  -moz-border-radius:    7px;
-  -webkit-border-radius: 7px;
-  border-radius:         7px;
+	margin:0px 10px 0px 0px;
+  -moz-border-radius:    5px;
+  -webkit-border-radius: 5px;
+  border-radius:         5px;
+	opacity:0.9;
+	display:inline-block;
 }
 
 .wheretogo a:hover {
-  background-image: url(../images/banner-bg-inv.png);
-  color: #000;
+  opacity:1.0;
 }
 
 .wheretogo a:hover .icon-mail-white { background-position: 0 0; }
@@ -151,7 +226,7 @@ body.withbanner header {
 .icon-large {
   height: 26px;
   width: 26px;
-  margin: 4px 8px 0 0;
+  margin: 0px 8px 0 0;
   display: inline-block;
   vertical-align: text-top;
   background: url(../images/icons.png) no-repeat;
@@ -172,15 +247,19 @@ body.withbanner header {
   padding: 0 0 15px 75px;
 }
 
+h2#projects {
+	display:none;
+}
+
 .project-table {
   margin-left: -20px;
 }
 
 .project-table .item {
   float: left;
-  width: 282px;
-  margin: 0 0 20px 20px;
-  padding: 8px;
+  width: 273px;
+  margin: 0 0 15px 15px;
+  padding: 15px;
   background: #fff;
   border: 1px solid #d6d6d6;
   -webkit-border-radius: 4px;
