@@ -4,13 +4,12 @@ title: Labs Show and Tell - All Welcome!
 author: Nigel Babu
 ---
 
+<strong>Built something you want to show people? Played around with some intersting
+data? Know of a new development people should know about?</strong>
 
-### What?
-
-Have you built some something you want to show people? Played around with some
-data? Know of a new development people should know about?  Come to the Show and
-Tell this Friday and share it with the community! Slots are 2-5m and we're
-doing them via Google Hangout!
+Come to the Show and Tell this Friday and share it with the community! The
+session is <strong>30m and slots are 2-5m</strong> and we'll be doing this via
+a Google Hangout!
 
 <img src="http://assets.okfn.org/p/labs/img/tent.png" />
 
