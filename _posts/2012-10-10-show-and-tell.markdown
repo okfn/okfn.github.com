@@ -4,7 +4,7 @@ title: Labs Show and Tell - All Welcome!
 author: Nigel Babu
 ---
 
-<strong>Built something you want to show people? Played around with some intersting
+<strong>Built an app or tool you want to show people? Played around with some interesting
 data? Know of a new development people should know about?</strong>
 
 Come to the Show and Tell this Friday and share it with the community! The
