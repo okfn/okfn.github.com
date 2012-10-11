@@ -1,12 +1,16 @@
 /* @override http://localhost:4000/lib/labs.css */
 
 html {
-  font-size:  62.5%;
-  line-height: 1.5em;
+  line-height: 1.4em;
 }
 body {
 	overflow-x: hidden;
 	background-color:#f6f6f6;
+}
+
+body, p {
+  font-family: "PT Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
 }
 
 header h1 {
@@ -17,7 +21,7 @@ header h1 {
 }
 
 p, ul, ol, dl, table {
-  line-height: 1.5em;
+  line-height: 1.4em;
 }
 a {
   text-decoration: underline;
@@ -88,7 +92,6 @@ a.btn {
 }
 .banner p {
   font-size: 18px;
-  font-size: 1.8rem;
 }
 .banner .strapline {
   color: #eee;
