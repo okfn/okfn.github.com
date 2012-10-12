@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,57 +10,33 @@
   <![endif]-->
 
   <!-- styles -->
-  <link rel="stylesheet" href="/theme-okfn/fonts/fonts.min.css">
-  <link rel="stylesheet" href="/theme-okfn/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/theme-okfn/css/okfn-common.css">
-  <link rel="stylesheet" href="/lib/labs.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="http://assets.openspending.org/branding/fonts/opensans/stylesheet.css" />
+  <link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-responsive.css">
+  <link rel="stylesheet" href="/css/labs.css">
   <link rel="shortcut icon" href="http://assets.okfn.org/p/okfn/img/favicon.ico">
-
-  {% for item in page.extra.css %}
-  <link rel="stylesheet" href="{{ item }}">
-  {% endfor %}
 </head>
 
-<body class="{{page.bodyclass}}">
+<body class="body-{{page.bodyclass}}">
 	<header>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a title="Home" class="brand" href="http://okfnlabs.org">
-            <img alt="logo" src="http://assets.okfn.org/web/images/header-logo.png">
-            Open Knowledge Foundation Labs
-          </a>
-          <a href="https://twitter.com/OKFNLabs" class="twitter">Twitter</a>
-          <ul class="nav pull-right">
-            <li class="dropdown" data-dropdown="dropdown">
-              <a href="/" class="dropdown-toggle">Projects</a>
-              <ul class="dropdown-menu">
-                  <li><a href="http://annotateit.org">AnnotateIt</a></li>
-                  <li><a href="http://bibserver.org">BibServer</a></li>
-                  <li><a href="http://okfnlabs.org/bubbletree">BubbleTree</a></li>
-                  <li><a href="http://okfnlabs.org/dashboard">Dashboard</a></li>
-                  <li><a href="http://okfn.org/projects/datapkg/">DPM</a></li>
-                  <li><a href="http://energy.publicdata.eu/ee/">Europe’s Energy</a></li>
-                  <li><a href="http://github.com/pudo/grano">Grano</a></li>
-                  <li><a href="http://pybossa.com">PyBossa</a></li>
-                  <li><a href="http://reclinejs.com">Recline</a></li>
-                  <li><a href="http://textusproject.org/">TEXTUS</a></li>
-                  <li><a href="http://www.weavinghistory.org/">Weaving History</a></li>
-                  <li><a href="http://okfn.org/projects/vdm/">Versioned Domain Model</a></li>
-                  <li><a href="http://yourtopia.net/">Yourtopia</a></li>
-                  <li><a href="http://italia.yourtopia.net/">Yourtopia: Italia</a></li>
-              </ul>
-            </li>
-            <li><a href="http://lists.okfn.org/mailman/listinfo/okfn-labs">Mailing List</a></li>
-            <li><a href="/blog/">Blog</a></li>
-          </ul><!-- #nav -->
+    <div class="container">
+      <div class="logo">
+        <div class="logobox">
+          <a href="/"><img src="/img/header.png"></a>
         </div>
       </div>
-    </div> 
-
-    <div class="container">
       <div class="row">
-      {{ page.header }}
+        <div class="span12">
+          <ul class="mainnav">
+            <li><a class="nav-blog" href="/blog">Blog</a></li>
+            <li><a class="nav-code" href="/projects">Code</a></li>
+            <li><a class="nav-data" href="/data">Data</a></li>
+            <li><a class="nav-events" href="/events">Events</a></li>
+            <li><a class="nav-about" href="/about">About</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -69,60 +46,70 @@
   </div>
 
   <footer>
-    <div class="inner">
-      <div class="container">
-        <div class="row">
-          <div id="footer-widget-area">
-            <div id="first" class="widget-area">
-              <ul class="xoxo">
-                <li id="nav_menu-3" class="widget widget_nav_menu">
-                  <h3 class="widgettitle">About</h3>
-                  <div class="menu-footer-imprint-container">
-                    <ul id="menu-footer-imprint" class="menu">
-                      <li><a href="http://okfn.org/about/">About Us</a></li>
-                      <li><a href="http://okfn.org/media/">Media</a></li>
-                      <li><a href="http://okfn.org/contact/">Contact Our Team</a></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div><!-- #first .widget-area -->
+    <div class="container">
+      <!--div class="row">
+        <div class="span12">
+          <ul class="flatmenu">
+            <li><strong>Open Government</strong></li>
+            <li><a href="http://datahub.io">DataHub</a></li>
+            <li><a href="http://openspending.org">OpenSpending</a></li>
+            <li><a href="http://opengovernmentdata.org/">Open
+              Government Data WG</a></li>
+            <li><a href="http://datacatalogs.org/">DataCatalogs</a></li>
+            <li><a href="http://energy.publicdata.eu/ee/">Europe's Energy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <ul class="flatmenu">
+            <li><strong>Open Research and Education</strong></li>
+            <li><a href="http://schoolofdata.org">School of Data</a></li>
+            <li><a href="http://access.okfn.org/">@ccess</a></li>
+            <li><a href="http://science.okfn.org">Science</a></li>
+            <li><a href="http://openeconomics.net/">Economics</a></li>
+            <li><a href="http://openbiblio.net/">Bibliography</a></li>
+            <li><a href="http://linguistics.okfn.org/">Linguistics</a></li>
             
-            <div id="second" class="widget-area">&nbsp; </div>
-            
-            <div id="third" class="widget-area">
-              <ul class="xoxo">
-                <li id="text-3" class="widget widget_text">
-                  <h3 class="widgettitle">Terms and Conditions</h3>
-                  <ul>
-                    <li><a href="http://okfn.org/terms-of-use/">Terms of Use</a></li>
-                    <li><a href="http://okfn.org/privacy-policy/">Privacy Policy</a></li>
-                    <li><a href="http://okfn.org/ip-policy/">IP Policy</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div><!-- #third .widget-area -->
-            
-          </div>
-        </div><!-- /row -->
-      </div><!-- /container -->
-    </div><!-- /inner -->
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <ul class="flatmenu">
+            <li><strong>Open Culture</strong></li>
+            <li><a href="http://humanities.okfn.org/">Humanities</a></li>
+            <li><a href="http://design.okfn.org/">Design</a></li>
+            <li><a href="http://openglam.org/">GLAM</a></li>
+            <li><a href="http://textusproject.org/">Textus</a></li>
+          </ul>
+        </div>
+      </div-->
+      <div class="row logorow">
+        <div class="span6">
+          <a href="http://www.shuttleworthfoundation.org/"><img src="/img/shuttleworth_small.png" alt="Funded by the Shuttleworth Foundation"></a>
+        </div>
+        <div class="span6 text-right">
+          <a href="http://okfn.org"><img src="/img/okfn.png" alt="Open
+            Knowledge Foundation"></a> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12 text-right">
+          <ul class="flatmenu">
+            <li><a href="http://okfn.org/about/">About OKFN</a></li>
+            <li><a href="http://okfn.org/opendata/">Open Data</a></li>
+            <li><a href="http://okfn.org/terms-of-use/">Terms of Use</a></li>
+            <li><a href="http://okfn.org/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="http://okfn.org/ip-policy/">IP Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
-
-  <a href="http://www.shuttleworthfoundation.org/" class="corner ribbon">
-    <img src="http://assets.okfn.org/images/shuttleworth/shuttleworth%20funded-01.png" alt="Shuttleworth">
-  </a>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
   
-  {% for item in page.extra.js %}
-  <script src="{{ item }}"></script>
-  {% endfor %}
-  
-  <script>
-  {{ page.extra.raw_js }}
-  </script>
-
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-33874954-3']);
@@ -136,3 +123,4 @@
 </script>
 </body>
 </html>
+

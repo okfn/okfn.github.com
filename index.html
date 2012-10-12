@@ -1,176 +1,26 @@
 ---
+title: Open Knowledge Foundation Labs
 layout: default
-title: OKFN Labs
-bodyclass: withbanner
-
-extra:
-  css:
-    - '/lib/activity.css'
-  js:
-    - '/lib/jquery.masonry.min.js'
-    - '/lib/activity.js'
-  raw_js: |
-    jQuery(function ($) {
-      $('.activity-list').activity({
-      url: ["http://activityapi.herokuapp.com/api/1/activity/github?repo=okfn/annotateit,okfn/annotator,okfn/annotator-store,okfn/bibserver,okfn/bubbletree,okfn/dashscrape,okfn/labs,okfn/okfn.github.com,okfn/recline,okfn/textus,okfn/yourtopia&per_page=30",
-            "http://activityapi.herokuapp.com/api/1/activity/mailman?list=annotator-dev,okfn-labs,humanities-dev&per_page=30"],
-        events: 30
-      });
-
-      $('.project-table').imagesLoaded(function () {
-        $(this).masonry({
-          itemSelector: '.item',
-          columnWidth: 320
-        });
-      });
-    });
-
-header: |
-  <div class="banner">
-    <div class="row banner-top">
-      <div class="span8 offset4">
-        <h1></span>OKFN <strong>Labs</strong></h1>
-        <p class="strapline">
-          Welcome to the home of the Open Knowledge<br>
-          Foundation&rsquo;s experimental and prototype projects.
-        </p>
-        <p class="wheretogo">
-          <a href="/blog/"><i class="icon-large icon-pencil-black"></i>Blog</a>
-          <a href="http://lists.okfn.org/mailman/listinfo/okfn-labs"><i class="icon-large icon-mail-black"></i>Mailing list</a>
-        </p>
-       </div>
-     </div>
-     <div class="row banner-bot">
-       <div class="span8 offset4">
-         <div class="activity-box">
-           <h2>Recent activity</h2>
-           <div class="activity-list"></div>
-          </div>
-       </div>
-     </div>
-  </div>
-
-
-projects:
-  - 
-    name: Annotator
-    href: http://annotateit.org
-    desc: |
-      A Javascript tool that can be added to any webpage to allow inline annotation. Annotations can have tags, Markdown content, per-annotation permissions and more.A bookmarklet allows you to annotate any web page and save your annotations.
-      
-      Used by:
-
-      * [Open Shakespeare][os]: community-created critical editions of Shakespeare’s works
-      * [Siyavula][sv]: annotating textbooks
-      * [Hypothes.is][hy]: bringing peer review to the web
-      * [PaperGrader.org][pg]: annotating and grading academic papers
-
-      [os]: http://openshakespeare.org/
-      [sv]: http://projects.siyavula.com/
-      [hy]: http://hypothes.is/
-      [pg]: http://papergrader.org/
-
-  -
-    name: BubbleTree
-    href: http://okfnlabs.org/bubbletree
-    desc: |
-      Display spending data in an interactive visualization. BubbleTree can (optionally) be integrated with data from the [OpenSpending](http://openspending.org) API.
-
-  - 
-    name: TEXTUS
-    href: http://textusproject.org/
-    desc: |
-      TEXTUS is an open source platform for working with collections of digitised texts for use within teaching and research. It enables users to collaboratively annotate and translate texts, as well as share bibliographies and reading lists and reliably cite digital editions using URLs.
-
-      The first instance of TEXTUS will be deployed as OpenPhilosophy.org which is currently being built in collaboration with scholars and students from Goldsmiths University and JISC.
-
-  -
-    name: Grano
-    href: http://github.com/pudo/grano
-    img: placeholder
-    desc: |
-      Grano helps you map out and visualise networks of actors and relationships, such as the board members of major corporate entities.
-    more:
-      - 
-        name: Grano on GitHub
-        href: http://github.com/pudo/grano
-
-  - 
-    name: Recline
-    href: http://reclinejs.com
-    desc: |
-      Relax with your data. Recline is:
-      
-      * A data explorer: combining a data grid, Google-Refine-style data transforms, and visualizations all in lightweight JavaScript and HTML.
-      * A simple but powerful library of extensible data components (grid, plotting, and data connectors) which you can use and build on.
-      
-      The explorer can be used standalone or can be embedded. Recline is extremely easy to extend and adapt. The library’s modular design mean means you can take only what you need.
-      
-  -
-    name: PyBossa
-    href: http://pybossa.com
-    desc: |
-      PyBossa is a free, open-source, crowd-sourcing and micro-tasking platform. It enables people to create and run projects that utilise online assistance in performing tasks that require human cognition such as image classification, transcription, geocoding and more.
-
-      PyBossa is there to help researchers, civic hackers and developers to create projects where anyone around the world with some time, interest and an internet connection can contribute.
-
-  -
-    name: Dashboard
-    href: http://okfnlabs.org/dashboard
-    desc: |
-      An experimental way to explore the people and activities of the Open Knowledge Foundation.
-
-  -
-    name: Europe’s Energy
-    href: http://energy.publicdata.eu/ee/
-    img: europesenergy
-    desc: |
-      Member States of the European Union have agreed on targets aimed at reducing greenhouse gas emissions by cutting energy consumption by 20% and increasing the share of renewables in the energy mix to 20% by 2020.
-
-      The “Europe’s Energy” project gives users a set of visual tools to put these targets into context and to understand and compare how progress is being made towards them in different countries. It uses data from Eurostat, the statistical office of the European Union, which provides official statistics on EU Member States.
-
-  -
-    name: BibServer
-    href: http://bibserver.org
-    desc: |
-      Quickly and easily share collections of bibliographic metadata, data which represents a record of work, or even a map of knowledge. By making it simple for people to use this information, we make scholarship better.
-
-  -
-    name: YourTopia
-    href: http://yourtopia.net
-    desc: |
-      Yourtopia allows a user to construct a measure of social progress world-wide based on their own preferences for development. It helps people participate in a global effort to trace humanity’s progress towards the Millennium Development Goals.
-
-  -
-    name: "YourTopia: Italia"
-    href: http://italia.yourtopia.net
-    img: yourtopia-italia
-    desc: |
-      A spin-off of the Yourtopia project, *Yourtopia: Italia* helps analyse social progress at a time in which Italy is undergoing substantial reforms and in which it is crucial to keep track of social divides across the country.
 ---
 
-
-<h2 id="projects" class="instruction">Browse our projects and initiatives</h2>
-
-<div class="project-table">
-
-  {% for p in page.projects %}
-  <div class="item">
-    <a href="{{ p.href }}">
-      <img src="/images/projects/{% if p.img %}{{ p.img }}{% else %}{{ p.name | downcase }}{% endif %}.png" alt="">
-    </a>
-    <h3><a href="{{ p.href }}">{{ p.name }}</a></h3>
-    {{ p.desc | markdownify }}
-    <p class="more">
-      {% if p.more %}
-        {% for m in p.more %}
-        <a href="{{ m.href }}" class="btn">{{ m.name }} »</a>
-        {% endfor %}
-      {% else %}
-        <a href="{{ p.href }}" class="btn">{{ p.name }} homepage »</a> 
-      {% endif %}
-    </p>
+<div class="row">
+  <div class="span12">
+    <div id="claim">
+      <a href="/about">Open Knowledge Labs</a> creates 
+      <a href="/projects" class="tools">services and tools</a> that 
+      unlock the digital commons for everyone.
+    </div>
   </div>
-  {% endfor %}
+</div>
+<hr>
+<div class="row">
+  <div class="span8 home">
+    {% include blog_header.html %}
+    {% include blog_posts.html %}
 
-</div><!-- /.project-table -->
+    
+  </div>
+  <div class="span4">
+    <h1>Upcoming Events</h1>
+  </div>
+</div>
