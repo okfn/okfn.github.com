@@ -212,7 +212,7 @@ ul.posts h2 {
 
 ul.posts .meta {
   /*color: #fff146;*/
-  color: #666;
+  color: #999;
 }
 
 ul.posts .excerpt {
@@ -220,7 +220,7 @@ ul.posts .excerpt {
 }
 
 .post-date, .dark {
-  color: #666;
+  color: #999;
 }
 
 .snapshot {
@@ -273,7 +273,7 @@ ul.persons .name {
 }
 
 ul.persons .job {
-  color: #666;
+  color: #999;
 }
 
 ul.persons li.person {
@@ -291,4 +291,13 @@ ul.persons ul li {
   display: inline-block;
 }
 
+/* OI Hackday Extras */
+.sponsor-logos img {
+  margin-right: 1em;
+}
+
+img.minipic {
+  float: left;
+  padding-right: 0.5em;
+}
 
