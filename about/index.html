@@ -6,6 +6,9 @@ layout: about
 <div class="row">
   <div class="span8">
     <h1>What is Labs?</h1>
+    <p><em>I tell you: one must still have chaos within oneself, to give
+      birth to a dancing star.</em> <span
+      class="dark">(Nietzsche)</span></p>
 
     <p>We develop experimental tools and services that enable more
     people to use structured and semi-structured information on
@@ -18,12 +21,35 @@ layout: about
       Network</a> we work as a collaborative community
     and we aim to use and produce <a href="http://opendefinition.org/">open data and
       free software</a>.</p>
+    
 
     <div class="row">
       <div class="span8">
         <h1>Who are we?</h1>
-
-        <p>If only we knew...</p>
+        <p>
+          Most of what we do is based on volunteer time. Still, some 
+          team members are funded to work on Labs projects:
+        </p>
+        <ul class="persons">
+          {% for person in site.categories.about %}
+            <li class="person {% cycle 'odd', 'even' %}">
+              <img class="photo" src="/img/people/{{ person.handle }}.png">            
+              <span class="name">{{ person.title }}</span>
+                <span class="job">{{person.job}}</span>
+              <div class="excerpt">
+                {{ person.content }} 
+              </div>
+              <ul>
+                <li><a href="https://twitter.com/{{ person.twitter }}">
+                  <img src="/img/twitter.png"> {{ person.twitter }}</a></li>
+                <li><a href="https://github.com/{{ person.twitter }}">
+                  <img src="/img/github.png"> {{ person.github }}</a></li>
+                <li><a href="{{ person.blog }}">
+                  {{ person.blog }}</a></li>
+              </ul>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
   </div>
@@ -33,11 +59,13 @@ layout: about
     <p>Join our discussion list. Here, we exchange
     datasets and ideas and plan our projects.</p>
 
-    <p class="boxed">
-      <a class="call-to-action" href="http://lists.okfn.org/mailman/listinfo/okfn-labs">Sign
-        up to the mailing list</a>
-    </p>
-  
+    {% include list_signup.html %}
+    
+    <p>Many of us also hang out on IRC. Check out:</p>
+    <ul>
+      <li><code>irc.freenode.org: #okfn</code></li>
+    </ul>
+
     <h2>Get hacking</h2>
     <p>All of our code is on GitHub &mdash; check out the <a
       href="/projects">projects list</a> or these organisations:</p>

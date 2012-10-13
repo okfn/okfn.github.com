@@ -60,6 +60,12 @@ li {
   line-height: 23px;  
 }
 
+code {
+  color: #eee;
+  background-color: #666;
+  border: none;
+}
+
 hr, .page-header {
   border-color: #666;
   border-bottom: 0;
@@ -213,7 +219,7 @@ ul.posts .excerpt {
   margin-bottom: 2em;
 }
 
-.post-date {
+.post-date, .dark {
   color: #666;
 }
 
@@ -243,3 +249,46 @@ ul.posts .excerpt {
   -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
   
 }
+
+/* About page */
+ul.persons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.persons .photo {
+  float: left;
+  padding-right: 1em;
+}
+
+ul.persons li.even .photo {
+  padding-left: 1em;
+  padding-right: 0;
+  float: right;
+}
+
+ul.persons .name {
+  font-weight: bolder;
+}
+
+ul.persons .job {
+  color: #666;
+}
+
+ul.persons li.person {
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
+ul.persons ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+ul.persons ul li {
+  margin-right: 1em;
+  display: inline-block;
+}
+
+
