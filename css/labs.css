@@ -231,9 +231,6 @@ ul.posts .excerpt {
   max-height: 200px;*/
   overflow: hidden;
   clip: rect(0px, 160px, 688px, 0px);
-  -webkit-border-radius: 6px;
-          border-radius: 6px;
-  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
 }
 
 .boxed {
