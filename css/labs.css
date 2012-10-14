@@ -4,8 +4,8 @@ html, body {
   font-size: 14px;
   line-height: 23px;
   background-color: #1A1A1A;
+  /*background-color: #2A2A2A;*/
   color: #ddd;
-  text-shadow: 1px 1px 3px #111;
 }
 
 a {
@@ -34,6 +34,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: 'Antic Slab', "Open Sans", OpenSansRegular, sans-serif;
+  text-shadow: 1px 1px 3px #111;
 }
 
 h1 {
@@ -134,6 +135,7 @@ header .logo .logobox {
   margin-bottom: -40px;
   display: inline-block;
   background-color: #1A1A1A;
+  /*background-color: #2A2A2A;*/
   padding: 0 1em 0 1em;
 }
 
@@ -163,6 +165,7 @@ header ul.mainnav li a {
   padding: 0.95em 2em 0.5em 0;
   font-weight: 700;
   color: #666;
+  color: #999;
   text-transform: uppercase;
 }
 
@@ -176,6 +179,7 @@ header ul.mainnav li a:hover {
   line-height: 1.7em;
   font-family: 'Antic Slab', serif;
   margin-bottom: 0em;
+  text-shadow: 1px 1px 3px #111;
 }
 
 .teaser {
