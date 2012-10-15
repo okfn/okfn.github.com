@@ -4,7 +4,7 @@ html, body {
   font-size: 14px;
   line-height: 23px;
   background-color: #1A1A1A;
-  /*background-color: #2A2A2A;*/
+  background-color: #2A2A2A;
   color: #ddd;
 }
 
@@ -135,7 +135,7 @@ header .logo .logobox {
   margin-bottom: -40px;
   display: inline-block;
   background-color: #1A1A1A;
-  /*background-color: #2A2A2A;*/
+  background-color: #2A2A2A;
   padding: 0 1em 0 1em;
 }
 
