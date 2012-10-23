@@ -4,6 +4,8 @@ title: Labs Show and Tell - 26th October!
 author: Nigel Babu
 ---
 
+<img src="http://assets.okfn.org/p/labs/img/tent.png" style="margin-left: 30px; float: right;" />
+
 We're having the next Show and Tell on Friday, [26 October at 2:30 pm BST][time] via Google Hangout on Air. As usual, the URL will be posted on [OKFN Labs' G+ Page][gplus].
 
 If you'd like to present, add your name to [the list][opad]. Remember, [#okfn on irc.freenode.net][irc] will be the backchannel for discussion and questions, so don't forget to hang out there.
