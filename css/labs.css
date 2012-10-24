@@ -1,4 +1,3 @@
-
 html, body {
   font-family: "Open Sans", OpenSansRegular, sans-serif;
   font-size: 14px;
@@ -305,3 +304,6 @@ img.minipic {
   padding-right: 0.5em;
 }
 
+.blog.posts li {
+  margin-bottom: 50px;
+}
