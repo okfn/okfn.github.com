@@ -305,5 +305,21 @@ img.minipic {
 }
 
 .blog.posts li {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
+}
+
+.blog.posts li .more {
+  color: #6D6E71;
+  letter-spacing: 5px;
+  margin-top: -20px;
+  text-align: center;
+}
+
+.blog.posts li .more > a {
+  color: #6D6E71;
+}
+
+.blog.posts li .more > a:hover {
+  color: #abe319;
+  text-decoration: none;
 }
