@@ -1,0 +1,97 @@
+---
+title: ZEIT ONLINE - Datenjournalismus
+layout: events
+---
+
+<h1>ZEIT ONLINE <small>Datenscraping und -bereinigung, 24.10.2012</small></h1>
+
+<!-- img src="http://media.tumblr.com/tumblr_m4wu4u8XDL1qgmvbu.png" -->
+
+<!-- img src="scoda_pipeline.jpg" -->
+<h3>Einleitung</h2>
+
+<ul>
+  <li>Datenverarbeitung:
+  <a href="http://www.flickr.com/photos/okfn/7177017539/in/set-72157630042589097/lightbox/">Überblick</a>, 
+  <a href="http://www.flickr.com/photos/okfn/7177017899/in/set-72157630042589097/lightbox/">Fähigkeiten</a>
+  </li>
+  <li>Beispiel: Scraping - <a href="http://projects.propublica.org/docdollars/">Dollars for Docs</a>,
+  <a href="http://projects.propublica.org/nursing-homes/findings/search?search=sacramento&ss=ALL&state=ALL">Nursing Homes</a> (Quelle: <a href="http://www.medicare.gov/nursinghomecompare/SurveyReportDetail.aspx?ID=555122&SURVEYDATE=05/11/2012&profTab=1">Mediacare</a>)</li>
+</ul>
+
+
+<h2>Web-Scraping</h2>
+<div class="row">
+  <div class="span6">
+    <p>Werkzeuge:</p>
+    <ul>
+      <li><a href="https://thimble.webmaker.org/en-US/editor">Mozilla Thimble</a></li>
+      <li><a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd">Chrome Scraper Extension</a></li>
+      <li><a href="https://docs.google.com">GDocs Spreadsheets</a>: <a href="http://support.google.com/drive/bin/answer.py?hl=en&answer=155182">=importHTML</a></li>
+      <li><a href="https://scraperwiki.com/">ScraperWiki</a></li>
+      <li>Exkurs: <a href="http://www.gruenderszene.de/lexikon/begriffe/application-programming-interface-api">APIs</a>, bsp.: <a href="http://offenesparlament.de/plenum/17/189">OPA</a>, <a href="http://www.bundestag.de/xml/mdb/S/steinbrueck_peer.xml">Nebenverdienstekönig</a></li>
+    </ul>
+  </div>
+
+  <div class="span6">
+    <p>Quellseiten:</p>
+    <ul>
+      <li><a href="http://de.wikipedia.org/wiki/Liste_der_Mitglieder_des_Deutschen_Bundestages_(17._Wahlperiode)">WP:MdB</a></li>
+      <li><a href="http://www.ppp-projektdatenbank.de/">ÖPP Deutschland AG - Projektdatenbank</a></li>
+      <li><a href="http://www.bundestag.de/bundestag/parteienfinanzierung/fundstellen50000/2012/">Parteispenden über EUR 50,000</a></li>
+      <li>DG COMP <a href="http://ec.europa.eu/competition/state_aid/overview/index_en.html">State Aid Register</a> - <a href="https://scraperwiki.com/scrapers/state_aid_register/">Scraper</a></li>
+      <li><a href="http://www.ipu.org/wmn-e/classif.htm">IPU Women in Parliaments</a> - <a href="https://scraperwiki.com/scrapers/women_in_parliaments/edit/">Scraper</a></li>
+    </ul>
+  </div>
+</div>
+
+<h2>PDF-Scraping</h2>
+<div class="row">
+  <div class="span6">
+    <p>Werkzeuge:</p>
+    <ul>
+      <li><a href="http://www.cometdocs.com/">CometDocs</a></li>
+      <li><a href="http://finereader.abbyy.com/">ABBYY FineReader</a></li>
+      <li><a href="http://poppler.freedesktop.org/">poppler pdf2html</a></li>
+      <li><a href="http://code.google.com/p/tesseract-ocr/">tesseract-ocr</a></li>
+    </ul>
+  </div>
+
+  <div class="span6">
+    <p>Beispiele:</p>
+    <ul>
+      <li><a href="https://fragdenstaat.de/anfrage/liste-aller-vom-bmz-geforderten-organisationenen-in-2010/">BMZ-Organisationen (2010)</a></li>
+      <li><a href="FDP-2009.pdf">Rechenschaftsbericht der FDP (2009)</a></li>
+      <li><a href="http://www.bundestag.de/dokumente/lobbyliste/lobbylisteamtlich.pdf">Verbändeliste des Bundestags</a></li>
+      <li><a href="http://www.berlin.de/sen/strukturfonds/ab2007/efre/ergebnisse_foerderung_efre.html">EFRE-Begünstigte Berlin</a> (<a href="http://www.berlin.de/imperia/md/content/senatsverwaltungen/senwaf/struktur/efre/ergebnissederfoerderung/jb11_beg__nstigtenverzeichnis_neu.pdf?start&ts=1342102608&file=jb11_beg__nstigtenverzeichnis_neu.pdf">PDF</a>)</li>
+    </ul>
+  </div>
+  
+  
+</div>
+
+<h2>Datenbereinigung</h2>
+<div class="row">
+  <div class="span6">
+    <p>Werkzeuge:</p>
+    <ul>
+      <li><a href="http://code.google.com/p/google-refine/">Google Refine</a> (jetzt: OpenRefine)</a>
+        <ul>
+          <li><a href="https://github.com/OpenRefine/OpenRefine/wiki/Documentation-For-Users">Benutzerdokumentation</a></li>
+          <li>insb: <a href="http://code.google.com/p/google-refine/wiki/GRELOtherFunctions">cross</a></li>
+        </ul>
+      </li>
+      <li><a href="http://shancarter.com/data_converter/">Mr Data Converter</a>, <a href="http://csvkit.readthedocs.org/en/latest/">csvkit</a></li>
+      <li><a href="http://www.danielfett.de/internet-und-opensource,artikel,regulaere-ausdruecke">Reguläre Ausdrücke</a> ("RegEx", <a href="http://opencompany.org/download/regex-cheatsheet.pdf">Spickzettel</a>)</li>
+    </ul>
+  </div>
+
+  <div class="span6">
+    <p>Datensätze:</p>
+    <ul>
+      <li><a href="lobbyfacts_reps_and_fd_20121023.csv">Registrierte Lobbyisten (EP und EC), Basisdaten</a></li>
+      <li><a href="lobbyfacts_clients_20121023.csv">Registrierte Lobbyfirmen mit Kunden</a></li>
+      <li><a href="12_03_31_projekte_mit_Vertrag_Basisdaten.xls">ÖPP Projektbasisdaten</a></li>
+    </ul>
+  </div>
+</div>
