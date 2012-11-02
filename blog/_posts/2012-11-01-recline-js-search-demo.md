@@ -7,7 +7,7 @@ author: Rufus Pollock
 <a href="http://reclinejs.com/"><img src="http://assets.okfn.org/p/recline/img/logo.png" style="float: right; height: 100px;" alt="Recline JS" /></a>
 
 We've recently finished a demo for ReclineJS showing how it can be used to build
-JS-based (ajax-style) search interfaces in seconds:
+JS-based (ajax-style) search interfaces in minutes (or even seconds!):
 <http://reclinejs.com/demos/search/>
 
 Because of Recline's [pluggable backends][backends] you get out of the box
