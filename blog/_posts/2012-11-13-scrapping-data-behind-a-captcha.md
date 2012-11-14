@@ -15,7 +15,7 @@ solve a CAPTCHA for each salary you want to see. With no other tricks, it would
 take ages to answer my question. I needed a way to gather all salaries and
 compare them. But how to scrape a page that's "protected" behind a CAPTCHA?
 
-<img src="http://www.senado.gov.br/transparencia/servidores/captcha.asp"
+<img src="/img/res/senado-gov-br-captcha.jpg"
 style="margin: 0 auto; display: block;" alt="senado.gov.br CAPTCHA" />
 
 [Decaptcher](http://decaptcher.com) is a company that sells CAPTCHA-solving
