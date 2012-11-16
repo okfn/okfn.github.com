@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Vitor Baptista
-title: Scrapping Data Behind a CAPTCHA
+title: Scraping Data Behind a CAPTCHA
 ---
 
 How much does the highest paid person in the Brazilian Federal Senate earns?
