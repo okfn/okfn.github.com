@@ -34,6 +34,7 @@ There are some more software development concepts that can be applied to the leg
 - A [prose.io](http://prose.io/)-like editor to easily create law proposals and make a pull request.
 - Measuring the complexity of corpus/laws/paragraphs and using Travis CI to test pull requests if they make the complexity worse. [Pattern](http://www.clips.ua.ac.be/pages/pattern) is a Python NLP library and they recently released a [German module](http://www.clips.ua.ac.be/pages/pattern-de) which I want to try on our laws.
 - Testing foreign key integrity: are all referenced paragraphs still available?
+- Create an informative visualization out of the Git log automatically like [Gregor Aisch did by hand for the German political party law](http://blog.openingparliament.org/post/37650393621/what-opening-parliamentary-information-can-tell-us).
 - Let the German president sign off on commits to master.
 
 The design decisions around Bundes-Git fit nicely into the Git/GitHub eco system but they are not set in stone. They also create some problems and annoyances that need to be fixed or circumvented. While I believe the general philosophy and the freshness of the approach is the right direction, we clearly need more discussion.
