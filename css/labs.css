@@ -2,7 +2,6 @@ html, body {
   font-family: "Open Sans", OpenSansRegular, sans-serif;
   font-size: 14px;
   line-height: 23px;
-  background-color: #1A1A1A;
   background-color: #2A2A2A;
   color: #ddd;
 }
@@ -323,3 +322,14 @@ img.minipic {
   color: #abe319;
   text-decoration: none;
 }
+
+pre {
+  background: #333;
+  color: #ddd;
+}
+
+pre code .comment { color: #999; }
+pre code .keyword { color: #8DB91A; }
+pre code .title { color: #FFBF1F; }
+pre code .string { color: #BC792A; }
+pre code .number { color: #81A81A; }
