@@ -8,7 +8,7 @@ title: Speeding Up Your PyBossa App
 
 Thanks to the free [crowd-crafting](http://crowdcrafting.org) tool [PyBossa](http://dev.pybossa.com/), nowadays the biggest challenge for successful crowd-sourcing is engaging users for participating in tasks, and to keep that motivation at a high level over time. Therefor the user experience of crowd-sourcing apps plays a crucial role.
 
-After participating in quite a few tasks myself, I found that the loading time in between two tasks was the most annoying thing. Doing crowd-sourcing often task often feels like doing something stupid, and you really want to get things done as fast as possible. Sometimes it needs just a single click to solve a task, but then it takes seconds to load the next one.
+After participating in quite a few tasks myself, I found that the loading time in between two tasks was the most annoying thing. Doing crowd-sourcing tasks often feels like doing something stupid, and you really want to get things done as fast as possible. Sometimes it needs just a single click to solve a task, but then it takes seconds to load the next one.
 
 This is because all existing apps where designed in a synchronous fashion. The client requests a new task and presents it to the user as soon as it has been loaded. *After* the user has solved the task, the result is submitted and *after* the result has been stored a new task is requested and so on.
 
