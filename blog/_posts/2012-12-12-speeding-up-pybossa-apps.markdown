@@ -76,3 +76,6 @@ We can use exactly the same method to model the user action. Therefor ``presentT
 And that's it.
 
 This method will significantly speed up your PyBossa app, especially if you need to fetch data from third party APIs. Remind yourself that even a speedup of a few seconds is a huge benefit for your voluntary users, as they are likely to go through this process quite often. And you really don't want to waste their time, do you?
+
+_Update:_ Why not try the [FlickrPerson demo app the speedy way](http://crowdcrafting.org/app/flickrperson2/newtask)?
+
