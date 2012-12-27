@@ -333,3 +333,11 @@ pre code .keyword { color: #8DB91A; }
 pre code .title { color: #FFBF1F; }
 pre code .string { color: #BC792A; }
 pre code .number { color: #81A81A; }
+
+.blog-comments {
+  margin-top: 30px;
+  border-top: solid 1px #666;
+}
+.blog-comments #disqus_thread {
+  margin-top: 10px;
+}
