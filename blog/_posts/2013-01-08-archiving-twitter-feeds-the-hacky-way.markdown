@@ -14,15 +14,17 @@ There are many circumstances where you want to archive a tweets - maybe just fro
 
 Unfortunately Twitter search queries do not give data more than 7 days old and for a given account you can only get approximately the last 3200 of your tweets and 800 items from your timeline.
 
-Thus, if you want to archive twitter you'll need to come up with another solution (or pay them, or a reseller, a bunch of money - see Appendix below!). Sadly, most of the online solutions have tended to disappear or be acquired over time (e.g. twapperkeeper). So a DIY solution would be attractive. After reading various proposals on the web I've found the following to work pretty well (there is also this (excellent google spreadsheet based solution)[1]). It involves 3 steps:
+Thus, if you want to archive twitter you'll need to come up with another solution (or pay them, or a reseller, a bunch of money - see Appendix below!). Sadly, most of the online solutions have tended to disappear or be acquired over time (e.g. twapperkeeper). So a DIY solution would be attractive. After reading various proposals on the web I've found the following to work pretty well (but see also this [excellent google spreadsheet based solution][1]).
+
+The proposed process involves 3 steps:
 
 [1]: http://mashe.hawksey.info/2012/01/twitter-archive-tagsv3/
 
-1. Create a Twitter Atom Feed for your Search
+1. Locate the Twitter Atom Feed for your Search
 2. Use Google Reader as your Archiver
 3. Get your data out of Google Reader (a 1000 items at a time!)
 
-One current drawback of this solution is that each state has to be done by hand. It could be possible to automate the crucial third step if I could work out how to do more with the [Google Reader API][api-docs]. Contributions here would be very welcome!
+One current drawback of this solution is that each stage has to be done by hand. It could be possible to automate more of this, and especially the important third step, if I could work out how to do more with the [Google Reader API][api-docs]. Contributions or suggestions here would be very welcome!
 
 [api-docs]: http://undoc.in/
 
@@ -42,7 +44,7 @@ Unfortunately twitter atom queries are limited to only a few items (around 20) s
 
 Just add the previous feed URL in your Google Reader account. It will then start archiving.
 
-Aside: because the twitter atom feed is limited to a small number of items and the check in google reader only happens every 3 hours you can miss a lot of tweets (1h if someone else is archiving the same feed). One option could be to use Topsy's RSS feeds <http://otter.topsy.com/searchdate.rss?q=%23okfn> (though not clear how to get more items from this feed either!)
+Aside: because the twitter atom feed is limited to a small number of items and the check in google reader only happens every 3 hours (1h if someone else is archiving the same feed) you can miss a lot of tweets. One option could be to use Topsy's RSS feeds <http://otter.topsy.com/searchdate.rss?q=%23okfn> (though not clear how to get more items from this feed either!)
 
 ## Gettting Data out of Google Reader
 
