@@ -6,7 +6,7 @@ title: Archiving Twitter the Hacky Way
 
 There are many circumstances where you want to archive a tweets - maybe just from your own account or perhaps for a hashtag for an event or topic.
 
-Unfortunately Twitter search queries do not give data more than 7 days old and for a given account you can only get approximately the last 3200 of your tweets and 800 items from your timeline.
+Unfortunately Twitter search queries do not give data more than 7 days old and for a given account you can only get approximately the last 3200 of your tweets and 800 items from your timeline. [Update: People have pointed out that [Twitter released a feature to download an archive of your personal tweets at the end of December](http://blog.twitter.com/2012/12/your-twitter-archive.html) - this, of course, still doesn't help with queries or hashtags]
 
 Thus, if you want to archive twitter you'll need to come up with another solution (or pay them, or a reseller, a bunch of money - see Appendix below!). Sadly, most of the online solutions have tended to disappear or be acquired over time (e.g. twapperkeeper). So a DIY solution would be attractive. After reading various proposals on the web I've found the following to work pretty well (but see also this [excellent google spreadsheet based solution][1]).
 
