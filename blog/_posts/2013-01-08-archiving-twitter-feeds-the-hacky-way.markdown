@@ -4,12 +4,6 @@ author: Rufus Pollock
 title: Archiving Twitter the Hacky Way
 ---
 
-***Note that the method below will become obsolete as of March 5 2013 when [Twitter close down RSS and Atom feeds][twitter-shutdown] - continuing their long march to becoming a <del>fully</del> more closed and controlled ecosystem.***
-
-***As you struggle, like me, to get precious archival information out of Twitter it may be worth reflecting on just how much information you've given to Twitter that you are now unable to retrieve (at least without paying) ...***
-
-[twitter-shutdown]: https://dev.twitter.com/docs/api/1.1/overview#New_Twitter_client_policies
-
 There are many circumstances where you want to archive a tweets - maybe just from your own account or perhaps for a hashtag for an event or topic.
 
 Unfortunately Twitter search queries do not give data more than 7 days old and for a given account you can only get approximately the last 3200 of your tweets and 800 items from your timeline.
@@ -27,6 +21,12 @@ The proposed process involves 3 steps:
 One current drawback of this solution is that each stage has to be done by hand. It could be possible to automate more of this, and especially the important third step, if I could work out how to do more with the [Google Reader API][api-docs]. Contributions or suggestions here would be very welcome!
 
 [api-docs]: http://undoc.in/
+
+***Note that the above method will become obsolete as of March 5 2013 when [Twitter close down RSS and Atom feeds][twitter-shutdown] - continuing their long march to becoming a <del>fully</del> more closed and controlled ecosystem.***
+
+***As you struggle, like me, to get precious archival information out of Twitter it may be worth reflecting on just how much information you've given to Twitter that you are now unable to retrieve (at least without paying) ...***
+
+[twitter-shutdown]: https://dev.twitter.com/docs/api/1.1/overview#New_Twitter_client_policies
 
 ## Twitter Atom Feed
 
