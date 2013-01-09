@@ -1,4 +1,5 @@
 pygments: true
 auto: true
 markdown: rdiscount
+future: false
 
