@@ -19,6 +19,10 @@
   <link rel="stylesheet" href="/css/slimbox2.css" type="text/css" media="screen" />
   {{ endif }}
 
+  <!-- must have these at the top of the page so we can do scripts in content of specific pages -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script src="/js/underscore.js"></script>
+
   <link rel="alternate" type="application/atom+xml" title="OKFN Labs Feed" href="http://okfnlabs.org/blog/feed.xml" />
   <link rel="shortcut icon" href="http://assets.okfn.org/p/okfn/img/favicon.ico">
 </head>
@@ -112,7 +116,6 @@
     </div>
   </footer>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
   {{ if page.lightbox }}
   <script src="/js/slimbox2.js"></script>
   {{ endif }}
