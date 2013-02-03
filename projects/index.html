@@ -63,7 +63,13 @@ layout: projects
     {{/author}}
   <div class="rhs">
     <p class="description" title="{{description}}">{{description}}</p>
+    {{#github}}
     <p><img src="/img/github.png" /> <a href="{{github}}">Github</a></p>
+    <iframe src="http://ghbtns.com/github-btn.html?user={{github_user}}&repo={{github_repo}}&type=watch&count=true"
+        allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+    <iframe src="http://ghbtns.com/github-btn.html?user={{github_user}}&repo={{github_repo}}&type=fork&count=true"
+        allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+    {{/github}}
   </div>
 </div>
 <div style="clear: both;"></div>
@@ -80,9 +86,12 @@ layout: projects
       .done(function(result) {
         $('.loading').hide();
         _.each(result.records, function(record) {
+          if (record.github) {
+            var parts = record.github.split('/');
+            record.github_repo = parts.pop();
+            record.github_user = parts.pop();
+          }
           var out = Mustache.render(template, record);
-          console.log(record);
-          console.log(out);
           $('.results').append(out);
         });
       })
