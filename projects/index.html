@@ -3,5 +3,91 @@ title: Labs Projects
 layout: projects
 ---
 
-<iframe width="100%" height="1000px" frameborder="0" src="http://listify.okfnlabs.org/embed.html?url=https%3A%2F%2Fdocs.google.com%2Fa%2Fokfn.org%2Fspreadsheet%2Fccc%3Fkey%3D0AqR8dXc6Ji4JdG5vSTAzS3dZZ3JjNlJHc1BoUGp5aEE%23gid%3D0"></iframe>
+<h1>Labs Projects</h1>
+
+<div class="listify">
+  <div class="loading">
+    <h2>
+      Loading data <img src="http://assets.okfn.org/images/icons/ajaxload-circle.gif" alt="loading" />
+    </h2>
+  </div>
+  <div class="results"></div>
+</div>
+
+<small><a href="https://docs.google.com/a/okfn.org/spreadsheet/ccc?key=0AqR8dXc6Ji4JdG5vSTAzS3dZZ3JjNlJHc1BoUGp5aEE#gid=0">Source Spreadsheet</a></small>
+
+<style type="text/css">
+  .record {
+    padding-top: 25px;
+    margin-top: 25px;
+  }
+
+  .record h2 {
+    margin-top: 0;
+    line-height: 25px;
+  }
+
+  .record .image {
+    margin-left: 30px;
+    float: right;
+    width: 450px;
+    min-height: 300px;
+  }
+
+  .record .image img {
+    max-width: 100%;
+    max-height: 450px;
+    vertical-align: center;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    border-radius: 5px;
+  }
+</style>
+
+{% raw %}
+<script type="text/template" id="template">
+<div class="record">
+  <div class="image">
+    {{#imageurl}}
+    <img src="{{imageurl}}" alt="{{title}}" />
+    {{/imageurl}}
+  </div>
+  <h2>
+    <a href="{{url}}" target="_blank">{{title}}</a>
+  </h2>
+    {{#author}}
+  <h2>
+    <small>by <a href="{{authorurl}}" target="_blank">{{author}}</a></small>
+  </h2>
+    {{/author}}
+  <div class="rhs">
+    <p class="description" title="{{description}}">{{description}}</p>
+    <p><img src="/img/github.png" /> <a href="{{github}}">Github</a></p>
+  </div>
+</div>
+<div style="clear: both;"></div>
+</script>
+
+<script src="/js/mustache.js"></script>
+<script src="https://raw.github.com/Recline/backend.gdocs/master/backend.gdocs.js"></script>
+<script type="text/javascript">
+  var url = 'https://docs.google.com/a/okfn.org/spreadsheet/ccc?key=0AqR8dXc6Ji4JdG5vSTAzS3dZZ3JjNlJHc1BoUGp5aEE#gid=0';
+  jQuery(function() {
+    var template = $('#template').html();
+    console.log(template);
+    recline.Backend.GDocs.fetch({url: url})
+      .done(function(result) {
+        $('.loading').hide();
+        _.each(result.records, function(record) {
+          var out = Mustache.render(template, record);
+          console.log(record);
+          console.log(out);
+          $('.results').append(out);
+        });
+      })
+      ;
+  });
+</script>
+{% endraw %}
 
