@@ -21,26 +21,7 @@ layout: about
     <div class="row">
       <div class="span8">
         <h1>Who are we?</h1>
-        <ul class="persons">
-          {% for person in site.categories.about %}
-            <li class="person {% cycle 'odd', 'even' %}">
-              <img class="photo" src="/img/people/{{ person.handle }}.png">            
-              <span class="name">{{ person.title }}</span>
-                <span class="job">{{person.job}}</span>
-              <div class="excerpt">
-                {{ person.content }} 
-              </div>
-              <ul>
-                <li><a href="https://twitter.com/{{ person.twitter }}">
-                  <img src="/img/twitter.png"> {{ person.twitter }}</a></li>
-                <li><a href="https://github.com/{{ person.github }}">
-                  <img src="/img/github.png"> {{ person.github }}</a></li>
-                <li><a href="{{ person.blog }}">
-                  {{ person.blog }}</a></li>
-              </ul>
-            </li>
-          {% endfor %}
-        </ul>
+        <p>We're an assortment of data wranglers and hackers working on everything from Shakespeare to Statistics. We welcome new members so just jump on the <a href="http://lists.okfn.org/mailman/listinfo/okfn-labs">mailing list</a> and join in.</p>
       </div>
     </div>
   </div>
