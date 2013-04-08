@@ -12,7 +12,7 @@ Progress is best seen from this [demo which takes you on a tour of house prices 
 
 More information on recent developments can be found below. Feedback is *very welcome* - either here or the issues <https://github.com/okfn/dataexplorer>.
 
-<img src="http://i.imgur.com/WeDO0vK.png" alt="House prices tutorial" />
+<a href="http://explorer.okfnlabs.org/#rgrp/e3e0b0f18dfe151f9f7e"><img src="http://i.imgur.com/WeDO0vK.png" alt="House prices tutorial" /></a>
 
 ## What is the Data Explorer
 
