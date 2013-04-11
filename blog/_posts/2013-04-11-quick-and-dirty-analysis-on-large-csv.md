@@ -13,6 +13,7 @@ My question is what is the best way to do quick and dirty analysis on this?
 
 Examples of the kinds of options I was considering were:
 
+* Simple scripting (python, perl etc)
 * Postgresql - load, build indexes and then sum, avg etc
 * Elastic MapReduce (AWS Hadoop)
 * Google BigQuery
