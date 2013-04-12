@@ -28,6 +28,6 @@ layout: default
   <div class="span6">
     <h2>Twitter</h2>
     <p>We have a twitter existence and we read @s</p>
-    <p><a href="http://twitter/okfnlabs">http://twitter/okfnlabs</a></p>
+    <p><a href="http://twitter.com/okfnlabs">http://twitter.com/okfnlabs</a></p>
   </div>
 </div>
