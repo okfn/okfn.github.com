@@ -29,6 +29,8 @@ Specifically, we plan to break Textus into 3 components:
 * textus-viewer - JS-only viewer
 * textus-wordpress - wordpress integration
 
+<img src="https://docs.google.com/drawings/d/1S9Hv98LWdcfuG3KjF1qELsZBp-RQ08Ylo3gxaO6tyQg/pub?w=960&amp;h=720" alt="" title="New Architecture" />
+
 [formatter]: https://github.com/CultureLabs/textus-formatter
 [viewer]: https://github.com/CultureLabs/textus-viewer
 [wordpress]: https://github.com/CultureLabs/textus-wordpress
