@@ -1,0 +1,391 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300);
+@import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
+ 
+a {
+  color: @okf;
+}
+a:hover {
+  color: @okf;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.mainnav,
+#claim,
+.teaser {
+	font-family: 'Open Sans', Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight:300;
+}
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong,
+#claim strong {
+	font-weight:400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin:15px 0 5px 0;
+}
+
+h1 {
+  font-size: 27px;
+  line-height: 33px;
+	margin-bottom:10px;
+}
+h2 {
+  font-size: 25px;
+  line-height: 31px;
+}
+h3 {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+
+li {
+	line-height:24px;
+}
+
+.btn,
+.btn:hover {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+.btn.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+.btn,
+.btn-primary {
+  background-color: @okf;
+  background-image: -moz-linear-gradient(top, @okf, darken(@okf, 10%));
+  background-image: -ms-linear-gradient(top, @okf, darken(@okf, 10%));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@okf), to(darken(@okf, 10%)));
+  background-image: -webkit-linear-gradient(top, @okf, darken(@okf, 10%));
+  background-image: -o-linear-gradient(top, @okf, darken(@okf, 10%));
+  background-image: linear-gradient(top, @okf, darken(@okf, 10%));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@okf', endColorstr='darken(@okf, 10%)', GradientType=0);
+  border-color: darken(@okf, 20%);
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn:hover,
+.btn-primary:hover,
+.btn:active,
+.btn-primary:active,
+.btn.active,
+.btn-primary.active,
+.btn.disabled,
+.btn-primary.disabled,
+.btn[disabled],
+.btn-primary[disabled] {
+  background-color: darken(@okf, 10%);
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: fade(@okf, 80%);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px fade(@okf, 60%);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px fade(@okf, 60%);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px fade(@okf, 60%);
+}
+
+
+code {
+  color: darken(@okf, 15%);
+}
+
+
+ul {
+  list-style-type: square;
+}
+
+ul.posts {
+  list-style-type: none;
+	margin: 0;
+  padding: 0;
+}
+
+.teaser {
+  font-size: 1.2em;
+  line-height: 1.7em;
+}
+
+.minipic-wrapper {
+	overflow:hidden;
+	width:120px;
+	display:block;
+	float: left;
+	margin-right: 10px;
+}
+img.minipic {
+	padding-right: 120px;
+	margin-left: -120px;
+	width: 120px;
+	height: 120px;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+
+body {
+	background-color: #f5f5f5;
+	background-image: url(../../img/grid.png);
+	background-repeat: repeat-x;
+	background-position: center top;
+	font-weight: 300;
+	line-height: 24px;
+}
+
+.logo {
+	float:left;
+	margin-top:20px;
+}
+
+.mainnav {
+	float:right;
+	margin:23px 60px 0 0;
+}
+.mainnav li {
+	display:block;
+	float:left;
+}
+.mainnav li a {
+	color:#333333;
+	text-shadow: 0px 1px 0px #ffffff;
+	font-size:18px;
+	display:block;
+	padding:10px;
+}
+.mainnav li a:hover {
+	text-decoration:none;
+	text-shadow: none;
+	background-color:rgb(204,204,204);
+	background-color:rgba(204,204,204,0.2);
+}
+.body-blog .nav-blog,
+.body-code .nav-code,
+.body-data .nav-data,
+.body-events .nav-events,
+.body-about .nav-about {
+  color: @okf;
+}
+
+.okfn-ribbon a {
+  background-position: center -16px;
+  height: 84px;
+}
+
+.page-header {
+	margin:0 0 30px 0;
+	padding:0;
+	border:none;
+}
+
+#claim {
+	font-size:40px;
+	line-height:52px;
+	text-shadow: 0px 1px 0px #ffffff;
+	padding-top:20px;
+	padding-bottom:10px;
+}
+#claim a {
+	font-weight:400;
+}
+#claim a.tools {
+	color:#333333;
+}
+
+#airlock hr.after-heading {
+	visibility:hidden;
+}
+
+.home .blog-header {
+	display:inline-block;
+}
+.home .blog-header .socialism {
+	float:right;
+	margin-right:-40px;
+	margin-top:5px;
+}
+.blog-header .socialism > a {
+	display:none;
+}
+.home .blog-header .socialism .feed {
+	display:block;
+}
+.blog-header .socialism .feed {
+	background-image: url(../../img/blog_feed_2.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.blog-header .socialism .feed img {
+	visibility:hidden;
+}
+.home .blog-header h1 {
+	font-family: 'Architects Daughter', 'Brush Script MT', cursive;
+	font-weight: 400;
+	font-size: 13px;
+	color: rgb(51,51,51);
+	color: rgba(51,51,51,0.6);
+	margin-top: 0;
+	margin-bottom:5px;
+	padding-left:13px;
+	background-image: url(../../img/arrow.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+
+.sidebar input {
+	width:64%;
+	margin-right:10px;
+}
+
+.sidebar.home {
+	margin-top:30px;
+}
+
+
+/* Posts */
+.posts > li .details {
+	position:relative;
+}
+.posts > li .details h2 {
+	margin-top:0;
+	margin-bottom:40px;
+}
+.posts > li .details .meta {
+	position:absolute;
+	bottom:-30px;
+	width:100%;
+}
+
+/* Blog */
+.blog.posts {
+	margin:0;
+}
+.boxed,
+.blog.posts > li {
+	padding:20px 25px;
+	background-color:rgb(255,255,255);
+	background-color:rgba(255,255,255,0.5);
+}
+.blog.posts > li {
+	display:block;
+	margin-right:21px;
+	margin-bottom:20px;
+}
+.blog.posts > li div.more {
+	display:none;
+}
+.blog.posts > li .details .meta .author {
+	font-weight:normal;
+}
+.blog.posts > li .details .meta .date {
+	color:#999;
+	float:right;
+}
+.blog.posts > li .snapshot {
+	text-align:center;
+	margin-bottom:10px;
+}
+
+/* Events */
+.event li {
+	margin-bottom:20px;
+}
+.event.snapshot {
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	-webkit-box-shadow:  0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+	box-shadow:  0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+	border:solid 4px #FFFFFF;
+}
+
+/* About */
+.chaos.minipic {
+	background-image: url(../../img/chaos-black.png);
+}
+
+
+footer {
+	margin-top: 2em;
+	padding-bottom: 2em;
+	padding-top: 2em;
+}
+
+footer .text-right {
+  text-align: right;
+}
+footer .text-right .okf-logo {
+	float:right;
+}
+
+footer .okf-logo {
+	background-image: url(http://assets.okfn.org/images/logo/okfn-logo-landscape-black.png);
+	background-repeat: no-repeat;
+	width:150px;
+	height:39px;
+	background-size:100% auto;
+	display:block;
+}
+footer .okf-logo img {
+	visibility:hidden;
+}
+
+footer ul.flatmenu {
+	list-style-type: none;
+	margin: 1em 0 0;
+}
+footer ul.flatmenu li {
+    display: inline-block;
+    margin-right: 1.5em;
+}
+footer .text-right ul.flatmenu li {
+    margin-left: 1.5em;
+    margin-right: 0;
+}
+
+@media (max-width: 767px) {
+	.posts > li .details .meta {
+		position:static;
+	}
+	.posts > li .details h2 {
+		margin-bottom:0;
+	}
+	#claim,
+	.sidebar {
+		padding-left:20px;
+		padding-right:20px;
+	}
+	#claim {
+		font-size:30px;
+		line-height:42px;
+	}
+}
