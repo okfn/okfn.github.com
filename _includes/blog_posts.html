@@ -1,11 +1,13 @@
     <ul class="blog posts">
       {% for post in site.categories.blog %}
       <li>
-        <div class="meta">
-          <span class="date">{{ post.date | date_to_long_string }}</span>
-          <span class="author">{{ post.author }}</span> 
+        <div class="details">
+          <div class="meta">
+            <span class="date">{{ post.date | date_to_long_string }}</span>
+            <span class="author">{{ post.author }}</span> 
+          </div>
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
         </div>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
         {% if post.snapshot %}
           <div class="snapshot">
             <a href="{{ post.url }}"><img src="/img/projects/{{ post.snapshot }}.png"></a>

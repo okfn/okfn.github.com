@@ -12,7 +12,7 @@ layout: default
     </div>
   </div>
 </div>
-<hr>
+<hr class="after-heading">
 <div class="row">
   <div class="span8 home">
     {% include blog_header.html %}
@@ -20,8 +20,8 @@ layout: default
 
     
   </div>
-  <div class="span4">
-    <h2>Get involved</h2>
+  <div class="span4 home sidebar">
+    <h4>Get involved</h4>
     <p>
       Labs is an open community. Join our mailing list and 
       start contributing.
@@ -29,7 +29,7 @@ layout: default
     {% include list_signup.html %}
     <p>If mailing lists are not your thing there are plenty of other ways to <a href="/contact/">get in touch</a>.</p>
 
-    <h1>Upcoming Events</h1>
+    <h4>Upcoming Events</h4>
     <ul class="posts">
       {% for post in site.categories.events %}
       {% if post.upcoming %}
@@ -37,9 +37,9 @@ layout: default
         <div class="meta">
           <span class="a">{{post.textdate}}</span>
         </div>
-        <h2><a class="literacy" href="{{ post.url }}">{{ post.title }}</a>
+        <h5><a class="literacy" href="{{ post.url }}">{{ post.title }}</a>
           <small>{{post.location}}</small>
-        </h2>
+        </h5>
         <div class="excerpt">
           {{ post.teaser }} 
         </div>

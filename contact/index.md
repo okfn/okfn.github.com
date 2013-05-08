@@ -3,7 +3,7 @@ title: Get in Touch
 layout: default
 ---
 
-<h1 style="text-align: center;">You Can Get in Touch with Us in Various Ways!</h1>
+<h1>You Can Get in Touch with Us in Various Ways!</h1>
 
 <div class="row">
   <div class="span6">
