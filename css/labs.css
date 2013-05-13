@@ -361,3 +361,45 @@ footer .text-right ul.flatmenu li {
     line-height: 42px;
   }
 }
+
+/* About page */
+ul.persons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.persons .photo {
+  float: left;
+  padding-right: 1em;
+}
+
+ul.persons li.odd .photo {
+  padding-left: 1em;
+  padding-right: 0;
+  float: right;
+}
+
+ul.persons .name {
+  font-weight: bolder;
+}
+
+ul.persons .job {
+  color: #999;
+}
+
+ul.persons li.person {
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
+ul.persons ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+ul.persons ul li {
+  margin-right: 1em;
+  display: inline-block;
+}
+
