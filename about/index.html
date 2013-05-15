@@ -18,7 +18,7 @@ layout: about
 
     <h3>Members</h3>
     <ul class="persons">
-      {% for person in site.categories.about %}
+      {% for person in site.categories.members %}
         <li class="person {% cycle 'odd', 'even' %}">
           <img class="photo" src="/img/people/{{ person.handle }}.png">            
           <span class="name">{{ person.title }}</span>
