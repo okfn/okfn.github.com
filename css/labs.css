@@ -56,8 +56,12 @@ h2 {
   line-height: 31px;
 }
 h3 {
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 21px;
+  line-height: 24px;
+}
+h4 {
+  font-size: 16px;
+  line-height: 19px;
 }
 li {
   line-height: 24px;
@@ -384,7 +388,7 @@ ul.persons .name {
   font-weight: bolder;
 }
 
-ul.persons .job {
+ul.persons .area {
   color: #999;
 }
 
