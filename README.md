@@ -10,13 +10,13 @@ If your post is html rather than markdown just change extension from md to html.
 
 2. Add content. The structure should be:
 
-      ---
-      layout: post
-      author: {Your Name}
-      title: {Title Like This - this is used both in page and html title}
-      ---
+        ---
+        layout: post
+        author: {Your Name}
+        title: {Title Like This - this is used both in page and html title}
+        ---
 
-      content in html or markdown goes here ....
+        content in html or markdown goes here ....
 
 3. Add and commit the file and then push.
 
@@ -35,35 +35,35 @@ To add yourself to the member list you need to add a small bit of info to a file
 
 3. Put in the file this info about yourself:
 
-      ---
-      layout: person
-      handle: {your-unique-username}
-      name: {your-full-name}
-      area: {a terse description of your primary area of activity e.g. Software Developer, Data Wrangler, Blogger ...}
-      github: {github-username}
-      twitter: {twitter-username-not-url}
-      web: {home page}
-      img: {a link to a small square image around 200px by 200px - your gravatar is perfect}
-      place: {e.g. London, UK or Tokyo, Japan}
-      ---
+        ---
+        layout: person
+        handle: {your-unique-username}
+        name: {your-full-name}
+        area: {a terse description of your primary area of activity e.g. Software Developer, Data Wrangler, Blogger ...}
+        github: {github-username}
+        twitter: {twitter-username-not-url}
+        web: {home page}
+        img: {a link to a small square image around 200px by 200px - your gravatar is perfect}
+        place: {e.g. London, UK or Tokyo, Japan}
+        ---
 
-      Free text description - you can use html!
+        Free text description - you can use html!
 
    Here's an example:
 
-      ---
-      layout: person
-      handle: rgrp
-      name: Rufus Pollock
-      area: Data Wrangler
-      github: rgrp
-      twitter: rufuspollock
-      web: http://rufuspollock.org/
-      img: /img/people/rgrp.png
-      place: London, UK
-      ---
+        ---
+        layout: person
+        handle: rgrp
+        name: Rufus Pollock
+        area: Data Wrangler
+        github: rgrp
+        twitter: rufuspollock
+        web: http://rufuspollock.org/
+        img: /img/people/rgrp.png
+        place: London, UK
+        ---
 
-      Rufus is ... {description follows}
+        Rufus is ... {description follows}
 
 4. Save the file. Commit. Submit a pull request (if not pushing directly)
 
