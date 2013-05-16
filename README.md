@@ -23,7 +23,7 @@ To add yourself to the member list you need to add a small bit of info to a file
     twitter: {twitter-username-not-url}
     web: {home page}
     img: {a link to a small square image around 200px by 200px - your gravatar is perfect}
-    contributor: {if you are an official contributor}
+    place: {e.g. London, UK or Tokyo, Japan}
     ---
 
     Free text description - you can use html!
@@ -39,7 +39,7 @@ Here's an example:
     twitter: rufuspollock
     web: http://rufuspollock.org/
     img: /img/people/rgrp.png
-    contributor: true
+    place: London, UK
     ---
 
     Rufus is ... {description follows}
