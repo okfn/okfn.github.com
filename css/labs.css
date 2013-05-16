@@ -163,6 +163,9 @@ body {
   float: left;
   margin-top: 20px;
 }
+.logo .logobox img {
+  height: 55px;
+}
 .mainnav {
   float: right;
   margin: 23px 60px 0 0;
