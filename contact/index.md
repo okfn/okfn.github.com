@@ -15,7 +15,8 @@ layout: default
   <div class="span6">
     <h2>IRC</h2>
     <p>Many of us also hang out on IRC. Check out:</p>
-    <code>irc.freenode.org: #okfn</code>
+    <p><code>irc.freenode.org: #okfn</code></p>
+    <p>You can join directly <a href="http://webchat.freenode.net/?channels=okfn">via webchat</a></p>
   </div>
 </div>
 
