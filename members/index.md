@@ -19,10 +19,10 @@ become a Member** &ndash; just follow the quick [sign-up steps][signup]!
     <li class="person {% cycle 'odd', 'even' %}">
       <img class="photo" src="{{person.img}}">            
       <h4 class="name">
-        {{ person.name }}
+        <a href="{{person.username}}">{{person.title}}</a>
         <small class="area">{{person.area}}</small>
       </h4>
-      <ul>
+      <ul class="links">
         <li><a href="https://twitter.com/{{ person.twitter }}">
           <img src="/img/twitter.png"> {{ person.twitter }}</a></li>
         <li><a href="https://github.com/{{ person.github }}">

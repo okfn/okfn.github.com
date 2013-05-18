@@ -25,9 +25,9 @@ We also strongly recommend [joining the mailing list and following Labs on twitt
    those marked as required):
 
         ---
-        layout: person
-        handle: {REQUIRED your-unique-username}
-        title: {REQUIRED your-full-name e.g. Joe Bloggs}
+        layout: person [REQUIRED]
+        username: {your-unique-username} [REQUIRED]
+        title: {your-full-name e.g. Joe Bloggs} [REQUIRED]
         area: {terse description of your main activity area e.g. Software Developer, Data Wrangler, Blogger ...}
         email: {your.name@website.org}
         github: {github-username}
@@ -35,6 +35,7 @@ We also strongly recommend [joining the mailing list and following Labs on twitt
         web: {home page}
         img: {a link to a small square image around 200px by 200px - your gravatar is perfect}
         place: {e.g. London, UK or Nairobi, Kenya}
+        permalink: /members/{your-username}/index.html [REQUIRED]
         ---
 
         A paragraph bio or description about yourself and your interests -
@@ -44,7 +45,7 @@ We also strongly recommend [joining the mailing list and following Labs on twitt
 
         ---
         layout: person
-        handle: rgrp
+        username: rgrp
         title: Rufus Pollock
         area: Data Wrangler
         email: rufus.pollock@okfn.org
@@ -53,6 +54,7 @@ We also strongly recommend [joining the mailing list and following Labs on twitt
         web: http://rufuspollock.org/
         img: /img/people/rgrp.png
         place: London, UK
+        permalink: /members/rgrp/index.html
         ---
 
         Rufus is an avid hacker on small data tools, an enthusiastic collector
