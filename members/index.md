@@ -3,11 +3,17 @@ title: Members
 layout: about
 ---
 
-<h1>Labs Members</h1>
+# Labs Members
 
-<p>We operate as a collaborative community and anyone can join as a member.</p>
+Anyone can participate in Labs and you don't need to sign up formally. At the same
+time, we think its good for people to be able to self-identify as official
+"Members" as a way to show they are part of the community. **Anyone may
+become a Member** &ndash; just follow the quick [sign-up steps][signup]!
 
-<h3>Members</h3>
+[signup]: /members/signup/
+
+## Members
+
 <ul class="persons">
   {% for person in site.categories.members %}
     <li class="person {% cycle 'odd', 'even' %}">
