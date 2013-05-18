@@ -190,6 +190,7 @@ body {
   background-color: #cccccc;
   background-color: rgba(204, 204, 204, 0.2);
 }
+.body-join .nav-join,
 .body-blog .nav-blog,
 .body-code .nav-code,
 .body-data .nav-data,
@@ -413,3 +414,8 @@ ul.persons ul li {
   display: inline-block;
 }
 
+/**** Join *****/
+
+.body-join .well h3 {
+  margin-top: 0;
+}
