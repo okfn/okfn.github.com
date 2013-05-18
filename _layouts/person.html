@@ -3,4 +3,25 @@ layout: about
 categories: person
 ---
 
+<h1>{{page.title}} <small>[{{page.username}}]</small></h1>
+<ul class="links">
+  <li><a href="https://twitter.com/{{ page.twitter }}">
+    <img src="/img/twitter.png"> {{ page.twitter }}</a></li>
+  <li><a href="https://github.com/{{ page.github }}">
+    <img src="/img/github.png"> {{ page.github }}</a></li>
+  <li><a href="{{ page.web }}">
+    {{ page.web }}</a></li>
+</ul>
+
+<img class="photo" src="{{page.img}}" style="float: right;">            
+
 {{content}}
+
+<h3>Posts</h3>
+{% for post in site.categories.blog %}
+<ul>
+{% if post.username == page.username %}
+<li><a href="{{post.url}}">{{post.title}}</a></li>
+{% endif %}
+</ul>
+{% endfor %}

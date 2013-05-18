@@ -404,12 +404,12 @@ ul.persons li.person {
   margin-top: 1em;
 }
 
-ul.persons ul {
+ul.persons ul.links {
   list-style-type: none;
   margin: 0;
 }
 
-ul.persons ul li {
+ul.persons ul.links li {
   margin-right: 1em;
   display: inline-block;
 }
@@ -419,3 +419,14 @@ ul.persons ul li {
 .body-join .well h3 {
   margin-top: 0;
 }
+
+ul.links {
+  list-style-type: none;
+  margin: 0;
+}
+
+ul.links li {
+  margin-right: 1em;
+  display: inline-block;
+}
+
