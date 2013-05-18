@@ -14,8 +14,10 @@ Membership here][members].
 ## Sign-up Steps
 
 To sign up you involves a few simples steps that should only take a minute or
-two. Essentially it just involves providing info so that you can be listed on
-[on the members page][members].
+two. The key part is providing some information so that you can be listed
+on [on the members page][members].
+
+We also strongly recommend [joining the mailing list and following Labs on twitter](/contact/).
 
 1. Put together a brief bit of info about yourself. It has 2 parts, some
    structured data of form `item: value` at the top followed by some free text
