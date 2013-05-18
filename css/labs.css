@@ -124,6 +124,9 @@ input[type="color"]:focus,
 code {
   color: #145a52;
 }
+hr {
+  border-top: 1px solid #d2d2d2;
+}
 ul {
   list-style-type: square;
 }
