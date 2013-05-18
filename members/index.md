@@ -15,7 +15,7 @@ become a Member** &ndash; just follow the quick [sign-up steps][signup]!
 ## Members
 
 <ul class="persons">
-  {% for person in site.categories.members %}
+  {% for person in site.categories.members reversed %}
     <li class="person {% cycle 'odd', 'even' %}">
       <img class="photo" src="{{person.img}}">            
       <h4 class="name">
