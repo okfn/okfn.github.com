@@ -23,7 +23,8 @@ h3,
 h4,
 h5,
 h6,
-.mainnav,
+.navbar .brand,
+.navbar .nav,
 #claim,
 .teaser {
   font-family: 'Open Sans', Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -162,41 +163,56 @@ body {
   font-weight: 300;
   line-height: 24px;
 }
-.logo {
-  float: left;
-  margin-top: 20px;
+
+/**** Navbar ****/
+
+.navbar .container {
+  width: 940px;
 }
-.logo .logobox img {
+.navbar-inner,
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner
+{
+  background: none;
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  padding: 0;
+}
+.brand img {
   height: 55px;
 }
-.mainnav {
-  float: right;
-  margin: 23px 60px 0 0;
+.navbar .nav {
+  margin: 15px 0 0 0;
 }
-.mainnav li {
+.navbar .nav.pull-right {
+  margin-right: 50px;
+}
+.navbar .nav li {
   display: block;
   float: left;
 }
-.mainnav li a {
+.navbar .nav li a {
   color: #333333;
   text-shadow: 0px 1px 0px #ffffff;
   font-size: 18px;
   display: block;
   padding: 10px;
 }
-.mainnav li a:hover {
+.navbar .nav li a:hover {
   text-decoration: none;
   text-shadow: none;
   background-color: #cccccc;
   background-color: rgba(204, 204, 204, 0.2);
 }
-.body-join .nav-join,
+.body-join .navbar .nav-join,
 .body-blog .nav-blog,
 .body-code .nav-code,
 .body-data .nav-data,
 .body-events .nav-events,
 .body-about .nav-about {
-  color: #22998b;
+  color: #22998b  !important;
 }
 .okfn-ribbon a {
   background-position: center -16px;
@@ -220,7 +236,7 @@ body {
 #claim a.tools {
   color: #333333;
 }
-#airlock hr.after-heading {
+.content hr.after-heading {
   visibility: hidden;
 }
 .home .blog-header {

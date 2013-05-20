@@ -38,27 +38,27 @@
     </div>
   </div>
   <!-- End OKF Panel -->
-	<header class="page-header">
-    <div class="container">
-      <div class="logo">
-        <div class="logobox">
-          <a href="/"><img src="http://assets.okfn.org/p/labs/img/logo-flask.png" alt="Open Knowledge Foundation Labs"></a>
-        </div>
+	<div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <a href="/" class="brand"><img src="http://assets.okfn.org/p/labs/img/logo-flask.png" alt="Open Knowledge Foundation Labs"></a>
+        <ul class="nav pull-right">
+          <li><a class="nav-join" href="/join">Join</a></li>
+          <li><a class="nav-blog" href="/blog">Blog</a></li>
+          <li><a class="nav-code" href="/projects">Projects</a></li>
+          <li><a class="nav-data" href="/data">Data</a></li>
+          <li><a class="nav-events" href="/events">Events</a></li>
+          <li><a class="nav-about" href="/about">About</a></li>
+          <li><a class="nav-contact" href="/contact">Contact</a></li>
+        </ul>
       </div>
-      <ul class="mainnav">
-        <li><a class="nav-join" href="/join">Join</a></li>
-        <li><a class="nav-blog" href="/blog">Blog</a></li>
-        <li><a class="nav-code" href="/projects">Projects</a></li>
-        <li><a class="nav-data" href="/data">Data</a></li>
-        <li><a class="nav-events" href="/events">Events</a></li>
-        <li><a class="nav-about" href="/about">About</a></li>
-        <li><a class="nav-contact" href="/contact">Contact</a></li>
-      </ul>
     </div>
-  </header>
+  </div>
 
-  <div id="airlock" class="container">
-    {{ content }}
+  <div class="container">
+    <div class="content">
+      {{ content }}
+    </div>
   </div>
 
   <footer>
