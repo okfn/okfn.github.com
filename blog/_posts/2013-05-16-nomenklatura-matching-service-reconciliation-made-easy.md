@@ -5,11 +5,13 @@ title: Nomenklatura - Matching and Reconciliation Made Easy
 username: pudo
 ---
 
-Nomenklatura is a simple service that makes it easy to maintain a canonical list of entities such as persons, companies or event streets and to match messy input, such as their names against that canonical list &ndash; for example, matching Acme Widgets, Acme Widgets Inc and Acme Widgets Incorporated to the canonical "Acme Widgets".
+[Nomenklatura][] is a simple service that makes it easy to maintain a canonical list of entities such as persons, companies or event streets and to match messy input, such as their names against that canonical list &ndash; for example, matching Acme Widgets, Acme Widgets Inc and Acme Widgets Incorporated to the canonical "Acme Widgets".
+
+[Nomenklatura]: http://nomenklatura.okfnlabs.org/
 
 With Nomenklatura its a matters of minutes to set up your own set of master data to match against and it provides a simple user interface and [API][api] which you can then use do matching (the API is compatible with Open Refine's reconciliation function).
 
-Nomenklatura can not only store the master set of entities you want to match against but also will learn and record the various aliases for a given entity - such as a person, organisation or place - may have in various datasets.
+[Nomenklatura][] can not only store the master set of entities you want to match against but also will learn and record the various aliases for a given entity - such as a person, organisation or place - may have in various datasets.
 
 [api]: http://nomenklatura.okfnlabs.org/about
 
@@ -37,7 +39,9 @@ This latest release of Nomenklatura includes a number of important changes:
 
 * The Python client library has been refactored and submitted to PyPi, it can be installed via "pip install pynomenklatura". 
 
-## Credits
+## Credits and Links
 
 Nomenklatura was developed by [Labs Member Friedrich Lindenberg](/members/pudo/) with contributions from other folks including fellow Labs members Michael Bauer.
+
+[Nomenklatura source code on GitHub](https://github.com/pudo/nomenklatura)
 
