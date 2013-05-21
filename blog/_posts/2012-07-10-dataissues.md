@@ -2,6 +2,7 @@
 layout: post
 author: Friedrich Lindenberg
 title: dataissues.org - public issue tracking for data defects
+username: pudo
 ---
 
 *On June 21st, the Knight News Challenge Round on Data ended. The day before, 

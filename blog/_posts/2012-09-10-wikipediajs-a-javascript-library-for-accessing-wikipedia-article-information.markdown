@@ -2,6 +2,7 @@
 layout: post
 title: WikipediaJS - accessing Wikipedia article data through Javascript
 author: Rufus Pollock
+username: rgrp
 ---
 
 [WikipediaJS][1] is a simple JS library for accessing information in Wikipedia articles such as dates, places, abstracts etc.

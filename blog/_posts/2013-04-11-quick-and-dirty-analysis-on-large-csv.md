@@ -2,6 +2,7 @@
 layout: post
 author: Rufus Pollock
 title: Quick and Dirty Analysis on Large CSVs
+username: rgrp
 ---
 
 I'm playing around with some large(ish) CSV files as part of a [OpenSpending](http://openspending.org/) related data investigation to look at UK government spending last year -- example question: which companies were the top 10 recipients of government money? (More details can be

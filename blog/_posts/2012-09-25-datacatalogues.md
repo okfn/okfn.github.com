@@ -3,6 +3,7 @@ layout: post
 author: Friedrich Lindenberg
 snapshot: datacatalogues
 title: Data Catalogues are People!
+username: pudo
 ---
 
 Last week, [Matej Kurian](https://twitter.com/matejkurian) published

@@ -2,6 +2,7 @@
 layout: post
 author: Rufus Pollock
 title: Progress on the Data Explorer
+username: rgrp
 ---
 
 This is an update on progress with the [Data Explorer][de] (aka Data Transformer).

@@ -2,6 +2,7 @@
 layout: post
 author: Rufus Pollock
 title: Javascript Timeline Libaries - A Review
+username: rgrp
 ---
 
 This post is a rough and ready overview of various javascript timeline libraries that arose from research in creating a timeline view for [Recline JS](http://reclinejs.com/). Note this material hung around on my hard disk for a few months so some of it may already be a little bit out of date!

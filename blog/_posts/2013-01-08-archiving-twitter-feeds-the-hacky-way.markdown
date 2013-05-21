@@ -2,6 +2,7 @@
 layout: post
 author: Rufus Pollock
 title: Archiving Twitter the Hacky Way
+username: rgrp
 ---
 
 There are many circumstances where you want to archive a tweets - maybe just from your own account or perhaps for a hashtag for an event or topic.

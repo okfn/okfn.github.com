@@ -2,6 +2,7 @@
 layout: post
 author: Daniel Lombraña González
 title: Exporting PyBossa data to CSV or JSON with one click
+username: teleyinex
 ---
 
 I'm really happy to announce that today we have finally added a feature that 

@@ -2,6 +2,7 @@
 layout: post
 title: Labs Show and Tell - All Welcome!
 author: Nigel Babu
+username: nigelb
 ---
 
 <img src="http://assets.okfn.org/p/labs/img/tent.png" style="margin-left: 30px; float: right;" />

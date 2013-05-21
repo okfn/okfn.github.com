@@ -3,6 +3,7 @@ layout: post
 author: Liliana Bounegru
 title: Following Money and Influence in the EU - the Open Interests Hackathon
 snapshot: oireview
+username: bounegru
 ---
 
 <p>

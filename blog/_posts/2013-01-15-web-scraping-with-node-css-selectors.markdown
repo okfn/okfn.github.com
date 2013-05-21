@@ -2,6 +2,7 @@
 layout: post
 author: Rufus Pollock
 title: Web Scraping with CSS Selectors in Node using JSDOM or Cheerio
+username: rgrp
 ---
 
 I've traditionally used python for web scraping but I'd been increasingly thinking about using Node given that it is pure JS and therefore could be a more natural fit when getting info out of *web* pages.

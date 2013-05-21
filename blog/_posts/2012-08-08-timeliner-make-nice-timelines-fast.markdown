@@ -3,6 +3,7 @@ layout: post
 title: Timeliner - Make Nice Timelines Fast
 snapshot: timeliner
 author: Rufus Pollock
+username: rgrp
 ---
 
 As part of the [Recline][] launch I put together quickly some very simple demo apps one of which was called Timeliner:

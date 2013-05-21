@@ -2,6 +2,7 @@
 layout: post
 title: The Data Transformer - Cleaning Up Data in the Browser
 author: Rufus Pollock
+username: rgrp
 ---
 
 This a brief post to announce an alpha prototype version of the Data Transformer, an app to let you clean up data in the browser using javascript:

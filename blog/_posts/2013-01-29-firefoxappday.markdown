@@ -3,6 +3,7 @@ layout: post
 author: Daniel Lombraña González
 title: Mozilla FirefoxOS App Days & Crowdcrafting.org
 snapshot: firefoxosappdays
+username: teleyinex
 ---
 <img class="pull-left" src="https://hacks.mozilla.org/wp-content/uploads/2012/12/firefoxOS-app-days_graphic_RGB.png"/>
 Last Saturday, the 26th of January, [Mozilla held in parallel in 25 cities all over the world a hack day](https://hacks.mozilla.org/2013/01/join-us-for-firefox-os-app-days/), the [#FirefoxOSAppDay](https://twitter.com/search?q=%23firefoxosappdays&amp;src=tyah), about creating new web applications for their new [FirefoxOS mobile OS](http://www.mozilla.org/en-US/firefoxos/) and the desktop web browser (this stills in beta and alpha mode!).

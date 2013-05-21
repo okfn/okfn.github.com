@@ -2,6 +2,7 @@
 layout: post
 author: Daniel Lombraña González
 title: PyBossa.JS or how you can easily create new PyBossa applications
+username: teleyinex
 ---
 
 In the last weeks we have been working hard in order to make easier to develop new PyBossa applications. For this reason, we are happy to announce a new version of PyBossa.JS. This new version introduces several improvements:

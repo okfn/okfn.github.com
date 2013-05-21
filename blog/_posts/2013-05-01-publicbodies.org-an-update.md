@@ -2,6 +2,7 @@
 layout: post
 author: Rufus Pollock
 title: Update on PublicBodies.org - a URL for every part of Government
+username: rgrp
 ---
 
 This is an update on [PublicBodies.org][pb] - a Labs project whose aim is to provide a "URL for every part of Government": <http://publicbodies.org/>

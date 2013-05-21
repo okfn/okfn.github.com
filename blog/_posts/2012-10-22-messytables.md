@@ -3,6 +3,7 @@ layout: post
 author: Friedrich Lindenberg
 title: Wrangling dirty data with messytables.
 snapshot: messytables
+username: pudo
 ---
 
 One of the largest data collection projects we have done so far

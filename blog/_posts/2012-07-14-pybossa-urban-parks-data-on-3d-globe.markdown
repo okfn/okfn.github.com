@@ -2,7 +2,8 @@
 layout: post
 snapshot: urbanparks
 title: Displaying PyBossa Urban Parks Data on a 3D Globe
-author: Daniel Lombraña Glez
+author: Daniel Lombraña Gonzalez
+username: teleyinex
 ---
 
 Labs member [Daniel Lombraña González](http://twitter.com/teleyinex) has built a [3-d globe showing the locatoins of urban parks around the world](http://teleyinex.github.com/pybossa-urbanpark-globe/) as located by volunteers using the [Pybossa Urban Park geocoding app](http://pybossa.com/app/urbanpark):

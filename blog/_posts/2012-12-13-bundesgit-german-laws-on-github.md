@@ -3,7 +3,7 @@ layout: post
 author: Stefan Wehrmeyer
 title: Bundes-Git – German Laws on GitHub
 snapshot: bundesgit_intro
-
+username: stwe
 ---
 
 If you compare software code and legislation you can find many similarities: both are big bodies of text spread over multiple units (laws/files). The total amount of text inevitably grows bigger over time with many small changes to existing parts while most of the corpus stays the same.
