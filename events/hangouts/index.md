@@ -14,7 +14,7 @@ The Humanities Hangout is for people interested in tapping in to the increasing 
 <ul>
 {% for post in site.categories.blog %}
 {% if post.event == 'hangout' %}
-  <li>{{post.eventdate | date_to_long_string}} &ndash; <a href="{{post.url}}">{{post.title}}</a></li>
+  <li>{{post.eventdate}} &ndash; <a href="{{post.url}}">{{post.title}}</a></li>
 {% endif %}
 {% endfor %}
 </ul>
