@@ -39,5 +39,5 @@ This latest release of Nomenklatura includes a number of important changes:
 
 ## Credits
 
-Nomenklatura was developed by [Labs Member Friedrich Lindenberg](/members/) with contributions from other folks including fellow Labs members Michael Bauer.
+Nomenklatura was developed by [Labs Member Friedrich Lindenberg](/members/pudo/) with contributions from other folks including fellow Labs members Michael Bauer.
 
