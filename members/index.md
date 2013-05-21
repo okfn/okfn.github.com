@@ -6,7 +6,7 @@ layout: about
 # Labs Members
 
 Anyone can participate in Labs and you don't need to sign up formally. At the same
-time, we think its good for people to be able to self-identify as official
+time, we think it's good for people to be able to self-identify as official
 "Members" as a way to show they are part of the community. **Anyone may
 become a Member** &ndash; just follow the quick [sign-up steps][signup]!
 
