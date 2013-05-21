@@ -1,4 +1,4 @@
-This is jekyll-based site for running http://okfnlabs.org/.
+This is jekyll-based site for running <http://okfnlabs.org/>.
 
 ## Adding a Blog Post
 
