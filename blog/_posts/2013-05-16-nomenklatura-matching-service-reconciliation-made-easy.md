@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Friedrich Lindenberg
-title: Nomenklatura - Matching and Reconciliation Made Easy
+title: Nomenklatura - Data Matching and Reconciliation Made Easy
 username: pudo
 ---
 
