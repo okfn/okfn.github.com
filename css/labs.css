@@ -399,12 +399,16 @@ ul.persons {
 ul.persons .photo {
   float: left;
   padding-right: 1em;
+  max-height: 120px;
+  max-width: 120px;
 }
 
 ul.persons li.odd .photo {
   padding-left: 1em;
   padding-right: 0;
   float: right;
+  max-height: 120px;
+  max-width: 120px;
 }
 
 ul.persons .name {
