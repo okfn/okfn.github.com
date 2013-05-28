@@ -31,9 +31,10 @@ Looking to contribute data check out the instructions <http://data.okfn.org/abou
 ### 4. Tooling
 
 - We have a DataPackage.JSON creator tool in progress at http://data.okfn.org/tools/dp/create ([here's the relevant github issue][1])
-- We have a new viewer created by James Smith
+- We have a new [data package viewer created by James Smith][tools]
 
 [1]: https://github.com/okfn/data.okfn.org/issues/28
+[tools]: http://data.okfn.org/tools
 
 ### 5. Feedback on standards
 
