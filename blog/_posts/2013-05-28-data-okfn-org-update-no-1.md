@@ -6,6 +6,7 @@ username: rgrp
 ---
 
 This is the first of regular updates on Labs project <http://data.okfn.org/>
+and summarizes some of the changes and improvements over the last few weeks.
 
 ### 1. Refactor of site layout and focus.
 
