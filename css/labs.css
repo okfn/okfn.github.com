@@ -446,3 +446,13 @@ ul.links li {
   display: inline-block;
 }
 
+blockquote {
+  font-style: italic;
+  background-color: #ddd;
+  border-left: 10px solid #ccc;
+  padding: 10px;
+}
+
+blockquote p {
+  font-size: 14px;
+}
