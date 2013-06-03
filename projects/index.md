@@ -1,6 +1,6 @@
 ---
 title: Labs Projects
-layout: projects
+layout: default
 ---
 
 # Labs Projects

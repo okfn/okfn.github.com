@@ -1,0 +1,30 @@
+---
+layout: default
+categories: project
+---
+
+<div class="record">
+  <div class="image">
+    {% if page.imageurl %}
+      <img src="{{page.imageurl}}" alt="{{page.title}}" />
+    {% endif %}
+  </div>
+  <h2>
+    <a href="{{page.projecturl}}" target="_blank">{{page.title}}</a>
+  </h2>
+  {% if page.author %}
+    <h2>
+      <small>by <a href="{{page.authorurl}}" target="_blank">{{page.author}}</a></small>
+    </h2>
+  {% endif %}
+  <div class="rhs">
+    <p class="description" title="{{page.content}}">{{page.content}}</p>
+    {% if page.github %}
+      <p><img src="/img/github.png" /> <a href="{{page.github}}">Github</a></p>
+      <iframe src="http://ghbtns.com/github-btn.html?user={{page.github_user}}&repo={{page.github_repo}}&type=watch&count=true"
+          allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+      <iframe src="http://ghbtns.com/github-btn.html?user={{page.github_user}}&repo={{page.github_repo}}&type=fork&count=true"
+          allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+    {% endif %}
+  </div>
+</div>
