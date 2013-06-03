@@ -23,8 +23,8 @@ layout: default
       {% endif %}
       <div class="rhs">
         <p class="description" title="{{project.content}}">{{project.content}}</p>
-        {% if project.github %}
-          <p><img src="/img/github.png" /> <a href="{{project.github}}">Github</a></p>
+        {% if project.github_repo %}
+          <p><img src="/img/github.png" /> <a href="https://github.com/{{project.github_user}}/{{project.github_repo}}">Github</a></p>
           <iframe src="http://ghbtns.com/github-btn.html?user={{project.github_user}}&repo={{project.github_repo}}&type=watch&count=true"
               allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
           <iframe src="http://ghbtns.com/github-btn.html?user={{project.github_user}}&repo={{project.github_repo}}&type=fork&count=true"
