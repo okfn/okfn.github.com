@@ -14,7 +14,7 @@ Membership here][members].
 
 ## Sign-up Steps
 
-To sign up you involves a few simples steps that should only take a minute or
+Signing up involves a few simple steps that should only take a minute or
 two. The key part is providing some information so that you can be listed
 on [on the members page][members].
 
