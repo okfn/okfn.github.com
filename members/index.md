@@ -1,6 +1,7 @@
 ---
 title: Members
-layout: about
+layout: two-column
+bodyclass: members
 ---
 
 # Labs Members

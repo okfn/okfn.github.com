@@ -1,6 +1,7 @@
 ---
 title: Members - Signup
-layout: about
+layout: two-column
+bodyclass: members
 ---
 
 # Sign up as a Labs Member

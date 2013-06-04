@@ -1,6 +1,7 @@
 ---
 title: Get in Touch
 layout: default
+bodyclass: contact
 ---
 
 <h1>You Can Get in Touch with Us in Various Ways!</h1>
