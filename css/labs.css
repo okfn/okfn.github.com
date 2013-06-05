@@ -208,10 +208,12 @@ body {
 }
 .body-join .navbar .nav-join,
 .body-blog .nav-blog,
-.body-code .nav-code,
 .body-data .nav-data,
+.body-code .nav-code,
 .body-events .nav-events,
-.body-about .nav-about {
+.body-members .nav-members,
+.body-about .nav-about,
+.body-contact .nav-contact {
   color: #22998b  !important;
 }
 .okfn-ribbon a {

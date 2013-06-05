@@ -1,6 +1,7 @@
 ---
 title: Labs Projects
 layout: default
+bodyclass: code
 ---
 
 # Labs Projects
