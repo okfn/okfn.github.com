@@ -6,8 +6,10 @@ bodyclass: code
 
 # Add a project
 
-__I actually don’t know how this bit works!__
-Rufus or another labs member – do you fancy writing this introductory paragraph?
+There aren’t strict criteria for labs projects – but we do have
+[a set of general principles](/about/#principles) that projects should adhere to.
+Please read these through and consider whether your project fits (or what you
+could change to make it fit) before adding your project.
 
 ## Steps to add a project
 
@@ -21,16 +23,16 @@ We also strongly recommend [joining the mailing list and following Labs on twitt
 
         ---
         layout: project [REQUIRED]
-        title: {the project title e.g. Awesome Data Visualiser} [REQUIRED]
-        projecturl: {URL of an external project webpage}
+        title: {the project title e.g. Awesome Data Visualizer} [REQUIRED]
+        projecturl: {URL of an external project webpage e.g. http://awesomedatavisualizer.org}
         imageurl: {URL to a project image or logo of around 450px by 250px}
         type: {project type e.g. Library, Service, Hack}
         tags: {relevant tags e.g. Javascript}
         author: {author(s) names e.g. Joe Bloggs}
         authorurl: {a URL for the author e.g. joebloggsblogs.com}
         github_user: {the github user who owns the repo e.g. okfn}
-        github_repo: {the github repo name e.g. awesome-data-visualiser}
-        slug: {a URL-friendly version of the title e.g. awesome-data-visualiser} [REQUIRED]
+        github_repo: {the github repo name e.g. awesome-data-visualizer}
+        slug: {a URL-friendly version of the title e.g. awesome-data-visualizer} [REQUIRED]
         permalink: /projects/{slug}/index.html [REQUIRED]
         ---
 
@@ -82,10 +84,10 @@ This assumes you know how to add stuff to a git repo on github (preferably via f
         projects/_posts/yyyy-mm-dd-{slug}.html
 
    where yyyy-mm-dd is the date you added the project. As an example, if
-   your project’s slug were `awesome-data-visualiser` and today's date were
+   your project’s slug were `awesome-data-visualizer` and today's date were
    2013-05-17 you would create
 
-        projects/_posts/2013-05-17-awesome-data-visualiser.html
+        projects/_posts/2013-05-17-awesome-data-visualizer.html
 
 4. Add the info you prepared above. Save the file.
 
