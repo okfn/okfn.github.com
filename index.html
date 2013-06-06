@@ -15,7 +15,11 @@ layout: default
 <div class="row">
   <div class="span8 home">
     {% include blog_header.html %}
-    {% include blog_posts.html %}
+    <ul class="blog posts">
+      {% for post in site.categories.blog limit:5 %}
+        {% include blog_posts.html %}
+      {% endfor %}
+    </ul>
 
     
   </div>
