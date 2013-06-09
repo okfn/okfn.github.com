@@ -61,6 +61,5 @@ bodyclass: join
     </div>
   </div>
 </div>
-  </div>
 </div>
 
