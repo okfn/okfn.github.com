@@ -37,7 +37,7 @@ bodyclass: join
       <ul>
         <li><a href="http://data.okfn.org/about/contribute">Add and maintain datasets for data.okfn.org</a></li>
         <li><a href="http://openspending.org/help/data-loading.html">Get government finances into Openspending</a> &ndash; turn ugly government data into clean spreadsheets and beautiful visualizations.</li>
-        <li>Take a <a href="http://schoolofdata.org/">course at the School of Data</a> &ndash; or <a href="http://schoolofdata.org/data-expeditions/guide-for-guides/">help run one</a>!</a>
+        <li>Take a <a href="http://schoolofdata.org/">course at the School of Data</a> &ndash; or <a href="http://schoolofdata.org/data-expeditions/guide-for-guides/">help run one</a>!</li>
       </ul>
     </div>
     <div class="well">
@@ -51,15 +51,12 @@ bodyclass: join
     </div>
   </div>
   <div class="span4">
-    <div class="">
-      <h3 style="margin-top: 0;">Meetups</h3>
-      <p>If you want to meet up with others, either online or in person, you can:</p>
-      <ul>
-        <li><a href="/events/hangouts/">Come to an online hangout</a></li>
-        <li><a href="http://okfn.org/events/open-data-maker/">Go to an open data maker night</a></li>
-      </ul>
-    </div>
+    <h3 style="margin-top: 0;">Meetups</h3>
+    <p>If you want to meet up with others, either online or in person, you can:</p>
+    <ul>
+      <li><a href="/events/hangouts/">Come to an online hangout</a></li>
+      <li><a href="http://okfn.org/events/open-data-maker/">Go to an open data maker night</a></li>
+    </ul>
   </div>
-</div>
 </div>
 
