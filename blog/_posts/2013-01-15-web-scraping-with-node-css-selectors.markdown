@@ -48,48 +48,52 @@ For the UK crime work I used jsdom but I've subsequently used cheerio as it is s
 
 Here's an excerpted code example (full example in the [source file][scrape.js]):
 
-    var url = 'http://police.uk/data';
-    // holder for results
-    var out = {
-      'streets': []
-    }
-    jsdom.env({
-      html: url,
-      scripts: [
-        'http://code.jquery.com/jquery.js'
-      ],
-      done: function(errors, window) {
-        var $ = window.$;
-        // find all the html links to the street zip files
-        $('#downloads .months table tr td:nth-child(2) a').each(function(idx, elem) {
-          // push the url (href attribute) onto the list
-          out['streets'].push( $(elem).attr('href') );
-        });
-      });
+{% highlight javascript %}
+var url = 'http://police.uk/data';
+// holder for results
+var out = {
+  'streets': []
+}
+jsdom.env({
+  html: url,
+  scripts: [
+    'http://code.jquery.com/jquery.js'
+  ],
+  done: function(errors, window) {
+    var $ = window.$;
+    // find all the html links to the street zip files
+    $('#downloads .months table tr td:nth-child(2) a').each(function(idx, elem) {
+      // push the url (href attribute) onto the list
+      out['streets'].push( $(elem).attr('href') );
     });
+  });
+});
+{% endhighlight %}
 
 As an example of Cheerio scraping here's an example from work [scraping info the EU's TED database][opented] (sample [html file][sample]):
 
 [opented]: https://github.com/datasets/opented
 [sample]: http://files.opented.org.s3.amazonaws.com/scraped/100120-2011/summary.html
 
-    var url = http://files.opented.org.s3.amazonaws.com/scraped/100120-2011/summary.html;
-    // place to store results
-    var data = {};
-    // do the request using the request library
-    request(url, function(err, resp, body){
-      $ = cheerio.load(body);
+{% highlight javascript %}
+var url = 'http://files.opented.org.s3.amazonaws.com/scraped/100120-2011/summary.html';
+// place to store results
+var data = {};
+// do the request using the request library
+request(url, function(err, resp, body){
+  $ = cheerio.load(body);
 
-      data.winnerDetails = $('.txtmark .addr').html();
+  data.winnerDetails = $('.txtmark .addr').html();
 
-      $('.mlioccur .txtmark').each(function(i, html) {
-        var spans = $(html).find('span');
-        var span0 = $(spans[0]);
-        if (span0.text() == 'Initial estimated total value of the contract ') {
-          var amount = $(spans[4]).text()
-          data.finalamount = cleanAmount(amount);
-          data.initialamount = cleanAmount($(spans[1]).text());
-        }
-      });
-    });
+  $('.mlioccur .txtmark').each(function(i, html) {
+    var spans = $(html).find('span');
+    var span0 = $(spans[0]);
+    if (span0.text() == 'Initial estimated total value of the contract ') {
+      var amount = $(spans[4]).text()
+      data.finalamount = cleanAmount(amount);
+      data.initialamount = cleanAmount($(spans[1]).text());
+    }
+  });
+});
+{% endhighlight %}
 

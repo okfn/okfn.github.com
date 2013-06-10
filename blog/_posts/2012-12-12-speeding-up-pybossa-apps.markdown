@@ -2,7 +2,6 @@
 layout: post
 author: Gregor Aisch
 lightbox: true
-highlight: true
 title: Speeding Up Your PyBossa App
 username: gka
 ---
@@ -35,44 +34,52 @@ Looking from our PyBossa app, the pre-loading of the next task and the user solv
 
 [This article](http://eng.wealthfront.com/2012/12/jquerydeferred-is-most-important-client.html) reminded me of a smart way to implement this using jQuery.Deferred. The following function shows everything we need for our main loop.
 
-    function run(task) {
-        var nextLoaded = loadTask(1),
-            taskSolved = presentTask(task);
-        $.when(nextLoaded, taskSolved).done(run);
-    }
+{% highlight javascript %}
+function run(task) {
+    var nextLoaded = loadTask(1),
+        taskSolved = presentTask(task);
+    $.when(nextLoaded, taskSolved).done(run);
+}
+{% endhighlight %}
 
 To start the loop, we need to load the first task and pass it to run.
 
-    loadTask().done(run);
+{% highlight javascript %}
+loadTask().done(run);
+{% endhighlight %}
 
 Now let's take a look at ``loadTask()``. The parameter offset is passed to the API. After the task and everything else we might need is loaded we mark the deferred as resolved and pass the task over the done handler. Finally we return a 'locked' version of the deferred object.
 
-    function loadTask(offset) {
-        offset = offset || 0;
-        var taskLoaded = $.Deferred();
-        $.getJSON('/api/app/'+appid+'/newtask?offset=' + offset, function(task) {
-            // load more data if you need
-            // and then, resolve Deferred
-            taskLoaded.resolve(task);
-        });
-        return taskLoaded.promise();
-    }
+{% highlight javascript %}
+function loadTask(offset) {
+    offset = offset || 0;
+    var taskLoaded = $.Deferred();
+    $.getJSON('/api/app/'+appid+'/newtask?offset=' + offset, function(task) {
+        // load more data if you need
+        // and then, resolve Deferred
+        taskLoaded.resolve(task);
+    });
+    return taskLoaded.promise();
+}
+{% endhighlight %}
 
 We can use exactly the same method to model the user action. Therefor ``presentTask()`` will returned a deferred object, too. It gets resolved as soon as the user has solved the task and the answer is correctly submitted to PyBossa.
 
-    function presentTask(task) {
-        var taskSolved = $.Deferred();
-        // update presenter html
-        $('.question').html(task.question);
-        // wait for user action
-        $('button.submit').off('click').on('click', function() {
-            var answer = { foo: "Bar" }; // fetch answer from UI
-            pybossa.saveTask(task.id, answer).done(function() {
-                taskSolved.resolve();            
-            });
+{% highlight javascript %}
+function presentTask(task) {
+    var taskSolved = $.Deferred();
+    // update presenter html
+    $('.question').html(task.question);
+    // wait for user action
+    $('button.submit').off('click').on('click', function() {
+        var answer = { foo: "Bar" }; // fetch answer from UI
+        pybossa.saveTask(task.id, answer).done(function() {
+            taskSolved.resolve();            
         });
-        return taskSolved.promise();
-    }
+    });
+    return taskSolved.promise();
+}
+{% endhighlight %}
 
 And that's it.
 
