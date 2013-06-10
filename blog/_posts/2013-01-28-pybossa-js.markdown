@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Daniel Lombraña González
+lightbox: true
 title: PyBossa.JS or how you can easily create new PyBossa applications
 username: teleyinex
 ---
