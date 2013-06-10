@@ -76,7 +76,7 @@ As an example of Cheerio scraping here's an example from work [scraping info the
 [sample]: http://files.opented.org.s3.amazonaws.com/scraped/100120-2011/summary.html
 
 {% highlight javascript %}
-var url = http://files.opented.org.s3.amazonaws.com/scraped/100120-2011/summary.html;
+var url = 'http://files.opented.org.s3.amazonaws.com/scraped/100120-2011/summary.html';
 // place to store results
 var data = {};
 // do the request using the request library
