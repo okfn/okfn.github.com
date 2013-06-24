@@ -11,9 +11,9 @@ bodyclass: join
     <p>We operate as a collaborative community &ndash; anyone can join and contribute.</p>
 
     <ul>
-      <li><a href="https://twitter.com/intent/user?screen_name=OKFNLabs">Follow us on twitter</a></li>
-      <li><a href="/contact/">Join the mailing list</a></li>
-      <li><a href="/members/signup/">Sign up as a Member</a></li> 
+      <li><a href="https://twitter.com/intent/user?screen_name=OKFNLabs">Follow us on twitter</a> &ndash; and send us a message!</li>
+      <li><a href="/contact/">Join the mailing list</a> &ndash; and say hello!</li>
+      <li><a href="/members/signup/">Sign up as a Member</a> &ndash; all welcome!</li> 
     </ul>
 
     <h2>Start Contributing</h2>
