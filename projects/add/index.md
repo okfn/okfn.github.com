@@ -6,24 +6,35 @@ bodyclass: code
 
 # Add a project
 
-There aren’t strict criteria for labs projects – but we do have
-[a set of general principles](/about/#principles) that projects should adhere to.
-Please read these through and consider whether your project fits (or what you
-could change to make it fit) before adding your project.
+Criteria for listing a project on Labs:
+
+* Fit with [the set of general Labs community principles](/about/#principles).
+  These aren't super strict but we suggest you read these through and consider
+  whether your project fits (or what you could change to make it fit)
+* You are an "Official Contributor" - to list a project as a Labs project you
+  need to be an [Official Contributor][contributor]. We do make exceptions so
+  if you think your project is super-deserving of this privilege you can [get
+  in touch][contact] -- or even submit just submit pull request and we can
+  discuss there
+
+[contact]: /contact/
+[contributor]: /about/#contributors
 
 ## Steps to add a project
 
-To add a project, you should first have [signed up as a labs member](/members/signup/).
-We also strongly recommend [joining the mailing list and following Labs on twitter](/contact/).
+To add a project, you should have [signed up as a labs
+member](/members/signup/).  We also strongly recommend [joining the mailing
+list and following Labs on twitter](/contact/).
 
-1. Put together a brief bit of info about yourself. It has 2 parts, some
+1. Put together a brief bit of info about the project. It has 2 parts, some
    structured data of form `item: value` at the top followed by some free text
-   (your bio). Here's what it should look like (all items are optional except
-   those marked as required):
+   (general description). Here's what it should look like (all items are
+   optional except those marked as required):
 
         ---
         layout: project [REQUIRED]
         title: {the project title e.g. Awesome Data Visualizer} [REQUIRED]
+        slug: {a URL-friendly version of the title e.g. awesome-data-visualizer} [REQUIRED]
         projecturl: {URL of an external project webpage e.g. http://awesomedatavisualizer.org}
         imageurl: {URL to a project image or logo of around 450px by 250px}
         type: {project type e.g. Library, Service, Hack}
@@ -32,12 +43,20 @@ We also strongly recommend [joining the mailing list and following Labs on twitt
         authorurl: {a URL for the author e.g. joebloggsblogs.com}
         github_user: {the github user who owns the repo e.g. okfn}
         github_repo: {the github repo name e.g. awesome-data-visualizer}
-        slug: {a URL-friendly version of the title e.g. awesome-data-visualizer} [REQUIRED]
         permalink: /projects/{slug}/index.html [REQUIRED]
         ---
 
-        A brief description of the project – Who is it for? What problem does it solve?
-        you can use html!
+        A brief description of the project. You can use html (or markdown - if
+        markdown please make sure the file you create to hold the info (see
+        below) uses .md extension rather than .html)!
+        
+        Things to include are:
+        
+        - What is it
+        - Who is it for?
+        - What problem does it solve?
+        - How someone could contribute
+
 
    Here's an example:
 
@@ -59,6 +78,8 @@ We also strongly recommend [joining the mailing list and following Labs on twitt
         Kartograph is a simple and lightweight framework for building interactive
         map applications without Google Maps or any other mapping service. It was
         created with the needs of designers and data journalists in mind.
+
+2. Put this in a file name 
 
 2. Get this added to the [Labs Github repo][repo] (and thereby to the website).
    There are 2 options:
