@@ -5,12 +5,14 @@
 @import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
 /*
 OKF Labs Styles
-Edits should be made to current LESS file below.
+Edits should be made to current LESS file listed below (not the CSS file).
 */
 /* Friedrich's theme
+v3.less
 @import url('v3.less');
 */
-/* Current theme (Sam Smith) */
+/* Current theme (Sam Smith) 
+v4.less */
 a {
   color: #22998b;
 }
@@ -122,7 +124,8 @@ input[type="color"]:focus,
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(34, 153, 139, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(34, 153, 139, 0.6);
 }
-code, pre code {
+code,
+pre code {
   color: #145a52;
 }
 hr {
@@ -163,16 +166,13 @@ body {
   font-weight: 300;
   line-height: 24px;
 }
-
 /**** Navbar ****/
-
 .navbar .container {
   width: 940px;
 }
 .navbar-inner,
 .navbar-fixed-top .navbar-inner,
-.navbar-static-top .navbar-inner
-{
+.navbar-static-top .navbar-inner {
   background: none;
   border: none;
   box-shadow: none;
@@ -214,7 +214,7 @@ body {
 .body-members .nav-members,
 .body-about .nav-about,
 .body-contact .nav-contact {
-  color: #22998b  !important;
+  color: #22998b !important;
 }
 .okfn-ribbon a {
   background-position: center -26px;
@@ -340,31 +340,85 @@ body {
   padding-top: 25px;
   margin-top: 25px;
 }
-
 .record h2 {
   margin-top: 0;
   line-height: 25px;
 }
-
 .record .image {
   margin-left: 30px;
   float: right;
   width: 450px;
   min-height: 300px;
 }
-
 .record .image img {
   max-width: 100%;
   max-height: 450px;
   vertical-align: center;
   text-align: center;
   margin: auto;
-  box-shadow: 0 0 20px rgba(0,0,0,.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
-/* About */
+/* About page */
 .chaos.minipic {
   background-image: url(../../img/chaos-black.png);
+}
+ul.persons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ul.persons .photo {
+  float: left;
+  padding-right: 1em;
+  max-height: 120px;
+  max-width: 120px;
+}
+ul.persons li.odd .photo {
+  padding-left: 1em;
+  padding-right: 0;
+  float: right;
+  max-height: 120px;
+  max-width: 120px;
+}
+ul.persons .name {
+  font-weight: bolder;
+}
+ul.persons .area {
+  color: #999;
+}
+ul.persons li.person {
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+ul.persons ul.links {
+  list-style-type: none;
+  margin: 0;
+}
+ul.persons ul.links li {
+  margin-right: 1em;
+  display: inline-block;
+}
+/**** Join *****/
+.body-join .well h3 {
+  margin-top: 0;
+}
+ul.links {
+  list-style-type: none;
+  margin: 0;
+}
+ul.links li {
+  margin-right: 1em;
+  display: inline-block;
+}
+blockquote {
+  font-style: italic;
+  background-color: #ddd;
+  border-left: 10px solid #ccc;
+  padding: 10px;
+}
+blockquote p {
+  font-size: 14px;
 }
 footer {
   margin-top: 2em;
@@ -416,76 +470,4 @@ footer .text-right ul.flatmenu li {
     font-size: 30px;
     line-height: 42px;
   }
-}
-
-/* About page */
-ul.persons {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-ul.persons .photo {
-  float: left;
-  padding-right: 1em;
-  max-height: 120px;
-  max-width: 120px;
-}
-
-ul.persons li.odd .photo {
-  padding-left: 1em;
-  padding-right: 0;
-  float: right;
-  max-height: 120px;
-  max-width: 120px;
-}
-
-ul.persons .name {
-  font-weight: bolder;
-}
-
-ul.persons .area {
-  color: #999;
-}
-
-ul.persons li.person {
-  margin-bottom: 2em;
-  margin-top: 1em;
-}
-
-ul.persons ul.links {
-  list-style-type: none;
-  margin: 0;
-}
-
-ul.persons ul.links li {
-  margin-right: 1em;
-  display: inline-block;
-}
-
-/**** Join *****/
-
-.body-join .well h3 {
-  margin-top: 0;
-}
-
-ul.links {
-  list-style-type: none;
-  margin: 0;
-}
-
-ul.links li {
-  margin-right: 1em;
-  display: inline-block;
-}
-
-blockquote {
-  font-style: italic;
-  background-color: #ddd;
-  border-left: 10px solid #ccc;
-  padding: 10px;
-}
-
-blockquote p {
-  font-size: 14px;
 }

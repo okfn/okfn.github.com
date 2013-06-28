@@ -25,11 +25,11 @@ become a Member** &ndash; just follow the quick [sign-up steps][signup]!
       </h4>
       <ul class="links">
         <li><a href="https://twitter.com/{{ person.twitter }}">
-          <img src="/img/twitter.png"> {{ person.twitter }}</a></li>
+          <i class="icon-twitter"></i> {{ person.twitter }}</a></li>
         <li><a href="https://github.com/{{ person.github }}">
-          <img src="/img/github.png"> {{ person.github }}</a></li>
+          <i class="icon-github"></i> {{ person.github }}</a></li>
         <li><a href="{{ person.web }}">
-          {{ person.web }}</a></li>
+          <i class="icon-globe"></i> {{ person.web }}</a></li>
       </ul>
       <div class="excerpt">
         {{ person.content }} 

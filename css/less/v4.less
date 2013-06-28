@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300);
 @import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
- 
+
 a {
   color: @okf;
 }
@@ -14,7 +14,8 @@ h3,
 h4,
 h5,
 h6,
-.mainnav,
+.navbar .brand,
+.navbar .nav,
 #claim,
 .teaser {
 	font-family: 'Open Sans', Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -49,10 +50,13 @@ h2 {
   line-height: 31px;
 }
 h3 {
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 21px;
+  line-height: 24px;
 }
-
+h4 {
+  font-size: 16px;
+  line-height: 19px;
+}
 
 li {
 	line-height:24px;
@@ -116,10 +120,14 @@ input[type="color"]:focus,
 }
 
 
-code {
+code,
+pre code {
   color: darken(@okf, 15%);
 }
 
+hr {
+  border-top: 1px solid #d2d2d2;
+}
 
 ul {
   list-style-type: square;
@@ -162,43 +170,63 @@ body {
 	line-height: 24px;
 }
 
-.logo {
-	float:left;
-	margin-top:20px;
+
+/**** Navbar ****/
+.navbar .container {
+  width: 940px;
+}
+.navbar-inner,
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner
+{
+  background: none;
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  padding: 0;
+}
+.brand img {
+  height: 55px;
+}
+.navbar .nav {
+  margin: 15px 0 0 0;
+}
+.navbar .nav.pull-right {
+  margin-right: 50px;
+}
+.navbar .nav li {
+  display: block;
+  float: left;
+}
+.navbar .nav li a {
+  color: #333333;
+  text-shadow: 0px 1px 0px #ffffff;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+}
+.navbar .nav li a:hover {
+  text-decoration: none;
+  text-shadow: none;
+  background-color: #cccccc;
+  background-color: rgba(204, 204, 204, 0.2);
 }
 
-.mainnav {
-	float:right;
-	margin:23px 60px 0 0;
-}
-.mainnav li {
-	display:block;
-	float:left;
-}
-.mainnav li a {
-	color:#333333;
-	text-shadow: 0px 1px 0px #ffffff;
-	font-size:18px;
-	display:block;
-	padding:10px;
-}
-.mainnav li a:hover {
-	text-decoration:none;
-	text-shadow: none;
-	background-color:rgb(204,204,204);
-	background-color:rgba(204,204,204,0.2);
-}
+.body-join .navbar .nav-join,
 .body-blog .nav-blog,
-.body-code .nav-code,
 .body-data .nav-data,
+.body-code .nav-code,
 .body-events .nav-events,
-.body-about .nav-about {
-  color: @okf;
+.body-members .nav-members,
+.body-about .nav-about,
+.body-contact .nav-contact {
+  color: @okf !important;
 }
 
 .okfn-ribbon a {
-  background-position: center -16px;
-  height: 84px;
+  background-position: center -26px;
+  height: 74px;
 }
 
 .page-header {
@@ -221,7 +249,7 @@ body {
 	color:#333333;
 }
 
-#airlock hr.after-heading {
+.content hr.after-heading {
 	visibility:hidden;
 }
 
@@ -327,9 +355,96 @@ body {
 	border:solid 4px #FFFFFF;
 }
 
-/* About */
+/* Projects */
+.record {
+  padding-top: 25px;
+  margin-top: 25px;
+}
+.record h2 {
+  margin-top: 0;
+  line-height: 25px;
+}
+.record .image {
+  margin-left: 30px;
+  float: right;
+  width: 450px;
+  min-height: 300px;
+}
+.record .image img {
+  max-width: 100%;
+  max-height: 450px;
+  vertical-align: center;
+  text-align: center;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.2);
+  border-radius: 5px;
+}
+
+
+/* About page */
 .chaos.minipic {
 	background-image: url(../../img/chaos-black.png);
+}
+ul.persons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ul.persons .photo {
+  float: left;
+  padding-right: 1em;
+  max-height: 120px;
+  max-width: 120px;
+}
+ul.persons li.odd .photo {
+  padding-left: 1em;
+  padding-right: 0;
+  float: right;
+  max-height: 120px;
+  max-width: 120px;
+}
+ul.persons .name {
+  font-weight: bolder;
+}
+ul.persons .area {
+  color: #999;
+}
+ul.persons li.person {
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+ul.persons ul.links {
+  list-style-type: none;
+  margin: 0;
+}
+ul.persons ul.links li {
+  margin-right: 1em;
+  display: inline-block;
+}
+
+/**** Join *****/
+.body-join .well h3 {
+  margin-top: 0;
+}
+
+ul.links {
+  list-style-type: none;
+  margin: 0;
+}
+ul.links li {
+  margin-right: 1em;
+  display: inline-block;
+}
+
+blockquote {
+  font-style: italic;
+  background-color: #ddd;
+  border-left: 10px solid #ccc;
+  padding: 10px;
+}
+
+blockquote p {
+  font-size: 14px;
 }
 
 
