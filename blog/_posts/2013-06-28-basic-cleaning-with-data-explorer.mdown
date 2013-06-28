@@ -180,6 +180,12 @@ has changed in your data.
 
 ![Final grid](http://i.imgur.com/WfQxGdV.png)
 
+If you have logged in to GitHub, you will be able to save the result of your
+work. To share the work, simply copy the URL of your project. An example of
+a project constructed according to the instructions above can be found [here][project].
+
+[project]: http://explorer.okfnlabs.org/#nmashton/e4f4ab6a21471e1aa1b8/view/graph
+
 
 ## Conclusion
 
