@@ -125,7 +125,8 @@ input[type="color"]:focus,
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(34, 153, 139, 0.6);
 }
 .well {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 code,
 pre code {
