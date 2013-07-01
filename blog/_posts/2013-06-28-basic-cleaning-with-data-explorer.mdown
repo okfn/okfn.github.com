@@ -6,9 +6,12 @@ username: nmashton
 ---
 
 [Data Explorer][dataexplorer] is a client-side web application for
-data processing and visualization. With Explorer, you can import data,
+data processing and visualization. With Data Explorer, you can import data,
 transform it with JavaScript code, and visualize it on a graph or a map – all
-fully within the browser.
+fully within the browser and with your data and code nicely persisted to
+[gists][].
+
+[gists]: https://gist.github.com/
 
 This tutorial will get you started using Data Explorer by walking you through
 the cleaning of a messy data set. It introduces some of the basic concepts of
