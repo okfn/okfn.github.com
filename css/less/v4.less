@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300);
 @import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
 
 a {
   color: @okf;
@@ -253,16 +254,22 @@ body {
 	color:#333333;
 }
 
+#claim.robot {
+	font-family: 'Amatic SC', 'Open Sans', Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:52px;
+	line-height:50px;
+}
+
 .content hr.after-heading {
 	visibility:hidden;
 }
 
 .home .blog-header {
-	display:inline-block;
+	text-align:right;
 }
 .home .blog-header .socialism {
 	float:right;
-	margin-right:-40px;
+	padding-left:10px;
 }
 .blog-header .socialism > a {
 	display:none;
@@ -287,7 +294,7 @@ body {
 	margin-top: 0;
 	margin-bottom:5px;
 	padding-left:13px;
-	background-image: url(../../img/arrow.png);
+	/*background-image: url(../../img/arrow.png);*/
 	background-repeat: no-repeat;
 	background-position: left bottom;
 }
@@ -488,6 +495,22 @@ footer ul.flatmenu li {
 footer .text-right ul.flatmenu li {
     margin-left: 1.5em;
     margin-right: 0;
+}
+
+
+@media (min-width: 980px) {
+	#claim.robot {
+		position:relative;
+		padding-left:210px;
+		padding-top:35px;
+		padding-bottom:0px;
+	}
+	#claim.robot:before {
+		content:url('../images/robot.png');
+		position:absolute;
+		top:-10px;
+		left:-10px;
+	}
 }
 
 @media (max-width: 767px) {
