@@ -14,7 +14,7 @@ Criteria for listing a project on Labs:
 * You are an "Official Contributor" - to list a project as a Labs project you
   need to be an [Official Contributor][contributor]. We do make exceptions so
   if you think your project is super-deserving of this privilege you can [get
-  in touch][contact] -- or even submit just submit pull request and we can
+  in touch][contact] -- or even just submit the pull request and we can
   discuss there
 
 [contact]: /contact/
