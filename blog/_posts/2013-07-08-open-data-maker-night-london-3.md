@@ -27,3 +27,9 @@ Open Data Maker Nights are informal events focused on "making" with open data �
 
 The events usually have short introductory talks about specific projects and suggestions for things to work on – it’s absolutely fine to turn up knowing nothing about data or openness or tech as, there’ll an activity for you to help and someone to guide you in contributing!
 
+### Organize your own!
+
+Not in London? Why not [organize your own Open Data Maker night][run] in your city? Anyone can and it's easy to do &ndash; [find out more &raquo;][run]
+
+[run]: /events/open-data-maker/
+
