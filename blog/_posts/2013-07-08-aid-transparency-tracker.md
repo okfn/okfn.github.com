@@ -1,15 +1,15 @@
 ---
 layout: post
 author: Mark Brough
-title: Open Data QA: the Aid Transparency Tracker
+title: Open Data QA - the Aid Transparency Tracker
 username: markbrough
 ---
 
-[![Aid Transparency Tracker - data quality](http://publishwhatyoufund.org/files/tracker-frontpage-small.png)][1]
-
-Back in April, I [wrote on the OKFN blog](http://blog.okfn.org/2013/03/13/launching-the-aid-transparency-tracker/) to launch the [first component of our Aid Transparency Tracker](http://tracker.publishwhatyoufund.org/plan/), a tool to analyse aid donors' commitments to publish more open data about their aid activities.
+Back in April, I [wrote on the Open Knowledge Foundation main blog](http://blog.okfn.org/2013/03/13/launching-the-aid-transparency-tracker/) to launch the [first component of our Aid Transparency Tracker](http://tracker.publishwhatyoufund.org/plan/), a tool to analyse aid donors' commitments to publish more open data about their aid activities.
 
 At the end of that post, I pointed to our future plans to also monitor the quality of publication. It is possible to do this programmatically because donors have agreed to publish their data according to the [IATI Standard](http://iatistandard.org).
+
+[![Aid Transparency Tracker - data quality](http://publishwhatyoufund.org/files/tracker-frontpage-small.png)][1]
 
 Over the last six months we've spent a lot of time building a framework for testing the quality of aid donors' [IATI data](http://iatiregistry.org), as well as a survey tool to capture data not available in the IATI format. We launched this to donors last month.
 
