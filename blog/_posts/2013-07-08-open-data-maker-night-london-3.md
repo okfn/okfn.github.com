@@ -16,6 +16,8 @@ The next **Open Data Maker Night London** will be on **Tuesday 16th July 6-9pm**
 
 Look forward to seeing folks there!
 
+<img src="http://farm9.staticflickr.com/8524/8500104205_4e209ef952.jpg" alt="" />
+
 [c4cc]: http://creative-collaboration.net/about/contact/
 [meetup]: http://www.meetup.com/OpenKnowledgeFoundation/London-GB/984832/
 
