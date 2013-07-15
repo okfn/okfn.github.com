@@ -2,10 +2,12 @@
 @import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
 @import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
 
-a {
+a,
+.btn-link {
   color: @okf;
 }
-a:hover {
+a:hover,
+.btn-link:hover {
   color: @okf;
 }
 
@@ -63,15 +65,7 @@ li {
 	line-height:24px;
 }
 
-.btn,
-.btn:hover {
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  color: #ffffff;
-}
-.btn.active {
-  color: rgba(255, 255, 255, 0.75);
-}
-.btn,
+
 .btn-primary {
   background-color: @okf;
   background-image: -moz-linear-gradient(top, @okf, darken(@okf, 10%));
@@ -85,17 +79,112 @@ li {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
-.btn:hover,
 .btn-primary:hover,
-.btn:active,
 .btn-primary:active,
-.btn.active,
 .btn-primary.active,
-.btn.disabled,
 .btn-primary.disabled,
-.btn[disabled],
 .btn-primary[disabled] {
   background-color: darken(@okf, 10%);
+}
+.btn-info {
+  background-color: @grey;
+  background-image: -moz-linear-gradient(top, @grey, darken(@grey, 10%));
+  background-image: -ms-linear-gradient(top, @grey, darken(@grey, 10%));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@grey), to(darken(@grey, 10%)));
+  background-image: -webkit-linear-gradient(top, @grey, darken(@grey, 10%));
+  background-image: -o-linear-gradient(top, @grey, darken(@grey, 10%));
+  background-image: linear-gradient(top, @grey, darken(@grey, 10%));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@grey', endColorstr='darken(@grey, 10%)', GradientType=0);
+  border-color: darken(@grey, 20%);
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-info:hover,
+.btn-info:active,
+.btn-info.active,
+.btn-info.disabled,
+.btn-info[disabled] {
+  background-color: darken(@grey, 10%);
+}
+.btn-success {
+  background-color: @green;
+  background-image: -moz-linear-gradient(top, @green, darken(@green, 10%));
+  background-image: -ms-linear-gradient(top, @green, darken(@green, 10%));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@green), to(darken(@green, 10%)));
+  background-image: -webkit-linear-gradient(top, @green, darken(@green, 10%));
+  background-image: -o-linear-gradient(top, @green, darken(@green, 10%));
+  background-image: linear-gradient(top, @green, darken(@green, 10%));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@green', endColorstr='darken(@green, 10%)', GradientType=0);
+  border-color: darken(@green, 20%);
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+  background-color: darken(@green, 10%);
+}
+.btn-warning {
+  background-color: @yellow;
+  background-image: -moz-linear-gradient(top, @yellow, darken(@yellow, 10%));
+  background-image: -ms-linear-gradient(top, @yellow, darken(@yellow, 10%));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@yellow), to(darken(@yellow, 10%)));
+  background-image: -webkit-linear-gradient(top, @yellow, darken(@yellow, 10%));
+  background-image: -o-linear-gradient(top, @yellow, darken(@yellow, 10%));
+  background-image: linear-gradient(top, @yellow, darken(@yellow, 10%));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@yellow', endColorstr='darken(@yellow, 10%)', GradientType=0);
+  border-color: darken(@yellow, 20%);
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning.active,
+.btn-warning.disabled,
+.btn-warning[disabled] {
+  background-color: darken(@yellow, 10%);
+}
+.btn-danger {
+  background-color: @red;
+  background-image: -moz-linear-gradient(top, @red, darken(@red, 10%));
+  background-image: -ms-linear-gradient(top, @red, darken(@red, 10%));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@red), to(darken(@red, 10%)));
+  background-image: -webkit-linear-gradient(top, @red, darken(@red, 10%));
+  background-image: -o-linear-gradient(top, @red, darken(@red, 10%));
+  background-image: linear-gradient(top, @red, darken(@red, 10%));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@red', endColorstr='darken(@red, 10%)', GradientType=0);
+  border-color: darken(@red, 20%);
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger.active,
+.btn-danger.disabled,
+.btn-danger[disabled] {
+  background-color: darken(@red, 10%);
+}
+.btn-inverse {
+  background-color: @darkgrey;
+  background-image: -moz-linear-gradient(top, @darkgrey, darken(@darkgrey, 10%));
+  background-image: -ms-linear-gradient(top, @darkgrey, darken(@darkgrey, 10%));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@darkgrey), to(darken(@darkgrey, 10%)));
+  background-image: -webkit-linear-gradient(top, @darkgrey, darken(@darkgrey, 10%));
+  background-image: -o-linear-gradient(top, @darkgrey, darken(@darkgrey, 10%));
+  background-image: linear-gradient(top, @darkgrey, darken(@darkgrey, 10%));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@darkgrey', endColorstr='darken(@darkgrey, 10%)', GradientType=0);
+  border-color: darken(@darkgrey, 20%);
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-inverse:hover,
+.btn-inverse:active,
+.btn-inverse.active,
+.btn-inverse.disabled,
+.btn-inverse[disabled] {
+  background-color: darken(@darkgrey, 10%);
 }
 
 textarea:focus,
