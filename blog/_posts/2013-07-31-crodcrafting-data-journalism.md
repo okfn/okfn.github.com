@@ -17,7 +17,7 @@ what was the result, etc.
 
 Páll told me that he created the application after reading the [an article](http://www.visir.is/simon-sigvaldason-sakfellir-naer-alltaf/article/2012121229180) published in an Icelandic news web site.
 
-![Application UI translated using Google Translate](http://localhost:5001/app/herad/task/123198)
+![Application UI translated using Google Translate](http://i.imgur.com/6GlMJ1p.png)
 
 The article analyzed the **conviction rates of a named judged in the Reykjavik district court**,
 stating that the conviction rates for cases where he presided as a judge was 99%. 
