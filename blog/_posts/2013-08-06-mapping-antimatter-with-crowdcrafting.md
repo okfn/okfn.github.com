@@ -17,7 +17,9 @@ Michael Doser from CERN and the spokesperson from the [AEgIS experiment](http://
 
 <iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/8PXSQjjsPUo?rel=0" frameborder="0" allowfullscreen></iframe>
 
-But, **what is antimatter?** The observable Universe is composed almost entirely of matter but we can produce stuff called antimatter in the lab. Antimatter is material composed of antiparticles. So for example, a positron (the antiparticle of an electron) combines with an antiproton to form an antihydrogen atom.
+But, what is antimatter? 
+----------------------------
+The observable Universe is composed almost entirely of matter but we can produce stuff called antimatter in the lab. Antimatter is material composed of antiparticles. So for example, a positron (the antiparticle of an electron) combines with an antiproton to form an antihydrogen atom.
 
 Antiparticles have the same mass as normal matter particles but the opposite charge. When an antiparticle collides with an ordinary matter particle they both obliterate to emit radiation and some other particles - this is called annihilation.
 
