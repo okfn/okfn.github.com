@@ -56,7 +56,7 @@ For the 3D model we decided to use the popular [Three.JS library](http://threejs
 
 Then, we have another group that worked really hard in explaining the physics of the experiment and the tutorial. We even created a [Mozilla Webmaker project](https://juanracasti.makes.org/popcorn/1adt) about it.
 
-At the end of Sunday we had a fully operational prototype that allows you to actually track antimatter in CrowdCrafting:
+At the end of Sunday we had a [fully operational prototype](http://crowdcrafting.org/app/antimatter) that allows you to actually track antimatter in CrowdCrafting:
 
 ![Screenshot](https://github-camo.global.ssl.fastly.net/9a7c3a33b5470bf0c42f19f74a7443adf0e116ef/687474703a2f2f692e696d6775722e636f6d2f716b32393067352e706e67)
 
