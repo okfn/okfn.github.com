@@ -61,3 +61,5 @@ At the end of Sunday we had a [fully operational prototype](http://crowdcrafting
 ![Screenshot](https://github-camo.global.ssl.fastly.net/9a7c3a33b5470bf0c42f19f74a7443adf0e116ef/687474703a2f2f692e696d6775722e636f6d2f716b32393067352e706e67)
 
 From here I would like to thank to all the team members because the actually loved the project and push it to the next level. This efforts will help other CrowdCrafting/PyBossa developers to use the new HTML5 Canvas and WebGL features developed for this application, as the source code is already available in Github and can be used as a template for any CrowdCrafting/PyBossa application.
+
+If you want, you can follow the [Github repository](https://github.com/CERNSummerWebfest/antimatter) development of the project.
