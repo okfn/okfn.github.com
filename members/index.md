@@ -16,13 +16,14 @@ become a Member** &ndash; just follow the quick [sign-up steps][signup]!
 ## Members
 
 <ul class="persons">
-  {% for person in site.categories.members reversed %}
+  {% for person in site.categories.members %}
     <li class="person {% cycle 'odd', 'even' %}">
       <img class="photo" src="{{person.img}}">            
-      <h4 class="name">
+      <h3 class="name">
         <a href="{{person.username}}">{{person.title}}</a>
         <small class="area">{{person.area}}</small>
-      </h4>
+      </h3>
+      <p class="joined"><i class="icon-time"></i> Member since <span class="date">{{ person.date | date_to_long_string }}</span></p>
       <ul class="links">
         <li><a href="https://twitter.com/{{ person.twitter }}">
           <i class="icon-twitter"></i> {{ person.twitter }}</a></li>
