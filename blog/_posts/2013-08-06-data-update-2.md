@@ -33,7 +33,7 @@ Just provide the link to your Data Package and Viewer generates a user-friendly 
 
 ## New datasets
 
-We're delighted to have a major first t announce: the first 'out-of-the-blue' contribution of an 'official' dataset. [Evan Wheeler][6] contributed a comprehensive collection of [country codes][7] for the world's countries in [Simple Data Format][sdf]. Here is the:
+We're delighted to have a major first t announce: the first 'out-of-the-blue' contribution of an 'official' dataset. [Evan Wheeler][6] contributed a comprehensive collection of [country codes][7] for the world's countries in [Simple Data Format][18]. Here is the:
 
 * [Comprehensive Country Codes dataset on data.okfn.org][7] 
 * [Associated GitHub repo][8] for the dataset
