@@ -5,48 +5,62 @@ title: data.okfn.org - update no. 2
 username: nmashton
 ---
 
-[data.okfn.org][1] is the Labs' repository of high-quality, easy-to-use open data. This update summarizes some of the improvements to data.okfn.org that have taken place over the past two months.
+[data.okfn.org][1] is the Labs' repository of high-quality, easy-to-use [open data][]. This update summarizes some of the improvements to data.okfn.org that have taken place over the past two months.
+
+[open data]: http://opendefinition.org/
 
 ## New tools
 
-Several tools which make it easier to use the [Data Package standard][2] are now operational. These include a creator, a  viewer, and a validator for Data Packages.
+Several tools which make it easier to use the [Data Package standard][2] are now operational. These include a [Data Package creator][3], a [Data Package viewer][4], and there's progress on a [validator for Data Packages][validator].
+
+[validator]: https://github.com/okfn/data.okfn.org/issues/27
 
 ### Data Package Creator
 
-Turning a CSV into a Data Package means creating a file, `datapackage.json`, which houses the metadata associated with the CSV. The [Data Package Creator][3] simplifies this process. Provide the Creator with the URL of a CSV and it will return a well-formed JSON object with the required fields, as well as a raw JSON URL.
+Turning a CSV into a Data Package means creating a file, `datapackage.json`, which houses the metadata associated with the CSV. The [Data Package Creator][3] simplifies this process.
+
+Provide the Creator with the URL of a CSV and it will return a well-formed JSON object with the required fields, as well as a raw JSON URL (the JSON URL serves as a basic machine accessible API).
 
 ![Data Package Creator in action][image-1]
 
 ### Data Package Viewer
 
-The metadata included with Data Packages makes it possible to construct insightful displays of their data without further ado. The [Data Package Viewer][4] is a simple proof of this concept. Given the URL of a Data Package metadata file, the DP Viewer generates a user-friendly description, a graph of the data, and a summary of the data's fields. Here, for example, is the Viewer's display of [US wheat production][5] data.
+The metadata included with Data Packages makes it possible to construct a simple view of the data. We now provide an online [Data Package Viewer][4] to do this for you.
+
+Just provide the link to your Data Package and Viewer generates a user-friendly description, a graph of the data, and a summary of the data fields. Here, for example, is the Viewer's display of [US wheat production data][5].
 
 ![Data Package Viewer in action][image-2]
 
 ## New datasets
 
-The biggest dataset news is a data.okfn.org first: a contribution of a dataset *out of the blue* by a new user. [Evan Wheeler][6] has contributed a comprehensive collection of [country codes][7] for the world's countries in Simple Data Format. Here is the [GitHub repo][8] for the dataset.
+We're delighted to have a major first t announce: the first 'out-of-the-blue' contribution of an 'official' dataset. [Evan Wheeler][6] contributed a comprehensive collection of [country codes][7] for the world's countries in [Simple Data Format][sdf]. Here is the:
+
+* [Comprehensive Country Codes dataset on data.okfn.org][7] 
+* [Associated GitHub repo][8] for the dataset
 
 ![Country codes data, table view][image-3]
 
 Also new: 
 
-- [Standard and Poor's 500 Index Data][9], including Dividend, Earnings, and P/E Ratio ([GitHub][10])
-- [US Consumer Price Index and Inflation][11], monthly time series from January 1913 ([GitHub][12]) 
+- [Standard and Poor's 500 Index Data including Dividend, Earnings, and P/E Ratio][9]  ([GitHub][10])
+- [US Consumer Price Index and Inflation monthly time series from January 1913][11] ([GitHub][12]) 
 
 If you want to contribute a new dataset, check out the [instructions][13] and the [outstanding requests][14].
 
 ## New standards pages
 
-Among data.okfn.org's chief contributions are its [standards][15] for data transport, a step towards a world of [frictionless data][16].
+Among data.okfn.org's chief purpose is promoting simple [standards for data transport][15] in the form of Data Package and Simple Data Format - helping to create a world of [frictionless data][16].
 
-New pages have been added for each of the two major standards, [Data Package][17] and [Simple Data Format][18].
+Key here is providing simple, easy-to-understand, information and so we've [revamped the standards page][15] and created two new pages dedicated to providing simple introduction and overview for Data Package and Simple Data Format:
+
+* [Data Package Overview and Introduction][17]
+* [Simple Data Format Overview and Introduction][18]
 
 ## Get involved
 
 Anyone can contribute, and it's easy – if you can use a spreadsheet, you can help!
 
-Instructions for getting involved can be found [here][19].
+Instructions for [getting involved can be found here][19].
 
 [1]:	http://data.okfn.org
 [2]:	http://data.okfn.org/standards/data-package
@@ -60,7 +74,7 @@ Instructions for getting involved can be found [here][19].
 [10]:	https://github.com/datasets/s-and-p-500
 [11]:	http://data.okfn.org/data/cpi-us
 [12]:	https://github.com/datasets/cpi-us
-[13]:	http://data.okfn.org/about/contribute%23data
+[13]:	http://data.okfn.org/about/contribute#data
 [14]:	https://github.com/datasets/registry/issues
 [15]:	http://data.okfn.org/standards
 [16]:	http://blog.okfn.org/2013/04/24/frictionless-data-making-it-radically-easier-to-get-stuff-done-with-data/
