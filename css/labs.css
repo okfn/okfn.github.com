@@ -496,6 +496,14 @@ ul.persons ul.links li {
   margin-right: 1em;
   display: inline-block;
 }
+.joined {
+  margin-bottom: 0;
+  color: #999;
+}
+.joined .date {
+  color: #333;
+}
+
 /**** Join *****/
 .body-join .well h3 {
   margin-top: 0;
