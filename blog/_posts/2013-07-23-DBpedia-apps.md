@@ -11,7 +11,7 @@ layout: post
 
 Having developed the Greek DBpedia, the first Internationalized DBpedia, OKFN Greece  is now involved in the OKFN Labs by introducing three applications using DBpedia.
 
-## 1. DBpedia Spotlight ## is an application that automatically spots and disambiguates words or phrases of text documents that might be sources of DBpedia and annotates them with DBpedia URIs. 
+## 1. DBpedia Spotlight ** is an application that automatically spots and disambiguates words or phrases of text documents that might be sources of DBpedia and annotates them with DBpedia URIs. 
 
 DBpedia spotlight implements the Aho-Corasick string matching algorithm in the spotting stage described above along with the use of [Apache Lucene](http://lucene.apache.org/) over the index built in the offline training / configuration stage. For the disambiguation of the spotted words/phrases, a VSM representation of the DBpedia resources is used along with a variant of the TF-IDF technique for determining the weight of words based on their ability to distinguish between candidates of a given term.
 
