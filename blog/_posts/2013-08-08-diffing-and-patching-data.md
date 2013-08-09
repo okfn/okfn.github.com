@@ -22,11 +22,13 @@ morphed into something a lot more ambitious:
  * A full-blown co-op to deal with the cultural and legal side of data sharing.  This is the [Data Commons Co-op](http://datacommons.find.coop).
  * A growing toolbox to deal with the technological side of data sharing, specifically how to have fun (rather than get depressed) collaborating on data projects.  This is the [Coopy Toolbox](https://github.com/paulfitz/coopy).
 
-We, like others in the Open Data world, have been asking: where's the
-github for data?  More fundamentally, where's the `diff` and `patch`
+We, like [others][dvcs-data] in the Open Data world, have been asking: where's the
+git(hub) for data?  More fundamentally, where's the `diff` and `patch`
 programs for data?  Where's something like `diff3` for doing 3-way
 merges?  Can we bring the whole free and open toolchain of diffing,
 patching, merging, and version control to the world of data?
+
+[dvcs-data]: http://blog.okfn.org/2010/07/12/we-need-distributed-revisionversion-control-for-data/
 
 ## The toolchain is there already, for some
 
