@@ -844,3 +844,58 @@ are just some of the things that need doing:
    I'm waiting for [`dat`](https://github.com/maxogden/dat).
 
 This is all frankly way too much for me.  Help!
+
+## Appendix: a list of the main Coopy tools
+
+The Coopy toolbox ([website](http://share.find.coop), [repository](https://github.com/paulfitz/coopy), [manual](http://share.find.coop/doc/CoopyGuide.pdf)) contains the following utilities:
+
+ * [`ssdiff`][ssdiff]: Show the difference between two tables/databases/spreadsheets. 
+ * [`sspatch`][sspatch]: Modify a table/database/spreadsheet to apply the changes described in a pre-computed difference.
+ * [`ssmerge`][ssmerge]: Integrate changes in table/database/spreadsheets that have a common ancestor.
+ * [`ssresolve`][ssresolve]: Select a particular resolution to a merge conflict.
+ * [`ssformat`][ssformat]: Convert tables/databases/spreadsheets from one format to another.
+ * [`ssrediff`][ssrediff]: Convert a diff from one format to another (for example, 
+   from highlighter format to a sequence of SQL instructions).
+ * [`ssfossil`][ssfossil]: A lightly modified version of [`fossil`][fossil] to use ssmerge's 3-way
+   merge algorithm on data.
+ * [`Coopy`][coopy]: A first pass at a user interface for versioning Excel and other
+   non-textual formats.
+
+The toolbox is written in C++.  Recently I've ported some of the core
+parts of the toolbox to a Javascript (via Haxe) implementation.
+This port is called coopyhx ([website](http://paulfitz.github.io/coopyhx/), [repository](https://github.com/paulfitz/coopyhx)).  The reimplementation
+is better in several respects than the original (need to merge them!), but
+supports far fewer formats. The port contains:
+
+ * The [`coopyhx`][coopyhx] program, which is a stripped down 
+   version of `ssdiff` and `sspatch`, operating only on basic CSV/JSON tables
+   and the highlighter diff format.
+ * A javascript library for diffing and patching, suitable for in-browser use.
+ * A render function for converting highlighter diffs in CSV format into
+   pretty HTML.
+ * A render function for [handsontable][handsontable] to allow online
+   editing of diffs in a pretty format.
+
+Awkwardly, there's also an entirely separate ruby implementation ([source](https://github.com/paulfitz/coopy/tree/master/rb_coopy), [gem](https://rubygems.org/gems/coopy)), strictly limited to Sqlite, that was written for use on [ScraperWiki](https://scraperwiki.com/) (classic).
+
+Related websites:
+
+ * <http://growrows.com>, a start at a service for crowd-sourcing tables, using diffs and patches (without calling them that).
+
+ * <http://datacommons.find.coop/vision>, the Data Commons Co-op, incorporated in July 2012 in Massachusetts.
+   The co-op has 20 member organizations, mostly in the US, a couple in Canada, plus one recently in the UK.
+   This co-op specializes in archiving, correlating, and disseminating data about alternative economic activity,
+   and needs lots of software that doesn't quite exist yet!
+
+[ssdiff]: http://share.find.coop/doc/ssdiff.html
+[sspatch]: http://share.find.coop/doc/sspatch.html
+[ssmerge]: http://share.find.coop/doc/ssmerge.html
+[ssresolve]: http://share.find.coop/doc/ssresolve.html
+[ssformat]: http://share.find.coop/doc/ssformat.html
+[ssrediff]: http://share.find.coop/doc/ssrediff.html
+[ssfossil]: http://share.find.coop/doc/ssfossil.html
+[fossil]: http://www.fossil-scm.org
+[coopy]: http://share.find.coop/doc/coopy.html
+[coopyhx]: https://npmjs.org/package/coopyhx
+[handsontable]: http://handsontable.com/
+
