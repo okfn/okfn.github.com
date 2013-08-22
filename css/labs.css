@@ -467,13 +467,15 @@ ul.persons {
 }
 ul.persons .photo {
   float: left;
-  padding-right: 1em;
+  margin-right: 1em;
   max-height: 120px;
   max-width: 120px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 ul.persons li.odd .photo {
-  padding-left: 1em;
-  padding-right: 0;
+  margin-left: 1em;
+  margin-right: 0;
   float: right;
   max-height: 120px;
   max-width: 120px;
@@ -496,6 +498,14 @@ ul.persons ul.links li {
   margin-right: 1em;
   display: inline-block;
 }
+.joined {
+  margin-bottom: 0;
+  color: #999;
+}
+.joined .date {
+  color: #333;
+}
+
 /**** Join *****/
 .body-join .well h3 {
   margin-top: 0;

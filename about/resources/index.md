@@ -15,6 +15,13 @@ touch][contact] (mailing list recommended).
 [members]: /members/
 
 
+## Infrastructure
+
+### Git repos
+
+Labs Contirbutors may create Github git repos within the okfn organization and
+deploy associated pages at http://okfnlabs.org/{repo}
+
 ### Storage
 
 Labs operates long-term storage service using S3 at
@@ -25,7 +32,6 @@ specific servers.
 
 At present access to this storage is generally reserved to [Contributors][] but
 if you have material you would like us to host [let us know][contact].
-
 
 ### Servers and Hosting
 
@@ -51,6 +57,13 @@ AWS hosting services via Labs.
 
 As these cost money this option is only accessible to [Contributors][].
 
+### Jenkins
+
+We operate a [Jenkins instance](http://jenkins.etl.openspending.org/) for
+supervising and monitoring regular jobs.
+
+
+## Communications
 
 ### Website and blog
 
@@ -59,12 +72,12 @@ be reviewed by an [Official Labs Contributor][Contributors].
 
 [Contributors][] have full access to the website and the associated blog.
 
+### Messaging
 
-### Git repos
+Mailing lists, IRC etc. See the [contact page][contact].
 
-Labs Contirbutors may create Github git repos within the okfn organization and
-deploy associated pages at http://okfnlabs.org/{repo}
 
+## Coordination and Organizing
 
 ### Google Drive
 
@@ -73,14 +86,9 @@ Folder](https://drive.google.com/a/okfn.org/#folders/0B6R8dXc6Ji4JZ3FyVjJ1Z1QyMn
 
 If you want write access please [mail us or contact us on irc][contact].
 
+### Trello for task management
 
-### Jenkins
-
-We operate a [Jenkins instance](http://jenkins.etl.openspending.org/) for
-supervising and monitoring regular jobs.
+[Labs trello board](https://trello.com/b/GEolSd8W/labs)
 
 
-### Communications
-
-Mailing lists, IRC etc. See the [contact page][contact].
 
