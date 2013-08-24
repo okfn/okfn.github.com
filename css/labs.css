@@ -561,6 +561,15 @@ footer .text-right ul.flatmenu li {
   margin-left: 1.5em;
   margin-right: 0;
 }
+footer .projects {
+  margin-top: 10px;
+}
+footer .projects img {
+  height: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 @media (min-width: 980px) {
   #claim.robot {
     position: relative;
