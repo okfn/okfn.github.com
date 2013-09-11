@@ -24,7 +24,6 @@ bodyclass: code
       {% endif %}
       <div class="rhs">
         <p class="description" title="{{project.content}}">{{project.content}}</p>
-        <p><a href="/projects/{{project.slug}}/">More info&hellip;</a></p>
         {% if project.github_repo %}
           <p><img src="/img/github.png" /> <a href="https://github.com/{{project.github_user}}/{{project.github_repo}}">Github</a></p>
           <iframe src="http://ghbtns.com/github-btn.html?user={{project.github_user}}&repo={{project.github_repo}}&type=watch&count=true"
