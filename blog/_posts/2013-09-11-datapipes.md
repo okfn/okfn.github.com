@@ -5,15 +5,27 @@ title: Data Pipes - streaming online data transformations
 username: rgrp
 ---
 
-**[Data Pipes](http://datapipes.okfnlabs.org/)** provides an online service to do simple data transformations – deleting rows and columns, find and replace, filtering, viewing as HTML – and, furthermore, to connect these transformations together *Unix pipes style* to make more complex transformations. Because Data Pipes is a web API, data transformation with Data Pipes takes place entirely online and the results **and** process are completely shareable simply by sharing the URL.
+**[Data Pipes](http://datapipes.okfnlabs.org/)** provides an online service to do **simple data transformations** – deleting rows and columns, find and replace, filtering, viewing as HTML – and, furthermore, to **connect these transformations together** *Unix pipes style* to make more complex transformations. Because Data Pipes is a web service, data transformation with Data Pipes takes place entirely online and the results **and** process are completely shareable simply by sharing the URL.
 
-Here's an example (here's what the [data looked like before](http://datapipes.okfnlabs.org/csv/html?url=https://raw.github.com/okfn/datapipes/master/test/data/gla.csv)):
+## An example
 
-  <a href="http://datapipes.okfnlabs.org/csv/head%20-n%2050/cut%200/delete%201:7/grep%20LONDON/html?url=https://raw.github.com/okfn/datapipes/master/test/data/gla.csv"><code>http://datapipes.okfn.labs.org/csv/head -n 50/cut 0/delete 1:7/grep LONDON/html?url=https://raw.github.com/okfn/datapipes/master/test/data/gla.csv</code></a>
+This takes the [input data][demo] (sourced from this [original Greater London Authority financial data](http://static.london.gov.uk/gla/expenditure/docs/2012-13-P12-250.csv)), slices out the first 50 rows (head), deletes the first column (its blank!) (cut), deletes rows 1 through 7 (delete) and finally renders the result as HTML (html). Here's Before and After
 
-This takes the [input data][demo] (sourced from this [original Greater London Authority financial data](http://static.london.gov.uk/gla/expenditure/docs/2012-13-P12-250.csv)), slices out the first 50 rows (head), deletes the first column (its blank!) (cut), deletes rows 1 through 7 (delete), filters for rows containing “LONDON” (grep), and finally renders the result as HTML (html).
+  <a href="http://datapipes.okfnlabs.org/csv/head%20-n%2050/cut%200/delete%201:7/html?url=https://raw.github.com/okfn/datapipes/master/test/data/gla.csv"><code>http://datapipes.okfn.labs.org/csv/head -n 50/cut 0/delete 1:7/html?url=https://raw.github.com/okfn/datapipes/master/test/data/gla.csv</code></a>
 
 [demo]: https://raw.github.com/okfn/datapipes/master/test/data/gla.csv
+
+### Before
+
+<a href="http://datapipes.okfnlabs.org/csv/html?url=https://raw.github.com/okfn/datapipes/master/test/data/gla.csv">
+<img src="http://farm3.staticflickr.com/2827/9726020844_0301af2ded.jpg" width="500" height="213" alt="Data pipes: GLA data, HTML view">
+</a>
+
+### After
+
+<a href="http://datapipes.okfnlabs.org/csv/head%20-n%2050/cut%200/delete%201:7/html?url=https://raw.github.com/okfn/datapipes/master/test/data/gla.csv">
+<img src="http://farm4.staticflickr.com/3728/9726020800_ff01da582e.jpg" width="500" height="177" alt="Data pipes: GLA data, trimmed">
+</a>
 
 ## Motivation - Data Wrangling, Pipes, NodeJS and the Unix Philosophy
 
@@ -27,7 +39,7 @@ We wanted to use the [Unix philosophy](http://www.faqs.org/docs/artu/ch01s06.htm
 
 Data Pipes brings the Unix philosophy and the Unix pipes style to online data. Any [CSV](http://data.okfn.org/standards/csv) data can be piped through a cascade of transformations to produce a modified dataset, without ever downloading the data and with no need for your own backend. Being online means that the operations are immediately shareable and linkable.
 
-## Examples
+## More Examples
 
 Take, for example, this copy of a set of [Greater London Authority financial data](https://raw.github.com/okfn/datapipes/master/test/data/gla.csv). It's unusable for most purposes, simply because it doesn't abide by the CSV convention that the first line should contain the headers of the table. The header is preceded by six lines of useless commentary. Another problem is that the first column is totally empty.
 
@@ -57,6 +69,9 @@ Awesome!
 
 ## What's next?
 
-Data Pipes already supports a useful collection of operations, but it's still in development, and more are yet to come, including the find-and-replace operation `sed`. You can see the full list [on the Data Pipes site](http://datapipes.okfnlabs.org/), and you can suggest more transforms to implement by [raising an issue](https://github.com/okfn/datapipes/issues/new) at the Data Pipes repo.
+Data Pipes already supports a useful collection of operations, but it's still in development, and more are yet to come, including find-and-replace operation `sed` plus support for [arbitrary map and filter functions](https://github.com/okfn/datapipes/issues/21).
+
+You can see the full list [on the Data Pipes site](http://datapipes.okfnlabs.org/), and you can suggest more transforms to implement by [raising an issue](https://github.com/okfn/datapipes/issues/new).
 
 Data Pipes needs more operations for its toolkit. That means its developers need to know what you do with data – and to think about how it can be broken down in the grand old Unix fashion. To join in, check out [Data Pipes on GitHub](https://github.com/okfn/datapipes) and let us know what you think.
+
