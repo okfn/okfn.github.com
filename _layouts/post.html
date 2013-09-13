@@ -3,15 +3,22 @@ layout: blog
 categories: post
 ---
 
-<h1>{{ page.title }}</h1>
-
+<div class="post">
 <div class="row">
   <div class="span8">
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      Posted on <span class="post-date">{{ page.date | date_to_long_string }}</span>
+      by
+      <span class="post-author"><a href="/members/{{page.username}}">{{ page.author }}</a></span>
+    </div>
+
     {% if page.snapshot %}
       <div class="snapshot">
         <img src="/img/projects/{{ page.snapshot }}.png">
       </div>
     {% endif %}
+
     {{content}}
 
     <div class="blog-comments">
@@ -31,10 +38,14 @@ categories: post
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
-  <div class="span4">
-    <a href="/members/{{page.username}}">{{ page.author }}</a>
-      <span class="post-date">({{ page.date | date_to_long_string }})</span>
-    <hr>
+  <div class="span4 sidebar">
+    <div class="about">
+      <img src="/images/robot.png" alt="" />
+      We make <strong>tools, apps</strong> and <strong>insights</strong> using
+      <strong>open stuff</strong>
+      <a href="/join/">Join in &raquo;</a>
+    </div>
+    <hr />
     <p>
       <a href="https://twitter.com/okfnlabs"><img
         src="/img/blog_twitter.png"></a> &nbsp; Follow <a
@@ -47,12 +58,15 @@ categories: post
     
     <hr>
 
-    <ul>
+    <h3>Recent Posts</h3>
+    <ul class="related">
       {% for post in site.related_posts %}
         {% if post.categories contains 'blog' %}
           <li>
-          <span class="post-date">{{ post.date | date_to_string }}:</span>
-          <a href="{{ post.url }}">{{ post.title }}</a>
+          <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+          <div class="post-meta">
+          <span class="post-date">{{ post.date | date_to_string }}</span>
+          </div>
           <p>{{ post.content | strip_html | truncatewords: 20 }}</p>
           </li>
         {% endif %}
@@ -60,5 +74,6 @@ categories: post
     </ul>
 
   </div>
+</div>
 </div>
 

@@ -601,3 +601,43 @@ footer .projects img {
     line-height: 42px;
   }
 }
+
+/**** Posts *****/
+
+.post h1 {
+  margin-top: 0;
+}
+
+.post-meta {
+  font-size: 95%;
+  color: #aaa9a9;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.post-meta .post-date, .post-meta .post-author {
+  font-style: normal;
+  color: #333;
+}
+
+.post .sidebar .about img {
+  width: 90px;
+  margin-right: 10px;
+  float: left;
+}
+
+.post .sidebar .about {
+  font-family: 'Amatic SC', 'Open Sans', Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.post .sidebar ul.related {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.post .sidebar .related .post-meta {
+  margin-bottom: 0;
+
+}
