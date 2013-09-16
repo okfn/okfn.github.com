@@ -30,7 +30,7 @@ height="350" frameborder="0"></iframe>
 
 To read it's value we use the following code.
 
-```javascript
+<pre><code class="javascript">
 function sbmt() {
   smilescale=d3.scale.linear()
     .domain([50,250])
@@ -42,7 +42,7 @@ function sbmt() {
     // XHTTP Post Request follows here
     })
 }
-```
+</code></pre>
 
 If you want to see it in action: try out the
 [Moodlog](http://moodlogr.appspot.com) app, or check out the
