@@ -23,7 +23,7 @@ After thinking about it for a while we had an idea of using a smiley as a
 slider - the smiley would smile if happy and look sad if dragged to a sad
 status.
 
-see it working here:
+see it working here (try draging it up and down):
 
 <iframe src="http://sonya2song.github.io/moodlog/input.html" width="250"
 height="350" frameborder="0"></iframe>
