@@ -25,12 +25,12 @@ status.
 
 see it working here:
 
-<iframe src="http://sonya2song.github.io/moodlog/input.html" width="220"
-height="310" frameborder="0"></iframe>
+<iframe src="http://sonya2song.github.io/moodlog/input.html" width="250"
+height="350" frameborder="0"></iframe>
 
 To read it's value we use the following code.
 
-```
+```javascript
 function sbmt() {
   smilescale=d3.scale.linear()
     .domain([50,250])
