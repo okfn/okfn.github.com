@@ -18,3 +18,14 @@ There's also a:
 
 New ideas are very welcome! <a href="https://github.com/okfn/ideas/issues/new">Suggest a new idea &raquo;</a>
 
+## Latest Ideas Activity
+
+<div id="github-activity" style="width: 100%"></div>
+<script>
+  $('#github-activity').githubActivity({
+    "events": 15,
+    "repos": [
+      "okfn/ideas"
+    ]
+  });
+</script>
