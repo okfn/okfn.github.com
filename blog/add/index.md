@@ -20,9 +20,10 @@ Using "Fork and pull" on the [github repo][repo]:
 [repo]: https://github.com/okfn/okfn.github.com
 [contact]: /contact/
 
-1. Blog posts go in blog/_post/ folder. As per jekyll convention they should be named yyyy-mm-dd-{slug-for-post}.md
+1. Blog posts go in `blog/_post/` folder. As per jekyll convention they should be
+   named `yyyy-mm-dd-{slug-for-post}.md`
 
-If your post is html rather than markdown just change extension from md to html.
+   If your post is html rather than markdown just change extension from `.md` to `.html`.
 
 2. Add content. The structure should be:
 
