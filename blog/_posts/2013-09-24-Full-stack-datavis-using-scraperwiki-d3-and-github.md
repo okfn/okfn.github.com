@@ -44,3 +44,8 @@ frameworks ([d3](http://d3js.org) has a quite unique way of doing things):
 once you're over the hump, things get a lot easier. This leaves you in the
 end thinking about the visualization or application you're building: not
 worrying about server security, costs and setup.
+
+This also means: Full stack datavisualization has become easier. You needed
+a team of specialists (sysadmins, backend-developers, designers) to do a
+decent dataviz: now you just learn the missing parts and you're able to
+pull it off. 
