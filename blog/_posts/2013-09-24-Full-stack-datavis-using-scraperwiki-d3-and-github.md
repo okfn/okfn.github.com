@@ -5,7 +5,6 @@ title: Full stack datavis - scraperwiki, d3 and github.
 username: mihi
 ---
 
-![Wann aufs amt?](http://wannaufsamt.tentacleriot.eu/waa.png)
 
 The city of Vienna started releasing waiting times for some of its service
 offices recently. I followed my usual hunch and just wrote a [small script
@@ -16,6 +15,8 @@ Weeks later [Hacks/Hackers Vienna](http://hackshackers.at) decided to host
 a hackathon. I couldn't make it (I thought I might) but had the idea to
 develop the data into a visualization. I sat down later that week and
 published a [visualization of waiting times](http://wannaufsamt.tentacleriot.eu). 
+
+![Wann aufs amt?](http://wannaufsamt.tentacleriot.eu/waa.png)
 
 ### So why am I rambling on about this?
 
