@@ -639,5 +639,10 @@ footer .projects img {
 
 .post .sidebar .related .post-meta {
   margin-bottom: 0;
-
 }
+
+.caption {
+  font-size: 95%;
+  text-align: center;
+}
+
