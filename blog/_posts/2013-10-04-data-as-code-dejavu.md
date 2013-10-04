@@ -7,7 +7,7 @@ username: rgrp
 
 Someone just pointed me at [this post from Ben Balter about Data as Code][ben] in which he emphasizes the analogies between data and code (and especially open data and open-source -- e.g. "data is where code was 2 decades ago" ...).
 
-I was delighted to see this post as it makes many points I deeply agree with - and have for some time. In fact, reading it gave me something a sense of (very positive) deja-vu since it made similar points to several posts I and others had written several years ago - suggesting that perhaps we're now getting close to making some of the vision of distributed, componentized collaborative data development happen!
+I was delighted to see this post as it makes many points I deeply agree with - and have for some time. In fact, reading it gave me something a sense of (very positive) deja-vu since it made similar points to several posts I and others had written several years ago - suggesting that perhaps we're now getting close to the critical mass we need to create a real distributed and collaborative open data ecosystem!
 
 It also suggested it was worth dusting off and recapping some of this earlier material as much of it was written more than 6 years ago, a period which, in tech terms, can seem like the stone age.
 
