@@ -34,9 +34,11 @@ We now have basic search support via google custom search: <http://publicbodies.
 
 ## Get Involved
 
-As always we'd love help and full list of issues here and example items:
+As always we'd love help! There is a [full list of issues here][issues] and example items:
 
 - [Getting Descriptions for 130 EU Public Bodies](https://github.com/okfn/publicbodies/issues/35)
 - [Support for sending corrections / additions on the website](https://github.com/okfn/publicbodies/issues/8)
 - [Support for reconciliation (e.g. via nomenklatura)](https://github.com/okfn/publicbodies/issues/2)
+
+[issues]: https://github.com/okfn/publicbodies/issues
 
