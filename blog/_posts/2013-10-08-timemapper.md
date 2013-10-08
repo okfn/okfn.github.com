@@ -7,7 +7,7 @@ username: nmashton
 
 TimeMapper lets you create elegant and embeddable timemaps quickly and easily from a simple spreadsheet.
 
-![Medieval philosophers timemap](http://i.imgur.com/FmPTZlr.png)
+<a href="http://timemapper.okfnlabs.org/okfn/medieval-philosophers"><img src="http://i.imgur.com/FmPTZlr.png" alt="Medieval philosophers timemap"></a>
 
 A timemap is an interactive timeline whose items connect to a geomap. Creating a timemap with TimeMapper is as easy as filling in a spreadsheet template and copying its URL.
 
