@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Neil Ashton
-title: Introducing TimeMapper
+title: Introducing TimeMapper - Create Elegant TimeMaps in Seconds
 username: nmashton
 ---
 
@@ -31,13 +31,13 @@ Embedding your new timemap is just as easy as creating it. Click on **Embed** in
 
 ## Coming next
 
-We have big plans for TimeMapper. Future versions will include features like:
+We have big plans for TimeMapper, including:
 
-- creating maps from Wikipedia
-- connecting markers in maps to form a route
-- options for timeline- and map-only project layouts
+- Quickly create TimeMaps using information from Wikipedia
+- Connect markers in maps to form a route
+- Options for timeline- and map-only project layouts
 - [Disqus](http://disqus.com)-based comments
-- a core JS library, **timemapper.js**, so you can build your own apps with timemaps
+- Core JS library, **timemapper.js**, so you can build your own apps with timemaps
 
 Check out the [TimeMapper issues list](https://github.com/okfn/timemapper/issues) to see what ideas we’ve got and to leave suggestions.
 
