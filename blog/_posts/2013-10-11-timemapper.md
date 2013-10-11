@@ -21,7 +21,7 @@ TimeMapper projects are generated from [Google Sheets](http://docs.google.com) s
 
 What can you put in the spreadsheet? Check out the [TimeMapper template](https://docs.google.com/a/okfn.org/spreadsheet/ccc?key=0AqR8dXc6Ji4JdFRNOTVYYTRqTmh6TUNNd3U2X2pKMGc#gid=0). It contains all of the columns that TimeMapper understands, plus a row of cells explaining what each of them means. Your timemap doesn't have to use all of these columns, though—it just requires a *Start* date, a *Title*, and a *Description* for each item, plus geographical coordinates for the map.
 
-So you've put your data in a Google spreadsheet—how can you make it into a timemap? Easy! From Google Sheets, click on the **Share** button, and set the sheet's visibility to *Anyone who has the link can **view***. Then you can either copy the URL from *Link to share* and paste that URL into the box in Step 2 of the TimeMapper creation process or click on **Select from Your Google Drive** to just browse to the sheet. Whichever you do, then hit **Connect and Publish**—and voilà!
+So you've put your data in a Google spreadsheet—how can you make it into a timemap? Easy! From Google Sheets, go to **File -> Publish to the web** and hit **Start publishing**. Then click on your sheet's **Share** button and set the sheet's visibility to *Anyone who has the link can **view***. You can either copy the URL from *Link to share* and paste that URL into the box in Step 2 of the TimeMapper creation process or click on **Select from Your Google Drive** to just browse to the sheet. Whichever you do, then hit **Connect and Publish**—and voilà!
 
 ![Share your spreadsheet](http://i.imgur.com/5SLOURu.png)
 
