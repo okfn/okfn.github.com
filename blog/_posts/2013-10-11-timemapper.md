@@ -5,7 +5,7 @@ title: Introducing TimeMapper - Create Elegant TimeMaps in Seconds
 username: nmashton
 ---
 
-TimeMapper lets you create elegant and embeddable timemaps quickly and easily from a simple spreadsheet.
+[TimeMapper](http://timemapper.okfnlabs.org) lets you create elegant and embeddable timemaps quickly and easily from a simple spreadsheet.
 
 <a href="http://timemapper.okfnlabs.org/okfn/medieval-philosophers"><img src="http://i.imgur.com/FmPTZlr.png" alt="Medieval philosophers timemap"></a>
 
@@ -19,7 +19,7 @@ To get started, go to the [TimeMapper website][2] and sign in using your [Twitte
 
 TimeMapper projects are generated from [Google Sheets](http://docs.google.com) spreadsheets. Each item on the timemap – an event, an individual, or anything else associated with a date (or two, for the start and end of a period) – is a spreadsheet row.
 
-What can you put in the spreadsheet? Check out the [TimeMapper template][4]. It contains all of the columns that TimeMapper understands, plus a row of cells explaining what each of them means. Your timemap doesn't have to use all of these columns, though—it just requires a *Start* date, a *Title*, and a *Description* for each item, plus geographical coordinates for the map.
+What can you put in the spreadsheet? Check out the [TimeMapper template](https://docs.google.com/a/okfn.org/spreadsheet/ccc?key=0AqR8dXc6Ji4JdFRNOTVYYTRqTmh6TUNNd3U2X2pKMGc#gid=0). It contains all of the columns that TimeMapper understands, plus a row of cells explaining what each of them means. Your timemap doesn't have to use all of these columns, though—it just requires a *Start* date, a *Title*, and a *Description* for each item, plus geographical coordinates for the map.
 
 So you've put your data in a Google spreadsheet—how can you make it into a timemap? Easy! From Google Sheets, click on the **Share** button, and set the sheet's visibility to *Anyone who has the link can **view***. Then you can either copy the URL from *Link to share* and paste that URL into the box in Step 2 of the TimeMapper creation process or click on **Select from Your Google Drive** to just browse to the sheet. Whichever you do, then hit **Connect and Publish**—and voilà!
 
@@ -47,5 +47,3 @@ TimeMapper is made possible by awesome open source libraries like [TimelineJS](h
 
 [2]:	http://timemapper.okfnlabs.org/
 [3]:	http://twitter.com
-[4]:	https://docs.google.com/a/okfn.org/spreadsheet/ccc?key=0AqR8dXc6Ji4JdFRNOTVYYTRqTmh6TUNNd3U2X2pKMGc%23gid=0
-
