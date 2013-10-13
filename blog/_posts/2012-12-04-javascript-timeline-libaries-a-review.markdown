@@ -7,6 +7,10 @@ username: rgrp
 
 This post is a rough and ready overview of various javascript timeline libraries that arose from research in creating a timeline view for [Recline JS](http://reclinejs.com/). Note this material hung around on my hard disk for a few months so some of it may already be a little bit out of date!
 
+<div class="alert alert-info">
+<strong>October 2013</strong>: We have released <strong><a href="http://timemapper.okfnlabs.org/">TimeMapper</a></strong> a new online app for creating <strong>Timelines and TimeMaps</strong> quickly and easily. Check it out at <strong><a href="http://timemapper.okfnlabs.org/">http://timemapper.okfnlabs.org/</a></strong>
+</div>
+
 I want to start with a general comment. Timeline libraries consist of various components:
 
 * Data loading
