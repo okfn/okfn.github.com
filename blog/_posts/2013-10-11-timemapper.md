@@ -33,6 +33,7 @@ Embedding your new timemap is just as easy as creating it. Click on **Embed** in
 
 We have big plans for TimeMapper, including:
 
+- Support for indicating size and time on the map
 - Quickly create TimeMaps using information from Wikipedia
 - Connect markers in maps to form a route
 - Options for timeline- and map-only project layouts
@@ -40,6 +41,13 @@ We have big plans for TimeMapper, including:
 - Core JS library, **timemapper.js**, so you can build your own apps with timemaps
 
 Check out the [TimeMapper issues list](https://github.com/okfn/timemapper/issues) to see what ideas we’ve got and to leave suggestions.
+
+## Code
+
+In terms of the internals the app is a simple node.js app with storage into s3. The timemap visualization is pure JS built using KnightLabs excellent [Timeline.js][] for the timeline and [Leaflet][] (with OSM) for the maps. For those interested in the code it can be found at: <https://github.com/okfn/timemapper/>
+
+[Timeline.js]: http://timeline.knightlab.com/
+[Leaflet]: http://leafletjs.com/
 
 ## History and credits
 
