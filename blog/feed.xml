@@ -4,7 +4,7 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>OKFN Labs: The Data Wrangling Blog</title>
+ <title>Open Knowledge Foundation Labs: The Data Wrangling Blog</title>
  <link href="http://okfnlabs.org/blog/feed.xml" rel="self"/>
  <link href="http://okfnlabs.org/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
