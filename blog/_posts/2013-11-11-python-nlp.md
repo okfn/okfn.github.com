@@ -62,4 +62,8 @@ Thus, in  “cairotraffic.py” we needed create PoS tags for the “FROM” and
 
 In addition to PoS tagging, we also applied a simple Naive Bayes classifier to tell whether a road is blocked (za7ma) or alright (7alawa) given the words used in a tweet.
 
-If any of the topics discussed here is not clear, please feel free to ask me about it. Also feel free to contact me if you have any comments about the code or you would like me to help you using it in any of your applications.
+## Conclusion
+
+Python and NLTK makes it easy to carry on complex natural language processing tasks using few lines of code. We have seen here that the toolkit provide all suitable methods for doing text tokenization, analysis and classification. You can also read more about the concepts discussed here and the other capabilities of NLTK in this [free book](http://nltk.org/book/ "Natural Language Processing with Python") by Steven Bird, Ewan Klein, and Edward Loper.
+
+If any of the topics discussed here is not clear, please feel free to ask me about it. Also feel free to [contact me](http://tarekamr.appspot.com/ "Tarek Amr Homepage") if you have any comments about the code or you would like me to help you using it in any of your projects.
