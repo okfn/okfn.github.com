@@ -46,6 +46,7 @@ NLTK allows us to find out the frequencies of each word in our textual data. In 
 
 
 ![Frequency distribution of characters](http://i.imgur.com/DxbwkGr.png)
+
 *Frequency distribution of characters in both English and Arabizi*
 
 One problem with word frequencies is that big percentage of the top n words are stop-words. Stop-words are common words in a certain language that are not related to the topic of the document, such as "the", "of", "and", etc. In the demo, [wikianalysis.py](https://github.com/gr33ndata/NLP_GDGCairo2013 "Wikipedia pages for Egypt, Tunisia and Lebanon"), we grabbed the text of the Wikipedia pages of Egypt, Tunisia and Lebanon. The top n words from each page were put in a table [here](https://docs.google.com/spreadsheet/ccc?key=0AmbldjoHWBdZdGpvWDFBcjBneDBlY05ScHZ2dU8yU3c "Wikipedia Analysis"). One way to deal with stop-words is to re-weight terms. Words that appear in one page but not in the other should be given higher weight compared to words that are common in the three pages, even if they have higher frequencies. Thus, we divided the counts of each word in an page by the total count of it across the 3 pages. The results were put in the next tab, where we can see that the words marked in green are the ones related to each country. Additionally, you can use the collocations() method in NLTK to find out word pairs that frequently appear together.
