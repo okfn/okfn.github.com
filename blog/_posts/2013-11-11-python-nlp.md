@@ -45,7 +45,7 @@ One problem with the previous command that it did not deal well with the hyphen 
 NLTK allows us to find out the frequencies of each word in our textual data. In the demo ['gnugpl.py'](https://github.com/gr33ndata/NLP_GDGCairo2013 "GNU GPL Demo"), you can see how to use nltk.Text() to list the top n words in the GPL3 license. Similarly, we can get the frequency distribution of characters in text, rather than words. We will show later on how we cam detect the language of some text using the  frequency distribution of characters there.
 
 
-![Frequency distribution of characters](http://i.imgur.com/DxbwkGr.png)
+![Frequency distribution of characters](http://i.imgur.com/DxbwkGrl.png)
 
 *Frequency distribution of characters in both English and Arabizi*
 
