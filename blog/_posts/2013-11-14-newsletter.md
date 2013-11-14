@@ -59,20 +59,20 @@ Discussion on the Labs list highlighted another benefit of using GitHub. [Alioun
 Anyone can join the Labs community and get involved! Read more about how you can [join the community][21] and participate by coding, wrangling data, or doing outreach and engagement. Also check out the [Ideas Page][22] to see what's cooking in the Labs.
 
 [1]:	http://datapipes.okfnlabs.org/
-[2]:	https://github.com/andylolz
+[2]:	http://okfnlabs.org/members/andylolz
 [3]:	https://github.com/okfn/datapipes/issues?page=1&state=closed
 [4]:	http://webshot.okfnlabs.org/
 [5]:	http://webshot.okfnlabs.org/
-[6]:	http://tarekamr.appspot.com/
+[6]:	http://okfnlabs.org/members/tamr/
 [7]:	http://okfnlabs.org/blog/2013/11/11/python-nlp.html
 [8]:	http://data.okfn.org/standards/data-package
-[9]:	http://www.gittip.com/maxogden/
+[9]:	http://www.maxogden.com
 [10]:	https://github.com/okfn/datapackage.js/issues/3
-[11]:	http://rufuspollock.org
+[11]:	http://okfnlabs.org/members/rgrp
 [12]:	https://github.com/okfn/dpm
 [13]:	https://github.com/okfn/dpm/issues
 [14]:	http://nomenklatura.okfnlabs.org/
-[15]:	http://pudo.org/
+[15]:	http://okfnlabs.org/members/pudo
 [16]:	http://lists.okfn.org/pipermail/okfn-labs/2013-November/001138.html
 [17]:	http://lists.okfn.org/pipermail/okfn-labs/2013-November/001138.html
 [18]:	http://okfnlabs.org/blog/2013/11/06/tracking-data-issues.html
