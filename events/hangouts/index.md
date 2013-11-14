@@ -18,7 +18,7 @@ It’s super informal and anyone can come along and contribute. If you’d like 
 * Sign up: (optional but recommended) add your name to [the etherpad][etherpad]
 
 [contact]: /contact/
-[gdoc]: http://pad.okfn.org/p/labs-hangouts
+[etherpad]: http://pad.okfn.org/p/labs-hangouts
 
 ## Humanities Hangout
 
