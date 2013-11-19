@@ -13,7 +13,7 @@ This isn’t about being critical but about **educating**—providing examples o
 
 Each “bad” dataset on gets a simple page that shows what’s wrong along with a preview or screenshot.
 
-We’ve started to stock the site with some of the examples the better examples that we’ve come across over the years includes machine-*un*readable [Transport for London passenger numbers from the London Datastore][2] and a classic "[ASCII spreadsheet][3]" from the US Bureau of Labor Statistics.
+We’ve started to stock the site with some of the better examples of bad data that we’ve come across over the years. This includes machine-*un*readable [Transport for London passenger numbers from the London Datastore][2] and a classic "[ASCII spreadsheet][3]" from the US Bureau of Labor Statistics.
 
 **We welcome contributions of new examples! [Submit them here][6].**
 
