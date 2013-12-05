@@ -11,7 +11,7 @@ Looking at a CSV file [in the raw](https://raw.github.com/okfn/datapipes/master/
 
 ![Raw CSV](http://i.imgur.com/zVGW1zD.png)
 
-The basic Data Pipes parse of the data is not any different:
+The basic Data Pipes parse of the data, which you get with the following API call, doesn't look any different:
 
     http://datapipes.okfnlabs.org/csv/?url=https://raw.github.com/okfn/datapipes/master/test/data/gla.csv
 
