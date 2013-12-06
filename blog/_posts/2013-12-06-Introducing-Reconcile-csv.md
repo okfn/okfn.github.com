@@ -3,7 +3,6 @@ layout: post
 author: Michael Bauer
 title: Introducing Reconcile-CSV
 username: mihi
-snapshot: http://okfnlabs.org/reconcile-csv/img/matching.png
 ---
 
 Recently I spent a week in Tanzania working on education data with the
