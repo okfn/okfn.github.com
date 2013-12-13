@@ -45,7 +45,7 @@ For power users (or for use from the command line or API), you can just append y
 
 You can also extend this basic previewing using other datapipes features. For example, suppose you have a big CSV file (say with more than a few thousand rows). If you tried to turn this into an HTML table and then view in your browser, it would probably crash it.
 
-So what if you could just see a part of the file? After all, you may well only be interested in seeing what that CSV file looks like, not every row. Fortunately, **Data Pipes supports only showing the first 20 lines of a CSV file** using a [`head` operation][head]. To demonstrate, let's just extend our example above to use `head`. This gives us the following URL (click to see the live result):
+So what if you could just see a part of the file? After all, you may well only be interested in seeing what that CSV file looks like, not every row. Fortunately, **Data Pipes supports only showing the first 10 lines of a CSV file** using a [`head` operation][head]. To demonstrate, let's just extend our example above to use `head`. This gives us the following URL (click to see the live result):
 
 [head]: http://datapipes.okfnlabs.org/head
 
@@ -55,5 +55,6 @@ So what if you could just see a part of the file? After all, you may well only b
 
 Data Pipes is a free and open service run by [Open Knowledge Foundation Labs][labs]. You can find the source code on GitHub at: <https://github.com/okfn/datapipes>. It also available as a [Node](http://nodejs.org/) library and command line tool.
 
+[labs]: http://okfnlabs.org/
 
 If you like previewing CSV files in your browser, you might also be interested in the [Recline CSV Viewer](https://chrome.google.com/webstore/detail/recline-csv-viewer/ibfcfelnbfhlbpelldnngdcklnndhael), a Chrome plugin that automatically turns CSVs into searchable HTML tables in your browser.
