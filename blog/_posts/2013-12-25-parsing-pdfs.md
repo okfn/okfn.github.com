@@ -337,3 +337,5 @@ If I need OCR, I use `pdfimages` to remove the images and `tesseract` to run
 OCR. If I needed to run OCR and know more about the layout, I might convert the
 PDFs to SVG with Inkscape and, and then take the images out of the SVG in order
 to know more precisely where they are in the page's structure.
+
+*This article was originally posted [on Thomas Levine's site](http://thomaslevine.com/!/parsing-pdfs).*
