@@ -36,8 +36,13 @@ Using "Fork and pull" on the [github repo][repo]:
 
         content in html or markdown goes here .... 
    
-   Note: make sure your title doesn't contain a colon (:) this will break
-   the YAML notation and stop the page from rendering.
+   You need to quote any fields that contain a colon (:). For example,
+
+        ---
+        layout: post
+        author: {Your Name}
+        title: 'CatchyName: Doing this thing with that thing'
+        ---
 
 3. Add and commit the file then submit the pull request (if you are not pushing direct to the main repo)
 
