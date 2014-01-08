@@ -12,7 +12,7 @@ We have a growing list of ideas for new things to work on &ndash; including tool
 
 There's also a:
 
-<a href="https://github.com/okfn/ideas/issues?labels=Simple" class="btn btn-large btn-primary">Shorter list of the simplest ones</a>
+<a href="https://github.com/okfn/ideas/issues?labels=Effort%3A+%E2%98%85" class="btn btn-large btn-primary">Shorter list of the simplest ones</a>
 
 ## Suggest New Ideas
 
