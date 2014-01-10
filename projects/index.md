@@ -24,7 +24,7 @@ bodyclass: code
       {% endif %}
       <div class="rhs">
         <p class="description">{{project.content}}</p>
-        {% if project.github_repo %}
+        {% if false %}
           <p><img src="/img/github.png" /> <a href="https://github.com/{{project.github_user}}/{{project.github_repo}}">Github</a></p>
           <iframe src="http://ghbtns.com/github-btn.html?user={{project.github_user}}&repo={{project.github_repo}}&type=watch&count=true"
               allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
@@ -36,3 +36,19 @@ bodyclass: code
     <div style="clear: both;"></div>
   {% endfor %}
 </div>
+
+
+<script type="text/javascript" src="../js/isotope.pkgd.js"></script>
+<script type="text/javascript" src="../js/imagesloaded.pkgd.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+  var $container = $('.results');
+  $container.imagesLoaded(function() {
+    $container.isotope({
+      itemSelector: '.record',
+      layoutMode: 'masonry'
+    });
+  });
+});
+</script>
+

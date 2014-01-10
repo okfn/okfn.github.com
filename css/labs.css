@@ -434,18 +434,16 @@ body {
 }
 /* Projects */
 .record {
-  padding-top: 25px;
+  padding: 25px;
   margin-top: 25px;
+  width: 25%;
 }
 .record h2 {
   margin-top: 0;
   line-height: 25px;
 }
 .record .image {
-  margin-left: 30px;
   float: right;
-  width: 450px;
-  min-height: 300px;
 }
 .record .image img {
   max-width: 100%;
