@@ -3,15 +3,24 @@ layout: project
 title: Nomenklatura - Reconciliation Web Service
 projecturl: http://nomenklatura.okfnlabs.org/
 imageurl: http://pudo.org/projects/img/nomenklatura.png
-type: Service
-tags:
+tags: []
 author: Friedrich Lindenberg
-authorurl: http://pudo.org/
+maintainer: pudo
 github_user: pudo
 github_repo: nomenklatura
 permalink: /projects/nomenklatura/index.html
 slug: nomenklatura
+featured: no
+helpwanted: no
+language: [python, javascript, css, shell]
+type: [webapp, running service, tool]
+status: live
 ---
+Nomenklatura de-duplicates and integrates different names for entities - people, organisations or public bodies - to help you clean up messy data and to find links between different datasets.
+
+The service will create references for all entities mentioned in a source dataset. It then helps you to define which of these entities are duplicates and what the canonical name for a given entity should be. This information is available in data cleaning tools like OpenRefine or in custom data processing scripts, so that you can automatically apply existing mappings in the future.
+
+The focus of nomenklatura is on data integration, it does not provide further functionality with regards to the people and organisations that it helps to keep track of. 
 
 <p>Nomenklatura is a simple service that makes it easy to maintain a canonical list of entities such as persons, companies or event streets and to match messy input, such as their names against that canonical list – for example, matching Acme Widgets, Acme Widgets Inc and Acme Widgets Incorporated to the canonical "Acme Widgets".</p>
 
