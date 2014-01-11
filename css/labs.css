@@ -432,8 +432,9 @@ body {
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
   border: solid 4px #FFFFFF;
 }
-/* Projects */
-.record {
+
+/* Projects List */
+.projects .record {
   padding: 25px;
   margin-top: 25px;
   width: 25%;
@@ -442,10 +443,15 @@ body {
   margin-top: 0;
   line-height: 25px;
 }
-.record .image {
-  float: right;
+
+.projects .author {
+  color: #999;
+  font-size: 17px;
+  line-height: 20px;
+  margin-top: 3px;
 }
-.record .image img {
+
+.projects .record .image img {
   max-width: 100%;
   max-height: 450px;
   vertical-align: center;
@@ -454,6 +460,30 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
+
+.projects .description {
+  margin-top: 5px;
+}
+
+/* Individual project page */
+.body-project .record .image {
+  margin-left: 30px;
+  float: right;
+  width: 450px;
+  min-height: 300px;
+}
+
+.body-project .record .image img {
+  max-width: 100%;
+  max-height: 450px;
+  vertical-align: center;
+  text-align: center;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+
 /* About page */
 .chaos.minipic {
   background-image: url(../../img/chaos-black.png);

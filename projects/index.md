@@ -6,32 +6,26 @@ bodyclass: code
 
 # Labs Projects
 
-<div class="results">
+<div class="projects">
   {% for project in site.categories.projects %}
     <div class="record">
-      <div class="image">
-        {% if project.imageurl %}
-          <img src="{{project.imageurl}}" alt="{{project.title}}" />
-        {% endif %}
-      </div>
       <h2>
-        <a href="{{project.projecturl}}" target="_blank">{{project.title}}</a>
-      </h2>
-      {% if project.author %}
-        <h2>
-          <small>by <a href="{{project.authorurl}}" target="_blank">{{project.author}}</a></small>
-        </h2>
-      {% endif %}
-      <div class="rhs">
-        <p class="description">{{project.content}}</p>
-        {% if false %}
-          <p><img src="/img/github.png" /> <a href="https://github.com/{{project.github_user}}/{{project.github_repo}}">Github</a></p>
-          <iframe src="http://ghbtns.com/github-btn.html?user={{project.github_user}}&repo={{project.github_repo}}&type=watch&count=true"
-              allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-          <iframe src="http://ghbtns.com/github-btn.html?user={{project.github_user}}&repo={{project.github_repo}}&type=fork&count=true"
-              allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+        <a href="{{project.url | replace:'index.html',''}}">{{project.title}}</a>
+        {% if project.author %}
+        <div class="author">by {{project.author}}</div>
         {% endif %}
+      </h2>
+      {% if project.imageurl %}
+      <div class="image">
+        <img src="{{project.imageurl}}" alt="{{project.title}}" />
       </div>
+      {% endif %}
+      <p class="description">
+        {{project.content}}
+      </p>
+      <p>
+        <a href="{{project.url | replace:'index.html',''}}">Read more &raquo;</a>
+      </p>
     </div>
     <div style="clear: both;"></div>
   {% endfor %}
@@ -42,7 +36,7 @@ bodyclass: code
 <script type="text/javascript" src="../js/imagesloaded.pkgd.js"></script>
 <script type="text/javascript">
 jQuery(document).ready(function($) {
-  var $container = $('.results');
+  var $container = $('.projects');
   $container.imagesLoaded(function() {
     $container.isotope({
       itemSelector: '.record',
