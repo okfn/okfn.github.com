@@ -67,6 +67,7 @@ jQuery(document).ready(function($) {
     }
     projectselects.forEach(function(filter) {
       pushToFilter(pd[filter], projectfilters[filter]);
+      pd.object.addClass(pd[filter].join(' '));
     });
   });
 
@@ -77,6 +78,22 @@ jQuery(document).ready(function($) {
           .append('<select />').find('select');
       projectfilters[filter].forEach(function(f) {
         select.append('<option>' + f + '</option>');
+      });
+      select.click(function(e) {
+        e.stopPropagation();
+
+        // Set filter
+        var f = $(this).val()
+          .trim().toLowerCase()
+          .replace(/[^a-z0-9]+/gi, '-');
+        if (f.length > 1) {
+          console.log(f);
+          $container.isotope({ 
+            filter: '.' + filter + '-' + f 
+          });
+        }
+
+        return false;
       });
     });
 

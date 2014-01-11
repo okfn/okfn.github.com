@@ -483,7 +483,10 @@ ul.filters {
 }
 .filters li select { display: none; }
 .filters li.active select { 
-  display: inline-block; margin-left: 5px;
+  display: block;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: -30px;
 }
 .filters li.active { 
   background: #fff;
