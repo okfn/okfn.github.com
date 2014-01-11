@@ -15,8 +15,13 @@ bodyclass: project
   </h2>
   {% if page.author %}
     <h2>
-      <small>by <a href="{{page.authorurl}}" target="_blank">{{page.author}}</a></small>
+      <small>by {{page.author}}</small>
     </h2>
+  {% endif %}
+  {% if page.maintainer %}
+  <p>
+    <i class="icon-user" title="Maintainer"></i> Maintainer &ndash; <a href="/members/{{page.maintainer}}/" target="_blank">{{page.maintainer}}</a>
+  </p>
   {% endif %}
   <div class="rhs">
     <p class="description">{{page.content}}</p>
