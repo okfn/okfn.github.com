@@ -50,12 +50,29 @@ jQuery(document).ready(function($) {
       t.attr('data-alt') + '" />');
   });
 
-  // Initialise filters
-  function pushToFilter(array, filters) {
-    array.forEach(function(f) {
-      if (filters.indexOf(f)<0) filters.push(f);
-    });      
+  // Parse filter title
+  function toFilterName(title) {
+    return title.trim().toLowerCase()
+                .replace(/[^a-z0-9]+/gi, '-');
   }
+
+  // Add filter references if unique (case-insensitive)
+  function pushToFilter(array, refs, prefix) {
+    var str = "";
+    var refs_l = refs.map(function(e) { return e.toLowerCase(); });
+    array.forEach(function(k) {
+      var name = toFilterName(k);
+      if (name.length > 0) {
+        if (refs_l.indexOf(k.toLowerCase())<0) {
+          refs.push(k);
+        }
+        str += prefix + "-" + name + " ";
+      }
+    });  
+    return str;    
+  }
+
+  // Iterate through projects metadata
   projectdata.forEach(function(pd) {
     if (pd.featured == 'true') {
       projectfilters.featured++;
@@ -65,29 +82,37 @@ jQuery(document).ready(function($) {
       projectfilters.helpwanted++;
       pd.object.addClass('is-helpwanted');
     }
-    projectselects.forEach(function(filter) {
-      pushToFilter(pd[filter], projectfilters[filter]);
-      pd.object.addClass(pd[filter].join(' '));
+    projectselects.forEach(function(f) {
+      pd.object.addClass(
+        pushToFilter(pd[f], projectfilters[f], f)
+      );
     });
   });
 
   var $filters = $('ul.filters');
   projectselects.forEach(function(filter) {
+
+      // Create a blank SELECT tag
       var select = 
         $filters.find('[filter="' + filter + '"]')
           .append('<select />').find('select');
-      projectfilters[filter].forEach(function(f) {
+
+      // Sort case insensitive
+      var sorted = projectfilters[filter].sort(function (a, b) {
+        return a.toLowerCase().localeCompare(b.toLowerCase());
+      });
+
+      // Create each option
+      sorted.forEach(function(f) {
         select.append('<option>' + f + '</option>');
       });
+
       select.click(function(e) {
         e.stopPropagation();
 
-        // Set filter
-        var f = $(this).val()
-          .trim().toLowerCase()
-          .replace(/[^a-z0-9]+/gi, '-');
+        // Set filters
+        var f = toFilterName($(this).val());
         if (f.length > 1) {
-          console.log(f);
           $container.isotope({ 
             filter: '.' + filter + '-' + f 
           });
