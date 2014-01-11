@@ -12,7 +12,7 @@
           </div>
         {% endif %}
         <div class="excerpt">
-          {{ post.content | strip_html | truncatewords: 45 }} 
+          {{ post.content | markdownify | strip_html | truncatewords: 45 }} 
         </div>
         <div class="more">
           <a href="{{ post.url }}" title="read full post">●●●●●</a>
