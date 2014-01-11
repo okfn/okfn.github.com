@@ -109,6 +109,8 @@ jQuery(document).ready(function($) {
 
       select.click(function(e) {
         e.stopPropagation();
+        $(this).change();
+      }).change(function() {
 
         // Set filters
         var f = toFilterName($(this).val());
@@ -124,6 +126,7 @@ jQuery(document).ready(function($) {
 
   $filters.removeClass('hidden')
     .children().click(function() {
+      // Handle navigation to filter
       var self = $(this);
       if (self.hasClass('active')) {
         // Clear all filters
@@ -141,6 +144,9 @@ jQuery(document).ready(function($) {
             filter: '.is-' + self.attr('filter') 
           });
         }
+
+        // Set selects
+        self.find('select').click().focus();
       }
     });
 
