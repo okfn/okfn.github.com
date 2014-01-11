@@ -483,6 +483,18 @@ body {
   border-radius: 5px;
 }
 
+/* Members list of projects */
+.body-members .project-list .record {
+  clear: both;
+  padding-top: 25px;
+}
+
+.body-members .project-list .image {
+  margin-left: 30px;
+  float: right;
+  max-width: 50%;
+}
+
 
 /* About page */
 .chaos.minipic {

@@ -5,25 +5,58 @@ bodyclass: members
 ---
 
 <h1>{{page.title}} <small>[{{page.username}}]</small></h1>
-<p class="joined"><i class="icon-time"></i> Member since <span class="date">{{ page.date | date_to_long_string }}</span></p>
-<ul class="links">
-  <li><a href="https://twitter.com/{{ page.twitter }}">
-    <i class="icon-twitter"></i> {{ page.twitter }}</a></li>
-  <li><a href="https://github.com/{{ page.github }}">
-    <i class="icon-github"></i> {{ page.github }}</a></li>
-  <li><a href="{{ page.web }}">
-    <i class="icon-globe"></i> {{ page.web }}</a></li>
-</ul>
 
-<img class="photo" src="{{page.img}}" style="float: right;">            
+<div class="info">
+  <p class="joined"><i class="icon-time"></i> Member since <span class="date">{{ page.date | date_to_long_string }}</span></p>
 
-{{content}}
+  <ul class="links">
+    <li><a href="https://twitter.com/{{ page.twitter }}">
+      <i class="icon-twitter"></i> {{ page.twitter }}</a></li>
+    <li><a href="https://github.com/{{ page.github }}">
+      <i class="icon-github"></i> {{ page.github }}</a></li>
+    <li><a href="{{ page.web }}">
+      <i class="icon-globe"></i> {{ page.web }}</a></li>
+  </ul>
+
+  <img class="photo" src="{{page.img}}" style="float: right;">            
+
+  {{content}}
+
+  <ul class="links" style="margin-top: 10px;">
+    <li><i class="icon-folder-close"></i> <a href="#projects">Projects</a></li>
+    <li><i class="icon-rss-sign"></i> <a href="#posts">Posts</a></li>
+  </ul>
+
+</div>
 
 <div style="clear: both"></div>
 
-<h2>Projects</h2>
+<h2 id="projects"><i class="icon-folder-close"></i> Projects</h2>
+<p>{{page.title}} is a maintainer or contributor to the following projects:</p>
 
-<h2>Posts</h2>
+<div class="project-list">
+{% for project in site.categories.projects %}
+{% if project.maintainer == page.username %}
+  <div class="record">
+    <h2>
+      <a href="{{project.url | replace:'index.html',''}}">{{project.title}}</a>
+    </h2>
+    {% if project.imageurl %}
+    <div class="image">
+      <img src="{{project.imageurl}}" alt="{{project.title}}" />
+    </div>
+    {% endif %}
+    <p class="description">
+      {{project.content}}
+    </p>
+  </div>
+{% endif %}
+{% endfor %}
+</div>
+
+<hr />
+
+<h2 id="posts"><i class="icon-rss-sign"></i> Posts</h2>
 <ul class="blog posts">
 {% for post in site.categories.blog %}
 {% if post.username == page.username %}
