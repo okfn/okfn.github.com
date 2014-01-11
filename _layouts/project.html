@@ -18,9 +18,12 @@ bodyclass: project
       <small>by {{page.author}}</small>
     </h2>
   {% endif %}
-  {% if page.maintainer %}
+  {% if page.maintainers %}
   <p>
-    <i class="icon-user" title="Maintainer"></i> Maintainer &ndash; <a href="/members/{{page.maintainer}}/" target="_blank">{{page.maintainer}}</a>
+    <i class="icon-user" title="Maintainer"></i> Maintainer{% if page.maintainers.size > 1 %}s{% endif %} &ndash;
+    {% for maintainer in page.maintainers %}
+      <a href="/members/{{maintainer}}/" target="_blank">{{maintainer}}</a>{% if forloop.last != true %}, {% endif %}
+    {% endfor %}
   </p>
   {% endif %}
   <div class="rhs">
