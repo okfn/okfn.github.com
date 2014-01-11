@@ -19,7 +19,13 @@ bodyclass: code
       </h2>
       {% if project.author %}
         <h2>
-          <small>by <a href="{{project.authorurl}}" target="_blank">{{project.author}}</a></small>
+          <small>by
+            {% if project.maintainer %}
+              <a href="/members/{{project.maintainer}}" target="_blank">{{project.author}}</a>
+            {% else %}
+              {{project.author}}
+            {% endif %}
+          </small>
         </h2>
       {% endif %}
       <div class="rhs">
