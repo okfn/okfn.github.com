@@ -35,23 +35,30 @@ list and following Labs on twitter](/contact/).
         layout: project [REQUIRED]
         title: {the project title e.g. Awesome Data Visualizer} [REQUIRED]
         slug: {a URL-friendly version of the title e.g. awesome-data-visualizer} [REQUIRED]
-        projecturl: {URL of an external project webpage e.g. http://awesomedatavisualizer.org}
-        imageurl: {URL to a project image or logo of around 450px by 250px}
-        type: {project type e.g. Library, Service, Hack}
-        tags: {relevant tags e.g. Javascript}
+        permalink: /projects/{slug}/index.html [REQUIRED]
+
+        type: {list from the following project types: [library, data, webapp, running service, tool]}
         author: {author(s) names e.g. Joe Bloggs}
-        authorurl: {a URL for the author e.g. joebloggsblogs.com}
+        maintainers: {list of labs username(s) of those who maintain the project}
+        featured: {set to 'yes' to add to the list of featured projects}
         github_user: {the github user who owns the repo e.g. okfn}
         github_repo: {the github repo name e.g. awesome-data-visualizer}
-        permalink: /projects/{slug}/index.html [REQUIRED]
+        helpwanted: {set to 'yes' if the project requires assistance of any sort}
+        typeofhelp: {list from the following types of help required: [coding, data analysis, data wrangling, testing, documenting, blogging, evangelism, project managing]}
+        imageurl: {URL to a project image or logo of around 235px by 150px}
+        language: {list of languages the project uses e.g. [python, javascript]}
+        projecturl: {URL of an external project webpage e.g. http://awesomedatavisualizer.org}
+        status: {one of [idea, alpha, prototype, production, deployed, mature]}
+        tags: {list of relevant tags e.g. [django, google spreadsheets]}
+        active: {set to 'no' if the project is no longer active}
         ---
 
         A brief description of the project. You can use html (or markdown - if
         markdown please make sure the file you create to hold the info (see
         below) uses .md extension rather than .html)!
-        
+
         Things to include are:
-        
+
         - What is it
         - Who is it for?
         - What problem does it solve?
@@ -63,23 +70,26 @@ list and following Labs on twitter](/contact/).
         ---
         layout: project
         title: Kartograph
-        projecturl: http://kartograph.org/
-        imageurl: http://kartograph.org/showcase/eastcoast/eastcoast-90dpi_export.png
-        type: Library
-        tags: Visualization
+        slug: kartograph
+        permalink: /projects/kartograph/index.html
+
+        type: [library]
         author: Gregor Aisch
-        authorurl: http://driven-by-data.net/
+        featured: yes
         github_user: kartograph
         github_repo: kartograph.js
-        permalink: /projects/kartograph/index.html
-        slug: kartograph
+        imageurl: http://kartograph.org/showcase/eastcoast/eastcoast-90dpi_export.png
+        language: [javascript, coffeescript, css, shell]
+        projecturl: http://kartograph.org/
+        status: mature
+        tags: Visualization
         ---
 
         Kartograph is a simple and lightweight framework for building interactive
         map applications without Google Maps or any other mapping service. It was
         created with the needs of designers and data journalists in mind.
 
-2. Put this in a file name 
+2. Put this in a file name
 
 2. Get this added to the [Labs Github repo][repo] (and thereby to the website).
    There are 2 options:
