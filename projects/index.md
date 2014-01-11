@@ -6,9 +6,17 @@ bodyclass: code
 
 # Labs Projects
 
+<ul class="filters">
+  <li class="selected" filter="featured">Featured</li>
+  <li filter="helpwanted">Help wanted</li>
+  <li filter="type">Type</li>
+  <li filter="tags">Tagged</li>
+  <li filter="language">Languages</li>
+</ul>
+
 <div class="projects">
   {% for project in site.categories.projects %}
-    <div class="record" data-featured="{{project.featured}}" data-helpwanted="{{project.helpwanted}}" data-language="{{project.language | jsonify}}" data-type="{{project.type | jsonify}}" data-tags="{{project.tags | jsonify}}">
+    <div class="record" data-featured="{{project.featured}}" data-helpwanted="{{project.helpwanted}}" data-status="{{project.status}}" data-language="{{ project.language | join: ";" }}" data-type="{{ project.type | join: ";" }}" data-tags="{{ project.tags | join: ";" }}">
       <h2>
         <a href="{{project.url | replace:'index.html',''}}">{{project.title}}</a>
         {% if project.author %}
@@ -34,44 +42,5 @@ bodyclass: code
 
 <script type="text/javascript" src="../js/isotope.pkgd.js"></script>
 <script type="text/javascript" src="../js/imagesloaded.pkgd.js"></script>
-<script type="text/javascript">
-jQuery(document).ready(function($) {
-  var $container = $('.projects');
-  
-  $container.find('.readmore').each(function() {
-    // Find the current project's detail URL
-    var url = $('a', this).attr('href');
-    var $record = $(this).hide().parent();
-    $record.addClass('expand');
-
-    // Mouse over the record container
-    $record.hover(function() {
-      var $record = $(this);
-      if (!$record.hasClass('loaded')) {
-        // Load and display it on hover
-        $.get(url, function(data) {
-          $record.find('.rhs').html(
-            $(data).find('.record .rhs').html());
-          $record.addClass('loaded');
-        });
-      }
-    });
-  });
-
-  // Load the image
-  $container.find('div.image').each(function() {
-    var t = $(this);
-    t.append('<img src="' + 
-      t.attr('data-src') + '" alt="' +
-      t.attr('data-alt') + '" />');
-  });
-
-  // Create Isotope grid view
-  $container.isotope({
-    itemSelector: '.record',
-    layoutMode: 'masonry'
-  });
-
-});
-</script>
+<script type="text/javascript" src="../js/projects.js"></script>
 
