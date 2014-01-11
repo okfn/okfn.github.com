@@ -8,7 +8,7 @@ bodyclass: code
 
 <div class="projects">
   {% for project in site.categories.projects %}
-    <div class="record">
+    <div class="record" data-featured="{{project.featured}}" data-helpwanted="{{project.helpwanted}}" data-language="{{project.language | jsonify}}" data-type="{{project.type | jsonify}}" data-tags="{{project.tags | jsonify}}">
       <h2>
         <a href="{{project.url | replace:'index.html',''}}">{{project.title}}</a>
         {% if project.author %}
