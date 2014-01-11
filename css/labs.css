@@ -443,10 +443,29 @@ body {
   margin-top: 0;
   line-height: 25px;
 }
+.record.expand {
+  height: 160px; 
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+.record.expand:hover {
+  position: absolute;
+  height: auto;
+  width: auto;
+  max-width: 50%;
+  max-height: 300px;
+  overflow: auto;
+  z-index: 10;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #999;
+  box-shadow: gray 5px 3px 10px;
+  padding: 24px;
+}
 
 .projects .author {
   color: #999;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 20px;
   margin-top: 3px;
 }
