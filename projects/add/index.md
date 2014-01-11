@@ -48,9 +48,9 @@ list and following Labs on twitter](/contact/).
         imageurl: {URL to a project image or logo of around 235px by 150px}
         language: {list of languages the project uses e.g. [python, javascript]}
         projecturl: {URL of an external project webpage e.g. http://awesomedatavisualizer.org}
-        status: {one of [idea, alpha, prototype, production, deployed, mature]}
+        stage: {one of [idea, alpha, prototype, production, deployed, mature]}
+        status: {set to 'retired' if the project is no longer active}
         tags: {list of relevant tags e.g. [django, google spreadsheets]}
-        active: {set to 'no' if the project is no longer active}
         ---
 
         A brief description of the project. You can use html (or markdown - if
@@ -81,7 +81,7 @@ list and following Labs on twitter](/contact/).
         imageurl: http://kartograph.org/showcase/eastcoast/eastcoast-90dpi_export.png
         language: [javascript, coffeescript, css, shell]
         projecturl: http://kartograph.org/
-        status: mature
+        stage: mature
         tags: Visualization
         ---
 
