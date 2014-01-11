@@ -686,3 +686,24 @@ footer .projects img {
   text-align: center;
 }
 
+/* /search page - Google Custom search */
+input.gsc-input,
+input.gsc-input:focus {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  line-height: 16px;
+  border-color: none;
+}
+td.gsib_a {
+  padding-top: 0;
+  line-height: 16px;
+  border: none;
+}
+div.gsc-thumbnail-inside {
+  padding-left: 0;
+}
+div.gsc-url-top {
+  padding-left: 0;
+}
