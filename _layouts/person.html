@@ -19,11 +19,15 @@ bodyclass: members
 
 {{content}}
 
-<h3>Posts</h3>
-<ul>
+<div style="clear: both"></div>
+
+<h2>Projects</h2>
+
+<h2>Posts</h2>
+<ul class="blog posts">
 {% for post in site.categories.blog %}
 {% if post.username == page.username %}
-<li><a href="{{post.url}}">{{post.title}}</a></li>
+{% include blog_posts.html %}
 {% endif %}
 {% endfor %}
 </ul>
