@@ -4,11 +4,12 @@ jQuery(document).ready(function($) {
   var projectfilters = window.projectfilters = {
     featured: 0,    // true/false
     helpwanted: 0,  // true/false
-    status: {},
-    language: {},
-    type: {},
-    tags: {}
+    status: [],
+    language: [],
+    type: [],
+    tags: []
   };
+  projectselects = ['tags', 'type', 'status', 'language'];
   
   $container.find('.readmore').each(function() {
     // Find the current project's detail URL
@@ -20,7 +21,9 @@ jQuery(document).ready(function($) {
     var pd = { object: $record };
     Object.keys(projectfilters).forEach(function (k) {
       var v = $record.attr('data-' + k);
-      if (v.indexOf(';') > 0) v = v.split(';');
+      if (typeof projectfilters[k] === 'object') {
+        v = v.split(';');
+      }
       pd[k] = v;
     });
     projectdata.push(pd);
@@ -48,6 +51,11 @@ jQuery(document).ready(function($) {
   });
 
   // Initialise filters
+  function pushToFilter(array, filters) {
+    array.forEach(function(f) {
+      if (filters.indexOf(f)<0) filters.push(f);
+    });      
+  }
   projectdata.forEach(function(pd) {
     if (pd.featured == 'true') {
       projectfilters.featured++;
@@ -57,13 +65,48 @@ jQuery(document).ready(function($) {
       projectfilters.helpwanted++;
       pd.object.addClass('is-helpwanted');
     }
+    projectselects.forEach(function(filter) {
+      pushToFilter(pd[filter], projectfilters[filter]);
+    });
   });
+
+  var $filters = $('ul.filters');
+  projectselects.forEach(function(filter) {
+      var select = 
+        $filters.find('[filter="' + filter + '"]')
+          .append('<select />').find('select');
+      projectfilters[filter].forEach(function(f) {
+        select.append('<option>' + f + '</option>');
+      });
+    });
+
+  $filters.removeClass('hidden')
+    .children().click(function() {
+      var self = $(this);
+      if (self.hasClass('active')) {
+        // Clear all filters
+        self.removeClass('active');
+        $container.isotope({ filter: '*' });
+
+      } else {
+        // Clear selection and set this filter
+        self.parent().children().removeClass('active');
+        self.addClass('active');
+
+        // Set filter directly
+        if (self.attr('filter')) {
+          $container.isotope({ 
+            filter: '.is-' + self.attr('filter') 
+          });
+        }
+      }
+    });
 
   // Create Isotope grid view
   $container.isotope({
     itemSelector: '.record',
     layoutMode: 'masonry',
-    //filter: '.is-helpwanted'
+    filter: '.is-helpwanted'
   });
 
 });
