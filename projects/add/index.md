@@ -34,20 +34,24 @@ list and following Labs on twitter](/contact/).
         ---
         layout: project [REQUIRED]
         title: {the project title e.g. Awesome Data Visualizer} [REQUIRED]
-        slug: {a URL-friendly version of the title e.g. awesome-data-visualizer} [REQUIRED]
+        slug: {URL-friendly version of the title e.g. awesome-data-visualizer} [REQUIRED]
         permalink: /projects/{slug}/index.html [REQUIRED]
 
-        type: {list from the following project types: [library, data, webapp, running service, tool]}
+        type: {list from the following project types: [library, data, webapp, running
+               service, tool]}
         author: {author(s) names e.g. Joe Bloggs}
         maintainers: {list of labs username(s) of those who maintain the project}
         featured: {set to 'yes' to add to the list of featured projects}
         github_user: {the github user who owns the repo e.g. okfn}
         github_repo: {the github repo name e.g. awesome-data-visualizer}
         helpwanted: {set to 'yes' if the project requires assistance of any sort}
-        typeofhelp: {list from the following types of help required: [coding, data analysis, data wrangling, testing, documenting, blogging, evangelism, project managing]}
+        typeofhelp: {list from the following types of help required: [coding, data
+                     analysis, data wrangling, testing, documenting, blogging,
+                     evangelism, project managing]}
         imageurl: {URL to a project image or logo of around 235px by 150px}
         language: {list of languages the project uses e.g. [python, javascript]}
-        projecturl: {URL of an external project webpage e.g. http://awesomedatavisualizer.org}
+        projecturl: {URL of an external project webpage e.g.
+                     http://awesomedatavisualizer.org}
         stage: {one of [idea, alpha, prototype, production, deployed, mature]}
         status: {set to 'retired' if the project is no longer active}
         tags: {list of relevant tags e.g. [django, google spreadsheets]}
