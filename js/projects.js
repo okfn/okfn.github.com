@@ -1,9 +1,9 @@
 jQuery(document).ready(function($) {
   var $container = $('.projects');
   var projectdata = window.projectdata = [];
-  var projectfilters = {
-    featured: {},
-    helpwanted: {},
+  var projectfilters = window.projectfilters = {
+    featured: 0,    // true/false
+    helpwanted: 0,  // true/false
     status: {},
     language: {},
     type: {},
@@ -39,9 +39,6 @@ jQuery(document).ready(function($) {
     });
   });
 
-  // Initialise filters
-  
-
   // Load the image
   $container.find('div.image').each(function() {
     var t = $(this);
@@ -50,10 +47,23 @@ jQuery(document).ready(function($) {
       t.attr('data-alt') + '" />');
   });
 
+  // Initialise filters
+  projectdata.forEach(function(pd) {
+    if (pd.featured == 'true') {
+      projectfilters.featured++;
+      pd.object.addClass('is-featured');
+    }
+    if (pd.helpwanted == 'true') {
+      projectfilters.helpwanted++;
+      pd.object.addClass('is-helpwanted');
+    }
+  });
+
   // Create Isotope grid view
   $container.isotope({
     itemSelector: '.record',
-    layoutMode: 'masonry'
+    layoutMode: 'masonry',
+    //filter: '.is-helpwanted'
   });
 
 });

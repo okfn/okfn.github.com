@@ -6,8 +6,8 @@ bodyclass: code
 
 # Labs Projects
 
-<ul class="filters">
-  <li class="selected" filter="featured">Featured</li>
+<ul class="filters hidden">
+  <li filter="featured" class="active">Featured</li>
   <li filter="helpwanted">Help wanted</li>
   <li filter="type">Type</li>
   <li filter="tags">Tagged</li>
@@ -35,7 +35,6 @@ bodyclass: code
         <a href="{{project.url | replace:'index.html',''}}">Read more &raquo;</a>
       </p>
     </div>
-    <div style="clear: both;"></div>
   {% endfor %}
 </div>
 
