@@ -23,7 +23,7 @@ sees it).
 "Answering questions quickly" does not depend only on database performance and
 amount of data. We might have the fastest database and computation engine in
 the world, but we will not get the answer quickly because it will take weeks
-to properely translate the human (business) question into technical terms.
+to properly translate the human (business) question into technical terms.
 The challenges are:
 
 * Where are the data stored? What table? Which column?
@@ -88,7 +88,7 @@ Dimensions
 ----------
 
 OLAP is suitable mostly for data which can be categorized – grouped by
-categories. The categorical view of data shold be also the main interest of
+categories. The categorical view of data should be also the main interest of
 the data analysis. Example of categories might be: color, department, location
 or even a date.
 
@@ -179,8 +179,8 @@ narrows our focus from broader view:
 Drilling down
 -------------
 
-*How many contracts per year?* or *Which type of producs was most wanted in
-2012?* are kind of questions that are answere by "drilling down" through the
+*How many contracts per year?* or *Which type of products was most wanted in
+2012?* are kind of questions that are answered by "drilling down" through the
 data. Drilling down means changing our focus to more detailed data.
 
 Drilling down can be done by concept hierarchies – for example going from year
@@ -218,7 +218,7 @@ Summary
 -------
 
 Concept of OLAP cubes and multidimensional modeling brings more understandable
-and useable data to the end-users. It very easy and straightforward to
+and usable data to the end-users. It very easy and straightforward to
 translate business questions into multidimensional query.
 
 The OLAP systems, thanks to the nature of multi-dimensional data cubes, can
