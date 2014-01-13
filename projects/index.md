@@ -7,16 +7,16 @@ bodyclass: code
 # Labs Projects
 
 <ul class="filters hidden">
-  <li filter="featured" class="active">Featured</li>
-  <li filter="helpwanted">Help wanted</li>
-  <li filter="type">Type</li>
-  <li filter="tags">Tagged</li>
-  <li filter="language">Languages</li>
+  <li data-filter="featured" class="active">Featured</li>
+  <li data-filter="helpwanted">Help wanted</li>
+  <li data-filter="type">Type</li>
+  <li data-filter="tags">Tagged</li>
+  <li data-filter="language">Languages</li>
 </ul>
 
 <div class="projects">
   {% for project in site.categories.projects %}
-    <div class="record" data-featured="{{project.featured}}" data-helpwanted="{{project.helpwanted}}" data-status="{{project.status}}" data-language="{{ project.language | join: ";" }}" data-type="{{ project.type | join: ";" }}" data-tags="{{ project.tags | join: ";" }}">
+    <div class="record" data-featured="{{project.featured}}" data-helpwanted="{{project.helpwanted}}" data-status="{{project.status}}" data-language="{{ project.language | join: ";" }}" data-type="{{ project.type | join: ";" }}" data-tags="{{ project.tags | join: ";" }}" data-url="{{project.url | replace:'index.html',''}}">
       <h2>
         <a href="{{project.url | replace:'index.html',''}}">{{project.title}}{% if project.tagline %}
             – {{project.tagline}}
@@ -27,16 +27,13 @@ bodyclass: code
         {% endif %}
       </h2>
       {% if project.imageurl %}
-        <div class="image" data-src="{{project.imageurl}}" data-alt="{{project.title}}"></div>
+        <img src="{{project.imageurl}}" alt="{{project.title}}" />
       {% endif %}
-      <div class="rhs">
-        <p class="description">
-          {{project.content}}
-        </p>
-      </div>
-      <p class="readmore">
-        <a href="{{project.url | replace:'index.html',''}}">Read more &raquo;</a>
-      </p>
+
+      <p class="description">{{project.content}}</p>
+      {% if project.github_repo %}
+        <p><img src="/img/github.png" /> <a href="https://github.com/{{project.github_user}}/{{project.github_repo}}">Github</a></p>
+      {% endif %}
     </div>
   {% endfor %}
 </div>
