@@ -154,7 +154,7 @@ jQuery(document).ready(function($) {
   $container.isotope({
     itemSelector: '.record',
     layoutMode: 'masonry',
-    filter: '.is-helpwanted'
+    filter: '.is-featured'
   });
 
 });
