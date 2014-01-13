@@ -18,7 +18,10 @@ bodyclass: code
   {% for project in site.categories.projects %}
     <div class="record" data-featured="{{project.featured}}" data-helpwanted="{{project.helpwanted}}" data-status="{{project.status}}" data-language="{{ project.language | join: ";" }}" data-type="{{ project.type | join: ";" }}" data-tags="{{ project.tags | join: ";" }}">
       <h2>
-        <a href="{{project.url | replace:'index.html',''}}">{{project.title}}</a>
+        <a href="{{project.url | replace:'index.html',''}}">{{project.title}}{% if project.tagline %}
+            – {{project.tagline}}
+          {% endif %}
+        </a>
         {% if project.author %}
         <div class="author">maintained by {{project.author}}</div>
         {% endif %}
