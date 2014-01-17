@@ -58,7 +58,7 @@ jQuery(document).ready(function($) {
         if (refs_l.indexOf(k.toLowerCase())<0) {
           refs.push(k);
         }
-        str = prefix + "-" + name;
+        str += prefix + "-" + name + " ";
       }
     });
     return str;
@@ -129,8 +129,6 @@ jQuery(document).ready(function($) {
         // Clear selection and set this filter
         self.parent().children().removeClass('active');
         self.addClass('active');
-
-        console.log('.is-' + self.data('filter'));
 
         // Set filter directly
         if (self.data('filter')) {
