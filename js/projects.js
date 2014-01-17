@@ -130,10 +130,12 @@ jQuery(document).ready(function($) {
         self.parent().children().removeClass('active');
         self.addClass('active');
 
+        console.log('.is-' + self.data('filter'));
+
         // Set filter directly
-        if (self.attr('filter')) {
+        if (self.data('filter')) {
           container.isotope({
-            filter: '.is-' + self.attr('filter')
+            filter: '.is-' + self.data('filter')
           });
         }
 
