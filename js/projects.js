@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
-  var $container = $('.projects');
-  var projectdata = window.projectdata = [];
-  var projectfilters = window.projectfilters = {
+  var container = $('.projects');
+  var projectdata = [];
+  var projectfilters = {
     featured: 0,    // true/false
     helpwanted: 0,  // true/false
     status: [],
@@ -10,18 +10,18 @@ jQuery(document).ready(function($) {
     tags: []
   };
   projectselects = ['tags', 'type', 'status', 'language'];
-  
-  $container.find('.readmore').each(function() {
+
+  container.find('.record').each(function() {
     // Find the current project's detail URL
-    var url = $('a', this).attr('href');
-    var $record = $(this).hide().parent();
-    $record.addClass('expand');
+    var record = $(this);
+    var url = record.data('url');
+    record.addClass('expand');
 
     // Get project data
-    var pd = { object: $record };
-    Object.keys(projectfilters).forEach(function (k) {
-      var v = $record.attr('data-' + k);
-      if (typeof projectfilters[k] === 'object') {
+    var pd = { record: record };
+    $.each(projectfilters, function (k, type) {
+      var v = record.attr('data-' + k);
+      if (typeof(type) === 'object') {
         v = v.split(';');
       }
       pd[k] = v;
@@ -29,25 +29,17 @@ jQuery(document).ready(function($) {
     projectdata.push(pd);
 
     // Mouse over the record container
-    $record.hover(function() {
-      var $record = $(this);
-      if (!$record.hasClass('loaded')) {
+    record.hover(function() {
+      var record = $(this);
+      if (!record.hasClass('loaded')) {
         // Load and display it on hover
         $.get(url, function(data) {
-          $record.find('.rhs').html(
-            $(data).find('.record .rhs').html());
-          $record.addClass('loaded');
+          record.append(
+            $(data).find('.record .rhs').html()
+          ).addClass('loaded');
         });
       }
     });
-  });
-
-  // Load the image
-  $container.find('div.image').each(function() {
-    var t = $(this);
-    t.append('<img src="' + 
-      t.attr('data-src') + '" alt="' +
-      t.attr('data-alt') + '" />');
   });
 
   // Parse filter title
@@ -68,33 +60,33 @@ jQuery(document).ready(function($) {
         }
         str += prefix + "-" + name + " ";
       }
-    });  
-    return str;    
+    });
+    return str;
   }
 
   // Iterate through projects metadata
   projectdata.forEach(function(pd) {
     if (pd.featured == 'true') {
       projectfilters.featured++;
-      pd.object.addClass('is-featured');
+      pd.record.addClass('is-featured');
     }
     if (pd.helpwanted == 'true') {
       projectfilters.helpwanted++;
-      pd.object.addClass('is-helpwanted');
+      pd.record.addClass('is-helpwanted');
     }
     projectselects.forEach(function(f) {
-      pd.object.addClass(
+      pd.record.addClass(
         pushToFilter(pd[f], projectfilters[f], f)
       );
     });
   });
 
-  var $filters = $('ul.filters');
+  var filters = $('ul.filters');
   projectselects.forEach(function(filter) {
 
       // Create a blank SELECT tag
-      var select = 
-        $filters.find('[filter="' + filter + '"]')
+      var select =
+        filters.find('[data-filter="' + filter + '"]')
           .append('<select />').find('select');
 
       // Sort case insensitive
@@ -115,8 +107,8 @@ jQuery(document).ready(function($) {
         // Set filters
         var f = toFilterName($(this).val());
         if (f.length > 1) {
-          $container.isotope({ 
-            filter: '.' + filter + '-' + f 
+          container.isotope({
+            filter: '.' + filter + '-' + f
           });
         }
 
@@ -124,14 +116,14 @@ jQuery(document).ready(function($) {
       });
     });
 
-  $filters.removeClass('hidden')
+  filters.removeClass('hidden')
     .children().click(function() {
       // Handle navigation to filter
       var self = $(this);
       if (self.hasClass('active')) {
         // Clear all filters
         self.removeClass('active');
-        $container.isotope({ filter: '*' });
+        container.isotope({ filter: '*' });
 
       } else {
         // Clear selection and set this filter
@@ -139,9 +131,9 @@ jQuery(document).ready(function($) {
         self.addClass('active');
 
         // Set filter directly
-        if (self.attr('filter')) {
-          $container.isotope({ 
-            filter: '.is-' + self.attr('filter') 
+        if (self.data('filter')) {
+          container.isotope({
+            filter: '.is-' + self.data('filter')
           });
         }
 
@@ -151,7 +143,7 @@ jQuery(document).ready(function($) {
     });
 
   // Create Isotope grid view
-  $container.isotope({
+  container.isotope({
     itemSelector: '.record',
     layoutMode: 'masonry',
     filter: '.is-featured'
