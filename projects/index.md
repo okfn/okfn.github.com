@@ -6,13 +6,18 @@ bodyclass: code
 
 # Labs Projects
 
-<ul class="filters hidden">
-  <li data-filter="featured" class="active">Featured</li>
-  <li data-filter="helpwanted">Help wanted</li>
-  <li data-filter="type">Type</li>
-  <li data-filter="tags">Tagged</li>
-  <li data-filter="language">Languages</li>
-</ul>
+<form class="form-inline hidden" id="filters">
+  <select data-placeholder="Filter projects..." style="width:500px;" class="form-control chosen-select" multiple>
+    <option value=""></option>
+    <optgroup label="Featured">
+      <option value="[data-featured*=true]" selected>Featured</option>
+    </optgroup>
+    <optgroup label="Help wanted">
+      <option value="[data-helpwanted*=true]">Help wanted</option>
+    </optgroup>
+  </select>
+  <button type="submit" class="btn btn-primary">Filter</button>
+</form>
 
 <div class="projects">
   {% for project in site.categories.projects %}
@@ -39,6 +44,7 @@ bodyclass: code
 </div>
 
 
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/chosen/1.0/chosen.jquery.min.js"></script>
 <script type="text/javascript" src="../js/isotope.pkgd.js"></script>
 <script type="text/javascript" src="../js/imagesloaded.pkgd.js"></script>
 <script type="text/javascript" src="../js/projects.js"></script>
