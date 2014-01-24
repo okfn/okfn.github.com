@@ -20,6 +20,18 @@ This post therefore provides a simple introduction and guide to querying
 ElasticSearch that provides a short overview of how it all works together with
 a good set of examples of some of the most standard queries.
 
+<div class="alert alert-success">
+Note: here at Open Knowledge Foundation Labs we have several open-source
+ElasticSearch related project including an <strong><a
+href="/projects/elasticsearch-js/">easy-to-use Javascript Library for
+ElasticSearch</a></strong> and the <strong><a
+href="/projects/reclinejs/">Recline suite of JS Data Components</a></strong>
+which make it easy and fast to build powerful JS+HTML-based interfaces to
+ElasticSearch.
+</div>
+
+**Table of Contents**
+
 * toc
 {:toc}
 
@@ -94,7 +106,41 @@ A simple ajax (JSONP) request to the data API using jQuery:
     });
 {% endhighlight %}
 
-*Note: we've written a simple [JS library for ElasticSearch][jslib].*
+*Note: we've written a simple [JS library for ElasticSearch][jslib] which makes working with ElasticSearch much easier. Here's a sample:*
+
+{% highlight javascript %}
+// Your ElasticSearch instance is running at http://localhost:9200/
+// We are using index 'twitter' and type (table) 'tweet'
+var endpoint = 'http://localhost:9200/twitter/tweet';
+
+// Table = an ElasticSearch Type (aka Table)
+// http://www.elasticsearch.org/guide/reference/glossary/#type
+var table = ES.Table(endpoint);
+
+// Create some data
+table.upsert({
+  id: '123',
+  title: 'My new tweet'
+}).done(function() {
+  // now get it
+  table.get('123').done(function(doc) {
+    console.log(doc);
+  });
+});
+
+// Query for data
+// Queries follow Recline Query spec -
+// http://okfnlabs.org/recline/docs/models.html#query-structure
+// (very similar to ES)
+table.query({
+  q: 'hello'
+  filters: [
+    { term: { 'owner': 'jones' } }
+  ]
+}).done(function(out) {
+  console.log(out);
+});
+{% endhighlight %}
 
 [json2]: https://github.com/douglascrockford/JSON-js/blob/master/json2.js
 [jslib]: https://github.com/okfn/elasticsearch.js
@@ -102,36 +148,36 @@ A simple ajax (JSONP) request to the data API using jQuery:
 ### Python
 
 {% highlight python %}
-    import urllib2
-    import json
+import urllib2
+import json
 
-    # =================================
-    # Store some data
+# =================================
+# Store some data
 
-    url = '{endpoint}'
-    data = {
-        'title': 'jones',
-        'amount': 5.7
-        }
-    # have to send the data as JSON
-    data = json.dumps(data)
+url = '{endpoint}'
+data = {
+    'title': 'jones',
+    'amount': 5.7
+    }
+# have to send the data as JSON
+data = json.dumps(data)
 
-    req = urllib2.Request(url, data, headers)
-    out = urllib2.urlopen(req)
-    print out.read()
+req = urllib2.Request(url, data, headers)
+out = urllib2.urlopen(req)
+print out.read()
 
-    # =================================
-    # Query the resulting "table"
+# =================================
+# Query the resulting "table"
 
-    url = '{endpoint}/_search?q=title:jones&size=5'
-    req = urllib2.Request(url)
-    out = urllib2.urlopen(req)
-    data = out.read()
-    print data
-    # returned data is JSON
-    data = json.loads(data)
-    # total number of results
-    print data['hits']['total']
+url = '{endpoint}/_search?q=title:jones&size=5'
+req = urllib2.Request(url)
+out = urllib2.urlopen(req)
+data = out.read()
+print data
+# returned data is JSON
+data = json.loads(data)
+# total number of results
+print data['hits']['total']
 {% endhighlight %}
 
 ## Querying
