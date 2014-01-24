@@ -538,6 +538,11 @@ ul.filters {
   border-radius: 5px;
 }
 
+.body-project .meta {
+  margin-left: 0;
+  list-style-type: none;
+}
+
 /* Members list of projects */
 .body-members .project-list .record {
   clear: both;

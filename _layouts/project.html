@@ -12,21 +12,34 @@ bodyclass: project
   </div>
   <h2>
     <a href="{{page.projecturl}}" target="_blank">{{page.title}}</a>
-  </h2>
-  {% if page.author %}
-    <h2>
+    {% if page.tagline %}
+    <br />
+    <small><em>{{page.tagline}}</em></small>
+    {% endif %}
+
+    <br />
+    {% if page.author %}
       <small>by {{page.author}}</small>
-    </h2>
-  {% endif %}
-  {% if page.maintainers %}
-  <p>
-    <i class="icon-user" title="Maintainer"></i> Maintainer{% if page.maintainers.size > 1 %}s{% endif %} &ndash;
-    {% for maintainer in page.maintainers %}
-      <a href="/members/{{maintainer}}/" target="_blank">{{maintainer}}</a>{% if forloop.last != true %}, {% endif %}
-    {% endfor %}
+    {% endif %}
+  </h2>
+  <ul class="meta">
+    {% if page.maintainers %}
+    <li>
+      <i class="icon-user" title="Maintainer"></i> Maintainer{% if page.maintainers.size > 1 %}s{% endif %} &ndash;
+      {% for maintainer in page.maintainers %}
+        <a href="/members/{{maintainer}}/" target="_blank">{{maintainer}}</a>{% if forloop.last != true %}, {% endif %}
+      {% endfor %}
+    </li>
+    {% endif %}
+    {% if page.projecturl %}
+    <li>
+      <i class="icon-link" title="Project HomePage"></i> <a href="{{page.projecturl}}" target="_blank">{{page.projecturl}}</a>
+    </li>
+    {% endif %}
+  </ul>
+  <p class="description">
+  {{content}}
   </p>
-  {% endif %}
-  <p class="description">{{page.content}}</p>
   {% if page.github_repo %}
     <p><img src="/img/github.png" /> <a href="https://github.com/{{page.github_user}}/{{page.github_repo}}">Github</a></p>
     <div class="rhs">
