@@ -10,8 +10,8 @@ maintainers: [rgrp]
 featured: yes
 github_user: okfn
 github_repo: data.okfn.org
-permalink: /projects/data-okfn-org/index.html
-slug: data-okfn-org
+permalink: /projects/frictionless-data/index.html
+slug: frictionless-data
 language: [javascript, css]
 type: [webapp, running service, tool]
 stage: live
