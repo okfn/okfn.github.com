@@ -12,6 +12,7 @@ github_user: okfn
 github_repo: data.okfn.org
 permalink: /projects/frictionless-data/index.html
 slug: frictionless-data
+helpwanted: yes
 language: [javascript, css]
 type: [webapp, running service, tool]
 stage: live
