@@ -32,23 +32,14 @@ bodyclass: members
 <div style="clear: both"></div>
 
 <h2 id="projects"><i class="icon-folder-close"></i> Projects</h2>
-<p>{{page.title}} is a maintainer or contributor to the following projects:</p>
+<p>{{page.title}} is a maintainer or contributor to the following projects.</p>
 
 <div class="project-list">
 {% for project in site.categories.projects %}
-{% if project.maintainer == page.username %}
-  <div class="record">
-    <h2>
-      <a href="{{project.url | replace:'index.html',''}}">{{project.title}}</a>
-    </h2>
-    {% if project.imageurl %}
-    <div class="image">
-      <img src="{{project.imageurl}}" alt="{{project.title}}" />
-    </div>
-    {% endif %}
-    <p class="description">
-      {{project.content}}
-    </p>
+{% if project.maintainers contains page.username %}
+  <div>
+    <h3><a href="{{project.url | replace:'index.html',''}}">{{project.title}}</a></h3>
+    <em>{{ project.content | markdownify | strip_html | truncatewords: 45 }} </em>
   </div>
 {% endif %}
 {% endfor %}
@@ -57,10 +48,15 @@ bodyclass: members
 <hr />
 
 <h2 id="posts"><i class="icon-rss-sign"></i> Posts</h2>
-<ul class="blog posts">
+<div class="posts">
 {% for post in site.categories.blog %}
 {% if post.username == page.username %}
-{% include blog_posts.html %}
+  <div class="details">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <div class="meta">
+      <span class="date">{{ post.date | date_to_long_string }}</span>
+    </div>
+  </div>
 {% endif %}
 {% endfor %}
-</ul>
+</div>
