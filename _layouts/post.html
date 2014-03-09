@@ -21,6 +21,31 @@ categories: post
 
     {{content}}
 
+      {% for person in site.categories.members %}{% if person.username == page.username %}
+      <hr>
+      <ul class="persons">
+	<li class="person odd">
+	  <img class="photo" src="{{person.img}}">
+	  <h3 class="name">
+            <a href="{{person.username}}">{{person.title}}</a>
+            <small class="area">{{person.area}}</small>
+	  </h3>
+	  <p class="joined"><i class="icon-time"></i> Member since <span class="date">{{ person.date | date_to_long_string }}</span></p>
+	  <ul class="links">
+            <li><a href="https://twitter.com/{{ person.twitter }}">
+		<i class="icon-twitter"></i> {{ person.twitter }}</a></li>
+            <li><a href="https://github.com/{{ person.github }}">
+		<i class="icon-github"></i> {{ person.github }}</a></li>
+            <li><a href="{{ person.web }}">
+		<i class="icon-globe"></i> {{ person.web }}</a></li>
+	  </ul>
+	  <div class="excerpt">
+            {{ person.content }}
+	  </div>
+	</li>
+      </ul>
+      {% endif %}{% endfor %}
+
     <div class="blog-comments">
       <h2 id="comments">Comments</h2>
       <div id="disqus_thread"></div>
@@ -55,7 +80,7 @@ categories: post
       <a href="/blog/feed.xml"><img src="/img/blog_feed.png"></a>
       &nbsp; <a href="/blog/feed.xml">Subscribe to RSS</a>
     </p>
-    
+
     <hr>
 
     <h3>Recent Posts</h3>
@@ -76,4 +101,3 @@ categories: post
   </div>
 </div>
 </div>
-
