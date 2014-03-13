@@ -4,8 +4,8 @@ jQuery(document).ready(function($) {
 
   $(".form-inline").removeClass("hidden");
 
-  // triggered when the filter button is clicked
-  $("form#filters").on('submit', function() {
+  // triggered when the form text is changed
+  $("form#filters").on('change', function() {
     var chosen_opts = $('.chosen-select').val();
     if (chosen_opts !== null) {
       chosen_opts = chosen_opts.join('');
