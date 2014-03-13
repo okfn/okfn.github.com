@@ -25,22 +25,22 @@ We also strongly recommend [joining the mailing list and following Labs on twitt
    (your bio). Here's what it should look like (all items are optional except
    those marked as required):
 
-        ---
-        layout: person [REQUIRED]
-        username: {your-unique-username} [REQUIRED]
-        title: {your-full-name e.g. Joe Bloggs} [REQUIRED]
-        area: {terse description of your main activity area e.g. Software Developer, Data Wrangler, Blogger ...}
-        email: {your.name@website.org}
-        github: {github-username}
-        twitter: {twitter-username}
-        web: {home page}
-        img: {a link to a small square image around 200px by 200px - your gravatar is perfect}
-        place: {e.g. London, UK or Nairobi, Kenya}
-        permalink: /members/{your-username}/index.html [REQUIRED]
-        ---
+       ---
+       layout: person [REQUIRED]
+       username: {your-unique-username} [REQUIRED]
+       title: {your-full-name e.g. Joe Bloggs} [REQUIRED]
+       area: {terse description of your main activity area e.g. Software Developer, Data Wrangler, Blogger ...}
+       email: {your.name@website.org}
+       github: {github-username}
+       twitter: {twitter-username}
+       web: {home page}
+       img: {a link to a small square image around 200px by 200px - your gravatar is perfect}
+       place: {e.g. London, UK or Nairobi, Kenya}
+       permalink: /members/{your-username}/index.html [REQUIRED]
+       ---
 
-        A paragraph bio or description about yourself and your interests -
-        you can use html!
+       A paragraph bio or description about yourself and your interests -
+       you can use html!
 
    Here's an example:
 
