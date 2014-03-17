@@ -262,7 +262,7 @@ body {
 }
 /**** Navbar ****/
 .navbar .container {
-  width: 940px;
+   max-width: 940px;
 }
 .navbar-inner,
 .navbar-fixed-top .navbar-inner,
