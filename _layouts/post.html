@@ -4,47 +4,32 @@ categories: post
 ---
 
 <div class="post">
-<div class="row">
-  <div class="span8">
-    <h1>{{ page.title }}</h1>
-    <div class="post-meta">
-      Posted on <span class="post-date">{{ page.date | date_to_long_string }}</span>
-      by
-      <span class="post-author"><a href="/members/{{page.username}}">{{ page.author }}</a></span>
-    </div>
-
-    {% if page.snapshot %}
-      <div class="snapshot">
-        <img src="/img/projects/{{ page.snapshot }}.png">
+  <div class="row">
+    <div class="span8">
+      <div class="post-top">
+	{% for person in site.categories.members %}{% if person.username == page.username %}{% if person.img %}
+	<a href="/members/{{ person.username }}">
+	  <img  class="photo" src="{{person.img}}">
+	</a>
+	{% endif %}{% endif %}{% endfor %}
+	<div>
+	  <h1>{{ page.title }}</h1>
+	  <div class="post-meta">
+	    Posted on <span class="post-date">{{ page.date | date_to_long_string }}</span>
+	    by
+	    <span class="post-author"><a href="/members/{{page.username}}">{{ page.author }}</a></span>
+	  </div>
+	</div>
       </div>
-    {% endif %}
+
+      {% if page.snapshot %}
+      <div class="snapshot">
+	<img src="/img/projects/{{ page.snapshot }}.png">
+      </div>
+      {% endif %}
 
     {{content}}
 
-      {% for person in site.categories.members %}{% if person.username == page.username %}
-      <hr>
-      <ul class="persons">
-	<li class="person odd">
-	  <img class="photo" src="{{person.img}}">
-	  <h3 class="name">
-            <a href="{{person.username}}">{{person.title}}</a>
-            <small class="area">{{person.area}}</small>
-	  </h3>
-	  <p class="joined"><i class="icon-time"></i> Member since <span class="date">{{ person.date | date_to_long_string }}</span></p>
-	  <ul class="links">
-            <li><a href="https://twitter.com/{{ person.twitter }}">
-		<i class="icon-twitter"></i> {{ person.twitter }}</a></li>
-            <li><a href="https://github.com/{{ person.github }}">
-		<i class="icon-github"></i> {{ person.github }}</a></li>
-            <li><a href="{{ person.web }}">
-		<i class="icon-globe"></i> {{ person.web }}</a></li>
-	  </ul>
-	  <div class="excerpt">
-            {{ person.content }}
-	  </div>
-	</li>
-      </ul>
-      {% endif %}{% endfor %}
 
     <div class="blog-comments">
       <h2 id="comments">Comments</h2>
