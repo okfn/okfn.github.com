@@ -1,7 +1,7 @@
 ---
 title: "Labs newsletter: 30 January, 2014"
 author: Neil Ashton
-user: nmashton
+username: nmashton
 layout: post
 ---
 

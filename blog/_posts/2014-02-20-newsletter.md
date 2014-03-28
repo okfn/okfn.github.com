@@ -1,14 +1,14 @@
 ---
 title: "Labs newsletter: 20 February, 2014"
 author: Neil Ashton
-user: nmashton
+username: nmashton
 layout: post
 ---
 
 The past few weeks have seen major improvements to the Labs website, another Open Data Maker Night in London, updates to the TimeMapper project, and more.
 
 ## Labs Hangout: today
-  
+
 The next Labs online hangout is taking place today in just a few hours—now's your chance to sign up on [the hangout's Etherpad][1]!
 
 Labs hangouts are informal online gatherings held on Google Hangout at which Labs members and friends get together to discuss their work and to set the agenda for Labs activities.
