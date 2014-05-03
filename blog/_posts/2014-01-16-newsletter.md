@@ -1,7 +1,7 @@
 ---
-title: "Labs newsletter: 16 January, 2014"
+title: Labs newsletter: 16 January, 2014
 author: Neil Ashton
-user: nmashton
+username: nmashton
 layout: post
 ---
 

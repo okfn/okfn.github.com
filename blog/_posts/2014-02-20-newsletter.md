@@ -1,7 +1,7 @@
 ---
 title: Labs newsletter: 20 February, 2014
 author: Neil Ashton
-user: nmashton
+username: nmashton
 layout: post
 ---
 
