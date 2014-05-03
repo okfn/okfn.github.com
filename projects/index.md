@@ -4,7 +4,14 @@ layout: default
 bodyclass: code
 ---
 
-# Labs Projects
+<div class="page-header">
+  <h1>
+    <div style="float: right; font-size: 75%;">
+      [<a href="/projects/add/">Add a Project</a>]
+    </div>
+    Labs Projects
+  </h1>
+</div>
 
 <form class="form-inline hidden" id="filters">
   <select data-placeholder="Filter projects..." style="width:500px;" class="form-control chosen-select" multiple>

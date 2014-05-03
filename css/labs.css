@@ -434,8 +434,14 @@ body {
 }
 
 /* Projects List */
+.projects {
+  margin-top: -50px;
+}
+
 .projects .record {
   padding: 25px;
+  padding-left: 0px;
+  padding-right: 50px;
   margin-top: 25px;
   width: 25%;
 }
