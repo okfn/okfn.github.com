@@ -1,5 +1,5 @@
 ---
-title: Labs newsletter: 28 November, 2013
+title: "Labs newsletter: 28 November, 2013"
 author: Neil Ashton
 username: nmashton
 layout: post
