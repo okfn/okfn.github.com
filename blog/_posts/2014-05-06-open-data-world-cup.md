@@ -248,52 +248,48 @@ Example 3b:
 
 Cut-n-Paste Text:
 
-~~~
-12 June 2014  17:00   Brazil    Match 1   Croatia    Arena de São Paulo, São Paulo
-13 June 2014  13:00   Mexico    Match 2   Cameroon   Arena das Dunas, Natal
-17 June 2014  16:00   Brazil    Match 17  Mexico     Estádio Castelão, Fortaleza
-18 June 2014  19:00   Cameroon  Match 18  Croatia    Arena Amazônia, Manaus
-23 June 2014  17:00   Cameroon  Match 33  Brazil     Estádio Nacional Mané Garrincha, Brasília
-23 June 2014  17:00   Croatia   Match 34  Mexico     Arena Pernambuco, Recife
-~~~
+    12 June 2014  17:00   Brazil    Match 1   Croatia    Arena de São Paulo, São Paulo
+    13 June 2014  13:00   Mexico    Match 2   Cameroon   Arena das Dunas, Natal
+    17 June 2014  16:00   Brazil    Match 17  Mexico     Estádio Castelão, Fortaleza
+    18 June 2014  19:00   Cameroon  Match 18  Croatia    Arena Amazônia, Manaus
+    23 June 2014  17:00   Cameroon  Match 33  Brazil     Estádio Nacional Mané Garrincha, Brasília
+    23 June 2014  17:00   Croatia   Match 34  Mexico     Arena Pernambuco, Recife
 
 Wikipedia Source:
 
-~~~
-===Group A===
-{{{{main|2014 FIFA World Cup Group A}}}}
-{{{{Fb cl2 header navbar}}}}
-{{{{Fb cl2 team |t={{{{fb|BRA}}}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=}}}}
-{{{{Fb cl2 team |t={{{{fb|CRO}}}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=|border=green}}}}
-{{{{Fb cl2 team |t={{{{fb|MEX}}}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=}}}}
-{{{{Fb cl2 team |t={{{{fb|CMR}}}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=}}}}
-|}
+    ===Group A===
+    \{\{\{\{main|2014 FIFA World Cup Group A}}}}
+    \{\{\{\{Fb cl2 header navbar}}}}
+    \{\{\{\{Fb cl2 team |t=\{\{\{\{fb|BRA}}}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=}}}}
+    \{\{\{\{Fb cl2 team |t=\{\{\{\{fb|CRO}}}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=|border=green}}}}
+    \{\{\{\{Fb cl2 team |t=\{\{\{\{fb|MEX}}}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=}}}}
+    \{\{\{\{Fb cl2 team |t=\{\{\{\{fb|CMR}}}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=}}}}
+    |}
 
-{{{{Football box
-|date=12 June 2014
-|time=17:00
-|team1={{{{fb-rt|BRA}}}}
-|score=[[2014 FIFA World Cup Group A#Brazil v Croatia|Match 1]]
-|report=
-|team2={{{{fb|CRO}}}}
-|goals1=
-|goals2=
-|stadium=[[Arena Corinthians|Arena de São Paulo]], [[São Paulo]]
-|attendance=
-|referee=
-}}}}
-{{{{Football box
-|date=13 June 2014
-|time=13:00
-|team1={{{{fb-rt|MEX}}}}
-|score=[[2014 FIFA World Cup Group A#Mexico v Cameroon|Match 2]]
-|report=
-|team2={{{{fb|CMR}}}}
-|goals1=
-|goals2=
-|stadium=[[Arena das Dunas]], [[Natal, Rio Grande do Norte|Natal]]
-|attendance=
-|referee=
-}}}}
-~~~
+    \{\{\{\{Football box
+    |date=12 June 2014
+    |time=17:00
+    |team1=\{\{\{\{fb-rt|BRA}}}}
+    |score=[[2014 FIFA World Cup Group A#Brazil v Croatia|Match 1]]
+    |report=
+    |team2=\{\{\{\{fb|CRO}}}}
+    |goals1=
+    |goals2=
+    |stadium=[[Arena Corinthians|Arena de São Paulo]], [[São Paulo]]
+    |attendance=
+    |referee=
+    }}}}
+    \{\{\{\{Football box
+    |date=13 June 2014
+    |time=13:00
+    |team1=\{\{\{\{fb-rt|MEX}}}}
+    |score=[[2014 FIFA World Cup Group A#Mexico v Cameroon|Match 2]]
+    |report=
+    |team2=\{\{\{\{fb|CMR}}}}
+    |goals1=
+    |goals2=
+    |stadium=[[Arena das Dunas]], [[Natal, Rio Grande do Norte|Natal]]
+    |attendance=
+    |referee=
+    }}}}
 
