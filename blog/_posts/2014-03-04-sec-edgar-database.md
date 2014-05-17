@@ -20,6 +20,12 @@ This post introduces the basic structure of the database, and how to get access
 to filings via ftp. Subsequent posts will look at how to use the structured
 information in the form of XBRL files.
 
+<div class="alert alert-success">
+<strong>Note</strong>: an extended version of the notes here plus additional data and scripts
+can be found in this <a href="https://github.com/datasets/edgar">SEC EDGAR Data
+Package on Github</a>.
+</div>
+
 ## Human Interface
 
 See <http://www.sec.gov/edgar/searchedgar/companysearch.html>
