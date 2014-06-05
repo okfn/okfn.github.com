@@ -434,6 +434,11 @@ body {
 }
 
 /* Projects List */
+form#filters {
+    z-index: 5;
+    position: relative;
+}
+
 .projects {
   margin-top: -50px;
 }
