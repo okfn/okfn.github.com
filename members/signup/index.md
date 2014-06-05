@@ -44,23 +44,23 @@ We also strongly recommend [joining the mailing list and following Labs on twitt
 
    Here's an example:
 
-        ---
-        layout: person
-        username: rgrp
-        title: Rufus Pollock
-        area: Data Wrangler
-        email: rufus.pollock@okfn.org
-        github: rgrp
-        twitter: rufuspollock
-        web: http://rufuspollock.org/
-        img: /img/people/rgrp.png
-        place: London, UK
-        permalink: /members/rgrp/index.html
-        ---
-
-        Rufus is an avid hacker on small data tools, an enthusiastic collector
-        of new datasets and an out-of-hours data investigator. Skills include
-        python, javascript, sysadmin and data wrangling.
+       ---
+       layout: person
+       username: rgrp
+       title: Rufus Pollock
+       area: Data Wrangler
+       email: rufus.pollock@okfn.org
+       github: rgrp
+       twitter: rufuspollock
+       web: http://rufuspollock.org/
+       img: /img/people/rgrp.png
+       place: London, UK
+       permalink: /members/rgrp/index.html
+       ---
+       
+       Rufus is an avid hacker on small data tools, an enthusiastic collector
+       of new datasets and an out-of-hours data investigator. Skills include
+       python, javascript, sysadmin and data wrangling.
 
 2. Get this added to the [Labs Github repo][repo] (and thereby to the website).
    There are 2 options:
