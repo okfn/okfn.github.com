@@ -5,6 +5,8 @@ username: rlafuente
 layout: post
 ---
 
+[<img src="/img/posts/datacentral.png">](http://centraldedados.pt)
+
 This post explains our issues at the Portuguese open data front when it
 comes to providing bulk datasets in standard and easy-to-parse ways. It
 also introduces [Data Central](https://github.com/centraldedados/datacentral), 
@@ -159,7 +161,7 @@ and uses [Jinja][12] to fill up a set of HTML template files. It saves the gener
 HTML in an `_output` directory, that can then be inspected using a local
 webserver or pushed into a live VPS. All actions, from installation to generation and upload, can be carried out by means of a Makefile.
 
-If you're interested in reading more about Data Central and even trying it out (it's simple!), [check out the project site][13]. We'd heartily welcome all possible feedback, so please let us know about any bugs, suggestions or feature requests at the Datacentral [issue tracker][14].
+If you're interested in reading more about Data Central and even trying it out (it's simple!), [check out the project site][13]. We'd heartily welcome all possible feedback, so please let us know about any bugs, suggestions or feature requests at the Datacentral [issue tracker][14]. Finally, you can see it in action in our (in development) Portuguese independent data hub, [Central de Dados][15].
 
 
   [1]: http://transparenciahackday.org
@@ -176,3 +178,4 @@ If you're interested in reading more about Data Central and even trying it out (
   [12]: http://jinja.pocoo.org
   [13]: https://github.com/centraldedados/datacentral
   [14]: https://github.com/centraldedados/datacentral/issues
+  [15]: http://centraldedados.pt
