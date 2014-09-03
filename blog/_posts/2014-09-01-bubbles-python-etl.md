@@ -50,11 +50,39 @@ compositions. Data are fetched only if it is really necessary – if there is no
 other option how to compose the data, such as join between a database table
 and a CSV file. 
 
+Here are few objects with different representations:
+
+![Object Representations]({{site.url}}/img/posts/bubbles/bubbles-object_representations.png)
+
+The objects are:
+
+* object which originates from a *CSV file*, can be processed mainly using
+  the python iterators, however retains its text CSV nature, just in case some
+  of the nodes might know how to work with it more efficiently, for example
+  row filtering without actually parsing the CSV into row objects
+* *SQL object representing a table* – it can be composed into other SQL
+  statements or can be used directly as a Python iterable
+* *MongoDB collection* – similar to the previous SQL table, can be iterated as
+  raw stream of documents
+* *SQL statement* which might be a result of previous operations or our custom
+  complex query. It can be used as such statement and composed with further
+  operations, or the data can be fetched and iterated over in Python. Since
+  this SQL object comes from a known database (PostgreSQL in this case) which
+  implements a [COPY](http://www.postgresql.org/docs/current/static/sql-copy.html)
+  command that generates CSV output, we can treat that object as such and
+  provide the option to use CSV representation as well
+* *Twitter API object* – an exampple of a data object that actually does not
+  exists for us as a physical table, we do not even know from how many
+  original tables the Twitter is feeding us the data and we do not have to
+  care at all. We are just fine that we can have an impression of iterable
+  dataset.
+
 To be more concrete, take a simple filtering for example. Say we have sample
 of Tweets stored in a SQL database,
-[MongoDB](http://docs.mongodb.org/manual/tutorial/query-documents/) and obviously [on Twitter](https://dev.twitter.com/docs/api/1/get/statuses/user_timeline). We want
-to get all tweets by OKFN. In SQL we use a SQL driver, connect to the database
-and do:
+[MongoDB](http://docs.mongodb.org/manual/tutorial/query-documents/)
+and obviously [on Twitter](https://dev.twitter.com/docs/api/1/get/statuses/user_timeline).
+We want to get all tweets by OKFN. In SQL we use a SQL driver, connect to the
+database and do:
 
     SELECT * FROM  WHERE screen_name = 'okfn'
 
@@ -143,6 +171,14 @@ execution. `aggregate()` might be in-python row-by-row aggregation using a
 dictionary or it might be `SUM()` or `AVG()` with `GROUP BY` statement in SQL,
 depending on which kind of object is passed to the operation.
 
+In the following image you might see how the most appropriate operation is
+chosen for you depending on the data source. You can also see, that for
+certain representations the operations are combined together to produce just
+single data query for the source system:
+
+![Operations and Object
+Representations]({{site.url}}/img/posts/bubbles/bubbles-operation_representations.png)
+
 ## Examples
 
 [Here is an example](https://gist.github.com/Stiivi/5937938) of Bubbles
@@ -156,6 +192,12 @@ joining of details.
 
 [An example](https://gist.github.com/Stiivi/9104719) that uses a data package
 ([according to spec](http://data.okfn.org/doc/data-package)) as a data store:
+
+The pipeline looks like this:
+
+![Pipeline Example]({{site.url}}/img/posts/bubbles/bubbles-join_example.png)
+
+The Python source code for the pipeline:
 
     # Aggregate population per independence type for every year
     # Sources: Population and Country Codes datasets
