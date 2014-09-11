@@ -1,6 +1,4 @@
-pygments: true
+highligher: pygments
 # markdown: rdiscount
 markdown: kramdown
 future: false
-gems:
-    - jekyll-redirect-from
