@@ -7,14 +7,7 @@
 @import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
 /*
 OKF Labs Styles
-Edits should be made to current LESS file listed below (not the CSS file).
 */
-/* Friedrich's theme
-v3.less
-@import url('v3.less');
-*/
-/* Current theme (Sam Smith)
-v4.less */
 a,
 .btn-link {
   color: #22998b;
