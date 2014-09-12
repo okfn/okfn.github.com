@@ -278,7 +278,7 @@ body {
   margin: 15px 0 0 0;
 }
 .navbar .nav.pull-right {
-  margin-right: 90px;
+  margin-right: 50px;
 }
 .navbar .nav li {
   display: block;
@@ -306,6 +306,10 @@ body {
 .body-about .nav-about,
 .body-contact .nav-contact {
   color: #22998b !important;
+}
+.okfn-ribbon a {
+  background-position: center -26px;
+  height: 74px;
 }
 .page-header {
   margin: 0 0 30px 0;
