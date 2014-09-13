@@ -81,7 +81,7 @@ in helping, [get in touch][discuss-dp].
 
 ## Links
 
-* [dpm Homepage](http://data.okfn.org/dpm/)
+* [dpm Homepage](http://data.okfn.org/tools/)
 * [dpm on Github](https://github.com/okfn/dpm)
 * [data package to ckan (node) library](https://github.com/okfn/datapackage-ckan)
 * IRC: freenode.net Channel: #okfn
