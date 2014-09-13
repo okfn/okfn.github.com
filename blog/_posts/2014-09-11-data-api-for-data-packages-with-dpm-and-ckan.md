@@ -31,13 +31,13 @@ you'll want to.
 
 1. Configure the DataHub CKAN instance in your `.dpmrc`
 
-        [ckan.datahub]
-        url = http://datahub.io/
-        apikey = your-api-key
+       [ckan.datahub]
+       url = http://datahub.io/
+       apikey = your-api-key
 
 2. Upload your Data Package
 
-        dpm ckan datahub --owner_org=your-organization
+       dpm ckan datahub --owner_org=your-organization
 
    You have to set the owner organization as all datasts on the DataHub need an
    owner organization.
