@@ -1,4 +1,4 @@
-@import url('http://assets.okfn.org/themes/okfn/okf-panel.css');
+@import url('http://assets.okfn.org/themes/okfn/okf-panel.css?2');
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300);
 
@@ -7,14 +7,7 @@
 @import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
 /*
 OKF Labs Styles
-Edits should be made to current LESS file listed below (not the CSS file).
 */
-/* Friedrich's theme
-v3.less
-@import url('v3.less');
-*/
-/* Current theme (Sam Smith)
-v4.less */
 a,
 .btn-link {
   color: #22998b;
@@ -278,7 +271,7 @@ body {
   margin: 15px 0 0 0;
 }
 .navbar .nav.pull-right {
-  margin-right: 90px;
+  margin-right: 50px;
 }
 .navbar .nav li {
   display: block;
@@ -306,6 +299,10 @@ body {
 .body-about .nav-about,
 .body-contact .nav-contact {
   color: #22998b !important;
+}
+.okfn-ribbon a {
+  background-position: center -26px;
+  height: 74px;
 }
 .page-header {
   margin: 0 0 30px 0;
