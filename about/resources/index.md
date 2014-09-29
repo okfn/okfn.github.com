@@ -62,6 +62,9 @@ As these cost money this option is only accessible to [Contributors][].
 We operate a [Jenkins instance](http://jenkins.etl.openspending.org/) for
 supervising and monitoring regular jobs.
 
+### Other Tools
+
+* [ElasticSearch](https://github.com/okfn/elasticsearch.js) We have an ElasticSearch instance, provided by [found.no](https://found.no/).
 
 ## Communications
 
