@@ -27,7 +27,7 @@ bodyclass: join
     <div class="well">
       <h3>Some Simple Stuff</h3>
       <p>We've got a variety of simple things we'd like to do to improve this website and our community.</p>
-      <p><a href="https://github.com/okfn/okfn.github.com/issues?labels=Easy">Check out this list here &raquo;</a></p>
+      <p><a href="https://github.com/okfn/okfn.github.com/labels/Easy">Check out this list here &raquo;</a></p>
     </div>
     <div class="well">
       <h3>Data Wrangling</h3>
