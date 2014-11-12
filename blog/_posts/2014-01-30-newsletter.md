@@ -3,6 +3,7 @@ title: "Labs newsletter: 30 January, 2014"
 author: Neil Ashton
 username: nmashton
 layout: post
+projects: [frictionless-data,timemapper]
 ---
 
 From now on, the Labs newsletter will arrive through a special announce-only mailing list, *newsletter@okfnlabs.org*, more details on which can be found below.

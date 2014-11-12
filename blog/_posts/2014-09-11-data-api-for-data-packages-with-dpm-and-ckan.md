@@ -3,6 +3,7 @@ title: A Data API for Data Packages in Seconds Using CKAN and its DataStore
 author: Rufus Pollock
 username: rgrp
 layout: post
+projects: [frictionless-data]
 ---
 
 `dpm` the command-line 'data package manager' now supports pushing [(Tabular)

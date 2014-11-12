@@ -2,7 +2,7 @@
 title: View a CSV (Comma Separated Values) in Your Browser
 author: Neil Ashton
 username: nmashton
-project: datapipes
+projects: [data-pipes]
 layout: post
 ---
 

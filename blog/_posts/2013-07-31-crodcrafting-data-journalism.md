@@ -3,6 +3,7 @@ layout: post
 author: Daniel Lombraña González
 title: Analyzing Icelandic conviction rates with CrowdCrafting.org
 username: teleyinex
+projects: [crowdcrafting-and-pybossa]
 ---
 
 [CrowdCrafting.org](http://crowdcrafting.org) hosts a wide variety of applications that range from [science](http://crowdcrafting.org/app/airquality/) to 

@@ -3,6 +3,7 @@ layout: post
 author: Rufus Pollock
 title: Data as Code Deja-Vu
 username: rgrp
+projects: [frictionless-data]
 ---
 
 Someone just pointed me at [this post from Ben Balter about Data as Code][ben] in which he emphasizes the analogies between data and code (and especially open data and open-source -- e.g. "data is where code was 2 decades ago" ...).

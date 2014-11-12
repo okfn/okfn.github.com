@@ -3,6 +3,7 @@ layout: post
 author: Rufus Pollock
 title: Recline JS - Componentization and a Smaller Core
 username: rgrp
+projects: [reclinejs]
 ---
 
 Over time [Recline JS][r] has grown. In particular, since the first [public

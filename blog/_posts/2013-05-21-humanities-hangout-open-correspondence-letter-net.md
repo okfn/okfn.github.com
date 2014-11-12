@@ -5,6 +5,7 @@ author: Sam Leon
 event: hangout
 eventdate: 2013-05-28
 username: noelmas
+projects: [opencorrespondence,textus,crowdcrafting-and-pybossa]
 ---
 
 Our next Open Humanities Hangout will take place next **Tuesday, 28th May**. This is the latest in the series of regular hangouts we've been organizing over the past few months with people interested in tapping in to the growing amount of **open cultural data and content**.

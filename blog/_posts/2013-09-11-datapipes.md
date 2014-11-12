@@ -3,6 +3,7 @@ layout: post
 author: Rufus Pollock
 title: Data Pipes - streaming online data transformations
 username: rgrp
+projects: [data-pipes]
 ---
 
 **[Data Pipes](http://datapipes.okfnlabs.org/)** provides an online service built in NodeJS to do **simple data transformations** – deleting rows and columns, find and replace, filtering, viewing as HTML – and, furthermore, to **connect these transformations together** *Unix pipes style* to make more complex transformations. Because Data Pipes is a web service, data transformation with Data Pipes takes place entirely online and the results **and** process are completely shareable simply by sharing the URL.

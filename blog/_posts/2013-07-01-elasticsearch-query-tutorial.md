@@ -3,6 +3,7 @@ layout: post
 author: Rufus Pollock
 title: Querying ElasticSearch - A Tutorial and Guide
 username: rgrp
+projects: [elasticsearch-js,reclinejs]
 ---
 
 ElasticSearch is a great open-source search tool that's built on Lucene (like

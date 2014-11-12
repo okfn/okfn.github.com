@@ -3,6 +3,7 @@ layout: post
 author: Sam Leon
 title: Next Steps for Textus
 username: noelmas
+projects: [textus]
 ---
 
 At the Culture Labs hangout yesterday we wrote up the plans for the next steps for Textus we have been discussing over the last few months.
