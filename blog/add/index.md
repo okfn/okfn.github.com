@@ -32,6 +32,7 @@ Using "Fork and pull" on the [github repo][repo]:
         author: {Your Name}
         username: [optional] {your-user-name-if-you-have-one}
         title: {Title Like This - this is used both in page and html title}
+        projects: [optional] {project slug, project slug...} (use if your post references Open Knowledge Labs projects)
         ---
 
         content in html or markdown goes here .... 
