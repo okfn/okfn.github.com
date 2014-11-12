@@ -747,6 +747,14 @@ footer .projects img {
   color: #333;
 }
 
+.post .sidebar a div.croppedimg {
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100px;
+    background-size: 100%;
+}
+
 .post .sidebar .about img {
   width: 90px;
   margin-right: 10px;

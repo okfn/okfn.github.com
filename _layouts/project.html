@@ -40,6 +40,29 @@ bodyclass: project
   <p class="description">
   {{content}}
   </p>
+
+  {% for post in site.categories.blog %}
+  {% for project in post.projects %}
+  {% if page.slug == project %}
+  {% assign related_posts_exist = true %}
+  {% break %}
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+
+  {% if related_posts_exist %}
+  <h3>Related Posts:</h3>
+  <ul>
+    {% for post in site.categories.blog %}
+    {% for project in post.projects %}
+    {% if page.slug == project %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+  </ul>
+  {% endif %}
+
   {% if page.github_repo %}
     <p><img src="/img/github.png" /> <a href="https://github.com/{{page.github_user}}/{{page.github_repo}}">Github</a></p>
     <div class="rhs">

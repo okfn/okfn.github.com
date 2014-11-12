@@ -65,8 +65,23 @@ categories: post
       <a href="/blog/feed.xml"><img src="/img/blog_feed.png"></a>
       &nbsp; <a href="/blog/feed.xml">Subscribe to RSS</a>
     </p>
-
     <hr>
+
+    {% if page.projects %}
+    <h3>Related Projects</h3>
+    {% for project in site.categories.projects %}
+    {% for related_project in page.projects %}
+    {% if project.slug == related_project %}
+    <h4><a href="{{ project.permalink }}">{{ project.title }}</a></h4>
+    <a href="{{ project.permalink }}">
+      <div class="croppedimg" style="background-image:url('{{project.imageurl}}')">
+      </div>
+    </a>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    <hr>
+    {% endif %}
 
     <h3>Recent Posts</h3>
     <ul class="related">
