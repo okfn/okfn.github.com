@@ -3,6 +3,7 @@ layout: post
 author: Daniel Lombraña González
 title: Spanish Party Financing Scandals - CrowdSourcing Data Extraction with CrowdCrafting
 username: teleyinex
+projects: [crowdcrafting-and-pybossa]
 ---
 
 Spanish society has been bombarded recently with a flurry of news stories about possible cases of corruption in the major political parties like the [Partido Socialista Obrero Español](http://www.elmundo.es/elmundo/2013/07/02/andalucia/1372764547.html) and the [Partido Popular](http://politica.elpais.com/politica/2013/07/11/actualidad/1373542957_537498.html).

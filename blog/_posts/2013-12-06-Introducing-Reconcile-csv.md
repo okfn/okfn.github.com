@@ -3,6 +3,7 @@ layout: post
 author: Michael Bauer
 title: Introducing Reconcile-CSV
 username: mihi
+projects: [reconcile-csv]
 ---
 
 Recently I spent a week in Tanzania working on education data with the

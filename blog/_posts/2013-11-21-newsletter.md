@@ -3,6 +3,7 @@ title: "Labs newsletter: 21 November, 2013"
 author: Neil Ashton
 username: nmashton
 layout: post
+projects: [crowdcrafting-and-pybossa,frictionless-data,data-pipes]
 ---
 
 This week, Labs members gathered in an online hangout to discuss what they've been up to and what's next for Labs. This special edition of the newsletter recaps that hangout for those who weren't there (or who want a reminder).

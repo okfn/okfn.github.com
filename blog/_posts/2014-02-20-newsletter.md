@@ -3,6 +3,7 @@ title: "Labs newsletter: 20 February, 2014"
 author: Neil Ashton
 username: nmashton
 layout: post
+projects: [crowdcrafting-and-pybossa,data-pipes,timemapper]
 ---
 
 The past few weeks have seen major improvements to the Labs website, another Open Data Maker Night in London, updates to the TimeMapper project, and more.

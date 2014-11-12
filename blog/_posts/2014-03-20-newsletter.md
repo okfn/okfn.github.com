@@ -3,6 +3,7 @@ layout: post
 author: Neil Ashton
 title: "Labs newsletter: 20 March, 2014"
 username: nmashton
+projects: [textus]
 ---
 
 We're back with a bumper crop of updates in this new edition of the now-monthly Labs newsletter!

@@ -3,6 +3,7 @@ layout: post
 title: Recline JS Search Demo
 author: Rufus Pollock
 username: rgrp
+projects: [reclinejs]
 ---
 
 <a href="http://reclinejs.com/"><img src="http://assets.okfn.org/p/recline/img/logo.png" style="float: right; height: 100px;" alt="Recline JS" /></a>
