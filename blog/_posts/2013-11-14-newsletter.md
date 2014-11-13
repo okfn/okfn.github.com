@@ -3,6 +3,7 @@ title: "Labs newsletter: 14 November, 2013"
 author: Neil Ashton
 username: nmashton
 layout: post
+projects: [dpm]
 ---
 
 Labs was bristling with discussion and creation this week, with major improvements to two projects, interesting conversations around a few others, and an awesome new blog post.

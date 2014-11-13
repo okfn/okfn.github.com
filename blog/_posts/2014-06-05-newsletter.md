@@ -3,7 +3,7 @@ title: "Labs newsletter: 5 June, 2014"
 author: Neil Ashton
 username: nmashton
 layout: post
-projects: [textus,annotator]
+projects: [textus,annotator,dpm]
 ---
 
 Welcome back to the OKFN Labs! Members of the Labs have been building tools, visualizations, and even new data protocols—as well as setting up conferences and events. Read on to learn more.
