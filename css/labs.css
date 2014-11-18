@@ -898,3 +898,5 @@ div.gsc-url-top {
     -ms-transform:  translate(0px, 0px)  rotate(0deg) ;
   }
 }
+
+#map { height: 300px; }

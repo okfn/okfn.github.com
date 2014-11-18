@@ -11,14 +11,20 @@ time, we think it's good for people to be able to self-identify as official
 "Members" as a way to show they are part of the community. **Anyone may
 become a Member** &ndash; just follow the quick [sign-up steps][signup]!
 
+Labs members come from a wide variety of backgrounds and are based all
+over the world.  See below if there's an open data hacker, wrangler,
+or researcher in your area.
+
+<div id="map"></div>
+
 [signup]: /members/signup/
 
 ## Members
 
 <ul class="persons">
   {% for person in site.categories.members %}
-    <li class="person {% cycle 'odd', 'even' %}">
-      <img class="photo" src="{{person.img}}">            
+    <li id="{{person.username}}" class="person {% cycle 'odd', 'even' %}">
+      <img class="photo" src="{{person.img}}">
       <h3 class="name">
         <a href="{{person.username}}">{{person.title}}</a>
         <small class="area">{{person.area}}</small>
@@ -33,9 +39,10 @@ become a Member** &ndash; just follow the quick [sign-up steps][signup]!
           <i class="icon-globe"></i> {{ person.web }}</a></li>
       </ul>
       <div class="excerpt">
-        {{ person.content }} 
+        {{ person.content }}
       </div>
     </li>
   {% endfor %}
 </ul>
 
+<script src="/js/membermap.js"></script>
