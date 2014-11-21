@@ -4,6 +4,7 @@ author: Gregor Aisch
 lightbox: true
 title: Speeding Up Your PyBossa App
 username: gka
+projects: [crowdcrafting-and-pybossa]
 ---
 
 Thanks to the free [crowd-crafting](http://crowdcrafting.org) tool [PyBossa](http://dev.pybossa.com/), nowadays the biggest challenge for successful crowd-sourcing is engaging users for participating in tasks, and to keep that motivation at a high level over time. Therefor the user experience of crowd-sourcing apps plays a crucial role.

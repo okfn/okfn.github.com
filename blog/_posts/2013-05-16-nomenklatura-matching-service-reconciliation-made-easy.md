@@ -3,6 +3,7 @@ layout: post
 author: Friedrich Lindenberg
 title: Nomenklatura - Data Matching and Reconciliation Made Easy
 username: pudo
+projects: [nomenklatura]
 ---
 
 [Nomenklatura][] is a simple service that makes it easy to maintain a canonical list of entities such as persons, companies or event streets and to match messy input, such as their names against that canonical list &ndash; for example, matching Acme Widgets, Acme Widgets Inc and Acme Widgets Incorporated to the canonical "Acme Widgets".

@@ -1,160 +1,78 @@
 jQuery(document).ready(function($) {
-  var $container = $('.projects');
-  var projectdata = window.projectdata = [];
-  var projectfilters = window.projectfilters = {
-    featured: 0,    // true/false
-    helpwanted: 0,  // true/false
-    status: [],
-    language: [],
-    type: [],
-    tags: []
-  };
-  projectselects = ['tags', 'type', 'status', 'language'];
-  
-  $container.find('.readmore').each(function() {
-    // Find the current project's detail URL
-    var url = $('a', this).attr('href');
-    var $record = $(this).hide().parent();
-    $record.addClass('expand');
+  var container = $('.projects');
+  var chosen_select = $('.chosen-select');
 
-    // Get project data
-    var pd = { object: $record };
-    Object.keys(projectfilters).forEach(function (k) {
-      var v = $record.attr('data-' + k);
-      if (typeof projectfilters[k] === 'object') {
-        v = v.split(';');
-      }
-      pd[k] = v;
+  $(".form-inline").removeClass("hidden");
+
+  // triggered when the form text is changed
+  $("form#filters").on('change', function() {
+    var chosen_opts = $('.chosen-select').val();
+    if (chosen_opts !== null) {
+      chosen_opts = chosen_opts.join('');
+    }
+    // filter projects
+    container.isotope({
+      filter: chosen_opts
     });
-    projectdata.push(pd);
+
+    return false;
+  });
+
+  var filters = {tags: {}, type: {}, status: {}, language: {}};
+
+  container.find('.record').each(function() {
+    // Find the current project's detail URL
+    var record = $(this);
+    var url = record.data('url');
+    record.addClass('expand');
+
+    // de-duplicate filter values
+    $.each(filters, function (filter_type) {
+      var filter_vals = record.data(filter_type).split(';');
+      $.each(filter_vals, function(ignore, filter_val) {
+        k = toFilterName(filter_val);
+        if (!(k in filters[filter_type]) && k !== '') {
+          filters[filter_type][k] = filter_val;
+        }
+      });
+    });
 
     // Mouse over the record container
-    $record.hover(function() {
-      var $record = $(this);
-      if (!$record.hasClass('loaded')) {
+    record.hover(function() {
+      var record = $(this);
+      if (!record.hasClass('loaded')) {
         // Load and display it on hover
         $.get(url, function(data) {
-          $record.find('.rhs').html(
-            $(data).find('.record .rhs').html());
-          $record.addClass('loaded');
+          record.append(
+            $(data).find('.record .rhs').html()
+          ).addClass('loaded');
         });
       }
     });
   });
 
-  // Load the image
-  $container.find('div.image').each(function() {
-    var t = $(this);
-    t.append('<img src="' + 
-      t.attr('data-src') + '" alt="' +
-      t.attr('data-alt') + '" />');
+  // create filter options
+  $.each(filters, function(filter_type, filter) {
+    var chosen_group = $('<optgroup label="' + filter_type.substr(0,1).toUpperCase() + filter_type.substr(1) + '">');
+    $.each(filter, function(k, v) {
+      // the '*=' here is a hack. if a filter value is a substring of
+      // another (e.g. java and javascript) this will go wrong.
+      chosen_group.append('<option value="[data-' + filter_type + '*=' + v + ']">' + v + '</option>');
+    });
+    chosen_select.append(chosen_group);
   });
 
   // Parse filter title
   function toFilterName(title) {
-    return title.trim().toLowerCase()
-                .replace(/[^a-z0-9]+/gi, '-');
+    return title.trim().toLowerCase();
   }
-
-  // Add filter references if unique (case-insensitive)
-  function pushToFilter(array, refs, prefix) {
-    var str = "";
-    var refs_l = refs.map(function(e) { return e.toLowerCase(); });
-    array.forEach(function(k) {
-      var name = toFilterName(k);
-      if (name.length > 0) {
-        if (refs_l.indexOf(k.toLowerCase())<0) {
-          refs.push(k);
-        }
-        str += prefix + "-" + name + " ";
-      }
-    });  
-    return str;    
-  }
-
-  // Iterate through projects metadata
-  projectdata.forEach(function(pd) {
-    if (pd.featured == 'true') {
-      projectfilters.featured++;
-      pd.object.addClass('is-featured');
-    }
-    if (pd.helpwanted == 'true') {
-      projectfilters.helpwanted++;
-      pd.object.addClass('is-helpwanted');
-    }
-    projectselects.forEach(function(f) {
-      pd.object.addClass(
-        pushToFilter(pd[f], projectfilters[f], f)
-      );
-    });
-  });
-
-  var $filters = $('ul.filters');
-  projectselects.forEach(function(filter) {
-
-      // Create a blank SELECT tag
-      var select = 
-        $filters.find('[filter="' + filter + '"]')
-          .append('<select />').find('select');
-
-      // Sort case insensitive
-      var sorted = projectfilters[filter].sort(function (a, b) {
-        return a.toLowerCase().localeCompare(b.toLowerCase());
-      });
-
-      // Create each option
-      sorted.forEach(function(f) {
-        select.append('<option>' + f + '</option>');
-      });
-
-      select.click(function(e) {
-        e.stopPropagation();
-        $(this).change();
-      }).change(function() {
-
-        // Set filters
-        var f = toFilterName($(this).val());
-        if (f.length > 1) {
-          $container.isotope({ 
-            filter: '.' + filter + '-' + f 
-          });
-        }
-
-        return false;
-      });
-    });
-
-  $filters.removeClass('hidden')
-    .children().click(function() {
-      // Handle navigation to filter
-      var self = $(this);
-      if (self.hasClass('active')) {
-        // Clear all filters
-        self.removeClass('active');
-        $container.isotope({ filter: '*' });
-
-      } else {
-        // Clear selection and set this filter
-        self.parent().children().removeClass('active');
-        self.addClass('active');
-
-        // Set filter directly
-        if (self.attr('filter')) {
-          $container.isotope({ 
-            filter: '.is-' + self.attr('filter') 
-          });
-        }
-
-        // Set selects
-        self.find('select').click().focus();
-      }
-    });
 
   // Create Isotope grid view
-  $container.isotope({
+  container.isotope({
     itemSelector: '.record',
     layoutMode: 'masonry',
-    filter: '.is-helpwanted'
+    filter: '[data-featured=true]'
   });
 
+  $('.chosen-select').chosen();
 });

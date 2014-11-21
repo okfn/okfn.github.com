@@ -3,6 +3,7 @@ layout: post
 author: Neil Ashton
 title: Introducing TimeMapper - Create Elegant TimeMaps in Seconds
 username: nmashton
+projects: [timemapper]
 ---
 
 [TimeMapper](http://timemapper.okfnlabs.org) lets you create elegant and embeddable timemaps quickly and easily from a simple spreadsheet.

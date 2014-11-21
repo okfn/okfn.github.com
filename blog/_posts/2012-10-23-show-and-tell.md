@@ -3,6 +3,7 @@ layout: post
 title: Labs Show and Tell - 26th October!
 author: Nigel Babu
 username: nigelb
+projects: [nomenklatura,froide,messytables,activityapi]
 ---
 
 <img src="http://assets.okfn.org/p/labs/img/tent.png" style="margin-left: 30px; float: right;" />

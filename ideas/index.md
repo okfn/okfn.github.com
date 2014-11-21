@@ -1,31 +1,35 @@
 ---
 title: Ideas
-layout: two-column
+layout: default
 bodyclass: ideas
 ---
 
 # Ideas
 
-We have a growing list of ideas for new things to work on &ndash; including tools, apps, visualizations, investigations! <strong>Anyone can start working on these &ndash; please jump in!</strong>
+<div class="row">
+<div class="span6">
+<p>
+We have a great list of ideas that we to work on &ndash; including tools, apps, visualizations and investigations! <strong>Anyone can start working on these &ndash; please jump in!</strong>
+</p>
+<p>
+We track our ideas <a href="https://github.com/okfn/ideas/issues">using github issues</a> and below we have an overview courtesy of waffle.io. There's <a href="https://github.com/okfn/ideas/issues?labels=Effort%3A+%E2%98%85">also a short list of the ideas which are easy to get started with</a>.
+</p>
 
-<a href="https://github.com/okfn/ideas/issues" class="btn btn-large btn-primary">Browse list of ideas for new tools, apps and visualizations (on github issues)</a>
+<p>Finally, <a href="https://github.com/okfn/ideas/issues/new">new ideas are very welcome &raquo;</a></p>
+</div>
 
-There's also a:
+<div class="span6">
+  <div id="github-activity" style="width: 100%"></div>
+  <script>
+    $('#github-activity').githubActivity({
+      "events": 4,
+      "repos": [
+        "okfn/ideas"
+      ]
+    });
+  </script>
+</div>
+</div>
 
-<a href="https://github.com/okfn/ideas/issues?labels=Effort%3A+%E2%98%85" class="btn btn-large btn-primary">Shorter list of the simplest ones</a>
-
-## Suggest New Ideas
-
-New ideas are very welcome! <a href="https://github.com/okfn/ideas/issues/new">Suggest a new idea &raquo;</a>
-
-## Latest Ideas Activity
-
-<div id="github-activity" style="width: 100%"></div>
-<script>
-  $('#github-activity').githubActivity({
-    "events": 15,
-    "repos": [
-      "okfn/ideas"
-    ]
-  });
-</script>
+<h2>Overview</h2>
+<iframe src="https://waffle.io/okfn/ideas" style="width: 100%; min-height: 750px;" noframeborder=""></iframe>

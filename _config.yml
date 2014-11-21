@@ -1,6 +1,4 @@
-pygments: true
-auto: true
+highligher: pygments
 # markdown: rdiscount
 markdown: kramdown
 future: false
-

@@ -4,6 +4,7 @@ author: Friedrich Lindenberg
 title: Wrangling dirty data with messytables.
 snapshot: messytables
 username: pudo
+projects: [messytables]
 ---
 
 One of the largest data collection projects we have done so far

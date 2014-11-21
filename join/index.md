@@ -27,7 +27,7 @@ bodyclass: join
     <div class="well">
       <h3>Some Simple Stuff</h3>
       <p>We've got a variety of simple things we'd like to do to improve this website and our community.</p>
-      <p><a href="https://github.com/okfn/okfn.github.com/issues?labels=Easy">Check out this list here &raquo;</a></p>
+      <p><a href="https://github.com/okfn/okfn.github.com/labels/Easy">Check out this list here &raquo;</a></p>
     </div>
     <div class="well">
       <h3>Data Wrangling</h3>
@@ -47,15 +47,9 @@ bodyclass: join
   </div>
 
   <div class="span4">
-    <div class="well">
-      <h3 style="margin-top: 0;">Meetups</h3>
-      <p>There are also plenty of chances to meet up with others both "in real life" or online &ndash; if that face-to-face stuff is just too much for you ;-)</p>
-      <ul>
-        <li><a href="/events/hangouts/">Come to an online hangout</a></li>
-        <li><a href="/events/open-data-maker/">Come to an open data maker party (or start one up!)</a></li>
-      </ul>
-      <p><strong>Note!</strong> we currently do a somewhat shocking job of keeping the events list up to date so, at the moment, the above is <strong>unlikely to accurately reflect the past, or, more importantly the <em>future</em></strong>. Its therefore better, at present, to join the <a href="/contact/">mailing list and keep an eye on twitter</a>. (Even better why not volunteer as our calendar Czar and help us keep the above more up to date!)</p>
-    </div>
+    <h3 style="margin-top: 0;">Events &amp; Meetups</h3>
+    <p>There are lots of opportunities to meet up with others both online and in person. Listed here are a few near-term ones &ndash; you can find more on the <a href="/events/">events page</a>.</p>
+    {% include events.html %}
   </div>
 </div>
 

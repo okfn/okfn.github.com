@@ -35,11 +35,13 @@ layout: default
 
     <h4>Get involved</h4>
     <p>
-      Labs is an open community. Join our mailing list and 
-      start contributing.
+    Labs is an open community. Come <a href="/join/">join in &raquo;</a>.
     </p>
+    <p>There are also plenty of ways to <a href="/contact/">get in touch</a>.</p>
+    </p>
+    <h4>Get Updates</h4>
+    <p>Join our announce list and get regular (monthly) updates.</p>
     {% include list_signup.html %}
-    <p>If mailing lists are not your thing there are plenty of other ways to <a href="/contact/">get in touch</a>.</p>
 
     <h4>Twitter</h4>
     {% include tweets.html %}
@@ -48,23 +50,7 @@ layout: default
     {% include activity.html %}
 
     <h4>Upcoming Events</h4>
-    <ul class="posts">
-      {% for post in site.categories.events %}
-      {% if post.upcoming %}
-      <li>
-        <div class="meta">
-          <span class="a">{{post.textdate}}</span>
-        </div>
-        <h5><a class="literacy" href="{{ post.url }}">{{ post.title }}</a>
-          <small>{{post.location}}</small>
-        </h5>
-        <div class="excerpt">
-          {{ post.teaser }} 
-        </div>
-        </li>
-      {% endif %}
-      {% endfor %}
-    </ul>
+    {% include events.html %}
 
     <!--div class="boxed">
       Let's run an event together. 

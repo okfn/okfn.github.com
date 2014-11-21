@@ -3,6 +3,7 @@ layout: post
 author: Daniel Lombraña González
 title: Mapping Antimatter tracks with CrowdCrafting.org
 username: teleyinex
+projects: [crowdcrafting-and-pybossa]
 ---
 
 This last weekend, CERN hosted a very special event: [the 2nd CERN Summer Student Webfest](http://www.citizencyberscience.net/wiki/index.php?title=Main_Page) organized by the [Citizen Cyberscience Centre](http://www.citizencyberscience.net/).
