@@ -510,34 +510,13 @@ ul.filters {
   margin-top: 3px;
 }
 
-.projects .record .image img {
-  max-width: 100%;
-  max-height: 450px;
-  vertical-align: center;
-  text-align: center;
-  margin: auto;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-}
-
 .projects .description {
   margin-top: 5px;
 }
 
 /* Individual project page */
-.body-project .record .image {
-  margin-left: 30px;
-  float: right;
-  width: 450px;
-  min-height: 300px;
-}
-
 .body-project .record .image img {
-  max-width: 100%;
   max-height: 450px;
-  vertical-align: center;
-  text-align: center;
-  margin: auto;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
