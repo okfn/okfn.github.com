@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     curl: {},
     imagemin: {
       options: {
-        optimizationLevel: 7,
+        optimizationLevel: 3,
         progressive: true
       },
       projects: {
