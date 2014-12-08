@@ -36,9 +36,13 @@ bodyclass: code
         <div class="author">maintained by {{project.author}}</div>
         {% endif %}
       </h2>
-      {% if project.imageurl %}
-        <img src="{{project.imageurl}}" alt="{{project.title}}" />
-      {% endif %}
+	  {% if project.imageurl %}
+    	{% if project.imageurl contains 'http' %}
+	    <img src="/img/projects/{{project.slug}}" alt="{{project.title}}" />
+    	{% else %}	
+    	<img src="{{project.imageurl}}" alt="{{project.title}}" />
+    	{% endif %}
+	  {% endif %}
 
       <p class="description">{{project.content}}</p>
       {% if project.github_repo %}

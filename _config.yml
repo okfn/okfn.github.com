@@ -2,3 +2,5 @@ highligher: pygments
 # markdown: rdiscount
 markdown: kramdown
 future: false
+exclude:
+  - 'node_modules'
