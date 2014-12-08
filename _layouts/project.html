@@ -28,6 +28,16 @@ bodyclass: project
 	  {% endfor %}
 	</li>
 	{% endif %}
+	{% if page.contributors %}
+	<li>
+	  <i class="icon-user" title="Contributors"></i> Contributor{% if page.contributors.size > 1 %}s{% endif %} &ndash;
+	  {% for contributor in page.contributors %}
+          <a href="/members/{{contributor}}/" target="_blank">{{contributor}}</a>{% if forloop.last != true %}, {% endif %}
+	  {% endfor %}
+	</li>
+	{% endif %}	
+	
+	
 	{% if page.projecturl %}
 	<li>
 	  <i class="icon-link" title="Project HomePage"></i> <a href="{{page.projecturl}}" target="_blank">{{page.projecturl}}</a>
