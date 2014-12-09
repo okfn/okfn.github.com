@@ -3,6 +3,7 @@ title: "Bad Data: real-world examples of how not to do data"
 author: Rufus Pollock
 username: rgrp
 layout: post
+projects: [bad-data]
 ---
 
 We’ve just started a mini-project called [Bad Data][1]. Bad Data provides real-world examples of how *not* to publish data. It showcases the poorly structured, the mis-formatted, and the just plain ugly.
