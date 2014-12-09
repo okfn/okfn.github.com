@@ -3,7 +3,7 @@ title: "Labs newsletter: 12 December, 2013"
 author: Neil Ashton
 username: nmashton
 layout: post
-projects: [annotator,nomenklatura]
+projects: [annotator,nomenklatura,bad-data]
 ---
 
 We're back after taking a break last week with a bumper crop of updates. A few things have changed: Labs activities are now coordinated entirely through GitHub. Meanwhile, there's been some updates around the [Nomenklatura][1], [Annotator][2], and [Data Protocols][3] projects and some new posts on the [Labs blog][4].
