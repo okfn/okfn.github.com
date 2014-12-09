@@ -8,13 +8,19 @@ bodyclass: contact
 
 <div class="row">
   <div class="span6">
+
+    <h2>Open forum</h2>
+    <p>Please ask general questions and share your feedback on Labs projects in our <a href="http://discuss.okfn.org/category/open-knowledge-labs">new discussion forum</a>.</p>
+
+<!-- start feedwind code --><script type="text/javascript">document.write('<script type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js"><' + '/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://discuss.okfn.org/latest.rss",rssmikle_frame_width: "300",rssmikle_frame_height: "300",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "off",autoscroll: "on",scrolldirection: "down",scrollstep: "3",mcspeed: "30",sort: "New",rssmikle_title: "on",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#FFFFFF",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#0066FF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "gl1",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",item_description_style: "text",item_thumbnail: "full",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:300;"><a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;">RSS Feed Widget</a><!--Please display the above link in your web page according to Terms of Service.--></div><!-- end feedwind code -->
+
     <h2>Mailing lists</h2>
     <h3>Announce List and Newsletter</h3>
     <p>This is our low traffic announce and newsletter list. Low traffic means ~2 emails a month or less.</p>
     {% include list_signup.html %}
 
     <h3>Discussion List</h3>
-    <p>We have an open, public <a href="http://lists.okfn.org/mailman/listinfo/okfn-labs">mailing list - okfn-labs@lists.okfn.org</a> for discussions. Here, we talk about issues and new tools and exchange ideas and plans for projects. Everyone is welcome!</p>
+    <p>We have an open, public <a href="http://lists.okfn.org/mailman/listinfo/okfn-labs">mailing list - okfn-labs@lists.okfn.org</a> for discussions. Here, we talk about new tools and exchange ideas and plans for projects.</p>
 
     <form action="http://lists.okfn.org/mailman/subscribe/okfn-labs"
       method="POST" class="form-inline">
