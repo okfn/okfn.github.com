@@ -879,3 +879,26 @@ div.gsc-url-top {
 }
 
 #map { height: 300px; }
+
+.badgeholder {
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+
+.badgeholder div:first-child {
+    background: url('/img/badge.png');
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 3em;
+}
+
+.badgeholder div:last-child {
+    display: inline-block;
+    width: 80%;
+    background-color: #292726;
+    border: 5px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+}

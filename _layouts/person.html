@@ -18,9 +18,20 @@ bodyclass: members
       <i class="icon-globe"></i> {{ page.web }}</a></li>
   </ul>
 
-  <img class="photo" src="{{page.img}}" style="float: right;">            
+  <img class="photo" src="{{page.img}}" style="float: right;">
 
   {{content}}
+
+  <div class="badges">
+    {% for role in page.roles %}
+      <div class="badgeholder">
+	<div>
+	  <span class="icon-{{ site.data.badges | map: role }}"></span>
+	</div>
+	<div>{{ role }}</div>
+      </div>
+    {% endfor %}
+  </div>
 
   <ul class="links" style="margin-top: 10px;">
     <li><i class="icon-folder-close"></i> <a href="#projects">Projects</a></li>
