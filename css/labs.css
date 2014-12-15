@@ -548,7 +548,7 @@ ul.persons {
   padding: 0;
   margin: 0;
 }
-ul.persons .photo {
+.body-members .photo, ul.persons .photo {
   float: left;
   margin-right: 1em;
   max-height: 120px;
