@@ -3,7 +3,7 @@
 - lead:
     icon: rocket
     text: Lead
-    description: Acts as lead one or more Labs projects
+    description: Acts as lead on one or more Labs projects
 - sysadmin:
     icon: terminal
     text: Sysadmin
