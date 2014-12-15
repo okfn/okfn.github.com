@@ -7,6 +7,8 @@ bodyclass: members
 <h1>{{page.title}} <small>[{{page.username}}]</small></h1>
 
 <div class="info">
+  <img class="photo" src="{{page.img}}" style="float: right;">
+
   <p class="joined"><i class="icon-time"></i> Member since <span class="date">{{ page.date | date_to_long_string }}</span></p>
 
   <ul class="links">
@@ -17,8 +19,6 @@ bodyclass: members
     <li><a href="{{ page.web }}">
       <i class="icon-globe"></i> {{ page.web }}</a></li>
   </ul>
-
-  <img class="photo" src="{{page.img}}" style="float: right;">
 
   {{content}}
 
