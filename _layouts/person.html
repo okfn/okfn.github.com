@@ -22,15 +22,21 @@ bodyclass: members
 
   {{content}}
 
-  <div class="badges">
-    {% for role in page.roles %}
-      <div class="badgeholder">
-	<div>
-	  <span class="icon-{{ site.data.badges | map: role }}"></span>
-	</div>
-	<div>{{ role }}</div>
-      </div>
+  <div id="badges">
+    {% for role in page.roles) %}
+    <div class="badgeholder" title="{{ site.data.badges | map: role | map: 'description' }}">
+      <div><span class="icon-{{ site.data.badges | map: role | map: 'icon' }}"></span></div>
+      <div>{{ site.data.badges | map: role | map: 'text' }}</div>
+    </div>
     {% endfor %}
+
+    {% assign authors = (site.categories.blog | map: "to_liquid" | map: "username") %}
+    {% if authors contains page.username %}
+    <div class="badgeholder" title="Authored a blog post">
+      <div><span class="icon-file-alt"></span></div>
+      <div>Author</div>
+    </div>
+    {% endif %}
   </div>
 
   <ul class="links" style="margin-top: 10px;">
