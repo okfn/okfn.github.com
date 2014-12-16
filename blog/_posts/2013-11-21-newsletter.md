@@ -86,13 +86,13 @@ As always, Labs wants you to join in and get involved! Read more about how you c
 [14]:	http://okfnlabs.org/members/loleg
 [15]:	http://button.datalets.ch/
 [16]:	https://www.openaccessbutton.org/
-[17]:	okcon.org
+[17]:	http://okcon.org
 [18]:	https://github.com/okfn/ideas/issues/41
 [19]:	http://vitorbaptista.com/
 [20]:	http://www.queremossaber.org.br/
 [21]:	http://okfnlabs.org/members/markbrough
 [22]:	http://markbrough.github.io/philippines/
-[23]:	iatistandard.org
+[23]:	http://iatistandard.org
 [24]:	http://publishwhatyoufund.org/uganda/
 [25]:	http://meta.wikimedia.org/wiki/Global_Economic_Map
 [26]:	https://meta.wikimedia.org/wiki/Grants:IdeaLab/Global_Economic_Map#Format_and_economic_statistics
