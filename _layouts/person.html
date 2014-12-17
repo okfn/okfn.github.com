@@ -7,7 +7,9 @@ bodyclass: members
 <h1>{{page.title}} <small>[{{page.username}}]</small></h1>
 
 <div class="info">
+  {% if page.img %}
   <img class="photo" src="{{page.img}}" style="float: right;">
+  {% endif %}
 
   <p class="joined"><i class="icon-time"></i> Member since <span class="date">{{ page.date | date_to_long_string }}</span></p>
 
