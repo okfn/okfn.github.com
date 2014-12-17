@@ -62,11 +62,11 @@ Labs members have added a couple new posts to the blog since the last newsletter
 
 If you have some spare time this holiday season, why not spend it helping out with Labs? We're always always looking for new people to [join the community][31]—visit the [Labs issues][32] and the [Ideas Page][33] to get some ideas for how you can join in.
 
-[1]:	nomenklatura.okfnlabs.org
+[1]:	http://nomenklatura.okfnlabs.org
 [2]:	http://okfnlabs.org/annotator/
 [3]:	http://www.dataprotocols.org
 [4]:	http://okfnlabs.org/blog/
-[5]:	trello.com
+[5]:	http://trello.com
 [6]:	http://github.com
 [7]:	https://github.com/okfn/okfn.github.com/issues/
 [8]:	http://okfnlabs.org/bad-data/
