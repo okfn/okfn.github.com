@@ -16,5 +16,4 @@ Labs member [Daniel Lombraña González](http://twitter.com/teleyinex) has built
 
 The Urban Parks geo-coding application is a micro-tasking app running on [PyBossa](http://pybossa.com). In the app volunteers are asked to find an urban park for cities around the world. The volunteers use a web map to browse the city, and then submit an answer: the coordinates of the urban park by placing a marker in the map, or saying: I don't find any park.
 
-More details about PyBossa can be found on the official site <http://pybossa.com> and also in the <a href="docs.pybossa.com">online documentation</a>.
-
+More details about PyBossa can be found on the official site <http://pybossa.com> and also in the <a href="http://docs.pybossa.com">online documentation</a>.

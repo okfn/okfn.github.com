@@ -93,7 +93,7 @@ Want to get involved with Labs's projects? Now is a great time to join in! Check
 [30]:	http://timemapper.okfnlabs.org
 [31]:	https://github.com/okfn/timemapper/pull/119
 [32]:	https://github.com/okfn/timemapper/pull/118
-[33]:	timemapper.okfnlabs.org
+[33]:	http://timemapper.okfnlabs.org
 [34]:	http://okfnlabs.org/ideas/
 [35]:	http://okfnlabs.org/join/
 [36]:	http://lists.okfn.org/mailman/listinfo/okfn-labs
