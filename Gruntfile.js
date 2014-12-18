@@ -33,7 +33,7 @@ module.exports = function(grunt) {
     
   grunt.registerTask('dist', 'prepare site for distribution', function() {
     // run all the tasks in order  
-    grunt.task.run(['projectimg', 'curl', 'imagemin']);
+    grunt.task.run(['projectimg', 'imagemin']);
   });
   
   grunt.registerTask('projectimg', 'generate json list of project images', function(arg) {
