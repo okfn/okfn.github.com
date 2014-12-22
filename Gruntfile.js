@@ -24,7 +24,6 @@ module.exports = function(grunt) {
   });
 
   // Load the plugins
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-curl');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
 
@@ -41,6 +40,7 @@ module.exports = function(grunt) {
     var dirpath = "projects/_posts";
     var filenames = fs.readdirSync(dirpath);
     var imageurls = {};
+    var projectlist = [];
     filenames.map(function(filename){
       // read frontmatter
       var fileyaml = yamlFront.loadFront(fs.readFileSync(dirpath + "/" + filename, 'utf8')); 
@@ -49,10 +49,12 @@ module.exports = function(grunt) {
         // check if external image url
         if (fileyaml.imageurl.indexOf("http") >= 0 ){
             imageurls["img/projects/"+fileyaml.slug] = fileyaml.imageurl;
+            projectlist[projectlist.length] = fileyaml.slug;
         }
       }
     });
+    fs.writeFileSync("_data/projectimgs.json", JSON.stringify(projectlist), 'utf8');
     grunt.config('curl', imageurls);
   });
-  
+
 };
