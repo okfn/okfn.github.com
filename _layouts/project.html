@@ -7,7 +7,11 @@ bodyclass: project
 <div class="record">
   <div class="image">
     {% if page.imageurl %}
-      <img src="{{page.imageurl}}" alt="{{page.title}}" />
+      {% if site.data.projectimgs contains page.slug %}
+      <img src="/img/projects/{{page.slug}}" alt="{{page.title}}" />
+      {% else %}
+      <img src="{{page.imageurl}}" alt="{{page.title}}" />      
+      {% endif %}
     {% endif %}
   </div>
   <h2>
