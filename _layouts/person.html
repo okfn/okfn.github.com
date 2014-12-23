@@ -24,22 +24,30 @@ bodyclass: members
 
   {{content}}
 
-  <div id="badges">
-    {% for role in page.roles) %}
-    <div class="badgeholder" title="{{ site.data.badges | map: role | map: 'description' }}">
-      <div><span class="icon-{{ site.data.badges | map: role | map: 'icon' }}"></span></div>
-      <div>{{ site.data.badges | map: role | map: 'text' }}</div>
-    </div>
+  {% assign authors = (site.categories.blog | map: "to_liquid" | map: "username") %}
+
+  {% if page.roles or (if authors contains page.username) %}
+  <h2 id="badges">Badges Earned</h2> <em><a href="/join/#get-recognized">(what is this?)</em>
+  <div>
+    {% for role in page.roles %}
+    <a href="/join/#{{ role }}">
+      <div class="badgeholder" title="{{ site.data.badges | map: role | map: 'text' }}: {{ site.data.badges | map: role | map: 'description' }}">
+	<div><span class="icon-{{ site.data.badges | map: role | map: 'icon' }}"></span></div>
+	<div>{{ site.data.badges | map: role | map: 'text' }}</div>
+      </div>
+    </a>
     {% endfor %}
 
     {% assign authors = (site.categories.blog | map: "to_liquid" | map: "username") %}
     {% if authors contains page.username %}
-    <div class="badgeholder" title="Authored a blog post">
+
+    <div class="badgeholder" title="Author: Authored a blog post">
       <div><span class="icon-file-alt"></span></div>
       <div>Author</div>
     </div>
     {% endif %}
-  </div>
+    </div>
+  {% endif %}
 
   <ul class="links" style="margin-top: 10px;">
     <li><i class="icon-folder-close"></i> <a href="#projects">Projects</a></li>

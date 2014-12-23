@@ -897,8 +897,12 @@ div.gsc-url-top {
     font-size: 25px;
 }
 
+.body-join .badgeholder div:last-child {
+    display: inherit !important;
+}
+
 .badgeholder div:last-child {
-    display: inherit;
+    display: none;
     vertical-align: middle;
     background-color: #292726;
     border-radius: 5px;
