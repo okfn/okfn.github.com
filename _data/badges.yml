@@ -10,11 +10,11 @@
     description: Administers the backend services powering Labs projects
 - newsletter-editor:
     icon: pencil
-    text: Editor
+    text: Newsletter Editor
     description: Edits the newsletter
 - blog-editor:
     icon: edit
-    text: Editor
+    text: Blog Editor
     description: Edits the blog
 - webministrator:
     icon: keyboard
@@ -22,13 +22,17 @@
     description: Administers this website
 - ran-open-data-maker:
     icon: magic
-    text: Maker
+    text: Ran Maker Night
     description: Ran an Open Data Maker Night
 - attended-open-data-maker:
     icon: magic
-    text: Maker
+    text: Attended Maker Night
     description: Attended an Open Data Maker Night
 - newsletter-contributor:
     icon: gift
-    text: Contributor
+    text: Newsletter Contributor
     description: Contributed to the newsletter
+- author:
+    icon: file-alt
+    text: Author
+    description: Has written a blog post
