@@ -45,6 +45,13 @@ bodyclass: join
       <p>If you're interested please <a href="/contact/">give us a bell  (email may be best here!)</a>.</p>
     </div>
 
+  </div>
+
+  <div class="span4">
+    <h3 style="margin-top: 0;">Events &amp; Meetups</h3>
+    <p>There are lots of opportunities to meet up with others both online and in person. Listed here are a few near-term ones &ndash; you can find more on the <a href="/events/">events page</a>.</p>
+    {% include events.html %}
+
     <h2 id="get-recognized">Get Recognized!</h2>
     <p>As a member, your contributions will, in part, be recognized via a badge associated with your username.  Currently, we are issuing the following badges:</p>
     {% for badge in site.data.badges %}
@@ -54,11 +61,6 @@ bodyclass: join
     </div>
     <p>{{ badge.first | map: 'description' }}</p>
     {% endfor %}
-  </div>
 
-  <div class="span4">
-    <h3 style="margin-top: 0;">Events &amp; Meetups</h3>
-    <p>There are lots of opportunities to meet up with others both online and in person. Listed here are a few near-term ones &ndash; you can find more on the <a href="/events/">events page</a>.</p>
-    {% include events.html %}
   </div>
 </div>
