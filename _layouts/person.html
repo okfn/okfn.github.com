@@ -39,10 +39,12 @@ bodyclass: members
     {% endfor %}
 
     {% if authors contains page.username %}
-    <div class="badgeholder" title="Author">
-      <div><span class="icon-file-alt"></span></div>
-      <div>Author</div>
-    </div>
+    <a href="/join/#author">
+      <div class="badgeholder" title="Author">
+	<div><span class="icon-file-alt"></span></div>
+	<div>Author</div>
+      </div>
+    </a>
     {% endif %}
     </div>
   {% endif %}
