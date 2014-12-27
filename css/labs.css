@@ -911,3 +911,7 @@ div.gsc-url-top {
     margin-left: -.25em;
     padding-right: .5em;
 }
+
+.badges a:hover {
+    text-decoration: none;
+}
