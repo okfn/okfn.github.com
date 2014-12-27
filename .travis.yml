@@ -1,0 +1,3 @@
+language: ruby
+install: gem install jekyll
+script: jekyll build
