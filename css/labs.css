@@ -548,7 +548,7 @@ ul.persons {
   padding: 0;
   margin: 0;
 }
-ul.persons .photo {
+.body-members .photo, ul.persons .photo {
   float: left;
   margin-right: 1em;
   max-height: 120px;
@@ -879,3 +879,39 @@ div.gsc-url-top {
 }
 
 #map { height: 300px; }
+
+.badgeholder {
+    display: inline-block;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+.badgeholder div:first-child {
+    display: inherit;
+    vertical-align: middle;
+    background: url('/img/badge.png');
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+.body-join .badgeholder div:last-child {
+    display: inherit !important;
+}
+
+.badgeholder div:last-child {
+    display: none;
+    vertical-align: middle;
+    background-color: #292726;
+    border-radius: 5px;
+    font-weight: bold;
+    padding-left: .5em;
+    margin-left: -.25em;
+    padding-right: .5em;
+}
+
+.badges a:hover {
+    text-decoration: none;
+}

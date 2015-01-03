@@ -9,7 +9,7 @@ bodyclass: join
 <div class="row">
   <div class="span8">
     <p>We're a collaborative community which anyone can join &ndash; new participants and contributors are made <em>very</em> welcome!</p>
-    
+
     <h2>Just hangout (or observe from a distance!)</h2>
     <p>That's OK, we understand you may want to get a feel of how things operate before you dive in ;-0. If you want to start out dipping your toe in the water we suggest:</p>
 
@@ -32,7 +32,7 @@ bodyclass: join
     <div class="well">
       <h3>Data Wrangling</h3>
       <p>For example, <a href="http://community.openspending.org/contribute/data/">Get government finances into Openspending</a> &ndash; turn ugly government data into clean spreadsheets and beautiful visualizations.</p>
-      <p>Take a <a href="http://schoolofdata.org/">course at the School of Data</a> &ndash; or <a href="http://schoolofdata.org/data-expeditions/guide-for-guides/">help run one</a>!</a></p>
+      <p>Take a <a href="http://schoolofdata.org/">course at the School of Data</a> &ndash; or <a href="http://schoolofdata.org/data-expeditions/guide-for-guides/">help run one</a>!</p>
       <p>Or, take a <a href="https://github.com/okfn/ideas/issues?labels=Data+Wrangling&sort=updated&state=open">look at our data wrangling related ideas</a></p>
     </div>
     <div class="well">
@@ -44,6 +44,25 @@ bodyclass: join
       <p>Help run and attend events including hangouts and open data parties, write and edit posts for the blog, evangelize and engage around our projects.</p>
       <p>If you're interested please <a href="/contact/">give us a bell  (email may be best here!)</a>.</p>
     </div>
+
+    <h2 id="get-recognized">Get Recognized!</h2>
+    <p>As a member, your contributions will, in part, be recognized via a badge associated with your username.  Currently, we are issuing the following badges:</p>
+
+    {% assign odd_num_of_badges = site.data.badges.size | modulo:2 %}
+    {% for badge in site.data.badges %}
+    {% cycle '<div class="row">','' %}
+      <div class="span4">
+	<div class="badgeholder">
+	  <div id="{{ badge.first.first }}"><span class="icon-{{ badge.first | map: 'icon' }}"></span></div>
+	  <div>{{ badge.first | map: 'text' }}</div>
+	</div>
+	<p>{{ badge.first | map: 'description' }}</p>
+      </div>
+      {% cycle '','</div>' %}
+    {% endfor %}
+    {% if odd_num_of_badges == 1 %}
+  </div>
+  {% endif %}
   </div>
 
   <div class="span4">
@@ -52,4 +71,3 @@ bodyclass: join
     {% include events.html %}
   </div>
 </div>
-

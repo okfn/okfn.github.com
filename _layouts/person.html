@@ -7,6 +7,10 @@ bodyclass: members
 <h1>{{page.title}} <small>[{{page.username}}]</small></h1>
 
 <div class="info">
+  {% if page.img %}
+  <img class="photo" src="{{page.img}}" style="float: right;">
+  {% endif %}
+
   <p class="joined"><i class="icon-time"></i> Member since <span class="date">{{ page.date | date_to_long_string }}</span></p>
 
   <ul class="links">
@@ -18,9 +22,32 @@ bodyclass: members
       <i class="icon-globe"></i> {{ page.web }}</a></li>
   </ul>
 
-  <img class="photo" src="{{page.img}}" style="float: right;">            
-
   {{content}}
+
+  {% assign authors = site.categories.blog | map: "to_liquid" | map: "username" %}
+
+  {% if (authors contains page.username) or if (page.roles == true) %}
+  <h2 id="badges"><i class="icon-trophy"></i> Badges</h2>
+  <div class="badges">
+    {% for role in page.roles %}
+    <a href="/join/#{{ role }}">
+      <div class="badgeholder" title="{{ site.data.badges | map: role | map: 'text' }}">
+	<div><span class="icon-{{ site.data.badges | map: role | map: 'icon' }}"></span></div>
+	<div>{{ site.data.badges | map: role | map: 'text' }}</div>
+      </div>
+    </a>
+    {% endfor %}
+
+    {% if authors contains page.username %}
+    <a href="/join/#author">
+      <div class="badgeholder" title="Author">
+	<div><span class="icon-file-alt"></span></div>
+	<div>Author</div>
+      </div>
+    </a>
+    {% endif %}
+    </div>
+  {% endif %}
 
   <ul class="links" style="margin-top: 10px;">
     <li><i class="icon-folder-close"></i> <a href="#projects">Projects</a></li>
@@ -36,7 +63,7 @@ bodyclass: members
 
 <div class="project-list">
 {% for project in site.categories.projects %}
-{% if project.maintainers contains page.username %}
+{% if (project.maintainers contains page.username) or (project.contributors contains page.username) %}
   <div>
     <h3><a href="{{project.url | replace:'index.html',''}}">{{project.title}}</a></h3>
     <em>{{ project.content | markdownify | strip_html | truncatewords: 45 }} </em>

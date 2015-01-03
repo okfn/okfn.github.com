@@ -88,5 +88,4 @@ If you want some suggestions or help just [get in touch](/contact/).
 * [London No. 3 - Tuesday 16th July](http://okfnlabs.org/blog/2013/07/08/open-data-maker-night-london-3.html)
 * [Birmingham, UK - Thursday 25th April](http://www.meetup.com/OpenKnowledgeFoundation/Birmingham-GB/907622/)
 * [Vienna No. 1 - Thursday 18th April](http://www.meetup.com/OpenKnowledgeFoundation/Austria/928052/)
-* [London No. 1 - Tuesday 16th March](http://blog.okfn.org/2013/03/13/open-data-maker-night/) - this was the inaugral event
-
+* [London No. 1 - Tuesday 16th March](http://blog.okfn.org/2013/03/13/open-data-maker-night/) - this was the inaugural event

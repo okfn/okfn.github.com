@@ -1,0 +1,38 @@
+# maps role to font awesome icon name
+
+- lead:
+    icon: rocket
+    text: Lead
+    description: Acts as lead on one or more Labs projects
+- sysadmin:
+    icon: terminal
+    text: Sysadmin
+    description: Administers the backend services powering Labs projects
+- newsletter-editor:
+    icon: pencil
+    text: Newsletter Editor
+    description: Edits the newsletter
+- blog-editor:
+    icon: edit
+    text: Blog Editor
+    description: Edits the blog
+- webministrator:
+    icon: keyboard
+    text: Webmin
+    description: Administers this website
+- ran-open-data-maker:
+    icon: magic
+    text: Ran Maker Night
+    description: Ran an Open Data Maker Night
+- attended-open-data-maker:
+    icon: magic
+    text: Attended Maker Night
+    description: Attended an Open Data Maker Night
+- newsletter-contributor:
+    icon: gift
+    text: Newsletter Contributor
+    description: Contributed to the newsletter
+- author:
+    icon: file-alt
+    text: Author
+    description: Has written a blog post

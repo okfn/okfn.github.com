@@ -28,6 +28,16 @@ bodyclass: project
 	  {% endfor %}
 	</li>
 	{% endif %}
+	{% if page.contributors %}
+	<li>
+	  <i class="icon-user" title="Contributors"></i> Contributor{% if page.contributors.size > 1 %}s{% endif %} &ndash;
+	  {% for contributor in page.contributors %}
+          <a href="/members/{{contributor}}/" target="_blank">{{contributor}}</a>{% if forloop.last != true %}, {% endif %}
+	  {% endfor %}
+	</li>
+	{% endif %}	
+	
+	
 	{% if page.projecturl %}
 	<li>
 	  <i class="icon-link" title="Project HomePage"></i> <a href="{{page.projecturl}}" target="_blank">{{page.projecturl}}</a>
@@ -72,7 +82,7 @@ bodyclass: project
       {% endif %}
 
       {% if page.github_repo %}
-      <p><img src="/img/github.png" /> <a href="https://github.com/{{page.github_user}}/{{page.github_repo}}">Github</a></p>
+      <p><i class="icon-github"></i> <a href="https://github.com/{{page.github_user}}/{{page.github_repo}}">Github</a></p>
       <div class="rhs">
 	<iframe src="http://ghbtns.com/github-btn.html?user={{page.github_user}}&repo={{page.github_repo}}&type=watch&count=true"
 		allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
