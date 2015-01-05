@@ -883,18 +883,32 @@ div.gsc-url-top {
 .badgeholder {
     display: inline-block;
     text-align: center;
-    color: #f5f5f5;
+}
+
+.role div:first-child {
+    background: url('/img/badge_orange.png');
+    background-size: cover;
+}
+.recognition div:first-child {
+    background: url('/img/badge_green.png');
+    background-size: cover;
 }
 
 .badgeholder div:first-child {
+    color: #f5f5f5;
     display: inherit;
     vertical-align: middle;
-    background: url('/img/badge.png');
-    background-size: 50px;
-    width: 50px;
-    height: 50px;
     line-height: 50px;
     font-size: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+.persons .badgeholder div:first-child {
+    line-height: 25px;
+    font-size: 12px;
+    width: 25px;
+    height: 25px;
 }
 
 .body-join .badgeholder div:last-child {
@@ -902,14 +916,10 @@ div.gsc-url-top {
 }
 
 .badgeholder div:last-child {
+    color: #333;
     display: none;
     vertical-align: middle;
-    background-color: #292726;
-    border-radius: 5px;
     font-weight: bold;
-    padding-left: .5em;
-    margin-left: -.25em;
-    padding-right: .5em;
 }
 
 .badges a:hover {

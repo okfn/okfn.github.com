@@ -46,13 +46,13 @@ bodyclass: join
     </div>
 
     <h2 id="get-recognized">Get Recognized!</h2>
-    <p>As a member, your contributions will, in part, be recognized via a badge associated with your username.  Currently, we are issuing the following badges:</p>
+    <p>As a member, your contributions will, in part, be recognized via a badge displayed next your username.  Badges which are issued for ongoing roles are orange, while those issued for one-off contributions are green.  Currently, we are issuing the following badges:</p>
 
     {% assign odd_num_of_badges = site.data.badges.size | modulo:2 %}
     {% for badge in site.data.badges %}
     {% cycle '<div class="row">','' %}
       <div class="span4">
-	<div class="badgeholder">
+	<div class="badgeholder {{ badge.first | map: 'type' }}">
 	  <div id="{{ badge.first.first }}"><span class="icon-{{ badge.first | map: 'icon' }}"></span></div>
 	  <div>{{ badge.first | map: 'text' }}</div>
 	</div>
