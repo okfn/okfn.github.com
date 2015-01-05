@@ -1,0 +1,16 @@
+{% assign authors = site.categories.blog | map: 'to_liquid' | map: 'username' %}
+{% if authors contains user_username %}
+{% assign user_roles = user_roles | push: 'author' %}
+{% endif %}
+
+<div class="badges">
+  {% for role in user_roles %}
+  {% assign badge = site.data.badges | map: role %}
+  <a href="/join/#{{ role }}">
+    <div class="badgeholder {{ badge | map: 'type' }}" title="{{ badge | map: 'text' }}">
+      <div><span class="icon-{{ badge | map: 'icon' }}"></span></div>
+      <div>{{ badge | map: 'text' }}</div>
+    </div>
+  </a>
+  {% endfor %}
+</div>

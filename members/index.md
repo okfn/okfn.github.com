@@ -30,6 +30,11 @@ or researcher in your area.
         <small class="area">{{person.area}}</small>
       </h3>
       <p class="joined"><i class="icon-time"></i> Member since <span class="date">{{ person.date | date_to_long_string }}</span></p>
+
+      {% assign user_roles = person.roles %}
+      {% assign user_username = person.username %}
+      {% include badges.html %}
+
       <ul class="links">
         <li><a href="https://twitter.com/{{ person.twitter }}">
           <i class="icon-twitter"></i> {{ person.twitter }}</a></li>
