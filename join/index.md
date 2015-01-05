@@ -18,7 +18,7 @@ bodyclass: join
       <li><a href="/contact/">Joining the mailing list</a> &ndash; and say hello, we'd love to hear from you!</li>
     </ul>
 
-    <p>You can also get a sense of what folks are up to by taking a look at the <a href="/projects/">Projects</a> or the <a href="https://github.com/okfn/ideas/issues">Ideas List</a> (especially the <a href="https://github.com/okfn/ideas/issues?labels=In+progress">in progress ones</a>).</p>
+    <p>You can also get a sense of what folks are up to by taking a look at the <a href="/projects/">Projects</a> or the <a href="https://github.com/okfn/ideas/issues">Ideas List</a> (especially the <a href="https://github.com/okfn/ideas/labels/Status%3A%20In%20Progress">in progress ones</a>).</p>
 
     <h2>Jump straight in!</h2>
 
