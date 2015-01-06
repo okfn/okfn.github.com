@@ -1,38 +1,49 @@
-# maps role to font awesome icon name
+# This file maps role and recognition names to various bits of
+# metadata including the Font Awesome (3.2.1) icon name as represented
+# here: http://fontawesome.io/3.2.1/icons/
 
 - lead:
     icon: rocket
     text: Lead
-    description: Acts as lead on one or more Labs projects
+    type: role
+    description: This member currently acts as a "lead".  More information about this role can be found <a href="/about/#leads">here</a>.
 - sysadmin:
     icon: terminal
     text: Sysadmin
-    description: Administers the backend services powering Labs projects
+    type: role
+    description: This member helps administer <a href="/about/resources/">the backend services and resources</a> powering Labs projects.
 - newsletter-editor:
     icon: pencil
     text: Newsletter Editor
-    description: Edits the newsletter
+    type: role
+    description: This member edits the newsletter.
 - blog-editor:
     icon: edit
     text: Blog Editor
-    description: Edits the blog
+    type: role
+    description: This member edits the Open Knowledge Labs <a href="/blog/">Data Wrangling Blog</a>.
 - webministrator:
     icon: keyboard
     text: Webmin
-    description: Administers this website
+    type: role
+    description: This member administers this website.
 - ran-open-data-maker:
     icon: magic
     text: Ran Maker Night
-    description: Ran an Open Data Maker Night
+    type: recognition
+    description: This member is recognized for having run at least one <a href="/events/open-data-maker/">Open Data Maker Night</a>.
 - attended-open-data-maker:
     icon: magic
     text: Attended Maker Night
-    description: Attended an Open Data Maker Night
+    type: recognition
+    description: This member is recognized for having attended at least one <a href="/events/open-data-maker/">Open Data Maker Night</a>.
 - newsletter-contributor:
     icon: gift
     text: Newsletter Contributor
-    description: Contributed to the newsletter
+    type: recognition
+    description: This member is recognized for having contributed to the newsletter.
 - author:
     icon: file-alt
     text: Author
-    description: Has written a blog post
+    type: recognition
+    description: This member has <a href="/blog/add/">written a blog post</a> for the Open Knowledge Labs <a href="/blog/">Data Wrangling Blog</a>.
