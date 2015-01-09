@@ -3,6 +3,7 @@ layout: post
 author: Rufus Pollock
 title: PublicBodies.org - Update no. 2
 username: rgrp
+projects: [publicbodies]
 ---
 
 Herewith is a report on recent improvements to [PublicBodies.org][pb], our project in Open Knowledge Foundation Labs project to provide "a URL (and information) on every "public body" - that's every government funded agency, department or organization.

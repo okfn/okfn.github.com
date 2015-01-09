@@ -3,6 +3,7 @@ layout: post
 author: Neil Ashton
 title: PublicBodies.org progress
 username: nmashton
+projects: [publicbodies]
 ---
 
 There have been many new developments with [PublicBodies.org][1], the Labs project which aims to provide "a URL for every part of government", since [the last update][2] on the Labs blog.
