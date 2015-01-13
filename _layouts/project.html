@@ -96,6 +96,7 @@ bodyclass: project
       <div id="github-activity" style="width: 100%"></div>
       <script>
 	$('#github-activity').githubActivity({
+	events: 5,
 	repos: ["{{page.github_user}}/{{page.github_repo}}"]
 	});
       </script>
