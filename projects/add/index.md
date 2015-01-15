@@ -56,6 +56,7 @@ list and following Labs on twitter](/contact/).
         stage: {one of [idea, alpha, prototype, production, deployed, mature]}
         status: {set to 'retired' if the project is no longer active}
         tags: {list of relevant tags e.g. [django, google spreadsheets]}
+        tagline: {one-liner description of project}
         ---
 
         A brief description of the project. You can use html (or markdown - if
