@@ -26,13 +26,16 @@
   {% endif %}
   <link rel="stylesheet" href="http://okfnlabs.org/githubActivity.js/githubActivity.css" />
   <link rel="stylesheet" href="/css/chosen.min.css" />
+  {% if page.bodyclass == "members" %}
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-
+  {% endif %}
   <!-- must have these at the top of the page so we can do scripts in content of specific pages -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
   <script src="/js/underscore.js"></script>
   <script src="http://okfnlabs.org/githubActivity.js/githubActivity.js"></script>
+  {% if page.bodyclass == "members" %}
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  {% endif %}
   <link rel="alternate" type="application/atom+xml" title="Open Knowledge Labs Feed" href="http://okfnlabs.org/blog/feed.xml" />
   <link rel="shortcut icon" href="http://assets.okfn.org/p/okfn/img/favicon.ico">
 </head>
