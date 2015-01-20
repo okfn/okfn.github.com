@@ -526,6 +526,10 @@ ul.filters {
   list-style-type: none;
 }
 
+.rhs {
+    margin-top: 1em;
+}
+
 /* Members list of projects */
 .body-members .project-list .record {
   clear: both;
