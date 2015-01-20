@@ -35,12 +35,15 @@ bodyclass: project
           <a href="/members/{{contributor}}/" target="_blank">{{contributor}}</a>{% if forloop.last != true %}, {% endif %}
 	  {% endfor %}
 	</li>
-	{% endif %}	
-	
-	
+	{% endif %}
 	{% if page.projecturl %}
 	<li>
 	  <i class="icon-link" title="Project HomePage"></i> <a href="{{page.projecturl}}" target="_blank">{{page.projecturl}}</a>
+	</li>
+	{% endif %}
+	{% if page.github_repo %}
+	<li>
+	  <i class="icon-github"></i> <a href="https://github.com/{{page.github_user}}/{{page.github_repo}}">https://github.com/{{page.github_user}}/{{page.github_repo}}</a>
 	</li>
 	{% endif %}
       </ul>
@@ -58,7 +61,7 @@ bodyclass: project
   </div>
 
   <div class="row">
-    <div class="span12">
+    <div class="span6">
       {% for post in site.categories.blog %}
       {% for project in post.projects %}
       {% if page.slug == project %}
@@ -69,7 +72,7 @@ bodyclass: project
       {% endfor %}
 
       {% if related_posts_exist %}
-      <h3>Related Posts:</h3>
+      <h3>Related Posts</h3>
       <ul>
 	{% for post in site.categories.blog %}
 	{% for project in post.projects %}
@@ -80,9 +83,17 @@ bodyclass: project
 	{% endfor %}
       </ul>
       {% endif %}
-
+    </div>
+    <div class="span6">
       {% if page.github_repo %}
-      <p><i class="icon-github"></i> <a href="https://github.com/{{page.github_user}}/{{page.github_repo}}">Github</a></p>
+      <h3>Recent Project Activity</h3>
+      <div id="github-activity" style="width: 100%"></div>
+      <script>
+	$('#github-activity').githubActivity({
+	events: 5,
+	repos: ["{{page.github_user}}/{{page.github_repo}}"]
+	});
+      </script>
       <div class="rhs">
 	<iframe src="http://ghbtns.com/github-btn.html?user={{page.github_user}}&repo={{page.github_repo}}&type=watch&count=true"
 		allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
