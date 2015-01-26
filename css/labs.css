@@ -626,7 +626,7 @@ footer .text-right .okf-logo {
   float: right;
 }
 footer .okf-logo {
-  background-image: url(http://assets.okfn.org/images/logo/okfn-logo-landscape-black.png);
+  background-image: url('http://assets.okfn.org/p/okfn/img/okfn-logo-landscape-black-s.png');
   background-repeat: no-repeat;
   width: 150px;
   height: 39px;
