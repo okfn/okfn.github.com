@@ -22,7 +22,7 @@ bodyclass: join
 
     <h2>Jump straight in!</h2>
 
-    <p>Why not just jump straight in :-) &ndash; there's loads of cool stuff to do! Not sure about something, or just want to chat with someone just <a href="/contact/">get in touch</a>. <strong>Already have something you're working on you'd like to share? We'd be delighted to hear about it &ndash; hop on the <a href="/contact/">mailing list or send us a tweet</a></strong>.</p>
+    <p>Why not just jump straight in :-) &ndash; there's loads of cool stuff to do, and certain types of contributions will earn you a shiny <a href="/members/badges/">badge</a>! Not sure about something, or just want to chat with someone just <a href="/contact/">get in touch</a>. <strong>Already have something you're working on you'd like to share? We'd be delighted to hear about it &ndash; hop on the <a href="/contact/">mailing list or send us a tweet</a></strong>.</p>
 
     <div class="well">
       <h3>Some Simple Stuff</h3>
@@ -45,24 +45,6 @@ bodyclass: join
       <p>If you're interested please <a href="/contact/">give us a bell  (email may be best here!)</a>.</p>
     </div>
 
-    <h2 id="get-recognized">Get Recognized!</h2>
-    <p>As a member, your contributions will, in part, be recognized via a badge displayed next your username.  Badges which are issued for ongoing roles are orange, while those issued for one-off contributions are green.  Currently, we are issuing the following badges:</p>
-
-    {% assign odd_num_of_badges = site.data.badges.size | modulo:2 %}
-    {% for badge in site.data.badges %}
-    {% cycle '<div class="row">','' %}
-      <div class="span4">
-	<div class="badgeholder {{ badge.first | map: 'type' }}">
-	  <div id="{{ badge.first.first }}"><span class="icon-{{ badge.first | map: 'icon' }}"></span></div>
-	  <div>{{ badge.first | map: 'text' }}</div>
-	</div>
-	<p>{{ badge.first | map: 'description' }}</p>
-      </div>
-      {% cycle '','</div>' %}
-    {% endfor %}
-    {% if odd_num_of_badges == 1 %}
-  </div>
-  {% endif %}
   </div>
 
   <div class="span4">
