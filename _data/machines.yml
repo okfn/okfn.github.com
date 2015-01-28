@@ -1,0 +1,8 @@
+- name: "machine1"
+  services:
+    - "some service"
+- name: "machine2"
+  services:
+    - "service!"
+    - "yet another service"
+    - "probably too many services on this one"
