@@ -3,7 +3,7 @@ title: "Labs newsletter: 28 November, 2013"
 author: Neil Ashton
 username: nmashton
 layout: post
-projects: [bad-data]
+projects: [bad-data,product-open-data]
 ---
 
 Another busy week at the Labs! We've had lots of discussion around the idea of "bad data", a blog post about Mark's aid tracker, new PyBossa developments, and a call for help with a couple of projects. Next week we can look forward to another [Open Data Maker Night][1] in London.
