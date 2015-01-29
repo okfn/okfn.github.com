@@ -14,7 +14,7 @@
 <div class="badges">
   {% for role in user_roles %}
   {% assign badge = site.data.badges | map: role %}
-  <a href="/join/#{{ role }}">
+  <a href="/members/badges/#{{ role }}">
     <div class="badgeholder {{ badge | map: 'type' }}" title="{{ badge | map: 'text' }}">
       <div><span class="icon-{{ badge | map: 'icon' }}"></span></div>
       <div>{{ badge | map: 'text' }}</div>

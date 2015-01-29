@@ -915,7 +915,7 @@ div.gsc-url-top {
     height: 25px;
 }
 
-.body-join .badgeholder div:last-child {
+.body-badges .badgeholder div:last-child {
     display: inherit !important;
 }
 
