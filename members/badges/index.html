@@ -13,9 +13,9 @@ bodyclass: badges
   badges:
 </p>
 
-{% assign odd_num_of_badges = site.data.badges.size | modulo:2 %}
+{% assign authors = site.categories.blog | map: 'to_liquid' | map: 'username' %}
 {% for badge in site.data.badges %}
-{% cycle '<div class="row">','' %}
+<div class="row">
   <div class="span4">
     <div class="badgeholder {{ badge.first | map: 'type' }}">
       <div id="{{ badge.first.first }}"><span class="icon-{{ badge.first | map: 'icon' }}"></span></div>
@@ -23,8 +23,32 @@ bodyclass: badges
     </div>
     <p>{{ badge.first | map: 'description' }}</p>
   </div>
-  {% cycle '','</div>' %}
-{% endfor %}
-{% if odd_num_of_badges == 1 %}
+
+  <div class="span4">
+    {% for person in site.categories.members %}
+    {% assign user_roles = person.roles %}
+    {% assign user_username = person.username %}
+
+    {% if authors contains user_username %}
+    {% if user_roles %}
+    {% assign user_roles = user_roles | push: 'author' %}
+    {% else %}
+    {% assign user_roles = 'author' %}
+    {% endif %}
+    {% endif %}
+
+    {% if user_roles contains badge.first.first %}
+    {% if person.img %}
+    <a href="{{person.permalink}}">
+      <img class="photo" src="{{person.img}}">
+    </a>
+    {% else %}
+    <a href="{{person.permalink}}">
+      <img class="photo" src="/images/robot.png">
+    </a>
+    {% endif %}
+    {% endif %}
+  {% endfor %}
+  </div>
 </div>
-{% endif %}
+{% endfor %}

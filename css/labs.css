@@ -914,7 +914,14 @@ div.gsc-url-top {
     width: 25px;
     height: 25px;
 }
-
+.body-badges .photo {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 60px;
+  width: 60px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
 .body-badges .badgeholder div:last-child {
     display: inherit !important;
 }
