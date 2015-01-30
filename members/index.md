@@ -25,7 +25,9 @@ or researcher in your area.
 <ul class="persons">
   {% for person in site.categories.members %}
     <li id="{{person.username}}" class="person {% cycle 'odd', 'even' %}">
-      <img class="photo" src="{{person.img}}">
+		{% if person.img %}
+		<img class="photo" src="{{person.img}}">
+		{% endif %}
       <h3 class="name">
         <a href="{{person.username}}">{{person.title}}</a>
         <small class="area">{{person.area}}</small>
