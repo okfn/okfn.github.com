@@ -3,7 +3,7 @@ title: "Labs newsletter: 7 November, 2013"
 author: Neil Ashton
 username: nmashton
 layout: post
-projects: [publicbodies,webshot]
+projects: [publicbodies,webshot,product-open-data]
 ---
 
 
@@ -38,7 +38,7 @@ Discussion of this idea is still happening on the list, so jump in and say what 
 The sixth [Open Data Maker Night][13] took place this past Tuesday in London. Open Data Maker Nights are informal events where people make things with open data, whether apps or insights.
 
 This night's focus was on adding more UK and London data to [OpenSpending][14], and it featured special guest [Max Ogden][15]. It was hosted by the Centre for Creative Collaboration.
-  
+
 Our next Open Data Maker Night will happen in early December. If you want to organize your own, though, it's super easy: just see the [Open Data Maker Night website][16] for help booting, promoting, and running the event.
 
 [1]:	http://webshot.okfnlabs.org/
