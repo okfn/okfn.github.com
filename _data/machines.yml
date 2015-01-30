@@ -1,7 +1,7 @@
-- name: "machine1"
+- name: "s033.okserver.org"
   services:
     - "some service"
-- name: "machine2"
+- name: "s110.okserver.org"
   services:
     - "service!"
     - "yet another service"
