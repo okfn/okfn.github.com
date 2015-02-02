@@ -12,13 +12,12 @@
 {% endif %}
 
 <div class="badges">
-  {% for role in user_roles %}
-  {% assign badge = site.data.badges | map: role %}
+  {% for role in user_roles %}{% for badge in site.data.badges %}{% if badge.id == role %}
   <a href="/members/badges/#{{ role }}">
-    <div class="badgeholder {{ badge | map: 'type' }}" title="{{ badge | map: 'text' }}">
-      <div><span class="icon-{{ badge | map: 'icon' }}"></span></div>
-      <div>{{ badge | map: 'text' }}</div>
+    <div class="badgeholder {{ badge.type }}" title="{{ badge.text }}">
+      <div><span class="icon-{{ badge.icon }}"></span></div>
+      <div>{{ badge.text }}</div>
     </div>
   </a>
-  {% endfor %}
+  {% endif %}{% endfor %}{% endfor %}
 </div>

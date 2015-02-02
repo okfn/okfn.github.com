@@ -15,13 +15,13 @@ bodyclass: badges
 
 {% assign authors = site.categories.blog | map: 'to_liquid' | map: 'username' %}
 {% for badge in site.data.badges %}
-<div class="row">
+<div class="row badgeset">
   <div class="span4">
-    <div class="badgeholder {{ badge.first | map: 'type' }}">
-      <div id="{{ badge.first.first }}"><span class="icon-{{ badge.first | map: 'icon' }}"></span></div>
-      <div>{{ badge.first | map: 'text' }}</div>
+    <div class="badgeholder {{ badge.type }}">
+      <div id="{{ badge.id }}"><span class="icon-{{ badge.icon }}"></span></div>
+      <div>{{ badge.text }}</div>
     </div>
-    <p>{{ badge.first | map: 'description' }}</p>
+    <p>{{ badge.description }}</p>
   </div>
 
   <div class="span4">
@@ -37,7 +37,7 @@ bodyclass: badges
     {% endif %}
     {% endif %}
 
-    {% if user_roles contains badge.first.first %}
+    {% if user_roles contains badge.id %}
     {% if person.img %}
     <a href="{{person.permalink}}">
       <img class="photo" src="{{person.img}}">
