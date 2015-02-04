@@ -21,49 +21,52 @@ to guide you in contributing!
 ## Organize Your Own
 
 We encourage community members to start their own - all you need is enthusiasm!
-Here's a simple recipe (though feel free to run things differently).
+Here's a simple recipe (though feel free to run things differently). It consists of 3 steps:
 
-### 1. Boot the Event (15 minutes)
+1. Boot the Event [5-15m]
+2. Prep for the event including sending out announcements and inviting people [Up to you!]
+3. Run
 
-* **Event page**: create an event page (with signup)
-  * Various options including Meetup, Facebook events, Eventbrite, an
-    [etherpad][], Doodle &hellip;. Key thing is to make it very easy for people to
-    sign up
-  * Meetup option:
-    * Head over to the [Open Knowledge Foundation Meetup Everywhere page][meetup]
-    * Login
-    * Create a new meetup in your location with title "Open Data Maker Night"
-      or "Open Data Maker Party"
+## 1. Boot the Event
+
+### 1.1 Create Event Page
+
+* Create an event page with signup.
+  * We recommend using **[attending.io](http://attending.io/)** - but you can use
+  whatever you like - key thing is to make it very easy for people to sign up
+* Title: "Open Data Maker [Your Location] - [Month] [Year]" - e.g. "Open Data Maker London - Feb 2015"
 * Add information: when, where, what, who (signup). You could copy and paste the
   outline above for the what.
-* [optional] [Tell us about it](/contact/) so we can help advertise it and list it below
 
-[meetup]: http://meetup.com/OpenKnowledgeFoundation/
+### 1.2. Tell us about it (so we can list it)
 
-### 2. Before the Event (10-30 minutes)
+<iframe src="https://docs.google.com/forms/d/1aVfNrdhpPaKDk36HCjpujMzqDsVVr-DhYr3pIYuZWVU/viewform?embedded=true" width="760" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
-* **Announce *and* invite**: Announce to relevant email lists, twitter, facebook etc
+
+## 2. Prepartion for the Event
+
+### 2.1 Let people know about it
+
+* Tweet about it (and @OKFNLabs)
+* Post on Facebook, G+, etc etc
+* Email relevant lists and folks
   * You may want to specifically *invite* (direct email, DM ...) some people
     e.g. if there is someone with an interesting project to share
-* **Prep topics**: prep at least one topic people could work on. Classic options are:
-  * Visualize your Local Gov Finances with [OpenSpending][os]: great as people can
-    get from a CSV to a viz within the 1-2h of the evening and there's a
-    [step-by-step guide][os-guide]
-  * A data expedition / investigation e.g. where is the highest level of
-    unemployment in our country (see [School of Data][scoda] for more on how to
-    organize these)
-* **Scratchpad**: Prep a scratchpad using [etherpad][] or google doc (template coming soon)
+
+### 2.2 Prep materials
+
+* Prep activities for people to work on: we suggest preping at least one topic
+  people could work on - see below for standard options you could use
+
+* Create a Scratchpad: Prep a scratchpad using [etherpad][] or google doc (template coming soon)
   * Suggest creating an easy to remember link for this using bit.ly or similar
   * Must be collaboratively editable
 
-[scoda]: http://schoolofdata.org/
 [etherpad]: http://new.okfnpad.org/
-[os]: http://openspending.org/
-[os-guide]: https://docs.google.com/a/okfn.org/document/d/1YBXX6du4rOV6OutZncT7gyJeOA7zHml3cC1TtWJW65w/edit
 
-### 3. Running the Event
+## 3. Running the Event
 
-Again this is up to you but for a 2-3h evening event we can suggest a structure like:
+You can run your event however you like. This is a suggested outline for for a 2-3h evening event.
 
 * **Welcome** [2-3m]: what is an "Open Data Maker event". Key points:
   * About "making" (apps and insights) with open data
@@ -79,7 +82,22 @@ Again this is up to you but for a 2-3h evening event we can suggest a structure 
 * [Whilst this is going organize food if you have not done that in advance]
 * **Wrap-up** [15m]: at end of evening a quick wrap-up / report back and discussion of when to run next one
 
-### Want Help
+----
+
+## Suggestions for Activities at an Open Data Maker
+
+* Visualize your Local Gov Finances with [OpenSpending][os]: great as people can
+  get from a CSV to a viz within the 1-2h of the evening and there's a
+  [step-by-step guide][os-guide]
+* A data expedition / investigation e.g. where is the highest level of
+  unemployment in our country (see [School of Data][scoda] for more on how to
+  organize these)
+
+[scoda]: http://schoolofdata.org/
+[os]: http://openspending.org/
+[os-guide]: https://docs.google.com/a/okfn.org/document/d/1YBXX6du4rOV6OutZncT7gyJeOA7zHml3cC1TtWJW65w/edit
+
+## Want Help
 
 If you want some suggestions or help just [get in touch](/contact/). 
 
