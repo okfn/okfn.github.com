@@ -532,6 +532,10 @@ ul.filters {
     margin-bottom: 1em;
 }
 
+.body-badges .badgeset a {
+    text-decoration: none;
+}
+
 /* Individual project page */
 .body-project .record .image img {
   max-height: 450px;
