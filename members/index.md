@@ -36,7 +36,8 @@ or researcher in your area.
 
       {% assign user_roles = person.roles %}
       {% assign user_username = person.username %}
-      {% include badges.html %}
+	  {% include badges_load_dynamic_roles_recognition.html %}
+      {% include badges_display.html %}
 
       <ul class="links">
         <li><a href="https://twitter.com/{{ person.twitter }}">

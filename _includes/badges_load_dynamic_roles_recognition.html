@@ -1,0 +1,23 @@
+{% assign authors = site.categories.blog | map: 'username' %}
+{% if authors contains user_username %}
+{% if user_roles %}
+{% assign user_roles = user_roles | push: 'author' %}
+{% else %}
+{% assign user_roles = 'author' %}
+{% endif %}
+{% endif %}
+
+{% assign project_leads = site.emptyarray %}
+{% for project in site.categories.projects %}
+{% for maintainer in project.maintainers %}
+{% assign project_leads = project_leads | push: maintainer %}
+{% endfor %}
+{% endfor %}
+
+{% if project_leads contains user_username %}
+{% if user_roles %}
+{% assign user_roles = user_roles | push: 'project-lead' %}
+{% else %}
+{% assign user_roles = 'project-lead' %}
+{% endif %}
+{% endif %}

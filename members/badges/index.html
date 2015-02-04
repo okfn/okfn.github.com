@@ -13,7 +13,6 @@ bodyclass: badges
   badges:
 </p>
 
-{% assign authors = site.categories.blog | map: 'to_liquid' | map: 'username' %}
 {% for badge in site.data.badges %}
 <div class="row badgeset">
   <div class="span4">
@@ -29,13 +28,7 @@ bodyclass: badges
     {% assign user_roles = person.roles %}
     {% assign user_username = person.username %}
 
-    {% if authors contains user_username %}
-    {% if user_roles %}
-    {% assign user_roles = user_roles | push: 'author' %}
-    {% else %}
-    {% assign user_roles = 'author' %}
-    {% endif %}
-    {% endif %}
+    {% include badges_load_dynamic_roles_recognition.html %}
 
     {% if user_roles contains badge.id %}
     {% if person.img %}

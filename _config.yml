@@ -1,3 +1,4 @@
 highligher: pygments
 markdown: kramdown
 future: false
+emptyarray: []
