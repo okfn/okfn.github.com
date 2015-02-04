@@ -2,11 +2,16 @@
 # metadata including the Font Awesome (3.2.1) icon name as represented
 # here: http://fontawesome.io/3.2.1/icons/
 
-- id: lead
+- id: labs-lead
   icon: rocket
   text: Lead
   type: role
   description: This member currently acts as a "lead".  More information about this role can be found <a href="/about/#leads">here</a>.
+- id: project-lead
+  icon: key
+  text: Project Lead
+  type: role
+  description: This member is recognized for acting as "lead" on one or more Labs <a href="/projects/">projects</a>.
 - id: sysadmin
   icon: terminal
   text: Sysadmin
