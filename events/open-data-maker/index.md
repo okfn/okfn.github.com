@@ -43,7 +43,7 @@ Here's a simple recipe (though feel free to run things differently). It consists
 <iframe src="https://docs.google.com/forms/d/1aVfNrdhpPaKDk36HCjpujMzqDsVVr-DhYr3pIYuZWVU/viewform?embedded=true" width="760" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
 
-## 2. Prepartion for the Event
+## 2. Preparation for the Event
 
 ### 2.1 Let people know about it
 
@@ -55,7 +55,7 @@ Here's a simple recipe (though feel free to run things differently). It consists
 
 ### 2.2 Prep materials
 
-* Prep activities for people to work on: we suggest preping at least one topic
+* Prep activities for people to work on: we suggest prepping at least one topic
   people could work on - see below for standard options you could use
 
 * Create a Scratchpad: Prep a scratchpad using [etherpad][] or google doc (template coming soon)
