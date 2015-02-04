@@ -2,6 +2,7 @@
 title: Members
 layout: two-column
 bodyclass: members
+hasmap: true
 ---
 
 # Labs Members

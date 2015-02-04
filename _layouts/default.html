@@ -26,13 +26,14 @@
   {% endif %}
   <link rel="stylesheet" href="http://okfnlabs.org/githubActivity.js/githubActivity.css" />
   <link rel="stylesheet" href="/css/chosen.min.css" />
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-
   <!-- must have these at the top of the page so we can do scripts in content of specific pages -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
   <script src="/js/underscore.js"></script>
   <script src="http://okfnlabs.org/githubActivity.js/githubActivity.js"></script>
+  {% if page.hasmap %}
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  {% endif %}
   <link rel="alternate" type="application/atom+xml" title="Open Knowledge Labs Feed" href="http://okfnlabs.org/blog/feed.xml" />
   <link rel="shortcut icon" href="http://assets.okfn.org/p/okfn/img/favicon.ico">
 </head>
@@ -75,44 +76,6 @@
 
   <footer>
     <div class="container">
-      <!--div class="row">
-        <div class="span12">
-          <ul class="flatmenu">
-            <li><strong>Open Government</strong></li>
-            <li><a href="http://datahub.io">DataHub</a></li>
-            <li><a href="http://openspending.org">OpenSpending</a></li>
-            <li><a href="http://opengovernmentdata.org/">Open
-              Government Data WG</a></li>
-            <li><a href="http://datacatalogs.org/">DataCatalogs</a></li>
-            <li><a href="http://energy.publicdata.eu/ee/">Europe's Energy</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span12">
-          <ul class="flatmenu">
-            <li><strong>Open Research and Education</strong></li>
-            <li><a href="http://schoolofdata.org">School of Data</a></li>
-            <li><a href="http://access.okfn.org/">@ccess</a></li>
-            <li><a href="http://science.okfn.org">Science</a></li>
-            <li><a href="http://openeconomics.net/">Economics</a></li>
-            <li><a href="http://openbiblio.net/">Bibliography</a></li>
-            <li><a href="http://linguistics.okfn.org/">Linguistics</a></li>
-
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span12">
-          <ul class="flatmenu">
-            <li><strong>Open Culture</strong></li>
-            <li><a href="http://humanities.okfn.org/">Humanities</a></li>
-            <li><a href="http://design.okfn.org/">Design</a></li>
-            <li><a href="http://openglam.org/">GLAM</a></li>
-            <li><a href="http://textusproject.org/">Textus</a></li>
-          </ul>
-        </div>
-      </div-->
       <div class="row logorow">
         <div class="span6">
           <a href="http://www.shuttleworthfoundation.org/"><img src="/img/shuttleworth_small.png" alt="Funded by the Shuttleworth Foundation"></a>
@@ -139,13 +102,13 @@
         <div class="span12 text-right">
           <p class="projects">
             <a href="http://schoolofdata.org/" title="School of Data - Learn Data Skills">
-              <img src="http://assets.okfn.org/p/schoolofdata/img/logo.png" alt="School of Data" /></a>
+              <img src="http://assets.okfn.org/p/schoolofdata/img/logo-s.png" alt="School of Data" /></a>
             <a href="http://okfnlabs.org/" title="Open Knowledge Foundation Labs">
-              <img src="http://assets.okfn.org/p/labs/img/logo.png" alt="" /></a>
+              <img src="http://assets.okfn.org/p/labs/img/logo-s.png" alt="" /></a>
             <a href="http://datahub.io/" title="DataHub - Publish, Find and Share Data Easily">
-              <img src="http://assets.okfn.org/p/datahub/img/logo-full.png" alt="DataHub" /></a>
+              <img src="http://assets.okfn.org/p/datahub/img/logo-full-s.png" alt="DataHub" /></a>
             <a href="http://openspending.org/" title="OpenSpending">
-              <img src="http://assets.okfn.org/p/openspending/img/openspending-logo.png" alt="OpenSpending" /></a>
+              <img src="http://assets.okfn.org/p/openspending/img/openspending-logo-s.png" alt="OpenSpending" /></a>
           </p>
         </div>
       </div>
