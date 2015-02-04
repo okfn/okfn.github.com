@@ -10,14 +10,14 @@
 {% assign project_leads = site.emptyarray %}
 {% for project in site.categories.projects %}
 {% for maintainer in project.maintainers %}
-{% assign project_leads = project_leads | push: maintainer %}
+{% assign project_maintainers = project_maintainers | push: maintainer %}
 {% endfor %}
 {% endfor %}
 
-{% if project_leads contains user_username %}
+{% if project_maintainers contains user_username %}
 {% if user_roles %}
-{% assign user_roles = user_roles | push: 'project-lead' %}
+{% assign user_roles = user_roles | push: 'project-maintainer' %}
 {% else %}
-{% assign user_roles = 'project-lead' %}
+{% assign user_roles = 'project-maintainer' %}
 {% endif %}
 {% endif %}

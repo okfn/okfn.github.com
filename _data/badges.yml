@@ -7,11 +7,11 @@
   text: Lead
   type: role
   description: This member currently acts as a "lead".  More information about this role can be found <a href="/about/#leads">here</a>.
-- id: project-lead
+- id: project-maintainer
   icon: key
-  text: Project Lead
+  text: Project Maintainer
   type: role
-  description: This member is recognized for acting as "lead" on one or more Labs <a href="/projects/">projects</a>.
+  description: This member is recognized for acting as "maintainer" on one or more Labs <a href="/projects/">projects</a>.
 - id: sysadmin
   icon: terminal
   text: Sysadmin
