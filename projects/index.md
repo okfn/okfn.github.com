@@ -33,7 +33,7 @@ bodyclass: code
         <a href="{{project.url | replace:'index.html',''}}">{{project.title}}
         </a>
         {% if project.author %}
-        <div class="author">maintained by {{project.author}}</div>
+        <div class="author">by {{project.author}}</div>
         {% endif %}
       </h2>
       {% if project.imageurl %}
@@ -53,4 +53,3 @@ bodyclass: code
 <script type="text/javascript" src="../js/isotope.pkgd.js"></script>
 <script type="text/javascript" src="../js/imagesloaded.pkgd.js"></script>
 <script type="text/javascript" src="../js/projects.js"></script>
-
