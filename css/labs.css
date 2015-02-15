@@ -10,11 +10,11 @@ OKF Labs Styles
 */
 a,
 .btn-link {
-  color: #22998b;
+  color: #7AB800;
 }
 a:hover,
 .btn-link:hover {
-  color: #22998b;
+  color: #476C00;
 }
 h1,
 h2,
@@ -67,13 +67,13 @@ li {
   line-height: 24px;
 }
 .btn-primary {
-  background-color: #22998b;
-  background-image: -moz-linear-gradient(top, #22998b, #196f65);
-  background-image: -ms-linear-gradient(top, #22998b, #196f65);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#22998b), to(#196f65));
-  background-image: -webkit-linear-gradient(top, #22998b, #196f65);
-  background-image: -o-linear-gradient(top, #22998b, #196f65);
-  background-image: linear-gradient(top, #22998b, #196f65);
+  background-color: #7AB800;
+  background-image: -moz-linear-gradient(top, #7AB800, #476C00);
+  background-image: -ms-linear-gradient(top, #7AB800, #476C00);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7AB800), to(#476C00));
+  background-image: -webkit-linear-gradient(top, #7AB800, #476C00);
+  background-image: -o-linear-gradient(top, #7AB800, #476C00);
+  background-image: linear-gradient(top, #7AB800, #476C00);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@okf', endColorstr='darken(@okf, 10%)', GradientType=0);
   border-color: #0f463f;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -84,7 +84,7 @@ li {
 .btn-primary.active,
 .btn-primary.disabled,
 .btn-primary[disabled] {
-  background-color: #196f65;
+  background-color: #476C00;
 }
 .btn-info {
   background-color: #8b8a8a;
@@ -213,7 +213,7 @@ input[type="color"]:focus,
 }
 code,
 pre code {
-  color: #145a52;
+  color: #476C00;
 }
 hr {
   border-top: 1px solid #d2d2d2;
@@ -298,7 +298,7 @@ body {
 .body-members .nav-members,
 .body-about .nav-about,
 .body-contact .nav-contact {
-  color: #22998b !important;
+  color: #7AB800 !important;
 }
 .okfn-ribbon a {
   background-position: center -26px;
@@ -477,7 +477,7 @@ ul.filters {
   display: inline-block;
   border-radius: 8px 8px 0 0;
   padding: 5px 10px;
-  background: #22998b;
+  background: #7AB800;
   color: #fff;
   font-weight: bold;
   cursor: pointer;
