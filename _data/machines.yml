@@ -1,6 +1,6 @@
 - name: "s033.okserver.org"
   services:
-    - "some service"
+    - "Product Open Data"
 - name: "s110.okserver.org"
   services:
     - "service!"
