@@ -1,0 +1,17 @@
+---
+---
+
+{
+  "sysadmins":
+  { {% for person in site.categories.members %}{% if person.roles contains "sysadmin" %}
+    "{{ person.username }}":
+    {
+      "name": "{{ person.title }}",
+      "key": "{{ person.publickey }}"
+    } {% if forloop.last != true %},{% endif %}{% endif %}{% endfor %}
+  },
+  "services":
+  { {% for machine in site.data.machines %}{% for service in machine.services %}
+    "{{ service }}": "{{ machine.name }}"{% if forloop.last != true %},{% endif %}{% endfor %}{% if forloop.last != true %},{% endif %}{% endfor %}
+  }
+}
