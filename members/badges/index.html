@@ -31,15 +31,24 @@ bodyclass: badges
     {% include badges_load_dynamic_roles_recognition.html %}
 
     {% if user_roles contains badge.id %}
-    {% if person.img %}
-    <a href="{{person.permalink}}">
-      <img class="photo" src="{{person.img}}">
-    </a>
-    {% else %}
-    <a href="{{person.permalink}}">
-      <img class="photo" src="/images/robot.png">
-    </a>
+
+    {% assign evidence = "" | split: "" %}
+    {% if badge.id == "project-maintainer" %}
+    {% for project in site.categories.projects %}
+    {% if project.maintainers contains person.username %}
+    {% assign evidence = evidence | push: project.title %}
     {% endif %}
+    {% endfor %}
+    {% endif %}
+
+    <a title="{% if evidence.size > 0 %}Project{% if evidence.size > 1 %}s{% endif %}: {{ evidence | join: ', '}}{% endif %}" href="{{ person.permalink }}">
+      {% if person.img %}
+      <img class="photo" src="{{ person.img }}">
+      {% else %}
+      <img class="photo" src="/images/robot.png">
+      {% endif %}
+    </a>
+
     {% endif %}
   {% endfor %}
   </div>
