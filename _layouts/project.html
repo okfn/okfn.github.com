@@ -54,10 +54,10 @@ bodyclass: project
     <div class="span6">
       <div class="image">
         {% if page.imageurl %}
-        {% if page.imageurl contains 'http' %}
+        {% if site.data.projectimgs contains page.slug %}
         <img src="/img/projects/{{page.slug}}" alt="{{page.title}}" />
         {% else %}
-        <img src="{{page.imageurl}}" alt="{{page.title}}" />
+        <img src="{{page.imageurl}}" alt="{{page.title}}" />      
         {% endif %}
         {% endif %}
       </div>
