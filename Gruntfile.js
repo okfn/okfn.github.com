@@ -32,7 +32,7 @@ module.exports = function(grunt) {
     
   grunt.registerTask('dist', 'prepare site for distribution', function() {
     // run all the tasks in order  
-    grunt.task.run(['projectimg', 'imagemin']);
+    grunt.task.run(['projectimg', 'curl', 'imagemin']);
   });
   
   grunt.registerTask('projectimg', 'generate json list of project images', function(arg) {
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
       // check if imageurl exists
       if (fileyaml.imageurl){ 
         // check if external image url
-        if (fileyaml.imageurl.indexOf("http") >= 0 ){
+        if (fileyaml.imageurl.indexOf('//') >= 0 ){
             imageurls["img/projects/"+fileyaml.slug] = fileyaml.imageurl;
             projectlist[projectlist.length] = fileyaml.slug;
         }
