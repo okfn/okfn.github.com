@@ -14,7 +14,7 @@ But if source code and laws have a similar information structure, why not apply 
 
 [Bundes-Git](https://github.com/bundestag/gesetze) is a Git version control repository of all German Federal Laws and Regulations as Markdown. The goal was to come up with the simplest solution to handle laws that could possibly work and integrate it well into the existing developer ecosystem.
 
-The idea has been well received with [an article on Wired.com](http://www.wired.com/wiredenterprise/2012/08/bundestag/) and articles on German IT news sites [Heise](http://www.heise.de/open/meldung/Entwicklungshistorie-von-Gesetzen-mit-Git-verfolgen-1662758.html) and [Golem](www.golem.de/news/bundesgit-ein-git-repository-fuer-deutsche-gesetze-1208-93709.html).
+The idea has been well received with [an article on Wired.com](http://www.wired.com/wiredenterprise/2012/08/bundestag/) and articles on German IT news sites [Heise](http://www.heise.de/open/meldung/Entwicklungshistorie-von-Gesetzen-mit-Git-verfolgen-1662758.html) and [Golem](http://www.golem.de/news/bundesgit-ein-git-repository-fuer-deutsche-gesetze-1208-93709.html).
 
 The popularity can surely also be attributed to our marvelous Bundes-Git mascot, dubbed octo eagle, thought up by myself and designed by [Konstantin Käfer](https://kkaefer.com/) released under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) (please go this way if you are [interested in a t-shirt or hoodie](http://bundesgit.spreadshirt.de/)).
 

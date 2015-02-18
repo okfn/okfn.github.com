@@ -2,13 +2,13 @@
 <html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
   <meta charset="utf-8">
-  <title>{{page.title}} - Open Knowledge Foundation Labs</title>
+  <title>{{page.title}} - Open Knowledge Labs</title>
 
   <!-- Open Graph Protocol http://ogp.me/ -->
-  <meta property="og:title" content="Open Knowledge Foundation Labs" />
+  <meta property="og:title" content="Open Knowledge Labs" />
   <meta property="og:description" content="We're a community of civic hackers, data wranglers and ordinary citizens intrigued and excited by the possibilities of combining technology and information for good – making government more accountable, culture more accessible and science more efficient." />
   <meta property="og:url" content="http://okfnlabs.org" />
-  <meta property="og:image" content="http://okfnlabs.org/img/okfnlabs.png" />
+  <meta property="og:image" content="http://assets.okfn.org/p/labs/img/icon-512.png" />
 
   <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -26,16 +26,16 @@
   {% endif %}
   <link rel="stylesheet" href="http://okfnlabs.org/githubActivity.js/githubActivity.css" />
   <link rel="stylesheet" href="/css/chosen.min.css" />
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-
   <!-- must have these at the top of the page so we can do scripts in content of specific pages -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
   <script src="/js/underscore.js"></script>
   <script src="http://okfnlabs.org/githubActivity.js/githubActivity.js"></script>
+  {% if page.hasmap %}
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-
-  <link rel="alternate" type="application/atom+xml" title="Open Knowledge Foundation Labs Feed" href="http://okfnlabs.org/blog/feed.xml" />
-  <link rel="shortcut icon" href="http://assets.okfn.org/p/okfn/img/favicon.ico">
+  {% endif %}
+  <link rel="alternate" type="application/atom+xml" title="Open Knowledge Labs Feed" href="http://okfnlabs.org/blog/feed.xml" />
+  <link rel="shortcut icon" href="https://d22739b8qd5enr.cloudfront.net/assets/favicon.ico">
 </head>
 
 <body class="body-{{page.bodyclass}}">
@@ -46,7 +46,7 @@
     </div>
     <div class="container">
       <div class="okfn-ribbon">
-        <a href="http://okfn.org/" data-toggle="collapse" data-target="#okf-panel" title="Part of the Open Knowledge Foundation Network">An Open Knowledge Foundation Site</a>
+        <a href="http://okfn.org/" data-toggle="collapse" data-target="#okf-panel" title="Part of the Open Knowledge Network">An Open Knowledge Site</a>
       </div>
     </div>
   </div>
@@ -54,7 +54,7 @@
 	<div class="navbar">
     <div class="navbar-inner">
       <div class="container">
-        <a href="/" class="brand"><img src="http://assets.okfn.org/p/labs/img/logo.png" alt="Open Knowledge Foundation Labs" style="height:62px;"></a>
+        <a href="/" class="brand"><img src="http://assets.okfn.org/p/labs/img/logo-s.png" alt="Open Knowledge Labs" style="height:62px;"></a>
         <ul class="nav pull-right">
           <li><a class="nav-join" href="/join">Join</a></li>
           <li><a class="nav-blog" href="/blog">Blog</a></li>
@@ -76,51 +76,14 @@
 
   <footer>
     <div class="container">
-      <!--div class="row">
-        <div class="span12">
-          <ul class="flatmenu">
-            <li><strong>Open Government</strong></li>
-            <li><a href="http://datahub.io">DataHub</a></li>
-            <li><a href="http://openspending.org">OpenSpending</a></li>
-            <li><a href="http://opengovernmentdata.org/">Open
-              Government Data WG</a></li>
-            <li><a href="http://datacatalogs.org/">DataCatalogs</a></li>
-            <li><a href="http://energy.publicdata.eu/ee/">Europe's Energy</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span12">
-          <ul class="flatmenu">
-            <li><strong>Open Research and Education</strong></li>
-            <li><a href="http://schoolofdata.org">School of Data</a></li>
-            <li><a href="http://access.okfn.org/">@ccess</a></li>
-            <li><a href="http://science.okfn.org">Science</a></li>
-            <li><a href="http://openeconomics.net/">Economics</a></li>
-            <li><a href="http://openbiblio.net/">Bibliography</a></li>
-            <li><a href="http://linguistics.okfn.org/">Linguistics</a></li>
-
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span12">
-          <ul class="flatmenu">
-            <li><strong>Open Culture</strong></li>
-            <li><a href="http://humanities.okfn.org/">Humanities</a></li>
-            <li><a href="http://design.okfn.org/">Design</a></li>
-            <li><a href="http://openglam.org/">GLAM</a></li>
-            <li><a href="http://textusproject.org/">Textus</a></li>
-          </ul>
-        </div>
-      </div-->
       <div class="row logorow">
         <div class="span6">
           <a href="http://www.shuttleworthfoundation.org/"><img src="/img/shuttleworth_small.png" alt="Funded by the Shuttleworth Foundation"></a>
         </div>
         <div class="span6 text-right">
-          <a href="http://okfn.org" class="okf-logo" title="Part of the Open Knowledge Foundation"><img src="/img/okfn.png" alt="Open
-            Knowledge Foundation"></a>
+          <a href="http://okfn.org" class="okf-logo" title="Part of Open Knowledge">
+	    <img src="http://assets.okfn.org/p/okfn/img/okfn-logo-landscape-black-s.png" alt="Open Knowledge">
+	  </a>
         </div>
       </div>
       <div class="row">
@@ -128,6 +91,7 @@
           <ul class="flatmenu">
             <li><a href="/about/">About Us</a></li>
             <li><a href="http://okfn.org/opendata/">Open Data</a></li>
+            <li><a href="https://github.com/okfn/okfn.github.com">Source Code</a></li>
             <li><a href="http://okfn.org/terms-of-use/">Terms of Use</a></li>
             <li><a href="http://okfn.org/privacy-policy/">Privacy Policy</a></li>
             <li><a href="http://okfn.org/ip-policy/">IP Policy</a></li>
@@ -138,13 +102,13 @@
         <div class="span12 text-right">
           <p class="projects">
             <a href="http://schoolofdata.org/" title="School of Data - Learn Data Skills">
-              <img src="http://assets.okfn.org/p/schoolofdata/img/logo.png" alt="School of Data" /></a>
+              <img src="http://assets.okfn.org/p/schoolofdata/img/logo-s.png" alt="School of Data" /></a>
             <a href="http://okfnlabs.org/" title="Open Knowledge Foundation Labs">
-              <img src="http://assets.okfn.org/p/labs/img/logo.png" alt="" /></a>
+              <img src="http://assets.okfn.org/p/labs/img/logo-s.png" alt="" /></a>
             <a href="http://datahub.io/" title="DataHub - Publish, Find and Share Data Easily">
-              <img src="http://assets.okfn.org/p/datahub/img/logo-full.png" alt="DataHub" /></a>
+              <img src="http://assets.okfn.org/p/datahub/img/logo-full-s.png" alt="DataHub" /></a>
             <a href="http://openspending.org/" title="OpenSpending">
-              <img src="http://assets.okfn.org/p/openspending/img/openspending-logo.png" alt="OpenSpending" /></a>
+              <img src="http://assets.okfn.org/p/openspending/img/openspending-logo-s.png" alt="OpenSpending" /></a>
           </p>
         </div>
       </div>
@@ -169,5 +133,3 @@
 <script src="http://assets.okfn.org/themes/okfn/okf-panel.js" type="text/javascript"></script>
 </body>
 </html>
-
-

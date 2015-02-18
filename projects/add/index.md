@@ -41,6 +41,7 @@ list and following Labs on twitter](/contact/).
                service, tool]}
         author: {author(s) names e.g. Joe Bloggs}
         maintainers: {list of labs username(s) of those who maintain the project}
+        contributors: {list of labs username(s) of those who contribute to the project}
         featured: {set to 'yes' to add to the list of featured projects}
         github_user: {the github user who owns the repo e.g. okfn}
         github_repo: {the github repo name e.g. awesome-data-visualizer}
@@ -55,6 +56,7 @@ list and following Labs on twitter](/contact/).
         stage: {one of [idea, alpha, prototype, production, deployed, mature]}
         status: {set to 'retired' if the project is no longer active}
         tags: {list of relevant tags e.g. [django, google spreadsheets]}
+        tagline: {one-liner description of project}
         ---
 
         A brief description of the project. You can use html (or markdown - if

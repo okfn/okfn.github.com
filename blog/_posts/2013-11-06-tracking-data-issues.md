@@ -3,6 +3,7 @@ layout: post
 author: Rufus Pollock
 username: rgrp
 title: Tracking Issues with Data the Simple Way
+projects: [bad-data]
 ---
 
 [Data Issues][issues] is a prototype initiative to track “issues” with data using a simple bug tracker—in this case, GitHub Issues.
@@ -47,4 +48,3 @@ If you want to discuss new directions for Data Issues or point out something you
 [5]:	https://github.com/datasets/issues/issues/new
 [6]:	http://blog.okfn.org/2013/07/02/git-and-github-for-data/
 [7]:	http://blog.okfn.org/2011/03/31/building-the-open-data-ecosystem/
-

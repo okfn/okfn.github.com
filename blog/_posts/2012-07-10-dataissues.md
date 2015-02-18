@@ -8,7 +8,7 @@ username: pudo
 *On June 21st, the Knight News Challenge Round on Data ended. The day before, 
 [Rufus](http://rufuspollock.org/), [Ross](https://twitter.com/rossjones) and
 I sat down to write out some ideas that we'd been discussing for a while. While
-we submitted proposals for [Grano](/2012/07/09/grano.html) and [DataProtocols](http://newschallenge.tumblr.com/post/25576949597/data-protocols-rough-consensus-running-code-and), we decided to hold back on this idea for another round. Still, sharing is caring.*
+we submitted proposals for [Grano](/blog/2012/07/09/grano.html) and [DataProtocols](http://newschallenge.tumblr.com/post/25576949597/data-protocols-rough-consensus-running-code-and), we decided to hold back on this idea for another round. Still, sharing is caring.*
 
 **1. What do you propose to do? [20 words]**
 

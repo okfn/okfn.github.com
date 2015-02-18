@@ -1,16 +1,16 @@
 ---
-layout: nil
+layout: null
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- 
- <title>Open Knowledge Foundation Labs: The Data Wrangling Blog</title>
+
+ <title>Open Knowledge Labs: The Data Wrangling Blog</title>
  <link href="http://okfnlabs.org/blog/feed.xml" rel="self"/>
  <link href="http://okfnlabs.org/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://okfnlabs.org/</id>
  <author>
-   <name>The Open Knowledge Foundation</name>
+   <name>Open Knowledge Labs</name>
  </author>
 
  {% for post in site.categories.blog %}

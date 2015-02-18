@@ -7,7 +7,8 @@ helpwanted: yes
 imageurl: /img/open-knowledge-labs-website.png
 language: [html5, markdown, css, javascript]
 layout: project
-maintainers: [rgrp, andylolz]
+maintainers: [rgrp, andylolz, dfowler]
+contributors: [mikechelen]
 permalink: /projects/open-knowledge-labs-website/index.html
 projecturl: http://okfnlabs.org/
 slug: open-knowledge-labs-website

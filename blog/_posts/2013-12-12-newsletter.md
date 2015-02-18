@@ -3,7 +3,7 @@ title: "Labs newsletter: 12 December, 2013"
 author: Neil Ashton
 username: nmashton
 layout: post
-projects: [annotator,nomenklatura]
+projects: [annotator,nomenklatura,bad-data]
 ---
 
 We're back after taking a break last week with a bumper crop of updates. A few things have changed: Labs activities are now coordinated entirely through GitHub. Meanwhile, there's been some updates around the [Nomenklatura][1], [Annotator][2], and [Data Protocols][3] projects and some new posts on the [Labs blog][4].
@@ -62,11 +62,11 @@ Labs members have added a couple new posts to the blog since the last newsletter
 
 If you have some spare time this holiday season, why not spend it helping out with Labs? We're always always looking for new people to [join the community][31]—visit the [Labs issues][32] and the [Ideas Page][33] to get some ideas for how you can join in.
 
-[1]:	nomenklatura.okfnlabs.org
+[1]:	http://nomenklatura.okfnlabs.org
 [2]:	http://okfnlabs.org/annotator/
 [3]:	http://www.dataprotocols.org
 [4]:	http://okfnlabs.org/blog/
-[5]:	trello.com
+[5]:	http://trello.com
 [6]:	http://github.com
 [7]:	https://github.com/okfn/okfn.github.com/issues/
 [8]:	http://okfnlabs.org/bad-data/

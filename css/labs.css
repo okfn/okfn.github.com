@@ -10,11 +10,11 @@ OKF Labs Styles
 */
 a,
 .btn-link {
-  color: #22998b;
+  color: #7AB800;
 }
 a:hover,
 .btn-link:hover {
-  color: #22998b;
+  color: #476C00;
 }
 h1,
 h2,
@@ -67,13 +67,13 @@ li {
   line-height: 24px;
 }
 .btn-primary {
-  background-color: #22998b;
-  background-image: -moz-linear-gradient(top, #22998b, #196f65);
-  background-image: -ms-linear-gradient(top, #22998b, #196f65);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#22998b), to(#196f65));
-  background-image: -webkit-linear-gradient(top, #22998b, #196f65);
-  background-image: -o-linear-gradient(top, #22998b, #196f65);
-  background-image: linear-gradient(top, #22998b, #196f65);
+  background-color: #7AB800;
+  background-image: -moz-linear-gradient(top, #7AB800, #476C00);
+  background-image: -ms-linear-gradient(top, #7AB800, #476C00);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7AB800), to(#476C00));
+  background-image: -webkit-linear-gradient(top, #7AB800, #476C00);
+  background-image: -o-linear-gradient(top, #7AB800, #476C00);
+  background-image: linear-gradient(top, #7AB800, #476C00);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@okf', endColorstr='darken(@okf, 10%)', GradientType=0);
   border-color: #0f463f;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -84,7 +84,7 @@ li {
 .btn-primary.active,
 .btn-primary.disabled,
 .btn-primary[disabled] {
-  background-color: #196f65;
+  background-color: #476C00;
 }
 .btn-info {
   background-color: #8b8a8a;
@@ -213,7 +213,7 @@ input[type="color"]:focus,
 }
 code,
 pre code {
-  color: #145a52;
+  color: #476C00;
 }
 hr {
   border-top: 1px solid #d2d2d2;
@@ -298,7 +298,7 @@ body {
 .body-members .nav-members,
 .body-about .nav-about,
 .body-contact .nav-contact {
-  color: #22998b !important;
+  color: #7AB800 !important;
 }
 .okfn-ribbon a {
   background-position: center -26px;
@@ -477,7 +477,7 @@ ul.filters {
   display: inline-block;
   border-radius: 8px 8px 0 0;
   padding: 5px 10px;
-  background: #22998b;
+  background: #7AB800;
   color: #fff;
   font-weight: bold;
   cursor: pointer;
@@ -510,34 +510,13 @@ ul.filters {
   margin-top: 3px;
 }
 
-.projects .record .image img {
-  max-width: 100%;
-  max-height: 450px;
-  vertical-align: center;
-  text-align: center;
-  margin: auto;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-}
-
 .projects .description {
   margin-top: 5px;
 }
 
 /* Individual project page */
-.body-project .record .image {
-  margin-left: 30px;
-  float: right;
-  width: 450px;
-  min-height: 300px;
-}
-
 .body-project .record .image img {
-  max-width: 100%;
   max-height: 450px;
-  vertical-align: center;
-  text-align: center;
-  margin: auto;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
@@ -545,6 +524,10 @@ ul.filters {
 .body-project .meta {
   margin-left: 0;
   list-style-type: none;
+}
+
+.rhs {
+    margin-top: 1em;
 }
 
 /* Members list of projects */
@@ -569,7 +552,7 @@ ul.persons {
   padding: 0;
   margin: 0;
 }
-ul.persons .photo {
+.body-members .photo, ul.persons .photo {
   float: left;
   margin-right: 1em;
   max-height: 120px;
@@ -643,7 +626,7 @@ footer .text-right .okf-logo {
   float: right;
 }
 footer .okf-logo {
-  background-image: url(http://assets.okfn.org/images/logo/okfn-logo-landscape-black.png);
+  background-image: url('http://assets.okfn.org/p/okfn/img/okfn-logo-landscape-black-s.png');
   background-repeat: no-repeat;
   width: 150px;
   height: 39px;
@@ -900,3 +883,49 @@ div.gsc-url-top {
 }
 
 #map { height: 300px; }
+
+.badgeholder {
+    display: inline-block;
+    text-align: center;
+}
+
+.role div:first-child {
+    background: url('/img/badge_orange.png');
+    background-size: cover;
+}
+.recognition div:first-child {
+    background: url('/img/badge_green.png');
+    background-size: cover;
+}
+
+.badgeholder div:first-child {
+    color: #f5f5f5;
+    display: inherit;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+.persons .badgeholder div:first-child {
+    line-height: 25px;
+    font-size: 12px;
+    width: 25px;
+    height: 25px;
+}
+
+.body-badges .badgeholder div:last-child {
+    display: inherit !important;
+}
+
+.badgeholder div:last-child {
+    color: #333;
+    display: none;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.badges a:hover {
+    text-decoration: none;
+}
