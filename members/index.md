@@ -22,6 +22,7 @@ or researcher in your area.
 
 ## Members
 
+{% include badges_load_dynamic.html %}
 <ul class="persons">
   {% for person in site.categories.members %}
     <li id="{{person.username}}" class="person {% cycle 'odd', 'even' %}">
@@ -36,7 +37,7 @@ or researcher in your area.
 
       {% assign user_roles = person.roles %}
       {% assign user_username = person.username %}
-	  {% include badges_load_dynamic_roles_recognition.html %}
+	  {% include badges_push_dynamic.html %}
       {% include badges_display.html %}
 
       <ul class="links">

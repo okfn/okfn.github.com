@@ -24,9 +24,10 @@ bodyclass: members
 
   {{content}}
 
+  {% include badges_load_dynamic.html %}
   {% assign user_roles = page.roles %}
   {% assign user_username = page.username %}
-  {% include badges_load_dynamic_roles_recognition.html %}
+  {% include badges_push_dynamic.html %}
   {% include badges_display.html %}
 
   <ul class="links" style="margin-top: 10px;">

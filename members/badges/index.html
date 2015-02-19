@@ -13,6 +13,7 @@ bodyclass: badges
   badges:
 </p>
 
+{% include badges_load_dynamic.html %}
 {% for badge in site.data.badges %}
 <div class="row badgeset">
   <div class="span4">
@@ -27,9 +28,7 @@ bodyclass: badges
     {% for person in site.categories.members %}
     {% assign user_roles = person.roles %}
     {% assign user_username = person.username %}
-
-    {% include badges_load_dynamic_roles_recognition.html %}
-
+    {% include badges_push_dynamic.html %}
     {% if user_roles contains badge.id %}
 
     {% assign evidence = "" | split: "" %}
