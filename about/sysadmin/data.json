@@ -11,7 +11,12 @@
     } {% if forloop.last != true %},{% endif %}{% endif %}{% endfor %}
   },
   "services":
-  { {% for machine in site.data.machines %}{% for service in machine.services %}
-    "{{ service }}": "{{ machine.name }}"{% if forloop.last != true %},{% endif %}{% endfor %}{% if forloop.last != true %},{% endif %}{% endfor %}
-  }
+    { {% for machine in site.data.machines %}
+      "{{ machine.name }}":
+      { {% for service in machine.services %}
+	 "name": "{{ service.name }}",
+	 "url": "{{ service.url }}"
+      }{% if forloop.last != true %},{% endif %}{% endfor %}{% if forloop.last != true %},{% endif %}{% endfor %}
+
+    }
 }
