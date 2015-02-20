@@ -15,8 +15,8 @@ Applications range from simple validation checks on CSV files, to integration wi
 
 The codebase currently ships with two validators that can be used in a pipeline:
 
-The [StructureValidator](https://github.com/okfn/tabular-validator/blob/master/tabular_validator/validators/structure.py) checks for common structural errors
-The [SchemaValidator](https://github.com/okfn/tabular-validator/blob/master/tabular_validator/validators/schema.py) checks for conformance to a JSON Table Schema
+* The [StructureValidator](https://github.com/okfn/tabular-validator/blob/master/tabular_validator/validators/structure.py) checks for common structural errors
+* The [SchemaValidator](https://github.com/okfn/tabular-validator/blob/master/tabular_validator/validators/schema.py) checks for conformance to a JSON Table Schema
 
 There is a hook to add custom validators, and there are plans to include more validators in the core library.
 
@@ -80,6 +80,6 @@ Like the Tabular Validator package, these are all *alpha releases*, but each has
 
 [JTSKit](https://github.com/okfn/jtskit-py) is a Python package providing a set of utilities for working with JSON Table Schema.
 
-## TVWeb
+### TVWeb
 
 [TVWeb](https://github.com/okfn/tabular-validator-web) is a flask application that provides a Web API over Tabular Validator, as well as a simple form UI.
