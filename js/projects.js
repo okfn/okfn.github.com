@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
     return false;
   });
 
-  var filters = {tags: {}, type: {}, status: {}, language: {}};
+  var filters = {tags: {}, type: {}, status: {}, language: {}, title: {}};
 
   container.find('.record').each(function() {
     // Find the current project's detail URL

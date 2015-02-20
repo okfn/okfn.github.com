@@ -1,0 +1,15 @@
+{% if authors contains user_username %}
+{% if user_roles %}
+{% assign user_roles = user_roles | push: 'author' %}
+{% else %}
+{% assign user_roles = 'author' %}
+{% endif %}
+{% endif %}
+
+{% if project_maintainers contains user_username %}
+{% if user_roles %}
+{% assign user_roles = user_roles | push: 'project-maintainer' %}
+{% else %}
+{% assign user_roles = 'project-maintainer' %}
+{% endif %}
+{% endif %}
