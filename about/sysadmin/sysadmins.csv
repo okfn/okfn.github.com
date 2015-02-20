@@ -1,6 +1,4 @@
 ---
 ---
-username,name,ssh key
-{% for person in site.categories.members %}{% if person.roles contains "sysadmin" %}
-"{{ person.username }}","{{ person.title }}","{{ person.publickey }}"
-{% endif %}{% endfor %}
+username,name,ssh key{% for person in site.categories.members %}{% if person.roles contains "sysadmin" %}
+"{{ person.username }}","{{ person.title }}","{{ person.publickey }}"{% endif %}{% endfor %}
