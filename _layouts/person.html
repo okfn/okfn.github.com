@@ -24,9 +24,11 @@ bodyclass: members
 
   {{content}}
 
+  {% include badges_load_dynamic.html %}
   {% assign user_roles = page.roles %}
   {% assign user_username = page.username %}
-  {% include badges.html %}
+  {% include badges_push_dynamic.html %}
+  {% include badges_display.html %}
 
   <ul class="links" style="margin-top: 10px;">
     <li><i class="icon-folder-close"></i> <a href="#projects">Projects</a></li>

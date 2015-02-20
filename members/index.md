@@ -22,10 +22,13 @@ or researcher in your area.
 
 ## Members
 
+{% include badges_load_dynamic.html %}
 <ul class="persons">
   {% for person in site.categories.members %}
     <li id="{{person.username}}" class="person {% cycle 'odd', 'even' %}">
-      <img class="photo" src="{{person.img}}">
+		{% if person.img %}
+		<img class="photo" src="{{person.img}}">
+		{% endif %}
       <h3 class="name">
         <a href="{{person.username}}">{{person.title}}</a>
         <small class="area">{{person.area}}</small>
@@ -34,7 +37,8 @@ or researcher in your area.
 
       {% assign user_roles = person.roles %}
       {% assign user_username = person.username %}
-      {% include badges.html %}
+	  {% include badges_push_dynamic.html %}
+      {% include badges_display.html %}
 
       <ul class="links">
         <li><a href="https://twitter.com/{{ person.twitter }}">
