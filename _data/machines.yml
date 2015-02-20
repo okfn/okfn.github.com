@@ -3,12 +3,13 @@
     - name: Product Open Data
       url: http://product-open-data.com
       slug: product-open-data
+      notes: raw data stored here, not running yet
     - name: For Your Information
       url: http://www.fyi.org.nz
       slug: fyi-org-nz
     - name: Linked Open Vocabularies
       url: http://lov.okfn.org
-    - name: Sparqles
+    - name: SPARQL Endpoints Status
       url: http://sparqles.okfn.org
 - name: s110.okserver.org
   services:
@@ -21,7 +22,7 @@
       url: http://discuss.okfn.org
     - name: Open Data Index 2014
       url: http://secret.index.okfn.org
-      notes: no longer necessary
+      notes: no longer a secret
     - name: Open Transport Datahub
       url: http://transport.datahub.io
-      notes: simple redirect
+      notes: simple redirect to http://datahub.io/organization/opentransport
