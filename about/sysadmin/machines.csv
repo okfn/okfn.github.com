@@ -1,0 +1,6 @@
+---
+---
+machine,service name,service url,labs slug,notes
+{% for machine in site.data.machines %}{% for service in machine.services %}
+"{{ machine.name }}","{{ service.name }}","{{ service.url }}","{{ service.slug }}","{{ service.notes }}"
+{% endfor %}{% endfor %}
