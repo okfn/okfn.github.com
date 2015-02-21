@@ -16,7 +16,7 @@ http://beta.offenedaten.de:9998/tika
 
 To test it, just throw some images with text in them at it. For example, on a terminal on Mac or Linux:
 
-    curl -T tiff_example.tif http:///beta.offenedaten.de:9998/tika
+    curl -T tiff_example.tif http://beta.offenedaten.de:9998/tika
 
 ### How it was built
 My involvement in the code for this project was zero. I just took the [web server part](http://wiki.apache.org/tika/TikaJAXRS) of the developer version of the [Apache Tika Project](http://tika.apache.org/) and put it on a server. OCR support using [Tesseract](https://code.google.com/p/tesseract-ocr/) has [recently been added](http://wiki.apache.org/tika/TikaOCR) to Tika.
