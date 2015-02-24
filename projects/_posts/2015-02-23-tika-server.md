@@ -5,6 +5,7 @@ slug: tikaserver
 permalink: /projects/tikaserver/index.html
 type: [service]
 author: Matt Fullerton
+maintainers: [mattfullerton]
 featured: no
 github_user: mattfullerton
 github_repo: tika-tesseract-docker

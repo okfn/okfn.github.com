@@ -5,6 +5,7 @@ slug: dataportals
 permalink: /projects/dataportals/index.html
 type: [webapp]
 author: Rufus Pollock
+maintainers: [rgrp, mattfullerton]
 featured: no
 github_user: okfn
 github_repo: dataportals.org
