@@ -13,6 +13,7 @@ helpwanted: yes
 typeofhelp: [project managing, coding, testing]
 language: [JavaScript]
 projecturl: http://www.dataportals.org/
+imageurl: https://cloud.githubusercontent.com/assets/772616/6437513/ffd4c264-c0d0-11e4-8cc2-f70b7a88444e.png
 stage: mature
 tags: [node.js]
 tagline: A catalog of data portals around the world
