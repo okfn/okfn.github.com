@@ -3,23 +3,26 @@
     - name: Product Open Data
       url: http://product-open-data.com
       slug: product-open-data
-      notes: raw data stored here, not running yet
+      notes: PHP, MySQL
     - name: For Your Information
       url: http://www.fyi.org.nz
       slug: fyi-org-nz
+      notes: Passenger, PostgreSQL
     - name: Linked Open Vocabularies
       url: http://lov.okfn.org
+      notes: NodeJS, Java
     - name: SPARQL Endpoints Status
       url: http://sparqles.okfn.org
+      notes: Java
 - name: s110.okserver.org
   services:
     - name: Nomenklatura
       url: http://nomenklatura.okfnlabs.org/
       slug: nomenklatura
-    - name: Booktype
-      url: http://booktype.okfn.org
+      notes: Python, PostgreSQL, Gunicorn
     - name: Open Knowledge Discussion Forums
       url: http://discuss.okfn.org
+      notes: Discourse
     - name: Open Data Index 2014
       url: http://secret.index.okfn.org
       notes: no longer a secret
