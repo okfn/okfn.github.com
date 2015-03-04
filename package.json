@@ -1,0 +1,25 @@
+{
+  "name": "okfn.github.com",
+  "version": "0.1.0",
+  "description": "This is jekyll-based site for running <http://okfnlabs.org/>.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/okfn/okfn.github.com.git"
+  },
+  "author": "OKFN Labs <labs@okfn.org> (https://github.com/okfn/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/okfn/okfn.github.com/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "js-yaml": "~3.2.3",
+    "yaml-front-matter": "~3.0.1",
+    "grunt-curl": "~2.0.3",
+    "grunt-contrib-imagemin": "~0.9.2"
+  }
+}
