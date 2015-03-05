@@ -9,9 +9,9 @@ redirect_from: "/introducing-tabular-validator.html"
 
 ## What is it?
 
-[Tabular Validator](https://github.com/okfn/goodtables) is a Python package for validating tabular data through a processing pipeline.
+[Good Tables](https://github.com/okfn/goodtables) is a Python package for validating tabular data through a processing pipeline.
 
-It is built by [Open Knowledge](https://okfn.org), with funding from the [Open Data User Group](https://www.gov.uk/government/groups/open-data-user-group). Tabular Validator is currently an *alpha release*.
+It is built by [Open Knowledge](https://okfn.org), with funding from the [Open Data User Group](https://www.gov.uk/government/groups/open-data-user-group). Good Tables is currently an *alpha release*.
 
 Applications range from simple validation checks on CSV files, to integration with a larger ETL pipeline.
 
