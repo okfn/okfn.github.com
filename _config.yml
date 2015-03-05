@@ -1,3 +1,5 @@
 highligher: pygments
 markdown: kramdown
 future: false
+gems:
+  - jekyll-redirect-from
