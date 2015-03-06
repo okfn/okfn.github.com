@@ -1,3 +1,2 @@
 language: ruby
-install: gem install jekyll
 script: "bundle exec jekyll build"
