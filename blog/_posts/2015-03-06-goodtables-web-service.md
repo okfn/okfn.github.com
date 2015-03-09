@@ -8,15 +8,17 @@ projects: [goodtables, goodtables-web]
 
 # Introducing the Good Tables web service
 
+Good Tables is a free online service that helps you find out if your tabular data is actually good to use - it can check for structural problems (blank rows and columns) as well as ensure that data fits a specific schema.
+
+Tabular data in CSV and Excel formats is one the most common forms of data available on the web - especially if looking at [open data](http://okfn.org/opendata/). Unfortunately, much of that data is messy with blank and incorrect rows, and unexpected values for some fields. (For example, date columns that do not feature well-formed dates. <a href="http://okfnlabs.org/bad-data/">See here for more examples of "bad data"</a>.)
+
+That’s where Good Tables comes in: it checks your data for you, giving you quick and simple feedback on where your tabular data may not yet be quite perfect.
+
+Good Tables uses the [previously announced](http://okfnlabs.org/blog/2015/02/20/introducing-tabular-validator.html) [Good Tables Python library](https://github.com/okfn/goodtables), and is developed by [Open Knowledge](https://okfn.org) with funding from the [Open Data User Group](https://www.gov.uk/government/groups/open-data-user-group).
+
+Good Tables is currently an alpha release; we invite the community to start using and contributing to it to help us move towards v1.0.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/f1bTx6Zaotk" frameborder="0" allowfullscreen></iframe>
-
-The Good Tables web service is an API and UI for processing tabular data, being an HTTP wrapper around [Good Tables](https://github.com/okfn/goodtables), which was [previously announced on OKFN Labs](http://okfnlabs.org/blog/2015/02/20/introducing-tabular-validator.html).
-
-It is built by [Open Knowledge](https://okfn.org), with funding from the [Open Data User Group](https://www.gov.uk/government/groups/open-data-user-group).
-
-The Good Tables web service is currently an alpha release; we invite the community to start using and contributing to it to help us move towards a v1.0 release.
-
-In the current release, the Good Tables web service will validate CSV and Excel files (the first sheet therein) for well-formedness, and, if a JSON Table Schema is supplied, for conformity to the given schema.
 
 ## API
 
