@@ -27,5 +27,5 @@ be validated for well-formedness (for example, no empty rows or columns, no dupl
 rows, all rows have valid dimensions, and so on), and conformance to a schema 
 (if a <a href="http://dataprotocols.org/json-table-schema/">JSON Table Schema</a> is supplied).
 
-<a href="http://okfnlabs.org/blog/2015/02/20/introducing-goodtables.html">Read more in the OPen Knowledge Labs announcement</a>.
+<a href="http://okfnlabs.org/blog/2015/02/20/introducing-goodtables.html">Read more in the Open Knowledge Labs announcement</a>.
 
