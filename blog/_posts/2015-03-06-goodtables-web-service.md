@@ -20,21 +20,51 @@ In the current release, the Good Tables web service will validate CSV and Excel 
 
 The documentation for the API can be found [here](http://goodtables.okfnlabs.org/api).
 
-Let’s see it in action:
+Using the API is easy: POST or GET your data, and get back a JSON object containing the report.
 
-![CURL Data](https://dl.dropboxusercontent.com/u/13029373/okfn/curl_data.gif)
+For example:
 
-![CURL Data and Schema](https://dl.dropboxusercontent.com/u/13029373/okfn/curl_data_schema.gif)
+<pre><code>
+# make a request
+curl http://goodtables.okfnlabs.org/api/run --data "data=https://raw.githubusercontent.com/okfn/goodtables/master/examples/row_limit_structure.csv&schema=https://raw.githubusercontent.com/okfn/goodtables/master/examples/test_schema.json"
+
+# the response will be like
+{
+    "report": {
+        "summary": {
+            "bad_row_count": 1,
+            "total_row_count": 10,
+            ...
+        },
+        "results": [
+            {
+            "result_id": "structure_001", # the ID of this result type
+            "result_level": "error", # the severity of this result type (info/warning/error)
+            "result_message": "Row 1 is defective: there are more cells than headers", # a message that describes the result
+            "result_name": "Defective Row", # a human-readable title for this result
+            "result_context": ['38', 'John', '', ''], # the row values from which this result triggered
+            "row_index": 1, # the idnex of the row
+            "row_name": "", # If the row has an id field, this is displayed, otherwise empty
+            "column_index": 4, # the index of the column
+            "column_name": "" # the name of the column (the header), if applicable
+            },
+            ...
+        ]
+    }
+}
+</code></pre>
+
+For more details on the report response, see the <a href="http://goodtables.readthedocs.org/en/latest/reports.html">report section</a> of the <a href="http://goodtables.readthedocs.org/en/latest/index.html">Good Tables documentation</a>.
 
 ## UI
 
-Data can be validated via a simple form:
-
-![Good Tables Form](https://dl.dropboxusercontent.com/u/13029373/okfn/ui.png)
+The web service also features a form for manual validation of data via a UI.
 
 Let’s see it in action:
 
-![Form flow](https://dl.dropboxusercontent.com/u/13029373/okfn/ui.gif)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f1bTx6Zaotk" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hblUuIjobrc" frameborder="0" allowfullscreen></iframe>
 
 ## Contributions
 
