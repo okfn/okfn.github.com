@@ -6,11 +6,24 @@ jQuery(document).ready(function($) {
 
   // triggered when the form text is changed
   $("form#filters").on('change', function() {
-    var chosen_opts = $('.chosen-select').val();
+    var chosen_opts = chosen_select.val();
+
+    // write url parameters
     if (chosen_opts !== null) {
+      var hash_params_out = chosen_opts.map(function (chosen_opt) {
+        var q = chosen_opt.slice(6,-1).split('*=');
+        return q[0] + '=' + q[1];
+      }).join("&");
+
+      location.hash = hash_params_out;
+
       chosen_opts = chosen_opts.join('');
+    } else {
+      location.hash = '';
     }
+
     // filter projects
+
     container.isotope({
       filter: chosen_opts
     });
@@ -67,12 +80,31 @@ jQuery(document).ready(function($) {
     return title.trim().toLowerCase();
   }
 
+  // read url parameters
+  var hash_params_in = location.hash.slice(1);
+  if (hash_params_in.length !== 0) {
+    var hash_params = hash_params_in.split('&');
+    filters = hash_params.map(function(hash_param) {
+      var q = hash_param.split('=');
+      return "[data-" + q[0] + "*=" + q[1] + "]";
+    });
+
+    // mark initial filters as selected
+    filters.forEach(function (filter) {
+      $("option[value='" + filter + "']").attr("selected","selected");
+    });
+
+    filter_set = filters.join('');
+  } else {
+    filter_set = '';
+  }
+
   // Create Isotope grid view
   container.isotope({
     itemSelector: '.record',
     layoutMode: 'masonry',
-    filter: '[data-featured=true]'
+    filter: filter_set
   });
 
-  $('.chosen-select').chosen();
+  chosen_select.chosen();
 });
