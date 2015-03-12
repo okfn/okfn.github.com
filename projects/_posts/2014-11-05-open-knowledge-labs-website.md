@@ -5,7 +5,7 @@ github_repo: okfn.github.com
 github_user: okfn
 helpwanted: yes
 imageurl: /img/open-knowledge-labs-website.png
-language: [html5, markdown, css, javascript]
+language: [html, markdown, css, javascript]
 layout: project
 maintainers: [rgrp, andylolz, dfowler]
 contributors: [mikechelen]
