@@ -10,12 +10,18 @@ jQuery(document).ready(function($) {
 
     // write url parameters
     if (chosen_opts !== null) {
+      var param_sort = function (a,b) {
+	if (a[0] < b[0]) { return -1; }
+	if (a[0] > b[0]) { return 1; }
+	return 0;
+      };
       var hash_params_out = chosen_opts.map(function (chosen_opt) {
-        var q = chosen_opt.slice(6,-1).split('*=');
-        return q[0] + '=' + q[1];
-      }).join("&");
+        return chosen_opt.slice(6,-1).split('*=');
+      }).sort(param_sort);
 
-      location.hash = hash_params_out;
+      location.hash = hash_params_out.map(function (q) {
+        return [encodeURIComponent(q[0]),encodeURIComponent(q[1])].join('=');
+      }).join("&");
 
       chosen_opts = chosen_opts.join('');
     } else {
@@ -81,12 +87,12 @@ jQuery(document).ready(function($) {
   }
 
   // read url parameters
-  var hash_params_in = location.hash.slice(1);
+  var hash_params_in = (location.href.split("#")[1] || "");
   if (hash_params_in.length !== 0) {
     var hash_params = hash_params_in.split('&');
     filters = hash_params.map(function(hash_param) {
       var q = hash_param.split('=');
-      return "[data-" + q[0] + "*=" + q[1] + "]";
+      return "[data-" + decodeURIComponent(q[0]) + "*=" + decodeURIComponent(q[1]) + "]";
     });
 
     // mark initial filters as selected
