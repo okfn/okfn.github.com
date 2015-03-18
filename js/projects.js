@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
         return prev;
       } else {
         prev[k] = [prev[k],encodeURIComponent(v)].join(',');
-          return prev;
+        return prev;
       }
     }
 
