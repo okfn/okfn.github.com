@@ -8,21 +8,28 @@ jQuery(document).ready(function($) {
   $("form#filters").on('change', function() {
     var chosen_opts = chosen_select.val();
 
+    function objectify (prev,curr) {
+      var opt = curr.slice(6,-1).split('*=');
+      var k = opt[0],
+          v = opt[1];
+      if (typeof(prev[k]) === 'undefined') {
+        prev[k] = encodeURIComponent(v);
+        return prev;
+      } else {
+        prev[k] = [prev[k],encodeURIComponent(v)].join(',');
+          return prev;
+      }
+    }
+
     // write url parameters
     if (chosen_opts !== null) {
-      var param_sort = function (a,b) {
-	if (a[0] < b[0]) { return -1; }
-	if (a[0] > b[0]) { return 1; }
-	return 0;
-      };
-      var hash_params_out = chosen_opts.map(function (chosen_opt) {
-        return chosen_opt.slice(6,-1).split('*=');
-      }).sort(param_sort);
+      // sort (deeply) chosen options, turn into object
+      hash_params_obj = chosen_opts.sort().reduce(objectify, {});
 
-      location.hash = hash_params_out.map(function (q) {
-        return [encodeURIComponent(q[0]),encodeURIComponent(q[1])].join('=');
-      }).join("&");
-
+      // set hash as stringified object
+      location.hash = $.map(hash_params_obj, function(v,k) {
+        return encodeURIComponent(k) + '=' + v;
+      }).join('&');
       chosen_opts = chosen_opts.join('');
     } else {
       location.hash = '';
@@ -46,7 +53,7 @@ jQuery(document).ready(function($) {
     record.addClass('expand');
 
     // de-duplicate filter values
-    $.each(filters, function (filter_type) {
+    $.each(filters, function(filter_type) {
       var filter_vals = record.data(filter_type).split(';');
       $.each(filter_vals, function(ignore, filter_val) {
         k = toFilterName(filter_val);
@@ -86,21 +93,25 @@ jQuery(document).ready(function($) {
     return title.trim().toLowerCase();
   }
 
-  // read url parameters
+  // read hash parameters into filters_in array
+  // (using jQuery map for its flatmap characteristics)
   var hash_params_in = (location.href.split("#")[1] || "");
   if (hash_params_in.length !== 0) {
-    var hash_params = hash_params_in.split('&');
-    filters = hash_params.map(function(hash_param) {
-      var q = hash_param.split('=');
-      return "[data-" + decodeURIComponent(q[0]) + "*=" + decodeURIComponent(q[1]) + "]";
+    var filters_in = $.map(hash_params_in.split('&'), function(optset) {
+      var opt = optset.split('=');
+      var k = opt[0],
+          vs = opt[1].split(',');
+      return $.map(vs, function(v) {
+        return "[data-" + decodeURIComponent(k) + "*=" + decodeURIComponent(v) + "]";
+      });
     });
 
     // mark initial filters as selected
-    filters.forEach(function (filter) {
+    filters_in.forEach(function(filter) {
       $("option[value='" + filter + "']").attr("selected","selected");
     });
 
-    filter_set = filters.join('');
+    filter_set = filters_in.join('');
   } else {
     filter_set = '';
   }
