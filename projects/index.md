@@ -17,7 +17,7 @@ bodyclass: code
   <select data-placeholder="Filter projects..." style="width:500px;" class="form-control chosen-select" multiple>
     <option value=""></option>
     <optgroup label="Featured">
-      <option value="[data-featured*=true]" selected>Featured</option>
+      <option value="[data-featured*=true]">Featured</option>
     </optgroup>
     <optgroup label="Help wanted">
       <option value="[data-helpwanted*=true]">Help wanted</option>

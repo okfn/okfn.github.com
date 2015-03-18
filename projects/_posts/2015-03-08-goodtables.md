@@ -16,8 +16,8 @@ imageurl: https://dl.dropboxusercontent.com/u/13029373/okfn/ui.png
 language: [python]
 projecturl: https://github.com/okfn/goodtables
 stage: alpha
-tags: Tabular Data
-tagline: Validate and process tabular data. 
+tags: [Tabular Data]
+tagline: Validate and process tabular data.
 ---
 
 Good Tables is a Python library for validating and processing tabular data. 
