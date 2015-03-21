@@ -2,7 +2,7 @@
 layout: project
 title: ElasticSearch.JS
 projecturl: https://github.com/okfn/elasticsearch.js/
-tags: [js, elasticsearch]
+tags: [elasticsearch]
 author: Rufus Pollock
 maintainers: [rgrp]
 featured: no

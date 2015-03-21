@@ -16,8 +16,8 @@ imageurl: https://dl.dropboxusercontent.com/u/13029373/okfn/ui.png
 language: [python, javascript, html, css]
 projecturl: http://goodtables.okfnlabs.org/
 stage: alpha
-tags: Tabular Data, CSV, JSON Table Schema
-tagline: Validate and process tabular data. 
+tags: [Tabular Data, CSV, JSON Table Schema]
+tagline: Validate and process tabular data.
 ---
 
 The Good Tables web service provides an API and UI for processing and validating tabular data, 
