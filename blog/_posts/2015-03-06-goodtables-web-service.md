@@ -3,7 +3,7 @@ layout: post
 author: Paul Walsh
 username: pwalsh
 title: The Good Tables web service
-projects: [goodtables, goodtables-web]
+projects: [goodtables]
 ---
 
 # Introducing the Good Tables web service
