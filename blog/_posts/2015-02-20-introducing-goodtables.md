@@ -3,7 +3,7 @@ layout: post
 author: Paul Walsh
 username: pwalsh
 title: Introducing Good Tables
-projects: [goodtables, goodtables-web]
+projects: [goodtables]
 redirect_from: "/introducing-tabular-validator.html"
 ---
 
