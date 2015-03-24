@@ -53,7 +53,7 @@ list and following Labs on twitter](/contact/).
         language: {list of languages the project uses e.g. [python, javascript]}
         projecturl: {URL of an external project webpage e.g.
                      http://awesomedatavisualizer.org}
-        stage: {one of [idea, alpha, prototype, production, deployed, mature]}
+        stage: {one of [idea, alpha, prototype, production, deployed, mature, graduated]}
         status: {set to 'retired' if the project is no longer active}
         tags: {list of relevant tags e.g. [django, google spreadsheets]}
         tagline: {one-liner description of project}
