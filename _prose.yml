@@ -1,0 +1,192 @@
+prose:
+  metadata:
+    projects/_posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "project"
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+          value: "Awesome Data Visualizer"
+      - name: "slug"
+        field:
+          element: "text"
+          help: "URL-friendly version of the title (e.g. awesome-data-visualizer)"
+          label: "Slug*"
+      - name: "permalink"
+        field:
+          element: "text"
+          help: "Format: /projects/awesome-data-visualizer/index.html"
+          label: "Permalink*"
+          value: "/projects/{replace me}/index.html"
+      - name: "type"
+        field:
+          alterable: true
+          element: "multiselect"
+          label: "Project Type"
+          placeholder: "Click to add type"
+          options:
+            - name: library
+              value: library
+            - name:  data
+              value: data
+            - name: webapp
+              value: webapp
+            - name: running service
+              value: running service
+            - name: tool
+              value: tool
+      - name: "author"
+        field:
+          element: "text"
+          help: "Author name"
+          placeholder: "Joe Bloggs"
+      - name: "maintainers"
+        field:
+          help: "Maintainer(s) <a href='http://okfnlabs.org/members/signup/'>OKFNLabs username</a>"
+          element: "text"
+          placeholder: "jbloggs"
+      - name: "contributors"
+        field:
+          element: "text"
+          help: "Contributor(s) <a href='http://okfnlabs.org/members/signup/'>OKFNLabs username</a>"
+          label: "Contributors"
+          value: ""
+      - name: "featured"
+        field:
+          element: "checkbox"
+          help: "Should this project be featured on projects page?"
+          label: "Featured"
+      - name: "helpwanted"
+        field:
+          element: "checkbox"
+          help: "Are you asking for help with this project?"
+          label: "Help"
+      - name: "typeofhelp"
+        field:
+          alterable: true
+          element: "multiselect"
+          label: "Type of Help Needed"
+          placeholder: "Click to add type"
+          options:
+            - name: Coding
+              value: coding
+            - name: Data Analysis
+              value: data analysis
+            - name: Data Wrangling
+              value: data wrangling
+            - name: Testing
+              value: testing
+            - name: Documenting
+              value: documenting
+            - name: Blogging
+              value: blogging
+            - name: Evangelism
+              value: evangelism
+            - name: Project Managing
+              value: project managing
+      - name: "github_repo"
+        field:
+          element: "text"
+          help: "Enter the GitHub repository name"
+          label: "GitHub Repository"
+          placeholder: "awesome-data-visualizer"
+      - name: "github_user"
+        field:
+          element: "text"
+          help: "Enter the name of the GitHub user who owns the repository (e.g. okfn)"
+          label: "GitHub User"
+          value: "okfn"
+      - name: "projecturl"
+        field:
+          element: "text"
+          help: "URL of an external project webpage (e.g. http://awesomedatavisualizer.org)"
+          label: "Project URL"
+          placeholder: "http://"
+      - name: "imageurl"
+        field:
+          element: "text"
+          help: "URL of a project image or logo of around 235px by 150px"
+          label: "Image URL"
+          placeholder: "http://"
+      - name: "language"
+        field:
+          alterable: true
+          element: "multiselect"
+          label: "Languages"
+          help: "List of languages this project uses"
+          placeholder: "Click to add languages"
+          options:
+            - name: JavaScript
+              value: JavaScript
+            - name: HTML
+              value: HTML
+            - name: Python
+              value: Python
+            - name: CoffeeScript
+              value: CoffeeScript
+            - name: CSS
+              value: CSS
+            - name: Objective-C
+              value: Objective-C
+            - name: Swift
+              value: Swift
+            - name: PHP
+              value: PHP
+            - name: Dockerfile
+              value: Dockerfile
+            - name: Perl
+              value: Perl
+            - name: Shell
+              value: Shell
+            - name: Markdown
+              value: Markdown
+            - name: Clojure
+              value: Clojure
+            - name: R
+              value: R
+      - name: "stage"
+        field:
+          element: "select"
+          help: "Enter the current stage of this project's lifecycle"
+          label: "Stage"
+          options:
+            - name: idea
+              value: idea
+            - name: alpha
+              value: alpha
+            - name: prototype
+              value: prototype
+            - name: production
+              value: production
+            - name: deployed
+              value: deployed
+            - name: mature
+              value: mature
+            - name: retired
+              value: retired
+            - name: graduated
+              value: graduated
+      - name: "tags"
+        field:
+          alterable: true
+          element: "multiselect"
+          help: "Relevant tags for this project"
+          label: "Tags"
+          options:
+            - name: Django
+              value: Django
+            - name: Google Spreadsheets
+              value: Google Spreadsheets
+            - name: Node.js
+              value: Node.js
+            - name: Visualization
+              value: Visualization
+      - name: "tagline"
+        field:
+          element: "text"
+          help: "One-liner description for this project"
+          label: "Tagline"
+          placeholder: "The awesomeness of the project in one line..."
