@@ -6,3 +6,10 @@
 {% assign project_maintainers = project_maintainers | push: maintainer %}
 {% endfor %}
 {% endfor %}
+
+{% assign project_contributors = "" | split: "" %}
+{% for project in site.categories.projects %}
+{% for contributor in project.contributors %}
+{% assign project_contributors = project_contributors | push: contributor %}
+{% endfor %}
+{% endfor %}

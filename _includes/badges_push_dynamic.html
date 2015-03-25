@@ -13,3 +13,11 @@
 {% assign user_roles = 'project-maintainer' %}
 {% endif %}
 {% endif %}
+
+{% if project_contributors contains user_username %}
+{% if user_roles %}
+{% assign user_roles = user_roles | push: 'project-contributor' %}
+{% else %}
+{% assign user_roles = 'project-contributor' %}
+{% endif %}
+{% endif %}
