@@ -7,23 +7,19 @@ jQuery(document).ready(function($) {
   // triggered when the form text is changed
   $("form#filters").on('change', function() {
     var chosen_opts = chosen_select.val();
-
-    function objectify (prev,curr) {
-      var opt = curr.slice(6,-1).split('*=');
-      var k = opt[0],
+    // reducing function
+    function objectify (p,c) {
+      var opt = c.slice(6,-1).split('*='),
+          k = opt[0],
           v = opt[1];
-      if (typeof(prev[k]) === 'undefined') {
-        prev[k] = encodeURIComponent(v);
-        return prev;
-      } else {
-        prev[k] = [prev[k],encodeURIComponent(v)].join(',');
-        return prev;
-      }
+      p[k] = p[k] ? [p[k],encodeURIComponent(v)].join(',') : encodeURIComponent(v);
+      return p;
     }
 
     // write url parameters
     if (chosen_opts !== null) {
       // sort (deeply) chosen options, turn into object
+
       hash_params_obj = chosen_opts.sort().reduce(objectify, {});
 
       // set hash as stringified object
