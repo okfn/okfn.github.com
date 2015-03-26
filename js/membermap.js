@@ -3,6 +3,15 @@
 
 jQuery(document).ready(function($) {
   var container = $('.persons');
+  var people = [].slice.call($('.persons').children());
+
+  people_obj = people.reduce(function(p,c) {
+    var template = function (d) {
+      return '<a href="#' + d.id + '">' + d.dataset.name + '</a> <em>' + d.dataset.area + '</em>';
+    };
+    p[c.dataset.place] = p[c.dataset.place] ? [template(c),p[c.dataset.place]].join('<br><br>') : template(c);
+    return p;
+  },{});
 
   // Center map on appoximate center of markers collected so far
   var map = L.map('map').setView([26.062,9.845],1);
@@ -16,7 +25,6 @@ jQuery(document).ready(function($) {
   function addToMap(place,popup) {
     function geocode(place,callback) {
       var url = 'http://open.mapquestapi.com/nominatim/v1/search?format=json&q=' + encodeURIComponent(place);
-
       jQuery.getJSON(url, function(data) {
         if (data.length > 0) {
           callback(null,{lon: parseFloat(data[0].lon),lat: parseFloat(data[0].lat)});
@@ -34,7 +42,9 @@ jQuery(document).ready(function($) {
   }
 
   // Cycles through members and adds their location to the map
-  $.each(container.children(),function(k,v){
-    addToMap(v.dataset.place,'<a href="#' + v.id + '">' + v.dataset.name + '</a><br><em>' + v.dataset.area + '</em>');
+  $.each(people_obj,function(k,v){
+    if (k) {
+      addToMap(k,v);
+    }
   });
 });
