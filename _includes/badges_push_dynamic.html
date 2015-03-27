@@ -2,7 +2,7 @@
 {% if user_roles %}
 {% assign user_roles = user_roles | push: 'author' %}
 {% else %}
-{% assign user_roles = 'author' %}
+{% assign user_roles = 'author' | split: "|" %}
 {% endif %}
 {% endif %}
 
@@ -10,6 +10,14 @@
 {% if user_roles %}
 {% assign user_roles = user_roles | push: 'project-maintainer' %}
 {% else %}
-{% assign user_roles = 'project-maintainer' %}
+{% assign user_roles = 'project-maintainer' | split: "|" %}
+{% endif %}
+{% endif %}
+
+{% if project_contributors contains user_username %}
+{% if user_roles %}
+{% assign user_roles = user_roles | push: 'project-contributor' %}
+{% else %}
+{% assign user_roles = 'project-contributor' | split: "|" %}
 {% endif %}
 {% endif %}

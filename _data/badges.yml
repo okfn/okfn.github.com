@@ -12,6 +12,11 @@
   text: Project Maintainer
   type: role
   description: This member is recognized for acting as "maintainer" on one or more Labs <a href="/projects/">projects</a>.
+- id: project-contributor
+  icon: cog
+  text: Project Contributor
+  type: role
+  description: This member is recognized for acting as "contributor" on one or more Labs <a href="/projects/">projects</a>.
 - id: sysadmin
   icon: terminal
   text: Sysadmin
@@ -52,3 +57,13 @@
   text: Author
   type: recognition
   description: This member has <a href="/blog/add/">written a blog post</a> for the Open Knowledge Labs <a href="/blog/">Data Wrangling Blog</a>.
+- id: website-fixer
+  icon: code-fork
+  text: Website Fixer
+  type: recognition
+  description: This member is recognized for having contributed a fix to the <a href="https://github.com/okfn/okfn.github.com">Labs website</a>
+- id: forum-post
+  icon: comment
+  text: Forum Commenter
+  description: This member contributed to a discussion either on the forums or on the mailing list.
+  type: recognition
