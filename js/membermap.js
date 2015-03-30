@@ -3,7 +3,7 @@
 
 jQuery(document).ready(function($) {
   var container = $('.persons');
-  var people = [].slice.call($('.persons').children());
+  var people = [].slice.call(container.children());
 
   people_obj = people.reduce(function(p,c) {
     var template = function (d) {
@@ -43,6 +43,7 @@ jQuery(document).ready(function($) {
 
   // Cycles through members and adds their location to the map
   $.each(people_obj,function(k,v){
+
     if (k) {
       addToMap(k,v);
     }
