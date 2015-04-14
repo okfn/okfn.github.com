@@ -19,7 +19,7 @@ layout: default
     {% include blog_header.html %}
     <ul class="blog posts">
       {% for post in site.categories.blog limit:5 %}
-        {% include blog_posts.html %}
+      {% include blog_posts.html %}
       {% endfor %}
       <li><a href="/blog/">All blog posts&hellip;</a></li>
     </ul>
@@ -32,9 +32,10 @@ layout: default
 
     <h4>Get involved</h4>
     <p>
-    Labs is an open community. Come <a href="/join/">join in &raquo;</a>.
+      Labs is an open community. Come <a href="/join/">join in &raquo;</a>.
     </p>
-    <p>There are also plenty of ways to <a href="/contact/">get in touch</a>.</p>
+    <p>
+      There are also plenty of ways to <a href="/contact/">get in touch</a>.
     </p>
     <h4>Get Updates</h4>
     <p>Join our announce list and get regular (monthly) updates.</p>
