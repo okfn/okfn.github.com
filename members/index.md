@@ -31,7 +31,9 @@ or researcher in your area.
     {% endif %}
     <h3 class="name">
       <a href="{{person.username}}">{{person.title}}</a>
+      {% if person.area %}
       <small class="area">{{person.area}}</small>
+      {% endif %}
     </h3>
     <p class="joined"><i class="icon-time"></i> Member since <span class="date">{{ person.date | date_to_long_string }}</span></p>
 
@@ -41,12 +43,18 @@ or researcher in your area.
     {% include badges_display.html %}
 
     <ul class="links">
+      {% if person.twitter %}
       <li><a href="https://twitter.com/{{ person.twitter }}">
           <i class="icon-twitter"></i> {{ person.twitter }}</a></li>
+      {% endif %}
+      {% if person.github %}
       <li><a href="https://github.com/{{ person.github }}">
           <i class="icon-github"></i> {{ person.github }}</a></li>
+      {% endif %}
+      {% if person.web %}
       <li><a href="{{ person.web }}">
           <i class="icon-globe"></i> {{ person.web }}</a></li>
+      {% endif %}
     </ul>
     <div class="excerpt">
       {{ person.content }}
