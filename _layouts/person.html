@@ -14,12 +14,18 @@ bodyclass: members
   <p class="joined"><i class="icon-time"></i> Member since <span class="date">{{ page.date | date_to_long_string }}</span></p>
 
   <ul class="links">
+    {% if page.twitter %}
     <li><a href="https://twitter.com/{{ page.twitter }}">
-      <i class="icon-twitter"></i> {{ page.twitter }}</a></li>
+        <i class="icon-twitter"></i> {{ page.twitter }}</a></li>
+    {% endif %}
+    {% if page.github %}
     <li><a href="https://github.com/{{ page.github }}">
-      <i class="icon-github"></i> {{ page.github }}</a></li>
+        <i class="icon-github"></i> {{ page.github }}</a></li>
+    {% endif %}
+    {% if page.web %}
     <li><a href="{{ page.web }}">
-      <i class="icon-globe"></i> {{ page.web }}</a></li>
+        <i class="icon-globe"></i> {{ page.web }}</a></li>
+    {% endif %}
   </ul>
 
   {{content}}
