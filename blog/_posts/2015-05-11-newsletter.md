@@ -28,6 +28,9 @@ Some notable recent contributions include:
 
 * [Media Types][core-one] (@bluechi and @sxren)
 * [Membership to Copyright Treaties][core-two] (@bluechi)
+* [Transparency International - Corruptions Perceptions Index][corruption]
+* [Top Level Domain Names][tlds]
+* [NUTS administrative boundaries][nuts]
 
 ## Data Package libraries
 
@@ -43,7 +46,7 @@ DataPak is for working with Data Packages in Ruby, and provides some really nice
 
 ### Data Package: Data Package management in Python
 
-Data Package, and Budget Data Package, are Python packages for working with Data Packages. These libraries hav been around for a while, but recently were updated to add Python 3 support. Check out Data Package [here][dp], and Budget Data Package [here][bdp].
+Data Package, and Budget Data Package, are Python packages for working with Data Packages. These libraries have been around for a while, but recently were updated to add Python 3 support. Check out Data Package [here][dp], and Budget Data Package [here][bdp].
 
 ### JTSKit: Working with JSON Table Schema in Python
 
@@ -109,3 +112,6 @@ Anyone can join the Labs community and get involved! Read more about how you can
 [ocd-repo]: https://github.com/OKFNau/open-council-data
 [opentrees]: http://opentrees.org/
 [openbins]: http://openbinmap.org/
+[nuts]: http://data.okfn.org/data/core/geo-nuts-administrative-boundaries
+[corruption]: http://data.okfn.org/data/core/corruption-perceptions-index
+[tlds]: http://data.okfn.org/data/core/top-level-domain-names
