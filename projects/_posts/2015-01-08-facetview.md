@@ -10,7 +10,7 @@ featured: no
 github_user: okfn
 github_repo: facetview
 helpwanted: no
-imageurl: https://cloud.githubusercontent.com/assets/772616/5678304/f354fa1a-9801-11e4-8e1a-87625cd412b7.png
+imageurl: /img/projects/project-facetview.png
 language: [JavaScript]
 projecturl: http://okfnlabs.org/facetview/
 stage: mature

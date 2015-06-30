@@ -10,7 +10,7 @@ featured: no
 github_user: okfn
 github_repo: bibserver
 helpwanted: no
-imageurl: https://cloud.githubusercontent.com/assets/772616/5678298/dce3743c-9801-11e4-8486-7714c87e814c.png
+imageurl: /img/projects/project-bibserver.png
 language: [Python, JavaScript]
 projecturl: https://github.com/okfn/bibserver
 stage: mature

@@ -3,7 +3,7 @@ layout: project
 title: Frictionless Data
 tagline: Standards and tools to make a world of frictionless data
 projecturl: http://data.okfn.org/
-imageurl: http://assets.okfn.org/p/data.okfn.org/img/the-idea.png
+imageurl: /img/projects/project-frictionless-data.png
 tags: []
 author: Labs
 maintainers: [rgrp]
@@ -42,4 +42,3 @@ We're creating:
   your existing apps and workflows whether that's Excel, R, or Hadoop!
 * Outreach and Community: Engaging and evangelizing around the concepts,
   standards and tooling and building a community of users and contributors.
-
