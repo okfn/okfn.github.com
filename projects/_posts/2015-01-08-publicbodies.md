@@ -11,7 +11,7 @@ github_user: okfn
 github_repo: publicbodies
 helpwanted: yes
 typeofhelp: [coding, data wrangling, testing, documenting, blogging]
-imageurl: https://cloud.githubusercontent.com/assets/772616/5678521/78916810-9804-11e4-9054-8db52c6b2208.png
+imageurl: /img/projects/project-publicbodies.png
 language: [JavaScript, Python]
 projecturl: http://publicbodies.org/
 stage: mature

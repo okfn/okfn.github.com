@@ -12,7 +12,7 @@ typeofhelp: [coding, testing]
 featured: yes
 github_user: okfn
 github_repo: goodtables-web
-imageurl: https://dl.dropboxusercontent.com/u/13029373/okfn/ui.png
+imageurl: /img/projects/project-goodtables.png
 language: [python, javascript, html, css]
 projecturl: http://goodtables.okfnlabs.org/
 stage: alpha

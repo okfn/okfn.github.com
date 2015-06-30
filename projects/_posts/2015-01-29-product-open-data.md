@@ -12,7 +12,7 @@ github_user: okfn
 github_repo: product-browser-web
 helpwanted: yes
 typeofhelp: [coding, data analysis, data wrangling, testing, documenting, blogging, evangelism, project managing]
-imageurl: https://cloud.githubusercontent.com/assets/772616/5954740/75e31fca-a7ac-11e4-9b01-3eb393a9856f.png
+imageurl: /img/projects/project-product-open-data.png
 language: [Java,Objective-C,Python,PHP,CSS]
 projecturl: http://product.okfn.org/
 stage:
