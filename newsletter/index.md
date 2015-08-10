@@ -1,6 +1,7 @@
 ---
 title: Open Knowledge Labs Newsletter
-layout: about
+layout: two-column
+bodyclass: newsletter
 ---
 
 # Labs Newsletter
