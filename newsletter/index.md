@@ -2,6 +2,7 @@
 title: Open Knowledge Labs Newsletter
 layout: two-column
 bodyclass: newsletter
+redirect_from: newsletter.html
 ---
 
 # Labs Newsletter
