@@ -4,9 +4,6 @@
       url: http://nomenklatura.okfnlabs.org/
       slug: nomenklatura
       notes: Python, PostgreSQL, Gunicorn
-    - name: Open Knowledge Discussion Forums
-      url: http://discuss.okfn.org
-      notes: Discourse
     - name: Open Data Index 2014
       url: http://secret.index.okfn.org
       notes: no longer a secret
