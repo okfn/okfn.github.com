@@ -37,11 +37,10 @@ if you have material you would like us to host [let us know][contact].
 
 #### Dedicated
 
-We currently operate 2 large dedicated servers for use in hosting, processing
+We currently operate 1 large dedicated server for use in hosting, processing
 etc.
 
-  * <http://hydrogen.okfnlabs.org/>
-  * <http://helium.okfnlabs.org/>
+  * `hydrogen.okfnlabs.org`
 
 By default these are only accessible for [Contributors][].
 
@@ -88,10 +87,3 @@ We have public [Google Drive
 Folder](https://drive.google.com/a/okfn.org/#folders/0B6R8dXc6Ji4JZ3FyVjJ1Z1QyMnM).
 
 If you want write access please [mail us or contact us on irc][contact].
-
-### Trello for task management
-
-[Labs trello board](https://trello.com/b/GEolSd8W/labs)
-
-
-

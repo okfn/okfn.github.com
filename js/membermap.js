@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
   // Adds given place to map using helper function to generate coordinates
   function addToMap(place,popup) {
     function geocode(place,callback) {
-      var url = 'http://open.mapquestapi.com/nominatim/v1/search?format=json&addressdetails=0&limit=1&q=' + encodeURIComponent(place);
+      var url = 'http://nominatim.openstreetmap.org/search?format=json&addressdetails=0&limit=1&q=' + encodeURIComponent(place);
       jQuery.getJSON(url, function(data) {
         if (data.length > 0) {
           callback(null,{lon: parseFloat(data[0].lon),lat: parseFloat(data[0].lat)});
