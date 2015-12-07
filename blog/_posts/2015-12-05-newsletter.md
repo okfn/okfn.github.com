@@ -4,12 +4,6 @@ Hey there hackers & hackettes! Welcome to the 4th quarter 2015 OKFN Labs Newslet
 	
 ![Holiday computer](https://raw.githubusercontent.com/okfn/okfn.github.com/master/img/newsletter/xmas-computer.jpg)
 	
-![image test](https://s3-us-west-2.amazonaws.com/img.puppycidedb.com/swat+comic.jpg)
-![image test 2](http://okfnlabs.org/img/newsletter/tuttle-report-1A.PNG)
-![image test 3](https://raw.githubusercontent.com/okfn/okfn.github.com/master/img/newsletter/tuttle-report-2.PNG)
-![image test 4](https://cloud.githubusercontent.com/assets/14280123/9857467/9edcb930-5b12-11e5-8d2d-6cb89b3dd710.png)
-![image test 5](https://github.com/jwieder/okfn.github.com/blob/master/img/newsletter/tuttle-report-1A.PNG)
-	
 Despite the hustle and bustle of the season, we are happy to report that Labs has made some serious progress with our existing projects and that we also have a few very cool tools to assist with your year-end data analysis.
 
 ### Tuttle - language, platform & version-control agnostic tool for collaborating on complex coding projects
@@ -21,9 +15,8 @@ Our very own @lexman (Alexandre Bonnasseau of mappy.com) was kind enough to prov
 > "When we write scripts to create data, we don't make it right on the first time. How many times did you have to comment the beginning of a script, so that executions jumps directly to a bug fix? With tuttle, you won't have to. First, it computes only what is necessary : for example if a file has already been downloaded, it won't do it again. But also, when you change a line of code, tuttle knows exactly what data must be removed and what part of the code must be run instead."
 	
 Tuttle can be used to generate reports that generate workflows based on submission history and also highlight errors, as illustrated below (or in more detail [here](http://stuff.lexman.org/s-and-p-500/scripts/.tuttle/report.html)):
-	
-	![Tuttle report 1](http://okfnlabs.org/img/newsletter/tuttle-report-1A.PNG)
-	![Tuttle report 2](https://raw.githubusercontent.com/okfn/okfn.github.com/master/img/newsletter/tuttle-report-2.PNG)
+
+![Tuttle report 2](https://raw.githubusercontent.com/okfn/okfn.github.com/master/img/newsletter/tuttle-report-2.PNG)
 
 @lexman provides a detailed (and incredibly helpful) [tutorial that helps acquaint new users with tuttle](https://github.com/lexman/tuttle/blob/master/doc/tutorial_musketeers/tutorial.md). We highly recommend giving the tutorial a try and using tuttle for complex development projects.
 	
