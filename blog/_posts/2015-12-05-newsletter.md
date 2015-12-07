@@ -77,20 +77,22 @@ Thanks in large part to @pdehaye, the new Core Datasets Managing Curator, there 
 
 Labs continues to expand and attract interest from talented developers and all manner of smarty-pantses. With more people and more projects there is more responsibility and more to get done. To that end, Labs has begun to develop an organizational structure so that all of our team members can focus on what we are best at, to prevent duplication of efforts and to make communication easier and more effective. So far, the assigned positions are:
 		
-- @davbre
-  - (?)
 - @danfowler
-  - (?)
-- @davidmiller
-  - Advisory Group Member
-- @jgkim
-  - Advisory Group Member
+  - Team Lead
 - @loleg
   - Team Lead
 - @mattfullerton
   - Team Lead
 - @pdehaye
   - Core Datasets Managing Curator
+- @davbre
+  - Advisory Group Member
+- @davidmiller
+  - Advisory Group Member
+- @jgkim
+  - Advisory Group Member
+- @jwieder
+  - Advisory Group Member 
 	
 For more detailed information about each position, be sure to check out [this thread](https://github.com/okfn/okfn.github.com/issues/367). There are still positions available and a significant need for assistance from those with all sorts of different skills - leave a comment on the thread to let us know that you want to help step up to keep Labs growing!
 	
