@@ -2,13 +2,13 @@
 
 Hey there hackers & hackettes! Welcome to the 4th quarter 2015 OKFN Labs Newsletter: A Very Special Holiday Edition of the OKFN Labs Newsletter. We hope that all of our readers, volunteers, team members & contributors have a great holiday season. Labs is doing our part to keep things festive:
 	
-	![Holiday computer](https://raw.githubusercontent.com/okfn/okfn.github.com/master/img/newsletter/xmas-computer.jpg)
+![Holiday computer](https://raw.githubusercontent.com/okfn/okfn.github.com/master/img/newsletter/xmas-computer.jpg)
 	
-	![image test](https://s3-us-west-2.amazonaws.com/img.puppycidedb.com/swat+comic.jpg)
-	![image test 2](http://okfnlabs.org/img/newsletter/tuttle-report-1A.PNG)
-	![image test 3](https://raw.githubusercontent.com/okfn/okfn.github.com/master/img/newsletter/tuttle-report-2.PNG)
-	![image test 4](https://cloud.githubusercontent.com/assets/14280123/9857467/9edcb930-5b12-11e5-8d2d-6cb89b3dd710.png)
-	![image test 5](https://github.com/jwieder/okfn.github.com/blob/master/img/newsletter/tuttle-report-1A.PNG)
+![image test](https://s3-us-west-2.amazonaws.com/img.puppycidedb.com/swat+comic.jpg)
+![image test 2](http://okfnlabs.org/img/newsletter/tuttle-report-1A.PNG)
+![image test 3](https://raw.githubusercontent.com/okfn/okfn.github.com/master/img/newsletter/tuttle-report-2.PNG)
+![image test 4](https://cloud.githubusercontent.com/assets/14280123/9857467/9edcb930-5b12-11e5-8d2d-6cb89b3dd710.png)
+![image test 5](https://github.com/jwieder/okfn.github.com/blob/master/img/newsletter/tuttle-report-1A.PNG)
 	
 Despite the hustle and bustle of the season, we are happy to report that Labs has made some serious progress with our existing projects and that we also have a few very cool tools to assist with your year-end data analysis.
 
