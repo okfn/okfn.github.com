@@ -2,7 +2,7 @@
 
 Hey there hackers & hackettes! Welcome to the 4th quarter 2015 OKFN Labs Newsletter: A Very Special Holiday Edition of the OKFN Labs Newsletter. We hope that all of our readers, volunteers, team members & contributors have a great holiday season. Labs is doing our part to keep things festive:
 	
-	![Holiday computer](https://github.com/okfn/okfn.github.com/blob/master/img/newsletter/xmas-computer.jpg)
+	![Holiday computer](https://raw.githubusercontent.com/okfn/okfn.github.com/master/img/newsletter/xmas-computer.jpg)
 	
 Despite the hustle and bustle of the season, we are happy to report that Labs has made some serious progress with our existing projects and that we also have a few very cool tools to assist with your year-end data analysis.
 
@@ -16,8 +16,8 @@ Our very own @lexman (Alexandre Bonnasseau of mappy.com) was kind enough to prov
 	
 Tuttle can be used to generate reports that generate workflows based on submission history and also highlight errors, as illustrated below (or in more detail [here](http://stuff.lexman.org/s-and-p-500/scripts/.tuttle/report.html)):
 	
-	![Tuttle report 1](https://github.com/okfn/okfn.github.com/blob/master/img/newsletter/tuttle-report-1A.PNG)
-	![Tuttle report 2](https://github.com/okfn/okfn.github.com/blob/master/img/newsletter/tuttle-report-2.PNG)
+	![Tuttle report 1](https://raw.githubusercontent.com/okfn/okfn.github.com/master/img/newsletter/tuttle-report-1A.PNG)
+	![Tuttle report 2](https://raw.githubusercontent.com/okfn/okfn.github.com/master/img/newsletter/tuttle-report-2.PNG)
 
 @lexman provides a detailed (and incredibly helpful) [tutorial that helps acquaint new users with tuttle](https://github.com/lexman/tuttle/blob/master/doc/tutorial_musketeers/tutorial.md). We highly recommend giving the tutorial a try and using tuttle for complex development projects.
 	
