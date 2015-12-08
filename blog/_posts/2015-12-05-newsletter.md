@@ -5,7 +5,7 @@ username: jaydubya
 layout: post
 ---
 
-Hey there hackers & hackettes! Welcome to the 4th quarter 2015 OKFN Labs Newsletter: A Very Special Holiday Edition of the OKFN Labs Newsletter. We hope that all of our readers, volunteers, team members & contributors have a great holiday season. Labs is doing our part to keep things festive:
+Hey there hackers & hackettes! Welcome to the 4th quarter 2015 Open Knowledge Labs Newsletter: A Very Special Holiday Edition of the Open Knowledge Labs Newsletter. We hope that all of our readers, volunteers, team members & contributors have a great holiday season. Labs is doing our part to keep things festive:
 	
 ![Holiday computer](https://raw.githubusercontent.com/okfn/okfn.github.com/master/img/newsletter/xmas-computer.jpg)
 	
@@ -48,7 +48,7 @@ Agate's leap from version 0.11.0 to version 1.0.0 on October 22nd of this year m
 
 Agate has an impressive array of documentation for developers. Take a look at [the manual](https://agate.readthedocs.org/en/1.1.0/), the [standard tutorials](https://agate.readthedocs.org/en/1.1.0/tutorial.html), a tutorial for [using Agate with Jupyter notebook](http://nbviewer.ipython.org/urls/gist.githubusercontent.com/onyxfish/36f459dab02545cbdce3/raw/534698388e5c404996a7b570a7228283344adbb1/example.py.ipynb), the [Agate Cookbook](https://agate.readthedocs.org/en/1.1.0/cookbook.html) and the [Agate API documentation](https://agate.readthedocs.org/en/1.1.0/api.html).
 	
-Agate does indeed look promising, and there is an immense need for tools like it. Journalism is changing rapidly. With a flood of new information from Open Data advocates (like OKFN) making their way to the newsroom, organizations that can effectively interpret that data will maintain a significant advantage over their competitors. Meanwhile, the public can only benefit from more accurate analysis of larger sets of information that impact their lives. Clearly, the need for analytics that were once only required at university now extends beyond the Ivory Tower.
+Agate does indeed look promising, and there is an immense need for tools like it. Journalism is changing rapidly. With a flood of new information from Open Data advocates (like Open Knowledge) making their way to the newsroom, organizations that can effectively interpret that data will maintain a significant advantage over their competitors. Meanwhile, the public can only benefit from more accurate analysis of larger sets of information that impact their lives. Clearly, the need for analytics that were once only required at university now extends beyond the Ivory Tower.
 
 ### Webshot improvements
 
@@ -67,7 +67,7 @@ Check out Webshot - and don't forget to [contribute to the project on Github](ht
 
 ### New tasks need your help within the Core Datasets Issue Registry
 	
-[OKFN's Core Datasets](http://data.okfn.org/roadmap/core-datasets) are a selection of commonly-used datasets on a variety of topics that can be put to use for a variety of different research topics. All of the tools are free and available on Github - being able to find so many diverse, reliable and useful datasets in one place can save those of us who rely on open data a lot of time and hassle. Because so many people rely on these tools, submitting code to these tools allows your submissions to make a real and significant difference to projects all over the world. Here are some examples of the types of packages that are included:
+[Open Knowledge's Core Datasets](http://data.okfn.org/roadmap/core-datasets) are a selection of commonly-used datasets on a variety of topics that can be put to use for a variety of different research topics. All of the tools are free and available on Github - being able to find so many diverse, reliable and useful datasets in one place can save those of us who rely on open data a lot of time and hassle. Because so many people rely on these tools, submitting code to these tools allows your submissions to make a real and significant difference to projects all over the world. Here are some examples of the types of packages that are included:
 
 - [geoip2](https://github.com/datasets/geoip2), a free IP geolocation database based on data from the [Geolite2 MaxMind databases](http://dev.maxmind.com/geoip/geoip2/geolite2/)
 - [imf-weo](https://github.com/datasets/imf-weo), a copy of the [International Monetary Fund World Economic Outlook database](http://www.imf.org/external/ns/cs.aspx?id=28)
