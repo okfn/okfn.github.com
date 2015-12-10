@@ -27,7 +27,7 @@ Tuttle can be used to generate reports that generate workflows based on submissi
 	
 ### Mira turns CSV files into an HTTP API	
 
-[Mira](https://github.com/davbre/mira) is a new tool that comes to Labs from @davbre and is built using Ruby on Rails & relies on Postgres. [Mira](https://github.com/davbre/mira) allows users to generate an API using .json and .csv files - greatly simplifying what can often be a lengthy, tedious process. Here is how @davbre describes his utility:
+[Mira](https://github.com/davbre/mira) is a new tool that comes to Labs from @davbre and is built using Ruby on Rails & relies on Postgres. [Mira](https://github.com/davbre/mira) allows users to generate an API using [data packages](http://dataprotocols.org/data-packages/), a way to describe csv files using JSON - greatly simplifying what can often be a lengthy, tedious process. Here is how @davbre describes his utility:
 
 > "This is a small application developed using Ruby-on-Rails. You upload a datapackage.json file to it along with the corresponding CSV files and it gives you a read-only HTTP API. It's pretty simple - it uses the metadata in the datapackage.json file to import each CSV file into its own database table. Once imported, various API endpoints become available for metadata and data. You can perform simple queries on the data, controlling the ordering, paging and variable selection. It also talks to the DataTables jQuery plug-in."
 	
