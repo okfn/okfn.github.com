@@ -21,4 +21,8 @@ A good submission will help us get the newsletter organized efficiently, and wou
 
 You'll be updated as to the inclusion of the submission in the newsletter via the same issue.
 
+## Viewing items submitted to the newsletter
+
+All items submitted to the newsletter are stored as issues within the okfn/okfn.github.com repo. To view all of the submissions, simply navigate to the issues tab of the okfn/okfn.github.com repo and then search for "is:issue is:open newsletter" (without the quotes). Or, you can just follow [this link](https://github.com/okfn/okfn.github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+newsletter) instead!
+
 <a class="btn btn-primary" href="https://github.com/okfn/okfn.github.com/issues/new?title=[newsletter]">Submit an Item</a>
