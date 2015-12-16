@@ -3,3 +3,4 @@ markdown: kramdown
 future: false
 gems:
   - jekyll-redirect-from
+  - jekyll-mentions
