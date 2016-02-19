@@ -16,6 +16,7 @@ projecturl: https://github.com/okfn/bibserver
 stage: mature
 tags: [bibliographic metadata]
 tagline: Publish, manage and find bibliographies simply and easily
+status: -STATUS-
 ---
 
 BibServer is an open-source RESTful bibliographic data
