@@ -18,6 +18,7 @@ projecturl: "https://puppycidedb.com"
 stage: production
 tags: [sql, Visualization]
 tagline: The Puppycide Database Project researches and records killings of animals by police across the United States with the help of open source applications & crowd sourced research.
+status: [active]
 ---
 
  `Puppycide Database Project` is the largest public compilation of records related to killings of animals by police in the United States. The failure of US law enforcement to make records of lethal force available to the public has become a widely documented issue over the last few years. Despite the publicity, the issue remains unresolved at all levels of government - state, municipal and federal - leaving a small number of private, non-profit organizations to provide such basic information as human fatalities to researchers and journalists. The `Puppycide Database Project` is one such organization.
