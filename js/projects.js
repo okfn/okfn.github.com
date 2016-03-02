@@ -40,7 +40,7 @@ jQuery(document).ready(function($) {
     return false;
   });
 
-  var filters = {tags: {}, type: {}, status: {}, language: {}, title: {}};
+  var filters = {tags: {}, type: {}, activity_status: {}, maturity_status: {}, language: {}, title: {}};
 
   container.find('.record').each(function() {
     // Find the current project's detail URL
@@ -73,9 +73,15 @@ jQuery(document).ready(function($) {
     });
   });
 
+  function filterLabel(filter_type) {
+    var label = filter_type.substr(0,1).toUpperCase() + filter_type.substr(1);
+    label = label.replace("_", " ");
+    return label;
+  }
+
   // create filter options
   $.each(filters, function(filter_type, filter) {
-    var chosen_group = $('<optgroup label="' + filter_type.substr(0,1).toUpperCase() + filter_type.substr(1) + '">');
+    var chosen_group = $('<optgroup label="' + filterLabel(filter_type) + '">');
     $.each(filter, function(k, v) {
       // the '*=' here is a hack. if a filter value is a substring of
       // another (e.g. java and javascript) this will go wrong.
