@@ -123,6 +123,11 @@ jQuery(document).ready(function($) {
     itemSelector: '.record',
     layoutMode: 'masonry',
     filter: filter_set
+    // getSortData: {
+    //   projectDate: '[data-project_date]',
+    // },
+    // sortBy: projectDate,
+    // sortAscending: false
   });
 
   chosen_select.chosen();
