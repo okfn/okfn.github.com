@@ -16,7 +16,8 @@ helpwanted: yes
 language: [javascript, css]
 type: [webapp, running service, tool]
 stage: live
-status: [active]
+activity_status: [active]
+maturity_status:
 ---
 
 There's too much friction working with data - friction getting data, friction
