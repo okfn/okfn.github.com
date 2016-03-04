@@ -18,7 +18,8 @@ projecturl: http://goodtables.okfnlabs.org/
 stage: alpha
 tags: [Tabular Data, CSV, JSON Table Schema]
 tagline: Validate and process tabular data.
-status: [active]
+activity_status: [active]
+maturity_status:
 ---
 
 The Good Tables web service provides an API and UI for processing and validating tabular data,

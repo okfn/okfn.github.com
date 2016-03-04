@@ -16,7 +16,8 @@ projecturl: http://okfnlabs.org/facetview/
 stage: mature
 tags: [elasticsearch]
 tagline: Pure JavaScript frontend for ElasticSearch
-status: [active]
+activity_status: [active]
+maturity_status:
 ---
 
 FacetView is a pure JavaScript frontend for
