@@ -1,0 +1,5 @@
+---
+---
+layout,title,projecturl,imageurl,tags,author,maintainers,github_user,github_repo,permalink,slug,language,type,stage,activity_status,maturity_status,featured,helpwanted,tagline,contributors,typeofhelp,redirect_from
+{% for project in site.categories.projects %}"{{project.layout}}","{{project.title}}","{{project.projecturl}}","{{project.imageurl}}","{{project.tags}}","{{project.author}}","{{project.maintainers}}","{{project.github_user}}","{{project.github_repo}}","{{project.permalink}}","{{project.slug}}","{{project.language}}","{{project.type}}","{{project.stage}}","{{project.activity_status}}","{{project.maturity_status}}","{{project.featured}}","{{project.helpwanted}}","{{project.tagline}}","{{project.contributors}}","{{project.typeofhelp}}","{{project.redirect_from}}"
+{% endfor %}
