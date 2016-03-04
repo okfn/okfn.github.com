@@ -27,8 +27,8 @@ bodyclass: code
 </form>
 
 <div class="projects">
-  {% for project in site.categories.projects %}
-    <div class="record" data-title="{{project.title}}" data-featured="{{project.featured}}" data-helpwanted="{{project.helpwanted}}" data-status="{{project.status}}" data-language="{{ project.language | join: ";" }}" data-type="{{ project.type | join: ";" }}" data-tags="{{ project.tags | join: ";" }}" data-url="{{project.url | replace:'index.html',''}}">
+  {% for project in site.data.projects %}
+    <div class="record" data-project_date="{{project.project_date}}" data-title="{{project.title}}" data-featured="{{project.featured}}" data-helpwanted="{{project.helpwanted}}" data-activity_status="{{project.activity_status}}" data-maturity_status="{{project.maturity_status}}" data-language="{{ project.language | join: ";" }}" data-type="{{ project.type | join: ";" }}" data-tags="{{ project.tags | join: ";" }}" data-url="{{project.url | replace:'index.html',''}}">
       <h2>
         <a href="{{project.url | replace:'index.html',''}}">{{project.title}}
         </a>

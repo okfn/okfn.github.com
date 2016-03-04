@@ -17,7 +17,8 @@ projecturl: http://publicbodies.org/
 stage: mature
 tags: [node.js]
 tagline: A URL for every part of government
-status: [active]
+activity_status: [active]
+maturity_status:
 ---
 
 PublicBodies.org is a website hosting a database of so-called *public

@@ -1,0 +1,360 @@
+original_project_file,project_date,layout,title,projecturl,imageurl,tags,author,maintainers,github_user,github_repo,permalink,slug,language,type,stage,activity_status,maturity_status,featured,helpwanted,tagline,contributors,typeofhelp,redirect_from,content
+2015-11-21-mira.html,2015-11-21,project,Mira,,,"API, datapackage, csv, Ruby",David Brennan,,davbre,mira,/projects/mira/index.html,mira,Ruby,"webapp, tool",,active,,true,,create simple APIs from CSV files,,,,"
+
+This is a small application developed using Ruby-on-Rails. You upload a
+datapackage.json file to it along with the corresponding CSV files and it gives
+you a read-only HTTP API. It's pretty simple - it uses the metadata in the
+datapackage.json file to import each CSV file into its own database table. Once
+imported, various API endpoints become available for metadata and data. You can
+perform simple queries on the data, controlling the ordering, paging and
+variable selection. It also talks to the DataTables jQuery plug-in.
+"
+2015-10-13-puppycidedb.md,2015-10-13,project,Puppycide Database Project,https://puppycidedb.com,https://pbs.twimg.com/profile_images/512989733039792131/lVEJbvP__200x200.jpeg,"sql, Visualization",Puppycide Database Project,jaydubya,puppycidedb,pdb-database,/projects/puppycidedb/index.html,puppycidedb,"php, javascript, python, nodejs","data, webapp, running service",production,active,,true,true,The Puppycide Database Project researches and records killings of animals by police across the United States with the help of open source applications & crowd sourced research.,jaydubya,"coding, data analysis, documenting, blogging, evangelism, project managing",,"
+
+ `Puppycide Database Project` is the largest public compilation of records related to killings of animals by police in the United States. The failure of US law enforcement to make records of lethal force available to the public has become a widely documented issue over the last few years. Despite the publicity, the issue remains unresolved at all levels of government - state, municipal and federal - leaving a small number of private, non-profit organizations to provide such basic information as human fatalities to researchers and journalists. The `Puppycide Database Project` is one such organization.
+
+ At present, the project relies on crowd-sourcing, and has developed several forms to record data and allow volunteers to encode existing database records for the purpose of Krippendorff's alpha calculation. New records get announced via social media. We also provide a [rapidly-growing library of legal documents & research](https://puppycidedb.com/datasets.html) related to police use of force issues - everything from lawsuit decisions to CDC emergency room admissions.
+
+ All of the core functionality for our project relies on open source applications. Some examples:
+
+ * Full text search capability using [Sphinx](https://github.com/sphinxsearch/sphinx)
+ * Blog platform using [ghost/nodejs](https://github.com/TryGhost/Ghost)
+ * Twitter connectivity using [Codebird](https://github.com/jublonet/codebird-php)
+
+ Our biggest upcoming code project is the customization and implementation of a web crawler in order to accelerate the growth of our database. The crawler will seek and retrieve pages related to police use of force. In addition to adding more puppycide records, we will use the resulting information to study how news organizations report on issues of lethal force. This upcoming project could really use the input and advice of skilled developers and admins. Our biggest challenge is how to most effectively use the (very small) amount of resources available to us.
+"
+2015-03-08-goodtables.md,2015-03-08,project,Good Tables,http://goodtables.okfnlabs.org/,/img/projects/project-goodtables.png,"Tabular Data, CSV, JSON Table Schema",Paul Walsh,pwalsh,okfn,goodtables-web,/projects/goodtables/index.html,goodtables,"python, javascript, html, css","library, service",alpha,active,,true,true,Validate and process tabular data.,pwalsh,"coding, testing",,"
+
+The Good Tables web service provides an API and UI for processing and validating tabular data,
+providing an http layer around the <a href=""https://github.com/okfn/goodtables"">Good Tables Python library</a>.
+
+Currently, this means data can be provided in CSV or Excel format, and the file will
+be validated for well-formedness (for example, no empty rows or columns, no duplicate
+rows, all rows have valid dimensions, and so on), and conformance to a schema
+(if a <a href=""http://dataprotocols.org/json-table-schema/"">JSON Table Schema</a> is supplied).
+
+<a href=""http://okfnlabs.org/blog/2015/03/06/goodtables-web-service.html"">Read more in the Open Knowledge Labs announcement</a>.
+"
+2015-02-23-dataportals-org.md,2015-02-23,project,DataPortals.org,http://www.dataportals.org/,/img/projects/project-dataportals.png,node.js,Rufus Pollock,"rgrp, mattfullerton, schlos",okfn,dataportals.org,/projects/dataportals/index.html,dataportals,JavaScript,webapp,mature,active,,false,true,A catalog of data portals around the world,,"project managing, coding, testing",,"
+
+DataPortals.org is the most comprehensive list of open data portals in the world. It is curated by a group of leading open data experts from around the world - including representatives from local, regional and national governments, international organisations such as the World Bank, and numerous NGOs.
+"
+2015-02-23-tika-server.md,2015-02-23,project,Public Tika Server including OCR Service,http://beta.offenedaten.de:9998/tika,,ocr,Matt Fullerton,mattfullerton,mattfullerton,tika-tesseract-docker,/projects/tikaserver/index.html,tikaserver,"Java, Dockerfile",service,alpha,active,,false,true,"Turn many files, even text inside images, into text",,"coding, testing",,"
+
+This is a web service available for converting a multitude of document types to simple text. It is a public facing instance of the Apache Tika server (developer version). It lives at:
+
+http://beta.offenedaten.de:9998/tika
+
+To test it, just throw some images with text in them at it. For example, on a terminal on Mac or Linux:
+
+    curl -T tiff_example.tif http://beta.offenedaten.de:9998/tika
+
+More details at http://okfnlabs.org/blog/2015/02/21/documents-to-text.html. Please note that Matt is not the author of the software, just the developer for the Dockerfile that makes setting up an instance of what is quite a large piece of software very straightforward.
+"
+2015-01-29-product-open-data.md,2015-01-29,project,Product Open Data,http://product.okfn.org/,/img/projects/project-product-open-data.png,,Philippe Plagnol,,okfn,product-browser-web,/projects/product-open-data/index.html,product-open-data,"Java, Objective-C, Python, PHP, CSS","data, webapp, running service",,active,,true,true,Building the world's largest public product database,,"coding, data analysis, data wrangling, testing, documenting, blogging, evangelism, project managing",,"
+
+The goal of this project is to build the largest open product database
+in the world.  Such a database would allow consumers to get
+information about a given product in real time by simply scanning its
+barcode with their mobile phone.  It would also allow consumers to
+publish their opinions about products in an easily accessible way.
+
+We are currently rebooting this project and are looking for
+contributors.  An
+[Android client](https://play.google.com/store/apps/details?id=org.okfn.pod)
+([source](https://github.com/okfn/product-browser-android)) is
+available, and work has started on an
+[iOS client](https://github.com/okfn/product-browser-ios).  If you'd
+like to contribute or find out more, you can join the working group
+[mailing list](http://lists.okfn.org/mailman/listinfo/product), follow
+the project on [Twitter](https://twitter.com/openproductdata), and
+join the discussion on the
+[Open Knowledge forum](http://discuss.okfn.org/category/open-knowledge-labs/open-product-data).
+"
+2015-01-08-bibjson.md,2015-01-08,project,BibJSON,http://okfnlabs.org/bibjson/,/img/projects/project-bibjson.png,bibliographic metadata,Mark MacGillivray and Jim Pitman,,okfn,bibjson,/projects/bibjson/index.html,bibjson,,specification,mature,active,,false,false,Share and use bibliographic metadata online,,,,"
+
+BibJSON is a convention for representing bibliographic metadata in
+[JSON](http://www.json.org/).  It is intended as a specification for
+developers of web applications that generate or accept bibliographic
+metadata.  It is currently used in the Open Knowledge Labs
+[BibServer](/projects/bibserver/) project.
+"
+2015-01-08-bibserver.md,2015-01-08,project,BibServer,https://github.com/okfn/bibserver,/img/projects/project-bibserver.png,bibliographic metadata,Mark MacGillivray and Jim Pitman,,okfn,bibserver,/projects/bibserver/index.html,bibserver,"Python, JavaScript",webapp,mature,active,,false,false,"Publish, manage and find bibliographies simply and easily",rgrp,,,"
+
+BibServer is an open-source RESTful bibliographic data
+server. BibServer makes it easy to create and manage collections of
+bibliographic records such as reading lists, publication lists and
+even complete library catalogs.  [FacetView](/projects/facetview/) is
+included to provide a rich interface for complex search queries.
+BibServer supports [bibtex](http://www.bibtex.org/),
+[MARC](http://www.loc.gov/marc/),
+[RIS](https://en.wikipedia.org/wiki/RIS_%28file_format%29),
+[BibJSON](/projects/bibjson/), [RDF](http://www.w3.org/RDF/) and other
+bibliographic formats.
+"
+2015-01-08-facetview.md,2015-01-08,project,FacetView,http://okfnlabs.org/facetview/,/img/projects/project-facetview.png,elasticsearch,Mark MacGillivray,,okfn,facetview,/projects/facetview/index.html,facetview,JavaScript,webapp,mature,active,,false,false,Pure JavaScript frontend for ElasticSearch,rgrp,,,"
+
+FacetView is a pure JavaScript frontend for
+[ElasticSearch](http://www.elasticsearch.org/) search indices.  It
+lets you easily embed a faceted browser and search frontend into any
+web page. It also provides a micro-framework you can build on when
+creating user interfaces to
+[ElasticSearch](http://www.elasticsearch.org/).  It is currently used
+in the Open Knowledge Labs [BibServer](/projects/bibserver/) project.
+"
+2015-01-08-publicbodies.md,2015-01-08,project,Public Bodies,http://publicbodies.org/,/img/projects/project-publicbodies.png,node.js,Labs,,okfn,publicbodies,/projects/publicbodies/index.html,publicbodies,"JavaScript, Python",running service,mature,active,,true,true,A URL for every part of government,"rgrp, wombleton, pudo, rossjones","coding, data wrangling, testing, documenting, blogging",,"
+
+PublicBodies.org is a website hosting a database of so-called *public
+bodies*---that is government-run or -controlled organizations (which
+may or may not have a distinct corporate existence). Examples include
+government ministries or departments, as well as state-run
+organizations such as libraries, police and fire departments.
+
+Contributions of additional data and better descriptions for new and
+existing jurisdictions are very welcome.  Please add a CSV file [via a
+pull request](https://github.com/okfn/publicbodies#contribute-data) or
+take a look project's [issue queue](https://github.com/okfn/publicbodies/issues).
+"
+2015-01-08-webshot.md,2015-01-08,project,Webshot,http://webshot.okfnlabs.org/,/img/projects/project-webshot.png,node.js,Simon Gaeremynck,,okfn,webshot,/projects/webshot/index.html,webshot,JavaScript,"webapp, running service, tool",mature,active,,false,false,"Free, automated generation of live screenshots of public websites",,"coding, testing, documenting",,"
+
+Webshot is a [Node.js](http://nodejs.org/)-based webservice provided
+by Open Knowledge Labs for taking automated screenshots of webpages
+using [node-webshot](https://github.com/brenden/node-webshot).  It is
+available for anyone to use.  As always, contributions are welcome.
+"
+2014-12-09-bad-data.md,2014-12-09,project,Bad Data,http://okfnlabs.org/bad-data/,/img/projects/project-bad-data.png,,Rufus Pollock,rgrp,okfn,bad-data,/projects/bad-data/index.html,bad-data,"html, markdown, css, javascript",running service,live,active,,false,true,Real-world examples of how not to do data,,"coding, testing, documenting",,"
+
+Bad Data is a site detailing real-world examples of how **not** to
+prepare or provide data. It showcases poorly structured, misformatted,
+or just plain ugly datasets and what they get wrong.
+
+While its primary purpose is to serve as an educational tool for
+governments and other organizations, it is also a good source of
+practice material for budding data wranglers---those tasked with
+cleaning and transforming data.  The project began as a place to keep
+practice data for [Data Explorer](/projects/data-explorer/), another
+project of Open Knowledge Labs.
+"
+2014-11-13-dpm.html,2014-11-13,project,Data Package Manager,http://data.okfn.org/tools,/img/projects/dpm.png,node.js,Rufus Pollock,rgrp,okfn,dpm,/projects/dpm/index.html,dpm,javascript,"library, tool",live,active,,true,true,Toward the componentization of data,mikechelen,"coding, testing, documenting",,"
+
+<p>
+  <code>dpm</code> (data package manager) is a library and
+  command-line tool for installing and
+  managing <a href=""http://dataprotocols.org/data-packages/"">data
+  packages</a>.  Inspired by software package management tools
+  like <code>apt</code> for Debian, <code>dpm</code> aims
+  to <a href=""http://data.okfn.org/vision"">reduce the friction</a> of
+  sharing and working with data.
+</p>
+"
+2014-11-12-recline-mozilla-csv-viewer.html,2014-11-12,project,Recline Mozilla CSV Viewer,https://github.com/okfn/mozilla-csv-viewer,/img/projects/project-recline-mozilla-csv-viewer.png,FireFox Extension,,alioune,aliounedia,mozilla-csv-viewer,/projects/recline-mozilla-csv-viewer/index.html,recline-mozilla-csv-viewer,"javascript, css",tool,mature,active,,,,,,,,"
+
+A FireFox extension which allows you to view, search, graph and map CSV files in the browser (built using Recline).
+This is an port of the great Rufus Pollock's chrome-csv-viewer on FireFox.
+"
+2014-11-05-open-knowledge-labs-website.md,2014-11-05,project,Open Knowledge Labs website,http://okfnlabs.org/,/img/open-knowledge-labs-website.png,,Andy Lulham and Rufus Pollock,"rgrp, andylolz, dfowler",okfn,okfn.github.com,/projects/open-knowledge-labs-website/index.html,open-knowledge-labs-website,"html, markdown, css, javascript",website,live,active,,false,true,,mikechelen,"coding, blogging",,"
+
+The Open Knowledge Labs website (i.e. the site you're looking at right now) is itself a collaborative project of Open Knowledge.  It is built using [Jekyll](http://jekyllrb.com), a static site generator, and hosted on GitHub Pages.  You can contribute by addressing some of the items on the project's GitHub [issue queue](https://github.com/okfn/okfn.github.com/issues) (hint: you can start with the [easy ones](https://github.com/okfn/okfn.github.com/labels/Easy)).
+"
+2014-09-22-headstart.html,2014-09-22,project,Head Start,http://github.com/pkraker/Headstart,/img/projects/project-headstart.png,"D3, visualization, altmetrics","Peter Kraker, Philipp Weißensteiner, Fabian Dablander, Christopher Kittel",pkraker,pkraker,Headstart,/projects/headstart/index.html,headstart,"javascript, php","visualization, webapp",production,active,,true,true,,,,,"
+
+Head Start is intended for scholars who want to get an overview of a research field. They could be young PhDs getting into a new field, or established scholars who venture into a neighboring field. The idea is that you can see the main areas and papers in a field at a glance without having to do weeks of searching and reading.
+
+A prototypical implementation for the field of educational technology can be found on <a href=""http://labs.mendeley.com/headstart"" target=""_blank"">Mendeley Labs</a>. The visualization is also used in <a href=""http://halley.exp.sis.pitt.edu/cn3/visualization.php?conferenceID=131"" target=""_blank"">Conference Navigator 3</a> and in the <a href=""http://organic-edunet.eu/en/#/recommended"" target=""_blank"">Organic Edunet portal</a>.
+"
+2014-05-20-ivo-of-chartres.md,2014-05-20,project,Ivo of Chartres,,,,"Bruce Brasington, Martin Brett, Przemyslaw Nowak, Christof Rolker",,ivo-of-chartres,ivo-of-chartres.github.com,/projects/ivo-of-chartres/index.html,ivo-of-chartres,,data,,active,,true,,,,,,"
+
+A collection of the works of Ivo, bishop of Chartres.
+
+This site has four elements
+
+* draft texts and some concordances for the three collections traditionally
+associated with Ivo of Chartres:
+  * the Collectio Tripartita
+  * the Decretum and
+  * the Panormia
+* a draft list of manuscripts which contain a significant number of Ivo’s
+  letters.
+"
+2014-02-01-csv-js.md,2014-02-01,project,CSV.js,http://okfnlabs.org/projects/csv.js/,/img/projects/project-csv.js.png,,Rufus Pollock,rgrp,okfn,csv.js,/projects/csv.js/index.html,csv.js,javascript,library,production,active,,false,false,,,,,"
+
+Simple javascript CSV library focused on the browser with **zero
+dependencies**. Supports both parsing and serializing CSV.
+
+Originally developed as part of ReclineJS but now fully standalone.
+"
+2014-01-10-data-pipes.html,2014-01-10,project,Data Pipes,http://datapipes.okfnlabs.org/,/img/projects/project-data-pipes.png,"node.js, express, streaming","Andy Lulham, Rufus Pollock and David Miller","andylolz, rgrp, david",okfn,datapipes,/projects/data-pipes/index.html,data-pipes,javascript,"webapp, running service",prototype,active,,true,true,,,,,"
+
+Data Pipes is a service to provide streaming, ""pipe-like"" data transformations on the web – things like deleting rows or columns, find and replace, head, grep etc.
+"
+2013-12-06-reconcile-csv.html,2013-12-06,project,reconcile-csv,http://okfnlabs.org/reconcile-csv,/img/projects/project-reconcile-csv.png,,Michael Bauer,mihi,okfn,reconcile-csv,/projects/reconcile-csv/index.html,reconcile-csv,clojure,webapp,live,active,,,,,,,,"
+
+Reconcile-CSV is an OpenRefine reconciliation
+service running on top of a CSV file. It uses fuzzy matching to find the
+most likely candidates for matching.
+
+If you ever needed to join two datasets that didn't have unique identifiers
+and where things are written slightly different: this is a way to go.
+"
+2013-10-06-opencorrespondence.html,2013-10-06,project,Open Correspondence,http://opencorrespondence.org/,/img/projects/project-opencorrespondence.png,Literature,Iain Emsley,ipe,okfn,openletters,/projects/opencorrespondence/index.html,opencorrespondence,python,webapp,live,retired,retired,,,,,,,"
+
+Open Correspondence is an attempt to explore the letters network of the nineteenth century.
+
+At the moment, the project contains some of the letters of Charles Dickens, but we're working to expand to it include many other authors such as Jane Austen, George Eliot and Byron.
+"
+2013-09-01-elasticsearch-js.md,2013-09-01,project,ElasticSearch.JS,https://github.com/okfn/elasticsearch.js/,,elasticsearch,Rufus Pollock,rgrp,okfn,elasticsearch.js,/projects/elasticsearch-js/index.html,elasticsearch-js,javascript,library,production,active,,false,,,,,,"
+
+<p>A simple javascript library for working with <a
+href=""http://www.elasticsearch.org/"">ElasticSearch</a>.</p>
+
+<p>It also provides a backend interface to ElasticSearch suitable for use with
+the <a href=""http://okfnlabs.org/recline/"">Recline</a> suite of data
+libraries.</p>
+
+"
+1971-09-01-data-explorer.html,1971-09-01,project,Data Explorer,http://explorer.okfnlabs.org/,/img/projects/project-data-explorer.jpg,,"Rufus Pollock, Dan Wilson & others",rgrp,okfn,dataexplorer,/projects/data-explorer/index.html,data-explorer,"javascript, css","webapp, running service, tool",live,active,,true,true,,,,,"
+
+Data Explorer is an in-browser data cleaning and visualization app. Load tabular data, process it with JavaScript, and graph the results, all in the comfort of your browser. Gist-based persistence enables simple versioning and sharing of projects.
+"
+1971-08-01-data-okfn-org.md,1971-08-01,project,Frictionless Data,http://data.okfn.org/,/img/projects/project-frictionless-data.png,,Labs,rgrp,okfn,data.okfn.org,/projects/frictionless-data/index.html,frictionless-data,"javascript, css","webapp, running service, tool",live,active,,true,true,Standards and tools to make a world of frictionless data,,,,"
+
+There's too much friction working with data - friction getting data, friction
+processing data, friction sharing data.
+
+This friction stops people doing stuff: stops them creating, sharing,
+collaborating, and using data - especially amongst more distributed
+communities. It kills the cycles of find, improve, share that would make for a dynamic,
+productive and attractive (open) data ecosystem.
+
+We need to make an ecosystem that, like open-source for software, is useful and
+attractive to those without any principled interest, the vast majority who
+simply want the best tool for the job, the easiest route to their goal.
+
+We think that by getting a few key pieces in place we can reduce friction
+enough to revolutionize how the (open) data ecosystem operates with massively
+improved data quality, utilization and sharing.
+
+We're creating:
+
+* Standards: A small set of lightweight 'data package' standards and patterns
+  providing a base structure on which tooling and integration can build.
+* Tooling and Integration: Making it easy to use and publish data packages from
+  your existing apps and workflows whether that's Excel, R, or Hadoop!
+* Outreach and Community: Engaging and evangelizing around the concepts,
+  standards and tooling and building a community of users and contributors.
+"
+1971-07-01-reclinejs.html,1971-07-01,project,ReclineJS,http://okfnlabs.org/recline/,/img/projects/project-reclinejs.png,,"Rufus Pollock, Max Ogden & others",rgrp,okfn,recline,/projects/reclinejs/index.html,reclinejs,"javascript, css","library, tool",mature,active,,true,true,Build Data Applications in the Browser,,,,"
+
+Recline is a simple but powerful library for building data applications in pure Javascript and HTML. Building on Backbone, Recline supplies components and structure to data-heavy applications by providing a set of models (Dataset, Record/Row, Field) and views (Grid, Map, Graph etc).
+"
+1971-06-01-bubble-tree-library.html,1971-06-01,project,Bubble Tree Library,http://okfnlabs.org/bubbletree/,/img/projects/project-bubble-tree-library.png,,Gregor Aisch & David McCandless,,okfn,bubbletree,/projects/bubble-tree-library/index.html,bubble-tree-library,"javascript, coffeescript, css, shell","library, tool",mature,active,,,,,,,,"
+
+The BubbleTree can be used to display hierarchical (spending) data in an interactive visualization. The setup is easy and independent from the OpenSpending platform. However, there is an optional integration module to connect with data from the OpenSpending API.
+"
+1971-05-01-nomenklatura.html,1971-05-01,project,Nomenklatura,http://nomenklatura.okfnlabs.org/,/img/projects/project-nomenklatura.png,,Friedrich Lindenberg,pudo,pudo,nomenklatura,/projects/nomenklatura/index.html,nomenklatura,"python, javascript, css, shell","webapp, running service, tool",live,active,,true,,Reconciliation Web Service,,,,"
+Nomenklatura de-duplicates and integrates different names for entities - people, organisations or public bodies - to help you clean up messy data and to find links between different datasets.
+
+The service will create references for all entities mentioned in a source dataset. It then helps you to define which of these entities are duplicates and what the canonical name for a given entity should be. This information is available in data cleaning tools like OpenRefine or in custom data processing scripts, so that you can automatically apply existing mappings in the future.
+
+The focus of nomenklatura is on data integration, it does not provide further functionality with regards to the people and organisations that it helps to keep track of.
+
+<p>Nomenklatura is a simple service that makes it easy to maintain a canonical list of entities such as persons, companies or event streets and to match messy input, such as their names against that canonical list – for example, matching Acme Widgets, Acme Widgets Inc and Acme Widgets Incorporated to the canonical ""Acme Widgets"".</p>
+
+<p>With Nomenklatura its a matters of minutes to set up your own set of master data to match against and it provides a simple user interface and API which you can then use do matching (the API is compatible with Open Refine's reconciliation function).</p>
+
+<p>Nomenklatura can not only store the master set of entities you want to match against but also will learn and record the various aliases for a given entity - such as a person, organisation or place - may have in various datasets.</p>
+"
+1971-04-01-crowdcrafting-and-pybossa.html,1971-04-01,project,CrowdCrafting &amp; PyBossa,http://crowdcrafting.org/,/img/projects/project-crowdcrafting-and-pybossa.png,"Flask, Citizen Science",Daniel Lombraña González,teleyinex,pybossa,pybossa,/projects/crowdcrafting-and-pybossa/index.html,crowdcrafting-and-pybossa,"python, javascript, css, html","webapp, running service, tool",graduated,active,,true,,CrowdSourcing Made Easy,,,,"
+
+CrowdCrafting is a free, open-source crowd-sourcing and micro-tasking platform powered by the <a href=""http://dev.pybossa.com"">PyBossa</a> software. This platform enables people to <strong>create and run projects that utilize on-line assistance in performing tasks that require human cognition</strong> such as <em>image classification, transcription, geocoding and more</em>. CrowdCrafting is there to help researchers, civic hackers and developers to create projects where anyone around the world with some time, interest and an Internet connection can contribute.
+"
+1971-03-02-froide.html,1971-03-02,project,Froide,https://github.com/stefanw/froide/,/img/projects/project-froide.jpg,Django,Stefan Wehrmeyer,stwe,stefanw,froide,/projects/froide/index.html,froide,python,webapp,live,active,,true,,,,,,"
+
+<p>Froide is a Freedom of Information portal written in Python using the Django
+Web framework. It manages contactable entities, requests and much more. Users
+can send emails to these entities and receive public answers via the
+platform.</p>
+
+<p>It was developed to power <a class=""reference external""
+  href=""https://fragdenstaat.de"">Frag den Staat</a> – the German Freedom of
+Information Portal, but is internationalized, localized and themable and has
+deployed in several different countries.</p>
+
+<h4>Read more</h4>
+
+<ul>
+  <li><a href=""http://blog.okfn.org/2013/03/15/announcing-v3-0-of-froide-the-open-source-python-based-freedom-of-information-platform/"">Announcing v3.0 of Froide – the Open-Source Python-Based Freedom of Information Platform</a></li>
+</ul>
+"
+1971-03-01-frag-den-staat.html,1971-03-01,project,Frag Den Staat,https://fragdenstaat.de/,/img/projects/project-frag-den-staat.jpg,Django,Stefan Wehrmeyer,stwe,stefanw,froide,/projects/frag-den-staat/index.html,frag-den-staat,"python, javascript, css","webapp, running service",live,active,,,,,,,,"
+
+Germany Freedom of Information portal powered by the <a
+  href=""/projects/froide/"">Froide platform</a>. Responsible for managing over a 1/3 of
+all Freedom of Information request in Germany.
+"
+1971-02-01-annotator.html,1971-02-01,project,Annotator,http://annotatorjs.org/,/img/projects/project-annotator.png,,Nick Stenning & Aron Carroll,,openannotation,annotator,/projects/annotator/index.html,annotator,"javascript, css",library,graduated,active,,true,,,,,/annotator/,"
+
+The Annotator is an open-source JavaScript library and tool that can be added to any webpage to make it annotatable.
+
+Annotations can have comments, tags, users and more. Morever, the Annotator is designed for easy extensibility so its a cinch to add a new feature or behaviour.
+"
+1971-01-01-retrato-da-violencia.html,1971-01-01,project,Retrato da Violência,http://retratodaviolencia.org,/img/projects/project-retrato-da-violencia.jpg,,"Vitor Baptista, Leo Tartari, Thiago Bueno",,dataviz,retrato-da-violencia,/projects/retrato-da-violencia/index.html,retrato-da-violencia,"ruby, javascript, perl, css","data, tool",prototype,active,,true,,,,,,"
+
+Visualization on violence against women in the brazilian state Rio Grande do Sul.
+"
+1970-12-01-textus.html,1970-12-01,project,Textus,http://okfnlabs.org/textus/,/img/projects/project-textus.jpg,"node.js, ElasticSearch",Tom Oinn and Rufus Pollock,rgrp,okfn,textus,/projects/textus/index.html,textus,"javascript, css","webapp, running service, tool",live,active,,,,Collaborating Around Texts,,,,"
+
+In a nutshell it is an open source platform for working with collections of texts. It enables students, researchers and teachers to share and collaborate around texts using a simple and intuitive interface.
+"
+1970-11-01-iati-tools.html,1970-11-01,project,IATI Tools,https://github.com/okfn/iatitools,/img/projects/project-iati-tools.png,,Mark Brough,markbrough,okfn,iatitools,/projects/iati-tools/index.html,iati-tools,"python, javascript","library, tool",mature,active,,,,,,,,"
+
+Library for working with IATI data and converting it into a relational database. http://blog.okfn.org/2012/06/05/from-xml-to-visualisations-iati/
+"
+1970-10-01-listify.html,1970-10-01,project,Listify,http://listify.okfnlabs.org/,/img/projects/project-listify.png,,Rufus Pollock,rgrp,okfn,listify,/projects/listify/index.html,listify,"javascript, css","webapp, running service, tool",live,active,,,,Spreadsheets to Beautiful Lists,,,,"
+
+Turn a Google spreadsheet into a beautiful, searchable listing in seconds
+"
+1970-09-01-timemapper.html,1970-09-01,project,TimeMapper,http://timemapper.okfnlabs.org/,/img/projects/project-timemapper.jpg,,Rufus Pollock,rgrp,okfn,timemapper,/projects/timemapper/index.html,timemapper,"javascript, css","webapp, running service, tool",live,active,,,true,,,,,"
+
+Make timelines & maps from a Google Spreadsheet in seconds
+"
+1970-08-01-bundesgit.html,1970-08-01,project,BundesGit,http://bundestag.github.com/gesetze/,/img/projects/project-bundesgit.png,,Stefan Wehrmeyer,stwe,bundestag,gesetze,/projects/bundesgit/index.html,bundesgit,markdown,data,live,active,,,false,the Law in Git,,,,"
+"
+1970-07-01-recline-chrome-csv-viewer.html,1970-07-01,project,Recline Chrome CSV Viewer,https://github.com/rgrp/chrome-csv-viewer,/img/projects/project-recline-chrome-csv-viewer.png,Chrome Extension,,rgrp,rgrp,chrome-csv-viewer,/projects/recline-chrome-csv-viewer/index.html,recline-chrome-csv-viewer,"javascript, css",tool,mature,active,,,,,,,,"
+
+A chrome extension which allows you to view, search, graph and map CSV files in the browser (built using Recline)
+"
+1970-06-01-kartograph.html,1970-06-01,project,Kartograph,http://kartograph.org/,/img/projects/project-kartograph.png,Visualization,Gregor Aisch,,kartograph,kartograph.js,/projects/kartograph/index.html,kartograph,"javascript, coffeescript, css, shell",library,graduated,active,,,,,,,,"
+
+Kartograph is a simple and lightweight framework for building interactive map applications without Google Maps or any other mapping service. It was created with the needs of designers and data journalists in mind.
+"
+1970-05-01-messytables.html,1970-05-01,project,MessyTables,https://github.com/okfn/messytables,/img/projects/project-messytables.png,,"David Raznick, Friedrich Lindenberg, Dominik Moritz",pudo,okfn,messytables,/projects/messytables/index.html,messytables,python,"library, tool",prototype,active,,,,,,,,"
+
+Tools for parsing messy tabular data.
+
+http://okfnlabs.org/blog/2012/10/22/messytables.html
+"
+1970-04-01-data-converters.html,1970-04-01,project,Data Converters,https://github.com/okfn/dataconverters,,,"Nigel Babu, Rufus Pollock",rgrp,okfn,dataconverters,/projects/data-converters/index.html,data-converters,python,"library, tool",prototype,active,,,,,,,,"
+
+Python library and command line tool for converting data from one format to another. It builds on messytables, GDAL and many more great open-source libraries for processing data, and provides one easy to use standard API.
+
+"
+1970-03-01-wikipediajs.html,1970-03-01,project,WikipediaJS,http://okfnlabs.org/wikipediajs/,/img/projects/project-wikipediajs.png,,Rufus Pollock,rgrp,okfn,wikipediajs,/projects/wikipediajs/index.html,wikipediajs,"javascript, css","library, webapp, running service",prototype,active,,,,,,,,"
+
+WikipediaJS is a simple JS library for accessing information in Wikipedia articles such as dates, places, abstracts etc.
+
+The library is the work of Labs member Rufus Pollock. In essence, it is a small wrapper around the data and APIs of the DBPedia project and it is they who have done all the heavy lifting of extracting structured data from Wikipedia - huge credit and thanks to DBPedia folks!
+"
+1970-02-14-fyi-org-nz.html,1970-02-14,project,For Your Information,https://fyi.org.nz,/img/projects/project-fyi-org-nz.png,RoR,Rowan Crawford,wombleton,wombleton,alaveteli,/projects/fyi-org-nz/index.html,fyi-org-nz,"ruby, css, javascript, shell","webapp, running service, tool",live,active,,,false,,,,,"
+
+Make Official Information Act requests in New Zealand
+"
+1970-02-01-offenesparlement.html,1970-02-01,project,OffenesParlement,http://offenesparlament.de/,/img/projects/project-offenesparlament.png,,Friedrich Lindenberg,pudo,pudo,offenesparlament,/projects/offenesparlament/index.html,offenesparlament,"javascript, python, css","webapp, running service, tool",live,active,,,,,,,,"
+
+OffenesParlement is a site (and open-source codebase) for gathering and presenting information about the work of the Bundestag and Bundesrat.
+"
+1970-01-01-activityapi.html,1970-01-01,project,ActivityAPI,https://github.com/okfn/activityapi,,,Tom Rees,,okfn,activityapi,/projects/activityapi/index.html,activityapi,"python, css","webapp, running service, tool",live,retired,retired,,,,,,,"
+
+A web service for aggregating and querying online activity
+
+"

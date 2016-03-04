@@ -16,9 +16,10 @@ imageurl: /img/projects/project-product-open-data.png
 language: [Java,Objective-C,Python,PHP,CSS]
 projecturl: http://product.okfn.org/
 stage:
-status: [active]
+activity_status: [active]
 tags:
 tagline: Building the world's largest public product database
+maturity_status:
 ---
 
 The goal of this project is to build the largest open product database

@@ -16,7 +16,8 @@ projecturl: http://beta.offenedaten.de:9998/tika
 stage: alpha
 tags: [ocr]
 tagline: Turn many files, even text inside images, into text
-status: [active]
+activity_status: [active]
+maturity_status:
 ---
 
 This is a web service available for converting a multitude of document types to simple text. It is a public facing instance of the Apache Tika server (developer version). It lives at:
