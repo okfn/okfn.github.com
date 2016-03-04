@@ -9,7 +9,8 @@ author: Bruce Brasington, Martin Brett, Przemyslaw Nowak, Christof Rolker
 featured: yes
 github_user: ivo-of-chartres
 github_repo: ivo-of-chartres.github.com
-status: [active]
+activity_status: [active]
+maturity_status:
 ---
 
 A collection of the works of Ivo, bishop of Chartres.

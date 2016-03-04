@@ -13,7 +13,8 @@ slug: elasticsearch-js
 language: [javascript]
 type: [library]
 stage: production
-status: [active]
+activity_status: [active]
+maturity_status:
 ---
 
 <p>A simple javascript library for working with <a
