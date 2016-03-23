@@ -26,23 +26,33 @@ bodyclass: code
   <button type="submit" class="btn btn-primary">Filter</button>
 </form>
 
+
+
 <div class="projects">
-  {% for project in site.categories.projects %}
-    <div class="record" data-title="{{project.title}}" data-featured="{{project.featured}}" data-helpwanted="{{project.helpwanted}}" data-activity_status="{{project.activity_status}}" data-maturity_status="{{project.maturity_status}}" data-language="{{ project.language | join: ";" }}" data-type="{{ project.type | join: ";" }}" data-tags="{{ project.tags | join: ";" }}" data-url="{{project.url | replace:'index.html',''}}">
+  {% for csv_project in site.data.projects %}
+
+    {% for page_project in site.projects %}
+      {% if page_project.title == csv_project.title %}
+        {% assign page_project_metadata = page_project %}
+      {% endif %}
+    {% endfor %}
+
+    <div class="record" data-title="{{csv_project.title}}" data-featured="{{csv_project.featured}}" data-helpwanted="{{csv_project.helpwanted}}" data-activity_status="{{csv_project.activity_status}}" data-maturity_status="{{csv_project.maturity_status}}" data-language="{{csv_project.language | join: ";" }}" data-type="{{ csv_project.type | join: ";" }}" data-tags="{{ csv_project.tags | join: ";" }}" data-url="{{page_project_metadata.url | replace:'index.html',''}}">
       <h2>
-        <a href="{{project.url | replace:'index.html',''}}">{{project.title}}
+        <a href="{{page_project_metadata.url | replace:'index.html',''}}">{{csv_project.title}}
         </a>
-        {% if project.author %}
-        <div class="author">by {{project.author}}</div>
+
+        {% if csv_project.author %}
+          <div class="author">by {{csv_project.author}}</div>
         {% endif %}
       </h2>
-      {% if project.imageurl %}
-        <img src="{{project.imageurl}}" alt="{{project.title}}" />
+      {% if csv_project.imageurl %}
+        <img src="{{csv_project.imageurl}}" alt="{{csv_project.title}}" />
       {% endif %}
 
-      <p class="description">{{project.content}}</p>
-      {% if project.github_repo %}
-        <p><img src="/img/github.png" /> <a href="https://github.com/{{project.github_user}}/{{project.github_repo}}">Github</a></p>
+      <p class="description">{{page_project_metadata.content}}</p>
+      {% if csv_project.github_repo %}
+        <p><img src="/img/github.png" /> <a href="https://github.com/{{csv_project.github_user}}/{{csv_project.github_repo}}">Github</a></p>
       {% endif %}
     </div>
   {% endfor %}
