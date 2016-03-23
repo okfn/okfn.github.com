@@ -3,3 +3,4 @@
 .*.swp
 sandbox/*
 Gemfile.lock
+.~lock*
