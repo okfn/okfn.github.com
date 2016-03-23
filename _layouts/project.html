@@ -37,7 +37,7 @@ bodyclass: project
     <i class="icon-user" title="Maintainer"></i> Maintainer{% if csv_project_metadata.maintainers.size > 1 %}s{% endif %} &ndash;
     {% assign maintainer_list = csv_project_metadata.maintainers | split: ", " %}
     {% for maintainer in maintainer_list %}
-          <a href="/members/{{maintainer}}/" target="_blank">{{maintainer}}</a>{% if forloop.last != true %}, {% endif %}
+          <a href="/members/{{maintainer | strip }}/" target="_blank">{{maintainer}}</a>{% if forloop.last != true %}, {% endif %}
     {% endfor %}
   </li>
   {% endif %}
@@ -45,7 +45,7 @@ bodyclass: project
   <li>
     <i class="icon-user" title="Contributors"></i> Contributor{% if csv_project_metadata.contributors.size > 1 %}s{% endif %} &ndash;
     {% assign contributor_list = csv_project_metadata.contributors | split: ", " %}
-    {% for contributor in  contributor_list %}
+    {% for contributor in contributor_list %}
           <a href="/members/{{contributor | strip}}/" target="_blank">{{contributor}}</a>{% if forloop.last != true %}, {% endif %}
     {% endfor %}
   </li>
