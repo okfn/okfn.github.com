@@ -44,13 +44,12 @@ This can be done in one of two ways:
 
 2. Create a file at this location
 
-        projects/_posts/yyyy-mm-dd-{slug}.html
+        _projects/{PROJECT NAME}.html
 
-   where yyyy-mm-dd is the date you added the project. As an example, if
-   your project’s slug were `awesome-data-visualizer` and today's date were
-   2013-05-17 you would create
+   replacing <code>{PROJECT NAME}</code> with a suitable URL-friently name, e.g. if your project were
+   called "Awesome Data Visualizer", you could create
 
-        projects/_posts/2013-05-17-awesome-data-visualizer.html
+        _projects/awesome-data-visualizer.html
 
 
 3. To the file add a project title and a general description. Here's what it should look like:
@@ -81,25 +80,23 @@ This can be done in one of two ways:
         created with the needs of designers and data journalists in mind.
 
 
-4. Add a new row to the [_data/projects.csv](https://github.com/okfn/okfn.github.com/blob/master/_data/projects.csv) CSV file, right below the header line. Edit the row to include
-various pieces of information about your project. If you look at the information provided for other 
-projects this should guide you on how to add yours. Here's an overview of some of the CSV file
-fields:
+4. Add a new row to the [_data/projects.csv](https://github.com/okfn/okfn.github.com/blob/master/_data/projects.csv) CSV file, right below the
+header line. Edit the row to include various pieces of information about your project. If you look
+at the information provided for other projects this should guide you on how to add yours. The "title"
+field is required. All others are optional but you should fill as many as are relevant. Here's an
+overview of some of the CSV file fields:
 
 
     {: .table .table-striped }
     CSV field | Description
     --- | --- | ---
     **``title [REQUIRED]``**     | ``The title field should exactly match the title speficied in the file created in step 2``
-    **``slug [REQUIRED]``**      | ``URL-friendly version of the title e.g. awesome-data-visualizer``
-    **``permalink [REQUIRED]``** | ``Should take the form /projects/{slug}/index.html, where {slug} is the value of the slug field``
     ``projecturl``           | ``URL of an external project webpage e.g. http://awesomedatavisualizer.org``
-    ``imageurl``             | ``URL to a project image or logo of around 235px by 150px``
-    ``tags``                 | ``List of relevant tags e.g. [django, google spreadsheets]``
+    ``tags``                 | ``Comma-separated list of relevant tags e.g. [django, google spreadsheets]``
     ``tagline``              | ``One-liner description of project``
     ``author``               | ``Author(s) name(s) e.g. Joe Bloggs``
-    ``maintainers``          | ``List of labs username(s) of those who maintain the project``
-    ``contributors``         | ``List of labs username(s) of those who contribute to the project``
+    ``maintainers``          | ``Comma-separated list of labs username(s) of those who maintain the project``
+    ``contributors``         | ``Comma-separated list of labs username(s) of those who contribute to the project``
     ``github_repo``          | ``The github repo name e.g. awesome-data-visualizer``
     ``github_user``          | ``The github user who owns the repository e.g. okfn``
     ``language``             | ``List of languages the project uses e.g. [python, javascript]``
