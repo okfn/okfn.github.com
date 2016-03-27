@@ -20,43 +20,42 @@ Criteria for listing a project on Labs:
 [contact]: /contact/
 [contributor]: /about/#contributors
 
+
 ## Steps to add a project
 
 To add a project, you should have [signed up as a labs
 member](/members/signup/).  We also strongly recommend [joining the mailing
 list and following Labs on twitter](/contact/).
 
-1. Put together a brief bit of info about the project. It has 2 parts, some
-   structured data of form `item: value` at the top followed by some free text
-   (general description). Here's what it should look like (all items are
-   optional except those marked as required):
+Then, two small additions need to be made to the
+[Labs Github repository](https://github.com/okfn/okfn.github.com/) (thereby to this website).
+This can be done in one of two ways:
+
+
+- the geek route
+- the non-geek route
+
+
+
+## Geek Route
+
+1. Fork this site's [repository](https://github.com/okfn/okfn.github.com/)
+
+
+2. Create a file at this location
+
+        _projects/{PROJECT NAME}.html
+
+   replacing <code>{PROJECT NAME}</code> with a suitable URL-friently name, e.g. if your project were
+   called "Awesome Data Visualizer", you could create
+
+        _projects/awesome-data-visualizer.html
+
+
+3. To the file add a project title and a general description. Here's what it should look like:
 
         ---
-        layout: project [REQUIRED]
         title: {the project title e.g. Awesome Data Visualizer} [REQUIRED]
-        slug: {URL-friendly version of the title e.g. awesome-data-visualizer} [REQUIRED]
-        permalink: /projects/{slug}/index.html [REQUIRED]
-
-        type: {list from the following project types: [library, data, webapp, running
-               service, tool]}
-        author: {author(s) names e.g. Joe Bloggs}
-        maintainers: {list of labs username(s) of those who maintain the project}
-        contributors: {list of labs username(s) of those who contribute to the project}
-        featured: {set to 'yes' to add to the list of featured projects}
-        github_user: {the github user who owns the repo e.g. okfn}
-        github_repo: {the github repo name e.g. awesome-data-visualizer}
-        helpwanted: {set to 'yes' if the project requires assistance of any sort}
-        typeofhelp: {list from the following types of help required: [coding, data
-                     analysis, data wrangling, testing, documenting, blogging,
-                     evangelism, project managing]}
-        imageurl: {URL to a project image or logo of around 235px by 150px}
-        language: {list of languages the project uses e.g. [python, javascript]}
-        projecturl: {URL of an external project webpage e.g.
-                     http://awesomedatavisualizer.org}
-        stage: {one of [idea, alpha, prototype, production, deployed, mature, graduated]}
-        status: {set to 'retired' if the project is no longer active}
-        tags: {list of relevant tags e.g. [django, google spreadsheets]}
-        tagline: {one-liner description of project}
         ---
 
         A brief description of the project. You can use html (or markdown - if
@@ -70,66 +69,55 @@ list and following Labs on twitter](/contact/).
         - What problem does it solve?
         - How someone could contribute
 
-
-   Here's an example:
+    Here's an example:
 
         ---
-        layout: project
         title: Kartograph
-        slug: kartograph
-        permalink: /projects/kartograph/index.html
-
-        type: [library]
-        author: Gregor Aisch
-        featured: yes
-        github_user: kartograph
-        github_repo: kartograph.js
-        imageurl: http://kartograph.org/showcase/eastcoast/eastcoast-90dpi_export.png
-        language: [javascript, coffeescript, css, shell]
-        projecturl: http://kartograph.org/
-        stage: mature
-        tags: Visualization
         ---
 
         Kartograph is a simple and lightweight framework for building interactive
         map applications without Google Maps or any other mapping service. It was
         created with the needs of designers and data journalists in mind.
 
-2. Put this in a file name
 
-2. Get this added to the [Labs Github repo][repo] (and thereby to the website).
-   There are 2 options:
+4. Add a new row to the [_data/projects.csv](https://github.com/okfn/okfn.github.com/blob/master/_data/projects.csv) CSV file, right below the
+header line. Edit the row to include various pieces of information about your project. If you look
+at the information provided for other projects this should guide you on how to add yours. The "title"
+field is required. All others are optional but you should fill as many as are relevant. Here's an
+overview of some of the CSV file fields:
 
-    * More geeky route: add this info to the repo yourself via fork and pull
-      &ndash; instructions below
-    * Less geeky route: email it to labs@okfn.org and we'll take care of it for
-      you
 
-3. Think about writing a blog to give a longer-form explanation of your project,
-   appropriate for a more general audience.
+    {: .table .table-striped }
+    CSV field | Description
+    --- | --- | ---
+    **``title [REQUIRED]``**     | ``The title field should exactly match the title speficied in the file created in step 2``
+    ``projecturl``           | ``URL of an external project webpage e.g. http://awesomedatavisualizer.org``
+    ``tags``                 | ``Comma-separated list of relevant tags e.g. [django, google spreadsheets]``
+    ``tagline``              | ``One-liner description of project``
+    ``author``               | ``Author(s) name(s) e.g. Joe Bloggs``
+    ``maintainers``          | ``Comma-separated list of labs username(s) of those who maintain the project``
+    ``contributors``         | ``Comma-separated list of labs username(s) of those who contribute to the project``
+    ``github_repo``          | ``The github repo name e.g. awesome-data-visualizer``
+    ``github_user``          | ``The github user who owns the repository e.g. okfn``
+    ``language``             | ``List of languages the project uses e.g. [python, javascript]``
+    ``type``                 | ``List from the following project types: [library, data, webapp, running service, tool]``
 
-### Geek Route
 
-This assumes you know how to add stuff to a git repo on github (preferably via fork and pull).
+5. Save your changes, commit and push to your fork
 
-1. We need to add the info above to the [Labs website repo on github][repo]
-
-2. Fork the [repo][]
-
-3. Create a file at this location
-
-        projects/_posts/yyyy-mm-dd-{slug}.html
-
-   where yyyy-mm-dd is the date you added the project. As an example, if
-   your project’s slug were `awesome-data-visualizer` and today's date were
-   2013-05-17 you would create
-
-        projects/_posts/2013-05-17-awesome-data-visualizer.html
-
-4. Add the info you prepared above. Save the file.
-
-5. Commit and push.
 
 6. Submit a pull request
 
-[repo]: https://github.com/okfn/okfn.github.com/
+
+## Non-geek Route
+
+Sent an email to us at labs@okfn.org, with the as much of the following information as is available:
+
+1. The title of the project
+2. A link to the project
+3. A link to the git repository
+4. The git repository owner (e.g. github username)
+5. The author(s) and contributor(s) name(s)
+6. The maintainer(s) name(s)
+7. The languages used by the project (e.g. python, javascript)
+

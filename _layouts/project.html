@@ -4,19 +4,26 @@ categories: project
 bodyclass: project
 ---
 
+{% for csv_project in site.data.projects %}
+  {% if page.title == csv_project.title %}
+    {% assign csv_project_metadata = csv_project %}
+  {% endif %}
+{% endfor %}
+
+
 <div class="record">
   <div class="row">
     <div class="span6">
       <h2>
-        <a href="{{page.projecturl}}" target="_blank">{{page.title}}</a>
-        {% if page.tagline %}
+        <a href="{{csv_project_metadata.projecturl}}" target="_blank">{{csv_project_metadata.title}}</a>
+        {% if csv_project_metadata.tagline %}
         <br />
-        <small><em>{{page.tagline}}</em></small>
+        <small><em>{{csv_project_metadata.tagline}}</em></small>
         {% endif %}
         
         <br />
-        {% if page.author %}
-        <small>by {{page.author}}</small>
+        {% if csv_project_metadata.author %}
+        <small>by {{csv_project_metadata.author}}</small>
         {% endif %}
       </h2>
     </div>
@@ -25,42 +32,44 @@ bodyclass: project
   <div class="row">
     <div class="span6">
       <ul class="meta">
-	{% if page.maintainers %}
-	<li>
-	  <i class="icon-user" title="Maintainer"></i> Maintainer{% if page.maintainers.size > 1 %}s{% endif %} &ndash;
-	  {% for maintainer in page.maintainers %}
-          <a href="/members/{{maintainer}}/" target="_blank">{{maintainer}}</a>{% if forloop.last != true %}, {% endif %}
-	  {% endfor %}
-	</li>
-	{% endif %}
-	{% if page.contributors %}
-	<li>
-	  <i class="icon-user" title="Contributors"></i> Contributor{% if page.contributors.size > 1 %}s{% endif %} &ndash;
-	  {% for contributor in page.contributors %}
-          <a href="/members/{{contributor}}/" target="_blank">{{contributor}}</a>{% if forloop.last != true %}, {% endif %}
-	  {% endfor %}
-	</li>
-	{% endif %}
-	{% if page.projecturl %}
-	<li>
-	  <i class="icon-link" title="Project HomePage"></i> <a href="{{page.projecturl}}" target="_blank">{{page.projecturl}}</a>
-	</li>
-	{% endif %}
-	{% if page.github_repo %}
-	<li>
-	  <i class="icon-github"></i> <a href="https://github.com/{{page.github_user}}/{{page.github_repo}}">https://github.com/{{page.github_user}}/{{page.github_repo}}</a>
-	</li>
-	{% endif %}
+  {% if csv_project_metadata.maintainers.size > 0 %}
+  <li>
+    <i class="icon-user" title="Maintainer"></i> Maintainer{% if csv_project_metadata.maintainers.size > 1 %}s{% endif %} &ndash;
+    {% assign maintainer_list = csv_project_metadata.maintainers | split: ", " %}
+    {% for maintainer in maintainer_list %}
+          <a href="/members/{{maintainer | strip }}/" target="_blank">{{maintainer}}</a>{% if forloop.last != true %}, {% endif %}
+    {% endfor %}
+  </li>
+  {% endif %}
+  {% if csv_project_metadata.contributors.size > 0 %}
+  <li>
+    <i class="icon-user" title="Contributors"></i> Contributor{% if csv_project_metadata.contributors.size > 1 %}s{% endif %} &ndash;
+    {% assign contributor_list = csv_project_metadata.contributors | split: ", " %}
+    {% for contributor in contributor_list %}
+          <a href="/members/{{contributor | strip}}/" target="_blank">{{contributor}}</a>{% if forloop.last != true %}, {% endif %}
+    {% endfor %}
+  </li>
+  {% endif %}
+  {% if csv_project_metadata.projecturl && csv_project_metadata.projecturl != "" %}
+  <li>
+    <i class="icon-link" title="Project HomePage"></i> <a href="{{csv_project_metadata.projecturl}}" target="_blank">{{csv_project_metadata.projecturl}}</a>
+  </li>
+  {% endif %}
+  {% if csv_project_metadata.github_repo && csv_project_metadata.github_repo != "" %}
+  <li>
+    <i class="icon-github"></i> <a href="https://github.com/{{csv_project_metadata.github_user}}/{{csv_project_metadata.github_repo}}">https://github.com/{{csv_project_metadata.github_user}}/{{csv_project_metadata.github_repo}}</a>
+  </li>
+  {% endif %}
       </ul>
       <p class="description">
-	{{content}}
+  {{content}}
       </p>
     </div>
     <div class="span6">
       <div class="image">
-	{% if page.imageurl %}
-	<img src="{{page.imageurl}}" alt="{{page.title}}" />
-	{% endif %}
+  {% if csv_project_metadata.imageurl %}
+  <img src="{{csv_project_metadata.imageurl}}" alt="{{csv_project_metadata.title}}" />
+  {% endif %}
       </div>
     </div>
   </div>
@@ -69,7 +78,8 @@ bodyclass: project
     <div class="span6">
       {% for post in site.categories.blog %}
       {% for project in post.projects %}
-      {% if page.slug == project %}
+      {% assign check_url = "/projects/" | append: project | append: "/" %}
+      {% if page.url ==  check_url %}
       {% assign related_posts_exist = true %}
       {% break %}
       {% endif %}
@@ -79,34 +89,37 @@ bodyclass: project
       {% if related_posts_exist %}
       <h3>Related Posts</h3>
       <ul>
-	{% for post in site.categories.blog %}
-	{% for project in post.projects %}
-	{% if page.slug == project %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-	{% endif %}
-	{% endfor %}
-	{% endfor %}
+  {% for post in site.categories.blog %}
+  {% for project in post.projects %}
+  {% assign check_url = "/projects/" | append: project | append: "/" %}
+  {% if page.url ==  check_url %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
       </ul>
       {% endif %}
     </div>
   </div>
 
+
+
   <div class="row">  
     <div class="span6">
-      {% if page.github_repo %}
+      {% if csv_project_metadata.github_repo %}
       <h3>Recent Activity</h3>
       <div id="github-activity" style="width: 100%"></div>
       <script>
-	$('#github-activity').githubActivity({
-	events: 5,
-	repos: ["{{page.github_user}}/{{page.github_repo}}"]
-	});
+  $('#github-activity').githubActivity({
+  events: 5,
+  repos: ["{{csv_project_metadata.github_user}}/{{csv_project_metadata.github_repo}}"]
+  });
       </script>
       <div class="rhs">
-	<iframe src="http://ghbtns.com/github-btn.html?user={{page.github_user}}&repo={{page.github_repo}}&type=watch&count=true"
-		allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-	<iframe src="http://ghbtns.com/github-btn.html?user={{page.github_user}}&repo={{page.github_repo}}&type=fork&count=true"
-		allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+  <iframe src="http://ghbtns.com/github-btn.html?user={{csv_project_metadata.github_user}}&repo={{csv_project_metadata.github_repo}}&type=watch&count=true"
+    allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+  <iframe src="http://ghbtns.com/github-btn.html?user={{csv_project_metadata.github_user}}&repo={{csv_project_metadata.github_repo}}&type=fork&count=true"
+    allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
       </div>
       {% endif %}
     </div>

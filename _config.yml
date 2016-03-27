@@ -4,3 +4,17 @@ future: false
 gems:
   - jekyll-redirect-from
   - jekyll-mentions
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
