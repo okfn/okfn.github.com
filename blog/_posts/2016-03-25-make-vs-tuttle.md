@@ -2,7 +2,7 @@
 layout: post
 author: Alexandre Bonnasseau
 username: lexman
-title: "Tools for datapackages : make vs tuttle"
+title: "Tools for Data Packages: Make vs. Tuttle"
 ---
 
 When crafting data from some other data, like packaging public data, using the good tools 
