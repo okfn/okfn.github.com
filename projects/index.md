@@ -37,7 +37,7 @@ bodyclass: code
       {% endif %}
     {% endfor %}
 
-    <div class="record" data-title="{{csv_project.title}}" data-featured="{{csv_project.featured}}" data-helpwanted="{{csv_project.helpwanted}}" data-activity_status="{{csv_project.activity_status}}" data-maturity_status="{{csv_project.maturity_status}}" data-language="{{csv_project.language | join: ";" }}" data-type="{{ csv_project.type | join: ";" }}" data-tags="{{ csv_project.tags | join: ";" }}" data-url="{{page_project_metadata.url | replace:'index.html',''}}">
+    <div class="record" data-title="{{csv_project.title}}" data-featured="{{csv_project.featured | downcase }}" data-helpwanted="{{csv_project.helpwanted | downcase}}" data-activity_status="{{csv_project.activity_status}}" data-maturity_status="{{csv_project.maturity_status}}" data-language="{{csv_project.language | join: ";" }}" data-type="{{ csv_project.type | join: ";" }}" data-tags="{{ csv_project.tags | join: ";" }}" data-url="{{page_project_metadata.url | replace:'index.html',''}}">
       <h2>
         <a href="{{page_project_metadata.url | replace:'index.html',''}}">{{csv_project.title}}
         </a>
