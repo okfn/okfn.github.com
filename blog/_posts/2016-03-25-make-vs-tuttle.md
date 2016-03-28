@@ -1,9 +1,10 @@
- ---
- layout: post
- author: {Alexandre Bonnasseau}
- username: lexman
- title: {Tools for datapackages : make vs tuttle}
- ---
+---
+layout: post
+author: Alexandre Bonnasseau
+username: lexman
+title: "Tools for datapackages : make vs tuttle"
+---
+
 When crafting data from some other data, like packaging public data, using the good tools 
 can really ease development process and reliability of the data. 
 
@@ -77,7 +78,7 @@ The other difference with ``make`` is not in the syntax, it's in how it deals wi
 
 To improve this, ``tuttle`` reacts to changes in every command. When you run it, it will first roll back as the previous command as if had never run by deleting whatever data has been produced. Then it will run the updated ogr2ogr command. That's very handy when prototyping because you want focus on your code without side effects caused by remaining data. 
 
-This feature also proves really useful when working in a team. With ``make``, if you change the makefile, you need to send an mail to all your team with instructions of how to clean the workspace (ie : "Please remove file ../data/countries.geojson because I have changed the ogr2ogr command"), and hope nobody misses it because it would lead to undebuggable behaviour. On the other hand ``tuttle`` guaranties the data corresponds exactly the ``tuttlefile``, so you can safely share or merge changes with your fellow contributors.
+This feature also proves really useful when working in a team. With ``make``, if you change the makefile, you need to send an mail to all your team with instructions of how to clean the workspace (ie : "Please remove file ../data/countries.geojson because I have changed the ogr2ogr command"), and hope nobody misses it because it would lead to undebuggable behaviour. On the other hand ``tuttle`` guarantees the data corresponds exactly the ``tuttlefile``, so you can safely share or merge changes with your fellow contributors.
 
 
 ## Conclusion
