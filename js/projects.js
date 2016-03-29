@@ -40,7 +40,7 @@ jQuery(document).ready(function($) {
     return false;
   });
 
-  var filters = {tags: {}, type: {}, activity_status: {}, maturity_status: {}, language: {}, title: {}};
+  var filters = {category: {}, activity_status: {}, maturity_status: {}, language: {}, title: {}};
 
   container.find('.record').each(function() {
     // Find the current project's detail URL
@@ -51,6 +51,8 @@ jQuery(document).ready(function($) {
     // de-duplicate filter values
     $.each(filters, function(filter_type) {
       var filter_vals = record.data(filter_type).split(';');
+      console.log(url);
+      console.log(filter_type);
       $.each(filter_vals, function(ignore, filter_val) {
         k = toFilterName(filter_val);
         if (!(k in filters[filter_type]) && k !== '') {
