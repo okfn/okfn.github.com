@@ -33,7 +33,7 @@ bodyclass: badges
 
     {% assign evidence = "" | split: "" %}
     {% if badge.id == "project-maintainer" %}
-    {% for project in site.categories.projects %}
+    {% for project in site.data.projects %}
     {% if project.maintainers contains person.username %}
     {% assign evidence = evidence | push: project.title %}
     {% endif %}

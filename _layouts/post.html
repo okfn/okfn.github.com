@@ -69,12 +69,20 @@ categories: post
 
     {% if page.projects %}
     <h3>Related Projects</h3>
-    {% for project in site.categories.projects %}
+    {% for project in site.projects %}
     {% for related_project in page.projects %}
-    {% if project.slug == related_project %}
-    <h4><a href="{{ project.permalink }}">{{ project.title }}</a></h4>
-    <a href="{{ project.permalink }}">
-      <div class="croppedimg" style="background-image:url('{{project.imageurl}}')">
+    {% assign check_url = "/projects/" | append: related_project | append: "/" %}
+    {% if project.url ==  check_url %}
+
+    {% for csv_project in site.data.projects %}
+      {% if project.title == csv_project.title %}
+        {% assign csv_project_metadata = csv_project %}
+      {% endif %}
+    {% endfor %}
+
+    <h4><a href="{{ project.url }}">{{ project.title }}</a></h4>
+    <a href="{{ project.url }}">
+      <div class="croppedimg" style="background-image:url('{{csv_project_metadata.imageurl}}')">
       </div>
     </a>
     {% endif %}
