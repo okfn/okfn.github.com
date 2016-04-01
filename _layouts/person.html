@@ -49,11 +49,19 @@ bodyclass: members
 <p>{{page.title}} is a maintainer or contributor to the following projects.</p>
 
 <div class="project-list">
-{% for project in site.categories.projects %}
-{% if (project.maintainers contains page.username) or (project.contributors contains page.username) %}
+{% for csv_project in site.data.projects %}
+{% if (csv_project.maintainers contains page.username) or (csv_project.contributors contains page.username) %}
   <div>
-    <h3><a href="{{project.url | replace:'index.html',''}}">{{project.title}}</a></h3>
-    <em>{{ project.content | markdownify | strip_html | truncatewords: 45 }} </em>
+    <h3><a href="{{csv_project.url | replace:'index.html',''}}">{{csv_project.title}}</a></h3>
+
+    {% for page_project in site.projects %}
+      {% if page_project.title == csv_project.title %}
+        {% assign page_project_metadata = page_project %}
+      {% endif %}
+    {% endfor %}
+
+    <em>{{ page_project_metadata.content | markdownify | strip_html | truncatewords: 45 }} </em>
+
   </div>
 {% endif %}
 {% endfor %}

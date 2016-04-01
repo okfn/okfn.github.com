@@ -16,12 +16,12 @@ bodyclass: code
 <form class="form-inline hidden" id="filters">
   <select data-placeholder="Filter projects..." style="width:500px;" class="form-control chosen-select" multiple>
     <option value=""></option>
+    <optgroup label="Featured">
+      <option value="[data-featured*=true]">Featured</option>
+    </optgroup>    
     <optgroup label="Priority">
       <option value="[data-priority*=true]">Priority</option>
     </optgroup>    
-    <optgroup label="Featured">
-      <option value="[data-featured*=true]">Featured</option>
-    </optgroup>
     <optgroup label="Help wanted">
       <option value="[data-helpwanted*=true]">Help wanted</option>
     </optgroup>
@@ -40,7 +40,7 @@ bodyclass: code
       {% endif %}
     {% endfor %}
 
-    <div class="record" data-title="{{csv_project.title}}" data-priority="{{csv_project.priority | downcase }}" data-featured="{{csv_project.featured | downcase }}" data-helpwanted="{{csv_project.helpwanted | downcase}}" data-activity_status="{{csv_project.activity_status}}" data-maturity_status="{{csv_project.maturity_status}}" data-language="{{csv_project.language | join: ";" }}" data-type="{{ csv_project.type | join: ";" }}" data-category="{{ csv_project.category }}" data-url="{{page_project_metadata.url | replace:'index.html',''}}">
+    <div class="record" data-title="{{csv_project.title}}" data-priority="{{csv_project.priority | downcase }}" data-featured="{{csv_project.featured | downcase }}" data-helpwanted="{{csv_project.helpwanted | downcase}}" data-activity_status="{{csv_project.activity_status}}" data-stage="{{csv_project.stage}}" data-language="{{csv_project.language | join: ";" }}" data-type="{{ csv_project.type | join: ";" }}" data-category="{{ csv_project.category }}" data-url="{{page_project_metadata.url | replace:'index.html',''}}">
       <h2>
         <a href="{{page_project_metadata.url | replace:'index.html',''}}">{{csv_project.title}}
         </a>
