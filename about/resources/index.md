@@ -76,7 +76,7 @@ be reviewed by an [Official Labs Contributor][Contributors].
 
 ### Messaging
 
-Mailing lists, IRC etc. See the [contact page][contact].
+Mailing lists, Twitter, chat etc. See the [contact page][contact].
 
 
 ## Coordination and Organizing
