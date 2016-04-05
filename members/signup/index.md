@@ -57,7 +57,7 @@ We also strongly recommend [joining the mailing list and following Labs on twitt
        place: London, UK
        permalink: /members/rgrp/index.html
        ---
-       
+
        Rufus is an avid hacker on small data tools, an enthusiastic collector
        of new datasets and an out-of-hours data investigator. Skills include
        python, javascript, sysadmin and data wrangling.
@@ -80,10 +80,10 @@ This assumes you know how to add stuff to a git repo on github (preferably via f
 
 3. Create a file at this location
 
-        members/_posts/yyyy-mm-dd-{your-handle}.html
+        members/_posts/yyyy-mm-dd-{your-username}.html
 
    where yyyy-mm-dd is the date you signed up as a member. As an example, if
-   your handle were `awesomeusername` and today's date were 2013-05-17 you
+   your username were `awesomeusername` and today's date were 2013-05-17 you
    would create
 
         members/_posts/2013-05-17-awesomeusername.html
@@ -95,4 +95,3 @@ This assumes you know how to add stuff to a git repo on github (preferably via f
 6. Submit a pull request
 
 [repo]: https://github.com/okfn/okfn.github.com/
-

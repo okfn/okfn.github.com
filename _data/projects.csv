@@ -1,4 +1,5 @@
 title,projecturl,author,maintainers,contributors,github_user,github_repo,imageurl,category,type,priority,tagline,language,activity_status,stage,archived_stage,featured,helpwanted,typeofhelp,redirect_from,sort_order,archived_tags
+Data Patterns,http://datapatterns.org/,Open Knowledge International,rgrp,"rgrp, danfowler",okfn,datapatterns,/img/projects/project-datapatterns.jpg,Data Tools and Services,,TRUE,,,active,developing,,FALSE,,,,0,
 CKAN,http://ckan.org/,CKAN,,,ckan,ckan,/img/projects/project-ckan.png,Data Tools and Services,,FALSE,,,active,very mature,,TRUE,,,,10,
 OpenSpending,https://openspending.org/,Open Knowledge International,,,,,/img/projects/project-openspending.png,Database,,TRUE,,,active,very mature,,TRUE,,,,20,
 OpenTrials,http://opentrials.net/,Open Knowledge International,,,,,/img/projects/project-opentrials.png,Database,,TRUE,,,active,developing,,TRUE,,,,30,
