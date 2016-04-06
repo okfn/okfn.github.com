@@ -135,23 +135,23 @@ export "big" Data Packages for analysis in the cloud.  Likewise, by
 supporting general SQL import and export for Data Packages, a wide
 variety of software that depend on typical SQL databases can support
 Data Packages natively.  The library powering both implementations is
-[datapackage-storage-py](https://github.com/okfn/datapackage-storage-py),
+[jsontableschema-py](https://github.com/frictionlessdata/jsontableschema-py),
 which provides a high level interface for importing and exporting
 tabular data to and from
-[Tabular Storage](https://github.com/okfn/datapackage-storage-py#tabular-storage)
+[Tabular Storage](https://github.com/frictionlessdata/jsontableschema-py#storage)
 objects based on
 [JSON Table Schema](http://dataprotocols.org/json-table-schema/)
 descriptors.
 
 ### BigQuery 
 
-- Source: [jsontableschema-bigquery-py](https://github.com/okfn/jsontableschema-bigquery-py).
+- Source: [jsontableschema-bigquery-py](https://github.com/frictionlessdata/jsontableschema-bigquery-py).
 - Screencast: [https://www.youtube.com/watch?v=i\_YHSwl-7VU](https://www.youtube.com/watch?v=i_YHSwl-7VU&feature=youtu.be)
 - Walkthrough: [https://gist.github.com/vitorbaptista/998aed29097945aaccff](https://gist.github.com/vitorbaptista/998aed29097945aaccff)
 
 ### SQL 
 
-- Source and usage information: [jsontableschema-sql-py](https://github.com/okfn/jsontableschema-sql-py).
+- Source and usage information: [jsontableschema-sql-py](https://github.com/frictionlessdata/jsontableschema-sql-py).
 - Screencast: [https://asciinema.org/a/cyzd0lz0kqvcqmg4zneifohov](https://asciinema.org/a/cyzd0lz0kqvcqmg4zneifohov)
 - Walkthrough: [https://gist.github.com/vitorbaptista/19d476d99595584e9ad5](https://gist.github.com/vitorbaptista/19d476d99595584e9ad5)
 
@@ -163,10 +163,10 @@ more tools and databases.  We already have plans to support
 [DAT](https://github.com/maxogden/dat).  Of course, we need feedback
 from **you** to pick the next libraries to focus on.  What tool do you
 think could benefit from Data Package integration?  Tell us in the
-[forum](https://discuss.okfn.org/c/open-knowledge-labs/data-packages).
+[forum](https://discuss.okfn.org/c/frictionless-data).
 
 ![](/img/posts/tabular-storage-diagram.png)
 
 For more information on Data Packages and our Frictionless Data
 approach, please visit
-[http://datapackages.org/](http://datapackages.org/).
+[http://frictionlessdata.io/](http://frictionlessdata.io/).
