@@ -28,22 +28,19 @@ Using "Fork and pull" on the [github repo][repo]:
 2. Add content. The structure should be:
 
         ---
-        layout: post
         author: {Your Name}
         username: [optional] {your-user-name-if-you-have-one}
         title: {Title Like This - this is used both in page and html title}
         projects: [optional] {project slug, project slug...} (use if your post references Open Knowledge Labs projects)
         ---
 
-        content in html or markdown goes here .... 
-   
+        content in html or markdown goes here ....
+
    You need to quote any fields that contain a colon (:). For example,
 
         ---
-        layout: post
         author: {Your Name}
         title: 'CatchyName: Doing this thing with that thing'
         ---
 
 3. Add and commit the file then submit the pull request (if you are not pushing direct to the main repo)
-
