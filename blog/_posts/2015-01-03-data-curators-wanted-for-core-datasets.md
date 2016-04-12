@@ -2,7 +2,6 @@
 title: Wanted - Data Curators to Maintain Key Datasets in High-Quality, Easy-to-Use and Open Form
 author: Rufus Pollock
 username: rgrp
-layout: post
 projects: [frictionless-data]
 ---
 

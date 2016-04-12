@@ -5,7 +5,6 @@ username: okfngr
 location: Thessaloniki, GR
 eventdate: 2013-07-23
 categories: apps
-layout: post
 ---
 
 

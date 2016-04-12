@@ -1,7 +1,6 @@
 ---
 title: Improving the openness of health and social care data
 author: Chris Hutchins
-layout: post
 ---
 
 The [Health and Social Care Information Centre](http://www.hscic.gov.uk/) (HSCIC) is responsible for publishing a large proportion of the official statistics related to health and care in England. Each year we release about 250 statistical publications, ranging from high-level summary data on hospital admissions, through to detail on prescriptions, and results from surveys on lifestyles and smoking, drinking and drug use habits. We publish a vast array of aggregated non-identifiable data, all under the Open Government Licence, and are working with an [open data](http://www.hscic.gov.uk/transparency) mind-set to ensure that these data can be used to maximum effect.

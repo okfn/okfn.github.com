@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Vitor Baptista
 title: Scraping Data Behind a CAPTCHA
 username: vitorbaptista

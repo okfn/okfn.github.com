@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Stefan Urbanek
 username: Stiivi
 title: Introduction to OLAP

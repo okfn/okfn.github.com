@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Rufus Pollock
 title: data.okfn.org - update no. 1
 username: rgrp

@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Rufus Pollock
 title: Update on PublicBodies.org - a URL for every part of Government
 username: rgrp

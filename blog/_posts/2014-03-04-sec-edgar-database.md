@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Rufus Pollock
 username: rgrp
 title: The SEC EDGAR Database

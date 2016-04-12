@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Neil Ashton
 title: PublicBodies.org progress
 username: nmashton

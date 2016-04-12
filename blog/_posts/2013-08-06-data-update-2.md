@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Neil Ashton
 title: data.okfn.org - update no. 2
 username: nmashton

@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Rufus Pollock
 title: Progress on the Data Explorer
 username: rgrp

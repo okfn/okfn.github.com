@@ -2,7 +2,6 @@
 title: "Labs newsletter: 5 June, 2014"
 author: Neil Ashton
 username: nmashton
-layout: post
 projects: [textus,annotator,dpm]
 ---
 

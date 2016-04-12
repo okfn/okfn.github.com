@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Pierre-Yves Vandenbussche
 title: How a bad experience made an OKFN labs project
 username: pyvandenbussche

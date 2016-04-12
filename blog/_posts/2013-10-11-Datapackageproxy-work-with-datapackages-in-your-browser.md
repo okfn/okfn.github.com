@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Michael Bauer
 title: Datapackageproxy - work with datapackages in your browser
 username: mihi

@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Rufus Pollock
 title: Archiving Twitter the Hacky Way
 username: rgrp

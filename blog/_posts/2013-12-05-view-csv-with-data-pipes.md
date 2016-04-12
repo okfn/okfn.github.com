@@ -3,7 +3,6 @@ title: View a CSV (Comma Separated Values) in Your Browser
 author: Neil Ashton
 username: nmashton
 projects: [data-pipes]
-layout: post
 ---
 
 This post introduces one of the handiest features of [Data Pipes][]: **[fast (pre) viewing of CSV files in your browser][pretty]** (and you can share the result by just copying a URL).

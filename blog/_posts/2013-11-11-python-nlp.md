@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Tarek Amr
 username: tamr
 title: Natural Language Processing using Python

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Labs Show and Tell - All Welcome!
 author: Nigel Babu
 username: nigelb

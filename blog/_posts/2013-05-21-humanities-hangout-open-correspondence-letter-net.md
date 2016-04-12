@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Open Humanities Hangout - Open Correspondence and the Letter Net
 author: Sam Leon
 event: hangout

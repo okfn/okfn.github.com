@@ -2,7 +2,6 @@
 title: "Labs newsletter: 16 January, 2014"
 author: Neil Ashton
 username: nmashton
-layout: post
 ---
 
 Welcome back from the holidays! A new year of Labs activities is well underway, with long-discussed improvements to the Labs projects page, many new PyBossa developments, a forthcoming community hangout, and more.

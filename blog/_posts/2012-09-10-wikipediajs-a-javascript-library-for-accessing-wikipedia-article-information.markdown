@@ -1,5 +1,4 @@
 ---
-layout: post
 title: WikipediaJS - accessing Wikipedia article data through Javascript
 author: Rufus Pollock
 username: rgrp

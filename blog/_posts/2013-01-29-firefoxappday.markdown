@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Daniel Lombraña González
 title: Mozilla FirefoxOS App Days & Crowdcrafting.org
 snapshot: firefoxosappdays

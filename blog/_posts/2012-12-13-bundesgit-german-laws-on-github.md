@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Stefan Wehrmeyer
 title: Bundes-Git – German Laws on GitHub
 snapshot: bundesgit_intro

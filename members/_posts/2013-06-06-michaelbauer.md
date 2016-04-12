@@ -1,5 +1,4 @@
 ---
-layout: person
 username: mihi
 title: Michael Bauer
 area: Data Diva 

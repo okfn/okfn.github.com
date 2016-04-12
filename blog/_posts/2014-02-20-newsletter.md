@@ -2,7 +2,6 @@
 title: "Labs newsletter: 20 February, 2014"
 author: Neil Ashton
 username: nmashton
-layout: post
 projects: [crowdcrafting-and-pybossa,data-pipes,timemapper]
 ---
 

@@ -4,3 +4,4 @@
 sandbox/*
 Gemfile.lock
 .~lock*
+*~

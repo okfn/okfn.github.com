@@ -2,7 +2,6 @@
 title: "Labs newsletter: Q4 2015"
 author: Josh Wieder
 username: jaydubya
-layout: post
 ---
 
 Hey there hackers & hackettes! Welcome to the 4th quarter 2015 Open Knowledge Labs Newsletter: A Very Special Holiday Edition of the Open Knowledge Labs Newsletter. We hope that all of our readers, volunteers, team members & contributors have a great holiday season. Labs is doing our part to keep things festive:

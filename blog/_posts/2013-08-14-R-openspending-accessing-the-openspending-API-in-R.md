@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Michael Bauer
 title: ropenspending - accessing the OpenSpending API through R
 username: mihi

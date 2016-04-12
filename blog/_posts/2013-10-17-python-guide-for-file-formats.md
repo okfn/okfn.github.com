@@ -1,8 +1,7 @@
 ---
- layout: post
- author: Anastasios Ventouris
- username: ventouris
- title: A Python guide for open data file formats
+author: Anastasios Ventouris
+username: ventouris
+title: A Python guide for open data file formats
 ---
 
 If you are an open data researcher you will need to handle a lot of different file formats from datasets. Sadly, most of the time,  you don’t have the opportunity to choose which file format is the best for your project, but you have to comport with all of them to be sure that you won’t find a dead end. There’s always someone who knows the solution to your problem, but that doesn’t mean that answers come easy. Here is a guide for each file formats from the [open data handbook](http://opendatahandbook.org/) and a suggestion with a python library to use.

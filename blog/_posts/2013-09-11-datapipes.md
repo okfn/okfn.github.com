@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Rufus Pollock
 title: Data Pipes - streaming online data transformations
 username: rgrp

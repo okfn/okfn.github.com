@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Daniel Lombraña González
 title: Spanish Party Financing Scandals - CrowdSourcing Data Extraction with CrowdCrafting
 username: teleyinex

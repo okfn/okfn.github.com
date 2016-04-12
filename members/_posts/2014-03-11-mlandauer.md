@@ -1,5 +1,4 @@
 ---
-layout: person
 username: mlandauer
 title: Matthew Landauer
 area: Founder, OpenAustralia Foundation

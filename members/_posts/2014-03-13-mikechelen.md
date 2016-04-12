@@ -1,5 +1,4 @@
 ---
-layout: person
 username: mikechelen
 title: Mike Chelen
 area: Software Developer, Data Wrangler

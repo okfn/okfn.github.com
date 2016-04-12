@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Rufus Pollock
 title: Javascript Timeline Libaries - A Review
 username: rgrp

@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Rufus Pollock
 title: Web Scraping with CSS Selectors in Node using JSDOM or Cheerio
 username: rgrp

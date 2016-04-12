@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Dan Fowler
 title: Frictionless Data Transport in Python
 username: dfowler

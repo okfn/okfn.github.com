@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Rufus Pollock
 title: Cleaning up Greater London Authority Spending (for OpenSpending)
 username: rgrp

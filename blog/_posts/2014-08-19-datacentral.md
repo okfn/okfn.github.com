@@ -2,7 +2,6 @@
 title: 'Data Central: a static frontend for data package collections'
 author: Ricardo Lafuente
 username: rlafuente
-layout: post
 projects: [frictionless-data]
 ---
 

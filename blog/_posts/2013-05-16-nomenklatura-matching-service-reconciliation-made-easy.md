@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Friedrich Lindenberg
 title: Nomenklatura - Data Matching and Reconciliation Made Easy
 username: pudo

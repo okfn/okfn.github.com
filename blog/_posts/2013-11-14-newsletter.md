@@ -2,7 +2,6 @@
 title: "Labs newsletter: 14 November, 2013"
 author: Neil Ashton
 username: nmashton
-layout: post
 projects: [dpm,data-pipes,nomenklatura,webshot]
 ---
 

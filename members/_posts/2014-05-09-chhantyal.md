@@ -1,5 +1,4 @@
 ---
-layout: person
 username: chhantyal
 title: Nar Kumar Chhantyal
 area: Software Developer, Data Wrangler

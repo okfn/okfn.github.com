@@ -2,7 +2,6 @@
 title: "Labs newsletter: 30 January, 2014"
 author: Neil Ashton
 username: nmashton
-layout: post
 projects: [frictionless-data,timemapper]
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout: person
 username: rlafuente
 title: Ricardo Lafuente
 area: Designer

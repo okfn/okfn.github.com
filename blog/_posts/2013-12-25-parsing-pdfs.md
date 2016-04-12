@@ -1,5 +1,4 @@
 ---
-layout: post
 title: How I parse PDF files
 author: Thomas Levine
 username: tlevine
