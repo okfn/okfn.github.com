@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Friedrich Lindenberg
 snapshot: datacatalogues
 title: Data Catalogues are People!

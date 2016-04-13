@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Paul Walsh
 username: pwalsh
 title: Introducing Good Tables

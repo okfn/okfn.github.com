@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Recline JS Search Demo
 author: Rufus Pollock
 username: rgrp

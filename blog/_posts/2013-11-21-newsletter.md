@@ -2,7 +2,6 @@
 title: "Labs newsletter: 21 November, 2013"
 author: Neil Ashton
 username: nmashton
-layout: post
 projects: [crowdcrafting-and-pybossa,frictionless-data,data-pipes,dpm]
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Rufus Pollock
 title: Quick and Dirty Analysis on Large CSVs
 username: rgrp

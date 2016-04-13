@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Daniel Lombraña González
 title: Analyzing Icelandic conviction rates with CrowdCrafting.org
 username: teleyinex

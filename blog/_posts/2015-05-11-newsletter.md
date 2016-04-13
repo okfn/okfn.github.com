@@ -2,7 +2,6 @@
 title: "Labs newsletter: Q1 2015"
 author: Paul Walsh
 username: pwalsh
-layout: post
 projects: []
 ---
 

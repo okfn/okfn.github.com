@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Rufus Pollock
 title: Data as Code Deja-Vu
 username: rgrp

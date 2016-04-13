@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Michael Bauer
 title: Introducing Reconcile-CSV
 username: mihi

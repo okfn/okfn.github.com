@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Daniel Lombraña González
 title: Mapping Antimatter tracks with CrowdCrafting.org
 username: teleyinex

@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Michael Bauer
 title: Making puzzles out of Shapefiles - bringing Open Data to the physical world
 username: mihi

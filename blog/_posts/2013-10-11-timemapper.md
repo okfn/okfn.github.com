@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Neil Ashton
 title: Introducing TimeMapper - Create Elegant TimeMaps in Seconds
 username: nmashton

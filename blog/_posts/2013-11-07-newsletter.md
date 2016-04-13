@@ -2,7 +2,6 @@
 title: "Labs newsletter: 7 November, 2013"
 author: Neil Ashton
 username: nmashton
-layout: post
 projects: [publicbodies,webshot,product-open-data]
 ---
 

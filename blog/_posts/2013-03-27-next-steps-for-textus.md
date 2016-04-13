@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Sam Leon
 title: Next Steps for Textus
 username: noelmas

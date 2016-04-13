@@ -2,7 +2,6 @@
 title: "Submit your Newsletter ideas today!"
 author: Josh Wieder
 username: jaydubya
-layout: post
 ---
  
 The first quarter of 2016 is almost through, which means that the OKFN Labs Newsletter is on its way! But we have a problem. We know that you have spent the last 3 months writing awesome code, founding disruptive new projects and basically changing the world. But we haven't received your newsletter submissions so we can help spread the word about what you've been up to. 

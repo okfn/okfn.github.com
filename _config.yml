@@ -18,3 +18,15 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+  -
+    scope:
+      path: "blog"
+      type: "posts"
+    values:
+      layout: "post"      
+  -
+    scope:
+      path: "members"
+      type: "posts"
+    values:
+      layout: "person"

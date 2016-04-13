@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Convert data between formats with Data Converters
 author: Neil Ashton
 username: nmashton

@@ -2,7 +2,6 @@
 title: "Bad Data: real-world examples of how not to do data"
 author: Rufus Pollock
 username: rgrp
-layout: post
 projects: [bad-data]
 ---
 

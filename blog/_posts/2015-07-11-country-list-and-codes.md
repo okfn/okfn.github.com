@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Dan Fowler
 username: dfowler
 title: "Featured Core Datasets: Comprehensive Country Codes and Country List"

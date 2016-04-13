@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Michael Bauer
 title: Full stack datavis - scraperwiki, d3 and github.
 username: mihi

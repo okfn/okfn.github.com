@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Rufus Pollock
 title: PublicBodies.org - Update no. 2
 username: rgrp

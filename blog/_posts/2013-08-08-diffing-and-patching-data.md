@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Paul Fitzpatrick
 title: Diffing and patching tabular data
 username: paulfitz

@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Neil Ashton
 title: Basic data cleaning with Data Explorer
 username: nmashton

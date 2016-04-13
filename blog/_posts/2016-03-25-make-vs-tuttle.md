@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Alexandre Bonnasseau
 username: lexman
 title: "Tools for Data Packages: Make vs. Tuttle"

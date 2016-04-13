@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Michael Bauer
 title: Using d3 as user input
 username: mihi

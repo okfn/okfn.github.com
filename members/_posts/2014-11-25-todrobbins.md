@@ -1,5 +1,4 @@
 ---
-layout: person
 username: todrobbins
 title: Tod Robbins
 area: Librarian/Developer

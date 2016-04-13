@@ -1,5 +1,4 @@
 ---
-layout: post
 snapshot: urbanparks
 title: Displaying PyBossa Urban Parks Data on a 3D Globe
 author: Daniel Lombraña Gonzalez

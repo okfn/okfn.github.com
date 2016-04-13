@@ -2,7 +2,6 @@
 title: "Looking at aid in the Philippines"
 author: Mark Brough
 username: markbrough
-layout: post
 ---
 
 *See also: "[A closer look at aid in the Philippines](http://www.publishwhatyoufund.org/updates/by-topic/techfortransparency/closer-look-aid-philippines/)"*

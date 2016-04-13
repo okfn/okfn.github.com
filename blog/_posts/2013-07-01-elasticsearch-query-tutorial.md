@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Rufus Pollock
 title: Querying ElasticSearch - A Tutorial and Guide
 username: rgrp

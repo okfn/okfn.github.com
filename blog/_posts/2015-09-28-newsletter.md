@@ -2,7 +2,6 @@
 title: "Labs newsletter: Q2/Q3 2015"
 author: Daniel Fowler
 username: dfowler
-layout: post
 ---
 
 Welcome to the second Labs Newsletter of 2015!  There has been

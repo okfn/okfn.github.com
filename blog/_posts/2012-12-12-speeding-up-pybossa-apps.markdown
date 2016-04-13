@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Gregor Aisch
 lightbox: true
 title: Speeding Up Your PyBossa App

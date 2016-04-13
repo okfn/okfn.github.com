@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Friedrich Lindenberg
 title: dataissues.org - public issue tracking for data defects
 username: pudo

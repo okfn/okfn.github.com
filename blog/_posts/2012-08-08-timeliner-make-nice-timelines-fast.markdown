@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Timeliner - Make Nice Timelines Fast
 snapshot: timeliner
 author: Rufus Pollock

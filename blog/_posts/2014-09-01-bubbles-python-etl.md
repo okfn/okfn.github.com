@@ -2,7 +2,6 @@
 title: 'Bubbles: Python ETL Framework (prototype)'
 author: Stefan Urbanek
 username: Stiivi
-layout: post
 ---
 
 ## Introduction and ETL

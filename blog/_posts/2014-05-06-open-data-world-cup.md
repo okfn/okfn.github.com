@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Gerald Bauer
 username: geraldb
 title: Using open football data - Get ready for the World Cup in Brazil 2014

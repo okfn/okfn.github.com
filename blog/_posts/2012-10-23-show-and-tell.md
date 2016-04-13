@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Labs Show and Tell - 26th October!
 author: Nigel Babu
 username: nigelb

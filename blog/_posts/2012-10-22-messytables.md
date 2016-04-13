@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Friedrich Lindenberg
 title: Wrangling dirty data with messytables.
 snapshot: messytables

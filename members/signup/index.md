@@ -26,7 +26,6 @@ We also strongly recommend [joining the mailing list and following Labs on twitt
    those marked as required):
 
        ---
-       layout: person [REQUIRED]
        username: {your-unique-username} [REQUIRED]
        title: {your-full-name e.g. Joe Bloggs} [REQUIRED]
        area: {terse description of your main activity area e.g. Software Developer, Data Wrangler, Blogger ...}
@@ -45,7 +44,6 @@ We also strongly recommend [joining the mailing list and following Labs on twitt
    Here's an example:
 
        ---
-       layout: person
        username: rgrp
        title: Rufus Pollock
        area: Data Wrangler

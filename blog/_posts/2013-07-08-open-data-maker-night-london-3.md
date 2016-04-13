@@ -5,7 +5,6 @@ username: rgrp
 location: London, UK
 eventdate: 2013-07-16
 categories: events
-layout: post
 ---
 
 The next **Open Data Maker Night London** will be on **Tuesday 16th July 6-9pm** (you can drop in any time during the evening). Like the last two it is kindly hosted by the wonderful [Centre for Creative Collaboration, 16 Acton Street, London][c4cc].

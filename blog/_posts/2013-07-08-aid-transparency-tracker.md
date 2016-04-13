@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Mark Brough
 title: Open Data QA - the Aid Transparency Tracker
 username: markbrough

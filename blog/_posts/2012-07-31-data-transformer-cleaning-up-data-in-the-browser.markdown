@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The Data Transformer - Cleaning Up Data in the Browser
 author: Rufus Pollock
 username: rgrp
