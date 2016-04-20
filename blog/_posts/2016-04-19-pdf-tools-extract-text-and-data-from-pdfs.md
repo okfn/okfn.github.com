@@ -42,6 +42,8 @@ The last case is really a situation for OCR (optical character recognition) so w
 * [pdf.js](http://mozilla.github.io/pdf.js/) - you probably want a fork like [pdf2json](https://github.com/modesty/pdf2json) or [node-pdfreader](https://github.com/jviereck/node-pdfreader) that integrates this better with node. Not tried this on tables though ...
   * Max Ogden has this list of Node libraries and tools for working with PDFs: <https://gist.github.com/maxogden/5842859>
   * Here's a gist showing how to use pdf2json: <https://gist.github.com/rgrp/5944247>
+* [Apache Tika][tika] - Java library for extracting metadata and content from all types of document types including PDF.
+* [Apache PDFBox][pdfbox] - Java library specifically for creating, manipulating and getting content from PDFs.
 
 [pdf2htmlEX]: http://coolwanglu.github.io/pdf2htmlEX/
 [pypdf2xml]: https://github.com/zejn/pypdf2xml
@@ -49,6 +51,8 @@ The last case is really a situation for OCR (optical character recognition) so w
 [pdfminer]: http://www.unixuser.org/~euske/python/pdfminer/
 [pdftohtml]: http://pdftohtml.sourceforge.net/
 [pdftoxml]: http://pdftoxml.sourceforge.net/
+[tika]: https://tika.apache.org/
+[pdfbox]: https://pdfbox.apache.org/
 
 ### Tables from PDF
 
@@ -63,17 +67,20 @@ The last case is really a situation for OCR (optical character recognition) so w
 
 ### Existing open services
 
+* <http://givemetext.okfnlabs.org/> - Give me Text is a free, easy to use open source web service that extracts text from PDFs and other documents using Apache Tika (and built by [Labs member Matt Fullerton][mattf])
 * <http://pdfx.cs.man.ac.uk/> - has a nice command line interface
   * Is this open? Says at [bottom of usage](http://pdfx.cs.man.ac.uk/usage) that it is powered by http://www.utopiadocs.com/
   * Note that as of 2016 this seems more focused on conversion to structured XML for scientific articles but may still be useful
 * <del>Scraperwiki - https://views.scraperwiki.com/run/pdf-to-html-preview-1/ and [this tutorial](http://blog.scraperwiki.com/2010/12/17/scraping-pdfs-now-26-less-unpleasant-with-scraperwiki/)</del> - no longer working as of 2016
+
+[mattf]: http://okfnlabs.org/members/mattfullerton/ 
 
 ### Existing proprietary free or paid-for services
 
 There are many online -- just do a search -- so we do not propose a comprehensive list. Two we have tried and seem promising are:
 
 * <http://www.newocr.com/> - free, with an API, very bare bones site but quite good results based on our limiting testing
-* <https://pdftables.com/> - pay-per-page service focused on tabular data  extraction from the great folks at ScraperWiki
+* <https://pdftables.com/> - pay-per-page service focused on tabular data  extraction from the folks at ScraperWiki
 
 We also note that Google app engine [used to do this](http://developers.google.com/appengine/docs/python/conversion/overview) but unfortunately it seems discontinued.
 
