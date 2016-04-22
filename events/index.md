@@ -137,14 +137,18 @@ You can run your event however you like. This is a suggested outline for for a 2
 [os]: http://openspending.org/
 [os-guide]: https://docs.google.com/a/okfn.org/document/d/1YBXX6du4rOV6OutZncT7gyJeOA7zHml3cC1TtWJW65w/edit
 
-### Want Help
+### Want Help?
 
 If you want some suggestions or help just [get in touch](/contact/). 
 
 ### Previous Events
 
+[Timemap](/events/timemap/)
+
 * [London No. 3 - Tuesday 16th July 2013](http://okfnlabs.org/blog/events/2013/07/08/open-data-maker-night-london-3.html)
 * Birmingham, UK - Thursday 25th April 2013
 * Vienna No. 1 - Thursday 18th April 2013
 * [London No. 1 - Tuesday 16th March 2013](http://blog.okfn.org/2013/03/13/open-data-maker-night/) - this was the inaugural event
+
+
 
