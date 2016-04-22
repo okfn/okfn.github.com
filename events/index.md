@@ -143,7 +143,7 @@ If you want some suggestions or help just [get in touch](/contact/).
 
 ### Previous Events
 
-[Timemap](/events/timemap/)
+[TimeMap of Labs Events](/events/timemap/)
 
 * [London No. 3 - Tuesday 16th July 2013](http://okfnlabs.org/blog/events/2013/07/08/open-data-maker-night-london-3.html)
 * Birmingham, UK - Thursday 25th April 2013
