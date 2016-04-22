@@ -47,7 +47,7 @@ h6 {
   margin: 15px 0 5px 0;
 }
 h1 {
-  font-size: 27px;
+  font-size: 30px;
   line-height: 33px;
   margin-bottom: 10px;
 }
@@ -302,6 +302,12 @@ body {
 .body-contact .nav-contact {
   color: #7AB800 !important;
 }
+
+img.events {
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .okfn-ribbon a {
   background-position: center -26px;
   height: 74px;
@@ -417,6 +423,7 @@ body {
   margin-bottom: 10px;
 }
 /* Events */
+
 .event li {
   margin-bottom: 20px;
 }
