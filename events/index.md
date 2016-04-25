@@ -12,6 +12,11 @@ redirect_from:
 
 ## Hangouts
 
+* When: Third Thursday of every month at 1700-1800 (London time)
+* Where: Google Hangouts - we’ll announce link on the day on the [mailing list, Twitter, and in chat][contact]
+* Who: **anyone**
+* Sign up: Leave a comment on the relevant [hangout topic](https://discuss.okfn.org/tags/labs-hangout) (optional but recommended)
+
 We run regular online "hangouts" where we get together to discuss
 things we've been building.  These events happen on the third Thursday
 of every month and are organized via the
@@ -19,7 +24,9 @@ of every month and are organized via the
 come along and contribute.
 
 <center>
-<img class="events" src="/img/hangouts.png">
+<a href="https://discuss.okfn.org/tags/labs-hangout">
+<img alt="Open Knowledge Labs Hangouts" class="events" src="/img/hangouts.png">
+</a>
 </center>
 
 Hangouts are an opportunity for folks to learn more about open source
@@ -31,11 +38,6 @@ improvements to website, upcoming events, etc.  If you’d like to
 present something, please edit the relevant
 [hangout topic](https://discuss.okfn.org/tags/labs-hangout) and add it
 to the agenda (slots are max 5m).
-
-* When: Third Thursday of every month at 1700-1800 (London time)
-* Where: Google Hangout - we’ll announce link on the day on the [mailing list, Twitter, and in chat][contact]
-* Who: **anyone**
-* Sign up: (optional but recommended) leave a comment on the relevant [hangout topic](https://discuss.okfn.org/tags/labs-hangout).
 
 [contact]: /contact/
 [etherpad]: http://pad.okfn.org/p/labs-hangouts
