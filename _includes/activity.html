@@ -1,18 +1,20 @@
 <div id="github-activity" style="width: 100%"></div>
 <script>
+
+{% assign repos_string = "" %}
+{% assign featuredProjects = site.data.projects | where: "featured","TRUE" %}
+{% for project in featuredProjects %}
+  {% if project.github_repo != null && project.github_user != null %}
+    {% assign repo_url = project.github_user | append: "/" | append: project.github_repo %}
+    {% assign repos_string = repos_string | append: "|" | append: repo_url %}
+  {% endif %}
+{% endfor %}
+
+var featuredProjectRepos = "{{ repos_string }}".split("|").slice(1);
 try {
   $('#github-activity').githubActivity({
     "events": 8,
-    "repos": [
-        "openannotation/annotator"
-      , "okfn/recline"
-      , "pybossa/pybossa"
-      , "okfn/publicbodies"
-      , "pudo/nomenklatura"
-      , "okfn/data.okfn.org"
-      , "okfn/dataexplorer"
-      , "okfn/timemapper"
-    ]
+    "repos": featuredProjectRepos
   });
 } catch(e) {}
 </script>
