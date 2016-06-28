@@ -24,7 +24,7 @@ The idea for reducing the loading time is actually pretty simple: We let the app
 
 <a rel="lightbox" title="Process flow in current PyBossa apps" href="/img/pybossa-workflow-new.png">![proposed workflow](/img/pybossa-workflow-new.png)</a>
 
-To implement this in PyBossa, we needed to change the PyBossa API a little bit (thanks @[teleyinex](https://github.com/PyBossa/pybossa/commit/4f5bdd4698a1ac21f3021347cd9ec08e68f18bdc)). Before that change consecutive calls to the [newtask endpoint](http://pybossa.readthedocs.org/en/latest/model.html#requesting-a-new-task-for-current-user) would return the same task again and again, until the user has solved it. Now with the newly introduced parameter **offset** you can request the next tasks in line.
+To implement this in PyBossa, we needed to change the PyBossa API a little bit (thanks @[teleyinex](https://github.com/PyBossa/pybossa/commit/4f5bdd4698a1ac21f3021347cd9ec08e68f18bdc)). Before that change consecutive calls to the [newtask endpoint](https://pybossa.readthedocs.io/en/latest/model.html#requesting-a-new-task-for-current-user) would return the same task again and again, until the user has solved it. Now with the newly introduced parameter **offset** you can request the next tasks in line.
 
 Another requirement for pre-loading of tasks is to keep the entire app on one page as otherwise the cached task would be lost. The rest of this post describes a smart way to implement this using [jQuery.Deferred](http://api.jquery.com/category/deferred-object/).
 

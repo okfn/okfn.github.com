@@ -44,7 +44,7 @@ We've since also started using messytables to load data into the
 where it serves as the ETL for the datastore and related
 [ReclineJS](http://reclinejs.com/) previews.
 
-If you're interested, check out the [messytables documentation](http://messytables.readthedocs.org/en/latest/index.html)
+If you're interested, check out the [messytables documentation](https://messytables.readthedocs.io/en/latest/index.html)
 and the [uk25k scripts](https://github.com/openspending/dpkg-uk25k/blob/master/extract.py)
 which use it to gather UK government finance. 
 
@@ -54,7 +54,7 @@ data.
 * [tablib](http://docs.python-tablib.org/en/latest/), for example, has
 a fantastic API that makes writing, analyzing and converting data a
 breeze.
-* [csvkit](http://csvkit.readthedocs.org/en/latest/index.html) has a
+* [csvkit](https://csvkit.readthedocs.io/en/latest/index.html) has a
 set of command line utilities that should be pre-installed on any
 computer.
 

@@ -21,7 +21,7 @@ The codebase currently ships with two validators that can be used in a pipeline:
 
 There is a hook to add custom processors, and there are plans to include more processorss in the core library.
 
-Good Tables ships with [some documentation](http://goodtables.readthedocs.org/en/latest/), but it is not yet complete. You are welcome to [check out the code](https://github.com/okfn/goodtables), [run the tests](https://github.com/okfn/goodtables/blob/master/test.sh) (or [check them on Travis](https://travis-ci.org/okfn/goodtables)), [open an issue](https://github.com/okfn/goodtables/issues), or make a pull request to help us iterate to a version one release ([here is the backlog](https://github.com/okfn/goodtables/milestones/Backlog)).
+Good Tables ships with [some documentation](https://goodtables.readthedocs.io/en/latest/), but it is not yet complete. You are welcome to [check out the code](https://github.com/okfn/goodtables), [run the tests](https://github.com/okfn/goodtables/blob/master/test.sh) (or [check them on Travis](https://travis-ci.org/okfn/goodtables)), [open an issue](https://github.com/okfn/goodtables/issues), or make a pull request to help us iterate to a version one release ([here is the backlog](https://github.com/okfn/goodtables/milestones/Backlog)).
 
 We are also released some packages that are used in Good Tables: [Good Tables Web](https://github.com/okfn/goodtables-web), [JTSKit](https://github.com/okfn/jtskit-py), and [TellMe](https://github.com/okfn/tellme). You can read more about each of these below.
 
