@@ -57,7 +57,7 @@ curl http://goodtables.okfnlabs.org/api/run --data "data=https://raw.githubuserc
 }
 </code></pre>
 
-For more details on the report response, see the <a href="http://goodtables.readthedocs.org/en/latest/reports.html">report section</a> of the <a href="http://goodtables.readthedocs.org/en/latest/index.html">Good Tables documentation</a>.
+For more details on the report response, see the <a href="https://goodtables.readthedocs.io/en/latest/reports.html">report section</a> of the <a href="https://goodtables.readthedocs.io/en/latest/index.html">Good Tables documentation</a>.
 
 ## UI
 

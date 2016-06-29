@@ -36,7 +36,7 @@ A new Python library has begun to come of age. [Agate](https://github.com/onyxfi
 	
 > "In greater depth, agate is a Python data analysis library in the vein of numpy or pandas, but with one crucial difference. Whereas those libraries optimize for the needs of scientists—namely, being incredibly fast when working with vast numerical datasets—agate instead optimizes for the performance of the human who is using it. That means stripping out those technical optimizations and instead focusing on designing code that is easy to learn, readable, and flexible enough to handle any weird data you throw at it."
 	
-Agate's leap from version 0.11.0 to version 1.0.0 on October 22nd of this year marked the [first major release](https://agate.readthedocs.org/en/1.1.0/changelog.html) for the up-and-coming library (version 1.1 was released November 4th). While Agate was fully functional at v0.11.0, the changes since then have been substantial. Among some of the more impressive additions:
+Agate's leap from version 0.11.0 to version 1.0.0 on October 22nd of this year marked the [first major release](https://agate.readthedocs.io/en/1.1.0/changelog.html) for the up-and-coming library (version 1.1 was released November 4th). While Agate was fully functional at v0.11.0, the changes since then have been substantial. Among some of the more impressive additions:
 	
 - Agate can now be used as a drop-in replacement for Python’s csv module
 - Migrated csvkit‘s unicode CSV reading/writing support into agate
@@ -45,7 +45,7 @@ Agate's leap from version 0.11.0 to version 1.0.0 on October 22nd of this year m
 - Massive performance increases for joins.
 - Dozens of other resolved issues ...
 
-Agate has an impressive array of documentation for developers. Take a look at [the manual](https://agate.readthedocs.org/en/1.1.0/), the [standard tutorials](https://agate.readthedocs.org/en/1.1.0/tutorial.html), a tutorial for [using Agate with Jupyter notebook](http://nbviewer.ipython.org/urls/gist.githubusercontent.com/onyxfish/36f459dab02545cbdce3/raw/534698388e5c404996a7b570a7228283344adbb1/example.py.ipynb), the [Agate Cookbook](https://agate.readthedocs.org/en/1.1.0/cookbook.html) and the [Agate API documentation](https://agate.readthedocs.org/en/1.1.0/api.html).
+Agate has an impressive array of documentation for developers. Take a look at [the manual](https://agate.readthedocs.io/en/1.1.0/), the [standard tutorials](https://agate.readthedocs.io/en/1.1.0/tutorial.html), a tutorial for [using Agate with Jupyter notebook](http://nbviewer.ipython.org/urls/gist.githubusercontent.com/onyxfish/36f459dab02545cbdce3/raw/534698388e5c404996a7b570a7228283344adbb1/example.py.ipynb), the [Agate Cookbook](https://agate.readthedocs.io/en/1.1.0/cookbook.html) and the [Agate API documentation](https://agate.readthedocs.io/en/1.1.0/api.html).
 	
 Agate does indeed look promising, and there is an immense need for tools like it. Journalism is changing rapidly. With a flood of new information from Open Data advocates (like Open Knowledge) making their way to the newsroom, organizations that can effectively interpret that data will maintain a significant advantage over their competitors. Meanwhile, the public can only benefit from more accurate analysis of larger sets of information that impact their lives. Clearly, the need for analytics that were once only required at university now extends beyond the Ivory Tower.
 
