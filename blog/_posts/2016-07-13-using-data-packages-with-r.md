@@ -31,7 +31,9 @@ functionality can be extended.  For these reasons, R enjoys a vibrant
 online community who contribute daily to thousands of packages on
 [CRAN][cran].  For this post, we will avoid going deep into what makes
 R so powerful, and instead focus on the typical first step in any data
-analysis project: loading source data.
+analysis project: loading source data.  *This post assumes you have a
+fairly basic understanding of R and a working R environment on your
+machine.*
 
 When loading tabular data from a file into an R environment, it is
 common to use the functions `read.csv` or `read.delim`.  These are
@@ -44,12 +46,14 @@ structure, each column ("vector") in the original tabular data file
 may be assigned a different type (e.g. string, integer, date).
 
 As a simple example, let's load a CSV file containing the
-[CBOE Volatility Index][vix] using `read.csv()`.  First, we will set
-our working directory to where I've stored my data and take a peek at
-the files in the `data` subdirectory:
+[CBOE Volatility Index][vix] using `read.csv()`.  This dataset can be
+found on our [example Data Packages repo][example-data-packages] in
+the subdirectory "finance-vix".  Once downloaded, we can set R's
+working directory to where the data is stored and take a peek at the
+files within its `data` subdirectory:
 
 {% highlight r %}
-setwd('/Users/dan/open_knowledge/datasets/finance-vix')
+setwd('/Users/dan/Downloads/example-data-packages-master/finance-vix')
 list.files("data")
 {% endhighlight %}
    
@@ -57,7 +61,7 @@ list.files("data")
 
 We can read this single CSV, `vix-daily`, using R's `read.csv()`
 function and assign its output to a data frame called
-`volatility_raw`.  Afterwards, I can get a sample of the data by
+`volatility_raw`.  Afterwards, we can get a sample of the data by
 viewing the first few rows of the file using the `head()` function.
 
 {% highlight r %}
@@ -95,10 +99,12 @@ str(volatility_raw)
      $ VIXLow  : num  17.5 17.4 16.2 15.5 15.3 ...
      $ VIXClose: num  18.2 17.5 16.7 15.5 15.6 ...
 
-We can see that while R has correctly guessed the types of `VIXOpen`,
-`VIXHigh`, `VIXLow`, and `VIXClose` to be `num`, it has incorrectly
-guessed the type of the `Date` to be `Factor`.  This is a problem
-easily demonstrable by plotting the data.
+We can see that while R has correctly guessed the types of "VIXOpen",
+"VIXHigh", "VIXLow", and "VIXClose" to be `num`, it has incorrectly
+guessed the type of the "Date" to be `Factor` when R has a much more
+appropriate type for the kind of data in this column called,
+predictably, `Date`.  This is a problem easily demonstrable by
+attempting to plot the data.
 
 {% highlight r %}
 plot(volatility_raw$Date, volatility_raw$VIXOpen, type='l')
@@ -110,8 +116,9 @@ What should be the steadily increasing Date on the X axis is, instead,
 out of order because the Date column is has not been assigned its
 correct type.  In this very simple case, there is a straightforward
 fix which is to manually re-assign the Date column (in our data frame
-represented as `volatility_raw$Date`) to a type `Date` in the format
-`%m/%d/%Y`.  We can revisit its structure using the `str()` command.
+represented as `volatility_raw$Date`) to a type `Date` passing the
+special format `%m/%d/%Y` which we found out by previewing the data.
+After this, we can revisit its structure using the `str()` command.
 
 {% highlight r %}
 volatility_raw$Date <- as.Date(volatility_raw$Date, "%m/%d/%Y")
@@ -131,20 +138,22 @@ better result.  While this is a good solution for this single dataset
 with a single incorrectly guessed column, it doesn't scale well to
 multiple incorrectly guessed columns across multiple datasets.  In
 addition, it only represents one type of manual task to be performed
-on a set of data.  We have designed the Data Package format to obviate
-this, and other kinds of tedious "data wrangling" tasks.  In the next
-section, we will perform the same task above using the `datapkg`
-library.
+on a new set of data.  We have designed the Data Package format to
+obviate this, and other kinds of tedious "data wrangling" tasks.  In
+the next section, we will perform the same task above using the
+`datapkg` library.
 
 ## Loading Tabular Data Packages in R
 
 A Data Package is a [specification][dp] for creating a
-"[container][containerization]" for transporting data by
-saving useful metadata in a specially formatted file.  This file is
-called `datapackage.json`, and it is stored in the root of a directory
+"[container][containerization]" for transporting data by saving useful
+metadata in a specially formatted file.  This file is called
+`datapackage.json`, and it is stored in the root of a directory
 containing a given dataset.  When loading a Data Package,
-[datapkg][datapkg], reads this extra metadata to conveniently load
-high quality data into an R environment.
+[datapkg][datapkg]---the new R Data Package library developed by
+[rOpenSci][ropensci]---reads this extra metadata in order to
+conveniently load high quality, well formatted data into your R
+environment.
 
 ### Installing datapkg
 
@@ -153,7 +162,7 @@ high quality data into an R environment.
  installed from its [GitHub repository][datapkg] using the
  [devtools][devtools] package.*
 
-To install in R:
+To install, start your R environment and run the following commands:
 
 {% highlight r %}
 install.packages("devtools")
@@ -168,21 +177,21 @@ install_github("frictionlessdata/datapackage-r")
 Revisiting our data directory, we can examine the files in the root
 using the `list.files()` function:
 
-    'archive' 'data' 'datapackage.json' 'README.md' 'scripts'
+    'data' 'datapackage.json'
 
 The presence of the `datapackage.json` file indicates our current R
-working directory is points to a Data Package, so we can use the
-`datapkg_read()` function to read our Data Package (note: we can also
-pass a path or URL to this function).  The `datapkg_read()` function
-reads not only the data in the dataset, but also the metadata stored
-with it.  This metadata includes high level information like the
-author, the source, of the dataset.
+working directory is points to a Data Package, so we can load the
+`datapkg` library and use the `datapkg_read()` function to read our
+Data Package (note: we can also pass a path or URL to this function).
 
 {% highlight r %}
 library(datapkg)
 volatility <- datapkg_read()
 {% endhighlight %}
 
+The `datapkg_read()` function reads not only the data in the dataset,
+but also the metadata stored with it.  This metadata includes high
+level information like the author, source, and license of the dataset.
 We can inspect this information by reading various variables stored on
 this object.  For instance, to get a fuller, human-readable title, we
 can access `volatility$title` or, if the Data Package has a "homepage"
@@ -193,12 +202,12 @@ variable set, we can access it using `volatility$homepage`.
 
 `datapkg_read()` also uses *schema* information stored in the
 `datapackage.json` to facilitate the loading of data.  As shown above,
-one misstep when loading a new dataset into R is neglecting to correct
-incorrectly guessed column types, for instance, giving a "Date" column
-an appropriate type of `Date`.  What the Data Package format provides
-is a simple, standard way to store that information with a dataset to
-automate this and other steps.  The following snippet shows how the
-`datapackage.json` descibes this information:
+one misstep we encountered when loading a new dataset into R was
+neglecting to correct an incorrectly guessed column type.  What the
+Data Package format provides is a simple, standard way to store that
+information with a dataset to automate this and other steps.  The
+following snippet shows how the `datapackage.json` descibes this
+information:
 
 {% highlight js %}
       "schema": {
@@ -228,11 +237,11 @@ automate this and other steps.  The following snippet shows how the
       }
 {% endhighlight %}
 
-We can verify that `datapkg_read()` used this information to construct
-its data frame by calling the `str()` function below.  The `data`
-variable on the `volatility` object points to a list of files
-("resources") on the dataset; `vix-daily` is the name of the resource
-we want.
+As above, we can verify that `datapkg_read()` used this information to
+construct its data frame by calling the `str()` function.  The `data`
+variable on the `volatility` object created by `datapkg_read()` points
+to a list of files ("resources") on the dataset; `vix-daily` is the
+name of the resource---expressed as a data frame---we want.
 
 {% highlight r %}
 str(volatility$data$`vix-daily`)
@@ -256,16 +265,15 @@ plot(vix.daily$Date, vix.daily$VIXOpen, type='l')
 
 ![Good Type](/img/posts/r-vix-good-type.png)
 
-## Feedback 
+## Going Forward 
 
-This has been a very small example of some of the functionality of the
-R library.
+This has been a very small example of the basic functionality of the R
+library.  This software is still in testing, so if you are an R user
+and would like to use Data Packages to help manage your data in R,
+please let us know.  You can leave a comment here on the
+[forum][forum].
 
-This software is still in testing, so if you are an R user and have
-some feedback for us, let us know.  You can leave a comment here or
-create an issue on the issue tracker.
-
-To see a Jupyter notebook featuring the code in this post, click here: [nb]
+To see the code used in this post, visit its [Jupyter Notebook][nb].
 
 [r]: https://www.r-project.org/
 [jts]: http://specs.frictionlessdata.io/json-table-schema/
@@ -281,3 +289,6 @@ To see a Jupyter notebook featuring the code in this post, click here: [nb]
 [containerization]: http://frictionlessdata.io/about/#data-containerization
 [devtools]: https://github.com/hadley/devtools
 [r-user-story]: https://trello.com/c/CQV5Dk90/16-as-a-researcher-i-want-to-get-a-data-package-into-r-in-seconds-so-that-i-can-start-using-the-data-for-doing-analysis-and-visuali
+[example-data-packages]: https://github.com/frictionlessdata/example-data-packages
+[forum]: https://discuss.okfn.org/t/using-data-packages-with-r/3271
+[nb]: https://github.com/okfn/okfn.github.com/blob/master/resources/using-data-packages-with-r.ipynb
