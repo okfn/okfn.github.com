@@ -16,8 +16,8 @@ jQuery(document).ready(function($) {
   // Center map on appoximate center of markers collected so far
   var map = L.map('map').setView([26.062,9.845],1);
 
-  L.tileLayer('http://otile1.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.jpg', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors. Tiles Courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png">',
+  L.tileLayer('https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png', {
+    attribution: 'Maps © <a href="http://www.thunderforest.com">Thunderforest</a>, Data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>',
     minZoom: 1
   }).addTo(map);
 
