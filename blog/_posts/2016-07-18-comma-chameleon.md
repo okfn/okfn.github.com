@@ -4,13 +4,13 @@ title: Comma Chameleon at csv,conf,v2
 username: dfowler
 ---
 
-Having had the awesome opportunity to co-organize csv,conf,v2 this
-past May, a few of us from Open Knowledge International got the chance
-to travel to Berlin and sit in on a range of fascinating talks on the
-current state-of-the-art on wrangling messy data.  One such talk was
-given by Stuart Harrison of the **Open Data Institute** (ODI) who
-presented on tool he is developing called Comma Chameleon.  Comma
-Chameleon is a desktop CSV editor with *validation magic* &#127775;.
+Having co-organized csv,conf,v2 this past May, a few of us from Open
+Knowledge International had the awesome opportunity to travel to
+Berlin and sit in on a range of fascinating talks on the current
+state-of-the-art on wrangling messy data.  One such talk was given by
+Stuart Harrison of the **Open Data Institute** (ODI) who presented on
+tool he is developing called Comma Chameleon.  Comma Chameleon is a
+desktop CSV editor with *validation magic* &#127775;.
 
 ![Stuart Harrison](/img/posts/comma-chameleon-small.jpg)
 
@@ -27,20 +27,30 @@ their adherence to a schema specified in [JSON Table Schema][jts]
 
 ![Comma Chameleon](/img/posts/comma-chameleon-period-table.png)
 
-Comma Chameleon gives non-technical users the ability to create and
-edit CSV files in a more appropriate tool than Excel, which was
-designed for manipulating spreadsheets.  The app allows users to fix
-errors in their data in place *before* publishing.  Comma Chameleon
-also allows you to add useful metadata, for instance, a title,
-description, and a license, and export it all as a zipped
-[Data Package][dp].  The tool---built with [Electron][electron]---is
-an excellent example of the kind of straightforward, but powerful,
-applications that provide the foundation for real advances in the data
-quality thanks to the adherence to a few simple, open standards.
+The point of Comma Chameleon is to give non-technical users the
+ability to create and edit CSV files in a more appropriate tool than
+Excel, software designed for manipulating spreadsheets first and
+foremost.  The app allows users to fix errors in their data in place
+*before* publishing using the handy validation functions described
+above.  Comma Chameleon also allows users to add useful metadata---for
+instance, a title, description, and a license---and export it all as a
+zipped [Data Package][dp].
+
+## Frictionless Data
+
+Comma Chameleon---built with [Electron][electron]---is an excellent
+example of the kind of tool that can provide the foundation for real
+advances in data quality thanks to adherence to a few simple, open
+standards.  At Open Knowledge International, we are currently working
+hard on [Frictionless Data][fd], an initiative to define and promote
+just such tools and standards.  We are *delighted* to be partnering
+with the ODI in the coming months on this and other initiatives around
+Frictionless Data.
 
 * Download Comma Chameleon: <https://github.com/theodi/comma-chameleon>
 * Follow ODILabs on Twitter: <https://twitter.com/odilabs>
 * Follow Stuart Harrison on Twitter: <https://twitter.com/pezholio>
+* Follow Open Knowledge Labs on Twitter: <https://twitter.com/okfnlabs>
 * See the full range of speakers from csv,conf,v2: <http://csvconf.com>
 
 See Stuart's full talk:
@@ -49,6 +59,7 @@ See Stuart's full talk:
 src="https://www.youtube.com/embed/wIIw0cTeUG0" frameborder="0"
 allowfullscreen></iframe>
 
+[fd]: http://frictionlessdata.io/
 [csvlint]: http://csvlint.io
 [csvw]: http://w3c.github.io/csvw/
 [jts]: http://frictionlessdata.io/guides/json-table-schema/
