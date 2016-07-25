@@ -47,20 +47,22 @@ Package already, you can visit this
 are just interested in trying out this demo, you should be able to
 visit the [datasets organization][datasets] on GitHub and download any
 of the repos as a zip file.
-1. **Zip your existing Data Package**: If you created your Data
-Package in the previous step, create a new zip file with the
-`datapackage.json` at the root.  If you are on a Unix-type machine,
-you can usually run `zip -r my-datapackage-to-import.zip <data package
-directory>`.  **Note**: make sure your packaged data, unzipped, is
-**less than the 100MB**, as this is current size limit on DataHub.
-1. **Visit the Data Package Import Page**: While signed in, click on
+1. **Zip your Data Package**: If you created your Data
+Package in the previous step,e create a new zip file from the Data
+Package folder with the `datapackage.json` at the root.  If you are on
+a Unix-type machine, you can usually run `zip -r
+my-datapackage-to-import.zip <data package directory>`.  **Note**:
+make sure your packaged data, unzipped, is **less than the 100MB**, as
+this is current size limit on DataHub.
+1. **Import your Data Package**: While signed in, click on
 "Import Data Package" on [the dataset page][dsp], choose the
 organization you created in Step 1, and upload the zipped Data Package
 you created in the previous step.
 
 Once your Data Package has been successfully imported, you should be
-to use the dataset as you would any dataset on the DataHub including
-adding or editing any of your dataset's metadata.
+to use the dataset as you would any dataset on the DataHub.  This
+includes adding or editing any of your dataset's metadata, or,
+accessing the dataset using the [CKAN API][api].
 
 ### Screencast
 
@@ -68,28 +70,29 @@ This screencast walks through the import steps outlined above.
 
 ![Screencast][screencast-ui]
 
-## Exporting a Data Package from DataHub.io
+### Exporting a Data Package from DataHub.io
 
-Exporting a Data Package easy.  Just navigate to the dataset you'd
-like to export, click on "Download Data Package", and a
-`datapackage.json` file will be downloaded to your computer.  The JSON
-file will contain the Data Package representation of the metadata
-stored on DataHub as well as links to the resources stored on DataHub.
+Exporting a Data Package from DataHub is even easier.  Just navigate
+to the dataset you'd like to export, click on "Download Data Package",
+and a `datapackage.json` file will be downloaded to your computer.
+The JSON file will contain the Data Package representation of the
+metadata stored on DataHub as well as links to the resources stored on
+DataHub.
 
-### API and CKAN Data Packager Extension
+### CKAN Data Packager and Other Extensions
 
-For information on importing and exporting data via the CKAN API or,
-if you are interested in adding `datapackager` to your own CKAN
-instance, you can read more on the extension [repository][repo].
-
-## Other Repositories
+For information on importing and exporting data via the
+[CKAN API][api] or, if you are interested in adding `datapackager` to
+your own CKAN instance, you can read more on the extension
+[repository][repo].
 
 Of course, CKAN is not the only data repository software we are
-looking to support.  A major aim of Frictionless Data is creating
-integrations with many different types of data tools.  Visit our
-[User Stories][us] page to learn about the kinds of use cases we're
-looking to support.  Let us know how you store your data and what you
-would like to see next!
+looking to support.  A major aim of Frictionless Data is to create
+integrations with the many different types of tools and platforms
+people already use for working with data.  Visit our
+[User Stories][us] page to learn about the kinds of use cases and data
+workflows we're looking to support.  Let us know how you store your
+data and what you would like to see next!
 
 [frictionless-python]: /blog/2016/03/11/frictionless-data-transport-in-python.html
 [ckan]: http://ckan.org/
@@ -107,3 +110,4 @@ would like to see next!
 [dpcreate]: http://frictionlessdata.io/guides/creating-tabular-data-packages-in-python/
 [dpist]: http://datapackagist.okfnlabs.org/
 [datasets]: https://github.com/datasets/
+[api]: http://docs.ckan.org/en/latest/api/
