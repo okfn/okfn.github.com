@@ -1,11 +1,5 @@
 {% assign authors = site.categories.blog | map: 'username' %}
 
-{% assign project_maintainers = "" | split: "" %}
-{% for project in site.data.projects %}
-{% for maintainer in project.maintainers %}
-{% assign project_maintainers = project_maintainers | push: maintainer %}
-{% endfor %}
-{% endfor %}
 
 {% assign project_contributors = "" | split: "" %}
 {% for project in site.data.projects %}

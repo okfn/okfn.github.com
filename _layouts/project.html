@@ -20,27 +20,19 @@ bodyclass: project
         <br />
         <small><em>{{csv_project_metadata.tagline}}</em></small>
         {% endif %}
-        
+
         <br />
-        {% if csv_project_metadata.author %}
-        <small>by {{csv_project_metadata.author}}</small>
+        {% if csv_project_metadata.owner %}
+        <small>by {{csv_project_metadata.owner}}</small>
         {% endif %}
       </h2>
     </div>
   </div>
-  
+
   <div class="row">
     <div class="span6">
       <ul class="meta">
-  {% if csv_project_metadata.maintainers.size > 0 %}
-  <li>
-    <i class="icon-user" title="Maintainer"></i> Maintainer{% if csv_project_metadata.maintainers.size > 1 %}s{% endif %} &ndash;
-    {% assign maintainer_list = csv_project_metadata.maintainers | split: ", " %}
-    {% for maintainer in maintainer_list %}
-          <a href="/members/{{maintainer | strip }}/" target="_blank">{{maintainer}}</a>{% if forloop.last != true %}, {% endif %}
-    {% endfor %}
-  </li>
-  {% endif %}
+
   {% if csv_project_metadata.contributors.size > 0 %}
   <li>
     <i class="icon-user" title="Contributors"></i> Contributor{% if csv_project_metadata.contributors.size > 1 %}s{% endif %} &ndash;
@@ -104,7 +96,7 @@ bodyclass: project
 
 
 
-  <div class="row">  
+  <div class="row">
     <div class="span6">
       {% if csv_project_metadata.github_repo %}
       <h3>Recent Activity</h3>
