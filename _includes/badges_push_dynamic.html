@@ -6,13 +6,6 @@
 {% endif %}
 {% endif %}
 
-{% if project_maintainers contains user_username %}
-{% if user_roles %}
-{% assign user_roles = user_roles | push: 'project-maintainer' %}
-{% else %}
-{% assign user_roles = 'project-maintainer' | split: "|" %}
-{% endif %}
-{% endif %}
 
 {% if project_contributors contains user_username %}
 {% if user_roles %}

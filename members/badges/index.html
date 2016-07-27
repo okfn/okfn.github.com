@@ -32,13 +32,11 @@ bodyclass: badges
     {% if user_roles contains badge.id %}
 
     {% assign evidence = "" | split: "" %}
-    {% if badge.id == "project-maintainer" %}
     {% for project in site.data.projects %}
-    {% if project.maintainers contains person.username %}
+    {% if project.contributors contains person.username %}
     {% assign evidence = evidence | push: project.title %}
     {% endif %}
     {% endfor %}
-    {% endif %}
 
     <a title="{% if evidence.size > 0 %}Project{% if evidence.size > 1 %}s{% endif %}: {{ evidence | join: ', '}}{% endif %}" href="{{ person.permalink | replace:'index.html',''}}">
       {% if person.img %}

@@ -43,11 +43,6 @@ prose:
           element: "text"
           help: "Author name"
           placeholder: "Joe Bloggs"
-      - name: "maintainers"
-        field:
-          help: "Maintainer(s) <a href='http://okfnlabs.org/members/signup/'>OKFNLabs username</a>"
-          element: "text"
-          placeholder: "jbloggs"
       - name: "contributors"
         field:
           element: "text"

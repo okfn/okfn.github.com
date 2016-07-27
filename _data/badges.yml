@@ -7,11 +7,6 @@
   text: Lead
   type: role
   description: This member currently acts as a "lead".  More information about this role can be found <a href="/about/#leads">here</a>.
-- id: project-maintainer
-  icon: key
-  text: Project Maintainer
-  type: role
-  description: This member is recognized for acting as "maintainer" on one or more Labs <a href="/projects/">projects</a>.
 - id: project-contributor
   icon: cog
   text: Project Contributor

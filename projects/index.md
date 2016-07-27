@@ -45,8 +45,8 @@ bodyclass: code
         <a href="{{page_project_metadata.url | replace:'index.html',''}}">{{csv_project.title}}
         </a>
 
-        {% if csv_project.author %}
-          <div class="author">by {{csv_project.author}}</div>
+        {% if csv_project.owner %}
+          <div class="author">by {{csv_project.owner}}</div>
         {% endif %}
       </h2>
       {% if csv_project.imageurl %}
