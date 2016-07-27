@@ -6,7 +6,7 @@ projects: [dpm,frictionless-data,mira]
 ---
 
 Back in March, I wrote about a CKAN extension for publishing and
-exporting Data Packages.  This extension, `datapackager`, has been
+exporting Data Packages[^1].  This extension, `datapackager`, has been
 updated and is now **live** on our very own CKAN instance,
 **DataHub**.  DataHub users can now import and export Data Packages
 via the CKAN UI and API.  This post will show you how.
@@ -111,3 +111,5 @@ data and what you would like to see next!
 [dpist]: http://datapackagist.okfnlabs.org/
 [datasets]: https://github.com/datasets/
 [api]: http://docs.ckan.org/en/latest/api/
+
+[^1]: [Frictionless Data Transport in Python: 11 March 2016][frictionless-python]
