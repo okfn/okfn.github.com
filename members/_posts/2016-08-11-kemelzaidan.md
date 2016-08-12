@@ -6,7 +6,7 @@ email: kemelzaidan@gmail.com
 github: kemelzaidan
 twitter: kemelzaidan
 web: http://kemelzaidan.com.br
-img: https://media.licdn.com/AAEAAQAAAAAAAALmAAAAJDZiOTEyZjFhLWE0ODgtNGViMS05N2IxLTQ3YzZjZDI5M2FjZQ.jpg
+img: https://pt.gravatar.com/userimage/4589667/4ddb4ba0d47b63a3ebd287af6a311a44.jpg?size=200
 place: Brazil
 permalink: /members/kemelzaidan/index.html
 ---
