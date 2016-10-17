@@ -63,7 +63,7 @@ Members of the working group currently include:
 
 Work will happen continue to happen asynchronously, in the open,
 without excessive rules around voting.  Rather, we will listen to
-feedback and act in favor of consensus, without requiring it.  Rufus
+feedback and act in favor of consensus (without requiring it).  Rufus
 Pollock, having led this work for many years with a strong focus on
 keeping it simple, will remain the curator; decisions of what stays or
 goes from the specs will rest with him.  Having more eyes the specs
@@ -88,9 +88,8 @@ Work is managed via an
 GitHub, which is the best way to raise specific questions.  If you
 would like to specifically flag an issue for the Working Group,
 mention **@frictionlessdata/specs-working-group** in the comment.  For
-general commentary on the specs, or any aspect of Frictionless Data,
-you can leave a comment on the
-[forum](https://discuss.okfn.org/c/frictionless-data).
+general commentary on any aspect of Frictionless Data, you can leave a
+comment on the [forum](https://discuss.okfn.org/c/frictionless-data).
 
 - Current Specifications: <http://specs.frictionlessdata.io/>
   - JSON Schema (for validation): <https://github.com/frictionlessdata/schemas>
