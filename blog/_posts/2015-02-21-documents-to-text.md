@@ -2,7 +2,7 @@
 author: Matt Fullerton
 username: mattfullerton
 title: A public web service for document to text conversion including OCR
-projects: [tikaserver]
+projects: [tika-server]
 ---
 
 ## Getting text out of documents
