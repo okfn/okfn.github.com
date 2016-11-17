@@ -2,7 +2,7 @@
 author: Matt Fullerton
 username: mattfullerton
 title: Document to text conversion web service gets a nice name, a nice URL and a web interface
-projects: [tikaserver]
+projects: [tika-server]
 ---
 
 ## Give Me Text!
