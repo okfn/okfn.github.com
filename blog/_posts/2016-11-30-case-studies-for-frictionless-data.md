@@ -9,12 +9,12 @@ For our [Frictionless Data](http://frictionlessdata.io/) project, we
 were curious to learn about some of the common issues users face when
 working with data.  To that end, we started a
 [Case Study series](http://frictionlessdata.io/case-studies/) to
-highlight projects and organisations working with the Frictionless
+highlight projects and organizations working with the Frictionless
 Data specifications and tooling in interesting and innovative ways.
 
 Through several interviews over the past several months, we now have
 three case studies published on a range of topics: data science in the
-browser, the provision of clean energy system data for PhD
+browser, the provision of clean power system data for energy
 researchers, and re-usable components for cloud-based data-intensive
 workflows.
 
@@ -39,10 +39,10 @@ as the base format for Dataship notebooks.
 <http://frictionlessdata.io/case-studies/open-power-system-data/>
 
 We spoke to Lion Hirth and Ingmar Schlecht about
-[Open Power System Data](http://open-power-system-data.org/) which a
-is free-of-charge and open platform providing the clean, re-usable
+[Open Power System Data](http://open-power-system-data.org/), a
+free-of-charge and open platform providing clean, high quality data
 needed for power system analysis and modeling.  The project is aimed
-at resolving some of the most common, persistent issues PhD energy
+at resolving some of the most common, persistent issues energy
 researchers face when working with data.
 
 [![Open Power System Data](/img/posts/opsd.png)](http://frictionlessdata.io/case-studies/open-power-system-data/)
