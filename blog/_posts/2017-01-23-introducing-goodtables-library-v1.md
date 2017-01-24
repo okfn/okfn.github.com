@@ -22,12 +22,12 @@ Installation of Good Tables v1 is as easy as
 Good tables v1  supports the **_table_**, **_tables_** and **_datapackage_** presets by default. For the Examples below, we will use datasets [from this folder](https://github.com/frictionlessdata/goodtables-py/tree/master/data).  
 The **_table_** preset allows you to inspect a single tabular file. Programmatically, you can also inspect multiple tabular files in parallel using the tables preset.  
   _Example:_  
-  >`goodtables --json table valid.csv`  
+  `goodtables --json table valid.csv`  
   returns the JSON Table Schema (JTS) for the specified file, specifies error count and states source and validity of the data file among other things.
 
 Data Packages are a format for coalescing data in one ‘container’ before shipping it for use by different people and with different tools. In Good Tables, the datapackage preset allows you to run checks on datasets aggregated in one container. Working with data package Examples [from this repository](https://github.com/frictionlessdata/goodtables-py/tree/master/data/datapackages):  
   _Example:_  
-  >`goodtables datapackage datapackage.json`  
+  `goodtables datapackage datapackage.json`  
   allows a user to check a data package’s schema, table by table, and gives a detailed report on errors, row count, headers, and validity or lack thereof of a data package.
 
 In addition to general structure and schema checks on tabular files available in v0.7, the Good Tables library now allows users to define custom data presets and run custom checks on tabular files. So what is the difference?
@@ -39,21 +39,21 @@ While basic schema checks inspect data against this data quality spec , **_custo
 Any presets outside of the built-in ones above are made possible and registered through a provisional API. Any presets outside of the built in ones above are made possible and registered through a provisional API. If used with other programs, it is important to specify the Good Tables version in your requirements file.
 
 _Examples:_  
->**_CKAN custom preset_**  
++ **_CKAN custom preset_**  
 [CKAN](http://ckan.org) is the world’s leading open data platform developed by Open Knowledge International to help streamline the publishing, sharing, finding and using of data.
 [Here’s a custom preset](https://github.com/frictionlessdata/goodtables-py/blob/master/Examples/ckan.py) that helps the user run inspection on datasets from http://data.surrey.ca which utilizes CKAN.
 
->**_DropBox custom preset_**  
++ **_DropBox custom preset_**  
 Dropbox is one of the most popular file storage and collaboration cloud service in use. It ships with an API that makes it possible for third party apps to read files stored on Dropbox as long as a user’s access token is specified. Here’s our [Good Tables custom preset for DropBox](https://github.com/frictionlessdata/goodtables-py/blob/master/examples/dropbox.py). Remember to generate an access token by first [creating a dropbox app with full permissions](https://www.dropbox.com/developers/apps).
 
->**_Google Sheets custom preset_**  
++ **_Google Sheets custom preset_**  
 The Google Sheets parser to enable custom preset definition for g|Docs is currently under construction. You can [follow progress here](https://github.com/frictionlessdata/tabulator-py/issues/117). At present, for any data file stored in Google Drive and published on the web so it is publicly available, the command  
 `goodtables table google_drive_file_url`  
 inspects your dataset and checks for validity, or lack thereof.
 
 Good Tables also allows users to carry out parallel computation for multi-table datasets. This means that users can run checks on datasets they obtain, as is, without having to first split and save data in workbooks into separate data files. The **_tables_** and **_datapackage_** presets make this possible.  
 _Example:_  
->One of Open Knowledge International’s projects, [Frictionless Data](http://frictionlessdata.io), is working with [DM4T pilot](https://github.com/frictionlessdata/pilot-dm4t) to understand the extent to which Data Package concepts can be applied in the energy sector. DM4T pilot’s issue tracker [lives here](https://github.com/frictionlessdata/pilot-dm4t) and it’s [Data Package](https://s3-eu-west-1.amazonaws.com/frictionlessdata.io/pilots/pilot-dm4t/datapackage.json) comprises of [20 CSV files](http://data.okfn.org/tools/view?url=https%3A%2F%2Fs3-eu-west-1.amazonaws.com%2Ffrictionlessdata.io%2Fpilots%2Fpilot-dm4t%2Fdatapackage.json) and is approximately 6.7 GB in size.   
+One of Open Knowledge International’s projects, [Frictionless Data](http://frictionlessdata.io), is working with [DM4T pilot](https://github.com/frictionlessdata/pilot-dm4t) to understand the extent to which Data Package concepts can be applied in the energy sector. DM4T pilot’s issue tracker [lives here](https://github.com/frictionlessdata/pilot-dm4t) and it’s [Data Package](https://s3-eu-west-1.amazonaws.com/frictionlessdata.io/pilots/pilot-dm4t/datapackage.json) comprises of [20 CSV files](http://data.okfn.org/tools/view?url=https%3A%2F%2Fs3-eu-west-1.amazonaws.com%2Ffrictionlessdata.io%2Fpilots%2Fpilot-dm4t%2Fdatapackage.json) and is approximately 6.7 GB in size.   
 With good internet connection, Good Tables v1 makes it possible to run checks on large datasets in a few seconds, 15 for me,  without having to download these large files. To inspect DM4T’s energy consumption data collected from 20 households in the US, run:  
 `goodtables --table-limit 20 datapackage https://s3-eu-west-1.amazonaws.com/frictionlessdata.io/pilots/pilot-dm4t/datapackage.json`  
 In the command above, the --table-limit option allows you to check all 20 tables, since   
@@ -67,7 +67,7 @@ So why use Github for storage of data files?  At Open Knowledge International, w
 **PRO TIP:**   
 In working with datasets hosted on Github, say [the countries and currencies data package](https://github.com/frictionlessdata/example-data-packages/tree/master/countries-and-currencies), users should use the raw file URL with Good Tables, since support for Github URL resolution is still in development.
 
->For the dataset above:  
+For the dataset above:  
 `goodtables datapackage https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/countries-and-currencies/datapackage.json`    
 returns an error but  
 `goodtables datapackage https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/countries-and-currencies/datapackage.json`  
