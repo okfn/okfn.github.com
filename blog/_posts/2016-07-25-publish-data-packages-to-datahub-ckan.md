@@ -55,7 +55,7 @@ my-datapackage-to-import.zip <data package directory>`.  **Note**:
 make sure your packaged data, unzipped, is **less than the 100MB**, as
 this is current size limit on DataHub.
 1. **Import your Data Package**: While signed in, click on
-"Import Data Package" on [the dataset page][dsp], choose the
+"Import Data Package" on the page of the
 organization you created in Step 1, and upload the zipped Data Package
 you created in the previous step.
 
