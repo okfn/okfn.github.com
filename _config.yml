@@ -1,6 +1,6 @@
 highligher: pygments
 markdown: kramdown
-future: false
+future: true
 gems:
   - jekyll-redirect-from
   - jekyll-mentions
@@ -23,7 +23,7 @@ defaults:
       path: "blog"
       type: "posts"
     values:
-      layout: "post"      
+      layout: "post"
   -
     scope:
       path: "members"

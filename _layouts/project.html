@@ -42,12 +42,12 @@ bodyclass: project
     {% endfor %}
   </li>
   {% endif %}
-  {% if csv_project_metadata.projecturl && csv_project_metadata.projecturl != "" %}
+  {% if csv_project_metadata.projecturl and csv_project_metadata.projecturl != "" %}
   <li>
     <i class="icon-link" title="Project HomePage"></i> <a href="{{csv_project_metadata.projecturl}}" target="_blank">{{csv_project_metadata.projecturl}}</a>
   </li>
   {% endif %}
-  {% if csv_project_metadata.github_repo && csv_project_metadata.github_repo != "" %}
+  {% if csv_project_metadata.github_repo and csv_project_metadata.github_repo != "" %}
   <li>
     <i class="icon-github"></i> <a href="https://github.com/{{csv_project_metadata.github_user}}/{{csv_project_metadata.github_repo}}">https://github.com/{{csv_project_metadata.github_user}}/{{csv_project_metadata.github_repo}}</a>
   </li>

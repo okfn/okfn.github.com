@@ -32,7 +32,7 @@ to customize and extend).
 
 In addition to the simple example with local data there are several other
 examples showing how one can use this with other data sources including Google
-Docs and SOLR: 
+Docs and SOLR:
 
 1. A [search example using a google docs listing Shell Oil spills in the Niger
 delta](http://reclinejs.com/demos/search/?backend=gdocs&url=https://docs.google.com/spreadsheet/ccc?key=0Aon3JiuouxLUdExXSTl2Y01xZEszOTBFZjVzcGtzVVE)
@@ -47,7 +47,10 @@ power"!
 The full [(prettified) source JS for the demo is available][source-pretty]
 (plus the [raw version][raw]) but here's a key code sample to give a flavour:
 
+
 {% highlight javascript %}
+{% raw %}
+
 // ## Simple Search View
 //
 // This is a simple bespoke Backbone view for the Search. It Pulls together
@@ -55,7 +58,7 @@ The full [(prettified) source JS for the demo is available][source-pretty]
 // object
 //
 // It also provides simple support for customization e.g. of template for list of results
-// 
+//
 //      var view = new SearchView({
 //        el: $('some-element'),
 //        model: dataset
@@ -88,7 +91,7 @@ var SearchView = Backbone.View.extend({
     </div> \
     <div class="pager-here"></div> \
   ',
- 
+
   // render the view
   render: function() {
     var results = '';
@@ -96,7 +99,7 @@ var SearchView = Backbone.View.extend({
       var results = _.map(this.model.records.toJSON(), this.templateResults).join('\n');
     } else {
       // templateResults is just for one result ...
-      var tmpl = '{{#records}}' + this.templateResults + '{{/records}}'; 
+      var tmpl = '{{#records}}' + this.templateResults + '{{/records}}';
       var results = Mustache.render(tmpl, {
         records: this.model.records.toJSON()
       });
@@ -110,7 +113,7 @@ var SearchView = Backbone.View.extend({
     this.el.find('.total span').text(this.model.recordCount);
 
     // ### Now setup all the extra mini-widgets
-    // 
+    //
     // Facets, Pager, QueryEditor etc
 
     var view = new recline.View.FacetViewer({
@@ -131,5 +134,5 @@ var SearchView = Backbone.View.extend({
   }
 });
 
+{% endraw %}
 {% endhighlight %}
-
