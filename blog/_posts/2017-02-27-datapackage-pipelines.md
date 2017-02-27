@@ -4,30 +4,29 @@ title: Data Package Pipelines
 username: akariv
 ---
 
-*[datapackage-pipelines][dpp] is the newest part of the Frictionless
- Data toolchain.  It is a framework for defining data processing steps
- declaratively to generate self-describing Data Packages.*
+*[datapackage-pipelines][dpp] is the newest part of the
+ [Frictionless Data][fd] toolchain.  Originally developed through work
+ on OpenSpending, it is a framework for defining data processing steps
+ to generate self-describing Data Packages.*
 
-[OpenSpending][os] is an open database for
-uploading fiscal data for countries or municipalities to better
-understand how governments spend public money.  In this project, we're
-often presented with requests to upload large amounts of potentially
-budget messy data---often a CSV or Excel files---to the platform.
+[OpenSpending][os] is an open database for uploading fiscal data for
+countries or municipalities to better understand how governments spend
+public money.  In this project, we're often presented with requests to
+upload large amounts of potentially budget messy data---often a CSV or
+Excel files---to the platform.  We looked for existing ETL (extract,
+transform, load) solutions for extracting data from these different
+sources, transforming them into a format that OpenSpending supports
+(the [Open Fiscal Data Package][fdp]) and loading them into the
+platform. A few existing and powerful solutions exist, but none suited
+our needs. Most were optimised for a use case in which you have a few
+different data sources, on which a large dependency graph can be built
+out of complex processing nodes.  The OpenSpending use case is
+radically different.  Not only do we have *many* data sources, but our
+processing flows are *independent* (i.e. not an intricate dependency
+graph) and mostly quite *similar* (i.e. built from the same building
+blocks).
 
 ![OpenSpending image](/img/posts/dpp-openspending.png)
-
-We looked for existing ETL (extract, transform, load) solutions for
-extracting data from these different sources, transforming them into a
-format that OpenSpending supports (the
-[Open Fiscal Data Package][fdp])
-and loading them into the platform. A few existing and powerful
-solutions exist, but none suited our needs. Most were optimised for a
-use case in which you have a few different data sources, on which a
-large dependency graph can be built out of complex processing nodes.
-The OpenSpending use case is radically different.  Not only do we have
-*many* data sources, but our processing flows are *independent*
-(i.e. not an intricate dependency graph) and mostly quite *similar*
-(i.e. built from the same building blocks).
 
 We also found that typical ETL solutions were intended to be used by
 data scientists and developers with processing pipelines defined in
@@ -41,8 +40,8 @@ having to make decisions regarding deployment or concurrency.
 ## Pipelines for Data Packages
 
 Based on these observations, we implemented a new ETL library,
-[datapackage-pipelines][dpp] with a different set of assumptions and
-use cases:
+[datapackage-pipelines][dpp], with a different set of assumptions and
+use cases.
 
 ![Pipelines for something other than data](/img/posts/dpp-pipelines.jpg)
 
@@ -50,6 +49,8 @@ use cases:
  something other than data -
  [Stefan Schmidt](https://www.flickr.com/photos/loopkid/) -
  [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)*
+
+datapackage-pipelines assumptions and use cases:
 
 1. **Processing flows (or 'pipelines') are defined in a configuration
    file and not code.**
@@ -70,7 +71,7 @@ other possibilities, such as strict validation of definition files.
     more easily, without having to worry about a processing node
     taking too much memory or disk space.
 
-3. **Like OpenSpending, we are based on the Data Package.**
+3. **We are based on the Data Package, like OpenSpending.**
 
     All pipelines process and produce valid
     [Data Packages][dp]. This
@@ -297,6 +298,7 @@ running pipelines on a schedule, using the dashboard, configuring the
 standard processors, and information on how to write your own
 processor, visit the [GitHub repo][dpp].
 
+[fd]: http://frictionlessdata.io/
 [dpp]: https://github.com/frictionlessdata/datapackage-pipelines
 [fdp]: http://specs.frictionlessdata.io/fiscal-data-package
 [os]: http://next.openspending.org/
