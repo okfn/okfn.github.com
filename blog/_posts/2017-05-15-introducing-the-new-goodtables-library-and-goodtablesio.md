@@ -2,7 +2,7 @@
 author: Serah Rono
 username: callmealien
 projects: [routetopa,frictionless-data,opendataday]
-title: Introducing the New goodtables Library
+title: Introducing the new goodtables Library and goodtables.io
 published: false
 ---
 
