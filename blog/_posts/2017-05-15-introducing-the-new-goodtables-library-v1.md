@@ -87,6 +87,8 @@ The command above displays your tabular data in the command line.
 
 3. better csv parsing, better html detection, less false positives
 
+![goodtablesio](https://github.com/okfn/okfn.github.com/blob/master/img/posts/goodtablesio.jpg)
+
 Moving forward, we want to streamline the process of data validation and ensure seamless integration is possible on different publishing workflows. To do so, [we are launching a continuous data validation hosted service](http://goodtables.io) that builds on top of [all these great Frictionless Data](https://github.com/frictionlessdata/tabulator-py) libraries.goodtables.io will provide support for different backends. At this time, users can use it to check any datasets hosted on GitHub and Amazon S3 buckets, automatically running validation against data files every time they are updated, and providing a user friendly report of any issues found. 
 This kind of continuous feedback allows data publishers to release better, higher quality data and helps ensure that this quality is maintained over time, even if different people publish the data. Here’s sample output from data validation by goodtables.io:
 
