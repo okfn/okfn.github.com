@@ -12,7 +12,9 @@ Tables, comprised of rows and columns of related data, are not always as easy to
 
 Enter **goodtables**.
 
-goodtables is a python library that allows users to inspect tabular data, checking it for both structural and schematic errors, and giving pointers on plausible error fixes, before users draw analyses on the data using other tools. At its most basic level, goodtables highlights general errors in tabular files i.e. data that won’t load or cannot be parsed.
+![goodtables python library](https://github.com/okfn/okfn.github.com/blob/master/img/posts/goodtables%20python%20library.jpg)
+
+[goodtables](https://pypi.python.org/pypi/goodtables) is a python library that allows users to inspect tabular data, checking it for both structural and schematic errors, and giving pointers on plausible error fixes, before users draw analyses on the data using other tools. At its most basic level, goodtables highlights general errors in tabular files i.e. data that won’t load or cannot be parsed.
 
 Since [the release of goodtables v0.7 in early 2015](http://okfnlabs.org/blog/2015/02/20/introducing-goodtables.html), the code base has evolved, allowing for additional use cases while working with tabular data.  Without cutting back on functionality, goodtables v1 has been simplified and focus is now on data validation.
 
@@ -93,9 +95,8 @@ Moving forward, we want to streamline the process of data validation and ensure 
 This kind of continuous feedback allows data publishers to release better, higher quality data and helps ensure that this quality is maintained over time, even if different people publish the data. 
 
 Using [this dataset on Github](http://goodtables.io/github/frictionlessdata/example-goodtables.io), here’s sample output from data validation run on goodtables.io:
+
 ![illustrating data validation on goodtables.io](https://github.com/okfn/okfn.github.com/blob/master/img/posts/gtio%20data%20validation%20.png)
-
-
 
 Any updates on the valid and invalid csv files will reflect in real time on goodtables.io. As with other projects at Open Knowledge International, [goodtables.io code is open source](https://github.com/frictionlessdata/goodtables.io) and contributions are welcome. We hope to build functionality to support additional data storage platforms in the coming months, please let us know which ones to consider in our [Gitter chat](https://gitter.im/frictionlessdata/chat) or on [Frictionless Data Discuss](https://discuss.okfn.org/c/frictionless-data).  
 
