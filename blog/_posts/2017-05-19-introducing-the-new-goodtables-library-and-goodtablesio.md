@@ -1,7 +1,7 @@
 ---
 author: Serah Rono
 username: callmealien
-projects: [routetopa,frictionless-data,opendataday]
+projects: [frictionless-data,good-tables]
 title: Introducing the new goodtables library and goodtables.io
 ---
 
@@ -11,7 +11,7 @@ Tables, comprised of rows and columns of related data, are not always as easy to
 
 Enter **goodtables**.
 
-![goodtables python library](/img/posts/goodtables-python-library.png)
+[![goodtables python library](/img/posts/goodtables-python-library.png)](https://github.com/frictionlessdata/goodtables.io)
 
 
 ## The goodtables library
@@ -24,7 +24,7 @@ Since [the release of goodtables v0.7 in early 2015](http://okfnlabs.org/blog/20
 
 goodtables is still in alpha, so we need to pass the pre-release flag (`--pre`) to `pip` to install.  With that, installation of goodtables v1 is as easy as `pip install goodtables --pre`.
 
-goodtables v1 supports two presets by default: **_table_**  and **_datapackage_**.  The `table` preset allows you to inspect a single tabular file.
+The goodtables v1 CLI supports two presets by default: **_table_**  and **_datapackage_**.  The `table` preset allows you to inspect a single tabular file.
 
 _Example:_
 
@@ -52,17 +52,17 @@ _Examples:_
 
 + **_CKAN custom preset_**:
 [CKAN](http://ckan.org) is the world’s leading open data platform developed by Open Knowledge International to help streamline the publishing, sharing, finding and using of data.
-[Here’s a custom preset](https://github.com/frictionlessdata/goodtables-py/blob/master/examples/ckan.py) that helps the user run inspection on datasets from [Surrey's Data Portal](http://data.surrey.ca) which utilizes CKAN.
+[Here’s a custom preset](https://github.com/frictionlessdata/goodtables-py/blob/master/examples/ckan.py) that, for example, could help the user run an inspection on datasets from [Surrey's Data Portal](http://data.surrey.ca) which utilizes CKAN.
 
 + **_Dropbox custom preset_**:
 Dropbox is one of the most popular file storage and collaboration cloud service in use. It ships with an API that makes it possible for third party apps to read files stored on Dropbox as long as a user’s access token is specified. Here’s our [goodtables custom preset for Dropbox](https://github.com/frictionlessdata/goodtables-py/blob/master/examples/dropbox.py). Remember to generate an access token by first [creating a Dropbox app with full permissions](https://www.dropbox.com/developers/apps).
 
 + **_Google Sheets custom preset_**:
-The Google Sheets parser to enable custom preset definition is currently under construction. You can [follow progress here](https://github.com/frictionlessdata/tabulator-py/issues/117). At present, for any data file stored in Google Drive and published on the web, the command `goodtables table google_drive_file_url` inspects your dataset and checks for validity, or lack thereof.
+The Google Sheets parser to enable custom preset definition is currently in development. At present, for any data file stored in Google Drive and published on the web, the command `goodtables table google_drive_file_url` inspects your dataset and checks for validity, or lack thereof.
 
 ## Validating multiple tables
 
-goodtables also allows users to carry out parallel validation for multi-table datasets. This means that users can run checks on datasets they obtain, as is, without having to first split and save data in workbooks into separate data files. The **_datapackage_** preset make this possible.
+goodtables also allows users to carry out parallel validation for multi-table datasets. The **_datapackage_** preset make this possible.
 
 _Example:_
 
@@ -83,17 +83,17 @@ In working with datasets hosted on GitHub, say [the countries codes Data Package
 
 ## Standards and other enhancements
 
-goodtables v1 also works with our proposed [data quality specification standard](https://github.com/frictionlessdata/data-quality-spec), which has [an extensive list](https://github.com/frictionlessdata/goodtables-py/blob/master/goodtables/spec.json) of standard tabular data errors.  Other enhancements from goodtables v0.7 include:
+goodtables v1 also works with our proposed [data quality specification standard](https://github.com/frictionlessdata/data-quality-spec), which defines [an extensive list](https://github.com/frictionlessdata/goodtables-py/blob/master/goodtables/spec.json) of standard tabular data errors.  Other enhancements from goodtables v0.7 include:
 
-1. Breaking out [tabulator](http://github.com/frictionlessdata/tabulator) into its own library.  As part of the Frictionless Data framework, **_tabulator_** is a python library that has been developed to provide a consistent interface for stream reading and writing tabular data that is in whatever format, be it CSV, XML, etc. The library is installable via pip: `pip install tabulator`.
+1. Breaking out [tabulator](http://github.com/frictionlessdata/tabulator) into its own library.  As part of the Frictionless Data framework, **_tabulator_** is a Python library that has been developed to provide a consistent interface for stream reading and writing tabular data that is in whatever format, be it CSV, XML, etc. The library is installable via pip: `pip install tabulator`.
 2. Close to 100% support for  [Table Schema](http://specs.frictionlessdata.io/table-schema/) due to lots of work on the underlying [Python library](https://github.com/frictionlessdata/jsontableschema-py).  The Table Schema Python library allows users to validate dataset schema and, given headers and data, infer a schema as a python dictionary based on its initial values.
-3. Better CSV parsing, better HTML detection, and less false positives
+3. Better CSV parsing, better HTML detection, and less false positives.
 
 ## goodtables.io
 
-![goodtablesio](/img/posts/goodtablesio.jpg)
+[![goodtablesio](/img/posts/goodtablesio.jpg)](https://github.com/frictionlessdata/goodtables.io)
 
-Moving forward, at Open Knowledge International we want to streamline the process of data validation and ensure seamless integration is possible in different publishing workflows. To do so, [we are launching a continuous data validation hosted service](https://discuss.okfn.org/t/launching-goodtables-io-tell-us-what-you-think/5165) that builds on top of all this suite of Frictionless Data libraries.  [goodtables.io](http://goodtables.io) will provide support for different backends. At this time, users can use it to check any datasets hosted on GitHub and Amazon S3 buckets, automatically running validation against data files every time they are updated, and providing a user friendly report of any issues found.
+Moving forward, at Open Knowledge International we want to streamline the process of data validation and ensure seamless integration is possible in different publishing workflows. To do so, [we are launching a continuous data validation hosted service](https://discuss.okfn.org/t/launching-goodtables-io-tell-us-what-you-think/5165) that builds on top of this suite of Frictionless Data libraries.  [goodtables.io](http://goodtables.io) will provide support for different backends. At this time, users can use it to check any datasets hosted on GitHub and Amazon S3 buckets, automatically running validation against data files every time they are updated, and providing a user friendly report of any issues found.
 
 Try it here: [goodtables.io](http://goodtables.io)
 
@@ -101,6 +101,6 @@ This kind of continuous feedback allows data publishers to release better, highe
 
 Using [this dataset on Github](http://goodtables.io/github/frictionlessdata/example-goodtables.io), here’s sample output from data validation run on goodtables.io:
 
-![illustrating data validation on goodtables.io](/img/posts/goodtablesio-validation.png)
+[![illustrating data validation on goodtables.io](/img/posts/goodtablesio-validation.png)](http://goodtables.io/github/amercader/car-fuel-and-emissions)
 
-Updates on the files in the dataset will trigger a validation check on goodtables.io. As with other projects at Open Knowledge International, [goodtables.io code is open source](https://github.com/frictionlessdata/goodtables.io) and contributions are welcome. We hope to build functionality to support additional data storage platforms in the coming months, please let us know which ones to consider in our [Gitter chat](https://gitter.im/frictionlessdata/chat) or on [Frictionless Data forum](https://discuss.okfn.org/c/frictionless-data).
+Updates on the files in the dataset will trigger a validation check on goodtables.io. As with other projects at Open Knowledge International, [goodtables.io code is open source](https://github.com/frictionlessdata/goodtables.io) and contributions are welcome. We hope to build functionality to support additional data storage platforms in the coming months, please let us know which ones to consider in our [Gitter chat](https://gitter.im/frictionlessdata/chat) or on the [Frictionless Data forum](https://discuss.okfn.org/c/frictionless-data).
