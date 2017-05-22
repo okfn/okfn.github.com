@@ -18,7 +18,7 @@ Enter **goodtables**.
 
 [goodtables](https://github.com/frictionlessdata/goodtables-py/) is a Python library that allows users to inspect tabular data, checking it for both structural and schematic errors, and giving pointers on plausible error fixes, before users draw analyses on the data using other tools. At its most basic level, goodtables highlights general errors in tabular files that would otherwise prevent loading or parsing.
 
-Since [the release of goodtables v0.7 in early 2015](http://okfnlabs.org/blog/2015/02/20/introducing-goodtables.html), the codebase has evolved, allowing for additional use cases while working with tabular data.  Without cutting back on functionality, goodtables v1 has been simplified, and the focus is now on extensible data validation.
+Since [the release of goodtables v0.7 in early 2015](/blog/2015/02/20/introducing-goodtables.html), the codebase has evolved, allowing for additional use cases while working with tabular data.  Without cutting back on functionality, goodtables v1 has been simplified, and the focus is now on extensible data validation.
 
 ## Using goodtables
 
@@ -76,7 +76,7 @@ goodtables --table-limit 20 datapackage https://s3-eu-west-1.amazonaws.com/frict
 
 In the command above, the `--table-limit` option allows you to check all 20 tables, since by default goodtables only runs checks on the first ten tables by default.  You can find plenty of sample Data Packages for use with goodtables [in this repository](https://github.com/datasets/).
 
-So why use GitHub for storage of data files?  At Open Knowledge International, we [highly recommend](http://blog.okfn.org/2013/07/02/git-and-github-for-data/) and [actively work to](http://blog.okfn.org/2016/11/29/git-for-data-analysis-why-version-control-is-essential-collaboration-public-trust/) use GitHub repositories for dataset storage.
+So why use GitHub for storage of data files?  At Open Knowledge International, we [highly recommend](http://blog.okfn.org/2013/07/02/git-and-github-for-data/) and [work with others to](http://blog.okfn.org/2016/11/29/git-for-data-analysis-why-version-control-is-essential-collaboration-public-trust/) use GitHub repositories for dataset storage.
 
 **PRO TIP:**
 In working with datasets hosted on GitHub, say [the countries codes Data Package](https://github.com/datasets/country-codes), users should use the raw file URL with goodtables, since support for GitHub URL resolution is still in development.
