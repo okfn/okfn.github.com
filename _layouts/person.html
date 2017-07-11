@@ -57,7 +57,7 @@ bodyclass: members
 {% for csv_project in site.data.projects %}
 {% if csv_project.contributors contains page.username %}
   <div>
-    <h3><a href="{{csv_project.url | replace:'index.html',''}}">{{csv_project.title}}</a></h3>
+    <h3><a href="{{csv_project.projecturl | replace:'index.html',''}}">{{csv_project.title}}</a></h3>
 
     {% for page_project in site.projects %}
       {% if page_project.title == csv_project.title %}
