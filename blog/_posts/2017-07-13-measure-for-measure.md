@@ -17,9 +17,9 @@ developer Brook Elgie and check out the [code][measure].
 
 ## What is Measure?
 
-[Measure][measure] is a system for collecting and analyzing metrics
+[Measure][measure] is a system that allows us to collect and analyze metrics
 from the various internal sources and external platforms we use to do
-our work and surfacing them in a user-friendly, queryable interface.
+our work, and surface them in a user-friendly, queryable interface.
 These include the number of views on our main website, downloads of
 our libraries from [PyPI][pypi], retweets on Twitter, and form-based
 records of recent talks we’ve given.  Like many organizations, we rely
