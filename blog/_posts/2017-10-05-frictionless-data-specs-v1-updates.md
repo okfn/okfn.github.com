@@ -126,7 +126,7 @@ print(package.descriptor)
 ```
 
 ## Goodtables web service works with v1 specs
-Our  goodtables.io web service is now updated to work with v1 specifications[^specs]. This tool allows you to setup your continous data validation workflow to ensure that published data is always valid. [try.goodtables.io](https://try.goodtables.io) allows a one-time validation for arbitrary tabular files against structure and schema checks and is perfect for demo or trial purposes.
+Our Goodtables web service is now updated to work with v1 specifications[^specs]. This tool allows you to setup your continous data validation workflow to ensure that published data is always valid. [try.goodtables.io](https://try.goodtables.io) allows a one-time validation for arbitrary tabular files against structure and schema checks and is perfect for demo or trial purposes.
 
 ## Next steps
 - We are looking to write more in-depth documentation and guides for the Frictionless Data specs and tools as we update our codebase[^github].
