@@ -319,4 +319,4 @@ If you want to see specification for more details, please visit [Data Package sp
 [fd]: http://frictionlessdata.io/
 
 ---
-*This blog post was originally published on [datahub.io](datahub.io) by Meiran Zhiyenbayev*.
+*This blog post was originally published on [datahub.io](datahub.io) by Meiran Zhiyenbayev. Meiran works for [Datopian](https://datopian.com/) who have been developing datahub.io as part of the Frictionless Data initative*.
