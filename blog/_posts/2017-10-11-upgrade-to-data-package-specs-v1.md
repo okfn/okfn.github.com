@@ -317,3 +317,6 @@ The above summarizes the main changes for v1 of Data Package suite of specs and 
 If you want to see specification for more details, please visit [Data Package specifications][specs]. You can also visit the [Frictionless Data initiative for more information about Data Packages][fd].
 
 [fd]: http://frictionlessdata.io/
+
+---
+*This blog post was originally published on [datahub.io](datahub.io) by Meiran Zhiyenbayev*.
