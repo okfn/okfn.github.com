@@ -23,7 +23,7 @@ In addition, there were a fair number of substantive changes. We summarize these
 
 ### Table Schema
 
-Link to spec: https://specs.frictionlessdata.io/table-schema/
+Link to spec: [https://specs.frictionlessdata.io/table-schema/](https://specs.frictionlessdata.io/table-schema/)
 
 <table class="table table-striped table-bordered">
 <thead>
@@ -105,7 +105,7 @@ format: decimalChar and groupChar</td>
 
 ### Data Resource
 
-Link to spec: https://specs.frictionlessdata.io/data-resource/
+Link to spec: [https://specs.frictionlessdata.io/data-resource/](https://specs.frictionlessdata.io/data-resource/)
 
 *Note: Data Resource did not exist as a separate spec pre-v1 so strictly we are comparing the Data Resource section of the old Data Package spec with the new Data Resource spec.*
 
@@ -159,7 +159,7 @@ Link to spec: https://specs.frictionlessdata.io/data-resource/
 
 ### Tabular Data Resource
 
-Link to spec: https://specs.frictionlessdata.io/data-resource/
+Link to spec: [https://specs.frictionlessdata.io/data-resource/](https://specs.frictionlessdata.io/data-resource/)
 
 Just as Data Resource split out from Data Package so Tabular Data Resource split out from the old Tabular Data Package spec.
 
@@ -167,7 +167,7 @@ There were no significant changes here beyond those in Data Resource.
 
 ### Data Package
 
-Link to spec: https://specs.frictionlessdata.io/data-package/
+Link to spec: [https://specs.frictionlessdata.io/data-package/](https://specs.frictionlessdata.io/data-package/)
 
 <table class="table table-striped table-bordered">
 <thead>
@@ -241,7 +241,7 @@ Link to spec: https://specs.frictionlessdata.io/data-package/
 
 ### Tabular Data Package
 
-Link to spec: https://specs.frictionlessdata.io/tabular-data-package/
+Link to spec: [https://specs.frictionlessdata.io/tabular-data-package/](https://specs.frictionlessdata.io/data-package/)
 
 Tabular Data Package is unchanged.
 
@@ -249,7 +249,7 @@ Tabular Data Package is unchanged.
 
 Profiles arrived in v1:
 
-http://specs.frictionlessdata.io/profiles/
+[http://specs.frictionlessdata.io/profiles/](ttp://specs.frictionlessdata.io/profiles/)
 
 Profiles are the first step on supporting a rich ecosystem of "micro-schemas" for data. They provide a very simple way to quickly state that your data follows a specific structure and/or schema. From the docs:
 
