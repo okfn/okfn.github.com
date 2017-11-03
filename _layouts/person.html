@@ -8,7 +8,7 @@ bodyclass: members
 
 <div class="info">
   {% if page.img %}
-  <img class="photo" src="{{page.img}}" style="float: right;">
+  <img class="photo" src="{{page.img}}" style="float: right; max-width:200px">
   {% endif %}
 
   <p class="joined"><i class="icon-time"></i> Member since <span class="date">{{ page.date | date_to_long_string }}</span></p>
