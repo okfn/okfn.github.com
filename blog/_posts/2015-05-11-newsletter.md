@@ -91,7 +91,7 @@ Anyone can join the Labs community and get involved! Read more about how you can
 [core-one]: http://data.okfn.org/data/core/media-types
 [core-two]: http://data.okfn.org/data/core/membership-to-copyright-treaties
 [datapackage]: http://data.okfn.org/doc/data-package
-[jsontableschema]: http://dataprotocols.org/json-table-schema/
+[jsontableschema]: http://dataprotocols.org/table-schema/
 [dpmr]: http://christophergandrud.github.io/dpmr/
 [datapak-announce]: http://okfnlabs.org/blog/2015/04/26/datapak.html
 [datapak]: https://github.com/textkit/datapak

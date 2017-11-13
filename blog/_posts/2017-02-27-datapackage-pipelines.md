@@ -302,7 +302,7 @@ processor, visit the [GitHub repo][dpp].
 [dpp]: https://github.com/frictionlessdata/datapackage-pipelines
 [fdp]: http://specs.frictionlessdata.io/fiscal-data-package
 [os]: http://next.openspending.org/
-[tools]: http://frictionlessdata.io/tools/
+[tools]: http://frictionlessdata.io/software/
 [stdlib]: https://github.com/frictionlessdata/datapackage-pipelines#the-standard-processor-library
 [dp]: http://specs.frictionlessdata.io/data-package
 [readme]: https://github.com/frictionlessdata/datapackage-pipelines/blob/master/README.md

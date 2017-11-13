@@ -54,8 +54,8 @@ And much much more. Leave an idea on the [Ideas Page][31], or visit the Labs sit
 [3]:    https://github.com/okfn/textus-viewer/issues/5
 [4]:    http://okfnlabs.org/textus-viewer/
 [5]:    https://github.com/okfn/textus-viewer#usage
-[6]:    http://dataprotocols.org/json-table-schema/
-[7]:    http://dataprotocols.org/json-table-schema/#foreign-keys
+[6]:    http://dataprotocols.org/table-schema/
+[7]:    http://dataprotocols.org/table-schema/#foreign-keys
 [8]:    https://github.com/dataprotocols/dataprotocols/issues/23
 [9]:    http://trestletechnology.net
 [10]:   http://deadpansincerity.com

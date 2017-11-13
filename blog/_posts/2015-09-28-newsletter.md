@@ -26,7 +26,7 @@ Friedrich Lindenberg, AKA [pudo](http://okfnlabs.org/members/pudo/),
 has booted up [JTS-SQL](https://github.com/okfn/jts-sql), a Python
 library that removes some of the friction in dealing with data by
 automatically generating database table models based on
-[JSON Table Schema](http://dataprotocols.org/json-table-schema/) field
+[JSON Table Schema](http://dataprotocols.org/table-schema/) field
 descriptors.
 
 ## Give Me Text!

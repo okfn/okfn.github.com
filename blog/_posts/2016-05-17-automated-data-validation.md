@@ -117,11 +117,11 @@ report is generated:
 The Data Package descriptor file,
 [datapackage.json](http://dataprotocols.org/data-packages/), provides
 both high-level metadata as well as a
-[schema](http://frictionlessdata.io/guides/json-table-schema/) for
+[schema](http://frictionlessdata.io/guides/table-schema/) for
 tabular data.  We use the Python library
 [datapackage-py](http://github.com/frictionlessdata/datapackage-py) to
 create a high-level model of the Data Package that allows us to
-inspect and work with the data inside.  The real work is accomplished using 
+inspect and work with the data inside.  The real work is accomplished using
 [GoodTables](http://goodtables.okfnlabs.org/).
 
 
@@ -130,23 +130,23 @@ We
 to validate our tabular data.  On every update, two small test
 functions read the `datapackage.json` to read and validate the tabular
 data contained therein according to its structure and adherence to a
-[schema](http://frictionlessdata.io/guides/json-table-schema/).
+[schema](http://frictionlessdata.io/guides/table-schema/).
 Here's the first:
 
 {% highlight python %}
 def test_schema(self):
     # We heart CSV :)
-    
+
     data_format = 'csv'
 
     # Load our Data Package path and schema
-    
+
     data = dp.metadata['resources'][0]['path']
     schema = dp.metadata['resources'][0]['schema']
 
     # We use the "schema" processor to test the data against its
     # expected schema.  There is also a "structure" processor.
-    
+
     processor = processors.SchemaProcessor(schema=schema,
         format=data_format,
         row_limit=row_limit,
@@ -154,19 +154,19 @@ def test_schema(self):
     valid, report, data = processor.run(data)
 
     # Various formatting options for our report follow.  
-    
+
     output_format = 'txt'
-    exclude = ['result_context', 'processor', 'row_name', 
-               'result_category', 'column_name', 'result_id', 
+    exclude = ['result_context', 'processor', 'row_name',
+               'result_category', 'column_name', 'result_id',
                'result_level']
 
     # And here's our report!
-    
+
     out = report.generate(output_format, exclude=exclude)
 
     self.assertTrue(valid, out)
 {% endhighlight %}
-        
+
 For more information, read the guide on
 [frictionlessdata.io](http://frictionlessdata.io/) about
 [validating data](http://frictionlessdata.io/guides/validating-data/).

@@ -39,7 +39,7 @@ If you are interested in the project, check out its [issues](https://github.com/
 
 [Data Protocols](http://dataprotocols.org/), the Labs's set of lightweight standards and patterns for open data, has had a couple of interesting developments.
 
-The [JSON Table Schema](http://dataprotocols.org/json-table-schema/) protocol has just added support for constraints (i.e. validation), thanks to [Leigh Dodds](http://www.ldodds.com/). This adds a `constraints` attribute containing requirements on the content of fields. See the full [list of valid constraints](http://dataprotocols.org/json-table-schema/#field-constraints) on the JSON Table Schema site.
+The [JSON Table Schema](http://dataprotocols.org/table-schema/) protocol has just added support for constraints (i.e. validation), thanks to [Leigh Dodds](http://www.ldodds.com/). This adds a `constraints` attribute containing requirements on the content of fields. See the full [list of valid constraints](http://dataprotocols.org/table-schema/#field-constraints) on the JSON Table Schema site.
 
 The [Data Package Manager](https://github.com/okfn/dpm/) tool for Data Packages is shaping up nicely: the `install` and `init` commands have now been implemented. You can see an [animated GIF](https://github.com/okfn/dpm/issues/3#issuecomment-43440812) of the former in the issue thread.
 

@@ -62,7 +62,7 @@ allowfullscreen></iframe>
 [fd]: http://frictionlessdata.io/
 [csvlint]: http://csvlint.io
 [csvw]: http://w3c.github.io/csvw/
-[jts]: http://frictionlessdata.io/guides/json-table-schema/
+[jts]: http://frictionlessdata.io/guides/table-schema/
 [dp]: http://frictionlessdata.io/guides/data-package/
 [cc]: https://github.com/theodi/comma-chameleon
 [bad-data]: http://okfnlabs.org/bad-data/

@@ -143,7 +143,7 @@ We welcome community contributions to our codebase, and are keen to interact wit
 [^tdr]: Tabular Data Resource: <http://specs.frictionlessdata.io/tabular-data-resource/>
 [^types]: Table Schema Types: <http://specs.frictionlessdata.io/table-schema/#types-and-formats>
 [^datapackage]: Data Package <http://specs.frictionlessdata.io/data-package/>
-[^tools]: Frictionless Data Tools <http://frictionlessdata.io/tools/>
+[^tools]: Frictionless Data Tools <http://frictionlessdata.io/software/>
 [^datapackagepy]: Data Package Python Library: <https://github.com/frictionlessdata/datapackage-py>
 [^github]: Frictionless Data on Github: <http://github.com/frictionlessdata>
 [^spss]: Frictionless Data SPSS Plugin: <https://github.com/frictionlessdata/tableschema-spss-py>

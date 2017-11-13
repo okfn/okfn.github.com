@@ -35,7 +35,7 @@ You can find more information about the standards
 features:
 
 - Your dataset is stored as a collection of flat files.
-    
+
 - Useful information about this dataset is stored in a specially
   formatted JSON file, `datapackage.json` stored with your
   data. For tabular data, this information is a combination of
@@ -48,7 +48,7 @@ features:
       column, and relations between resources) for the tabular
       data is stored in a resources attribute. For each resource,
       a schema is specified using the
-      [JSON Table Schema](http://dataprotocols.org/json-table-schema/)
+      [JSON Table Schema](http://dataprotocols.org/table-schema/)
       standard.
 
 As an example, for the following `data.csv` file...
@@ -78,8 +78,8 @@ As an example, for the following `data.csv` file...
                 "type":"date"
               },
               {
-                "name":"price", 
-                "type":"number", 
+                "name":"price",
+                "type":"number",
                 "constraints": {
                   "minimum": 0.0
                 }
@@ -139,16 +139,16 @@ which provides a high level interface for importing and exporting
 tabular data to and from
 [Tabular Storage](https://github.com/frictionlessdata/jsontableschema-py#storage)
 objects based on
-[JSON Table Schema](http://dataprotocols.org/json-table-schema/)
+[JSON Table Schema](http://dataprotocols.org/table-schema/)
 descriptors.
 
-### BigQuery 
+### BigQuery
 
 - Source: [jsontableschema-bigquery-py](https://github.com/frictionlessdata/jsontableschema-bigquery-py).
 - Screencast: [https://www.youtube.com/watch?v=i\_YHSwl-7VU](https://www.youtube.com/watch?v=i_YHSwl-7VU&feature=youtu.be)
 - Walkthrough: [https://gist.github.com/vitorbaptista/998aed29097945aaccff](https://gist.github.com/vitorbaptista/998aed29097945aaccff)
 
-### SQL 
+### SQL
 
 - Source and usage information: [jsontableschema-sql-py](https://github.com/frictionlessdata/jsontableschema-sql-py).
 - Screencast: [https://asciinema.org/a/cyzd0lz0kqvcqmg4zneifohov](https://asciinema.org/a/cyzd0lz0kqvcqmg4zneifohov)

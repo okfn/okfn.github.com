@@ -18,7 +18,7 @@ Converting an Excel spreadsheet to a CSV or a [JSON table][2] with the Data Conv
 
 	dataconvert simple.xls out.csv
 	dataconvert out.csv out.json
-	
+
 	# URLs also work
 	dataconvert https://github.com/okfn/dataconverters/raw/master/testdata/xls/simple.xls out.csv
 
@@ -64,7 +64,7 @@ Data Converters' ability to convert between tabular data may also grow, adding J
 Visit the [Data Converters home page][9] to learn how to install Data Converters and its dependencies, and check out [Data Converters on GitHub][10] to see how you can contribute to the project.
 
 [1]:	http://okfnlabs.org/dataconverters/
-[2]:	http://dataprotocols.org/en/latest/json-table-schema.html
+[2]:	http://dataprotocols.org/en/latest/table-schema.html
 [3]:	https://developers.google.com/kml/documentation/
 [4]:	http://geojson.org/
 [5]:	http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf
@@ -73,4 +73,3 @@ Visit the [Data Converters home page][9] to learn how to install Data Converters
 [8]:	https://github.com/okfn/dataconverters/issues/7
 [9]:	http://okfnlabs.org/dataconverters/
 [10]:	https://github.com/okfn/dataconverters
-

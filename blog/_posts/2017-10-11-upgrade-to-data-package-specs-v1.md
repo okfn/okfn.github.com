@@ -249,7 +249,7 @@ Tabular Data Package is unchanged.
 
 Profiles arrived in v1:
 
-[http://specs.frictionlessdata.io/profiles/](ttp://specs.frictionlessdata.io/profiles/)
+[http://specs.frictionlessdata.io/profiles/](http://specs.frictionlessdata.io/profiles/)
 
 Profiles are the first step on supporting a rich ecosystem of "micro-schemas" for data. They provide a very simple way to quickly state that your data follows a specific structure and/or schema. From the docs:
 

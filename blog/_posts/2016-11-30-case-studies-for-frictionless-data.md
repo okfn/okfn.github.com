@@ -27,7 +27,7 @@ learn more about how he uses the Data Package specifications.
 Dataship is a way to share data and analysis, from simple charts to
 complex machine learning, with anyone in the world easily and for
 free.  The
-[Data Package](http://specs.frictionlessdata.io/data-packages/) acts
+[Data Package](http://specs.frictionlessdata.io/data-package/) acts
 as the base format for Dataship notebooks.
 
 [![Dataship](/img/posts/dataship.png)](http://frictionlessdata.io/case-studies/dataship/)
@@ -66,7 +66,7 @@ applications in the cloud.
 ## Reach out to us
 
 If you are using any of the Frictionless Data
-specifications---[JSON Table Schema](http://specs.frictionlessdata.io/json-table-schema/),
-[Data Packages](http://specs.frictionlessdata.io/data-packages/)---for
+specifications---[JSON Table Schema](http://specs.frictionlessdata.io/table-schema/),
+[Data Packages](http://specs.frictionlessdata.io/data-package/)---for
 your project, big or small, reach out to us.  We can work together on
 developing a case study to share your project with the world!

@@ -81,7 +81,7 @@ If you have some spare time this holiday season, why not spend it helping out wi
 [18]:	http://dataprotocols.org/
 [19]:	http://okfnlabs.org/members/rgrp/
 [20]:	https://lists.okfn.org/pipermail/okfn-labs/2013-December/001185.html
-[21]:	http://dataprotocols.org/json-table-schema/
+[21]:	http://dataprotocols.org/table-schema/
 [22]:	https://github.com/dataprotocols/dataprotocols/issues/21
 [23]:	https://github.com/dataprotocols/dataprotocols/issues/23
 [24]:	https://github.com/dataprotocols/dataprotocols/issues/77

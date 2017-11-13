@@ -20,7 +20,7 @@ between [Open Knowledge International][oki] and [rOpenSci][ropensci],
 an organization that specializes in creating open-source tools using R
 for advancing open science.
 
-## Loading Tabular Data in R 
+## Loading Tabular Data in R
 
 ![R Logo](/img/posts/rlogo.png)
 
@@ -56,7 +56,7 @@ files within its `data` subdirectory:
 setwd('/Users/dan/Downloads/example-data-packages-master/finance-vix')
 list.files("data")
 {% endhighlight %}
-   
+
     'vix-daily.csv'
 
 We can read this single CSV, `vix-daily`, using R's `read.csv()`
@@ -131,7 +131,7 @@ str(volatility_raw)
      $ VIXHigh : num  18.7 18.5 17.7 16.8 15.7 ...
      $ VIXLow  : num  17.5 17.4 16.2 15.5 15.3 ...
      $ VIXClose: num  18.2 17.5 16.7 15.5 15.6 ...
-     
+
 We have successfully given the Date column a `Date` type, and we
 should be able to run the same `plot()` function above and get a
 better result.  While this is a good solution for this single dataset
@@ -265,7 +265,7 @@ plot(vix.daily$Date, vix.daily$VIXOpen, type='l')
 
 ![Good Type](/img/posts/r-vix-good-type.png)
 
-## Going Forward 
+## Going Forward
 
 This has been a very small example of the basic functionality of the R
 library.  This software is still in testing, so if you are an R user
@@ -276,7 +276,7 @@ please let us know.  You can leave a comment here on the
 To see the code used in this post, visit its [Jupyter Notebook][nb].
 
 [r]: https://www.r-project.org/
-[jts]: http://specs.frictionlessdata.io/json-table-schema/
+[ts]: http://specs.frictionlessdata.io/table-schema/
 [dp]: http://frictionlessdata.io/data-packages/
 [datapkg]: https://github.com/frictionlessdata/datapackage-r
 [fd]: http://frictionlessdata.io/

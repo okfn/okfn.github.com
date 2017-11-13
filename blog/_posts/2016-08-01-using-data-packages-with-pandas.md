@@ -13,7 +13,7 @@ This post highlights our most recent community
 contribution[^1]---pandas integration for Data Packages---what it
 means, and how you can contribute.
 
-## Pandas 
+## Pandas
 
 [![Pandas](/img/posts/pandas_logo.png)](http://pandas.pydata.org/)
 
@@ -45,7 +45,7 @@ containing a *schema* (indicating type, constraints, and other
 metadata useful for validation and analysis) and, optionally, a
 *dialect* (specifying characters for separating or quoting values).
 See our
-[JSON Table Schema guide](http://frictionlessdata.io/guides/json-table-schema/)
+[JSON Table Schema guide](http://frictionlessdata.io/guides/table-schema/)
 and the [CSVDDF](http://dataprotocols.org/csv-dialect/) specification
 for more information.  Given that a single Tabular Data Package can
 consist of multiple tables, pandas integration means loading multiple
