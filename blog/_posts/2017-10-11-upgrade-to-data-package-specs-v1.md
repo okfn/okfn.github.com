@@ -25,82 +25,18 @@ In addition, there were a fair number of substantive changes. We summarize these
 
 Link to spec: [https://specs.frictionlessdata.io/table-schema/](https://specs.frictionlessdata.io/table-schema/)
 
-<table class="table table-striped table-bordered">
-<thead>
-<th>Property</th>
-<th>Pre v1</th>
-<th>v1 Spec</th>
-<th>Notes</th>
-<th>Issue</th>
-</thead>
-<tbody>
-<tr>
-<td>id/name</td>
-<td>id</td>
-<td>name</td>
-<td>Renamed id to name to be consistent across specs</td>
-<td></td>
-</tr>
-<tr>
-<td>type/number</td>
-<td>format: currency</td>
-<td>format: currency - removed
-format: bareNumber
-format: decimalChar and groupChar</td>
-<td></td>
-<td><a href="https://github.com/frictionlessdata/specs/issues/509">#509</a> <a href="https://github.com/frictionlessdata/specs/issues/246">#246</a></td>
-</tr>
-<tr>
-<td>type/integer</td>
-<td>No additional properties</td>
-<td>Additional properties: bareNumber</td>
-<td></td>
-<td><a href="https://github.com/frictionlessdata/specs/issues/509">#509</a></td>
-</tr>
-<tr>
-<td>type/boolean</td>
-<td>true: [yes, y, true, t, 1],false: [no, n, false, f, 0]</td>
-<td>true: [ true, True, TRUE, 1],false: [false, False, FALSE, 0]</td>
-<td></td>
-<td><a href="https://github.com/frictionlessdata/specs/issues/415">#415</a></td>
-</tr>
-<tr>
-<td>type/year + yearmonth</td>
-<td></td>
-<td>year and yearmonth NB: these were temporarily gyear and gyearmonth</td>
-<td></td>
-<td><a href="https://github.com/frictionlessdata/specs/issues/346">#346</a></td>
-</tr>
-<tr>
-<td>type/duration</td>
-<td></td>
-<td>duration</td>
-<td></td>
-<td><a href="https://github.com/frictionlessdata/specs/issues/210">#210</a></td>
-</tr>
-<tr>
-<td>type/rdfType</td>
-<td></td>
-<td>rdfType</td>
-<td>Support rich "semantic web" types for fields</td>
-<td><a href="https://github.com/frictionlessdata/specs/issues/217">#217</a></td>
-</tr>
-<tr>
-<td>type/null</td>
-<td></td>
-<td>removed (see missingValue)</td>
-<td></td>
-<td><a href="https://github.com/frictionlessdata/specs/issues/262">#262</a></td>
-</tr>
-<tr>
-<td>missingValues</td>
-<td></td>
-<td>missingValues</td>
-<td>Missing values support did not exist pre v1.</td>
-<td><a href="https://github.com/frictionlessdata/specs/issues/97">#97</a></td>
-</tr>
-</tbody>
-</table>
+| Property              | Pre v1                                                 | v1 Spec                                                                         | Notes                                            | Issue                                                                                                                    |
+|-----------------------|--------------------------------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| id/name               | id                                                     | name                                                                            | Renamed id to name to be consistent across specs |                                                                                                                          |
+| type/number           | format: currency                                       | format: currency - removed format: bareNumber format: decimalChar and groupChar |                                                  | [#509](https://github.com/frictionlessdata/specs/issues/509)<br/>[#246](https://github.com/frictionlessdata/specs/issues/246) |
+| type/integer          | No additional properties                               | Additional properties: bareNumber                                               |                                                  | [#509](https://github.com/frictionlessdata/specs/issues/509)                                                             |
+| type/boolean          | true: [yes, y, true, t, 1],false: [no, n, false, f, 0] | true: [ true, True, TRUE, 1],false: [false, False, FALSE, 0]                    |                                                  | [#415](https://github.com/frictionlessdata/specs/issues/415)                                                             |
+| type/year + yearmonth |                                                        | year and yearmonth NB: these were temporarily gyear and gyearmonth              |                                                  | [#346](https://github.com/frictionlessdata/specs/issues/346)                                                             |
+| type/duration         |                                                        | duration                                                                        |                                                  | [#210](https://github.com/frictionlessdata/specs/issues/210)                                                             |
+| type/rdfType          |                                                        | rdfType                                                                         | Support rich "semantic web" types for fields     | [#217](https://github.com/frictionlessdata/specs/issues/217)                                                             |
+| type/null             |                                                        | removed (see missingValue)                                                      |                                                  | [#262](https://github.com/frictionlessdata/specs/issues/262)                                                             |
+| missingValues         |                                                        | missingValues                                                                   | Missing values support did not exist pre v1.     | [#97](https://github.com/frictionlessdata/specs/issues/97)                                                               |
+{: .table .table-striped .table-bordered style="display: block; overflow: auto;"}
 
 
 ### Data Resource
@@ -109,53 +45,14 @@ Link to spec: [https://specs.frictionlessdata.io/data-resource/](https://specs.f
 
 *Note: Data Resource did not exist as a separate spec pre-v1 so strictly we are comparing the Data Resource section of the old Data Package spec with the new Data Resource spec.*
 
-<table class="table table-striped table-bordered">
-<thead>
-<th>Property</th>
-<th>Pre v1</th>
-<th>v1 Spec</th>
-<th>Notes</th>
-<th>Issue</th>
-</thead>
-<tbody>
-<tr>
-<td>path</td>
-<td>path and url</td>
-<td>path only</td>
-<td>url merged into path and path can now be a url or local path</td>
-<td><a href="https://github.com/frictionlessdata/specs/issues/250">#250</a></td>
-</tr>
-<tr>
-<td>path</td>
-<td>string</td>
-<td>string or array</td>
-<td>path can be an array to support a single resource split across multiple files</td>
-<td><a href="https://github.com/frictionlessdata/specs/issues/228">#228</a></td>
-</tr>
-<tr>
-<td>name</td>
-<td>recommended</td>
-<td>required</td>
-<td>Made name required to enable access to resources by name consistently across tools</td>
-<td></td>
-</tr>
-<tr>
-<td>profile</td>
-<td></td>
-<td>recommended</td>
-<td>See profiles discussion</td>
-<td></td>
-</tr>
-<tr>
-<td>sources, licenses ...</td>
-<td></td>
-<td></td>
-<td>Inherited metadata from Data Package like sources or licenses upgraded inline with changes in Data Package</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
+| Property              | Pre v1       | v1 Spec         | Notes                                                                                                      | Issue                                                        |
+|-----------------------|--------------|-----------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| path                  | path and url | path only       | url merged into path and path can now be a url or local path                                               | [#250](https://github.com/frictionlessdata/specs/issues/250) |
+| path                  | string       | string or array | path can be an array to support a single resource split across multiple files                              | [#228](https://github.com/frictionlessdata/specs/issues/228) |
+| name                  | recommended  | required        | Made name required to enable access to resources by name consistently across tools                         |                                                              |
+| profile               |              | recommended     | See profiles discussion                                                                                    |                                                              |
+| sources, licenses ... |              |                 | Inherited metadata from Data Package like sources or licenses upgraded inline with changes in Data Package |                                                              |
+{: .table .table-striped .table-bordered style="display: block; overflow: auto;"}
 
 ### Tabular Data Resource
 
@@ -169,75 +66,17 @@ There were no significant changes here beyond those in Data Resource.
 
 Link to spec: [https://specs.frictionlessdata.io/data-package/](https://specs.frictionlessdata.io/data-package/)
 
-<table class="table table-striped table-bordered">
-<thead>
-<th>Property</th>
-<th>Pre v1</th>
-<th>v1 Spec</th>
-<th>Notes</th>
-<th>Issue</th>
-</thead>
-<tbody>
-<tr>
-<td>name</td>
-<td>required</td>
-<td>recommended</td>
-<td>Unique names are not essential to any part of the present tooling so we have have moved to recommended.</td>
-<td><a href="https://github.com/frictionlessdata/specs/issues/237">#237</a></td>
-</tr>
-<tr>
-<td>id</td>
-<td></td>
-<td>id property-globally unique</td>
-<td>Globally unique id property</td>
-<td><a href="https://github.com/frictionlessdata/specs/issues/237">#237</a></td>
-</tr>
-<tr>
-<td>licenses</td>
-<td>license - object or string. The object structure must contain a type property and a url property linking to the actual text
-</td>
-<td>licenses - is an array. Each item in the array is a License. Each must be an object. The object must contain a name property and/or a path property. It may contain a title property.</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>author</td>
-<td>author</td>
-<td>author is removed in favour of contributors</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>contributor</td>
-<td>name, email, web properties with name required</td>
-<td>title property required with roles, role property values must be one of - author, publisher, maintainer, wrangler, and contributor. Defaults to contributor.</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>sources</td>
-<td>name, web and email and none required</td>
-<td>title, path and email and title is required</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>resources</td>
-<td></td>
-<td>resources array is required</td>
-<td></td>
-<td><a href="https://github.com/frictionlessdata/specs/issues/434">#434</a></td>
-</tr>
-<tr>
-<td>dataDependencies</td>
-<td>dataDependencies</td>
-<td></td>
-<td>Moved to a pattern until we have greater clarity on need.</td>
-<td><a href="https://github.com/frictionlessdata/specs/issues/341">#341</a></td>
-</tr>
-</tbody>
-</table>
-
+| Property         | Pre v1                                                                                                                      | v1 Spec                                                                                                                                                                               | Notes                                                                                                   | Issue                                                        |
+|------------------|-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| name             | required                                                                                                                    | recommended                                                                                                                                                                           | Unique names are not essential to any part of the present tooling so we have have moved to recommended. |                                                              |
+| id               |                                                                                                                             | id property-globally unique                                                                                                                                                           | Globally unique id property                                                                             | [#228](https://github.com/frictionlessdata/specs/issues/228) |
+| licenses         | license - object or string. The object structure must contain a type property and a url property linking to the actual text | licenses - is an array. Each item in the array is a License. Each must be an object. The object must contain a name property and/or a path property. It may contain a title property. |                                                                                                         |                                                              |
+| author           | author                                                                                                                      | author is removed in favour of contributors                                                                                                                                           |                                                                                                         |                                                              |
+| contributor      | name, email, web properties with name required                                                                              | title property required with roles, role property values must be one of - author, publisher, maintainer, wrangler, and contributor. Defaults to contributor.                          |                                                                                                         |                                                              |
+| sources          | name, web and email and none required                                                                                       | title, path and email and title is required                                                                                                                                           |                                                                                                         |                                                              |
+| resources        |                                                                                                                             | resources array is required                                                                                                                                                           |                                                                                                         | [#434](https://github.com/frictionlessdata/specs/issues/434) |
+| dataDependencies | dataDependencies                                                                                                            |                                                                                                                                                                                       | Moved to a pattern until we have greater clarity on need.                                               | [#341](https://github.com/frictionlessdata/specs/issues/341) |
+{: .table .table-striped .table-bordered style="display: block; overflow: auto;"}
 
 ### Tabular Data Package
 
