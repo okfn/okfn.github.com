@@ -11,7 +11,7 @@ We have to deal with many challenges when scraping a page. What's the page's lay
 
 We'll work step by step. First, I'll show you what the data looks like, then we'll then check what goodtables can find out of the box, without any information about the data contents. Finally, we'll define the types and constraints of each column, so goodtables can validate that the rows contain what we expect.
 
-By the end of this post, you'll have a better idea on how goodtables help you be more confident about your data's quality.
+By the end of this post, you'll have a better idea on how goodtables can help you be more confident about your data's quality.
 
 ## <a name="data"></a>The data
 
@@ -29,7 +29,7 @@ Some of the columns are strings (name, role, function, and department), one is n
 
 ## Initial validations
 
-[Goodtables][goodtables] is written in Python, and can be used both as a command-line tool or imported in your Python code. We'll use it in the command-line. Considering that our data live in `data/remunerations.csv`, we validate it by running `goodtables data/remunerations.csv`. This is the output:
+[Goodtables][goodtables] is written in Python, and can be used both as a command-line tool or imported in your Python code. We'll use it in the command-line. Considering that our data lives in `data/remunerations.csv`, we validate it by running `goodtables data/remunerations.csv`. This is the output:
 
 ```
 DATASET
@@ -83,7 +83,7 @@ TABLE [1]
 [1859,-] [duplicate-row] Row 1859 is duplicated to row(s) 1858
 ```
 
-A-ha! Now it found an error: a couple duplicate rows. Depending on the data, this might or might not be an issue. Goodtables is helpful enough to tell us the row numbers, let's take a look at them:
+A-ha! Now it found an error: duplicate rows. Depending on the data, this might or might not be an issue. Goodtables is helpful enough to tell us the row numbers, let's take a look at them:
 
 
 | name | role | function | remuneration | department | year | month |
@@ -156,7 +156,7 @@ Think of the schema as a data dictionary. It defines what each column means, wha
     * Year
     * Month
 
-Schemas in data packages follow the [Table Schema][tableschema] standard. This standard defines how to write the schema, a few basic types, and how to add constraints (e.g. uniqueness, required, valid ranges). It sounds more complicated than it actually is. For instance, this is how we would write the column's types I defined above using the Table Schema:
+Schemas in data packages follow the [Table Schema][tableschema] specification which defines how to write the schema, a few basic types, and how to add constraints (e.g. uniqueness, required, valid ranges). It sounds more complicated than it actually is. For instance, this is how we would write the column's types I defined above using the Table Schema:
 
 ```json
 {
@@ -203,7 +203,7 @@ Schemas in data packages follow the [Table Schema][tableschema] standard. This s
 }
 ```
 
-The only thing we changed was adding the `schema` attribute to our resource, everything else is the same. When we run GoodTables again, it still is successful, but now it's not only running the basic validations, but also checking the cells' types.
+The only thing we changed was adding the `schema` attribute to our resource, everything else is the same. When we run goodtables again, it still is successful, but now it's not only running the basic validations, but also checking the cells' types.
 
 Can we improve it further? Of course!
 
@@ -323,7 +323,7 @@ I could've added constraints in the `role`, `function`, and `department` fields,
 
 ## Conclusion
 
-My intent with this post was to show you the value of adding even a little bit of data validation to your toolbox, and how easy it is to do so with goodtables. We started by running it without giving any information about our data. It found a couple duplicate rows that led me to discover that the website I'm scraping has changed, so my scraper was out of date. After I updated the code and ran it again, goodtables was successful.
+My intent with this post was to show you the value of adding even a little bit of data validation to your toolbox, and how easy it is to do so with goodtables. We started by running it without giving any information about our data. It found duplicate rows that led me to discover that the website I'm scraping has changed, so my scraper was out of date. After I updated the code and ran it again, goodtables was successful.
 
 We then told goodtables more about our data by writing a schema using the [Data Package][datapackage] and [Table Schema][tableschema] specifications. This led me to know the data better, as my initial assumptions that all rows must have a remuneration was wrong.
 
@@ -333,7 +333,7 @@ I hope you found this interesting. If you're curious about how this all fit toge
 
 If you have any questions, feedback, or would just like to chat, join our [Frictionless Data Gitter chat][fd-gitter]. We'd love to hear from you, so we can make these tools as useful as they can be.
 
-[goodtables]: https://github.com/frictionlessdata/goodtables-py/ "GoodTables"
+[goodtables]: https://github.com/frictionlessdata/goodtables-py/ "goodtables"
 [datapackage]: http://frictionlessdata.io/data-packages/ "Data Package"
 [tableschema]: http://frictionlessdata.io/guides/table-schema/ "Table Schema"
 [fd-gitter]: http://gitter.im/frictionlessdata/chat "Frictionless Data Gitter"
