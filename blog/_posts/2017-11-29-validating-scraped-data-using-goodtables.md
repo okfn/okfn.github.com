@@ -1,8 +1,8 @@
 ---
-title: Validating scraped data using Goodtables
+title: Validating scraped data using goodtables
 date: 2017-11-29
 author: Vitor Baptista
-projects: [good-tables]
+projects: [frictionless-data,good-tables]
 ---
 
 We have to deal with many challenges when scraping a page. What's the page's layout? How do I extract the bits of data I want? How do I know when their layout changes and break my code? How can I be sure that my code isn't introducing errors to the data? There are many tools to test that the code works, but not so many to test the actual data. This is especially important when you don't control the source of the data, which is almost always the case when you're scraping (otherwise, you wouldn't be scraping). In this post, I'll show you how I used [goodtables][goodtables] to validate scraped data.
