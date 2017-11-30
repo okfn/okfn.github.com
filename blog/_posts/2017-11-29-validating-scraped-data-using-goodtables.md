@@ -25,6 +25,7 @@ We'll use the remuneration of the civil servants working for São Paulo's City C
 | CECILIA DE ARRUDA | CHEFE DE CERIMONIAL | CHEFE DE CERIMONIAL | 22455.9 | GABINETE DA PRESIDÊNCIA | 2017 | 9 |
 | ANTONIO JAIR DA ROSA | ASSISTENTE LEGISLATIVO III | | 7383.64 | GABINETE DA PRESIDÊNCIA | 2017 | 9 |
 | BRASILINO SILVA BRANDAO | ASSISTENTE LEGISLATIVO III | | 8135.51 | GABINETE DA PRESIDÊNCIA |2017 | 9 |
+{: .table .table-striped .table-bordered style="display: block; overflow: auto;"}
 
 Some of the columns are strings (name, role, function, and department), one is numeric (remuneration), and two are date parts (year and month). We'll think about the types and constraints on each of these columns in a minute, but first let's see what goodtables tells us out of the box.
 
@@ -91,6 +92,7 @@ A-ha! Now it found an error: duplicate rows. Depending on the data, this might o
 | --- | --- | --- | --- | --- | --- | --- |
 | | | | | CTI-4 - EQUIPE DE TELECOMUNICAÇÕES E INFRAESTRUTURA | 2017 | 9 | 
 | | | | | CTI-4 - EQUIPE DE TELECOMUNICAÇÕES E INFRAESTRUTURA | 2017 | 9 | 
+{: .table .table-striped .table-bordered style="display: block; overflow: auto;"}
 
 This does look like a valid error (no names?). After investigating for a while, I found the culprit: the source website was modified. There are now a few cases where the civil servant's name was removed by judicial order, and it broke my code. The joys of scraping, right?
 
