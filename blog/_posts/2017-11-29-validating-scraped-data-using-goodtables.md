@@ -2,6 +2,7 @@
 title: Validating scraped data using goodtables
 date: 2017-11-29
 author: Vitor Baptista
+username: vitorbaptista
 projects: [frictionless-data,good-tables]
 ---
 
@@ -207,7 +208,7 @@ The only thing we changed was adding the `schema` attribute to our resource, eve
 
 Can we improve it further? Of course!
 
-Take a look at the `month` column. As Table Schema doesn't have a "month" data type, we had to use the closest to it: integer. A month is an integer, however it's not _any_ integer. It can't be zero, or -1, or 42, it must be from 1 to 12. The Table Schema allow us to define these constraints in our schema, but before I show you how, what about the other columns? Are there other similar constraints, not only about valid ranges, but also if they are required or must be unique.
+Take a look at the `month` column. As Table Schema doesn't have a "month" data type, we had to use the closest to it: integer. A month is an integer, however it's not _any_ integer. It can't be zero, or -1, or 42, it must be from 1 to 12. The Table Schema allows us to define these constraints in our schema, but before I show you how, what about the other columns? Are there other similar constraints, not only about valid ranges, but also if they are required or must be unique.
 
 I went through all columns, looking at the data and understand which constraints they have, and this is what I defined:
 
