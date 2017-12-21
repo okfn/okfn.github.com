@@ -56,7 +56,7 @@ Our first step was to create a Table Schema describing the expected contents of 
 | Last modified | datetime |  |
 | Data Source | string |  |
 
-Our custom [Grants Data Package](assets/grants/grants-data-package.json) extends the [Data Package][dp] specification by adding the following fields:
+Our custom [Grants Data Package](https://github.com/frictionlessdata/profiles/blob/master/assets/grants/datapackage.json) extends the [Data Package][dp] specification by adding the following fields:
 
 | Name               | Description                                                                                     | Type    |
 | ---                | ---                                                                                             | ---     |
@@ -147,7 +147,8 @@ Here are the fields available when publishing a new IATI file on the registry:
 | `default-language` | - | Language of the data | string
 | `secondary-publisher` | - | The publisher this dataset is published on behalf of | string
 
-To create the new profile, we will add those fields that do not map directly to the [Data Package specification](https://frictionlessdata.io/specs/data-package/) to a standard Data Package descriptor and create a custom JSON Schema to validate it.
+To create the new profile, we will add those fields that do not map directly to the [Data Package specification](https://frictionlessdata.io/specs/data-package/) to a standard Data Package descriptor and create a custom JSON Schema to validate it. Here is the [resulting Data Package descriptor](https://github.com/frictionlessdata/profiles/blob/master/assets/iatiregistry/datapackage.json).
+
 
 
 
@@ -230,6 +231,11 @@ The approach described here is a first step in the direction of domain-specific 
 
 For now, all the schemas above work as described, and open up all the software in the Frictionless Data ecosystem to those following this approach.
 
+You can check the source code for all the examples listed in the following GitHub repository:
+
+https://github.com/frictionlessdata/profiles
+
+
 [fd]: https://frictionlessdata.io
 [tdp]: https://frictionlessdata.io/specs/tabular-data-package/
 [dp]: https://frictionlessdata.io/specs/data-package/
@@ -241,8 +247,8 @@ For now, all the schemas above work as described, and open up all the software i
 [ot]: https://opentrials.net
 [who-dataset]: http://www.who.int/ictrp/network/trds/en/ "World Health Organisation Trial Registration Data Set"
 [opencouncildata]: https://opencouncildata.org/ "Open Council Data"
-[trees-data]: assets/trees/data.csv "Trees CSV"
-[trees-dp]: assets/trees/datapackage.json "Trees Data Package"
-[trees-schema]: assets/trees/trees-data-package "Trees Data Package JSON Schema"
+[trees-data]: https://github.com/frictionlessdata/profiles/blob/master/assets/trees/data.csv "Trees CSV"
+[trees-dp]: https://github.com/frictionlessdata/profiles/blob/master/assets/trees/datapackage.json "Trees Data Package"
+[trees-schema]: https://github.com/frictionlessdata/profiles/blob/master/assets/trees/trees-data-package "Trees Data Package JSON Schema"
 [trees-spec]: http://standards.opencouncildata.org/#/trees "Open Council Data: Trees 1.3 Specification"
 [trees-datasource]: https://data.gov.au/dataset/colac-otway-shire-trees/resource/bcf1d62b-9e72-4eca-b183-418f83dedcea "Colac Otway Shire Trees"
