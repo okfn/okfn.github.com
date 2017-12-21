@@ -1,6 +1,6 @@
 ---
-author: Paul Walsh, Adrià Mercader
-username: pwalsh, amercader
+author: Paul Walsh
+username: pwalsh
 projects: [frictionless-data]
 title: Bootstrapping data standards with Frictionless Data
 ---
@@ -32,6 +32,7 @@ We will use this [sample dataset](http://www.blagravetrust.org/wp-content/upload
 | 360G-blagravetrust-00658000007A1UQ | Training on feedback for Portsmouth VCS | Improving feedback skills for Portsmouth VCS - Feedback Fund 2016 | GBP | 3933 | 3933 | 2016-08-09
 | 360G-blagravetrust-00658000008vdAl | Creative learning programme | Portsmouth young people leaving care | GBP | 75000 | 25000 | 2016-11-08
 | 360G-blagravetrust-00658000007lweS | Feedback Fund | Feedback Fund 2016 | GBP | 2094 | 2094 | 2016-08-09
+{: .table .table-striped .table-bordered style="display: block; overflow: auto;"}
 
 Our first step was to create a Table Schema describing the expected contents of the fields, which was then [embedded](https://github.com/frictionlessdata/profiles/blob/c3423d1266439ffebfdac2b681d3dd0bffd81964/assets/grants/datapackage.json#L39) in the Data Package descriptor. This was easy as like we mentioned before, there already is a well defined [schema](http://standard.threesixtygiving.org/en/latest/reference/#grants-sheet) for how the fields should be. For the purposes of this example we just focused on a subset of all available fields. Here are some example fields:
 
@@ -55,6 +56,8 @@ Our first step was to create a Table Schema describing the expected contents of 
 | Related Activity | string |  |
 | Last modified | datetime |  |
 | Data Source | string |  |
+{: .table .table-striped .table-bordered style="display: block; overflow: auto;"}
+
 
 Our custom [Grants Data Package](https://github.com/frictionlessdata/profiles/blob/master/assets/grants/datapackage.json) extends the [Data Package][dp] specification by adding the following fields:
 
@@ -63,6 +66,8 @@ Our custom [Grants Data Package](https://github.com/frictionlessdata/profiles/bl
 | funder        | A JSON object describing the funding organization. It can include the following properties: `id`, `name`, `email`, `url` | object  |
 | year | The year that the grants data in this file covers | integer |
 | modified | The timestap of when this dataset was last modifed | datetime |
+{: .table .table-striped .table-bordered style="display: block; overflow: auto;"}
+
 
 This follows closely the [JSON specification](https://threesixtygiving.github.io/getdata/) that 360Giving has, with the rest of the fields covered by the standard Data Package specification.
 
@@ -146,6 +151,8 @@ Here are the fields available when publishing a new IATI file on the registry:
 | `activity-count` | - | Number of activities described in the data | integer
 | `default-language` | - | Language of the data | string
 | `secondary-publisher` | - | The publisher this dataset is published on behalf of | string
+{: .table .table-striped .table-bordered style="display: block; overflow: auto;"}
+
 
 To create the new profile, we will add those fields that do not map directly to the [Data Package specification](https://frictionlessdata.io/specs/data-package/) to a standard Data Package descriptor and create a custom JSON Schema to validate it. Here is the [resulting Data Package descriptor](https://github.com/frictionlessdata/profiles/blob/master/assets/iatiregistry/datapackage.json).
 
@@ -170,6 +177,8 @@ We are using the from [Colac Otway Shire Trees][trees-datasource] as an example.
 | -38.342097 | 143.588944 | Fraxinus | Excelsior | 1.2 |  |  |  |  |  |  |  | 12 |  |  | Golden Ash | street | 10007 |  | mature | 1980-01-01 |  |  |  |  |  |  |  | 40 Rae ST COLAC VIC 3250 |
 | -38.341927 | 143.588715 | Agonis | Flexuosa | 0.4 |  |  |  |  |  |  |  | 5 |  |  | Weeping Willow Myrtle | street | 10018 |  | semi-mature | 1980-01-01 |  |  |  |  |  |  |  | 47 Rae ST COLAC VIC 3250//next to coles coaches |
 | -38.342044 | 143.591182 | Eucalyptus | Nichollii | 0.3 |  |  |  |  |  |  |  | 6 |  |  | Willow Peppermint | street | 10021 |  | mature | 1980-01-01 |  |  |  |  |  |  |  | 56 Rae ST COLAC VIC 3250//Between Queen St & CCDA |
+{: .table .table-striped .table-bordered style="display: block; overflow: auto;"}
+
 
 This data was modified from the source to conform to the [Trees 1.3][trees-spec] specification. All the data is available [here][trees-data].
 
@@ -179,6 +188,7 @@ The [Trees Data Package][trees-schema] extends the [Data Package][dp] specificat
 | ---                | ---                                                                                             | ---     |
 | countryCode        | A single or an array of 2-letter ISO country code defining the country(ies) present in the data | string  |
 | geospatialCoverage | Geospatial area contained in the dataset                                                        | geojson |
+{: .table .table-striped .table-bordered style="display: block; overflow: auto;"}
 
 | Name | Title | Type | Constraints |
 | --- | --- | --- | --- |
@@ -211,6 +221,8 @@ The [Trees Data Package][trees-schema] extends the [Data Package][dp] specificat
 | ule_min | Lower bound on useful life expectancy when surveyed | number | **minimum**: 0 |
 | ule_max | Upper bound on useful life expectancy when surveyed | number | **minimum**: 0 |
 | address | Street address | string |  |
+{: .table .table-striped .table-bordered style="display: block; overflow: auto;"}
+
 
 ```python
 import datapackage
@@ -233,7 +245,7 @@ For now, all the schemas above work as described, and open up all the software i
 
 You can check the source code for all the examples listed in the following GitHub repository:
 
-https://github.com/frictionlessdata/profiles
+[https://github.com/frictionlessdata/profiles](https://github.com/frictionlessdata/profiles)
 
 
 [fd]: https://frictionlessdata.io
