@@ -1,6 +1,6 @@
 ---
 author: Serah Rono
-username: callmealien
+username: serahrono
 projects: [frictionless-data,good-tables]
 title: Introducing the new goodtables library and goodtables.io
 ---
