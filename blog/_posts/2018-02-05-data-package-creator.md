@@ -4,6 +4,10 @@ username: serahrono
 title: Working with Data Package Creator
 ---
 
+*The Data Package Creator, [create.frictionlessdata.io][dpc], is a revamp of the Data Packagist app that lets you create and edit and validate your data packages with ease. Read on and find out how.*
+
+---
+
 [Frictionless Data][fd] aims to make it effortless to transport high quality data among different tools and platforms for further analysis. At the heart of this work is the [Data Package][dp], a simple format that makes it possible to package a collection of data and attach contextual information to it before sharing it. Where tabular data is involved, the ensuing [Tabular Data Package][tdp] contains the dataset, its schema and descriptive metadata associated with the dataset collated in a JSON file.
 
 The basic building block of a Data Package is its `datapackage.json` file. The Frictionless Data team and community have developed libraries and continue to actively support users who wish to create and work with Data Packages in [Javascript][dp-js], [Python][dp-py], [Ruby][dp-rb], [R][dp-r], [PHP][dp-php], [Java][dp-java], [Go][dp-go], [Clojure][dp-clj] and [Julia][dp-jl]. Up until now, the [Data Packagist app][old-dpui], which was developed as an Open Knowledge Labs initiative, has also been a helpful resource to help people create Data Packages quickly and with relative ease.
