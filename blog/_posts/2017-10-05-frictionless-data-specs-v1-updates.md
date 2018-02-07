@@ -1,6 +1,6 @@
 ---
 author: Serah Rono
-username: callmealien
+username: serahrono
 projects: [frictionless-data,dpm,goodtables-web]
 title: Frictionless Data Specs v1 Updates
 ---
