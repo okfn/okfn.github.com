@@ -44,7 +44,7 @@ rome,"41.89,12.51"
 
 The `datapackage.json` file is updated every time a resource is added, edited or removed. This JSON file can be viewed on the right hand side of the Data Package Creator by clicking on the `{···}` symbol to expand the section.
 
-![screengrab of data package creator](/img/posts/datapackagecreatoR.png)
+![screengrab of data package creator](/img/posts/datapackagecreator.png)
 *screen grab of the new Data Package Creator*
 
 Metadata attached to any Data Package is also stored in the `datapackage.json` file. However, editing JSON files directly can be a laborious and error-prone task. The MetaData section on the left side makes it easy to write and edit descriptive metadata that will be included in your Data Package alongside your data.
