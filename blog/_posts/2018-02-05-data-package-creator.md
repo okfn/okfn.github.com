@@ -63,6 +63,7 @@ Before downloading your data package, click on the **Validate** button at the bo
 *Error message that ensues on choosing the wrong data package profile. My data package is comprised of tabular data resources and the Fiscal Data Package profile is ill-suited for it. Tabular Data Package profile is most ideal.*
 
 Aim for the eureka message below, and in case you feel stuck, reach out and we’ll work with you to resolve the issue.
+
 ![screengrab of a valid data package message on data package creator](/img/posts/datapackagecreator-valid.png)
 
 Finally, click on the download button which gives you a local copy of the generated datapackage.json file, complete with your data schema and metadata attached to it. Score 1 for data provenance!
