@@ -56,7 +56,7 @@ You can add useful metadata by adding keys to metadata dict attribute. Below, we
 Infer a CSV Schema
 ------------------
 
-We will use periodic-table data from [remote path](<https://raw.githubusercontent.com/okgreece/datapackage-r/master/vignettes/example%20data/data.csv>)
+We will use periodic-table data from [remote path](https://raw.githubusercontent.com/okgreece/datapackage-r/master/vignettes/example%20data/data.csv)
 
 | atomic.number | symbol | name      | atomic.mass | metal.or.nonmetal.   |
 |---------------|--------|-----------|-------------|----------------------|
@@ -246,7 +246,7 @@ Data Packages can be loaded either from a local path or directly from the web.
     ## [1] TRUE
 {% endhighlight %}
 
-At the most basic level, Data Packages provide a standardized format for general metadata (for example, the dataset title, source, author, and/or description) about your dataset. Now that you have loaded this Data Package, you have access to this `metadata` using the metadata dict attribute. Note that these fields are optional and may not be specified for all Data Packages. For more information on which fields are supported, see [the full Data Package standard][dp]].
+At the most basic level, Data Packages provide a standardized format for general metadata (for example, the dataset title, source, author, and/or description) about your dataset. Now that you have loaded this Data Package, you have access to this `metadata` using the metadata dict attribute. Note that these fields are optional and may not be specified for all Data Packages. For more information on which fields are supported, see [the full Data Package standard][dp].
 
 {% highlight r %}
     datapackage$descriptor$title
