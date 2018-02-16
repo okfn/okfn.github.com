@@ -12,7 +12,7 @@ In this post, Fireman will show you how to install and use the [Go](http://golan
 Our goal in this tutorial is to load a data package from the web and read its metadata and contents.
 
 ## Setup
-For this tutorial, we will need the [datapackage-go][dp-go] and [tableschema-go][ts-go] packages, which provide all the functionality to deal with Data Packages metadata and its contents.
+For this tutorial, we will need the [datapackage-go][dp-go] and [tableschema-go][ts-go] packages, which provide all the functionality to deal with a Data Package's metadata and its contents.
 
 We are going to use the [dep tool](https://golang.github.io/dep/) to manage the dependencies of our new project:
 
@@ -23,7 +23,7 @@ $ dep init
 
 ## The Periodic Table Data Package
 
-A Data Package is a simple container format used to describe and package a collection of data. It consists of two parts:
+A [Data Package][dp] is a simple container format used to describe and package a collection of data. It consists of two parts:
 
 * Metadata that describes the structure and contents of the package
 * Resources such as data files that form the contents of the package
@@ -89,7 +89,7 @@ And as you can see, the printed fields match the [package descriptor](https://ra
 
 ## Quick Look At the Data
 
-Now that you have loaded your Data Package, it is time to process its contents. The package content consists of one or more resources. You can access [Resources][dp-go-resource] via the [Package.GetResource](https://godoc.org/github.com/frictionlessdata/datapackage-go/datapackage#Package.GetResource()) method. Let's print the periodic table `data` resource contents.
+Now that you have loaded your Data Package, it is time to process its contents. The package content consists of one or more resources. You can access [Resources][dp-go-resource] via the [Package.GetResource()](https://godoc.org/github.com/frictionlessdata/datapackage-go/datapackage#Package.GetResource()) method. Let's print the periodic table `data` resource contents.
 
 {% highlight go %}
 func main() {
@@ -112,7 +112,7 @@ $ go run main.go
 ...
 {% endhighlight %}
 
-The [Resource.ReadAll](https://godoc.org/github.com/frictionlessdata/datapackage-go/datapackage#Resource.ReadAll) method loads the whole table in memory as raw strings and returns it as a Go `[][]string`. This can be quick useful to take a quick look or perform a visual sanity check at the data.
+The [Resource.ReadAll()](https://godoc.org/github.com/frictionlessdata/datapackage-go/datapackage#Resource.ReadAll) method loads the whole table in memory as raw strings and returns it as a Go `[][]string`. This can be quick useful to take a quick look or perform a visual sanity check at the data.
 
 ## Processing the Data Package's Content
 
@@ -162,7 +162,7 @@ $ go run main.go
 
 In the example above, all rows in the table are loaded into memory. Then every row is parsed into an `element` object and appended to the slice. The `resource.Cast` call returns an error if the whole table cannot be successfully parsed.
 
-If you don't want to load all data in memory at once, you can lazily access each row using the [Resource.Iter](https://godoc.org/github.com/frictionlessdata/datapackage-go/datapackage#Resource.Iter) and use the [Schema.CastRow](https://godoc.org/github.com/frictionlessdata/tableschema-go/schema#Schema.CastRow) to cast each row into an `element` object. That would change our main function to:
+If you don't want to load all data in memory at once, you can lazily access each row using [Resource.Iter](https://godoc.org/github.com/frictionlessdata/datapackage-go/datapackage#Resource.Iter) and use [Schema.CastRow](https://godoc.org/github.com/frictionlessdata/tableschema-go/schema#Schema.CastRow) to cast each row into an `element` object. That would change our main function to:
 
 {% highlight go %}
 func main() {
