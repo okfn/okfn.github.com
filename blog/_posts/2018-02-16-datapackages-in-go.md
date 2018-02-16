@@ -28,7 +28,7 @@ A [Data Package][dp] is a simple container format used to describe and package a
 * Metadata that describes the structure and contents of the package
 * Resources such as data files that form the contents of the package
 
-In this tutorial, we are using a [Tabular Data Package][tdp] containing the periodic table. The package descriptor ([datapackage.json](https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/periodic-table/datapackage.json)) and contents ([data.csv](https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/periodic-table/data.csv)) are stored on GitHub. This dataset includes the atomic number, symbol, element name, atomic mass, and the metallicity of the element. Here are the header and the first three rows:
+In this tutorial, we are using a [Tabular Data Package][tdp] containing the periodic table. The package descriptor ([datapackage.json][datapackage.json]) and contents ([data.csv][data.csv]) are stored on GitHub. This dataset includes the atomic number, symbol, element name, atomic mass, and the metallicity of the element. Here are the header and the first three rows:
 
 | atomic number | symbol | name     | atomic mass | metal or nonmetal? |
 |---------------|--------|----------|-------------|--------------------|
@@ -51,7 +51,7 @@ import (
 )
 
 func main() {
-    pkg, err := datapackage.Load("https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/periodic-table/datapackage.json")
+    pkg, err := datapackage.Load("https://raw.githubusercontent.com/frictionlessdata/example-data-packages/62d47b454d95a95b6029214b9533de79401e953a/periodic-table/datapackage.json")
     if err != nil {
         panic(err)
     }
@@ -71,7 +71,7 @@ Now that you have loaded the periodic table Data Package, you have access to its
 
 {% highlight go %}
 func main() {
-    pkg, _ := datapackage.Load("https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/periodic-table/datapackage.json")
+    pkg, _ := datapackage.Load("https://raw.githubusercontent.com/frictionlessdata/example-data-packages/62d47b454d95a95b6029214b9533de79401e953a/periodic-table/datapackage.json")
     fmt.Println("Name:", pkg.Descriptor()["name"])
     fmt.Println("Title:", pkg.Descriptor()["title"])
 }
@@ -85,7 +85,7 @@ Name: period-table
 Title: Periodic Table
 {% endhighlight %}
 
-And as you can see, the printed fields match the [package descriptor](https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/periodic-table/datapackage.json). For more information about the Data Package structure, please take a look at the [specification](https://frictionlessdata.io/specs/data-package/).
+And as you can see, the printed fields match the [package descriptor][datapackage.json]. For more information about the Data Package structure, please take a look at the [specification](https://frictionlessdata.io/specs/data-package/).
 
 ## Quick Look At the Data
 
@@ -93,7 +93,7 @@ Now that you have loaded your Data Package, it is time to process its contents. 
 
 {% highlight go %}
 func main() {
-    pkg, _ := datapackage.Load("https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/periodic-table/datapackage.json")
+    pkg, _ := datapackage.Load("https://raw.githubusercontent.com/frictionlessdata/example-data-packages/62d47b454d95a95b6029214b9533de79401e953a/periodic-table/datapackage.json")
     res := pkg.GetResource("data")
     table, _ := res.ReadAll()
     for _, row := range table {
@@ -139,7 +139,7 @@ type element struct {
 }
 
 func main() {
-    pkg, _ := datapackage.Load("https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/periodic-table/datapackage.json")
+    pkg, _ := datapackage.Load("https://raw.githubusercontent.com/frictionlessdata/example-data-packages/62d47b454d95a95b6029214b9533de79401e953a/periodic-table/datapackage.json")
     resource := pkg.GetResource("data")
 
     var elements []element
@@ -166,7 +166,7 @@ If you don't want to load all data in memory at once, you can lazily access each
 
 {% highlight go %}
 func main() {
-    pkg, _ := datapackage.Load("https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/periodic-table/datapackage.json")
+    pkg, _ := datapackage.Load("https://raw.githubusercontent.com/frictionlessdata/example-data-packages/62d47b454d95a95b6029214b9533de79401e953a/periodic-table/datapackage.json")
     resource := pkg.GetResource("data")
 
     iter, _ := resource.Iter(csv.LoadHeaders())
@@ -204,3 +204,5 @@ We welcome your feedback and questions via our [Frictionless Data Gitter chat][f
 [dp-go-resource]:https://godoc.org/github.com/frictionlessdata/datapackage-go/datapackage#Resource
 [fd-gitter]: http://gitter.im/frictionlessdata/chat
 [dp-go-issues]: https://github.com/frictionlessdata/datapackage-go/issues
+[datapackage.json]: https://raw.githubusercontent.com/frictionlessdata/example-data-packages/62d47b454d95a95b6029214b9533de79401e953a/periodic-table/datapackage.json
+[data.csv]: https://raw.githubusercontent.com/frictionlessdata/example-data-packages/62d47b454d95a95b6029214b9533de79401e953a/periodic-table/data.csv
