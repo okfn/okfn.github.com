@@ -85,7 +85,7 @@ Name: period-table
 Title: Periodic Table
 {% endhighlight %}
 
-And as you can see, the printed fields match the [package descriptor](https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/periodic-table/datapackage.json). For more information about the Data Package structure, please take a look at the [its specification](https://frictionlessdata.io/specs/data-package/).
+And as you can see, the printed fields match the [package descriptor](https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/periodic-table/datapackage.json). For more information about the Data Package structure, please take a look at the [specification](https://frictionlessdata.io/specs/data-package/).
 
 ## Quick Look At the Data
 
@@ -112,7 +112,7 @@ $ go run main.go
 ...
 {% endhighlight %}
 
-The [Resource.ReadAll()](https://godoc.org/github.com/frictionlessdata/datapackage-go/datapackage#Resource.ReadAll) method loads the whole table in memory as raw strings and returns it as a Go `[][]string`. This can be quick useful to take a quick look or perform a visual sanity check at the data.
+The [Resource.ReadAll](https://godoc.org/github.com/frictionlessdata/datapackage-go/datapackage#Resource.ReadAll) method loads the whole table in memory as raw strings and returns it as a Go `[][]string`. This can be quick useful to take a quick look or perform a visual sanity check at the data.
 
 ## Processing the Data Package's Content
 
@@ -189,7 +189,7 @@ $ go run main.go
 {Number:4 Symbol:Be Name:Beryllium Mass:9.012182 Metal:alkaline earth metal}
 {% endhighlight %}
 
-And our code is ready to dealing with the growth of the periodic table in a very memory-efficient way :-)
+And our code is ready to deal with the growth of the periodic table in a very memory-efficient way :-)
 
 ---
 
