@@ -200,6 +200,7 @@ We welcome your feedback and questions via our [Frictionless Data Gitter chat][f
 [toolfund]: https://toolfund.frictionlessdata.io
 [toolfund-okgreece]:https://frictionlessdata.io/articles/open-knowledge-greece/
 [dp-go]: https://github.com/frictionlessdata/datapackage-go
+[ts-go]: https://github.com/frictionlessdata/tableschema-go
 [ts]:https://frictionlessdata.io/guides/table-schema/
 [dp-go-resource]:https://godoc.org/github.com/frictionlessdata/datapackage-go/datapackage#Resource
 [fd-gitter]: http://gitter.im/frictionlessdata/chat
