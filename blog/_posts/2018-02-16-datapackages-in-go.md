@@ -193,7 +193,7 @@ And our code is ready to deal with the growth of the periodic table in a very me
 
 ---
 
-We welcome your feedback and questions via our [Frictionless Data Gitter chat][fd-gitter] or via [Github issues][dp-go-issues] on the datapackage-go repository.
+We welcome your feedback and questions via our [Frictionless Data Gitter chat][fd-gitter] or via [GitHub issues][dp-go-issues] on the datapackage-go repository.
 
 [dp]: https://frictionlessdata.io/specs/data-package/
 [tdp]: https://frictionlessdata.io/specs/tabular-data-package/
