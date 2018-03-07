@@ -228,4 +228,4 @@ Data Packages are a great format for sharing data collections with contextual in
 [twitter-search]: https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets
 [twitter-dev]: dev.twitter.com
 [leaflet]: http://leafletjs.com
-fd-gitter]: http://gitter.im/frictionlessdata/chat
+[fd-gitter]: http://gitter.im/frictionlessdata/chat
