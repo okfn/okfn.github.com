@@ -258,11 +258,9 @@ Data Packages are a great format for sharing data collections with contextual in
 [dpc-intro]: http://okfnlabs.org/blog/2018/02/05/data-package-creator.html
 [odd-map]: http://opendataday.org/#map
 [twitter-search]: https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets
-[twitter-dev]: apps.twitter.com
+[twitter-apps]: apps.twitter.com
 [twitter-dev]: dev.twitter.com
 [leaflet]: http://leafletjs.com
 [fd-gitter]: http://gitter.im/frictionlessdata/chat
-<<<<<<< Updated upstream
-=======
 [odd18-csv]: https://github.com/okfn/opendataday/blob/master/Datasets/Events2018.csv
->>>>>>> Stashed changes
+
