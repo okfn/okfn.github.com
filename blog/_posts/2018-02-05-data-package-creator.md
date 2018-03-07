@@ -39,6 +39,7 @@ rome,2877215
 ```
 
 - The third resource is one that doesn't exist yet and which I will create and add fields to in the [Data Package Creator][dpc]. I'll call it `rome.csv`. Once I download the data package, I will add this resource to the data package before sharing it elsewhere.
+
 ```csv
 city,location
 rome,"41.89,12.51"
@@ -71,6 +72,7 @@ Aim for the eureka message below, and in case you feel stuck, reach out and weâ€
 Finally, click on the download button which gives you a local copy of the generated datapackage.json file, complete with your data schema and metadata attached to it. Score 1 for data provenance!
 Finally, create a folder and place your downloaded `datapackage.json` file in it. Create a new folder within it, call it `data` and add all the data resources in your data package to it. You are now ready to share your data package.
 Here's what my final data package folder looks like:
+
 ```
 Three-Cities-Data-Package
         |-- datapackage.json      

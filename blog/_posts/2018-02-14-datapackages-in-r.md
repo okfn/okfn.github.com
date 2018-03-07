@@ -29,7 +29,7 @@ For this tutorial, we will need the Data Package R library ([datapackage.r][dp-r
 And then install the development version of [datapackage.r][dp-r] from github.
 
 ```
-    devtools::install_github("frictionlessdata/datapackage.r")
+    devtools::install_github("frictionlessdata/datapackage-r")
 ```
 
 Load
@@ -72,7 +72,7 @@ We will use periodic-table data from [remote path](https://raw.githubusercontent
 | 10            | Ne     | Neon      | 20.1797     | noble gas            |
 {: .table .table-striped .table-bordered style="display: table; overflow:auto"}
 
-We can guess at our CSV's [schema][ts] by using `infer` from the Table Schema library. We pass directly the remote link to the infer function, the result of which is an inferred schema. For example, if the processor detects only integers in a given column, it will assign `integer` as a column type.
+We can guess our CSV's [schema][ts] by using `infer` from the Table Schema library. We pass directly the remote link to the infer function, the result of which is an inferred schema. For example, if the processor detects only integers in a given column, it will assign `integer` as a column type.
 
 {% highlight r %}
     filepath = 'https://raw.githubusercontent.com/okgreece/datapackage-r/master/vignettes/example_data/data.csv'
