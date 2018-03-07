@@ -4,7 +4,7 @@ username: serahrono
 title: Collecting, Analysing and Sharing Twitter Data
 ---
 
-On March 3, communities around the world marked Open Data Day [in over 400 events][odd-map].
+On March 3, communities around the world marked Open Data Day [in over 400 events][odd-map]. Here's the [dataset for all Open Data Day 2018 events][odd18-csv].
 
 In this post, we will harvest Open Data Day affiliated content from Twitter and analyze it using R before packaging and publishing the data and associated resources publicly on GitHub.
 
@@ -17,7 +17,7 @@ With over 300million monthly users [[source](https://www.omnicoreagency.com/twit
 * **[twitteR][twitteR]** allows us to interact with the Twitter API. We will install this from CRAN, the official packages repository for R.
 * Frictionless Data's **[datapackage.r][dp-r]** library will allow us to collate our open data day data and associated resources, such as the R script in one place before we publish it. We will install this from GitHub.
 
-To get started, create a new application on [dev.twitter.com][twitter-dev] and take note of the API and access tokens. We will need to specify these in our R script.
+To get started, create a new application on [apps.twitter.com][twitter-apps] and take note of the API and access tokens. We will need to specify these in our R script.
 
 {% highlight r %}
 
@@ -29,11 +29,10 @@ library(twitteR)
 
 # specify Twitter API and Access Tokens
 
-api_key <- ""
-api_secret <- ""
-
-access_token <- ""
-access_secret <- ""
+api_key <- "YOUR_API_KEY"
+api_secret <- "YOUR_API_SECRET"
+access_token <- "YOUR_ACCESS_TOKEN"
+access_secret <- "YOUR_ACCESS_SECRET"
 
 setup_twitter_oauth(api_key, api_secret, access_token, access_secret)
 
@@ -56,7 +55,23 @@ tweets_odd18
 
 {% endhighlight %}
 
-In the R script snippet above, we assigned results of our search to the variables `tweets_opendataday` and `tweets_odd18` and called the two variables to view the entire list of tweets obtained. Lucky for us, the total number of tweets on either hashtag are within Twitter's 15 minute request limit. Here's a snippet of the list obtained from the #opendataday hashtag:
+Note: run each `searchTwitteR()` function separately and 15 minutes apart to avoid surpassing the limit.
+
+In the R script snippet above, we assigned results of our search to the variables `tweets_opendataday` and `tweets_odd18` and called the two variables to view the entire list of tweets obtained. Lucky for us, the total number of tweets on either hashtag are within Twitter's 15 minute request limit. Here's the feedback we receive:
+
+{% highlight r %}
+
+# tweets mined on March 7, 2018
+
+#opendataday
+ 18000 tweets were requested but the API can only return 11458
+
+#odd18
+ 18000 tweets were requested but the API can only return 3497
+
+{% endhighlight %}
+
+Here's a snippet of the list obtained from the #opendataday hashtag:
 
 {% highlight r %}
 
@@ -132,20 +147,35 @@ library(dplyr)
 
 # find out number of open data day tweets from android phones
 
-android_tweets <- dplyr::filter(alltweets_df, grepl("Twitter for Android", statusSource))
+android_tweets <- filter(alltweets_df, grepl("Twitter for Android", statusSource))
 tally(android_tweets)
 
 {% endhighlight %}
+
+{% highlight r %}
+# the result
+   n
+1 5180
+{% endhighlight %}
+
+5, 180 of the 14,955 (34.6%) #opendataday and #odd18 tweets were sent from android phones.
 
 - Naturally, Open Data Day events cut across many topics and disciplines, and some events included hands-on workshop sessions or hackathons. Let's find out which open data day tweets point to open source projects and resources that are available on GitHub.
 
 {% highlight r %}
  # open data day tweets that mention resources on GitHub
 
-github_resources <- dplyr::filter(alltweets_df, grepl("github.com", statusSource))
+github_resources <- filter(alltweets_df, grepl("github.com", statusSource))
 
 {% endhighlight %}
 
+{% highlight r %}
+# the result
+ n
+1 32
+{% endhighlight %}
+
+Only 32 #opendataday and #odd18 tweets contain GitHub links.
 
 - Not all open data day tweets are geotagged, but from the few that are, we can create a very basic map to show where people tweeted from. To do this, we will use the [Leaflet][leaflet] library for R.
 
@@ -160,13 +190,17 @@ map <- leaflet() %>%
   addTiles() %>%
   addCircles(data = alltweets_df, lat = ~ latitude, lng = ~ longitude)
 
+#view map
 map
 {% endhighlight %}
 
+![map showing where geotagged #opendataday and #odd18 tweets originated from](/img/posts/opendataday-geotagged-tweets.png)
+<br/>
+*figure 1: map showing where geotagged #opendataday and #odd18 tweets originated from*
 
 ## Sharing the Data
 
-Due to Twitter's terms of use, we can only share a stripped-down version of the raw data. Our final dataset contains tweet IDs and retweet count, and will be packaged alongside  other relevant resources such as the R script.
+Due to Twitter's terms of use, we can only share a stripped-down version of the raw data. Our final dataset contains tweet IDs and retweet count, and will be packaged alongside this R script, so you could download the tweets yourself.
 
 {% highlight r %}
 
@@ -184,7 +218,7 @@ Due to Twitter's terms of use, we can only share a stripped-down version of the 
 
 ### Packaging the Data and associated resources
 
-Using [datapackage.r][dp-r], we can infer a schema for the `all tweets` CSV file and publish it alongside the other resources.
+Providing context when sharing data is important, and Frictionless Data's [Data Package][dp] format makes it possible. Using [datapackage.r][dp-r], we can infer a schema for the `all tweets` CSV file and publish it alongside the other resources.
 
 {% highlight r %}
 
@@ -201,7 +235,7 @@ Alternatively, we can use the [Data Package Creator][dpc]  to package our data a
 
 ![creating the data package on Data Package Creator](/img/posts/opendataday-data-package.png)
 <br/>
-*figure 1: creating the data package on Data Package Creator*
+*figure 2: creating the data package on Data Package Creator*
 
 Read more about the data package creator in [this post][dpc-intro].
 
@@ -215,8 +249,6 @@ Once our data package is ready, we can simply publish it to GitHub. Find the ope
 
 Data Packages are a great format for sharing data collections with contextual information i.e. we added metadata and a schema to our final dataset. Read more about [Data Packages in Frictionless Data][dp] and reach out in [our community chat on Gitter][fd-gitter].
 
-
-
 [r]: https://www.r-project.org
 [twitteR]: https://cran.r-project.org/web/packages/twitteR/README.html
 [dp]: http://frictionlessdata.io/data-packages/
@@ -226,6 +258,11 @@ Data Packages are a great format for sharing data collections with contextual in
 [dpc-intro]: http://okfnlabs.org/blog/2018/02/05/data-package-creator.html
 [odd-map]: http://opendataday.org/#map
 [twitter-search]: https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets
+[twitter-dev]: apps.twitter.com
 [twitter-dev]: dev.twitter.com
 [leaflet]: http://leafletjs.com
 [fd-gitter]: http://gitter.im/frictionlessdata/chat
+<<<<<<< Updated upstream
+=======
+[odd18-csv]: https://github.com/okfn/opendataday/blob/master/Datasets/Events2018.csv
+>>>>>>> Stashed changes
