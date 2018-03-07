@@ -242,7 +242,7 @@ Read more about the data package creator in [this post][dpc-intro].
 
 ### Publishing on Github
 
-Once our data package is ready, we can simply publish it to GitHub. Find the open data day tweets data package [here](https://github.com/frictionlessdata/example-data-packages).
+Once our data package is ready, we can simply publish it to GitHub. Find the open data day tweets data package [here](https://github.com/frictionlessdata/example-data-packages/tree/master/open-data-day-tweets-2018).
 
 
 ## Conclusion
