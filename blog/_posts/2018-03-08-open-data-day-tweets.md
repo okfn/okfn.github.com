@@ -39,7 +39,7 @@ setup_twitter_oauth(api_key, api_secret, access_token, access_secret)
 {% endhighlight %}
 
 
-We are now ready to read tweets from the two official Open Data Day hashtags: #opendataday](https://twitter.com/hashtag/OpenDataDay) and [#odd18](https://twitter.com/hashtag/ODD18). With a maximum number of 100 tweets per request, [Twitter's Search API allows](https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets) for 180 Requests every 15 minutes. Since we are interested in as many tweets as we can get,  we will specify the upper limit as 18,000, which tells the twitteR library the maximum number of tweets to retrieve for us.
+We are now ready to read tweets from the two official Open Data Day hashtags: [#opendataday](https://twitter.com/hashtag/OpenDataDay) and [#odd18](https://twitter.com/hashtag/ODD18). With a maximum number of 100 tweets per request, [Twitter's Search API allows](https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets) for 180 Requests every 15 minutes. Since we are interested in as many tweets as we can get,  we will specify the upper limit as 18,000, which tells the twitteR library the maximum number of tweets to retrieve for us.
 
 {% highlight r %}
 
@@ -158,7 +158,7 @@ tally(android_tweets)
 1 5180
 {% endhighlight %}
 
-5, 180 of the 14,955 (34.6%) #opendataday and #odd18 tweets were sent from android phones.
+5,180 of the 14,955 (34.6%) #opendataday and #odd18 tweets were sent from android phones.
 
 - Naturally, Open Data Day events cut across many topics and disciplines, and some events included hands-on workshop sessions or hackathons. Let's find out which open data day tweets point to open source projects and resources that are available on GitHub.
 
