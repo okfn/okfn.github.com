@@ -101,7 +101,7 @@ Since the entire lists are long (~11,500 tweets on the #opendataday hashtag) and
 tweets_opendataday_df <- twListToDF(tweets_opendataday)
 tweets_odd18_df <- twListToDF(tweets_odd18)
 
-#save scraped data in CSV files
+# save scraped data in CSV files
 
 write.csv(tweets_opendataday_df, file="data/opendataday_raw.csv")
 write.csv(tweets_odd18_df, file="data/odd18_raw.csv")
@@ -140,7 +140,7 @@ Data analysis in R is quite a joy. We will use R's `dplyr` package to analyse ou
 We can answer this using dplyr's select() function, which as the name suggests, allows us to see only data we are interested in, in this case, tweets sent from the Twitter for Android app.
 
 {% highlight r %}
-#install and load dplyr
+# install and load dplyr
 
 install.packages(dplyr)
 library(dplyr)
@@ -180,17 +180,17 @@ Only 32 #opendataday and #odd18 tweets contain GitHub links.
 - Not all open data day tweets are geotagged, but from the few that are, we can create a very basic map to show where people tweeted from. To do this, we will use the [Leaflet][leaflet] library for R.
 
 {% highlight r %}
-#install and load leaflet
+# install and load leaflet
 
 install.packages(leaflet)
 library(leaflet)
 
-#create basic map
+# create basic map
 map <- leaflet() %>%
   addTiles() %>%
   addCircles(data = alltweets_df, lat = ~ latitude, lng = ~ longitude)
 
-#view map
+# view map
 map
 {% endhighlight %}
 
@@ -208,7 +208,7 @@ Due to Twitter's terms of use, we can only share a stripped-down version of the 
 
   notretweets_df <- dplyr::filter(alltweets_df, grepl("FALSE", isRetweet))
 
-#strip down tweets data to comply with Twitter's terms of use.
+# strip down tweets data to comply with Twitter's terms of use.
 
   subsetoftweets <- select(notretweets_df, id, retweetCount)
   write.csv(subsetoftweets, file="data/subsetofopendatadaytweets.csv")
