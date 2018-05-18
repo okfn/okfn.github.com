@@ -1,7 +1,7 @@
 highligher: pygments
 markdown: kramdown
 future: true
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-mentions
 
