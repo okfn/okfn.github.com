@@ -36,6 +36,12 @@
   {% endif %}
   <link rel="alternate" type="application/atom+xml" title="Open Knowledge Labs Feed" href="http://okfnlabs.org/blog/feed.xml" />
   <link rel="shortcut icon" href="https://d22739b8qd5enr.cloudfront.net/assets/favicon.ico">
+  <script>
+      var okiConsent = {
+        analyticsTrackingID: 'UA-33874954-3',
+      }
+    </script>
+    <script src="https://a.okfn.org/html/oki/consent/assets/js/consent.js"></script>
 </head>
 
 <body class="body-{{page.bodyclass}}">
@@ -121,17 +127,6 @@
   {% if page.lightbox %}
   <script src="/js/slimbox2.js"></script>
   {% endif %}
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-33874954-3']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
 <script src="http://assets.okfn.org/themes/okfn/collapse.min.js" type="text/javascript"></script>
 <script src="http://assets.okfn.org/themes/okfn/okf-panel.js" type="text/javascript"></script>
 </body>
