@@ -5,7 +5,7 @@ username: akariv
 ---
 Today we’re releasing a major version for [datapackage-pipelines][dpp], version 2.0.0.
 
-This new version marks a big step forward in realizing the Data Factory concept and framework. We integrated *datapackage-pipelines* with its younger sister *[dataflows][df-git]*, and created a set of common building blocks you can now use interchangeably between the the two frameworks.
+This new version marks a big step forward in realizing the Data Factory concept and framework. We integrated *datapackage-pipelines* with its younger sister *[dataflows][df-git]*, and created a set of common building blocks you can now use interchangeably between the two frameworks.
 
 ![diagram showing the relationship between dataflows and datapackage-pipelines](/img/posts/dataflows-and-dpp.png)
 <br/>
