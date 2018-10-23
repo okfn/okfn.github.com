@@ -7,6 +7,10 @@ Today we’re releasing a major version for [datapackage-pipelines][dpp], versio
 
 This new version marks a big step forward in realizing the Data Factory concept and framework. We integrated *datapackage-pipelines* with its younger sister *[dataflows][df-git]*, and created a set of common building blocks you can now use interchangeably between the the two frameworks.
 
+![diagram showing the relationship between dataflows and datapackage-pipelines](/img/posts/dataflows-and-dpp.png)
+<br/>
+*figure 1: diagram showing the relationship between dataflows and datapackage-pipelines*
+
 It’s now possible to bootstrap and develop flows using *dataflows*, and then run these flows as-is on a *datapackage-pipelines* server - or effortlessly convert them to the declarative yaml syntax.
 
 Install datapackage-pipelines using `pip`:
