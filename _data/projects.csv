@@ -1,11 +1,11 @@
 title,projecturl,owner,maintainers,contributors,github_user,github_repo,imageurl,category,type,priority,tagline,language,activity_status,stage,archived_stage,featured,helpwanted,typeofhelp,redirect_from,sort_order,archived_tags
-Data Patterns,http://datapatterns.org/,Open Knowledge International,,"rgrp, danfowler",okfn,datapatterns,/img/projects/project-datapatterns.jpg,Data Tools and Services,,TRUE,,,active,developing,,FALSE,,,,0,
+Data Patterns,http://datapatterns.org/,Open Knowledge Foundation,,"rgrp, danfowler",okfn,datapatterns,/img/projects/project-datapatterns.jpg,Data Tools and Services,,TRUE,,,active,developing,,FALSE,,,,0,
 CKAN,http://ckan.org/,CKAN,,,ckan,ckan,/img/projects/project-ckan.png,Data Tools and Services,,FALSE,,,active,very mature,,TRUE,,,,10,
-OpenSpending,https://openspending.org/,Open Knowledge International,,,,,/img/projects/project-openspending.png,Database,,TRUE,,,active,very mature,,TRUE,,,,20,
-OpenTrials,http://opentrials.net/,Open Knowledge International,,,,,/img/projects/project-opentrials.png,Database,,TRUE,,,active,developing,,TRUE,,,,30,
-Core Datasets,http://data.okfn.org/roadmap/core-datasets,Open Knowledge International,,,,,/img/projects/project-core-datasets.png,Database,,TRUE,,,active,mature,,FALSE,,,,40,
-DataHub.io,https://datahub.io/,Open Knowledge International,,,,,/img/projects/project-datahub.png,Database,,TRUE,,,semi-active,very mature,,TRUE,,,,50,
-OpenLiterature,http://openliterature.net/,Open Knowledge International,,,,,/img/projects/project-openliterature.png,Other,,FALSE,,,dormant,developing,,FALSE,,,,60,
+OpenSpending,https://openspending.org/,Open Knowledge Foundation,,,,,/img/projects/project-openspending.png,Database,,TRUE,,,active,very mature,,TRUE,,,,20,
+OpenTrials,http://opentrials.net/,Open Knowledge Foundation,,,,,/img/projects/project-opentrials.png,Database,,TRUE,,,active,developing,,TRUE,,,,30,
+Core Datasets,http://data.okfn.org/roadmap/core-datasets,Open Knowledge Foundation,,,,,/img/projects/project-core-datasets.png,Database,,TRUE,,,active,mature,,FALSE,,,,40,
+DataHub.io,https://datahub.io/,Open Knowledge Foundation,,,,,/img/projects/project-datahub.png,Database,,TRUE,,,semi-active,very mature,,TRUE,,,,50,
+OpenLiterature,http://openliterature.net/,Open Knowledge Foundation,,,,,/img/projects/project-openliterature.png,Other,,FALSE,,,dormant,developing,,FALSE,,,,60,
 Mira,https://github.com/davbre/mira,David Brennan,,davbre,davbre,mira,/img/projects/project-mira.png,Data Tools and Services,"webapp, tool",FALSE,create simple APIs from CSV files,Ruby,semi-active,developing,,FALSE,,,,70,"API, datapackage, csv, Ruby"
 Puppycide Database Project,https://puppycidedb.com,Puppycide Database Project,,jaydubya,puppycidedb,pdb-database,https://pbs.twimg.com/profile_images/512989733039792131/lVEJbvP__200x200.jpeg,Database,"data, webapp, running service",FALSE,The Puppycide Database Project researches and records killings of animals by police across the United States with the help of open source applications & crowd sourced research.,"php, javascript, python, nodejs",active,developing,production,FALSE,TRUE,"coding, data analysis, documenting, blogging, evangelism, project managing",,80,"sql, Visualization"
 Good Tables,http://goodtables.okfnlabs.org/,Paul Walsh,,pwalsh,frictionlessdata,goodtables.io,/img/projects/project-goodtables.png,Data Tools and Services,"library, service",TRUE,Validate and process tabular data.,"python, javascript, html, css",active,developing,alpha,TRUE,TRUE,"coding, testing",,90,"Tabular Data, CSV, JSON Table Schema"
@@ -56,5 +56,5 @@ MicroFacts,https://archive.is/1EZxh,,,,,,,,,FALSE,,,retired,developing,,FALSE,,,
 Knowledgeforge,http://webarchive.okfn.org/okfn.org/201404/kforge/,,,,,,,,,FALSE,,,retired,very mature,,FALSE,,,,530,
 IsItOpenData,http://www.isitopendata.org/,,,,,,,,,FALSE,,,retired,finished,,FALSE,,,,540,
 OpenShakespeare,http://www.opensourceshakespeare.org/,,,,,,,,,FALSE,,,retired,very mature,,FALSE,,,,550,
-OpenEconomics,http://web.archive.org/web/20100401182854/http://www.openeconomics.net/,Open Knowledge International,,,,,,Database,,FALSE,,,retired,very mature,,FALSE,,,,560,
-Yourtopia,http://italia.yourtopia.net/,Open Knowledge International,,"rgrp, marians, Rich-Harris, stefanw, hannes-brt, danfowler, guoxu",okfn,yourtopia,/img/projects/yourtopia.jpg,Datatools and Services,webapp,FALSE,,"JavaScript, Python",dormant,,FALSE,TRUE,"coding, testing, documenting",,570,"Flask, Visualization, CSV",
+OpenEconomics,http://web.archive.org/web/20100401182854/http://www.openeconomics.net/,Open Knowledge Foundation,,,,,,Database,,FALSE,,,retired,very mature,,FALSE,,,,560,
+Yourtopia,http://italia.yourtopia.net/,Open Knowledge Foundation,,"rgrp, marians, Rich-Harris, stefanw, hannes-brt, danfowler, guoxu",okfn,yourtopia,/img/projects/yourtopia.jpg,Datatools and Services,webapp,FALSE,,"JavaScript, Python",dormant,,FALSE,TRUE,"coding, testing, documenting",,570,"Flask, Visualization, CSV",
