@@ -30,7 +30,7 @@ come along and contribute.
 </center>
 
 Hangouts are an opportunity for folks to learn more about open source
-tech work done at [Open Knowledge International](http://okfn.org) as
+tech work done at the [Open Knowledge Foundation](http://okfn.org) as
 well as to present and discuss projects and ideas from the
 community. We will also discuss any general Labs administrative
 [issues](https://github.com/okfn/okfn.github.com/issues) such as
