@@ -51,7 +51,7 @@ Any presets outside of the built-in ones above are made possible and registered 
 _Examples:_
 
 + **_CKAN custom preset_**:
-[CKAN](http://ckan.org) is the world’s leading open data platform developed by Open Knowledge International to help streamline the publishing, sharing, finding and using of data.
+[CKAN](http://ckan.org) is the world’s leading open data platform developed by Open Knowledge Foundation to help streamline the publishing, sharing, finding and using of data.
 [Here’s a custom preset](https://github.com/frictionlessdata/goodtables-py/blob/master/examples/ckan.py) that, for example, could help the user run an inspection on datasets from [Surrey's Data Portal](http://data.surrey.ca) which utilizes CKAN.
 
 + **_Dropbox custom preset_**:
@@ -66,7 +66,7 @@ goodtables also allows users to carry out parallel validation for multi-table da
 
 _Example:_
 
-[Frictionless Data](http://frictionlessdata.io) is a core Open Knowledge International project and all goodtables work falls under its umbrella. One of the pilots working with Frictionless Data is [DM4T](https://github.com/frictionlessdata/pilot-dm4t), with an aim to understand the extent to which Data Package concepts can be applied in the energy sector. DM4T pilot’s issue tracker [lives here](https://github.com/frictionlessdata/pilot-dm4t) and its [Data Package](https://s3-eu-west-1.amazonaws.com/frictionlessdata.io/pilots/pilot-dm4t/datapackage.json) comprises of [20 CSV files](http://data.okfn.org/tools/view?url=https%3A%2F%2Fs3-eu-west-1.amazonaws.com%2Ffrictionlessdata.io%2Fpilots%2Fpilot-dm4t%2Fdatapackage.json) and is approximately 6.7 GB in size.
+[Frictionless Data](http://frictionlessdata.io) is a core Open Knowledge Foundation project and all goodtables work falls under its umbrella. One of the pilots working with Frictionless Data is [DM4T](https://github.com/frictionlessdata/pilot-dm4t), with an aim to understand the extent to which Data Package concepts can be applied in the energy sector. DM4T pilot’s issue tracker [lives here](https://github.com/frictionlessdata/pilot-dm4t) and its [Data Package](https://s3-eu-west-1.amazonaws.com/frictionlessdata.io/pilots/pilot-dm4t/datapackage.json) comprises of [20 CSV files](http://data.okfn.org/tools/view?url=https%3A%2F%2Fs3-eu-west-1.amazonaws.com%2Ffrictionlessdata.io%2Fpilots%2Fpilot-dm4t%2Fdatapackage.json) and is approximately 6.7 GB in size.
 
 To inspect DM4T’s energy consumption data collected from 20 households in the UK, run:
 
@@ -76,7 +76,7 @@ goodtables --table-limit 20 datapackage https://s3-eu-west-1.amazonaws.com/frict
 
 In the command above, the `--table-limit` option allows you to check all 20 tables, since by default goodtables only runs checks on the first ten tables by default.  You can find plenty of sample Data Packages for use with goodtables [in this repository](https://github.com/datasets/).
 
-So why use GitHub for storage of data files?  At Open Knowledge International, we [highly recommend](http://blog.okfn.org/2013/07/02/git-and-github-for-data/) and [work with others to](http://blog.okfn.org/2016/11/29/git-for-data-analysis-why-version-control-is-essential-collaboration-public-trust/) use GitHub repositories for dataset storage.
+So why use GitHub for storage of data files?  At Open Knowledge Foundation, we [highly recommend](http://blog.okfn.org/2013/07/02/git-and-github-for-data/) and [work with others to](http://blog.okfn.org/2016/11/29/git-for-data-analysis-why-version-control-is-essential-collaboration-public-trust/) use GitHub repositories for dataset storage.
 
 **PRO TIP:**
 In working with datasets hosted on GitHub, say [the countries codes Data Package](https://github.com/datasets/country-codes), users should use the raw file URL with goodtables, since support for GitHub URL resolution is still in development.
@@ -93,7 +93,7 @@ goodtables v1 also works with our proposed [data quality specification standard]
 
 [![goodtablesio](/img/posts/goodtablesio.jpg)](https://github.com/frictionlessdata/goodtables.io)
 
-Moving forward, at Open Knowledge International we want to streamline the process of data validation and ensure seamless integration is possible in different publishing workflows. To do so, [we are launching a continuous data validation hosted service](https://discuss.okfn.org/t/launching-goodtables-io-tell-us-what-you-think/5165) that builds on top of this suite of Frictionless Data libraries.  [goodtables.io](http://goodtables.io) will provide support for different backends. At this time, users can use it to check any datasets hosted on GitHub and Amazon S3 buckets, automatically running validation against data files every time they are updated, and providing a user friendly report of any issues found.
+Moving forward, at Open Knowledge Foundation we want to streamline the process of data validation and ensure seamless integration is possible in different publishing workflows. To do so, [we are launching a continuous data validation hosted service](https://discuss.okfn.org/t/launching-goodtables-io-tell-us-what-you-think/5165) that builds on top of this suite of Frictionless Data libraries.  [goodtables.io](http://goodtables.io) will provide support for different backends. At this time, users can use it to check any datasets hosted on GitHub and Amazon S3 buckets, automatically running validation against data files every time they are updated, and providing a user friendly report of any issues found.
 
 Try it here: [goodtables.io](http://goodtables.io)
 
