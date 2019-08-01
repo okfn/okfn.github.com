@@ -1,7 +1,7 @@
 ---
- author: {Daniel Fireman}
- username: {danielfireman}
- title: {Introduction to Statistics With Data Packages and Gonum}
+ author: Daniel Fireman
+ username: danielfireman
+ title: Introduction to Statistics With Data Packages and Gonum
 ---
 
 After 6 years at Google, Daniel Fireman is currently a Ph.D. student, professor and activist for government transparency and accountability in the Northeast of Brazil. He was one of the 2017's Frictionless Data Tool Fund grantees and implemented the core Frictionless Data specification in the [Go](https://golang.org/) programming language: [datapackage](https://github.com/frictionlessdata/datapackage-go) and [tableschema](https://github.com/frictionlessdata/tableschema-go), which he still maintains. You can read more about this in [his grantee profile](https://frictionlessdata.io/articles/daniel-fireman/).
