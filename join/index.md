@@ -47,9 +47,4 @@ bodyclass: join
 
   </div>
 
-  <div class="span4">
-    <h3 style="margin-top: 0;">Events &amp; Meetups</h3>
-    <p>There are lots of opportunities to meet up with others both online and in person. Listed here are a few near-term ones &ndash; you can find more on the <a href="/events/">events page</a>.</p>
-    {% include events.html %}
-  </div>
 </div>
