@@ -1,3 +1,6 @@
+domain: okfnlabs.org
+url: http://okfnlabs.org
+
 highligher: pygments
 markdown: kramdown
 future: true
