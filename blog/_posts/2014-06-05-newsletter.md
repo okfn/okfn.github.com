@@ -9,14 +9,6 @@ Welcome back to the OKFN Labs! Members of the Labs have been building tools, vis
 
 If you'd like to suggest a piece of news for next month's newsletter, leave a comment on its [GitHub issue](https://github.com/okfn/okfn.github.com/issues/215).
 
-## commasearch
-
-[Thomas Levine](http://okfnlabs.org/members/tlevine/) has been working on an innovative new approach to searching tabular data, [commasearch](https://github.com/tlevine/commasearch).
-
-Unlike a normal search engine, where you submit words and get pages of words back, with commasearch, you submit spreadsheets and get spreadsheets in return.
-
-What does that mean, and how does it work? Check out Thomas's excellent blog post "[Pagerank for Spreadsheets](http://dada.pink/dada/pagerank-for-spreadsheets/)" to learn more.
-
 ## GitHub diffs for CSV files
 
 *Submitted by [Paul Fitzpatrick](http://okfnlabs.org/members/paulfitz/).*

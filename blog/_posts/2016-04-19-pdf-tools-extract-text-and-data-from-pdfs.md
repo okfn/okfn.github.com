@@ -86,10 +86,8 @@ We also note that Google app engine [used to do this](http://developers.google.c
 
 ## Other good intros
 
-* [Thomas Levine on Parsing PDFs][levine]
 * [Extracting Data from PDFs - School of Data][scoda-1]
 
-[levine]: http://okfnlabs.org/blog/2013/12/25/parsing-pdfs.html
 [scoda-1]: http://schoolofdata.org/handbook/courses/extracting-data-from-pdf/
 [scoda-simple-tables]: http://schoolofdata.org/2013/06/18/get-started-with-scraping-extracting-simple-tables-from-pdf-documents/
 

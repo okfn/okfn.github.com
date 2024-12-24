@@ -30,8 +30,6 @@ The [Enki][14] package for analyzing PyBossa applications was also released over
 
 We've had a couple of great new contributions on the [Labs blog][18] since the last newsletter.
 
-[Thomas Levine][19] has written about [how he parses PDF files][20], lovingly exploring a problem that all data wranglers will encounter and gnash their teeth over at least a few times in their lives.
-
 [Stefan Urbanek][21], meanwhile, has written an [introduction to OLAP][22], "an approach to answering multi-dimensional analytical queries swiftly", explaining what that means and why we should take notice.
 
 ## Dānabox
@@ -68,7 +66,6 @@ Labs is the Labs community, no more and no less, and you're invited to become a 
 [16]:	http://ipython.org/notebook.html
 [17]:	http://daniellombrana.es/blog/2013/12/16/pybossa-enki.html
 [18]:	http://okfnlabs.org/blog/
-[19]:	http://okfnlabs.org/members/tlevine/
 [20]:	http://okfnlabs.org/blog/2013/12/25/parsing-pdfs.html
 [21]:	http://okfnlabs.org/members/Stiivi/
 [22]:	http://okfnlabs.org/blog/2014/01/10/olap-introduction.html
